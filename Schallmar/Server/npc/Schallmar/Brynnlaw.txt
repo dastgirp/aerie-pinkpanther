@@ -1,0 +1,2010 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Brynnlaw
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.0
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//
+//
+//================================================================================================= 
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Brynnlaw : Principal
+// 2 = Brynnlaw : Moines Disparus de Tibérine
+// 3 = Brynnlaw : Les Grottes du Gwened
+// 4 = Brynnlaw : Trésor du Monastère
+// 5 = Brynnlaw : Guilde d'Harcourt
+//
+//_________________________________________________________________
+//________________ Brynnlaw : Principal ___________________________
+//_________________________________________________________________
+
+ars_fild66,196,160,5	script	Compagnie Britanny#ep8	510,{
+
+set @name$,"^FF00CCCompagnie Britanny^000000";
+
+if (EP7_SCHALLMAR <= 4)  goto sub1;
+if (EP7_SCHALLMAR >= 5)  goto sub2;
+
+sub1:
+
+	mes "[" + @name$ + "]";
+	mes "Je ne peux hélas vous venir en aide pour le moment !";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Heureuse Rencontre ! Je me présente, ^FF00CCBritanny^000000, nous sommes une compagnie de transport maritimes."; 
+	next;
+	callfunc "arsi_Brit";
+	end;
+}
+
+//=================================================================================
+
+ars_dun48,90,44,5	script	Rose-Marie#ep7	71,5,5,{
+
+set @name$,"^FF00CCRose-Marie^000000";
+
+	if (EP7_SCHALLMAR <= 4) {
+
+		mes "[" + @name$ + "]";
+		mes "Je suis ici pour recruter des mercenaires ! Ces maudits Pirates du Croc d'Airain ont enlevé ma fille ...";
+		close;}
+
+	
+	if (EP7_SCHALLMAR == 5 || EP7_SCHALLMAR == 6) {
+
+		mes "[" + @name$ + "]";
+		mes "Je suis ici pour recruter des mercenaires ! Ces maudits Pirates du Croc d'Airain ont enlevé ma fille ...";
+		mes "Personne parmi les autorités ne souhaite m'aider, cette maudite milice de Brynnlaw est corrompue ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Êtes-vous des mercenaires ? Je n'ai hélas pas grand chose à vous offrir mais j'ai un objet très recherché duquel vous pourriez en tirer un bon prix.";
+		mes "Mon mari ^66CCFFNarcisse^000000 est encore dans notre maison dans les îles aux épices, vous pouvez commencer à enquêter dans ces îles.";
+		next;
+		mes "[" + @name$ + "]";		
+		mes "Ces îles sont spécialisées dans la culture de l'épice d'Araquie, et nous y sommes de simples producteurs.";
+		mes "Aidez-nous, notre fille, comme de nombreux autres paysans ont été enlevé récemment dans les îles de Brynnlaw.";
+		close2;
+		if (EP7_SCHALLMAR == 5) {
+			set EP7_SCHALLMAR,6;
+			setquest 70507;}
+		end;}
+
+	if (EP7_SCHALLMAR <= 23) {
+
+		mes "[" + @name$ + "]";
+		mes "Pourvu que votre quête soit couronnée de succès !";
+		close;}
+
+	if (EP7_SCHALLMAR == 24) {
+
+		mes "[" + @name$ + "]";
+		mes "Oh ! Et dire que ma pauvre fille était dans la pièce à côté de moi ... Je ne sais qu'en penser ... Je me sens si impuissante ...";
+		mes "Je vous avais promis de vous payer, nous n'avons hélas pas grand chose comme argent ... Mais voici un objet que mon mari a trouvé, il y a quelques temps ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Une des sept perles noires Shinaere ! Tenez, prenez-en grand soin, elle vous attirera de nombreux ennuis ...";
+		close2;
+		getitem 29120,1;
+		changequest 70525,70526;
+		set EP7_SCHALLMAR,25;
+		end;}
+
+	if (EP7_SCHALLMAR >= 25) {
+
+		mes "[" + @name$ + "]";
+		mes "Oh ! Et dire que ma pauvre fille était dans la pièce à côté de moi ... Je ne sais qu'en penser ... Je me sens si impuissante ...";
+		close;}
+
+OnTouch:
+
+	if (EP7_SCHALLMAR == 5) {showevent 1,0;} end;
+}
+
+//=================================================================================
+
+ars_dun49,49,43,5	script	Narcisse#ep7	742,{
+
+set @name$,"^66CCFFNarcisse^000000";
+
+	if (EP7_SCHALLMAR <= 5) {
+
+		mes "[" + @name$ + "]";
+		mes "Ma petite ... Ma petite ...";
+		close;}
+
+	if (EP7_SCHALLMAR <= 23) {
+
+		mes "[" + @name$ + "]";
+		mes "Ma pauvre petite ^FF00CCMarguerite^000000 ! Jamais, jamais je ne pourrais m'en remettre ...";
+		mes "Vous qui êtes vous ? Que faites-vous donc chez moi ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ah vous êtes des mercenaires, ^FF00CCRose-Marie^000000 a enfin pu trouver des personnes pour nous aider !";
+		mes "Notre fille a été enlevé par les Pirates du Croc d'Airain, de nombreux témoins subsistent encore de cette razzia.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Vous devriez demander aux marins près du comptoir de négoce, ils doivent avoir des indices ...";
+		mes "Beaucoup des notres producteurs comme marins sont enlevés par ces pirates. Il apparait clairement que ces pirates ont un repère dans les îles de Brynnlaw.";
+		mes "Menez votre enquête et retrouvez ma fille par pitié !";
+		close2;
+		if (EP7_SCHALLMAR == 6) {
+			set EP7_SCHALLMAR,7;
+			changequest 70507,70508;}
+		end;}
+
+	if (EP7_SCHALLMAR >= 24) {
+
+		mes "[" + @name$ + "]";
+		mes "Je ne sais comment vous remercier, à la fois pour ma fille mais aussi pour tous nos compagnons enlevés !";
+		close;}
+
+}
+
+//=================================================================================
+
+ars_fild69,179,167,2	script	Marin#ep7Bry	100,{
+
+set @name$,"^66CCFFMarin^000000";
+
+	mes "[" + @name$ + "]";
+
+	if (EP7_SCHALLMAR <= 6) {
+		mes "La vie est dure de nos temps, le prix des épices a beau augmenter, je ne gagne pas plus que mon maigre salaire !";
+		close;}
+
+	if (EP7_SCHALLMAR == 7 || EP7_SCHALLMAR == 8) {
+		mes "Hmm, oui la fille de ^66CCFFNarcisse^000000, je me souviens de cette razzia ... En plein jour !";
+		mes "C'est rare mais cela devient de plus en plus fréquent avec cette garde de Brynnlaw qui n'est pas foutue de nous protéger, tu vois.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "C'était un beau brin de fille c'te ^FF00CCMarguerite^000000, bien triste pour elle, je vous laisse imaginer le sort qu'ils vont lui réserver ..";
+		mes "Avec quelques compagnons, nous avons suivi ces pirates, mais nous avons perdu leur trace au niveau du Monastère de Tiberine.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Si tu cherches à retrouver ces salopards, tu as ma bénédiction et celle des autres marins, trop des nôtres ont disparu de par leur faute.";
+		mes "Il y aura peut-être quelques indices dans ce coin, va tout de même demander aux moines, ils ont peut-être vu quelque chose !";
+		close2;
+		if (EP7_SCHALLMAR == 7) {
+			set EP7_SCHALLMAR,8;
+			changequest 70508,70509;}
+		end;}		
+
+	if (EP7_SCHALLMAR > 8) {
+		mes "Allez ! On compte sur toi l'ami !";
+		close;}
+	
+}
+//=================================================================================
+
+ars_dun52,91,120,5	script	Abbé de Tiberine#ep7	412,{
+
+set @name$,"^66CCFFAbbé de Tiberine^000000";
+
+
+	if (EP7_SCHALLMAR <= 7) {
+		mes "[" + @name$ + "]";
+		mes "Je vais vous demander de ne pas parler, ni faire de bruit, nous sommes ici pour nous recueillir, dans une vie simple et saine et dévouée à notre déesse.";
+		close;}
+
+	if (EP7_SCHALLMAR == 8 || EP7_SCHALLMAR == 9 || EP7_SCHALLMAR == 10) {
+		mes "[" + @name$ + "]";
+		mes "Nous vivons dans le silence et piété, nous n'aimons pas être dérangé durant nos offices.";
+		mes "Cependant accueillir les passants qui souhaitent venir se reposer et prier fait parti de notre Foi.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Des questions ? Sur les Pirates ? Hmm, non ... Il ne me semble pas en avoir entendu parler dans nos eaux.";
+		mes "Vous savez nous sommes retirés du monde ... Nous ne souhaitons pas nous méler de ces ... histoires.";
+		close2;
+		if (EP7_SCHALLMAR == 8) {
+			set EP7_SCHALLMAR,9;
+			changequest 70509,70510;}
+		end;}	
+		
+	if (EP7_SCHALLMAR >= 11) {
+		mes "[" + @name$ + "]";
+		mes "Merci de nous avoir libérés, mais il faut que tu continues ta sainte oeuvre, ces pirates ont leur repère non loin d'ici.";
+		mes "Tu dois te rendre dans la Gran'île de Tibérine pour mettre fin à leurs incursions dans nos îles.";
+		close2;
+		if (EP7_SCHALLMAR == 11) {
+			set EP7_SCHALLMAR,12;
+			changequest 70512,70513;}
+		end;}	
+}
+//=================================================================================
+
+ars_dun52,101,19,1	script	Pierre L'Hermite#ep7	449,{
+
+set @name$,"^66CCFFPierre L'Hermite^000000";
+
+	if (EP7_SCHALLMAR <= 8) {
+		mes "[" + @name$ + "]";
+		mes "Je vais vous demander de ne pas parler, ni faire de bruit, nous sommes ici pour nous recueillir, dans une vie simple et saine et dévouée à notre déesse.";
+		close;}
+
+	if (EP7_SCHALLMAR == 9 || EP7_SCHALLMAR == 10) {
+
+		mes "[" + @name$ + "]";
+		mes "Eh' Vous ! Vous êtes un mercenaire non ?";
+		mes "Nous avons besoin d'aide au monastère, tous les frères ont peur ... Nous sommes pris en otage !";
+		mes "Bien que les autres pensent à une Ordalie ..";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ces pirates sont très peu nombreux, vous ne devriez pas avoir de problèmes pour vous en débarasser.";
+		mes "Nous vous dirons où ces pirates se cachent, ils sont arrivés il y a quelques mois près du monastère.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "BrightSilver est leur chef, vous devriez lui parler pour le forcer à se démasquer !";
+		close2;
+		if (EP7_SCHALLMAR == 9) {
+			set EP7_SCHALLMAR,10;
+			changequest 70510,70511;}
+		end;}	
+	
+	if (EP7_SCHALLMAR >= 11) {
+		
+		if (EP7_MOINE == 2) {
+			mes "[" + @name$ + "]";
+			mes "Ah nous voilà rassurés ! Nous attendons avec impatience le retour de nos frères.";
+			close2;
+			getitem 29091,1;
+			set EP7_MOINE,3;
+			end;}
+			
+		if (EP7_MOINE == 3) {
+			mes "[" + @name$ + "]";
+			mes "C'est bientôt l'heure de la sexte, nous penserons à vous lors de notre office, que nos prières vous accompagnent !";
+			close;}
+
+		mes "[" + @name$ + "]";
+		mes "Merci pour votre aide ! N'oubliez pas certains de nos frères ont été enlevés par ces mêmes pirates, retrouvez-les et venez me voir !";
+		close2;
+		if(EP7_MOINE == 0) {
+			set EP7_MOINE,1;
+			setquest 70540;}
+		end;
+	}
+		
+}
+
+//=================================================================================
+
+ars_dun52,101,55,3	script	BrightSilver#ep7	494,{
+
+set @name$,"^66CCFFBrightSilver^000000";
+
+
+	if($@ep7Tiberine == 2) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ceci est le corps de BrightSilver.";
+		mes "Vous avez libéré les moines de Tibérine, vous devriez vous adresser à l'Abbé.";
+		close2;
+		if (EP7_SCHALLMAR == 10) {
+			set EP7_SCHALLMAR,11;
+			changequest 70511,70512;}
+		end;}
+
+
+
+	if (EP7_SCHALLMAR <= 9) {
+		mes "[" + @name$ + "]";
+		mes "J'm'en va prier, j'ai pas le temps pour toi, frérot.";
+		close;}
+
+	if (EP7_SCHALLMAR == 10) {
+		mes "[" + @name$ + "]";
+		mes "J'm'en va prier, j'ai pas le temps pour toi, frérot.";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous me semblez parler drôlement pour un moine, êtes-vous nouveau ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "J'sais pas de quoi tu me causes mais j'n'aime pas trop ton ton.";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Loin de moi l'idée de vous ennuyer, je trouve simplement vos manières brusques et peu raffinées.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Bordel ! Arrête de ...  m'enqu .. m'enquiqui ....";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "En effet, BrightSilver souhaite juste nous dire qu'il est bigrement difficile de s'exprimer lorsque l'on est un putain d'analphabète !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Qu .. Qu .. Quoi !!!??? Raaaaaahhhhhh !";
+		close2;
+		if($@ep7Tiberine == 0) {donpcevent "EP7_Tiberine::OnStart";}
+		end;}
+
+	if (EP7_SCHALLMAR >= 11) {
+	
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Ceci est le corps de BrightSilver.";
+			close;
+			}
+			
+}
+//=================================================================================
+
+-	script	EP7_Tiberine	-1,{
+
+
+OnInit:
+	
+	killmonsterall "ars_dun52";
+	set $@ep7Tiberine,0;
+	enablenpc "BrightSilver#ep7";
+	setnpctimer 0;
+	stopnpctimer;
+	end;
+
+OnStart:
+	
+	if( $EP7Annonce == 0 ) {mapannounce "ars_fild65","Instance -- Le Monastère de Tibérine !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 ) {announce "Instance -- Le Monastère de Tibérine !",0,0xFFCC66;}
+
+	initnpctimer;
+	set $@ep7Tiberine,1;	
+	disablenpc "BrightSilver#ep7";
+
+	monster "ars_dun52",101,55,""+getmonsterinfo(3944,0)+"",3944,1,"EP7_Tiberine::OnMobDead";
+	areamonster "ars_dun52",72,77,111,38,""+getmonsterinfo(3943,0)+"",3943,9,"EP7_Tiberine::OnMobDead";	
+	set $@monster_ep7Tiberine,10;
+	end;
+
+OnMobDead:
+
+	set $@monster_ep7Tiberine, $@monster_ep7Tiberine-1;
+	if($@monster_ep7Tiberine==0) {
+		set $@ep7Tiberine,2;
+		enablenpc "BrightSilver#ep7";
+		sleep2 5000;
+		donpcevent "BrightSilver#ep7::OnTalk1";
+		sleep2 120000;
+		donpcevent "EP7_Tiberine::OnInit";}
+	end;
+}
+
+//=================================================================================
+
+ars_fild70,214,212,0	script	#arsfild70a	45,1,1,{
+	
+	if (EP7_SCHALLMAR <= 11) {
+	
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Il vous semble bien apercevoir une ouverture mais pour le moment vous n'avez aucun moyen d'y accèder.";
+		close;}
+
+if (EP7_SCHALLMAR >= 12) {	
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ceci semble bel et bien la grotte indiquée par l'^66CCFFAbbé de Tiberine^000000. Vous y entrez.";
+		close2;
+		warp "ars_dun51",106,207; //retour début
+		end;}
+	
+}
+//=================================================================================
+
+-	script	EP7_SchallPirate1	-1,{
+
+OnInit:
+	
+	killmonsterall "ars_dun51";
+	set $@ep7Pirate1,0;
+	sleep2 500;
+	monster "ars_dun51",111,113,""+getmonsterinfo(3947,0)+"",3947,1,"EP7_SchallPirate1::OnMobDead";
+	set $@monster_ep7Pirate1,1;
+	end;
+
+OnMobDead:
+
+	set $@monster_ep7Pirate1, $@monster_monster_ep7Pirate1 -1;
+	if($@monster_monster_ep7Pirate1==0) {
+		donpcevent "EP7_SchallPirate1::OnEnd";}
+		end;
+	
+OnEnd:	
+		set $@ep7Pirate1,1;
+		sleep2 5000;
+		mapannounce "ars_dun51","Vous venez de tuer Rjackam et de récupérer ses clés. Vous devez retrouver des registres avec la destination des esclaves.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallPirate1::OnInit";
+		end;
+}
+//=================================================================================
+
+ars_dun51,32,154,0	script	Coffre#arsdun51	111,{
+
+set @name$,"^66CCFFOncle Tom^000000";
+	
+	if (EP7_SCHALLMAR == 12 && $@ep7Pirate1 == 1) {
+	
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Il y a effectivement des registres dans ce coffre, ainsi que de nombreuses "+getitemname($ep7_Tcoins)+".";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Merci de nous avoir sauvé aventuriers ! Nous étions retenus ici depuis quelques jours seulement.";
+		mes "Non, ici ce n'est qu'une gare de tri pour répartir les esclaves.";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Attendez, je vais lire un peu ces registres ...";
+		sleep2 1000;
+		mes "...";
+		sleep2 1000;
+		mes "...";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Etrange la plupart des esclaves ne sont pas envoyés à la Citadelle d'Airain ...";
+		mes "Un nom revient souvent ... Jan Vaneyeck du comptoir Mascate ...";
+		mes "Vous devriez lui poser quelques questions, il doit trainer dans des histoires des plus louches.";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Je vais m'occuper des autres esclaves, puis nous marcherons vers la liberté enfin retrouvée !";
+		close2;
+		set EP7_SCHALLMAR,13;
+		changequest 70513,70514;
+		getitem $ep7_Tcoins,$ep7silvercoinnb[14];
+		end;}
+
+	if (EP7_SCHALLMAR <= 12) {
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ce coffre est fermé par une clé et vous n'arrivez pas à forcer la serrure.";
+		close;}	
+		
+	if (EP7_SCHALLMAR > 12) {	
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ce coffre a déjà été vidé par vos soins. Les documents sont en possession de l'Oncle Tom.";
+		close;}
+	
+}
+//=================================================================================
+
+ars_dun51,31,161,3	script	Oncle Tom#ep7	448,{
+
+set @name$,"^66CCFFOncle Tom^000000";
+
+	if (EP7_SCHALLMAR <= 12) {
+
+		mes "[" + @name$ + "]";	
+		mes "Oh ! Mais vous n'êtes pas des pirates !";
+		mes "Attaquez Rjackam et apportez moi sa clé s'il vous plait !";
+		close;}
+
+
+	if (EP7_SCHALLMAR <= 13) {
+	
+		mes "[" + @name$ + "]";	
+		mes "Etrange la plupart des esclaves ne sont pas envoyés à la Citadelle d'Airain ...";
+		mes "Un nom revient souvent ... Jan Vaneyeck du comptoir Mascate ...";
+		mes "Vous devriez lui poser quelques questions, il doit trainer dans des histoires des plus louches.";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Je vais m'occuper des autres esclaves, puis nous marcherons vers la liberté enfin retrouvée !";
+		close;}
+
+	if (EP7_SCHALLMAR <= 18) {
+
+		mes "[" + @name$ + "]";	
+		mes "Quoi les documents sont faux ! C'est impossible, ils mentent !";
+		close;}
+
+	mes "[" + @name$ + "]";	
+	mes "Vous avez fait un grand bien à Brynnlaw avec ce coup de balai.";
+	close;
+}
+//=================================================================================
+
+ars_dun47,86,74,5	script	Jan Vaneyeck#ep7	749,{
+
+set @name$,"^66CCFFJan Vaneyeck^000000";
+
+	if (EP7_SCHALLMAR <= 12) {
+		mes "[" + @name$ + "]";	
+		mes "Si vous voulez des épices adressez-vous plutôt aux marchands du port, je ne vends pas au détail.";
+		close;}
+
+	if (EP7_SCHALLMAR == 13) {
+		mes "[" + @name$ + "]";	
+		mes "Si vous voulez des épices adressez-vous plutôt aux marchands du port, je ne vends pas au détail.";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "J'ai quelques documents à vous montrer ... Je viens tout juste de les récupérer dans une grotte du Monastère de Tibérine.";
+		mes "Est-ce que cela vous dit quelque chose ?";
+		next;
+ 		mes "[" + @name$ + "]";
+		mes "Je n'ai pas à vous répondre, si vous tentez de saboter mon commerce, vous n'allez pas vous en tirer ainsi !";
+		mes "Nous allons régler nos différends au tribunal de Brynnlaw.";
+		mes "Je vais y envoyer mon avocat.";
+		close2;
+		changequest 70514,70515;
+		set EP7_SCHALLMAR,14;
+		end;}
+
+	if (EP7_SCHALLMAR == 14) {
+		mes "[" + @name$ + "]";
+		mes "Je n'ai pas à vous répondre, si vous tentez de saboter mon commerce, vous n'allez pas vous en tirer ainsi !";
+		mes "Nous allons régler nos différends au tribunal de Brynnlaw.";
+		mes "Je vais y envoyer mon avocat.";
+		close;}
+
+	if (EP7_SCHALLMAR <= 17 && EP7_SCHALLMAR >= 15) {
+		mes "[" + @name$ + "]";
+		mes "Les gars, menez-le à la garde, il n'a rien à faire ici !";
+		close2;
+		warp "ars_dun53",59,224;
+		end;}
+	
+	mes "[" + @name$ + "]";
+	mes "Ceci est le corps de Jan Vaneyeck.";
+	close;
+	
+}
+
+
+//=================================================================================
+
+ars_fild66,216,162,5	script	Milice de Brynnlaw#ep7	780,5,5,{
+
+set @name$,"^66CCFFMilice de Brynnlaw^000000";
+
+	if (EP7_SCHALLMAR == 14) {
+		mes "[" + @name$ + "]";
+		mes "On vous attend au tribunal de Brynnlaw !";
+		close;}
+
+	mes "[" + @name$ + "]";
+	mes "Je vois que vous portez des armes, je vous garde à l'oeil.";
+	close;
+
+OnTouch:
+
+set @name$,"^66CCFFMilice de Brynnlaw^000000";
+
+	if (EP7_SCHALLMAR == 14) { npctalk "Eh vous ! On vous attend au tribunal de Brynnlaw !";}
+
+	if (EP7_SCHALLMAR <= 18 && EP7_SCHALLMAR >= 15) {
+
+		mes "[" + @name$ + "]";
+		mes "Vous ! En prison !";
+		close2;
+		warp "ars_dun53",59,224;
+		end;}
+}
+ars_fild66,166,256,2	duplicate(Milice de Brynnlaw#ep7)	Milice de Brynnlaw#ep7a	780,5,5,
+ars_fild66,130,186,2	duplicate(Milice de Brynnlaw#ep7)	Milice de Brynnlaw#ep7b	780,5,5,
+ars_fild66,157,181,5	duplicate(Milice de Brynnlaw#ep7)	Milice de Brynnlaw#ep7c	780,5,5,
+ars_fild66,233,204,5	duplicate(Milice de Brynnlaw#ep7)	Milice de Brynnlaw#ep7d	780,5,5,
+ars_fild66,173,120,5	duplicate(Milice de Brynnlaw#ep7)	Milice de Brynnlaw#ep7e	780,5,5,
+ars_fild66,137,164,5	duplicate(Milice de Brynnlaw#ep7)	Milice de Brynnlaw#ep7f	780,5,5,
+//=================================================================================
+
+ars_dun54,128,158,5	script	Juge#ep7	867,{
+
+set @name$,"^66CCFFJuge^000000";
+set @name2$,"^66CCFFAvocat de Jan^000000";
+set @name3$,"^66CCFFSergent Alfraid^000000";
+
+	if (EP7_SCHALLMAR == 14) {
+		mes "[" + @name$ + "]";
+		mes "Bien, vous êtes ^33CC00" + strcharinfo(0) + "^000000 n'es-ce pas ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Nous venons de recevoir une plainte pour diffamation à votre encontre.";
+		mes "Le plaignant est ^66CCFFJan Vaneyeck^000000, commerçant de son état.";
+		mes "Vous l'avez accusé d'esclavagisme avec de faux documents ...";
+		next;
+		mes "[" + @name2$ + "]";
+		mes "En effet mon client estime avoir été insulté et sali par ce sinistre individu.";
+		mes "Individu qui est manifestement à la solde d'autres commerçants voulant nuire aux affaires de mon client.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "^33CC00" + strcharinfo(0) + "^000000 avez vous ces documents ?";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Oui, la voici :";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Hmm, en effet les charges sont lourdes, ainsi les razzias des pirates seraient liées au commerce des épices ?";
+		next;
+		mes "[" + @name2$ + "]";
+		mes "Voyez ce que nous pouvons entendre comme anneries !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Expert ! Venez donc vérifier l'authenticité de ce document ...";
+		next;
+		mes "[" + @name3$ + "]";
+		mes "Sergent Alfraid présent ! Je vais regarder ces documents.";
+		mes "...";
+		next;
+		mes "[" + @name3$ + "]";
+		mes "Ce document est clairement un faux, aucun pirate ne tiendrait ainsi ses registres.";
+		mes "Nous avons à faire à un perfide manipulateur mon Juge.";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Et la grotte et les prisonniers !";
+		next;
+		mes "[" + @name3$ + "]";
+		mes "Nous connaissons cette grotte et nous y faisons régulièrement des rondes.";
+		mes "Monsieur le Juge, je peux déclarer sous serment que cette grotte est vide et ce au nom de toute la Milice de Brynnlaw.";
+		next;
+		mes "[" + @name2$ + "]";
+		mes "Nous demandons face à ce calomniateur, qu'il soit mis aux fers et le plus rapidement possible ! ";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Gardes ! Mettez-le prison le temps que nous fassions une enquête complémentaire !";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Lâchez-moi ... !!!";
+		close2;
+		changequest 70515,70516;
+		set EP7_SCHALLMAR,15;
+		warp "ars_dun53",59,224;
+		end;}
+
+	if (EP7_SCHALLMAR <= 18 && EP7_SCHALLMAR >= 15) {
+
+		mes "[" + @name$ + "]";
+		mes "Vous ! Que faites-vous là ! Gardes ! Menez-le en prison !";
+		close2;
+		warp "ars_dun53",59,224;
+		end;}
+
+	if (EP7_SCHALLMAR <= 24) {
+
+		mes "[" + @name$ + "]";
+		mes "Vous ! Bon sang ! Ne devriez être vous pas en prison ?!";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Attendez Monsieur le Juge, c'est pas moi, je vous le jure sur la tête à ma mère, y'a une de ces graves méprises.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Vous dites ?";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "J'ai de nouveaux documents à vous montrer !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Voyons voir ...";
+		mes "Oh ! intéressant ! Même très intéressant !";
+		mes "Sergent Alfraid, venez donc et dites moi ce que vous pensez de cela !";
+		next;
+		mes "[" + @name3$ + "]";
+		mes "Juge Dredd ! La garnison de la milice a été attaquée, le Satrape Rouy est mort !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Êtes-vous responsable de cette attaque et de la mort de notre Satrape !?";
+		next;
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "En effet, mais comme ces documents le prouvent, je viens de démanteler un atelier clandestin d'épices ;";
+		mes "Ainsi qu'une filière d'esclavagistes qui utilisaient de pauvres hères pour travailler sans peine.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ces documents sont accablants, cela fait en effet plusieurs temps que je m'en doutais ... mais vous savez cette milice et le satrape étaient très puissants.";
+		mes "La Situation me semble assez critique pour risquer l'instauration d'un couvre-feu.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Je vais prendre le pouvoir et assurer l'intérim, le temps que les autorités de Schallmar arrivent pour rétablir la situation.";
+		mes "Mais attendez un peu !!";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Certaines personnes ont été vendues dans un Bordel ... Celui de Madame Claude !";
+		mes "C'est la patronne de la Couronne de Cuivre ... Je crois bien qu'il va falloir intervenir et ce au plus vite pour ces pauvres filles.";
+		mes "Je vous charge de cette mission ... et pour cause vous avez tué toute ma milice !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Essayez la discretion cette fois-ci, ce n'est pas la peine de faire un nouveau carnage.";
+		close2;
+		if (EP7_SCHALLMAR == 19) {
+			changequest 70520,70521;
+			set EP7_SCHALLMAR,20;}
+		end;}
+
+if (EP7_SCHALLMAR >= 25) {
+
+		mes "[" + @name$ + "]";
+		mes "Félicitations pour votre enquête ! Je n'ai pas eu vent d'un massacre cette fois-ci !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Les problèmes sont très graves pour le moment, je ne vais pas pouvoir maintenir l'ordre dans la région bien longtemps.";
+		mes "Voulez-vous bien être mon émissaire au près des autorités de Schallmar ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Voici une Carte Maritime des îles de Schallmar pour vous aventurer dans ces eaux là.";
+		mes "Et là quelques lettres à remettre à l'Empereur des mers ...";
+		close2;
+		if (EP7_SCHALLMAR == 25) {
+			completequest 70526;
+			setquest 70600;
+			set EP7_SCHALLMAR,26;
+			getitem 29086,1;}
+		end;
+		}
+
+	mes "[" + @name$ + "]";
+	mes "Je m'occupe de juger les différentes affaires des îles de la région de Brynnlaw.";
+	close;
+
+}
+//=================================================================================
+
+ars_dun54,122,156,5	script	Avocat de Jan#ep7	110,{
+
+set @name$,"^66CCFFAvocat de Jan^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Je peux défendre n'importe qui et n'importe quoi tant que je suis payé, mon gars !";
+	close;
+}
+//=================================================================================
+
+ars_dun54,133,156,2	script	Sergent Alfraid#ep7	416,{
+
+set @name$,"^66CCFFSergent Alfraid^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Je suis expert auprès de la cour.";
+	close;
+}
+
+//=================================================================================
+
+ars_dun53,59,231,5	script	Action : ?#50	111,{
+
+set @name$,"^33CC00Action : ?^000000"; 
+
+	if (EP7_SCHALLMAR <= 15) {
+		mes "[" + @name$ + "]";
+		mes " Ceci est un mur de pierre.";
+		close;}
+
+	if (EP7_SCHALLMAR >= 16) {
+		mes "[" + @name$ + "]";
+		mes "Vous venez d'emprunter le tunnel de MonteChritos.";
+		close2;
+		warp "ars_fild66",202,279;
+		end;}
+}
+
+//=================================================================================
+
+ars_fild66,139,260,5	script	Rako Magnie#ep7	410,6,6,{
+
+set @name$,"^66CCFFRako Magnie^000000";
+
+	if (EP7_SCHALLMAR == 16 || EP7_SCHALLMAR == 17) {
+		mes "[" + @name$ + "]";
+		mes "Je vous ai entendu à l'audience au tribunal de Brynnlaw.";
+		mes "J'ai quelques informations pour vous, voir bien plus ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "J'ai réussi à m'échapper de l'atelier clandestin de Jan Vaneyeck il y a quelques temps.";
+		mes "Depuis je récupère quelques informations vu que la garde est complétement corrompue.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Dans la maison de Jan Vaneyeck, il y a une porte secrète dans son salon.";
+		mes "Voici la clé ... faites le ménage par pitié et sauvez mes compagnons !";
+		close2;
+		if (EP7_SCHALLMAR == 16) {
+		changequest 70517,70518;
+		set EP7_SCHALLMAR,17;}
+		end;}
+
+	if (EP7_SCHALLMAR >= 18) {
+		mes "[" + @name$ + "]";
+		mes "Merci de pour votre aide !";
+		mes "Cette maudite garde va devoir payer son tribut !";
+		close;}
+
+	mes "[" + @name$ + "]";
+	mes "Le temps est à l'orage, non ?";
+	close;
+
+OnTouch:
+
+	if (EP7_SCHALLMAR == 16) {npctalk "Hep' vous !";}
+	end;
+}
+
+//=================================================================================
+
+ars_dun47,140,95,5	script	Action : Ouvrir#50	111,{
+
+set @name$,"^33CC00Action : Ouvrir^000000"; 
+
+	if (EP7_SCHALLMAR <= 16) {
+		mes "[" + @name$ + "]";
+		mes "Cette porte est fermée à clé, la serrure ne peut être forcée.";
+		close;}
+
+	if (EP7_SCHALLMAR >= 17) {
+		mes "[" + @name$ + "]";
+		mes "Vous venez d'utiliser la clé de Rako Magnie, la porte vient de s'ouvrir.";
+		close2;
+		warp "ars_dun47",148,142;
+		if($@ep7Pirate2 == 0) {donpcevent "EP7_SchallPirate2::OnStart";}
+		end;}
+}
+
+//=================================================================================
+
+-	script	EP7_SchallPirate2	-1,{
+
+OnInit:
+	
+	killmonsterall "ars_dun47";
+	set $@ep7Pirate2,0;
+	end;
+
+OnStart:
+
+	if( $EP7Annonce == 0 ) {mapannounce "ars_dun47","Instance -- L'Atelier Clandestin de Jan Vaneyeck !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 ) {announce "Instance -- L'Atelier Clandestin de Jan Vaneyeck !",0,0xFFCC66;}
+
+	set $@ep7Pirate2,1;
+	monster "ars_dun47",164,183,""+getmonsterinfo(3948,0)+"",3948,1,"EP7_SchallPirate2::OnMobDead";
+	monster "ars_dun47",123,184,""+getmonsterinfo(3949,0)+"",3949,1,"EP7_SchallPirate2::OnMobDead";
+
+	areamonster "ars_dun47",106,209,198,172,""+getmonsterinfo(3946,0)+"",3946,10,"EP7_SchallPirate2::OnMobDead";
+	areamonster "ars_dun47",106,209,198,172,""+getmonsterinfo(3945,0)+"",3945,8,"EP7_SchallPirate2::OnMobDead";
+	areamonster "ars_dun47",106,209,198,172,""+getmonsterinfo(3945,0)+"",3945,5,"EP7_SchallPirate2::OnMobDead";
+	set $@monster_ep7Pirate2,25;
+	end;
+
+OnMobDead:
+
+	set $@monster_ep7Pirate2, $@monster_ep7Pirate2 -1;
+	if($@monster_ep7Pirate2==0) {
+		donpcevent "EP7_SchallPirate2::OnEnd";}
+		end;
+		
+OnEnd:
+		set $@ep7Pirate2,2;
+		sleep2 5000;
+		mapannounce "ars_dun47","Vous venez de tuer Jan Vaneyeck, vous pouvez prendre la sortie.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallPirate2::OnInit";
+		end;
+}
+
+//=================================================================================
+
+ars_dun47,195,194,5	script	#arsdun49a	45,1,1,{
+
+
+	if (EP7_SCHALLMAR >= 17 && $@ep7Pirate2 == 2) {
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous sortez vers le quai secondaire du Comptoir Mascate.";
+		mes "Les miliciens de Brynnlaw étaient présent, votre prochain objectif est la Caserne de Brynnlaw.";
+		mes "Vous devez mettre fin aux agissements de cette milice corrompue.";
+		close2;
+		if (EP7_SCHALLMAR == 17) {
+		changequest 70518,70519;
+		set EP7_SCHALLMAR,18;}
+		warp "ars_fild68",251,282;
+		end;}
+
+
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	mes "Vous ne pouvez pas sortir pour le moment.";
+	close;
+}
+//=================================================================================
+
+ars_fild68,269,316,5	script	#arsfild66a	45,1,1,{
+
+warp "ars_fild68",268,319;
+disguise $Ep7_BoatID; 
+end;
+}
+//=================================================================================
+
+ars_dun53,96,29,5	script	#arsdun53a	45,1,1,{
+
+
+	if (EP7_SCHALLMAR >= 18) {
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous venez de forcer la porte de la Caserne de Brynnlaw.";
+		close2;
+		if($@ep7Pirate3 == 0 ) {donpcevent "EP7_SchallPirate3::OnStart";}
+		warp "ars_dun53",96,37;
+		end;
+}
+
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	mes "L'accès à la caserne de Brynnlaw est fermé.";
+	close;
+}
+
+//=================================================================================
+
+-	script	EP7_SchallPirate3	-1,{
+
+OnInit:
+	
+	killmonsterall "ars_dun53";
+	set $@ep7Pirate3,0;
+	end;
+
+OnStart:
+
+	if( $EP7Annonce == 0 ) {mapannounce "ars_dun53","Instance -- Caserne de Brynnlaw.",1,0xFFCC66;}
+	if( $EP7Annonce == 1 ) {announce "Instance -- Caserne de Brynnlaw.",0,0xFFCC66;}
+
+	set $@ep7Pirate3,1;
+	monster "ars_dun53",102,45,""+getmonsterinfo(3951,0)+"",3951,1,"EP7_SchallPirate3::OnMobDead";
+	monster "ars_dun53",159,88,""+getmonsterinfo(3952,0)+"",3952,1,"EP7_SchallPirate3::OnMobDead";
+	monster "ars_dun53",59,93,""+getmonsterinfo(3953,0)+"",3953,1,"EP7_SchallPirate3::OnMobDead";
+
+	areamonster "ars_dun53",0,200,200,0,""+getmonsterinfo(3945,0)+"",3945,40,"EP7_SchallPirate3::OnMobDead2";
+	set $@monster_ep7Pirate3,3;
+	end;
+
+OnMobDead:
+
+	set $@monster_ep7Pirate3, $@monster_ep7Pirate3 -1;
+	if($@monster_ep7Pirate3==0) {
+		donpcevent "EP7_SchallPirate3::OnEnd";}
+		end;
+
+OnEnd:
+		set $@ep7Pirate3,2;
+		sleep2 5000;
+		mapannounce "ars_dun53","Vous devez vous rendre dans le bureau du Satrape Rouy pour récupérer des documents.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallPirate3::OnInit";
+		end;
+
+OnMobDead2:end;
+}
+
+//=================================================================================
+
+ars_dun53,162,73,0	script	Tiroir#arsdun53	111,{
+
+set @name$,"^33CC00Tiroir^000000"; 
+
+	if (EP7_SCHALLMAR == 18 && $@ep7Pirate3 == 2) {
+	
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous venez de récupérer les documents mettant en évidence la trahison de la Milice.";
+		mes "Vous devez porter ces documents au juge de Brynnlaw pour vous blanchir.";	
+		close2;
+		set EP7_SCHALLMAR,19;
+		changequest 70519,70520;
+		getitem $ep7recompense[43],$ep7recompensenb[43];
+		end;}
+
+	if (EP7_SCHALLMAR <= 18) {
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ce tiroir est fermé par une clé et vous n'arrivez pas à forcer la serrure.";
+		close;}	
+
+
+	if (EP7_SCHALLMAR > 18) {	
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ce Tiroir a déjà été vidé par vos soins. Les documents doivent être portés au Juge de Brynnlaw.";
+		close;}
+	
+}
+//=================================================================================
+
+ars_dun48,57,31,5	script	Madame Claude#ep7	856,{
+
+set @name$,"^FF00CCMadame Claude^000000";
+
+	if (EP7_SCHALLMAR <= 19) {
+		mes "[" + @name$ + "]";
+		mes "Je vous souhaite la bienvenue à la Couronne de Cuivre, nous offrons de nombreux services à nos clients.";
+		mes "Passez un bon moment parmi nous !";
+		close;}
+
+	if (EP7_SCHALLMAR <= 23) {
+		mes "[" + @name$ + "]";
+		mes "Je vous souhaite la bienvenue à la Couronne de Cuivre, nous offrons de nombreux services à nos clients.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Quoi !? Comment osez-vous un bordel dans mon respectable établissement !?";
+		mes "Veuillez rester correct, je ne vais pas tolérer de telles allégations.";
+		close2;
+		if (EP7_SCHALLMAR == 20) {
+			changequest 70521,70522;
+			set EP7_SCHALLMAR,21;}
+		end;}
+
+	if (EP7_SCHALLMAR >= 24) {
+		mes "[" + @name$ + "]";
+		mes "Vous êtes vraiment un fouineur ... Me voilà avec un procès et une perte de client important !";
+		mes "Mais j'ai des relations haut placées ! Sachez que vous n'allez pas vous en tirer à si bon compte.";
+		close;}
+}
+//=================================================================================
+
+ars_dun48,71,22,5	script	Client éméché#ep7	823,{
+
+set @name$,"^66CCFFClient éméché^000000";
+
+	if (EP7_SCHALLMAR <= 20) {
+		mes "[" + @name$ + "]";
+		mes "*hic* ... T'sais moi j'vais pas rester dans c'te bled tout bourri *hic* ...";
+		close;}
+
+	if (EP7_SCHALLMAR >= 21) {
+		mes "[" + @name$ + "]";
+		mes "*hic* ... Un bordel dans c'te rade !? Ouep et un bon .. *hic*";
+		mes "Mais c'te gourgandine de m'dame Claude, e'veut plus me laisser entrer après mon dernier scandale, t'vois.";
+		mes "Faudrait que j'te bourlingue par les égouts mais j'prefere encore rester sur le zinc, t'vois ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Eh pi', faut une invit' s'non ces gorilles vont po'être des plus causant t'vois ?";
+		close2;
+		if (EP7_SCHALLMAR == 21) {
+			changequest 70522,70523;
+			set EP7_SCHALLMAR,22;}
+		end;}
+
+}
+//=================================================================================
+
+ars_dun48,106,40,5	script	Noble#ep7	798,{
+
+set @name$,"^66CCFFNoble^000000";
+
+	if (EP7_SCHALLMAR <= 21) {
+		mes "[" + @name$ + "]";
+		mes "Oula cette maudite liqueur enivre bien plus de prévu ...";
+		close;}
+
+	if (EP7_SCHALLMAR >= 22) {
+		mes "[" + @name$ + "]";
+		mes "Oula cette maudite liqueur enivre bien plus de prévu ...";
+		mes "Je me retrouve coincé ici dans ce bar car j'ai oublié dans ma demeure mon carton d'inivtation pour ...";
+		mes "Vous savez ... Les soirées de ^FF00CCMadame Claude^000000 ...";
+		close;}
+
+}
+
+//=================================================================================
+
+ars_dun56,35,32,5	script	Action : Fouiller#ep7	111,{
+
+set @name$,"^33CC00Action : Fouiller^000000"; 
+
+	if (EP7_SCHALLMAR <= 21 || EP7_SCHALLMAR >= 23) {
+		mes "[" + @name$ + "]";
+		mes "Il n'y a rien à vous intéresser ici.";
+		close;}
+
+	if (EP7_SCHALLMAR == 22) {
+		mes "[" + @name$ + "]";
+		mes "Vous venez de récupérer un carton d'invitation pour le bordel de ^FF00CCMadame Claude^000000.";
+		close2;
+		if (EP7_SCHALLMAR == 22) {
+			changequest 70523,70524;
+			set EP7_SCHALLMAR,23;}
+		end;}
+
+}
+
+//=================================================================================
+
+ars_dun55,128,88,5	script	Videur#ep7	810,{
+
+set @name$,"^66CCFFVideur^000000";
+
+	if (EP7_SCHALLMAR <= 22) {
+		mes "[" + @name$ + "]";
+		mes "Avez-vous un carton d'invitation ? Non ? Et bien veuillez laisser la place pour les invités et ne veuillez pas insister.";
+		close;}
+
+	if (EP7_SCHALLMAR >= 23) {
+		mes "[" + @name$ + "]";
+		mes "Avez-vous un carton d'invitation ?";
+		mes "Bien parfait, si vous voulez vous donner la peine d'entrer ...";
+		close2;
+		warp "ars_dun55",141,88;
+		end;}
+
+}
+
+//=================================================================================
+
+ars_dun48,85,87,5	script	Marguerite#ep72	861,{
+
+set @name$,"^FF00CCMarguerite^000000";
+
+	if (EP7_SCHALLMAR <= 22) {
+		mes "[" + @name$ + "]";
+		mes "Je suis prisonnière ici ... Sauvez-moi de mes geôliers !";
+		close;}
+
+
+	if (EP7_SCHALLMAR == 23 && $@ep7Pirate4 == 2) {
+		mes "[" + @name$ + "]";
+		mes "Oh ! Merci pour la clé !";
+		mes "Me voilà enfin libre, je peux enfin retourner dans mon île et retrouver mes parents !";
+		close2;
+		changequest 70524,70525;
+		set EP7_SCHALLMAR,24;
+		end;}
+
+	if (EP7_SCHALLMAR == 23 && $@ep7Pirate4 <= 1) {
+		mes "[" + @name$ + "]";
+		mes "Je suis prisonnière ici ... Sauvez-moi de mes geôliers !";
+		mes "Je suis enchainée, il me faut la clé du gardien, le gardien Sade !";
+		close;}
+
+	if (EP7_SCHALLMAR >= 24) {
+		mes "[" + @name$ + "]";
+		mes "Merci pour votre aide ! Je peux enfin retourner dans mon île et retrouver mes parents !";
+		close;}
+
+}
+//=================================================================================
+
+ars_dun48,162,87,3	script	Gardien Sade#ep7	483,{
+
+set @name$,"^66CCFFGardien Sade^000000";
+
+	if (EP7_SCHALLMAR <= 22) {
+		mes "[" + @name$ + "]";
+		mes "Bienvenue dans notre maison des plaisirs !";
+		close;}
+		
+	if (EP7_SCHALLMAR == 23) {
+		mes "[" + @name$ + "]";
+		mes "^FF00CCMadame Claude^000000 m'a parlé de vous ... ainsi vous-voulez me prendre mon p'tit jouet ?";
+		mes "Elle est mienne !";
+		close2;
+		if($@ep7Pirate4==0) {
+			donpcevent "EP7_SchallPirate4::OnStart";}
+		end;}
+		
+	if (EP7_SCHALLMAR >= 24) {
+		mes "[" + @name$ + "]";
+		mes "Ceci est le corps du ^66CCFFGardien Sade^000000.";
+		close;}
+}
+
+//=================================================================================
+
+-	script	EP7_SchallPirate4	-1,{
+
+OnInit:
+	enablenpc "Gardien Sade#ep7";
+	killmonsterall "ars_dun48";
+	set $@ep7Pirate4,0;
+	end;
+
+OnStart:
+
+	if( $EP7Annonce == 0 ) {mapannounce "ars_dun48","Combat - La Couronne de Cuivre !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 ) {announce "Combat - La Couronne de Cuivre !",0,0xFFCC66;}
+
+	set $@ep7Pirate4,1;
+	monster "ars_dun48",162,87,""+getmonsterinfo(3954,0)+"",3954,1,"EP7_SchallPirate4::OnMobDead";
+	disablenpc "Gardien Sade#ep7";
+	set $@monster_ep7Pirate4,1;
+	end;
+
+OnMobDead:
+
+	set $@monster_ep7Pirate4, $@monster_ep7Pirate4 -1;
+	if($@monster_ep7Pirate4==0) {
+		donpcevent "EP7_SchallPirate4::OnEnd";}
+		end;
+		
+OnEnd:
+		set $@ep7Pirate4,2;
+		sleep2 5000;
+		mapannounce "ars_dun48","Vous venez de tuer le Gardien Sade, vous pouvez libérer Marguerite.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallPirate4::OnInit";
+		end;
+}
+
+
+
+
+//_________________________________________________________________
+//________________ Brynnlaw : Moines Disparus de Tibérine _________
+//_________________________________________________________________
+
+ars_dun47,103,199,5	script	Moine de Tibérine#ep7	412,{
+
+set @name$,"^66CCFFMoine de Tibérine^000000";
+
+	if (EP7_MOINE == 0) {
+		mes "[" + @name$ + "]";
+		mes "Nous sommes des moines de Tibérine ...";
+		close;}
+
+	if (EP7_MOINE == 1 && $@ep7Pirate2 == 2) {
+		mes "[" + @name$ + "]";
+		mes "Merci de nous avoir libérés, nous allons nous occuper des autres esclaves, vous pouvez continuer votre noble quête ...";
+		close2;
+		completequest 70540;
+		set EP7_MOINE,2;
+		end;}
+		
+	if (EP7_MOINE == 1) {
+		mes "[" + @name$ + "]";
+		mes "Faites ce que vous avez à faire, nous ne pouvons sortir tant que ces esclavagistes nous tiennent sous leur joug.";
+		close;}
+
+
+
+if (EP7_MOINE >= 2) {
+	mes "[" + @name$ + "]";
+	mes "Merci de nous avoir libérés, nous allons nous occuper des autres esclaves, vous pouvez continuer votre noble quête ...";
+	close;}
+	
+}
+
+//_________________________________________________________________
+//________________ Les Grottes du Gwened __________________________
+//_________________________________________________________________
+
+ars_dun56,101,81,5	script	Gwen de Saint-Glen#ep7	804,{
+
+set @name$,"^66CCFFGwen de Saint-Glen^000000";
+
+	if (EP7_TRESORB >= 3) {
+		mes "[" + @name$ + "]";
+		mes "Je n'ose vous dire avec quel enthousiasme nous attendons les résultats de votre enquête !";
+		close;}
+
+	if (EP7_TRESORB <= 2) {
+		mes "[" + @name$ + "]";
+		mes "Ici, vous vous trouvez dans la société des Inventeurs de trésor !";
+		mes "Nous parcourons les mers et les continents à la recherche des mystères de nptre monde !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Vous m'avez l'air d'un sacré aventurier, affûté comme vous êtes vous ne devez avoir maille à partir avec grand monde !";
+		mes "Nous recherchons des membres, non pour les recherches dans les antiques manuscrits qui nous entourent mais pour se rendre sur le terrain.";
+		next;
+		if (EP7_TRESORB == 0) {
+			mes "[" + @name$ + "]";
+			mes "Ce n'est pas pour vous faire peur, mais nous avons de sacrés pertes parmi nous aventuriers ...";
+			mes "Donc si vous êtes intéressé, vous pouvez revenir me voir pour obtenir un contrat et une mission ...";
+			close2;
+			setquest 70560;
+			set EP7_TRESORB,1;
+			end;}
+
+		mes "[" + @name$ + "]";
+		mes "Ainsi vous êtes intéressé ! Quelle merveille !";
+		mes "Cela va faire avancer de nombreux mystères pour la connaissance !";
+		mes "Alors voici ce que j'ai à vous proposer, attention ces données sont confidentielles ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Il y a peu, un employé de la ville, affecté à la maintenance des égouts, aurait aperçu un monstre humanoïde sortant des Grottes du Gwened.";
+		mes "Ces grottes sont rattachées à Brynnlaw par les égouts car nous y vidons nos déchets.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Bien qu'aucune trace de ce monstre n'a pu être relevée dans les égouts, nous avons tout lieu de croire que celui-ci existe bel et bien.";
+		mes "Donc votre mission, si vous l'acceptez, est de trouver une preuve, ou mieux le monstre en lui-même, et de nous la rapporter pour que nous puissions l'analyser.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Pour commencer votre enquête, je vous conseille de rendre visite à Joan Beeze à son domicile de Brynnlaw.";
+		mes "Il vous apportera surement des indices cruciaux pour votre quête.";
+		close2;
+		if (EP7_TRESORB == 1) {
+			changequest 70560,70561;
+			set EP7_TRESORB,2;}
+		end;}
+		
+
+}
+
+//=================================================================================
+
+ars_fild66,260,173,2	script	Rita Malherbe#ep7	879,{
+
+set @name$,"^FF00CCRita Malherbe^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Je suis inquiète, j'ai beau frapper à sa porte et il ne me répond pas ...";
+	mes "^66CCFFJoan Beeze^000000 était un peu étrange ces temps-ci ... Il a surement du partir ...";
+	mes "*^33CC00Sniff*^000000 .... ^33CC00*Sniff*^000000 ...";
+	close;
+}
+
+//=================================================================================
+
+ars_dun56,199,30,5	script	Action : Fouiller#ep71	111,{
+
+set @name$,"^33CC00Action : Fouiller^000000"; 
+
+	if (EP7_TRESORB <= 1) {
+		mes "[" + @name$ + "]";
+		mes "Il n'y a rien à vous intéresser ici.";
+		close;}
+
+	if (EP7_TRESORB >= 2) {
+		mes "[" + @name$ + "]";
+		mes "Vous venez de trouver une lettre signée par Joan Beeze :";
+		mes "^66CCFFExcuse-moi Rita, mais j'ai du m'en fuir dans l'Archipel de Coppalana ...^000000";
+		mes "^66CCFFJe ne me sens plus en sécurité ici après ce que j'ai vu dans les égouts.^000000";
+		mes "^66CCFFAh oui, pense à nourrir le chat ...^000000";
+		close;}
+
+}
+//=================================================================================
+ars_dun56,200,38,5	script	Chat de Joan#ep7	876,{
+
+set @name$,"^33CC00Chat de Joan^000000";
+
+	mes "[" + @name$ + "]";
+	mes "^33CC00*Miaouuuu !*^000000";
+	close;
+}
+
+//=================================================================================
+ars_dun61,129,86,5	script	Joan Beeze#ep7	898,{
+
+set @name$,"^66CCFFJoan Beeze^000000";
+
+	if (EP7_TRESORB <= 1) {
+		mes "[" + @name$ + "]";
+		mes "^33CC00*Arghhhhh !!*^000000";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Excusez-moi, je suis quelque peu sur les nerfs en ce moment ...";
+		close;
+	}
+	
+	if (EP7_TRESORB == 2 || EP7_TRESORB == 3) {
+			mes "[" + @name$ + "]";
+			mes "^33CC00*Arghhhhh !!*^000000";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Vous m'avez fait peur ... Que faites-vous dans ma chambre ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Ah vous venez pour le monstre ? Vous me croyez, n'es-ce pas ?";
+			mes "Ce monstre avait une forme humaine ... mais il était si ...";
+			mes "Hideux ! Dès qu'il m'a vu il a fuit vers les Grottes du Gwened ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Si vous êtes assez fou pour le suivre, allez-y !";
+			mes "Je ne me sens plus en sécurité à Brynnlaw, je vais rester ici ...";
+			close2;
+			if (EP7_TRESORB == 2) {
+				changequest 70561,70562;
+				set EP7_TRESORB,3;}
+			end;}
+
+		
+}
+
+//=================================================================================
+ars_dun55,75,218,5	script	#arsdun55b	45,1,1,{
+
+
+	if (EP7_TRESORB <= 2) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ce tunnel est bien trop sombre pour s'y aventurer.";
+		close;	
+	}
+
+	warp "ars_dun60",133,23;
+	end;
+}
+
+//=================================================================================
+
+ars_dun62,129,24,2	script	Hanric Mutant#ep7	999,{
+
+set @name$,"^66CCFFHanric Mutant^000000";
+
+	if (EP7_TRESORB <= 2) {
+		mes "[" + @name$ + "]";
+		mes "^33CC00*Arghhhhh !!*^000000";
+		mes "Fuyez misérables !";
+		close;
+	}
+	
+	if (EP7_TRESORB == 3 || EP7_TRESORB == 4) {
+		mes "[" + @name$ + "]";
+		mes "Ne partez pas !";
+		mes "Nous sommes des humains ! Du moins nous l'étions ...";
+		mes "Nous sommes juste des victimes d'expériences interdites ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Nous venons tous de la Mer de Schallmar, de différentes îles, les pirates nous ont vendu à des mages ..";
+		mes "Des mages n'appartenant pas au Concile des Mages d'Arsinoé se sont servis de nous pour leur expérimentations.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Nous sommes plusieurs mutants a s'être échappé de leur laboratoire il y a quelques jours.";
+		mes "Dès que nous arrivons dans les égouts de Brynnlaw pour enfin pouvoir ressorir, nous sommes pris à parti par la milice qui tente de nous exterminer.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Les Mages sont toujours là-bas ... Pouvez-vous nous aider à libérer nos frères ?";
+		mes "Pour cela il vous faut prendre cet ascenseur, mais attention ils savent que vous êtes là ! La résistance n'en sera que plus ardue !";
+		close2;
+		if (EP7_TRESORB == 3) {
+			changequest 70562,70563;
+			set EP7_TRESORB,4;}
+		end;}
+		
+	if (EP7_TRESORB >= 5) {
+		mes "[" + @name$ + "]";
+		mes "Merci pour votre aide, nous nous retrouverons dans le laboratoire des mages !";
+		close;
+	}
+}
+//=================================================================================
+ars_dun62,137,32,5	script	Action : Ascenseur#ep7	111,{
+
+set @name$,"^33CC00Action : Ascenseur^000000"; 
+
+	if (EP7_TRESORB  <= 3) {
+		mes "[" + @name$ + "]";
+		mes "^33CC00Vous ne pouvez pas emprunter cet ascenseur.^000000";
+		close;}
+
+	if (EP7_TRESORB >= 4) {
+		mes "[" + @name$ + "]";
+		mes "Voulez-vous emprunter cet ascenseur ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+		
+		mes "[" + @name$ + "]";
+		mes "^33CC00Un long grincement, cette machine est de fabrication inconnue.^000000";
+		close2;
+		if(EP7_TRESORB == 4 && $@ep7Mutant1 == 0) {donpcevent "EP7_SchallMutant1::OnStart";}
+		warp "ars_dun62",138,41;
+		end;}
+}
+//=================================================================================
+-	script	EP7_SchallMutant1	-1,{
+
+OnInit:
+
+	set $@ep7Mutant1,0;
+	end;
+
+OnStart:
+
+	if( $EP7Annonce == 0 ) {mapannounce "ars_dun62","Combat - Les Mutants du Gwened !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 ) {announce "Combat - Les Mutants du Gwened !",0,0xFFCC66;}
+
+	set $@ep7Mutant1,1;
+	areamonster "ars_dun62",39,221,228,194,""+getmonsterinfo(3958,0)+"",3958,10,"EP7_SchallMutant1::OnMobDead2";	
+	monster "ars_dun62",47,213,""+getmonsterinfo(3959,0)+"",3959,1,"EP7_SchallMutant1::OnMobDead2";
+	monster "ars_dun62",47,198,""+getmonsterinfo(3959,0)+"",3959,1,"EP7_SchallMutant1::OnMobDead2";
+	monster "ars_dun62",34,206,""+getmonsterinfo(3960,0)+"",3960,1,"EP7_SchallMutant1::OnMobDead";
+	set $@monster_ep7Mutant1,1;
+	end;
+
+OnMobDead2:
+	end;
+	
+OnMobDead:
+
+	set $@monster_ep7Mutant1, $@monster_ep7Mutant1 -1;
+	if($@monster_ep7Mutant1==0) {
+		donpcevent "EP7_SchallMutant1::OnEnd";}
+		end;
+		
+OnEnd:
+		set $@ep7Mutant1,2;
+		sleep2 5000;
+		mapannounce "ars_dun62","Hanric Mutant : Venez me voir, les mages ne sont plus !",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallMutant1::OnInit";
+		end;
+}
+//=================================================================================
+ars_dun62,37,214,5	script	Hanric Mutant#ep71	999,{
+
+set @name$,"^66CCFFHanric Mutant^000000";
+
+	if (EP7_TRESORB <= 3) {
+		mes "[" + @name$ + "]";
+		mes "^33CC00*Arghhhhh !!*^000000";
+		mes "Fuyez misérables !";
+		close;
+	}
+	
+	if (EP7_TRESORB >= 5 && EP7_TRESORB <= 9 || EP7_TRESORB == 4  && $@ep7Mutant1 == 2) {
+		mes "[" + @name$ + "]";
+		mes "Merci pour votre aide ! Beaucoup sont morts depuis notre fuite ... Des pertes irremplaçables ...";
+		mes "Bien que gravement corrompus nous pouvons faire marche arrière. J'étais un apprenti chimiste et j'ai beaucoup voyagé dans les îles de Schallmar.";
+		mes "Je connais un homme qui pourra nous aider ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Cet homme est un alchimiste de l'archipel de Coppalana ... Kowietel, il saura trouver un philtre pour nous aider !";
+		mes "Par pitié soyez notre messager ! Nous ne pouvons pas sortir sans risquer de nous faire tuer ou de créer la panique tant que nous serons sous cette forme.";
+		close2;
+		if (EP7_TRESORB == 4) {
+			changequest 70563,70564;
+			set EP7_TRESORB,5;}
+		end;}
+		
+	if (EP7_TRESORB == 4) {
+		mes "[" + @name$ + "]";
+		mes "Nous approchons ... Exterminons Icarian Majere ! Pour la victoire !";
+		close;}
+		
+	if (EP7_TRESORB >= 10) {
+		mes "[" + @name$ + "]";
+		mes "Oh le philtre de Koweitel ! Nous allons enfin pouvoir modifier notre état et revenir à la normale ... En espérant que nos séquelles seront mineures.";
+		mes "Nous allons devoir attendre que la potion fasse son effet, merci à vous !";
+		if (EP7_TRESORB == 10) {
+			next;
+			mes "[" + @name$ + "]";
+			mes "Nous avons récupéré cette carte sur Icarian Majere, elle pourra surement vous servir.";}
+			
+		close2;
+		if (EP7_TRESORB == 10) {
+			completequest 70569;
+			getitem 29094,1;
+			set EP7_TRESORB,11;}
+		end;}
+}
+//=================================================================================
+
+ars_dun61,200,43,5	script	Kowietel#ep7	929,{
+
+set @name$,"^66CCFFKowietel^000000";
+
+	if (EP7_TRESORB <= 4) {
+		mes "[" + @name$ + "]";
+		mes "Lorsque je vous vois je ressens comme un léger malaise ...";
+		mes "S'il vous plait veuillez sortir vous me ne faites pas plaisir.";
+		close;
+	}
+	
+	if (EP7_TRESORB == 5 || EP7_TRESORB == 6) {
+		mes "[" + @name$ + "]";
+		mes "Lorsque je vous vois je ressens comme un léger malaise ...";
+		mes "S'il vous plait veuillez sortir vous me ne faites pas plaisir.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Hanric vous-dites ? Approchez ...";
+		mes "Hmm, des mutants ... Il faut un philtre de transmutation pour inverser les effets des sorts de mages ...";
+		mes "Mais, comme vous devez vous en douter, il faut un certain nombre de matériaux rares, j'en possède moi-même une bonne partie ...";
+		mes "Parcontre il va nous manquer deux éléments, éléments rares et bien difficile à trouver, je n'ai osé y retourner dans ces grottes depuis ma jeunesse.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Commençons donc par la première, il me faut des spores de grand Mush Bleu, il existe dans une des grottes de Gwened.";
+		mes "Voici une carte, revenez me voir une fois que vous aurez ces spores.";
+		close2;
+		if (EP7_TRESORB == 5) {
+			changequest 70564,70565;
+			getitem 29092,1;
+			set EP7_TRESORB,6;}
+		end;}
+		
+	if (EP7_TRESORB == 7 || EP7_TRESORB == 8) {
+	
+		if (EP7_TRESORB == 7) {
+			mes "[" + @name$ + "]";
+			mes "Vous revoilà bien prestement !";
+			mes "^33CC00*Wouahhhh*^000000";
+			mes "Des spores de Grand Mush Bleu !";
+			next;}
+			
+		mes "[" + @name$ + "]";	
+		mes "Quel plaisir de pouvoir revoir ces magnifiques et puissantes spores et quelle quantité !";
+		mes "Bon passons au second ingrédient, il me faut du Bois de Saintale que l'on trouve aux îles de Jacamar non loin d'ici.";
+		mes "Voici une carte, que ta recherche soit fructueuse !";
+		close2;
+		if (EP7_TRESORB == 7) {
+			changequest 70566,70567;
+			getitem 29093,1;
+			if(countitem(29130) > 0) {delitem 29130,1;}
+			set EP7_TRESORB,8;}
+		end;}
+	
+	if (EP7_TRESORB == 9) {
+		mes "[" + @name$ + "]";
+		mes "Vous revoilà bien prestement !";
+		mes "^33CC00*Wouahhhh*^000000";
+		mes "Du Bois de Saintale de Jacamar !";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Ce bois contient une essence très puissante et utile à de nombreux composés magiques.";
+		mes "Je vais vous préparer ce philtre ... Il ne me reste plus qu'à ajouter ce bois ...";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Nous y voilà ...";
+		sleep2 1000;
+		mes "...";
+		sleep2 1000;
+		specialeffect 18;
+		sleep2 500;
+		specialeffect 18;
+		sleep2 500;
+		mes "...";
+		sleep2 500;
+		specialeffect 18;
+		mes "Nous y voilà !";
+		mes "Prenez cette potion et apportez-la à Hanric, il saura me renvoyer l'aide apportée.";
+		close2;
+		changequest 70568,70569;
+		getitem 29132,1;
+		if(countitem(29131) > 0) {delitem 29131,1;}
+		set EP7_TRESORB,10;
+		end;}
+		
+	if (EP7_TRESORB == 10) {
+		mes "[" + @name$ + "]";	
+		mes "Apportez cette potion à Hanric, il saura me renvoyer l'aide apportée.";
+		close;}
+		
+	if (EP7_TRESORB >= 11) {
+		mes "[" + @name$ + "]";
+		mes "Si un jour vous avez besoin de mon aide sâchez que je serai disposé à vous venir en aide.";
+		mes "Un âme charitable et dévouée comme la votre le mérite amplement.";
+		close;
+	}
+		
+}
+//=================================================================================
+ars_dun63,188,49,5	script	Action : Prendre#Sch1	111,{
+
+set @name$,"^33CC00Action : Prendre^000000"; 
+
+	if (EP7_TRESORB  <= 5) {
+		mes "[" + @name$ + "]";
+		mes "Ceci est un champignon de grande taille, un mush bleu géant des Grottes de Gwened.";
+		close;}
+
+	if (EP7_SCHALLMAR >= 6) {
+		mes "[" + @name$ + "]";
+		mes "Ceci est un champignon de grande taille, un mush bleu géant des Grottes de Gwened.";
+		if (EP7_TRESORB == 6) {mes "Vous venez de ramasser les spores du Grand Mush Bleu.";}
+		close2;
+		if (EP7_TRESORB == 6) {
+			changequest 70565,70566;
+			getitem 29130,1;
+			set ep7_CarteTresor,ep7_CarteTresor|4;
+			set EP7_TRESORB,7;}
+		end;}
+
+}
+//=================================================================================
+ars_dun64,114,149,5	script	Action : Prendre#Sch2	111,{
+
+set @name$,"^33CC00Action : Prendre^000000"; 
+
+	if (EP7_TRESORB  <= 7) {
+		mes "[" + @name$ + "]";
+		mes "Ceci est un Saintale, un bois très rare que l'on retrouve dans les bois de Jacamar.";
+		close;}
+
+	if (EP7_SCHALLMAR >= 8) {
+		mes "[" + @name$ + "]";
+		mes "Ceci est un Saintale, un bois très rare que l'on retrouve dans les bois de Jacamar.";
+		if (EP7_TRESORB == 8) {mes "Vous venez de ramasser du bois de Saintale.";}
+		close2;
+		if (EP7_TRESORB == 8) {
+			changequest 70567,70568;
+			getitem 29131,1;
+			set ep7_CarteTresor,ep7_CarteTresor|8;
+			set EP7_TRESORB,9;}
+		end;}
+
+}
+//=================================================================================
+-	script	EP7_SchallMutant2	-1,{
+
+OnInit:
+
+	set $@ep7Mutant2,0;
+	monster "ars_dun63",48,184,""+getmonsterinfo(3959,0)+"",3959,1,"EP7_SchallMutant2::OnMobDead";
+	set $@monster_ep7Mutant2,1;
+	end;
+	
+OnMobDead:
+
+	set $@monster_ep7Mutant2, $@monster_ep7Mutant2 -1;
+	if($@monster_ep7Mutant2==0) {
+		donpcevent "EP7_SchallMutant2::OnEnd";}
+		end;
+		
+OnEnd:
+		set $@ep7Mutant2,1;
+		sleep2 5000;
+		mapannounce "ars_dun63","Vous venez de tuer le Garde du Trésor, vous pouvez désormais ouvrir le coffre.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallMutant2::OnInit";
+		end;
+}
+//=================================================================================
+ars_dun63,40,196,5	script	Coffre#Sch1	1324,{
+
+set @name$,"^33CC00Coffre^000000"; 
+	
+	if (EP7_TRESORB == 11 && $@ep7Mutant2 == 1) {
+		mes "[" + @name$ + "]";
+		mes "Vous venez de récupérer le trésor de Majere.";
+		mes "Il contient des "+getitemname($ep7_Tcoins)+" ainsi qu'un perle noire de Shinaere.";
+		close2;
+		getitem 29122,1;
+		getitem $ep7_Tcoins,$ep7silvercoinnb[15];
+		set ep7_CarteTresor,ep7_CarteTresor|16;
+		set EP7_TRESORB,12;
+		end;
+		}
+	
+	if (EP7_TRESORB <= 11) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne pouvez pas prendre le trésor tant que le gardien est en vie.";
+		close;}
+		
+	if (EP7_TRESORB >= 12) {
+		mes "[" + @name$ + "]";
+		mes "Ce coffre est vide.";
+		close;}
+}
+
+//_________________________________________________________________
+//________________ Brynnlaw : Trésor du Monastère _________________
+//_________________________________________________________________
+
+//voir #schallGrotte2
+
+ars_dun52,187,199,5	script	Réceptacle#Sch1	111,{
+
+set @name$,"^33CC00Réceptacle^000000"; 
+	
+if(EP7_MOINE <= 2) {
+		mes "[" + @name$ + "]";
+		mes "Ce réceptacle est vide.";
+		close;}
+	
+if(EP7_MOINE >= 3) {
+		mes "[" + @name$ + "]";
+		mes "L'inscription indique qu'il vous faut y déposer une ^884DA7"+getitemname(29152)+"^000000 pour activer le mécanisme.";
+		mes "Voulez-vous déposer la rune ?";
+		next;
+		if( select("Oui:Non") == 2 )
+			close;
+		
+		if(countitem(29152) < 0) {
+				mes "[" + @name$ + "]";
+				mes "Vous n'avez pas de  ^884DA7"+getitemname(29152)+"^000000 sur vous !'";
+				close;}
+				
+		mes "[" + @name$ + "]";
+		mes "La rune commence à scintiller, le mécanisme vient de s'enclencher, vous pouvez maintenant déposer la seconde rune. ";
+		close2;
+		if(EP7_MOINE == 3) {
+			set EP7_MOINE,4;}
+		end;
+		}	
+}
+//=================================================================================	
+ars_dun52,187,181,5	script	Réceptacle#Sch2	111,{
+
+set @name$,"^33CC00Réceptacle^000000"; 
+	
+if(EP7_MOINE <= 3) {
+		mes "[" + @name$ + "]";
+		mes "Ce réceptacle est vide.";
+		close;}
+	
+if(EP7_MOINE >= 4) {
+		mes "[" + @name$ + "]";
+		mes "L'inscription indique qu'il vous faut y déposer une ^884DA7"+getitemname(29153)+"^000000 pour activer le mécanisme.";
+		mes "Voulez-vous déposer la rune ?";
+		next;
+		if( select("Oui:Non") == 2 )
+			close;
+		
+		if(countitem(29153) < 0) {
+				mes "[" + @name$ + "]";
+				mes "Vous n'avez pas de  ^884DA7"+getitemname(29153)+"^000000 sur vous !'";
+				close;}
+				
+		mes "[" + @name$ + "]";
+		mes "La rune commence à scintiller, le mécanisme vient de s'enclencher, vous pouvez maintenant ouvrir la porte.";
+		close2;
+		if(EP7_MOINE == 4) {
+			set EP7_MOINE,5;}
+		end;
+		}	
+}	
+//=================================================================================
+ars_dun52,188,190,5	script	#arsdun56	45,1,1,{
+
+	if (EP7_MOINE <= 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Cette serrure est bien trop complexe pour être forcée.";
+		close;	
+	}
+
+	warp "ars_dun52",196,190;
+	end;
+}
+//=================================================================================
+ars_dun52,224,189,5	script	Coffre#Sch3	1324,{
+
+set @name$,"^33CC00Coffre^000000"; 
+	
+	if (EP7_MOINE == 5) {
+		mes "[" + @name$ + "]";
+		mes "Vous venez de récupérer le trésor du Monastère de Tibérine.";
+		mes "Il contient un ^884DA7"+getitemname($ep7recompense[46])+"^000000 !.";
+		close2;
+		getitem $ep7recompense[46],$ep7recompensenb[46];
+		set ep7_CarteTresor,ep7_CarteTresor|2;
+		set EP7_MOINE,6;
+		end;
+		}
+	
+	if (EP7_MOINE <= 4) {
+		mes "[" + @name$ + "]";
+		mes "Il n'y a, hélas, rien pour vous ici.";
+		close;}
+		
+	if (EP7_MOINE >= 6) {
+		mes "[" + @name$ + "]";
+		mes "Ce coffre est vide.";
+		close;}
+}
+//=================================================================================
+ars_dun52,102,24,5	script	Livre#Sch1	111,{
+
+set @name$,"^33CC00Livre^000000"; 
+	
+	if (EP7_MOINE <= 3) {
+		mes "[" + @name$ + "]";
+		mes "Aucun livre ne vous semble intéressant pour le moment.";
+		close;}
+		
+	if (EP7_MOINE >= 4) {
+		mes "[" + @name$ + "]";
+		mes "Un livre concerne les runes de Tibérine que vous recherchez :";
+		mes "- ^884DA7"+getitemname(29152)+" : Perdu dans les eaux des îles aux épices.";
+		mes "- ^884DA7"+getitemname(29153)+" : Perdu dans les eaux du Monastère de Tibérine.";
+		close;}
+}
+//_________________________________________________________________
+//________________ Brynnlaw : Guilde d'Harcourt ___________________
+//_________________________________________________________________
+ars_fild66,224,196,5	script	Annabelle d'Harcourt#ep7	989,{
+
+set @name$,"^FF00CCAnnabelle d'Harcourt^000000";
+	
+	if(EP7_HARCOURT == 0) {
+		mes "[" + @name$ + "]";
+		mes "Heureuse rencontre.";
+		mes "Vous me semblez avoir du potentiel .. Je me présente, ^FF00CCAnnabelle d'Harcourt^000000 de la ^33CC00La Guilde d'Harcourt^000000 !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Notre guilde est originaire de la ville de Schallmar, nous sommes en mission en ce moment dans les régions de Coppalana et Brynnlaw.";
+		mes "Nous tentons de mettre fin aux attaques des pirates dans ces régions.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Comme tu peux le constater, on ne maque pas de travail. La ^33CC00La Guilde d'Harcourt^000000 est forte de ses soldats qui font sa réputation !";
+		mes "Désormais même les pirates hésitent à nous attaquer, tant nous leur faisons peur !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Je peux te proposer un petit travail, pas bien compliqué.";
+		mes "Chasser les Pirates et me rapporter leurs scalps ! Tu gagneras des ^884DA7"+getitemname($ep7_Tcoins)+"^000000 ainsi qu'une réputation.";
+		mes "Avec une haute réputation, tu pourras être sûr que personne ne viendra plus t'ennuyer sur les mers !";
+		close2;
+		setquest 70590;
+		set EP7_HARCOURT,1;
+		end;
+		}
+	
+	if(EP7_HARCOURT <= 199) {
+		mes "[" + @name$ + "]";
+		mes "Heureuse rencontre.";
+		mes "Alors, plaisante cette chasse aux pirates ?";
+		next;
+		switch( select("Vendre des Scalps:Ma réputation:Quitter") ) {
+
+//============================		
+			case 1:
+			
+				mes "[" + @name$ + "]";
+				mes "Nous collectons les ^884DA7"+getitemname(29154)+"^000000, ^884DA7"+getitemname($ep7_Tcoins)+"^000000 l'unité !";
+				mes "Qu'avez-vous à me proposer cette fois-ci ?";
+				next;
+				
+				if(countitem(29154) < 0) {
+					mes "[" + @name$ + "]";
+					mes "Vous n'avez pas de ^884DA7"+getitemname(29154)+"^000000 sur vous !";
+					close;}
+					
+				input @q;
+				if(countitem(29154) < @q) {
+					mes "[" + @name$ + "]";
+					mes "Vous n'avez pas assez de  ^884DA7"+getitemname(29154)+"^000000 sur vous !'";
+					close;}
+					
+				mes "[" + @name$ + "]";
+				mes "Donc "+@q+" ^884DA7"+getitemname(29154)+"^000000 pour  "+@q+" ^884DA7"+getitemname($ep7_Tcoins)+"^000000";
+				mes "Sommes-nous d'accord ?";
+				next;
+				if( select("Oui:Non") == 2 )
+					close;
+					
+				delitem 29154,@q;
+				getitem $ep7_Tcoins,@q;
+				if(EP7_HARCOURT < 200) {set EP7_HARCOURT,EP7_HARCOURT+@q;}
+				if(EP7_HARCOURT >= 200) {set EP7_HARCOURT,200; completequest 70590;}
+				
+				mes "[" + @name$ + "]";
+				mes "Merci pour ton aide dans ce noble combat ! Ta réputation augmente !";
+				close;
+				
+//============================		
+			case 2:
+				
+				mes "[" + @name$ + "]";
+				mes "Votre réputation est :";
+				if(EP7_HARCOURT < 20) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/20^000000]";
+					mes "Vous êtes considéré comme ^884DA7Victime Parfaite^000000";}
+					
+				if(EP7_HARCOURT >= 20 && EP7_HARCOURT < 60) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/60^000000]";
+					mes "Vous êtes considéré comme ^884DA7Homme de Main^000000";}
+					
+				if(EP7_HARCOURT >= 60 && EP7_HARCOURT < 100) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/100^000000]";
+					mes "Vous êtes considéré comme ^884DA7Mercenaire^000000";}
+					
+				if(EP7_HARCOURT >= 100 && EP7_HARCOURT < 150) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/150^000000]";
+					mes "Vous êtes considéré comme ^884DA7Justicier^000000";}
+					
+				if(EP7_HARCOURT >= 150) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/200^000000]";
+					mes "Vous êtes considéré comme ^884DA7Terreur des Mers^000000";}
+				close;
+//============================		
+			case 3:
+				close;
+		}			
+	}
+	
+	if(EP7_HARCOURT >= 200) {
+		mes "[" + @name$ + "]";
+		mes "Désormais tu es un vrai ^884DA7Seigneur des Mers^000000 !";
+		mes "Tu ne devrais plus avoir trop de problèmes avec les pirates des mers.";
+		mes "^33CC00La Guilde d'Harcourt^000000est fière de toi, tu es désormais le bienvenu dans notre Quartier Général de Schallmar.";
+		close;}
+}

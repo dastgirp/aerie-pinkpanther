@@ -1,0 +1,73 @@
+//Episode VIII - Les Îles de Schallmar
+
+ars_fild63.rsw#Coppalana : Pointe de Coppalana#
+ars_fild64.rsw#Coppalana : L'île aux Perles#
+ars_fild65.rsw#Coppalana : Hôtel du Croizic#
+ars_fild66.rsw#Brynnlaw : La Cité#
+ars_fild67.rsw#Coppalana : Les Jumelles Jacamar#
+ars_fild68.rsw#Brynnlaw : Comptoir Mascate#
+ars_fild69.rsw#Brynnlaw : Les îles aux épices#
+ars_fild70.rsw#Brynnlaw : Monastère de Tibérine#
+ars_fild71.rsw#Coppalana : Forteresse de la Défense#
+ars_fild72.rsw#Schallmar : La Cité#
+ars_fild73.rsw#Schallmar : Menez Mikael ar Mor#
+ars_fild74.rsw#Schallmar : Les îles Iawah#
+ars_fild75.rsw#Schallmar : Atoll de Corinthe#
+ars_fild76.rsw#Schallmar : L'Île du Dragon#
+
+ars_dun41.rsw#Guet-apens#
+ars_dun42.rsw#Guet-apens#
+ars_dun43.rsw#Guet-apens#
+ars_dun44.rsw#Navire des Pirates#
+ars_dun45.rsw#Bois de Jacamar#
+ars_dun46.rsw#Bois de Jacamar#
+ars_dun47.rsw#Comptoir Mascate : Bureau de Négoce#
+ars_dun48.rsw#Brynnlaw : Couronne de Cuivre#
+ars_dun49.rsw#Les îles aux épices : Intérieur#
+ars_dun50.rsw#Brynnlaw : Atelier Kesha#
+ars_dun51.rsw#Monastère de Tibérine : Repère des Pirates#
+ars_dun52.rsw#Monastère de Tibérine#
+ars_dun53.rsw#Brynnlaw : Caserne de la Milice#
+ars_dun54.rsw#Brynnlaw : Tribunal#
+ars_dun55.rsw#Brynnlaw : Egouts#
+ars_dun56.rsw#Brynnlaw : Intérieur#
+ars_dun57.rsw#Guet-apens#
+ars_dun58.rsw#Guet-apens#
+ars_dun59.rsw#Guet-apens#
+ars_dun60.rsw#Les Grottes du Gwened#
+ars_dun61.rsw#Archipel Coppalana : Intérieur#
+ars_dun62.rsw#Les Grottes du Gwened : Antre de Majere#
+ars_dun63.rsw#Les Grottes du Gwened : Grottes#
+ars_dun64.rsw#Bois de Jacamar : Grottes#
+ars_dun65.rsw#Ta Phrom : Extérieur#
+ars_dun66.rsw#Ta Phrom : Intérieur#
+ars_dun67.rsw#Comptoir des Epices : Negoce de la Main Noire#
+ars_dun68.rsw#Forteresse de la Défense : Intérieur#
+ars_dun69.rsw#Attaque des Pirates de la Défense#
+ars_dun70.rsw#Le Laboratoire d'Alfraganus#
+ars_dun71.rsw#Solinari#
+ars_dun72.rsw#La Grande Perle#
+ars_dun73.rsw#Schallmar : Palais Royal#
+ars_dun74.rsw#Schallmar : Sénat#
+ars_dun75.rsw#Schallmar : Guilde d'Harcourt#
+ars_dun76.rsw#Schallmar : Temple de Shinaere#
+ars_dun77.rsw#Schallmar : Volcan de Iawah#
+ars_dun78.rsw#Schallmar : Temple noir#
+ars_dun79.rsw#Schallmar : Guilde de l'Orbe Obscure#
+ars_dun80.rsw#Schallmar : Intérieur#
+ars_dun81.rsw#Schallmar : Insurrection#
+ars_dun82.rsw#Solinari#
+ars_dun83.rsw#Menez Mikael ar Mor : Intérieur#
+ars_dun84.rsw#Schallmar : Sénat (Insurrection)#
+ars_dun85.rsw#Faille de l'Atoll de Corinthe#
+ars_dun86.rsw#Temple de Shinaere : Portail aux Perles#
+ars_dun87.rsw#Temple de Shinaere : Sanctuaire#
+ars_dun88.rsw#Ar Gwez Boel#
+ars_dun89.rsw#Forêt Magique#
+ars_dun90.rsw#Menez Mikael ar Mor : Intérieur#
+ars_dun91.rsw#Abordage#
+ars_dun92.rsw#Abordage#
+ars_dun93.rsw#La Ruine d'Arsinoé#
+ars_dun94.rsw#Schallmar : Intérieur#
+ars_dun95.rsw#Schallmar : Piège#
+ars_dun96.rsw#Maison de Franky#

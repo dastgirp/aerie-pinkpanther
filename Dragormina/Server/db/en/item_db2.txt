@@ -1,0 +1,88 @@
+//Arsinoé
+
+29000,Bandit's Scalp,Bandit's Scalp,3,0,,10,,,,,,,,,,,,,{},{},{}
+29001,Gawelle's apprentice,Gawelle's apprentice,3,0,,10,,,,,,,,,,,,,{},{},{}
+29002,Lophophora Flower,Lophophora Flower,3,0,,10,,,,,,,,,,,,,{},{},{}
+29003,Calliope's soul,Calliope's soul,3,0,,10,,,,,,,,,,,,,{},{},{}
+29004,Euterpe's soul,Euterpe's soul,3,0,,10,,,,,,,,,,,,,{},{},{}
+29005,Uranie's soul,Uranie's soul,3,0,,10,,,,,,,,,,,,,{},{},{}
+29006,Clerc Graivois's Letter,Clerc Graivois's Letter,3,0,,10,,,,,,,,,,,,,{},{},{}
+29007,Chef Pevnec's Letter,Chef Pevnec's Letter,3,0,,10,,,,,,,,,,,,,{},{},{}
+29008,Thébaide Ink,Thébaide Ink,3,0,,10,,,,,,,,,,,,,{},{},{}
+29009,Vermillon refined Ink,Vermillon refined Ink,3,0,,10,,,,,,,,,,,,,{},{},{}
+29010,Black Lotus,Black Lotus,3,0,,10,,,,,,,,,,,,,{},{},{}
+29011,Member Card,Member Card,3,0,,10,,,,,,,,,,,,,{},{},{}
+29012,Marmotte Fur,Marmotte Fur,3,0,,10,,,,,,,,,,,,,{},{},{}
+29013,Bilal's Excretion,Bilal's Excretion,3,0,,10,,,,,,,,,,,,,{},{},{}
+29014,Mammouth Bone,Mammouth Bone,3,0,,10,,,,,,,,,,,,,{},{},{}
+29015,Gobelin Fang,Gobelin Fang,3,0,,10,,,,,,,,,,,,,{},{},{}
+29016,Gondar Jewel,Gondar Jewel,3,0,,10,,,,,,,,,,,,,{},{},{}
+29017,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29018,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29019,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29020,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29021,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29022,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29023,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29024,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29025,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29026,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29027,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29028,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29029,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29030,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29031,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29032,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29033,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29034,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29035,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29036,Arsinoé Card,Arsinoé Card,3,0,,1,,,,,,,,,,,,,{},{},{}
+29037,Red Gem,Red Gem,3,0,,10,,,,,,,,,,,,,{},{},{}
+29038,Green Gem,Green Gem,3,0,,10,,,,,,,,,,,,,{},{},{}
+29039,Yellow Gem,Yellow Gem,3,0,,10,,,,,,,,,,,,,{},{},{}
+29040,Blue Gem,Blue Gem,3,0,,10,,,,,,,,,,,,,{},{},{}
+29041,Djoser's Head,Djoser's Head,3,0,,10,,,,,,,,,,,,,{},{},{}
+29042,Djoser's Corpse,Djoser's Corpse,3,0,,10,,,,,,,,,,,,,{},{},{}
+29043,Djoser's Leg,Djoser's Leg,3,0,,10,,,,,,,,,,,,,{},{},{}
+29044,Orcish Necklace,Orcish Necklace,3,0,,10,,,,,,,,,,,,,{},{},{}
+29045,Slave Necklace,Slave Necklace,3,0,,10,,,,,,,,,,,,,{},{},{}
+29046,Saigneur Wings,Saigneur Wings,3,0,,10,,,,,,,,,,,,,{},{},{}
+29047,Sylphide Hearth,Sylphide Hearth,3,0,,10,,,,,,,,,,,,,{},{},{}
+29048,Rana oil,Rana oil,3,0,,10,,,,,,,,,,,,,{},{},{}
+29049,Dark Mushroom,Dark Mushroom,3,0,,10,,,,,,,,,,,,,{},{},{}
+29050,Soft Wine,Soft Wine,3,0,,10,,,,,,,,,,,,,{},{},{}
+29051,Shadows,Shadows,3,0,,10,,,,,,,,,,,,,{},{},{}
+29052,Eel,Eel,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29053,Goldfish,Goldfish,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29054,Scorpion Fish,Scorpion Fish,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29055,Octopus,Octopus,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29056,Limande,Limande,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29057,Seahorse,Seahorse,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29058,Shark,Shark,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29059,Bar,Bar,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29060,Bar commun,Bar commun,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29061,Salmon,Salmon,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29062,Crab,Crab,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29063,Pink Salmon,Pink Salmon,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29064,Perche jaune,Perche jaune,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29065,Piranha,Piranha,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29066,Carp,Carp,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29067,Thon,Thon,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29068,Angel Fish,Angel Fish,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29069,Clownfish,Clownfish,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29070,Vandoise,Vandoise,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29071,Frog,Frog,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29072,Lantern Fish,Lantern Fish,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29073,Âppat,Âppat,3,0,,10,,,,,,,,,,,,,{},{},{}
+29074,Fishing Rod,Fishing Rod,3,0,,10,,,,,,,,,,,,,{},{},{}
+29075,Winner's Rod,Winner's Rod,3,0,,10,,,,,,,,,,,,,{},{},{}
+29076,Hook Ice,Hook Ice,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @ep7_Draw,1;},{},{}
+29077,Paralysis,Paralysis,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceTrap1,1;},{},{}
+29078,Dizziness,Dizziness,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceTrap2,1;},{},{}
+29079,Inversion,Inversion,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceTrap3,1;},{},{}
+29080,Pas-de-Géant,Pas-de-Géant,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceBonus1,15;},{},{}
+29081,Mushroom,Mushroom,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceBonus2,15;},{},{}
+29082,Popote,Popote,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;sc_start SC_SpeedUp0,30000,0;},{},{}
+29083,Account Book of Nemours,Account Book of Nemours,3,,,10,,,,,,,,,,,,,{},{},{}
+
+29180,Arsinois,Arsinois,3,,,10,,,,,,,,,,,,,{},{},{}

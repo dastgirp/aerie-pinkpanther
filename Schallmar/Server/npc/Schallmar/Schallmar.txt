@@ -1,0 +1,1658 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Schallmar
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 1.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 1.1 Schallmar Insurrection warp exit fix
+//
+//
+//================================================================================================= 
+//
+//1- Schallmar : Principal
+//2- Schallmar : Révolte
+//3- Schallmar : Temple de Shinaere
+//4- Schallmar : Compagnie Brittany
+//5- Schallmar : Prison
+//
+//_________________________________________________________________
+//________________ Schallmar : Principal __________________________
+//_________________________________________________________________
+
+ars_dun73,147,91,5	script	Sénateur Palatin#ep8	872,{
+
+set @name$,"^66CCFFSénateur Palatin^000000";
+
+if (EP7_SCHALLMAR <= 25)  goto sub1;
+if (EP7_SCHALLMAR == 26)  goto sub2;
+if (EP7_SCHALLMAR == 27)  goto sub3;
+
+sub1:
+
+	mes "[" + @name$ + "]";
+	mes "Je suis le représentant de notre ^66CCFFRoi Waclàv^000000, je prends les décisions durant sa maladie ...";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Je suis le représentant de notre ^66CCFFRoi Waclàv^000000, je prends les décisions durant sa maladie ...";
+	mes "Je suis le ^66CCFFSénateur Palatin^000000, chef du Sénat de Schallmar. Je m'occupe des affaires du pays qui n'intéressent pas notre jeune Roi.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, tu viens de la part du ^66CCFFJuge de Brynnlaw^000000, nous avons entendu parler de quelques problèmes posés par les miliciens de Brynnlaw ...";
+	mes "Je vais demander au conseil de nommer un nouveau représentant, ainsi le calme devrait revenir. Vous pouvez rentrer chez vous maintenant, la situation est bien en main.";
+	close2;
+	changequest 70600,70601;
+	set EP7_SCHALLMAR,27;
+	end;
+	
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Je vais demander au conseil de nommer un nouveau représentant, ainsi le calme devrait revenir. Vous pouvez rentrer chez vous maintenant, la situation est bien en main.";
+	close;
+}
+//=================================================================================
+
+ars_fild72,227,88,1	script	Ganaëlle#ep8	906,5,5,{
+
+set @name$,"^FF00CCGanaëlle^000000";
+
+if (EP7_SCHALLMAR <= 26)  goto sub1;
+if (EP7_SCHALLMAR == 27 || EP7_SCHALLMAR == 28)  goto sub2;
+if (EP7_SCHALLMAR >= 29)  goto sub3;
+
+sub1:
+
+	mes "[" + @name$ + "]";
+	mes "Ce grand et beau bâtiment est le Palais Royal de Schallmar, c'est la demeure de notre ^66CCFFRoi Waclàv^000000.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Ah, j'ai l'impression de vous reconnaitre, je vous ai aperçu à Brynnlaw, il y a de cela peu de temps.";
+	mes "Vous venez de rencontrer ^66CCFFSénateur Palatin^000000, non ?";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Nous avons surement beaucoup à nous dire, si tu le souhaites, tu peux en venir discuter avec nous dans le siège de notre guilde à Schallmar.";
+	mes "Je suis membre de la ^33CC00Guilde Harcourt^000000, tu ne devrais pas avoir trop de mal à la retrouver.";
+	close2;
+	if (EP7_SCHALLMAR == 27) {
+		changequest 70601,70602;
+		set EP7_SCHALLMAR,28; }
+	end;
+	
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "La Guerre est en cours ... Mais évitons de discuter entre nous ici, la garde du Sénar risque de nous repérer.";
+	close;
+	
+OnTouch:
+
+	if(EP7_SCHALLMAR == 27) { npctalk "Hep' vous ! Arrêtez-vous, j'ai à vous parler !"; }
+	end;
+}
+//=================================================================================
+
+ars_dun75,122,53,5	script	Ganaëlle#ep8c	906,{
+
+set @name$,"^FF00CCGanaëlle^000000";
+
+if (EP7_SCHALLMAR <= 27)  goto sub1;
+if (EP7_SCHALLMAR == 28)  goto sub2;
+if (EP7_SCHALLMAR <= 38)  goto sub3;
+if (EP7_SCHALLMAR == 39 || EP7_SCHALLMAR == 40)  goto sub4;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Bienvenue dans la Guilde d'Harcourt ! Sans conteste la meilleure d'Arsinoé et des autres terres connues !";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Ah te voilà ^33CC00" + strcharinfo(0) + "^000000, je me suis permise de t'inviter dans notre guilde pour discuter ...";
+	mes "Tu me sembles avoir du potentiel et ne pas vouloir que les forces obscures prennent le pas sur les nôtres, comme le prouve ta recherche des ^884DA7Perles Noires de Shinaere^000000.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Je souhaite que tu rejoignes notre guilde, mais pour cela il faudrait que tu nous prouves ta valeur et ton engagement envers les nôtes.";
+	mes "J'aimerai que tu aides, si ce n'est déjà fait, ^FF00CCAnnabelle d'Harcourt^000000 dans sa quête contre les pirates dans la cité de Brynnlaw.";
+	if (EP7_HARCOURT == 200) {
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "Ah, je vois que tu viens de rencontrer ^FF00CCAnnabelle d'Harcourt^000000 et que tu l'as aidé dans sa quête !";
+		mes "Bon ne perdons pas plus de temps. Va à l'étage, la porte t'est ouverte désormais, notre chef voudra surement te rencontrer.";}
+	close2;
+	if (EP7_HARCOURT == 200) {
+		changequest 70602,70603;
+		set EP7_SCHALLMAR,29;}
+	end;
+	
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Notre mission est importante, je compte sur toi et les tiens pour mener le combat là où il doit être mené.";
+	close;
+	
+sub4:
+	mes "[" + @name$ + "]"; 
+	mes "Belle victoire, le Roi doit encore éliminer quelques opposants mais la population semble avoir accepté le nouvelle donne.";
+	mes "Le problème pour Schallmar reste maintenant la disparition des Perles de Shinaere, les prêtres tentent de les rassembler pour atteindre le sanctuaire de la déesse.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Le ^66CCFFSénateur Palatin^000000 semble s'être allié à des mages gris qui ne sont pas reconnus par le Haut-Concile d'Arsinoé.";
+	mes "^FF00CCArchimage Ornélia^000000 ne reconnait pas leur implication dans cette tentative de prise de pouvoir à Schallmar et semble inquiète quant à l'apparition progressive de la magie interdite.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Les prêtres recherchent les Perles Noires, aidez-les !'";
+	mes "Ah aussi, vous venez de recevoir un message de ^66CCFFBoliv'Art^000000, la main noire ou quelque chose dans le genre ...";
+	mes "Il vous attend à Brynnlaw.";
+	close2;
+	if (EP7_SCHALLMAR == 39) {
+		changequest 70613,70614;
+		set EP7_SCHALLMAR,40;}
+	end;
+}
+//=================================================================================
+
+ars_dun75,134,77,5	script	#arsdun75a	45,1,1,{
+
+
+	if (EP7_SCHALLMAR == 29) {
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous avez désormais l'autorisation de vous rendre dans les étages supérieurs.";
+		close2;
+		warp "ars_dun75",138,138;
+		end;}
+		
+	if (EP7_SCHALLMAR >= 30) {
+		warp "ars_dun75",138,138;
+		end;}
+
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	mes "L'accès aux niveaux supérieurs sont réservés aux membres autorisés.";
+	close;
+}
+//=================================================================================
+
+ars_dun75,53,149,5	script	Marcellius Vinus#ep8	945,{
+
+set @name$,"^66CCFFMarcellius Vinus^000000";
+
+if (EP7_SCHALLMAR <= 28)  goto sub1;
+if (EP7_SCHALLMAR == 29 || EP7_SCHALLMAR == 30)  goto sub2;
+if (EP7_SCHALLMAR <= 34)  goto sub3;
+if (EP7_SCHALLMAR <= 36)  goto sub4;
+if (EP7_SCHALLMAR >= 37)  goto sub5;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Veuillez ficher le camp ! Vous ne devriez pas être ici !";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Bon ^33CC00" + strcharinfo(0) + "^000000 ne perdons pas notre temps en de vaines salutations ou autre palabres ...";
+	mes "La situation de Schallmar est critique ... Nous sommes la ^33CC00Guilde Harcourt^000000, ce n'est pas seulement une guilde, mais nous sommes aussi les garants de la république de Schallmar.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Le ^66CCFFSénateur Palatin^000000 que tu as rencontré est un traitre. Son objectif est de prendre le pouvoir à Schallmar en éliminant notre jeune roi, le ^66CCFFRoi Waclàv^000000.";
+	mes "Nous ne savons pas encore si le roi est en vie, il faut absolument envoyer une escouade découvrir ce qu'il se passe dans sa chambre car personne n'a pu le voir depuis des semaines ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Le ^66CCFFSénateur Palatin^000000 prétend que le roi est malade et ne peut recevoir des conseillers.";
+	mes "Il te faut apprendre ce qui est arrivé au Roi, introduisez-vous dans le Palais Royal et cherchez une réponse ... Puis revenez me voir.";
+	close2;
+	if (EP7_SCHALLMAR == 29) {
+		changequest 70603,70604;
+		set EP7_SCHALLMAR,30;}
+	end;
+	
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Suivez les instructions du Roi, c'est une personne de bien, vous pouvez lui faire confiance.";
+	close;
+	
+sub4:
+	mes "[" + @name$ + "]"; 	
+	mes "Ah le Roi se situe dans les Îles Iawah ... Au moins il aura trouvé refuge, le temps que tout se mette en place à la capitale.";
+	mes "J'ai reçu des informations vis à vis de l'alliance proposée et nous souhaitons coopérer pour changer le destin de Schallmar.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Un des membre de la guilde vient de faire un tour dans le bâtiment indiqué et nous savons maintenant de quoi il en retourne.";
+	mes "Une guilde noire, une guilde occulte, bannie de notre monde y a trouvé refuge, celle de la : ^33CC00Guilde de la Mishna^000000.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Pourriez-vous contacter ^66CCFFPizarre^000000 au Menez Mikael ar Mor, la forteresse des ^33CC00Pirates de la Défense^000000 ?";
+	mes "Les choses s'accelèrent, nous n'allons plus rester longtemps dans l'ombre si vous voulez mon avis ....";
+	close2;
+	if (EP7_SCHALLMAR == 35) {
+		changequest 70609,70610;
+		set EP7_SCHALLMAR,36;
+	}
+	end;
+	
+sub5:
+	mes "[" + @name$ + "]"; 
+	mes "Bien, ton enthousiasme fait plaisir à voir !";
+	mes "Que souhaites-tu faire ?";
+	next;
+	switch( select ("•Participer à la Révolution:•Partir") ) {
+		case 1:
+			mes "[" + @name$ + "]"; 
+			mes "Suivez-moi, nous allons mettre au point la marche à suivre.";
+			close2;
+			warp "ars_dun75",63,108;
+			end;
+			
+		case 2:
+			close;
+	}
+}
+//=================================================================================
+
+ars_dun73,120,90,5	script	Arivila#ep8	90,{
+
+set @name$,"^FF00CCArivila^000000";
+
+if (EP7_SCHALLMAR <= 29)  goto sub1;
+if (EP7_SCHALLMAR == 30)  goto sub2;
+if (EP7_SCHALLMAR >= 31)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Je ne suis pas autorisée à m'exprimer avec les étrangers ... au risque de perdre ma tête.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Des amis de la ^33CC00Guilde Harcourt^000000 m'ont parlé de toi ... Tu sais, je ne peux pas parler aux étrangers au risque d'être tué pour trahison !";
+	mes "Je suis la nourrice du Roi et ce que le ^66CCFFSénateur Palatin^000000  souhaite cacher, c'est la disparition du Roi !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Le ^66CCFFRoi Waclàv^000000 ne voulait plus être la marionette du ^66CCFFSénateur Palatin^000000. Il a préféré fuir que continuer cette mascarade ...";
+	mes "Je ne sais pas où il se cache mais vous pourriez trouver des indices dans sa chambre, essayez de forcer la porte.";
+	close2;
+	if (EP7_SCHALLMAR == 30) {
+		changequest 70604,70605;
+		set EP7_SCHALLMAR,31;}
+	end;
+	
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Je ne suis pas autorisée à m'exprimer avec les étrangers ... au risque de perdre ma tête.";
+	mes "... *Bonne Chance* ...";
+	close;
+}
+//=================================================================================
+
+ars_dun73,147,117,5	script	#arsdun72a	45,1,1,{
+
+
+	if (EP7_SCHALLMAR == 31) {
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "La Chambre du Roi est verrouillée. Voulez-vous forcer la porte ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous venez de forcer la Porte.";
+		close2;
+		warp "ars_dun73",154,117;
+		end;}
+		
+	if (EP7_SCHALLMAR >= 32) {
+		warp "ars_dun73",154,117;
+		end;}
+
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	mes "La Chambre du Roi est verrouillée. Vous ne pouvez pas y entrer.";
+	close;
+}
+//=================================================================================
+
+ars_dun73,187,112,5	script	Action : ?#ep8a	111,{
+
+set @name$,"^33CC00Action : ?^000000";
+
+if (EP7_SCHALLMAR <= 30)  goto sub1;
+if (EP7_SCHALLMAR >= 31)  goto sub2;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Il n'y a rien à vous intéresser ici.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "En regardant le long du mur, vous vous apercevez d'une porte cachée, voulez-vous entrer dedans ? ";
+	next;
+	if( select("•Oui:•Non") == 2 )
+	close;
+	
+	close2;
+	warp "ars_dun73",65,105;
+	if (EP7_SCHALLMAR == 31) {
+		changequest 70605,70606;
+		set EP7_SCHALLMAR,32;}
+	end;
+	
+}
+//=================================================================================
+
+ars_dun80,112,99,5	script	Waclàv#ep8	983,{
+
+set @name$,"^66CCFFWaclàv^000000";
+
+if (EP7_SCHALLMAR <= 31)  goto sub1;
+if (EP7_SCHALLMAR == 32 || EP7_SCHALLMAR == 33)  goto sub2;
+if (EP7_SCHALLMAR == 34 || EP7_SCHALLMAR == 35)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Je ne pense que vous ayez votre place ici ... Je ne suis qu'un simple voyageur dans les îles de Schallmar.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Qui êtes-vous !? Sâchez que mes assassins vous tueront si vous faites un geste mal placé ! ";
+	mes "Que me voulez-vous ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Ah vous venez de la part de la ^33CC00Guilde Harcourt^000000 ... Alors vous êtes au courant de ce qu'il se passe en Schallmar ?";
+	mes "Mon plan pour reprendre le pouvoir et me débarrasser du ^66CCFFSénateur Palatin^000000 vient de débuter.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Je suis allié aux pirates de la Défense, j'ai aussi quelques soutiens au sein de Schallmar qui m'aideront à renverser cette mascarade de République.";
+	mes "Il me semblait bien que la ^33CC00Guilde Harcourt^000000 souhaiterait elle aussi participer au changement.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Le Sénateur sait que je ne suis pas dans ma chambre et me cherche depuis plusieurs jours, j'ai besoin d'une personne comme vous pour espionner, pour suivre le Sénateur.";
+	mes "Nous le soupçonnons d'appartenir à une Guilde Occulte interdite en Schallmar ... si ce fait s'avère exact, il sera d'autant plus facile de mener la révolte.";	
+	close2;
+	if (EP7_SCHALLMAR == 32) {
+		changequest 70606,70607;
+		set EP7_SCHALLMAR,33;}
+	end;
+	
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Hmm alors vous l'avez suivi jusque dans ce bâtiment ...";
+	mes "Je connais cet édifice, il n'a jamais été mis sous contrôle, vous devriez demander au chef de la ^33CC00Guilde Harcourt^000000 de mener une enquête.";
+	mes "J'ai pour le moment des moyens limités, mais si la guilde veut se joindre à ma croisade nous pourrons plus facilement inverser les forces en présence.";
+	close2;
+	if (EP7_SCHALLMAR == 34) {
+		changequest 70608,70609;
+		set EP7_SCHALLMAR,35;}
+	end;
+
+	
+}
+//=================================================================================
+ars_fild72,217,89,3	script	Sénateur Palatin#ep8a	872,4,4,{
+
+set @name$,"^66CCFFSénateur Palatin^000000";
+
+if (EP7_SCHALLMAR <= 32)  goto sub1;
+if (EP7_SCHALLMAR == 33)  goto sub2;
+if (EP7_SCHALLMAR >= 34)  goto sub3;
+
+sub1:
+
+	mes "[" + @name$ + "]";
+	mes "Je suis le représentant de notre ^66CCFFRoi Waclàv^000000, je prends les décisions durant sa maladie ...";
+	mes "Si vous voulez-vous entretenir avec moi, veuillez entrer dans mon office.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Quoi !!? Vous me suivez, non ?";
+	mes "Attention, je vous garde à l'oeil !";
+	close2;
+	donpcevent "Sénateur Palatin#ep8a::OnInit";
+	dispbottom "Le Sénateur Palatin vient de vous repérer, il ne va donc pas se rendre au lieu secret.";
+	end;
+
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Le ^66CCFFSénateur Palatin^000000 n'est plus ici.";
+	close;
+	
+OnTouch:
+
+	if ($@ep8_Senateur == 0 && EP7_SCHALLMAR == 33) { 
+		npctalk "Gardes ! Je dois m'absenter, surveillez bien les entrées !"; 
+		donpcevent "Sénateur Palatin#ep8a::OnWalk"; 
+	}
+	if ($@ep8_Senateur == 1 && EP7_SCHALLMAR == 33) {
+		donpcevent "Sénateur Palatin#ep8a::OnInit";
+		dispbottom "Le Sénateur Palatin vient de vous repérer, il ne va donc pas se rendre au lieu secret.";; 
+	}
+	end;
+	
+OnWalk:
+	sleep2 2000;
+	npcspeed 120;
+	set $@ep8_Senateur,1;
+	setarray .SenatX[1],223,222,199,178,176,176,155,139,135,153,153,153,124,111,111,111,87,87,81,76;
+	setarray .SenatY[1],106,131,129,129,110,97,97,97,121,121,135,153,153,171,181,197,201,222,212,211;	
+	set .@temp,getarraysize (.SenatX);
+	
+	for( set .@i, 1; .@i <= .@temp; set .@i, .@i +1 ) {
+		if ($@ep8_Senateur == 1) { npcwalkto .SenatX[.@i],.SenatY[.@i]; }
+		sleep2 5000;
+	}
+	
+	sleep2 5000;
+	movenpc "Sénateur Palatin#ep8a",217,89;
+	sleep2 10000;
+	set $@ep8_Senateur,0;
+	end;
+
+OnInit:
+	movenpc "Sénateur Palatin#ep8a",217,89;
+	sleep2 500;
+	set $@ep8_Senateur,0;
+	end;
+}
+//=================================================================================
+ars_fild72,77,207,5	script	#arsfild72a	45,1,1,{
+
+
+	if (EP7_SCHALLMAR == 33 && $@ep8_Senateur == 1) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Le ^66CCFFSénateur Palatin^000000 vient d'entrer dans ce bâtiment. La porte est gardée, vous ne pouvez pas y entrer.";
+		mes "Vous devriez faire votre rapport au ^66CCFFRoi Waclàv^000000 dans les îles Iawah.";
+		close2;
+		set EP7_SCHALLMAR,34;
+		changequest 70607,70608;
+		end;}
+		
+	if (EP7_SCHALLMAR <= 33) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Cette porte est fermée. Vous ne pouvez pas la forcer. Mais ce bâtiment abrite bien une Guilde occulte.";
+		close;}
+
+	if (EP7_SCHALLMAR >= 34) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Cette porte est fermée. Vous ne pouvez pas la forcer.";
+		close;}
+}
+//=================================================================================
+
+ars_dun83,49,74,3	script	Pizarre#ep8	827,{
+
+set @name$,"^66CCFFPizarre^000000";
+
+if (EP7_SCHALLMAR <= 35)  goto sub1;
+if (EP7_SCHALLMAR <= 37)  goto sub2;
+if (EP7_SCHALLMAR >= 38)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Qui es-tu pour oser défier les ^33CC00Pirates de la Défense^000000 !?";
+	mes "Tu ne devrais pas rester dans le coin sans une bonne raison.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Je sais qui tu es ^33CC00" + strcharinfo(0) + "^000000, je suis très bien informé sur tout ce qui se passe dans ma ville.";
+	mes "Bien que nous soyons des pirates, nous sommes liés à la famille royale, une sorte de contre-pouvoir, voyez-vous ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Nous avons été contactés par le ^66CCFFRoi Waclàv^000000 et cela fait des années que nous suivons avec une grande attention les luttes politiques s'y déroulant.";
+	mes "La disparition des Perles Noires de Shinaere est le symbole d'un profond changement dans notre archipel.";
+	mes "Retrouvons-nous tous dans la cité de Schallmar, à la ^33CC00Guilde Harcourt^000000 plus précisement.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Nous allons nous mettre en position pour que tout soit réalisé sans coup férir.";
+	mes "Vous avez donc compris à quoi l'on se prépare, petit ?";
+	close2;
+	if (EP7_SCHALLMAR == 36) {
+		changequest 70610,70611;
+		set EP7_SCHALLMAR,37;}
+	end;
+	
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Quelle belle bataille ! Vous voulez quelque chose !";
+	mes "Si un jour tu cherches du travail et que tu puisses te donner à temps plein ici, je serais heureux de te compter parmi mes compagnons !";
+	close;
+}
+//_________________________________________________________________
+//________________ Schallmar : Révolte ____________________________
+//_________________________________________________________________
+
+ars_dun75,55,91,5	script	Marcellius Vinus#ep8a	945,{
+
+set @name$,"^66CCFFMarcellius Vinus^000000";
+
+if (EP7_SCHALLMAR <= 36)  goto sub1;
+if (EP7_SCHALLMAR == 37)  goto sub2;
+if (EP7_SCHALLMAR >= 38)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]";
+	mes "Vous n'avez rien à faire ici.";
+	close;
+	
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Tout le monde doit être là ...";
+	mes "Bon, commençons les discussions ...";
+	close2;
+	if ($@ep8_schalmain1 == 0) { donpcevent "EP7_intro::OnEvent17"; }
+	end;
+
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Merci pour votre aide ! Quelle brillante victoire !";
+	mes "Vous pouvez recommencer cet épisode si vous le souhaitez !";
+	close;
+	
+OnTalk1:
+	npctalk "Notre jour est enfin arrivé !";
+	end;
+
+OnTalk2:
+	npctalk "Mon Roi, veuillez commencer ...";
+	end;
+	
+OnTalk3:
+	npctalk "Les derniers événements de Brynnlaw ont confirmé nos doutes quant aux objectifs du Sénateur. Voici le plan que nous allons suivre :";
+	end;
+	
+OnTalk4:
+	npctalk "La Guilde Harcourt, les troupes loyalistes de Schallmar et les Pirates de la Défense vont surgir dans différents quartiers de la capitale.";
+	end;
+	
+OnTalk5:
+	npctalk "Notre groupe va partir de la Guilde d'Harcourt et va se diriger vers le Palais Royal pour que le Roi puisse rallier les troupes royales.";
+	end;
+	
+OnTalk6:
+	npctalk "Ensuite, nous irons arrêter le Sénateur qui tient une séance au Sénat, il sera mis aux arrêts.";
+	end;
+}
+//=================================================================================
+
+ars_dun75,61,96,3	script	Pizarre#ep8a	827,{
+
+set @name$,"^66CCFFPizarre^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Essaye de ne pas rester dans nos pattes à nous gêner ... C'est un travail pour les professionnels.";
+	close;
+	
+OnTalk1:
+	npctalk "Mes hommes lanceront quelques minutes avant l'insurrection, nous ferons quelques barricades pour limiter le déplacement des troupes.";
+	end;
+	
+OnTalk2:
+	npctalk "Nous sommes prêt quoiqu'il arrive !";
+	end;
+}
+//=================================================================================
+
+ars_dun75,62,91,3	script	Waclàv#ep8a	983,{
+
+set @name$,"^66CCFFWaclàv^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Essayons d'éviter les morts inutiles ... Nous ne sommes pas là pour faire un massacre ... Un royaume sans habitants ne me sera pas très utile.";
+	close;
+	
+OnTalk1:
+	npctalk "Comme vous le savez déjà, je ne suis qu'un roi fantoche. Le Sénateur Palatin et ses hommes dirigent réellement notre pays.";
+	end;
+	
+OnTalk2:
+	npctalk "Ils me prennent pour un Roi faible, maladif. Un bon à rien en somme.";
+	end;
+	
+OnTalk3:
+	npctalk "J'ai du oeuvrer de nombreuses années dans l'ombre pour que nous puissions arriver à cette réunion.";
+	end;
+	
+OnTalk4:
+	npctalk "Je vais laisser Arivila nous présenter la situation du pays et nos avancées sur le Sénateur Palatin.";
+	end;
+
+OnTalk5:
+	npctalk "Bien, préparons-nous donc à sortir ! Que Shinaere veille sur nous !";
+	end;
+}
+//=================================================================================
+
+ars_dun75,60,86,3	script	Ganaëlle#ep8a	906,{
+
+set @name$,"^FF00CCGanaëlle^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Une fois que le Sénat sera renversé passe me voir à la Guilde, j'aurai à te parler.";
+	mes "J'ai des informations très intéressantes pour toi.";
+	close;
+	
+OnTalk1:
+	npctalk "Merci. Après avoir suivi le Sénateur, nos doutes ont été confirmés. Il appartient bien à une guilde occulte.";
+	end;
+	
+OnTalk2:
+	npctalk "Les motivations de celle-ci sont encore troubles mais ne présagent rien de bon pour Schallmar.";
+	end;
+	
+OnTalk3:
+	npctalk "Ce soir, nous allons mettre fin au règne des sénateurs et rétablir le pouvoir à notre Roi.";
+	end;
+}
+//=================================================================================
+
+ars_dun75,63,75,5	script	#arsdun75c	45,1,1,{
+		
+	if (EP7_SCHALLMAR <= 36) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous n'avez pas le niveau requis pour pouvoir entrer.";
+		close;}
+
+	if (EP7_SCHALLMAR >= 37) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous débuter l'instance Insurrection de Schallmar ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+		
+		close2;
+		warp "ars_dun81",277,195;
+		if ($@ep7Schall01 == 0) { donpcevent "EP7_Schall01::OnStart"; }
+		end;
+		}
+}
+//=================================================================================
+-	script	EP7_Schall01	-1,{
+
+OnInit:
+	
+	killmonsterall "ars_dun84";
+	killmonsterall "ars_dun81";
+	
+	set $@ep7Schall01,0;
+
+	setnpctimer 0;
+	stopnpctimer;
+	end;
+
+OnStart:
+
+	if( $EP7Annonce == 0 ) {mapannounce "ars_dun75","Instance -- L'Insurrection de Schallmar vient de débuter !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 ) {announce "Instance -- L'Insurrection de Schallmar vient de débuter !",0,0xFFCC66;}
+	
+	initnpctimer;
+	set $@ep7Schall01,1;
+
+	monster "ars_dun81",224,86,""+getmonsterinfo(3971,0)+"",3971,1,"EP7_Schall01::OnBossDead";
+	areamonster "ars_dun81",0,400,400,0,""+getmonsterinfo(3972,0)+"",3972,20,"EP7_Schall01::OnMobDead";	
+	areamonster "ars_dun81",0,400,400,0,""+getmonsterinfo(3973,0)+"",3973,80,"EP7_Schall01::OnMobDead";	
+	set $@monster_ep7Schall01,1;
+	sleep2 10000;
+	mapannounce "ars_dun81","Ganaëlle : Que l'insurrection débute !",1,0xff80ff;
+	sleep2 15000;
+	mapannounce "ars_dun81","Ganaëlle : Nous devons tout d'abord expulser les troupes loyales au Sénateur du Palais Royal !",1,0xff80ff;	
+	sleep2 5000;
+	mapannounce "ars_dun81","Ganaëlle : Vous devez expulser le Chef de la Garde ... Il garde le Palais Royal !",1,0xff80ff;	
+	end;
+	
+//=======================
+
+OnBossDead:
+
+	set $@monster_ep7Schall01, $@monster_ep7Schall01-1;
+	if($@monster_ep7Schall01==0) {
+		mapannounce "ars_dun81","Ganaëlle : Bon le Roi a pu rallier des troupes supplémentaires ... Nous devons nous rendre maintenant au Sénat pour mettre fin au règne de Palatin !",1,0xff80ff;
+		
+		monster "ars_dun84",83,124,""+getmonsterinfo(3975,0)+"",3975,1,"EP7_Schall01::OnBossDead2";
+		areamonster "ars_dun84",0,200,200,0,""+getmonsterinfo(3974,0)+"",3974,15,"EP7_Schall01::OnMobDead";
+		
+		set $@monster_ep7Schall01,1;
+		set $@ep7Schall01,2;}
+	end;
+
+OnMobDead:end;	
+
+
+OnBossDead2:
+
+	set $@monster_ep7Schall01, $@monster_ep7Schall01-1;
+	if($@monster_ep7Schall01==0) { 
+		mapannounce "ars_dun81","Ganaëlle : Le Sénéteur Palatin n'était pas là !",1,0xff80ff;
+		mapannounce "ars_dun84","Ganaëlle : Le Sénéteur Palatin n'était pas là !",1,0xff80ff;
+		sleep2 5000;
+		mapannounce "ars_dun81","Ganaëlle : Selon les Pirates de la Défense, il s'est réfugié dans la Guilde Obscure ! Allons-y !",1,0xff80ff;
+		mapannounce "ars_dun84","Ganaëlle : Selon les Pirates de la Défense, il s'est réfugié dans la Guilde Obscure ! Allons-y !",1,0xff80ff;
+		
+		monster "ars_dun79",115,125,""+getmonsterinfo(3976,0)+"",3976,1,"EP7_Schall01::OnBossDead3";
+		set $@monster_ep7Schall01,1;
+		set $@ep7Schall01,3;}
+	end;
+
+OnBossDead3:
+
+	set $@monster_ep7Schall01, $@monster_ep7Schall01-1;
+	if($@monster_ep7Schall01==0) { donpcevent "EP7_Schall01::OnEnd"; }
+	end;
+	
+//=======================	
+
+
+OnEnd:
+
+	mapannounce "ars_dun79","Ganaëlle : Le Portail vient de s'ouvrir ! Poursuivons le Sénateur Palatin et ses sbires !",1,0xff80ff;
+	set $@ep7Schall01,4; 
+	sleep2 180000;
+	mapwarp "ars_dun79","ars_dun75",61,150;
+	mapwarp "ars_dun81","ars_dun75",61,150;
+	mapwarp "ars_dun84","ars_dun75",61,150;
+	donpcevent "EP7_Schall01::OnInit";
+	end;
+
+OnTimer900000:
+
+	mapannounce "ars_dun79","Ganaëlle : Nous avons mis trop de temps ! Nos forces ont été repoussées, c'est un échec total !",1,0xff80ff;
+	mapannounce "ars_dun81","Ganaëlle : Nous avons mis trop de temps ! Nos forces ont été repoussées, c'est un échec total !",1,0xff80ff;
+	mapannounce "ars_dun84","Ganaëlle : Nous avons mis trop de temps ! Nos forces ont été repoussées, c'est un échec total !",1,0xff80ff;
+	sleep2 5000;
+	mapwarp "ars_dun79","ars_dun75",61,150;
+	mapwarp "ars_dun81","ars_dun75",61,150;
+	mapwarp "ars_dun84","ars_dun75",61,150;
+	donpcevent "EP7_Schall01::OnInit";
+	end;
+
+}
+//=================================================================================
+ars_dun81,114,329,5	script	#arsdun81c	45,1,1,{
+
+	if (EP7_SCHALLMAR >= 37 && $@ep7Schall01 == 2) {
+		warp "ars_dun84",200,123;
+		end;}		
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous ne pouvez pas encore rentrer dans le Sénat de Schallmar.";
+		close;
+}
+//=================================================================================
+ars_dun81,77,207,5	script	#arsdun81a	45,1,1,{
+
+	if (EP7_SCHALLMAR >= 37 && $@ep7Schall01 == 3) {
+		warp "ars_dun79",134,17;
+		end;}		
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous ne pouvez pas encore rentrer dans la Guilde Occulte de l'Orbe.";
+		close;
+}
+//=================================================================================
+ars_dun79,115,138,5	script	#arsdun79a	45,1,1,{
+		
+	if (EP7_SCHALLMAR <= 36) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous n'avez pas le niveau requis pour pouvoir entrer.";
+		close;}
+
+	if (EP7_SCHALLMAR >= 37 && $@ep7Schall01 == 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous venez d'entrer dans un portail magique qui vous emporte vers une destination inconnue.";
+		if (EP7_SCHALLMAR == 37) { mes "Vous venez de récupérer une carte au trésor.";}
+		close2;
+		if (EP7_SCHALLMAR == 37) {
+			set EP7_SCHALLMAR,38;
+			changequest 70611,70612;
+		}
+		warp "ars_dun85",116,37;
+		end;}
+}
+//=================================================================================
+ars_dun85,130,53,5	script	#arsdun85a	45,1,1,{
+		
+	if (EP7_SCHALLMAR <= 37) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous n'avez pas le niveau requis pour pouvoir entrer.";
+		close;}
+	
+	if (EP7_SCHALLMAR >= 38) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "La descente s'annonce dangereuse ... Vous apercevez un temple un peu plus loin dans la faille maritime.";
+		close2;
+		warp "ars_dun78",130,25;
+		if ($@ep7Schall02 == 0) { donpcevent "EP7_Schall02::OnStart"; }
+		end;}
+}
+//=================================================================================
+-	script	EP7_Schall02	-1,{
+
+OnInit:
+	
+	disablenpc "Shandalar#ep8";
+	disablenpc "Sénateur Palatin#ep8x";
+	disablenpc "Archimage Genka#ep8";
+	
+	killmonsterall "ars_dun78";
+	set $@ep7Schall02,0;
+
+	setnpctimer 0;
+	stopnpctimer;
+	end;
+
+OnStart:
+
+	if( $EP7Annonce == 0 ) {mapannounce "ars_dun85","Instance -- Le Temple de la Guilde de la Mishna !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 ) {announce "Instance -- Le Temple de la Guilde de la Mishna !",0,0xFFCC66;}
+	
+	initnpctimer;
+	set $@ep7Schall02,1;
+
+	enablenpc "Shandalar#ep8";
+	enablenpc "Sénateur Palatin#ep8x";
+	enablenpc "Archimage Genka#ep8";
+	
+	sleep2 10000;
+	mapannounce "ars_dun78","Ganaëlle : Avancez, il me semble que des personnes discutent un peu plus loin !",1,0xff80ff;
+	sleep2 15000;
+	mapannounce "ars_dun78","Ganaëlle : Nous voici dans les Guilde de la Mishna et leur temple obscur !",1,0xff80ff;	
+	sleep2 5000;
+	mapannounce "ars_dun78","Ganaëlle : Ecoutons leur discussion avant de les attaquer !",1,0xff80ff;	
+	sleep2 5000;
+	donpcevent "EP7_intro::OnEvent18";
+	end;
+
+OnSpawn:
+	
+	monster "ars_dun78",126,188,""+getmonsterinfo(3977,0)+"",3977,1,"EP7_Schall02::OnBossDead";
+	areamonster "ars_dun78",0,400,400,0,""+getmonsterinfo(3978,0)+"",3978,20,"EP7_Schall02::OnMobDead";	
+	set $@monster_ep7Schall02,1;
+	end;
+	
+//=======================
+OnMobDead: end;
+OnBossDead:
+
+	set $@monster_ep7Schall02, $@monster_ep7Schall02-1;
+	if($@monster_ep7Schall02==0) {
+		mapannounce "ars_dun78","Ganaëlle : Ces Mages renegats ne sont plus ! Sortons, je viens de récupérer des documents !",1,0xff80ff;
+		donpcevent "EP7_Schall02::OnEnd";
+		}
+	end;
+	
+OnEnd:
+	set $@ep7Schall02,2;
+	sleep2 180000;
+	donpcevent "EP7_Schall02::OnInit";
+	end;
+}
+//=================================================================================
+ars_dun78,135,188,5	script	Shandalar#ep8	792,{
+
+set @name$,"^66CCFFShandalar^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Cette personne semble occupée pour le moment.";
+	close;
+	
+OnTalk1:
+	npctalk "Palatin que faites-vous ici en ce moment ? Ne deviez-vous pas renverser ce Roi de Paille au Sénat !?";
+	end;
+
+OnTalk2:
+	npctalk "Expliquez-vous ! Mes ordres étaient pourtant très clairs !";
+	end;
+
+OnTalk3:
+	npctalk "Imbécile ! Voilà cinq ans de travail mis à mal pour votre incompétence !";
+	end;
+	
+OnTalk4:
+	npctalk "Notre Maître sera très contrarié par ce contre-temps ... Genka ! Tuez cet idiot !";
+	end;
+	
+OnTalk5:
+	npctalk "Je dois me rendre au Monastère d'Harpocrate à Arsinoé, passez à la seconde phase de l'opération et éliminez les intrus qui arrivent.";
+	end;
+}
+//=================================================================================
+ars_dun78,130,186,3	script	Sénateur Palatin#ep8x	872,{
+
+set @name$,"^66CCFFSénateur Palatin^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Cette personne semble occupée pour le moment.";
+	close;
+
+OnTalk1:
+	npctalk "Nous avons eu un problème ! La situation est désepérée !";
+	end;
+	
+OnTalk2:
+	npctalk "Le Roi Waclav a sorti des troupes de nulle part ... Des pirates de la Défense, il me semble.";
+	end;
+	
+OnTalk3:
+	npctalk "La garde qui nous était loyale a du se rendre dès les premières minutes faute d'organisation.";
+	end;
+	
+OnTalk4:
+	npctalk "Nos membres infiltrés au Sénat ont été tués par une escouade bien armée !";
+	end;
+
+OnTalk5:
+	npctalk "Le portail ... Fichtre !!!";
+	end;
+	
+OnTalk6:
+	npctalk "Maître ! Je vais ...";
+	sleep2 2000;
+	specialeffect 83;
+	specialeffect 92;
+	sleep2 1000;
+	disablenpc "Sénateur Palatin#ep8x";
+	end;
+}
+//=================================================================================
+ars_dun78,126,188,3	script	Archimage Genka#ep8	916,{
+
+set @name$,"^66CCFFArchimage Genka^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Cette personne semble occupée pour le moment.";
+	close;
+	
+OnTalk1:
+	npctalk "Avez-vous été suivi ? Le portail a-t-il été fermé ?";
+	end;
+	
+OnTalk2:
+	npctalk "Demaaaannnnoookiiiiiiii .....";
+	specialeffect 348;
+	end;
+
+OnTalk3:
+	npctalk "Alors c'est vous qui venez de mettre nos plans à plat ! N'avez-vous donc aucun respect pour le travail des autres ?";
+	end;
+
+OnTalk4:
+	npctalk "Vous ne devez pas avoir la moindre idée de ce que vous venez de faire ! Mais je crois que vous n'aurez jamais l'occasion de vous en rendre compte !";
+	end;
+}
+//=================================================================================
+ars_dun78,130,21,5	script	#arsdun78a	45,1,1,{
+		
+	if (EP7_SCHALLMAR == 38 && $@ep7Schall02 == 2) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "En sortant de la salle vous venez de récupérer un Perle Noire et une Carte au Trésor.";
+		close2;
+		set EP7_SCHALLMAR,39;
+		changequest 70612,70613;
+		getitem 29098,1; //Carte au Trésor n°9
+		getitem 29123,1; //Perle Noire
+	}
+	
+	warp "ars_dun85",129,49;
+	end;			
+}
+//_________________________________________________________________
+//________________ Schallmar : Temple de Shinaere _________________
+//_________________________________________________________________
+
+ars_dun76,143,119,3	script	Légat de Shinaere#ep8	120,{
+
+set @name$,"^66CCFFLégat de Shinaere^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Nous avons perdu les Perles de Shinaere. Elles ont été volées par des inconnus qui ont saccagé notre sanctuaire.";
+	mes "Nous souhaitons récupérer les 7 Perles pour pouvoir accèder au coeur du temple et s'assurer de la présence de Shinaere.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Notre temple a pu récupérer une perle, il nous en manque toujours six autres.";
+	next;
+	switch( select("•Voir l'Avancement:•Rendre les Perles:•Quitter") ) {
+				
+		case 1:
+			mes "[" + @name$ + "]";
+			if (EP7_SCHALLMAR >= 25) { mes "Perle Noire n°1 : ^66FF33 Obtenue^000000";}
+			if (EP7_SCHALLMAR < 25) { mes "Perle Noire n°1 : ^FF3300 Non Obtenue^000000"; }			
+			if (EP7_MANONEGRA >= 12) { mes "Perle Noire n°2 : ^66FF33 Obtenue^000000";}
+			if (EP7_MANONEGRA < 12) { mes "Perle Noire n°2: ^FF3300 Non Obtenue^000000"; }			
+			if (EP7_TRESORB >= 12) { mes "Perle Noire n°3 : ^66FF33 Obtenue^000000";}
+			if (EP7_TRESORB < 12) { mes "Perle Noire n°3 : ^FF3300 Non Obtenue^000000"; }			
+			if (EP7_SCHALLMAR >= 40) { mes "Perle Noire n°4 : ^66FF33 Obtenue^000000";}
+			if (EP7_SCHALLMAR < 40) { mes "Perle Noire n°4: ^FF3300 Non Obtenue^000000"; }			
+			if (EP7_MANONEGRA >= 16) { mes "Perle Noire n°5 : ^66FF33 Obtenue^000000";}
+			if (EP7_MANONEGRA < 16) { mes "Perle Noire n°5: ^FF3300 Non Obtenue^000000"; }			
+			if (EP7_CHASSEUR >= 11) { mes "Perle Noire n°6 : ^66FF33 Obtenue^000000";}
+			if (EP7_CHASSEUR < 11) { mes "Perle Noire n°6: ^FF3300 Non Obtenue^000000"; }			
+			mes "Perle Noire n°7 : ^66FF33 Obtenue^000000. Cette Perle est actuellement au Temple de Shinaere.";
+			close;
+			
+		case 2: 
+		
+			set @var,0;
+			if (EP7_SCHALLMAR >= 41) {
+				mes "[" + @name$ + "]";
+				mes "Toutes les perles ont déjà été rapportées !";
+				close;
+			}
+		
+			if (EP7_SCHALLMAR >= 25) { set @var,@var+1;}	
+			if (EP7_MANONEGRA >= 12) { set @var,@var+1;}
+			if (EP7_TRESORB >= 12) { set @var,@var+1;}
+			if (EP7_SCHALLMAR >= 40) { set @var,@var+1;}
+			if (EP7_MANONEGRA >= 16) { set @var,@var+1;}		
+			if (EP7_CHASSEUR >= 11) { set @var,@var+1;}
+		
+			
+			if(@var < 6) {
+				mes "[" + @name$ + "]";
+				mes "Vous n'avez pas encore toutes les perles demandées !";
+				mes "Vous avez pour le moment ["+@var+"/6] Perles.";
+				close;
+			}
+			
+				mes "[" + @name$ + "]";
+				mes "Parfait ! Vous avez pu réunir les 6 perles manquantes !";
+				mes "Prenez le portail pour vous téléporter face à la porte du Royaume de Shinaere.";
+				mes "Nous allons placer les perles sur l'autel.";
+				close2;
+				set EP7_SCHALLMAR,41;
+				changequest 70614,70615;
+				end;;
+			
+			
+			close;
+			
+		case 3: close;
+	}
+}
+//=================================================================================
+ars_dun76,138,133,5	script	#arsdun76b	45,1,1,{
+		
+	if (EP7_SCHALLMAR <= 40) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous ne pouvez pas emprunter ce portail avant d'avoir réuni les 7 Perles.";
+		close;
+	}
+	
+	if ( $@ep8EndFight > 1) { dispbottom "Une équipe est actuellement dans le Sanctuaire de Shinaere."; end;}
+	if ($@ep7Anim20 == 0 && EP7_SCHALLMAR == 41) { donpcevent "EP7_intro::OnEvent20"; }
+	warp "ars_dun86",125,41;
+	end;			
+}
+//=================================================================================
+
+ars_dun86,123,59,3	script	Légat de Shinaere#ep8x	120,{
+
+set @name$,"^66CCFFLégat de Shinaere^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Vous ne devriez pas le déranger pour le moment.";
+	close;
+
+OnTalk0: 
+	npctalk "Arrrinnahhhh ! Osstiiiiikraaassshhhhh ~";
+	end;
+	
+OnTalk1: 
+	npctalk "Veuillez avancer, je vais placer les Perles pour ouvrir la porte du Sanctuaire de Shinaere.";
+	end;
+	
+OnTalk2: 
+	npctalk "Voici pour la première perle ...";
+	end;	
+
+OnTalk3: 
+	npctalk "Qu'il en soit ainsi ... Nous n'avons plus une minute à perdre ... Allons-y !";
+	end;
+	
+OnWalk:
+
+	set $@ep7PosiEND,$@ep7PosiEND+1;
+	npcwalkto $@ep8PosiNDX[$@ep7PosiEND],$@ep8PosiNDY[$@ep7PosiEND];
+	end;
+}
+//=================================================================================
+ars_dun86,121,55,5	script	Shandalar#ep8x	792,{
+
+set @name$,"^66CCFFShandalar^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Vous ne devriez pas le déranger pour le moment.";
+	close;
+	
+OnTalk1: 
+	npctalk "Merci pour avoir ouvert la porte ! Ah Ah ~ !";
+	end;
+	
+OnTalk2: 
+	npctalk "Même si nous n'avons pas la tête de Waclav et le Royaume de Schallmar ... Le principal est nôtre !";
+	end;
+	
+OnTalk3: 
+	npctalk "De grandes forces sont en action, les changements approchent ... Le grand retour de mon maitre !";
+	end;
+	
+OnTalk4: 
+	npctalk "Nous avons ouvert un Portail vers les Abysses dans le Temple de Shinaere qui est lui-même construit sur la Vouvire.";
+	end;
+	
+OnTalk5: 
+	npctalk "La Vouivre est un passage étroit entre notre Monde tangible et les Abysses. Les Démons des Abysses vont pouvoir déferler sur le monde désormais !";
+	end;
+
+OnTalk6: 
+	npctalk "Ma nouvelle armée peut sortir grâce à vous ! Shinaere avait fait en sorte que la tempête disperse les perles mais grâce à des -héros- les revoilà en notre possession.";
+	end;
+
+OnTalk7: 
+	npctalk "Shinaere ne mérite plus son titre de déesse après une telle humiliation. Des hordes de démons vont sortir par cette porte ...";
+	end;
+	
+OnTalk8: 
+	npctalk "Et vous ne pourrez rien faire pour empêcher notre victoire !";
+	end;
+}
+//=================================================================================
+ars_dun86,127,58,3	script	Ganaëlle#ep8x	906,{
+
+set @name$,"^FF00CCGanaëlle^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Vous ne devriez pas la déranger pour le moment.";
+	close;
+	
+OnTalk1: 
+	npctalk "Shandalar si nous avons bien suivi ... Mon Roi, il semble qu'il soit responsable de Cabale à votre égard.";
+	end;
+	
+OnTalk2: 
+	npctalk "Nous avons poursuivi la Guilde Occulte de la Mishna jusqu'à un temple dans une faille.";
+	end;
+	
+OnTalk3: 
+	npctalk "Et il nous semble bien que les deux événements soient liés. Mais la raison du vol des perles ...";
+	end;
+
+OnTalk4: 
+	npctalk "Je lance un appel aux guerriers de la Guilde d'Harcourt, ainsi qu'à Pizzare.";
+	end;
+}
+//=================================================================================
+ars_dun86,129,55,3	script	Waclàv#ep8x	983,{
+
+set @name$,"^66CCFFWaclàv^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Vous ne devriez pas le déranger pour le moment.";
+	close;
+	
+OnTalk1: 
+	npctalk "Avant de poursuivre, j'aimerai connaître les raisons de votre présence Alfraganus ...";
+	end;
+	
+OnTalk2: 
+	npctalk "Des, des ... Des Hordes des Abysses !? Comment allons-nous faire pour arrêter ce genre de démons !?";
+	end;
+}
+//=================================================================================
+ars_dun86,125,51,5	script	Alfraganus#ep8x	451,{
+
+set @name$,"^66CCFFAlfraganus^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Vous ne devriez pas le déranger pour le moment.";
+	close;
+	
+OnTalk1: 
+	npctalk "Je suis devenu un gardien des anciens temps ... La Déesse Supérieure m'a confié comme tâche d'observer le monde.";
+	end;
+	
+OnTalk2: 
+	npctalk "Je suis devenu un gardien des anciens temps ... La Déesse Supérieure m'a confié comme tâche d'observer le monde.";
+	end;
+	
+OnTalk3: 
+	npctalk "Mais ce qui importe c'est la raison de mon intervention parmi vous.";
+	end;
+	
+OnTalk4: 
+	npctalk "Nous n'aurions pas du survivre au Cataclysme. Tu as ainsi du vendre ton âme au Loup pour rester sur terre ...";
+	end;
+	
+OnTalk5: 
+	npctalk "Le Ragnarök est proche selon toi ... Shandalar, mon ancien apprenti ...";
+	end;
+	
+OnTalk6: 
+	npctalk "Je vais m'occuper personnelement de Shandalar, il n'en a fait qu'à sa tête depuis bien trop longtemps ...";
+	end;
+	
+OnTalk7: 
+	npctalk "Nous allons descendre dans le sanctuaire de Shinaere, les guerriers s'occuperont des démons et j'irai colmater les failles entre les deux mondes.";
+	end;
+}
+//=================================================================================
+ars_dun86,121,59,5	script	#pearlevent1	111,{
+	end;}
+//=================================================================================
+ars_dun86,121,62,5	script	#pearlevent2	111,{
+	end;}
+//=================================================================================
+ars_dun86,121,66,5	script	#pearlevent3	111,{
+	end;}
+//=================================================================================
+ars_dun86,130,58,5	script	#pearlevent4	111,{
+	end;}
+//=================================================================================
+ars_dun86,130,66,5	script	#pearlevent5	111,{
+	end;}
+//=================================================================================
+ars_dun86,130,62,5	script	#pearlevent6	111,{
+	end;}
+//=================================================================================
+ars_dun86,126,69,5	script	#pearlevent7	111,{
+	end;}
+//=================================================================================
+-	script	EP7_SchallEnd	-1,{
+
+OnInit:
+	set $@ep7Anim20,0;
+	set $@ep7PosiEND,0;
+	set $@ep8EndFight,0;
+	
+	disablenpc "Shandalar#ep8x";
+	disablenpc "Ganaëlle#ep8y";
+	enablenpc "Alfraganus#ep8y";
+	disablenpc "Archimage Ornélia#ep8";
+	disablenpc "Shinaere#ep8";
+	
+	stopnpctimer;
+	setnpctimer 0;
+	end;
+
+OnAction:
+	
+	setarray $@ep8PosiNDX[1],123,123,129,129,129,126,123;
+	setarray $@ep8PosiNDY[1],63,67,66,63,59,66,59;
+	setarray .ep8EndName$[1],"#pearlevent1","#pearlevent2","#pearlevent3","#pearlevent4","#pearlevent5","#pearlevent6","#pearlevent7";
+
+	for( set .@i, 1; .@i < 8; set .@i, .@i +1 ) {		
+		sleep2 3000;
+		donpcevent "Légat de Shinaere#ep8x::OnTalk0";
+		donpcevent "Légat de Shinaere#ep8x::OnWalk";
+		specialeffect 13,AREA,.ep8EndName$[$@ep7PosiEND];
+	}
+	sleep2 3000;
+	donpcevent "EP7_intro::OnEvent20a";
+	end;
+	
+OnStart:
+	set $@ep8EndFight,1;
+	initnpctimer;
+	sleep2 2000;
+	mapannounce "ars_dun87","Alfraganus : Bon nous sommes dans le sanctuaire de Shinaere ... Vous allez devoir battre les Démons pour que je puisse colmater les failles.",1,0xF0C300;
+	sleep2 5000;
+	mapannounce "ars_dun87","Alfraganus : Allons-y ! Ces failles entre les deux plans d'existence sont une aberration !",1,0xF0C300;
+	monster "ars_dun87",25,89,"Démon Majeur",3983,1,"EP7_SchallEnd::OnBossDead";
+	set $@monster_ep8SchallEnd,1;
+	end;
+	
+//========================
+OnBossDead:
+	set $@monster_ep8SchallEnd, $@monster_ep8SchallEnd-1;
+		if($@monster_ep8SchallEnd==0 && $@ep8EndFight == 1) {
+			donpcevent "EP7_SchallEnd::OnInter1";}
+		if($@monster_ep8SchallEnd==0 && $@ep8EndFight == 2) {
+			donpcevent "EP7_SchallEnd::OnInter2";}
+		if($@monster_ep8SchallEnd==0 && $@ep8EndFight == 3) {
+			donpcevent "EP7_SchallEnd::OnInter3";}
+		if($@monster_ep8SchallEnd==0 && $@ep8EndFight == 4) {
+			donpcevent "EP7_SchallEnd::OnEnd";}
+	end;
+//========================	
+OnInter1:
+	mapannounce "ars_dun87","Alfraganus : Et voilà une faille de comblée ! Il en reste encore deux autres !",1,0xF0C300;
+	sleep2 5000;
+	mapannounce "ars_dun87","Ganaëlle : Me voilà ! Les renforts arrivent dans de peu de temps ! Tenez bon !",1,0xff80ff;
+	monster "ars_dun87",92,313,""+getmonsterinfo(3983,0)+"",3983,1,"EP7_SchallEnd::OnBossDead";
+	set $@ep8EndFight,2;
+	set $@monster_ep8SchallEnd,1;
+	end;
+
+OnInter2:
+	mapannounce "ars_dun87","Alfraganus : Ganaëlle et ses troupes retiennent des démons devant la porte du Sanctuaire !",1,0xF0C300;
+	sleep2 5000;
+	mapannounce "ars_dun87","Alfraganus : Aucun démon ne doit sortir du Temple sans quoi les pertes humaines pourraient être effroyables !",1,0xF0C300;
+	monster "ars_dun87",331,286,""+getmonsterinfo(3983,0)+"",3983,1,"EP7_SchallEnd::OnBossDead";
+	set $@ep8EndFight,3;
+	set $@monster_ep8SchallEnd,1;
+	end;
+	
+OnInter3:
+	mapannounce "ars_dun87","Alfraganus : Ne vous inquietez pas pour moi ... Je vais sceller la faille depuis les abysses.",1,0xF0C300;
+	sleep2 5000;
+	mapannounce "ars_dun87","Ganaëlle : Alfraganus ! Vous ne pourrez jamais en ressortir !",1,0xff80ff;
+	sleep2 5000;
+	mapannounce "ars_dun87","Alfraganus : J'ai fait mon temps sur cette terre et je dois réparer mes erreurs ... Si Shandalar est encore en vie c'est de ma faute ...",1,0xF0C300;
+	sleep2 5000;	
+	mapannounce "ars_dun87","Alfraganus : Je dois aller le battre là bas et mettre fin au processus du Ragnarök !",1,0xF0C300;
+	sleep2 5000;
+	mapannounce "ars_dun87","Ganaëlle : Oh, non ! Un Seigneur des Abysses vient de traverses les plans ! Revenez vite dans la salle principale ! Il faut absolument le tuer !",1,0xff80ff;
+	enablenpc "Ganaëlle#ep8y";
+	disablenpc "Alfraganus#ep8y";	
+	monster "ars_dun87",206,103,""+getmonsterinfo(3984,0)+"",3984,1,"EP7_SchallEnd::OnBossDead";
+	set $@ep8EndFight,4;
+	set $@monster_ep8SchallEnd,1;
+	end;
+//========================	
+
+OnEnd:
+	mapannounce "ars_dun87","Ganaëlle : Venez me voir, je crois que tout est fini ... Il ne reste plus aucun monstre des abysses ...",1,0xff80ff;
+	sleep2 15000;
+	donpcevent "ep7_intro::OnEvent21";
+	end;
+	
+OnTimer3600000:
+
+	mapannounce "ars_dun87","Les Monstres des Abysses sont sortis du Temple de Shinaere ... Nous avons échoué ...",1,0xFFCC66;
+	sleep2 5000;
+	mapwarp "ars_dun87","ars_fild72",212,184;
+	sleep2 60000;
+	donpcevent "EP7_SchallEnd::OnInit";
+	end;
+}
+//=================================================================================
+ars_dun86,125,77,5	script	#ep7bar86a	-1,5,0,{
+
+OnTouch:
+
+if (EP7_SCHALLMAR <= 41 && $@ep7Anim20 !=2) {
+		dispbottom "Un Champ de Force vous empêche de pénétrer dans le Sanctuaire.";
+		warp "ars_dun86",125,75;
+		end;}
+}
+//=================================================================================
+ars_dun87,143,95,5	script	#ep7bar87b	-1,0,15,{
+
+OnTouch:
+
+if (EP7_SCHALLMAR <= 41 && $@ep8EndFight < 1) {
+		dispbottom "Un Champ de Force vous empêche de pénétrer dans cette partie du Sanctuaire de Shinaere.";
+		warp "ars_dun87",152,94;
+		end;}
+}
+//=================================================================================
+ars_dun87,193,151,5	script	#ep7bar87c	-1,15,0,{
+
+OnTouch:
+
+if (EP7_SCHALLMAR <= 41 && $@ep8EndFight < 2) {
+		dispbottom "Un Champ de Force vous empêche de pénétrer dans cette partie du Sanctuaire de Shinaere.";
+		warp "ars_dun87",192,143;
+		end;}
+}
+//=================================================================================
+ars_dun87,255,119,5	script	#ep7bar87d	-1,0,15,{
+
+OnTouch:
+
+if (EP7_SCHALLMAR <= 41 && $@ep8EndFight < 3) {
+		dispbottom "Un Champ de Force vous empêche de pénétrer dans cette partie du Sanctuaire de Shinaere.";
+		warp "ars_dun87",247,120;
+		end;}
+}
+//=================================================================================
+ars_dun87,210,81,5	script	Alfraganus#ep8y	451,{
+
+set @name$,"^66CCFFAlfraganus^000000";
+
+	if ($@ep8EndFight == 1) {
+		mes "[" + @name$ + "]";
+		mes "Suivez mes indications ... Ces démons ne doivent pas sortir du temple !";
+		close;
+	}
+
+
+	mes "[" + @name$ + "]";
+	mes "Nous y voilà ...";
+	mes "Débutons le combat !";
+	close2;
+	if($@ep8EndFight == 0) { donpcevent "EP7_SchallEnd::OnStart"; }
+	end;
+}
+//=================================================================================
+ars_dun87,206,83,1	script	Ganaëlle#ep8y	906,{
+
+set @name$,"^FF00CCGanaëlle^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Vous ne devriez pas la déranger pour le moment.";
+	close;
+	
+OnTalk1: 
+	npctalk "Le Combat semble terminé ... Vous avez rendu la liberté à notre Déesse Shinaere !";
+	end;
+	
+OnTalk2: 
+	npctalk "Alfraganus est parti dans les abysses pour arrêter Shandalar ... A-t-il une chance de ... ?";
+	end;
+	
+OnTalk3: 
+	npctalk "Archimage Ornélia ... La responsable de l'Ordre Magique du Haut-Concile d'Arsinoé !";
+	end;
+	
+OnTalk4: 
+	npctalk "Mais que faites-vous ici !?";
+	end;
+	
+}
+//=================================================================================
+ars_dun87,202,80,1	script	Archimage Ornélia#ep8	893,{
+
+set @name$,"^FF00CCArchimage Ornélia^000000";
+
+if ($@ep8EndFight == 5 && EP7_SCHALLMAR == 41) {
+	mes "[" + @name$ + "]";
+	mes "*Vous venez de finir l'épisode VIII : Les Îles de Schallmar.*";
+	mes "Votre Nom sera ajouté au Palmarès des Enfants de Shinaere.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Vous venez de recevoir une Carte au Trésor d'Alfraganus.";
+	mes "Vous venez de récupérer un objet sur le Seigneur des Abysses.";
+	close2;
+	set EP7_SCHALLMAR,42;
+	completequest 70615;
+	getitem 29101,1;
+	getitem $ep7recompense[47],$ep7recompensenb[47];
+	
+	//Titre
+		set $EP8_TFINAL,$EP8_TFINAL+1;
+		for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+		if ($EP8_TFINAL == .@i){ setarray $EP7_NFinal$[.@i],strcharinfo(0);}
+		
+	announce "[" + strcharinfo(0) +"] est devenu le [" + $EP8_TFINAL + "] Enfant de Shinaere !",bc_all,0x33FF00;
+	warp "ars_fild72",212,184;
+	end;
+	}
+	
+if ($@ep8EndFight == 5 && EP7_SCHALLMAR >= 42) {	
+	mes "[" + @name$ + "]";
+	mes "Je vais vous guider ...";
+	close2;
+	warp "ars_fild72",212,184;
+	end;
+	}
+
+	mes "[" + @name$ + "]";
+	mes "Vous ne devriez pas la déranger pour le moment.";
+	close;
+	
+//=======================
+OnTalk1: 
+	npctalk "Désolée de vous interrompre ...";
+	end;
+	
+OnTalk2: 
+	npctalk "Je viens vous apporter le corps d'Alfraganus ... Il n'a pas réussi à stopper Shandalar ... ";
+	end;
+	
+OnTalk3: 
+	npctalk "Des élus doivent se dresser sur sa route, ce n'était pas son rôle de résoudre cette histoire selon Aérie.";
+	end;
+	
+OnTalk4: 
+	npctalk "Venez me voir, je vais vous mener en dehors du temple ... J'ai aussi un présent d'Alfraganus pour vous.";
+	end;
+}
+//=================================================================================
+ars_dun87,204,76,1	script	Shinaere#ep8	435,{
+
+set @name$,"^FF00CCShinaere^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Vous ne devriez pas la déranger pour le moment.";
+	close;
+	
+OnTalk1: 
+	npctalk "Merci de m'avoir sauvée ... Votre action a été très importante pour l'avenir de notre monde !";
+	end;
+
+OnTalk2: 
+	npctalk "Mais j'ai bien peur que les plans de Shandalar et de son maitre ne s'arrêtent pas là ...";
+	end;
+	
+OnTalk3: 
+	npctalk "Oh le pauvre fou ... Il s'en veut tellement d'avoir sauvé la vie de Shandalar lors du Cataclysme ...";
+	end;
+	
+OnTalk4: 
+	npctalk "Nous devons tous garder la Foi ... Dieux et Déesses seront à côté des héros et des simples pour mener le combat.";
+	end;
+}
+//_________________________________________________________________
+//________________ Schallmar : Compagnie Brittany _________________
+//_________________________________________________________________
+
+ars_fild73,241,324,5	script	Compagnie Britanny#ep8h	510,{
+
+set @name$,"^FF00CCCompagnie Britanny^000000";
+
+if (EP7_SCHALLMAR <= 36)  goto sub1;
+if (EP7_SCHALLMAR >= 37)  goto sub2;
+
+sub1:
+
+	mes "[" + @name$ + "]";
+	mes "Je ne peux hélas vous venir en aide pour le moment !";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Heureuse Rencontre ! Je me présente, ^FF00CCBritanny^000000, nous sommes une compagnie de transport maritimes."; 
+	next;
+	callfunc "arsi_Brit";
+	end;
+}
+//=================================================================================
+ars_fild72,145,85,5	script	Compagnie Britanny#ep8g	510,{
+
+set @name$,"^FF00CCCompagnie Britanny^000000";
+
+if (EP7_SCHALLMAR <= 26)  goto sub1;
+if (EP7_SCHALLMAR >= 27)  goto sub2;
+
+sub1:
+
+	mes "[" + @name$ + "]";
+	mes "Je ne peux hélas vous venir en aide pour le moment !";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Heureuse Rencontre ! Je me présente, ^FF00CCBritanny^000000, nous sommes une compagnie de transport maritimes."; 
+	next;
+	callfunc "arsi_Brit";
+	end;
+}
+ars_fild72,73,254,3	duplicate(Compagnie Britanny#ep8g)	Compagnie Britanny#ep8i	510
+ars_fild72,182,290,3	duplicate(Compagnie Britanny#ep8g)	Compagnie Britanny#ep8j	510
+
+//_________________________________________________________________
+//________________ Schallmar : Prison _____________________________
+//_________________________________________________________________
+
+ars_fild72,258,289,5	script	Action : Voler#sch1a	111,{
+set @stealitem,512;callfunc "ars_vol";end;}
+ars_fild72,255,306,5	script	Action : Voler#sch1b	111,{
+set @stealitem,501;callfunc "ars_vol";end;}
+ars_fild72,305,287,5	script	Action : Voler#sch1c	111,{
+set @stealitem,513;callfunc "ars_vol";end;}
+ars_fild72,302,271,5	script	Action : Voler#sch1d	111,{
+set @stealitem,512;callfunc "ars_vol";end;}
+ars_fild72,251,253,5	script	Action : Voler#sch1e	111,{
+set @stealitem,501;callfunc "ars_vol";end;}
+ars_fild72,286,240,5	script	Action : Voler#sch1f	111,{
+set @stealitem,513;callfunc "ars_vol";end;}
+//=================================================================================
+ars_dun94,46,106,5	script	Maton#ep8	106,{
+
+set @name$,"^66CCFFMaton^000000";
+
+	mes "[" + @name$ + "]"; 
+	mes "Si tu veux sortir ... Eh beh ... tu attends que je le décide !";
+	close;
+
+OnInit:
+	disablenpc "EP7Sw206";
+	sleep2 10000;
+	npctalk "Alors on a volé !?";
+	sleep2 5000;
+	npctalk "C'est pas bien ça ... Vraiment pas bien ...";
+	sleep2 5000;
+	npctalk "Je pense que tu es une vrai emerde ... Du genre pas très malin ...";
+	sleep2 5000;
+	npctalk "Enfin, tu fais ce que tu peux avec l'intelligence que t'ont donné tes parents ....";
+	sleep2 5000;
+	npctalk "C'est à dire pas grand chose !";
+	sleep2 20000;
+	npctalk "Tu t'ennuies pas trop !?";
+	sleep2 20000;
+	npctalk "Tu connais l'histoire de Paf le chien ?";
+	sleep2 10000;
+	npctalk "Enfin tant que je n'ai pas de Kenders dans les pattes cela me va !";
+	sleep2 10000;
+	npctalk "Bon, cela va être l'heure pour toi de sortir !";
+	sleep2 5000;
+	npctalk "Je rigole ! Tu n'es pas prêt de sortir !";
+	sleep2 20000;
+	npctalk "Bon, ordre des boss ... Tu peux sortir ...";
+	enablenpc "EP7Sw206";
+	sleep2 20000;
+	donpcevent "Maton#ep8::OnInit";
+	end;
+}
+//=================================================================================

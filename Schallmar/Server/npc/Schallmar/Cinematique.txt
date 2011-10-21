@@ -1,0 +1,1005 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+//===== Arsinoé Script ============================================================================ 
+//
+//= Cinematics for Arsinoé Mod
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.x Versions without multi-language support.
+//= 2.0 release
+//= 2.1 Schallmar cinematics added
+//
+//================================================================================================= 
+
+
+
+//_________________________________________________________________
+//___________________ Animations __________________________________
+//_________________________________________________________________
+
+-	script	EP7_intro	-1,{
+
+OnInit:
+	//Variables Intro
+	set $@ep7intro1,0;
+	set $@ep7intro2,0;
+	set $@ep7intro3,0;
+	set $@ep7intro4,0;
+	set $@ep7intro5,0;
+
+	//Néraka
+	set $@ep7Anim1,0;
+	//Urunesti
+	set $@ep7Anim2,0;
+	set $@ep7Anim3,0;
+	set $@ep7Anim4,0;
+	set $@ep7Anim5,0;
+	set $@ep7Anim6,0;
+	//Schallmar
+	set $@ep7Anim18,0;
+
+	//Séquences
+	donpcevent "EP7_intro::OnEvent2";
+	donpcevent "EP7_intro::OnEvent3";
+	donpcevent "EP7_intro::OnEvent6";
+
+	//Npc Hide
+	disablenpc "Mage#ep7shan";
+	disablenpc "Archimage Ornélia#ep7i";
+	disablenpc "Archimage Ornélia#ep7i";
+	disablenpc "Archimage Archosio#ep7i";
+	disablenpc "Mage Ghoji#ep7i";
+	disablenpc "Apprenti Oeste#ep7i";
+	disablenpc "Aerie#ep7intro";
+	disablenpc "#arsdun22a";
+
+	disablenpc "Comte de Nemours#ep72";
+	disablenpc "Comte du Wurtemberg#ep7";
+	disablenpc "Comte de Guyenne#ep7";
+
+	disablenpc "#arsin10c";
+	end;
+
+//============================================================
+
+OnEvent1:
+
+	set $@ep7intro1,1;
+	sleep2 2000;
+	donpcevent "Spiria Symphonia#ep7::OnTalk1";
+	sleep2 4000;
+	donpcevent "Maa Aluna#ep7::OnTalk1";
+	sleep2 4000;
+	donpcevent "Ryu Zandermil#ep7::OnTalk1";
+	sleep2 4000;
+	donpcevent "Spiria Symphonia#ep7::OnTalk2";
+	sleep2 4000;
+	donpcevent "Ryu Zandermil#ep7::OnTalk2";
+	sleep2 4000;
+	donpcevent "Maa Aluna#ep7::OnTalk2";
+	sleep2 4000;
+	donpcevent "Spiria Symphonia#ep7::OnTalk3";
+	sleep2 4000;
+	donpcevent "Spiria Symphonia#ep7::OnTalk4";
+	sleep2 4000;
+	donpcevent "Spiria Symphonia#ep7::OnTalk5";
+	donpcevent "Maa Aluna#ep7::OnTalk3";
+	donpcevent "Ryu Zandermil#ep7::OnTalk3";
+	sleep2 1000;
+	donpcevent "Spiria Symphonia#ep7::OnMove1";
+	donpcevent "Maa Aluna#ep7::OnMove1";
+	donpcevent "Ryu Zandermil#ep7::OnMove1";
+	sleep2 5000;
+	donpcevent "Spiria Symphonia#ep7::OnMove2";
+	donpcevent "Maa Aluna#ep7::OnMove2";
+	donpcevent "Ryu Zandermil#ep7::OnMove2";
+	sleep2 5000;  
+	donpcevent "Spiria Symphonia#ep7::OnMove3";
+	donpcevent "Maa Aluna#ep7::OnMove3";
+	donpcevent "Ryu Zandermil#ep7::OnMove3";
+	sleep2 5000;  
+	donpcevent "Spiria Symphonia#ep7::OnMove4";
+	donpcevent "Maa Aluna#ep7::OnMove4";
+	donpcevent "Ryu Zandermil#ep7::OnMove4";
+	sleep2 5000;  
+	//Reset
+	set $@ep7intro1,0;
+	end;
+
+//============================================================
+
+OnEvent2:
+
+	donpcevent "Olive#ep7::OnTalk1";
+	sleep2 4000;
+	donpcevent "Papaeye#ep7::OnTalk1";
+	sleep2 4000;
+	donpcevent "Olive#ep7::OnTalk2";
+	sleep2 4000;
+	donpcevent "Papaeye#ep7::OnTalk2";
+	sleep2 4000;
+	donpcevent "Olive#ep7::OnTalk3";
+	sleep2 4000;
+	donpcevent "Papaeye#ep7::OnTalk3";
+	sleep2 4000;
+	donpcevent "Olive#ep7::OnTalk4";
+	sleep2 4000;
+	donpcevent "Papaeye#ep7::OnTalk4";
+	sleep2 4000;
+	donpcevent "Olive#ep7::OnTalk5";
+	sleep2 4000;
+	donpcevent "Olive#ep7::OnTalk6";
+	sleep2 4000;
+	donpcevent "Papaeye#ep7::OnTalk5";
+	sleep2 4000;
+	donpcevent "Marchand de Glaces#ep7::OnTalk1";
+	sleep2 60000; //Pause et Reprise
+	donpcevent "EP7_intro::OnEvent2";
+	end;
+
+//============================================================
+
+OnEvent3:
+
+	donpcevent "Marchand#ep7a::OnTalk1";
+	sleep2 15000;
+	donpcevent "Marchand#ep7a::OnTalk2";
+	sleep2 15000;
+	donpcevent "Marchand#ep7b::OnTalk1";
+	sleep2 15000;
+	donpcevent "Marchand#ep7b::OnTalk2";
+	sleep2 15000;
+	donpcevent "EP7_intro::OnEvent3";
+	end;
+
+//============================================================
+
+OnEvent4:
+
+	set $@ep7intro2,1;
+	sleep2 2000;
+	enablenpc "Mage#ep7shan";
+	sleep2 3000;
+	donpcevent "Mage#ep7shan::OnTalk1";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan::OnTalk2";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan::OnTalk3";
+	sleep2 25000;  
+	//Reset
+	disablenpc "Mage#ep7shan";
+	set $@ep7intro2,0;
+	end;
+
+//============================================================
+
+OnEvent5:
+
+	set $@ep7intro3,1;
+	sleep2 3000;
+	donpcevent "Mage#ep7shan2::OnTalk1";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan2::OnTalk2";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan2::OnTalk3";
+	sleep2 5000;  
+	donpcevent "Mage#ep7shan2::OnTalk4";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan2::OnTalk5";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan2::OnTalk6";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan2::OnTalk7";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#ep7i::OnTalk1";
+	sleep2 3000;
+	donpcevent "Mage#ep7shan2::OnTalk8";
+	donpcevent "Mage#ep7shan2::OnMove1";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#ep7i::OnTalk2";
+	donpcevent "Archimage Archosio#ep7i::OnTalk1";
+	donpcevent "Mage Ghoji#ep7i::OnTalk1";
+	donpcevent "Apprenti Oeste#ep7i::OnTalk1";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan2::OnTalk9";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#ep7i::OnTalk3";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#ep7i::OnTalk4";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan2::OnTalk10";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#ep7i::OnTalk5";
+	sleep2 3000;
+	donpcevent "Archimage Archosio#ep7i::OnTalk2";
+	donpcevent "Mage Ghoji#ep7i::OnTalk2";
+	donpcevent "Apprenti Oeste#ep7i::OnTalk2";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#ep7i::OnTalk6";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#ep7i::OnTalk7";
+	sleep2 4000;
+	donpcevent "Mage#ep7shan2::OnTalk11";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#ep7i::OnTalk8";
+	sleep2 5000;
+	donpcevent "Mage#ep7shan2::OnMove2";
+	//Reset
+	set $@ep7intro3,0;
+	disablenpc "Archimage Ornélia#ep7i";
+	disablenpc "Archimage Archosio#ep7i";
+	disablenpc "Mage Ghoji#ep7i";
+	disablenpc "Apprenti Oeste#ep7i";
+	end;
+
+//============================================================
+
+OnEvent6:
+
+	donpcevent "Elandor le Magnifique#1::OnTalk1";
+	sleep2 15000;
+	donpcevent "Elandor le Magnifique#1::OnTalk2";
+	sleep2 4000;	
+	donpcevent "Spectateur#ep7i1::OnTalk1";
+	sleep2 10000;
+	donpcevent "Spectateur#ep7i2::OnTalk1";
+	sleep2 4000;
+	donpcevent "Elandor le Magnifique#1::OnTalk3";
+	sleep2 3000;
+	donpcevent "Spectateur#ep7i1::OnTalk2";
+	donpcevent "Spectateur#ep7i2::OnTalk2";
+	donpcevent "Spectateur#ep7i3::OnTalk1";
+	sleep2 4000;
+	donpcevent "Elandor le Magnifique#1::OnTalk4";
+	sleep2 4000;
+	donpcevent "Spectateur#ep7i3::OnTalk2";
+	donpcevent "Spectateur#ep7i3::OnMove1";
+	sleep2 4000;
+	donpcevent "Elandor le Magnifique#1::OnTalk5";
+	sleep2 4000;
+	donpcevent "Spectateur#ep7i1::OnTalk3";
+	sleep2 4000;
+	donpcevent "Elandor le Magnifique#1::OnTalk6";
+	donpcevent "Spectateur#ep7i3::OnTalk3";
+	sleep2 3000;
+	donpcevent "Spectateur#ep7i3::OnTalk4";
+	sleep2 2000;
+	donpcevent "Spectateur#ep7i2::OnTalk3";
+	sleep2 4000;
+	donpcevent "Elandor le Magnifique#1::OnTalk7";
+	sleep2 5000;
+	donpcevent "Spectateur#ep7i3::OnTalk5";
+	sleep2 4000;
+	donpcevent "Elandor le Magnifique#1::OnTalk6";
+	sleep2 3000;
+	donpcevent "Spectateur#ep7i3::OnTalk6";
+	sleep2 2000;
+	donpcevent "Elandor le Magnifique#1::OnTalk8";
+	sleep2 3000;
+	donpcevent "Spectateur#ep7i1::OnTalk4";
+	sleep2 1500;
+	donpcevent "Spectateur#ep7i2::OnTalk4";
+	sleep2 3000;
+	donpcevent "Spectateur#ep7i3::OnTalk7";
+	donpcevent "Spectateur#ep7i3::OnMove2";
+	sleep2 3000;
+	donpcevent "Elandor le Magnifique#1::OnTalk9";
+	sleep2 3000;
+	donpcevent "Elandor le Magnifique#1::OnTalk10";
+	sleep2 3000;
+	donpcevent "Spectateur#ep7i3::OnTalk8";
+	sleep2 2500;
+	donpcevent "Spectateur#ep7i1::OnTalk5";
+	sleep2 3000;
+	donpcevent "Elandor le Magnifique#1::OnTalk11";
+	sleep2 3000;
+	donpcevent "Elandor le Magnifique#1::OnTalk12";
+	donpcevent "Spectateur#ep7i3::OnTalk9";
+	sleep2 3000;
+	donpcevent "Spectateur#ep7i3::OnTalk10";
+	donpcevent "Spectateur#ep7i3::OnMove3";
+	sleep2 2000;
+	donpcevent "Spectateur#ep7i1::OnTalk6";
+	donpcevent "Spectateur#ep7i2::OnTalk5";
+	sleep2 20000;
+	donpcevent "Spectateur#ep7i2::OnTalk6";
+	sleep2 20000;
+	donpcevent "Spectateur#ep7i2::OnTalk6";
+	sleep2 20000; //Pause et Reprise
+	donpcevent "EP7_intro::OnEvent6";
+	end;
+
+//============================================================
+
+OnEvent7:
+
+	set $@ep7intro4,1;
+	sleep2 1000;
+	donpcevent "Archimage Ornélia#intro::OnTalk1";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#intro::OnTalk2";
+	donpcevent "Archimage Ornélia#intro::OnMove1";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#intro::OnTalk3";
+	sleep2 5000;
+	donpcevent "Prophète Tanzgue#intro::OnTalk1";
+	sleep2 5000;
+	donpcevent "Prêtre Merlay#intro::OnTalk1";
+	sleep2 4000;
+	donpcevent "Clerc Graivois#intro::OnTalk1";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#intro::OnTalk4";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#intro::OnTalk5";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#intro::OnTalk6";
+	sleep2 5000;
+	donpcevent "Prophète Tanzgue#intro::OnTalk2";
+	sleep2 5000;
+	donpcevent "Prophète Tanzgue#intro::OnTalk3";
+	sleep2 3000;
+	enablenpc "Aerie#ep7intro";
+	donpcevent "Aerie#ep7intro::OnTalk1";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#intro::OnTalk7";
+	sleep2 5000;
+	donpcevent "Aerie#ep7intro::OnTalk2";
+	sleep2 5000;
+	donpcevent "Aerie#ep7intro::OnTalk3";
+	sleep2 5000;
+	donpcevent "Aerie#ep7intro::OnTalk4";
+	sleep2 5000;
+	donpcevent "Prêtre Merlay#intro::OnTalk2";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#intro::OnTalk8";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#intro::OnTalk9";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#intro::OnTalk10";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#intro::OnTalk11";
+	sleep2 5000;
+	donpcevent "Aerie#ep7intro::OnTalk5";
+	donpcevent "Archimage Ornélia#intro::OnTalk12";
+	enablenpc "#arsdun22a";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#intro::OnTalk12";
+	donpcevent "Aerie#ep7intro::OnTalk6";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#intro::OnTalk12";
+	sleep2 4000;
+	donpcevent "Archimage Ornélia#intro::OnMove2";
+	sleep2 10000;
+	//Reset
+	set $@ep7intro4,0;
+	disablenpc "Aerie#ep7intro";
+	disablenpc "#arsdun22a";	
+	end;
+
+//============================================================
+
+OnEvent8:
+
+	set $@ep7Anim1,1;
+	sleep2 5000;	
+	donpcevent "Roi Baudouin I#ep7::OnTalk1";
+	sleep2 4000;
+	donpcevent "Chancelier Risfek#ep7::OnTalk1";
+	sleep2 5000;
+	enablenpc "Comte du Wurtemberg#ep7";
+	enablenpc "Comte de Guyenne#ep7";
+	sleep2 2000;
+	donpcevent "Comte du Wurtemberg#ep7::OnTalk1";
+	sleep2 4000;
+	donpcevent "Roi Baudouin I#ep7::OnTalk2";
+	sleep2 3000;
+	donpcevent "Comte de Guyenne#ep7::OnTalk1";
+	sleep2 4000;
+	donpcevent "Roi Baudouin I#ep7::OnTalk3";
+	sleep2 3000;
+	enablenpc "Comte de Nemours#ep72";
+	sleep2 2000;
+	donpcevent "Comte de Guyenne#ep7::OnTalk2";
+	sleep2 4000;
+	donpcevent "Comte de Nemours#ep72::OnTalk1";
+	sleep2 4000;
+	donpcevent "Chancelier Risfek#ep7::OnTalk2";
+	sleep2 5000;
+	donpcevent "Chancelier Risfek#ep7::OnTalk3";
+	sleep2 5000;
+	donpcevent "Comte de Nemours#ep72::OnTalk2";
+	sleep2 5000;
+	donpcevent "Roi Baudouin I#ep7::OnTalk4";
+	sleep2 4000;
+	donpcevent "Comte de Nemours#ep72::OnTalk3";
+	sleep2 5000;
+	donpcevent "Comte de Nemours#ep72::OnTalk4";
+	sleep2 5000;
+	donpcevent "Chancelier Risfek#ep7::OnTalk4";
+	sleep2 5000;
+	enablenpc "Comte de Nemours#ep72::OnTalk5";
+	sleep2 5000;
+	donpcevent "Comte de Nemours#ep72::OnTalk6";
+	sleep2 5000;
+	donpcevent "Comte du Wurtemberg#ep7::OnTalk2";
+	sleep2 4000;
+	donpcevent "Comte de Nemours#ep72::OnTalk7";
+	sleep2 3000;
+	donpcevent "Comte de Nemours#ep72::OnTalk8";
+	sleep2 5000;
+	disablenpc "Comte de Nemours#ep72";
+	donpcevent "Comte de Guyenne#ep7::OnTalk3";
+	sleep2 5000;
+	donpcevent "Roi Baudouin I#ep7::OnTalk5";
+	set $@ep7Anim1,2;
+	sleep2 5000;
+	donpcevent "Roi Baudouin I#ep7::OnTalk6";
+	sleep2 5000;
+	donpcevent "Comte du Wurtemberg#ep7::OnTalk3";
+	sleep2 2000;
+	donpcevent "Comte de Guyenne#ep7::OnTalk4";
+
+	sleep2 180000;
+
+	set $@ep7Anim1,0;
+	disablenpc "Comte du Wurtemberg#ep7";
+	disablenpc "Comte de Guyenne#ep7";
+	end;
+
+//============================================================
+
+OnEvent9:
+
+	set $@ep7Anim2,1;
+	sleep2 3000;	
+	donpcevent "Archimage Ornélia#aby::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Prophète Tanzgue#aby::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Prophète Tanzgue#aby::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Clerc Graivois#aby::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Clerc Graivois#aby::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby::OnTalk3";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby::OnTalk4";
+	sleep2 5000;	
+	donpcevent "Joka l'éclairé#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Joka l'éclairé#aby2::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Joka l'éclairé#aby2::OnTalk3";
+	sleep2 5000;	
+	donpcevent "Joka l'éclairé#aby2::OnTalk4";
+	sleep2 5000;	
+	donpcevent "Joka l'éclairé#aby2::OnTalk5";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby::OnTalk5";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby::OnTalk6";
+	sleep2 1000;	
+	set $@ep7Anim2,2;
+	sleep2 120000;
+	set $@ep7Anim2,0;
+	end;
+
+
+//============================================================
+
+OnEvent10:
+
+	set $@ep7Anim3,1;
+	sleep2 3000;
+	
+	donpcevent "Archimage Ornélia#aby::OnAction1";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby::OnTalk7";
+	enablenpc "#arsin10c";
+	sleep2 120000;
+	disablenpc "#arsin10c";
+	set $@ep7Anim3,0;
+	end;
+
+//============================================================
+
+OnEvent11:
+
+	set $@ep7Anim4,1;
+	sleep2 3000;
+	
+	donpcevent "Archimage Ornélia#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby2::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Ursula Hupoi#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Dynaheir#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Dynaheir#aby2::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby2::OnTalk3";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby2::OnTalk4";
+	sleep2 5000;	
+	donpcevent "Clerc Graivois#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Prophète Tanzgue#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Daphnis#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Prêtre Merlay#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby2::OnTalk5";
+	sleep2 5000;	
+	donpcevent "Général Athanase#aby2::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Général Athanase#aby2::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#aby2::OnTalk6";
+	sleep2 5000;	
+	donpcevent "Archimage Archosio#aby2::OnTalk2";
+	sleep2 1000;	
+	donpcevent "Mage Ghoji#aby2::OnTalk2";
+	sleep2 3000;	
+	donpcevent "Dynaheir#aby2::OnTalk3";
+	sleep2 2000;	
+	donpcevent "Archimage Ornélia#aby2::OnTalk7";
+	donpcevent "Archimage Archosio#aby2::OnTalk3";
+	donpcevent "Mage Ghoji#aby2::OnTalk3";
+	donpcevent "Dynaheir#aby2::OnTalk4";
+	sleep2 2000;
+	donpcevent "Ursula Hupoi#aby2::OnTalk2";
+
+
+
+	sleep2 2000;
+	donpcevent "Archimage Ornélia#aby2::OnTalk8";
+	sleep2 1000;	
+
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) {mapannounce "ars_in15","Instance -- L'épopée des Abysses vient de débuter !",1,0xFF6600;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) {announce "Instance -- L'épopée des Abysses vient de débuter !",0,0xFF6600;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) {mapannounce "ars_in15","Instance -- The Epic of the Abyss has just begun!",1,0xFF6600;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) {announce "Instance -- The Epic of the Abyss has just begun !",0,0xFF6600;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 4) {mapannounce "ars_in15","Instance -- The Epic of the Abyss has just begun!",1,0xFF6600;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 4) {announce "Instance -- The Epic of the Abyss has just begun !",0,0xFF6600;}
+	
+	set $@ep7Anim4,2;
+	sleep2 120000;
+	set $@ep7Anim4,0;
+	end;
+
+//============================================================
+
+OnEvent12:
+
+	if(.@ep7temp == 10) {set .@ep7temp,0;}
+
+	if($@ep7Anim4 == 1) {
+		donpcevent "Archimage Ornélia#aby4::OnTalk1";
+		donpcevent "Dynaheir#aby3::OnTalk1";
+		donpcevent "Archimage Archosio#aby4::OnTalk1";
+		donpcevent "Mage Ghoji#aby4::OnTalk1";
+		sleep2 10000;
+		donpcevent "Archimage Ornélia#aby4::OnTalk1";
+		donpcevent "Dynaheir#aby3::OnTalk1";
+		donpcevent "Archimage Archosio#aby4::OnTalk2";
+		donpcevent "Mage Ghoji#aby4::OnTalk2";
+		sleep2 10000;
+
+		if(.@ep7temp == 0) {
+			donpcevent "Archimage Ornélia#aby4::OnTalk2";
+			donpcevent "Dynaheir#aby3::OnTalk2";
+			donpcevent "Archimage Archosio#aby4::OnTalk3";
+			donpcevent "Mage Ghoji#aby4::OnTalk3";	
+			}
+		set .@ep7temp,.@ep7temp+1;
+		donpcevent "EP7_intro::OnEvent12";
+		}
+	end;
+
+//============================================================
+
+OnEvent13:
+
+	sleep2 2000;
+	if($ep7_LangChoice & 1) {mapannounce "ars_fild62","Archimage Ornélia : Nous y voilà, les troupes de Fenrir ne sont plus ...",1,0x99CC33;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_fild62","Archimage Ornélia : Here we are, the troops are no longer at Fenrir...",1,0x99CC33;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_fild62","Archimage Ornélia : Here we are, the troops are no longer at Fenrir...",1,0x99CC33;}
+	
+	sleep2 8000;
+	donpcevent "Archimage Ornélia#aby4::OnTalk3";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#aby4::OnTalk4";
+	sleep2 5000;
+	donpcevent "Odin#aby::OnAction1";
+	donpcevent "Aerie#aby::OnAction1";
+	donpcevent "Fenrir#aby::OnAction1";
+	sleep2 3000;
+	enablenpc "Odin#aby";
+	enablenpc "Aerie#aby";
+	enablenpc "Fenrir#aby";
+	sleep2 3000;
+	donpcevent "Odin#aby::OnTalk1";
+	sleep2 5000;
+	donpcevent "Odin#aby::OnTalk2";
+	sleep2 5000;
+	donpcevent "Aerie#aby::OnTalk1";
+	sleep2 5000;
+	donpcevent "Dynaheir#aby3::OnTalk1::OnTalk3";
+	sleep2 5000;
+	donpcevent "Odin#aby::OnTalk3";
+	sleep2 2000;
+	donpcevent "Odin#aby::OnAction2";
+	sleep2 3000;
+	disablenpc "Odin#aby";
+	disablenpc "Fenrir#aby";
+	sleep2 2000;
+	donpcevent "Archimage Ornélia#aby4::OnTalk5";
+	sleep2 2000;
+	donpcevent "EP7_fenris::OnFinal";
+	end;
+
+//============================================================
+
+OnEvent14:
+
+	set $@ep7Anim6,1;
+	sleep2 5000;
+	donpcevent "Aerie PinkPanther#coeur::OnTalk1";
+	sleep2 10000;
+	donpcevent "Aerie PinkPanther#coeur::OnTalk1";
+	sleep2 10000;
+	donpcevent "Aerie PinkPanther#coeur::OnTalk2";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#coeur::OnTalk1";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#coeur::OnTalk2";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#coeur::OnTalk3";
+	sleep2 5000;
+	donpcevent "Daphnis#coeur::OnTalk1";
+	sleep2 5000;
+	donpcevent "Ursula Hupoi#coeur::OnTalk1";
+	sleep2 5000;
+	donpcevent "Ursula Hupoi#coeur::OnTalk2";
+	sleep2 5000;
+	donpcevent "Dynaheir#coeur::OnTalk1";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#coeur::OnTalk4";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#coeur::OnTalk5";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#coeur::OnTalk6";
+	sleep2 5000;
+	donpcevent "Dynaheir#coeur::OnTalk2";
+	sleep2 5000;
+	donpcevent "Daphnis#coeur::OnTalk2";
+	sleep2 5000;
+	donpcevent "Daphnis#coeur::OnTalk3";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#coeur::OnTalk7";
+	sleep2 5000;
+	donpcevent "Archimage Ornélia#coeur::OnTalk8";
+	sleep2 5000;
+	donpcevent "Aerie PinkPanther#coeur::OnTalk3";
+	sleep2 2000;
+	donpcevent "Aerie PinkPanther#coeur::OnTalk4";
+	end;
+	
+//============================================================
+OnEvent15:
+
+	donpcevent "Caporale Pietitchev#ep7::OnMove1";
+	sleep2 2000;
+	donpcevent "Caporale Pietitchev#ep7::OnTalk1";
+	sleep2 5000;
+	donpcevent "MonteChritos#ep73::OnTalk1";
+	sleep2 5000;
+	donpcevent "Caporale Pietitchev#ep7::OnTalk2";
+	sleep2 5000;
+	donpcevent "MonteChritos#ep73::OnTalk2";
+	sleep2 5000;
+	donpcevent "Caporale Pietitchev#ep7::OnTalk3";
+	sleep2 5000;
+	donpcevent "Caporale Pietitchev#ep7::OnTalk4";
+	sleep2 5000;
+	donpcevent "MonteChritos#ep73::OnTalk3";
+	sleep2 5000;
+	donpcevent "MonteChritos#ep73::OnTalk4";
+	sleep2 5000;
+	donpcevent "Caporale Pietitchev#ep7::OnTalk5";
+	sleep2 5000;
+	donpcevent "Caporale Pietitchev#ep7::OnTalk6";
+	sleep2 2000;
+	donpcevent "Caporale Pietitchev#ep7::OnAction1";
+	donpcevent "EP7_SchallMonte2::OnFight";
+	end;
+	
+//============================================================
+OnEvent16:
+
+	sleep2 2000;
+	donpcevent "Boliv'Art#ep71::OnTalk1";
+	sleep2 5000;
+	donpcevent "Boliv'Art#ep71::OnTalk2";
+	sleep2 5000;
+	donpcevent "Boliv'Art#ep71::OnTalk3";
+	sleep2 5000;	
+	donpcevent "Khargax le Jeune#ep7::OnTalk1";
+	sleep2 5000;
+	donpcevent "Boliv'Art#ep71::OnTalk4";
+	sleep2 5000;	
+	donpcevent "Khargax le Jeune#ep7::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Khargax le Jeune#ep7::OnTalk3";
+	sleep2 5000;	
+	donpcevent "Khargax le Jeune#ep7::OnTalk4";
+	sleep2 5000;	
+	donpcevent "Khargax le Jeune#ep7::OnTalk5";
+	donpcevent "EP7_SchallMain3::OnMove";
+	sleep2 5000;
+	donpcevent "Boliv'Art#ep71::OnTalk5";
+	donpcevent "EP7_SchallMain3::OnSpawn";
+	end;
+//============================================================
+OnEvent17:
+	
+	set $@ep8_schalmain1,1;
+	sleep2 3000;
+	donpcevent "Marcellius Vinus#ep8a::OnTalk1";
+	sleep2 3000;
+	donpcevent "Marcellius Vinus#ep8a::OnTalk2";	
+	sleep2 5000;
+	donpcevent "Waclàv#ep8a::OnTalk1";
+	sleep2 5000;
+	donpcevent "Waclàv#ep8a::OnTalk2";
+	sleep2 5000;
+	donpcevent "Waclàv#ep8a::OnTalk3";
+	sleep2 5000;
+	donpcevent "Waclàv#ep8a::OnTalk4";	
+	sleep2 5000;
+	donpcevent "Ganaëlle#ep8a::OnTalk1";
+	sleep2 5000;
+	donpcevent "Ganaëlle#ep8a::OnTalk2";
+	sleep2 5000;
+	donpcevent "Ganaëlle#ep8a::OnTalk3";	
+	sleep2 5000;
+	donpcevent "Marcellius Vinus#ep8a::OnTalk3";	
+	sleep2 6000;
+	donpcevent "Marcellius Vinus#ep8a::OnTalk4";	
+	sleep2 5000;
+	donpcevent "Marcellius Vinus#ep8a::OnTalk5";	
+	sleep2 6000;
+	donpcevent "Marcellius Vinus#ep8a::OnTalk6";		
+	sleep2 5000;
+	donpcevent "Pizarre#ep8a::OnTalk1";
+	sleep2 5000;
+	donpcevent "Pizarre#ep8a::OnTalk2";
+	sleep2 5000;
+	donpcevent "Waclàv#ep8a::OnTalk5";			
+	sleep2 30000;
+	set $@ep8_schalmain1,0;
+	end;
+//============================================================
+OnEvent18:
+
+	donpcevent "Shandalar#ep8::OnTalk1";
+	sleep2 5000;
+	donpcevent "Sénateur Palatin#ep8x::OnTalk1";
+	sleep2 5000;
+	donpcevent "Shandalar#ep8::OnTalk2";
+	sleep2 5000;
+	donpcevent "Sénateur Palatin#ep8x::OnTalk2";
+	sleep2 5000;
+	donpcevent "Sénateur Palatin#ep8x::OnTalk3";
+	sleep2 5000;
+	donpcevent "Sénateur Palatin#ep8x::OnTalk4";
+	sleep2 5000;
+	donpcevent "Archimage Genka#ep8::OnTalk1";
+	sleep2 5000;
+	donpcevent "Sénateur Palatin#ep8x::OnTalk5";	
+	sleep2 5000;
+	donpcevent "Shandalar#ep8::OnTalk3";
+	sleep2 5000;
+	donpcevent "Shandalar#ep8::OnTalk4";
+	sleep2 5000;
+	donpcevent "Shandalar#ep8::OnTalk5";
+	sleep2 5000;
+	disablenpc "Shandalar#ep8";
+	donpcevent "Sénateur Palatin#ep8x::OnTalk6";
+	donpcevent "Archimage Genka#ep8::OnTalk2";
+	sleep2 5000;
+	donpcevent "Archimage Genka#ep8::OnTalk3";
+	sleep2 5000;
+	donpcevent "Archimage Genka#ep8::OnTalk4";
+	sleep2 2000;
+	disablenpc "Archimage Genka#ep8";
+	donpcevent "EP7_Schall02::OnSpawn";
+	end;
+	
+//============================================================
+OnEvent19:
+
+	set $@ep7Anim18,1;
+	sleep2 3000;
+	donpcevent "Alfraganus#ep8::OnTalk1";
+	sleep2 5000;
+	donpcevent "Cortès#ep75::OnTalk1";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk2";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk3";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk4";
+	sleep2 5000;
+	donpcevent "Cortès#ep75::OnTalk2";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk5";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk6";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk7";
+	sleep2 5000;
+	donpcevent "Cortès#ep75::OnTalk3";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk8";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk9";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk10";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk11";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk12";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk13";
+	sleep2 5000;
+	donpcevent "Alfraganus#ep8::OnTalk14";	
+	set $@ep7Anim18,2;
+	sleep2 180000;
+	set $@ep7Anim18,0;
+	end;
+	
+//============================================================
+OnEvent20:
+
+	set $@ep7Anim20,1;
+	sleep2 10000;	
+	donpcevent "Légat de Shinaere#ep8x::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Légat de Shinaere#ep8x::OnTalk2";
+	sleep2 3000;
+	donpcevent "EP7_SchallEnd::OnAction";
+	end;
+	
+OnEvent20a:	
+
+	donpcevent "Waclàv#ep8x::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Alfraganus#ep8x::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Alfraganus#ep8x::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Alfraganus#ep8x::OnTalk3";
+	sleep2 5000;
+	donpcevent "Ganaëlle#ep8x::OnTalk1";
+	sleep2 5000;
+	donpcevent "Ganaëlle#ep8x::OnTalk2";
+	sleep2 5000;
+	donpcevent "Ganaëlle#ep8x::OnTalk3";	
+	sleep2 5000;
+	enablenpc "Shandalar#ep8x";
+	sleep2 1500;
+	donpcevent "Shandalar#ep8x::OnTalk1";
+	sleep2 5000;
+	donpcevent "Shandalar#ep8x::OnTalk2";
+	sleep2 5000;
+	donpcevent "Shandalar#ep8x::OnTalk3";
+	sleep2 5000;
+	donpcevent "Shandalar#ep8x::OnTalk4";
+	sleep2 5000;
+	donpcevent "Shandalar#ep8x::OnTalk5";
+	sleep2 5000;
+	donpcevent "Shandalar#ep8x::OnTalk6";
+	sleep2 5000;	
+	donpcevent "Alfraganus#ep8x::OnTalk4";
+	sleep2 5000;	
+	donpcevent "Alfraganus#ep8x::OnTalk5";
+	sleep2 5000;		
+	donpcevent "Shandalar#ep8x::OnTalk7";
+	sleep2 5000;	
+	donpcevent "Shandalar#ep8x::OnTalk8";
+	disablenpc "Shandalar#ep8x";
+	sleep2 5000;		
+	donpcevent "Waclàv#ep8x::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Alfraganus#ep8x::OnTalk6";
+	sleep2 5000;		
+	donpcevent "Alfraganus#ep8x::OnTalk7";
+	sleep2 5000;		
+	donpcevent "Ganaëlle#ep8x::OnTalk4";	
+	sleep2 5000;	
+	donpcevent "Légat de Shinaere#ep8x::OnTalk3";
+	set $@ep7Anim20,2;
+	sleep2 180000;	
+	set $@ep7Anim20,0;
+	end;
+	
+//============================================================
+OnEvent21:
+	donpcevent "Ganaëlle#ep8y::OnTalk1";
+	enablenpc "Shinaere#ep8";
+	sleep2 5000;	
+	donpcevent "Shinaere#ep8::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Shinaere#ep8::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Ganaëlle#ep8y::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Shinaere#ep8::OnTalk3";
+	sleep2 5000;	
+	enablenpc "Archimage Ornélia#ep8";
+	sleep2 2000;	
+	donpcevent "Archimage Ornélia#ep8::OnTalk1";
+	sleep2 5000;	
+	donpcevent "Ganaëlle#ep8y::OnTalk3";
+	sleep2 5000;	
+	donpcevent "Ganaëlle#ep8y::OnTalk4";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#ep8::OnTalk2";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#ep8::OnTalk3";
+	sleep2 5000;	
+	donpcevent "Shinaere#ep8::OnTalk4";
+	sleep2 5000;	
+	donpcevent "Archimage Ornélia#ep8::OnTalk4";
+	set $@ep8EndFight,5;
+	sleep2 240000;
+	donpcevent "EP7_SchallEnd::OnInit";
+	end;
+//============================================================
+OnNothing: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

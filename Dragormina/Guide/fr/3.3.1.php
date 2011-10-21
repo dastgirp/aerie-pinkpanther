@@ -1,0 +1,61 @@
+<head>
+<title>Arsinoé ~ Guide</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="../css/images/mafavicon.png" />
+</head>
+
+<?php include("../import/haut.php"); ?>
+
+
+<body>
+
+
+<div id="holder">
+
+<p><h2>3.3.1- La Disparition de la Sainte Famille</h2></p>
+
+<p>Quête : <em>La Disparition de la Sainte Famille</em><br />
+Pré-requis : 2.4- Les faux-papiers pour Arsinoé</p>
+
+<p><center><img src="../images/lunedo10.png" alt="lunedo10.png" /></center></p>
+
+<p><span style="text-decoration: underline;">Contexte</span> :<br />
+Vous voilà enfin dans la Cité d'Arsinoé, mais vous avez promis à Daphnis de l'aider avec son mécène qui semble vouloir le presser ...</p>
+
+<p><span style="text-decoration: underline;">Déroulement</span> :</p>
+
+<p>1- Daphnis vous avez donné rendez-vous dans un bar d'Arsinoé où il devait rencontrer son contact. [ars_in02,139,285] Après un bref entretien avec son contact, il vous donnera des indications sur la nature de sa mission. Il doit dérober un artefact dans un vieux temple à l'Ouest d'Arsinoé dans la région de Lalibela. Vous avez rendez-vous là-bas.</p>
+
+<p><center><img src="../images/acces3.3.1.01.jpg" alt="acces3.3.1.01.jpg" /></center></p>
+
+<p>2- Vous devez sortir par la Porte Ouest d'Arsinoé qui vous mènera dans la région de Gondar : La forêt Rouge [ars_fild23] puis prenez la direction du Nord pour entrer dans le Canyon [ars_fild57]. De là il vous faudra prendre la route de l'Est pour enfin arriver à Lalibela. Vous trouverez Daphnis devant l'entrée du temple. [ars_fild21,225,129]</p>
+
+<p><center><img src="../images/acces3.3.1.02.jpg" alt="acces3.3.1.02.jpg" /></center></p>
+<p><center><img src="../images/acces3.3.1.03.jpg" alt="acces3.3.1.03.jpg" /></center></p>
+<p><center><img src="../images/acces3.3.1.04.jpg" alt="acces3.3.1.04.jpg" /></center></p>
+
+<p>3- Daphnis vous parle d'un Prêtre qui passe la nuit devant la porte ... Si pour vous il fait encore jour, vous devez repasser dans la région entre 20h00 et 8h00. Le Prêtre Merley [ars_fild21,237,149] vous parlera de la fuite de la Sainte Famille vers le cratère de Gondar face aux menaces invisibles. Vous devez le retrouver dans sa demeure un peu plus au nord et par la même occasion ouvrir un point de sauvegarde chez un membre de l'Ordre de Tyr.</p>
+
+<p><center><img src="../images/acces3.3.1.05.jpg" alt="acces3.3.1.05.jpg" /></center></p>
+
+<p>4- Vous retrouvez le Prêtre Merley près de sa demeure [ars_fild21,144,329], il vous parlera du Timkat et de l'épiphanie du Dieu de Lalibela. Vous devez retrouver Anne et Zacharie qui se sont cachés dans le Cratère de Gondar et qui sont surement en danger car ils auraient dû retourner à Lalibela quelques jours auparavant. Pour vous rendre dans le cratère de Gondar, vous devez retourner dans la Forêt Rouge puis suivre la voie ferrée pour découvrir l'entrée du cratère de Gondar.</p> 
+
+<p><center><img src="../images/acces3.3.1.06.jpg" alt="acces3.3.1.06.jpg" /></center></p>
+<p><center><img src="../images/acces3.3.1.07.jpg" alt="acces3.3.1.07.jpg" /></center></p>
+
+<p>5- Dans le cratère entrez dans cette maison puis discutez avec Petroloneko [ars_in03,105,45], il ne vous apprendra rien du tout. Mais en observant attentivement la pièce vous apercevez un passage secret dans un mur menant à une cloche. Retournez interroger Petroloneko sur ce passage secret, en apprenant que vous êtes en mission pour le Prêtre Merlay, il vous avouera qu'il y cache la Sainte Famille mais qu'il ne peut plus les atteindre ... des sacrabas des profondeurs lui bloquent le chemin et le sort de la Sainte Famille lui est inconnu.</p> 
+
+<p><center><img src="../images/acces3.3.1.08.jpg" alt="acces3.3.1.08.jpg" /></center></p>
+<p><center><img src="../images/acces3.3.1.09.jpg" alt="acces3.3.1.09.jpg" /></center></p>
+
+<p>6- Vous devez éliminer la Reine des Scabaras puis sauver la Sainte Famille qui est saine et sauve ! Anne vous donnera un prix pour votre bravoure et vous donne rendez-vous au temple pour l'épiphanie de Lalibela, un phénomène très rare et annonciateur d'un grand changement.</p>
+
+<p><center><img src="../images/acces3.3.1.10.jpg" alt="acces3.3.1.10.jpg" /></center></p>
+
+<p><em>Fin de la quête : La Disparition de la Sainte Famille</em><br />
+Guide réalisé par Aérie PinkPanther<br />
+</p>
+
+<?php include("../import/bas.php"); ?>
+
+</div>

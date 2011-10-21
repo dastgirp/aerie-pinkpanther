@@ -1,0 +1,901 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Passages
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 3.0
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//= 3.0 English Version
+//
+//
+//================================================================================================= 
+
+
+
+ars_fild65,225,247,6	script	Compagnie Britanny#1	510,{
+
+if(EP7_LANGUE == 0) { set @name$,"^FF00CCCompagnie Britanny^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^FF00CCBritanny's Compagny^000000";}
+
+callfunc "arsi_Brit";
+end;
+}
+ars_fild68,261,155,4	duplicate(Compagnie Britanny#1)	Compagnie Britanny#2	510
+ars_fild70,309,321,3	duplicate(Compagnie Britanny#1)	Compagnie Britanny#3	510
+ars_fild71,139,213,6	duplicate(Compagnie Britanny#1)	Compagnie Britanny#4	510
+
+//_________________________________________________________________
+//________________ Les Îles de Schalmar : Les Passages ____________
+//_________________________________________________________________
+
+ars_fild63,296,219,0	script	#ep7SchalP1	-1,0,4,{
+
+OnTouch: 
+
+	if(EP7_BATEAUD == 1) {	
+		callfunc "arsi_Boat2";
+		end;
+		}
+		
+	if(EP7_BATEAUD == 0) {
+		callfunc "arsi_Boat";
+		end;}
+
+}
+//Pointe de Coppalana
+ars_fild63,150,230,4	duplicate(#ep7SchalP1)	#ep7SchalP2	-1,0,4
+ars_fild63,77,277,4	duplicate(#ep7SchalP1)	#ep7SchalP3	-1,0,4
+ars_fild63,36,100,4	duplicate(#ep7SchalP1)	#ep7SchalP4	-1,0,4
+ars_fild63,120,121,4	duplicate(#ep7SchalP1)	#ep7SchalP5	-1,0,4
+ars_fild63,87,214,4	duplicate(#ep7SchalP1)	#ep7SchalP6	-1,4,0
+
+//Île aux Perles
+ars_fild64,62,69,4	duplicate(#ep7SchalP1)	#ep7SchalP7	-1,0,4
+
+//Hôtel du Croizic
+ars_fild65,224,225,4	duplicate(#ep7SchalP1)	#ep7SchalP8	-1,4,0
+
+//Jumelles Jacamar
+ars_fild67,283,130,4	duplicate(#ep7SchalP1)	#ep7SchalP9	-1,0,4
+ars_fild67,236,281,4	duplicate(#ep7SchalP1)	#ep7SchalP10	-1,0,4
+
+//Brynnlaw
+ars_fild66,193,117,4	duplicate(#ep7SchalP1)	#ep7SchalP11	-1,3,0
+
+//Mascate
+ars_fild68,276,123,4	duplicate(#ep7SchalP1)	#ep7SchalP12	-1,0,3
+
+//Ile aux épices
+ars_fild69,71,279,4	duplicate(#ep7SchalP1)	#ep7SchalP13	-1,3,0
+ars_fild69,258,263,4	duplicate(#ep7SchalP1)	#ep7SchalP14	-1,3,0
+ars_fild69,146,185,4	duplicate(#ep7SchalP1)	#ep7SchalP15	-1,0,3
+
+//Tiberine
+ars_fild70,260,138,4	duplicate(#ep7SchalP1)	#ep7SchalP16	-1,0,3
+ars_fild70,282,329,4	duplicate(#ep7SchalP1)	#ep7SchalP17	-1,0,3
+ars_fild70,131,211,4	duplicate(#ep7SchalP1)	#ep7SchalP18	-1,0,3
+
+//Forteresse de la Défense
+ars_fild71,157,220,4	duplicate(#ep7SchalP1)	#ep7SchalP19	-1,0,3
+ars_fild71,256,192,4	duplicate(#ep7SchalP1)	#ep7SchalP20	-1,3,0
+ars_fild71,148,110,4	duplicate(#ep7SchalP1)	#ep7SchalP21	-1,0,3
+
+//Schallmar
+ars_fild72,157,77,4	duplicate(#ep7SchalP1)	#ep7SchalP22	-1,3,0
+ars_fild72,177,314,4	duplicate(#ep7SchalP1)	#ep7SchalP27	-1,3,0
+ars_fild72,43,258,4	duplicate(#ep7SchalP1)	#ep7SchalP28	-1,0,3
+
+//Îles Iawah
+ars_fild74,321,337,4	duplicate(#ep7SchalP1)	#ep7SchalP23	-1,3,0
+ars_fild74,112,166,4	duplicate(#ep7SchalP1)	#ep7SchalP24	-1,0,3
+
+//Atoll de Corinthe
+ars_fild75,156,124,4	duplicate(#ep7SchalP1)	#ep7SchalP25	-1,4,0
+ars_fild75,282,94,4	duplicate(#ep7SchalP1)	#ep7SchalP26	-1,0,4
+
+//Île du Dragon
+ars_fild76,190,267,4	duplicate(#ep7SchalP1)	#ep7SchalP29	-1,4,0
+ars_fild76,313,323,4	duplicate(#ep7SchalP1)	#ep7SchalP30	-1,4,0
+//_________________________________________________________________
+//________________ Les Îles de Schalmar : Warps ___________________
+//_________________________________________________________________
+
+//Pointe de Coppa _ Île aux perles
+ars_fild63,151,23,0	script	#EP7Sw01	45,1,1,{
+
+		if (EP7_SCHALLMAR <= 2) {
+			if(EP7_LANGUE == 0) { dispbottom "Vous ne pouvez vous aventurer plus loin sans la Carte Marine de l'Archipel de Coppalana.";}
+			if(EP7_LANGUE == 1) { dispbottom "You can't venture further without the chart of the archipelago of Coppalana.";}
+			end;}
+		warp "ars_fild64",90,212; 
+		end;	
+}
+ars_fild64,89,218,0	warp	EP7Sw02	1,1,ars_fild63,151,28
+
+
+//Pointe de Coppa _ Croizic
+ars_fild63,29,214,0	script	#EP7Sw03	45,1,1,{
+
+		if (EP7_SCHALLMAR <= 2) {
+			if(EP7_LANGUE == 0) { dispbottom "Vous ne pouvez vous aventurer plus loin sans la Carte Marine de l'Archipel de Coppalana.";}
+			if(EP7_LANGUE == 1) { dispbottom "You can't venture further without the chart of the archipelago of Coppalana.";}
+			end;}
+		warp "ars_fild65",372,267; 
+		end;	
+}
+ars_fild65,376,267,0	warp	EP7Sw04	1,1,ars_fild63,35,214
+
+
+//Croizic - Jumelles Jacamar
+ars_fild65,246,23,0	warp	EP7Sw05	1,1,ars_fild67,137,359
+ars_fild67,137,365,0	warp	EP7Sw06	1,1,ars_fild65,246,27
+
+//Croizic - Navire
+
+ars_dun44,83,63,0	warp	EP7Sw07	1,1,ars_dun44,83,101
+ars_dun44,83,97,0	warp	EP7Sw08	1,1,ars_dun44,83,57
+
+
+//Jumelles Jacamar - Brynnlaw
+ars_fild67,106,23,0	script	#EP7Sw09	45,1,1,{
+
+		if (EP7_SCHALLMAR <= 4) {
+			if(EP7_LANGUE == 0) { dispbottom "Vous ne pouvez vous aventurer plus loin sans la Carte Marine de Brynnlaw.";}
+			if(EP7_LANGUE == 1) { dispbottom "You can't venture further without your chart of Brynnlaw.";}
+			end;}
+		warp "ars_fild66",149,37; 
+		end;	
+}
+ars_fild66,149,32,0	warp	EP7Sw10	1,1,ars_fild67,106,29
+
+
+//Brynnlaw - Couronne
+ars_fild66,202,224,0	warp	EP7Sw11	1,1,ars_dun48,121,22
+ars_dun48,121,18,0	warp	EP7Sw12	1,1,ars_fild66,202,221
+
+//Brynnlaw - Mascate
+ars_fild66,349,43,0	warp	EP7Sw13	1,1,ars_fild68,44,39
+ars_fild68,39,39,0	warp	EP7Sw14	1,1,ars_fild66,345,43
+
+//Mascate - Intérieur
+ars_dun47,129,17,0	warp	EP7Sw15	1,1,ars_fild68,265,181
+ars_fild68,265,185,0	warp	EP7Sw16	1,1,ars_dun47,129,21
+
+//Mascate - île aux épices
+ars_fild69,25,222,0	warp	EP7Sw17	1,1,ars_fild68,365,336
+ars_fild68,369,336,0	warp	EP7Sw18	1,1,ars_fild69,29,222
+
+//île aux épices - Maison Narcisse
+ars_fild69,266,305,0	warp	EP7Sw19	1,1,ars_dun49,34,56
+ars_dun49,34,60,0	warp	EP7Sw20	1,1,ars_fild69,266,301
+
+//île aux épices - Temple Shinaere
+ars_fild69,189,163,0	warp	EP7Sw21	1,1,ars_dun49,40,199
+ars_dun49,40,204,0	warp	EP7Sw22	1,1,ars_fild69,189,159
+
+//île aux épices - 1er Atelier
+ars_fild69,111,110,0	warp	EP7Sw23	1,1,ars_dun49,134,197
+ars_dun49,140,197,0	warp	EP7Sw24	1,1,ars_fild69,111,114
+
+//île aux épices - Tibérine
+ars_fild69,364,165,0	warp	EP7Sw25	1,1,ars_fild70,191,44
+ars_fild70,191,40,0	warp	EP7Sw26	1,1,ars_fild69,360,165
+
+//Tibérine - Monastère
+ars_dun52,22,34,0	warp	EP7Sw27	1,1,ars_fild70,324,247
+ars_fild70,324,243,0	warp	EP7Sw28	1,1,ars_dun52,26,34
+
+//Tibérine - Grotte
+ars_dun51,106,211,0	warp	EP7Sw29	1,1,ars_fild70,218,212
+
+//Brynnlaw - Tribunal
+ars_dun54,119,37,0	warp	EP7Sw30	1,1,ars_fild66,154,226
+ars_fild66,152,228,0	warp	EP7Sw31	1,1,ars_dun54,119,42
+
+//Brynnlaw - Garnison de la milice
+ars_dun53,96,16,0	warp	EP7Sw32	1,1,ars_fild66,244,181
+ars_fild66,244,184,0	warp	EP7Sw33	1,1,ars_dun53,96,20
+//Milice intérieur
+ars_dun53,96,33,0	warp	EP7Sw34	1,1,ars_dun53,96,25
+
+//Tribunal Intérieur
+ars_dun54,127,119,0	warp	EP7Sw35	1,1,ars_dun54,127,134
+ars_dun54,127,130,0	warp	EP7Sw36	1,1,ars_dun54,127,116
+
+//Brynnlaw - Maison du Noble
+ars_fild66,252,214,0	warp	EP7Sw37	1,1,ars_dun56,27,40
+ars_dun56,27,44,0	warp	EP7Sw38	1,1,ars_fild66,252,211
+
+//=================================================================================
+ars_fild66,142,219,5	script	Action : Entrer#eg1	111,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Entrer^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Enter^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_pass01fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_pass01en";}
+
+}
+
+//Brynnlaw - Sorties
+ars_dun55,72,37,0	warp	EP7Sw39	1,1,ars_fild66,142,217
+
+//=================================================================================
+ars_fild66,181,215,5	script	Action : Entrer#eg2	111,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Entrer^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Enter^000000";}
+ 
+if(EP7_LANGUE == 0) { callfunc "ars_pass02fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_pass02en";}
+}
+
+//Brynnlaw - Sorties
+ars_dun55,160,37,0	warp	EP7Sw40	1,1,ars_fild66,181,212
+
+//=================================================================================
+ars_fild66,213,185,5	script	Action : Entrer#eg3	111,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Entrer^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Enter^000000";}
+ 
+if(EP7_LANGUE == 0) { callfunc "ars_pass03fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_pass03en";}
+
+}
+//=================================================================================
+//Brynnlaw - Sorties
+ars_dun55,76,130,0	warp	EP7Sw41	1,1,ars_fild66,213,182
+//=================================================================================
+//Egouts bordel
+ars_dun55,139,88,0	warp	EP7Sw42	1,1,ars_dun55,133,88
+
+//=================================================================================
+//Egouts - Couronne de Cuivre
+ars_dun55,162,171,0	warp	EP7Sw43	1,1,ars_dun48,80,116
+ars_dun48,80,119,0	warp	EP7Sw44	1,1,ars_dun55,162,167
+
+//=================================================================================
+//Brynnlaw - société des Inventeurs
+ars_fild66,118,185,0	warp	EP7Sw45	1,1,ars_dun56,101,23
+ars_dun56,101,19,0	warp	EP7Sw46	1,1,ars_fild66,120,186
+//=================================================================================
+//Brynnlaw - société des Inventeurs
+ars_fild66,261,180,0	warp	EP7Sw47	1,1,ars_dun56,195,20
+ars_dun56,195,17,0	warp	EP7Sw48	1,1,ars_fild66,258,180
+//=================================================================================
+//Coppa - Potions
+ars_fild63,85,131,0	warp	EP7Sw49	1,1,ars_dun61,204,23
+ars_dun61,204,19,0	warp	EP7Sw50	1,1,ars_fild63,85,134
+//=================================================================================
+//Croizic - Hotel
+ars_fild65,138,313,0	warp	EP7Sw51	1,1,ars_dun61,110,23
+ars_dun61,110,19,0	warp	EP7Sw52	1,1,ars_fild65,142,313
+
+//=================================================================================
+//Egouts - Grottes
+ars_dun60,129,23,0	warp	EP7Sw53	1,1,ars_dun55,75,214
+//=================================================================================
+//Gwened - interieur
+ars_dun60,46,206,0	warp	EP7Sw54	1,1,ars_dun62,117,10
+ars_dun62,117,7,0	warp	EP7Sw55	1,1,ars_dun60,49,206
+//=================================================================================
+//Egouts - Grottes
+ars_dun62,138,38,0	warp	EP7Sw56	1,1,ars_dun62,137,29
+//=================================================================================
+//Grottes du Gwened 1
+ars_dun63,149,54,0	warp	EP7Sw57	1,1,ars_dun60,32,147
+//=================================================================================
+//Jacamar
+ars_dun64,35,187,0	warp	EP7Sw58	1,1,ars_dun45,49,133
+//=================================================================================
+//Grottes du Gwened 2
+ars_dun63,52,157,0	warp	EP7Sw59	1,1,ars_dun62,74,98
+//=================================================================================
+//Maison de Cortès
+ars_fild65,180,331,0	warp	EP7Sw60	1,1,ars_dun61,32,15
+ars_dun61,32,11,0	warp	EP7Sw61	1,1,ars_fild65,180,327
+//=================================================================================
+//Maison de MonteChristos
+ars_fild64,155,161,0	warp	EP7Sw62	1,1,ars_dun61,204,101
+ars_dun61,204,98,0	warp	EP7Sw63	1,1,ars_fild64,155,158
+ars_fild64,143,171,0	warp	EP7Sw64	1,1,ars_dun61,203,114
+ars_dun61,200,114,0	warp	EP7Sw65	1,1,ars_fild64,139,171
+//=================================================================================
+//Grottes du Temple de Pnohm
+ars_dun65,137,59,0	warp	EP7Sw66	1,1,ars_fild63,27,276
+ars_dun66,122,15,0	warp	EP7Sw67	1,1,ars_dun65,132,163
+ars_dun66,122,101,0	warp	EP7Sw68	1,1,ars_dun66,121,86
+//=================================================================================
+ars_fild63,370,364,0	script	#EP7Sw69	45,1,1,{
+
+		callfunc "arsi_Boat2";
+		warp "tantale_ile",108,180; 
+		end;	
+}
+//=================================================================================
+//Ile des Perles - Forteresse de la Défense
+ars_fild64,199,19,0	warp	EP7Sw70	1,1,ars_fild71,362,91
+ars_fild71,366,90,0	warp	EP7Sw71	1,1,ars_fild64,199,24
+//=================================================================================
+//Brynnlaw - Main Noire
+ars_fild66,134,227,0	warp	EP7Sw72	1,1,ars_dun56,62,156
+ars_dun56,66,156,0	warp	EP7Sw73	1,1,ars_fild66,134,230
+
+//Main Noire - Intérieur
+ars_dun56,46,163,0	warp	EP7Sw74	1,1,ars_dun56,45,189
+ars_dun56,45,183,0	warp	EP7Sw75	1,1,ars_dun56,46,159
+//=================================================================================
+//Ile aux épices - Galen
+ars_fild69,108,288,0	warp	EP7Sw76	1,1,ars_dun56,188,98
+ars_dun56,188,94,0	warp	EP7Sw77	1,1,ars_fild69,104,288
+//=================================================================================
+//Brynnlaw - Usine
+ars_fild66,146,139,0	warp	EP7Sw78	1,1,ars_dun50,200,87
+ars_dun50,204,87,0	warp	EP7Sw79	1,1,ars_fild66,150,139
+//=================================================================================
+//Brynnlaw - Usine
+ars_dun67,102,185,0	warp	EP7Sw80	1,1,ars_fild70,199,273
+//=================================================================================
+//main noire intérieur
+ars_dun56,128,199,0	warp	EP7Sw81	1,1,ars_dun56,101,200
+//=================================================================================
+ars_dun56,105,200,5	script	#EP7Sw82	45,1,1,{
+
+
+	if (EP7_MANONEGRA <= 9) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) { mes "Cette partie de la Guilde de la Main Noire est réservée aux membres.";}
+		if(EP7_LANGUE == 1) { mes "This part of the Guild of the Black Hand is only for members.";}
+		close;	
+	}
+
+	warp "ars_dun56",132,199;
+	end;
+}
+//=================================================================================
+ars_fild71,131,227,5	script	#EP7Sw83	111,1,1,{
+
+	warp "ars_fild71",125,227;
+	end;
+}
+//=================================================================================
+ars_fild71,128,227,5	script	#EP7Sw84	111,1,1,{
+
+	warp "ars_fild71",136,227;
+	end;
+}
+//=================================================================================
+//Forteresse de la Défense
+ars_fild71,104,227,0	warp	EP7Sw85	1,1,ars_dun68,58,88
+ars_dun68,55,88,0	warp	EP7Sw86	1,1,ars_fild71,101,227
+//bis
+ars_fild71,112,270,0	warp	EP7Sw87	1,1,ars_dun68,115,136
+ars_dun68,118,136,0	warp	EP7Sw88	1,1,ars_fild71,115,270
+//ter
+ars_fild71,90,275,0	warp	EP7Sw89	1,1,ars_dun68,81,137
+ars_dun68,77,137,0	warp	EP7Sw90	1,1,ars_fild71,87,275
+//exterieur
+
+ars_fild71,127,319,5	script	#EP7Sw91	111,1,1,{
+
+	warp "ars_fild71",126,312;
+	end;
+}
+//=================================================================================
+ars_fild71,127,316,5	script	#EP7Sw92	111,1,1,{
+
+	warp "ars_fild71",123,322;
+	end;
+}
+//interieur
+ars_dun68,183,70,0	warp	EP7Sw93	1,1,ars_dun68,164,39
+ars_dun68,160,39,0	warp	EP7Sw94	1,1,ars_dun68,180,70
+//ter
+ars_fild71,180,242,0	warp	EP7Sw95	1,1,ars_dun68,171,20
+ars_dun68,171,16,0	warp	EP7Sw96	1,1,ars_fild71,180,238
+//=================================================================================
+ars_dun68,172,101,5	script	#EP7Sw97	45,1,1,{
+
+
+	if ($@ep7Main4 < 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) { mes "Cette lourde porte est fermée par magie, il vous est impossible de l'ouvrir.";}
+		if(EP7_LANGUE == 1) { mes "The heavy door is closed by magic, you can't open it.";}
+		close;	
+	}
+
+	warp "ars_dun68",191,138;
+	end;
+}
+ars_dun68,191,133,0	warp	EP7Sw98	1,1,ars_dun68,172,97
+//Laboratoire
+ars_dun70,193,140,0	warp	EP7Sw99	1,1,ars_fild71,240,229
+ars_dun70,237,217,0	warp	EP7Sw100	1,1,ars_dun70,238,198
+//Retour Solinari
+ars_dun71,137,99,0	warp	EP7Sw101	1,1,ars_dun70,180,237
+
+//temple à coppalana hotel
+ars_dun61,64,130,0	warp	EP7Sw102	1,1,ars_fild65,147,295
+ars_fild65,147,292,0	warp	EP7Sw103	1,1,ars_dun61,64,133
+
+//Sortie grotte aux perles
+ars_dun72,102,225,0	warp	EP7Sw104	1,1,ars_fild64,173,128
+//Sortie monstere tresor
+ars_dun52,153,170,0	warp	EP7Sw105	1,1,ars_dun52,105,121
+ars_dun52,193,189,0	warp	EP7Sw106	1,1,ars_dun52,185,189
+
+//Grottes Jacamar
+ars_fild67,166,138,0	warp	EP7Sw107	1,1,ars_dun45,102,52
+ars_dun45,102,49,0	warp	EP7Sw108	1,1,ars_fild67,166,134
+
+//=================================================================================
+// Partie 2
+//=================================================================================
+
+//Atoll de Corinthe - Brynnlaw
+ars_fild66,41,358,0	script	#EP7Sw109	45,1,1,{
+
+		if (EP7_SCHALLMAR <= 25) {
+			if(EP7_LANGUE == 0) { dispbottom "Vous ne pouvez vous aventurer plus loin sans la Carte Marine de Schallmar.";}
+			if(EP7_LANGUE == 1) { dispbottom "You can't venture further without your chart of Schallmar.";}
+			end;}
+			
+		warp "ars_fild75",170,52; 
+		end;	
+}
+ars_fild75,170,47,0	warp	EP7Sw110	1,1,ars_fild66,41,354
+//=================================================================================
+//Atoll de Corinthe - Schallmar
+ars_fild75,87,346,0	warp	EP7Sw111	1,1,ars_fild72,153,43
+ars_fild72,153,39,0	warp	EP7Sw112	1,1,ars_fild75,87,342
+
+//Iles Iawah - Schallmar
+ars_fild74,369,172,0	warp	EP7Sw113	1,1,ars_fild72,29,257
+ars_fild72,25,257,0	warp	EP7Sw114	1,1,ars_fild74,365,172
+
+//=================================================================================
+ars_fild74,49,31,0	script	#EP7Sw115	45,1,1,{
+
+		callfunc "arsi_Boat2";
+		warp "ars_fild73",246,333; 
+		end;	
+}
+ars_fild73,246,336,0	script	#EP7Sw116	45,1,1,{
+
+		callfunc "arsi_Boat";
+		warp "ars_fild74",49,35; 
+		end;	
+}
+//=================================================================================
+//Schallmar - Palais Royal
+ars_dun73,136,27,0	warp	EP7Sw117	1,1,ars_fild72,223,79
+ars_fild72,223,75,0	warp	EP7Sw118	1,1,ars_dun73,136,30
+
+//Schallmar - Guilde Harcourt
+ars_dun75,134,22,0	warp	EP7Sw119	1,1,ars_fild72,274,195
+ars_fild72,277,195,0	warp	EP7Sw120	1,1,ars_dun75,134,25
+
+//Guilde Harcourt - Intérieur
+ars_dun75,138,135,0	warp	EP7Sw121	1,1,ars_dun75,134,73
+
+//Guilde Harcourt - Intérieur2
+ars_dun75,137,170,0	warp	EP7Sw122	1,1,ars_dun75,61,136
+ars_dun75,61,133,0	warp	EP7Sw123	1,1,ars_dun75,137,167
+
+//Guilde Harcourt - Intérieur3
+ars_dun75,62,167,0	warp	EP7Sw124	1,1,ars_dun75,61,188
+ars_dun75,61,185,0	warp	EP7Sw125	1,1,ars_dun75,62,164
+
+//=================================================================================
+ars_dun73,57,104,0	script	#EP7Sw126	45,1,1,{
+
+		callfunc "arsi_Boat";
+		warp "ars_fild74",363,171; 
+		end;	
+}
+//=================================================================================
+//Schallmar - Chambre du Roi
+ars_dun73,150,117,0	warp	EP7Sw127	1,1,ars_dun73,144,117
+//Palais Royal - Intérieur
+ars_dun73,146,129,0	warp	EP7Sw128	1,1,ars_dun73,130,196
+ars_dun73,127,196,0	warp	EP7Sw129	1,1,ars_dun73,142,129
+//Iles Iawah - Vaclaw
+ars_fild74,310,296,0	warp	EP7Sw130	1,1,ars_dun80,115,87
+ars_dun80,115,84,0	warp	EP7Sw131	1,1,ars_fild74,310,293
+//=================================================================================
+//Menez - Palais
+//ars_fild73,220,166,0	warp	EP7Sw132	1,1,ars_dun83,17,18
+ars_dun83,14,18,0	warp	EP7Sw133	1,1,ars_fild73,224,166
+//Menez Intérieur
+ars_dun83,64,18,0	warp	EP7Sw134	1,1,ars_dun83,21,74
+ars_dun83,17,74,0	warp	EP7Sw135	1,1,ars_dun83,61,18
+//Schallmar Insurrection - Sénat
+ars_dun84,204,123,0	warp	EP7Sw136	1,1,ars_dun81,114,326
+//Schallmar Insurrection - Guilde Obscure
+ars_dun79,113,64,0	warp	EP7Sw137	1,1,ars_dun79,116,106
+ars_dun79,116,102,0	warp	EP7Sw138	1,1,ars_dun79,113,61
+//=================================================================================
+ars_fild75,221,238,0	script	#EP7Sw139	1905,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_pass04fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_pass04en";}
+
+}
+//=================================================================================
+ars_dun85,117,32,0	script	#EP7Sw140	1905,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_pass05fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_pass05en";}	
+}
+//=================================================================================
+//Schallmar - Temple de Shinaere
+ars_fild72,216,183,0	warp	EP7Sw141	1,1,ars_dun76,137,15
+ars_dun76,137,11,0	warp	EP7Sw142	1,1,ars_fild72,213,183
+//=================================================================================
+ars_dun71,117,32,0	script	#EP7Sw143	1905,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_pass06fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_pass06en";}	
+
+}
+
+//=================================================================================
+ars_dun82,117,32,0	script	#EP7Sw144	1905,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_pass07fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_pass07en";}	
+
+}
+//=================================================================================
+//Iles Iawah - Volcan
+ars_dun77,204,69,0	warp	EP7Sw145	1,1,ars_fild74,201,225
+//=================================================================================
+//Sanctuaire - Sortie
+ars_dun86,125,37,0	warp	EP7Sw146	1,1,ars_dun76,138,117
+ars_dun86,126,126,0	warp	EP7Sw147	1,1,ars_dun87,193,19
+ars_dun87,193,15,0	warp	EP7Sw148	1,1,ars_dun86,126,124
+//Intérieur Final
+ars_dun87,300,170,0	warp	EP7Sw149	1,1,ars_dun87,307,212
+ars_dun87,305,208,0	warp	EP7Sw150	1,1,ars_dun87,300,166
+//=================================================================================
+//Menez - Ar Gwez Boel
+ars_fild73,227,254,0	warp	EP7Sw151	1,1,ars_dun88,56,14
+ars_dun88,56,11,0	warp	EP7Sw152	1,1,ars_fild73,230,254
+//Escaliers
+ars_dun88,69,47,0	warp	EP7Sw153	1,1,ars_dun88,82,142
+ars_dun88,77,142,0	warp	EP7Sw154	1,1,ars_dun88,72,47
+ars_dun88,42,47,0	warp	EP7Sw155	1,1,ars_dun88,32,142
+ars_dun88,29,142,0	warp	EP7Sw156	1,1,ars_dun88,38,47
+//Etage
+ars_dun88,59,200,0	warp	EP7Sw157	1,1,ars_dun88,147,160
+ars_dun88,147,157,0	warp	EP7Sw158	1,1,ars_dun88,59,197
+//=================================================================================
+//Intérieur du château Menez
+ars_dun83,138,19,0	warp	EP7Sw159	1,1,ars_dun83,37,63
+//Sup / Ext
+ars_fild73,200,165,0	warp	EP7Sw160	1,1,ars_dun83,38,85
+ars_dun83,38,88,0	warp	EP7Sw161	1,1,ars_fild73,197,165
+
+//=================================================================================
+//Menez - Guilde
+ars_fild73,157,219,0	warp	EP7Sw162	1,1,ars_dun90,182,162
+ars_dun90,182,159,0	warp	EP7Sw163	1,1,ars_fild73,160,222
+//Menez - Forge
+ars_fild73,167,246,0	warp	EP7Sw164	1,1,ars_dun90,128,26
+ars_dun90,125,26,0	warp	EP7Sw165	1,1,ars_fild73,170,246
+//Menez - Fruits
+ars_fild73,191,253,0	warp	EP7Sw166	1,1,ars_dun90,26,12
+ars_dun90,26,9,0	warp	EP7Sw167	1,1,ars_fild73,191,256
+//Menez - Fruits 2
+ars_fild73,240,295,0	warp	EP7Sw168	1,1,ars_dun90,204,26
+ars_dun90,201,26,0	warp	EP7Sw169	1,1,ars_fild73,243,295
+//Menez - Divers
+ars_fild73,234,277,0	warp	EP7Sw170	1,1,ars_dun90,80,12
+ars_dun90,80,9,0	warp	EP7Sw171	1,1,ars_fild73,234,280
+//Menez - Wind
+ars_fild73,255,225,0	warp	EP7Sw172	1,1,ars_dun90,102,78
+ars_dun90,102,75,0	warp	EP7Sw173	1,1,ars_fild73,253,228
+//Menez - House 1
+ars_fild73,313,240,0	warp	EP7Sw174	1,1,ars_dun90,156,72
+ars_dun90,156,69,0	warp	EP7Sw175	1,1,ars_fild73,316,238
+//Menez - House 2
+ars_fild73,135,229,0	warp	EP7Sw176	1,1,ars_dun90,176,116
+ars_dun90,176,113,0	warp	EP7Sw177	1,1,ars_fild73,138,229
+//Menez - Div1
+ars_fild73,237,208,0	warp	EP7Sw178	1,1,ars_dun90,212,60
+ars_dun90,212,57,0	warp	EP7Sw179	1,1,ars_fild73,233,208
+//=================================================================================
+//Ile du Dragon - Cratère
+ars_fild76,131,211,0	script	#EP7Sw180	45,1,1,{
+
+		if (EP8_DRAGON < 1) { 
+			if(EP7_LANGUE == 0) { dispbottom "Vous ne pouvez vous aventurer plus loin sans l'autorisation du chef du village.";}
+			if(EP7_LANGUE == 1) { dispbottom "You can't venture further without permission of the village chief.";}
+			end;}
+		warp "ars_fild76",148,157; 
+		end;	
+}
+//Ile du dragon inter
+ars_fild76,84,156,0	warp	EP7Sw181	1,1,ars_fild76,79,183
+ars_fild76,79,180,0	warp	EP7Sw182	1,1,ars_fild76,87,156
+//Ile du dragon - Schallmar
+ars_fild72,158,374,0	warp	EP7Sw183	1,1,ars_fild76,311,28
+ars_fild76,311,25,0	warp	EP7Sw184	1,1,ars_fild72,158,370
+//Ancienne Arsinoé - Ile du Dragon
+ars_dun93,216,22,0	warp	EP7Sw185	1,1,ars_fild76,315,298
+ars_dun93,59,167,0	warp	EP7Sw186	1,1,ars_dun93,55,52
+//=================================================================================
+//Schallmar - Bar
+ars_fild72,110,147,0	warp	EP7Sw187	1,1,ars_dun94,221,216
+ars_dun94,224,216,0	warp	EP7Sw188	1,1,ars_fild72,110,150
+//Bar intérieur
+ars_dun94,207,186,0	warp	EP7Sw189	1,1,ars_dun94,159,182
+ars_dun94,162,182,0	warp	EP7Sw190	1,1,ars_dun94,210,186
+//Schallmar - Villa 1
+ars_fild72,277,80,0	warp	EP7Sw191	1,1,ars_dun94,111,107
+ars_dun94,111,110,0	warp	EP7Sw192	1,1,ars_fild72,277,83
+//Schallmar - Magasin
+ars_fild72,264,106,0	warp	EP7Sw193	1,1,ars_dun94,167,12
+ars_dun94,167,9,0	warp	EP7Sw194	1,1,ars_fild72,264,109
+//Schallmar - Villa 2
+ars_fild72,279,113,0	warp	EP7Sw195	1,1,ars_dun94,100,154
+ars_dun94,102,154,0	warp	EP7Sw196	1,1,ars_fild72,276,113
+//Schallmar - Prison
+ars_fild72,124,226,0	warp	EP7Sw197	1,1,ars_dun94,28,15
+ars_dun94,28,13,0	warp	EP7Sw198	1,1,ars_fild72,127,226
+ars_dun94,47,83,0	warp	EP7Sw199	1,1,ars_dun94,48,62
+//Schallmar - Magasin
+ars_fild72,245,313,0	warp	EP7Sw200	1,1,ars_dun94,102,14
+ars_dun94,102,11,0	warp	EP7Sw201	1,1,ars_fild72,245,310
+//Schallmar - Bijoux
+ars_fild72,176,199,0	warp	EP7Sw208	1,1,ars_dun94,207,84
+ars_dun94,210,84,0	warp	EP7Sw209	1,1,ars_fild72,173,199
+//Schallmar - Villa 3
+ars_fild72,182,259,0	warp	EP7Sw202	1,1,ars_dun94,44,158
+ars_dun94,44,155,0	warp	EP7Sw203	1,1,ars_fild72,182,262
+//Schallmar - Senat
+ars_fild72,114,330,0	warp	EP7Sw204	1,1,ars_dun74,198,123
+ars_dun74,203,123,0	warp	EP7Sw205	1,1,ars_fild72,114,325
+//Sortie Prison
+ars_dun94,42,106,0	warp	EP7Sw206	1,1,ars_dun94,48,106
+ars_dun94,224,7,0	warp	EP7Sw207	1,1,ars_dun94,39,106
+//=================================================================================
+//Grotte 14 - Retour
+ars_dun90,74,147,0	warp	EP7Sw210	1,1,ars_dun90,100,81
+//Grotte 13 - Retour
+ars_dun96,56,55,0	warp	EP7Sw211	1,1,ars_dun88,220,59
+//Grotte 15 - Retour
+ars_dun88,216,178,0	warp	EP7Sw212	1,1,ars_fild73,166,162
+//=================================================================================
+//Schallmar - Franky House
+ars_fild72,191,229,0	script	#EP7Sw211	45,1,1,{
+
+		if (EP8_FRANKY == 0) { 
+			if(EP7_LANGUE == 0) { dispbottom "Vous ne pouvez pas entrer dans la Franky House : Dengé 2 Maures !";}
+			if(EP7_LANGUE == 1) { dispbottom "You can't enter into the Franky House : Denger off Deasse !";}
+		end;}
+		warp "ars_dun96",149,35; 
+		end;	
+}
+//=================================================================================
+//Grotte 16 - Retour
+ars_dun46,133,22,0	warp	EP7Sw213	1,1,ars_dun45,116,123
+//Grotte 16 - Invoc
+ars_dun46,77,170,0	warp	EP7Sw214	1,1,ars_dun96,55,136
+ars_dun96,55,131,0	warp	EP7Sw215	1,1,ars_dun46,74,166
+
+
+
+
+
+
+
+
+
+
+
+
+//=================================================================================
+// 1 passage
+//=================================================================================
+function	script	ars_pass01fr	{
+
+	mes "[" + @name$ + "]";
+	mes "Voulez-vous entrer dans les égouts de Brynnlaw ?";
+	next;
+	if( select("•Entrer:•Non") == 2 ) close;
+	
+	close2;
+	warp "ars_dun55",69,37;
+	end;
+}
+//=================================================================================
+function	script	ars_pass01en	{
+
+	mes "[" + @name$ + "]";
+	mes "Would you go into the sewer of Brynnlaw ?";
+	next;
+	if( select("•Enter:•No") == 2 ) close;
+	
+	close2;
+	warp "ars_dun55",69,37;
+	end;
+}
+//=================================================================================
+// 2 passage
+//=================================================================================
+function	script	ars_pass02fr	{
+
+	mes "[" + @name$ + "]";
+	mes "Voulez-vous entrer dans les égouts de Brynnlaw ?";
+	next;
+	if( select("•Entrer:•Non") == 2 ) close;
+	
+	close2;
+	warp "ars_dun55",157,37;
+	end;
+}
+//=================================================================================
+function	script	ars_pass02en	{
+
+	mes "[" + @name$ + "]";
+	mes "Would you go into the sewer of Brynnlaw ?";
+	next;
+	if( select("•Enter:•No") == 2 ) close;
+	
+	close2;
+	warp "ars_dun55",157,37;
+	end;
+}
+//=================================================================================
+// 3 Passage
+//=================================================================================
+function	script	ars_pass03fr	{
+
+	mes "[" + @name$ + "]";
+	mes "Voulez-vous entrer dans les égouts de Brynnlaw ?";
+	next;
+	if( select("•Entrer:•Non") == 2 ) close;
+	
+	close2;
+	warp "ars_dun55",76,126;
+	end;
+}
+//=================================================================================
+function	script	ars_pass03en	{
+
+	mes "[" + @name$ + "]";
+	mes "Would you go into the sewer of Brynnlaw ?";
+	next;
+	if( select("•Enter:•No") == 2 ) close;
+	
+	close2;
+	warp "ars_dun55",76,126;
+	end;
+}
+//=================================================================================
+// Cloche 1
+//=================================================================================
+function	script	ars_pass04fr	{
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Cette cloche vous permet de descendre la faille de l'Atoll.";
+		mes "Voulez-vous l'emprunter ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+		warp "ars_dun85",116,37; 
+		end;	
+}
+//=================================================================================
+function	script	ars_pass04en	{
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "This bell allows you to get the flaw of the Atoll.";
+		mes "Do you want to take it?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+		warp "ars_dun85",116,37; 
+		end;	
+}
+//=================================================================================
+// Cloche 2
+//=================================================================================
+function	script	ars_pass05fr	{
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Cette cloche vous permet de descendre la faille de l'Atoll.";
+		mes "Voulez-vous l'emprunter ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+		warp "ars_fild75",216,238; 
+		end;	
+}
+//=================================================================================
+function	script	ars_pass05en	{
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "This bell allows you to get the flaw of the Atoll.";
+		mes "Do you want to take it?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+		warp "ars_fild75",216,238; 
+		end;	
+}
+//=================================================================================
+// Fusée 1
+//=================================================================================
+function	script	ars_pass06fr	{
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous emprunter la fusée ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		warp "ars_dun82",216,238; 
+		end;	
+}
+//=================================================================================
+function	script	ars_pass06en	{
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Will you take the rocket?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		warp "ars_dun82",216,238; 
+		end;	
+}
+//=================================================================================
+// Fusée 2
+//=================================================================================
+function	script	ars_pass07fr	{
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous emprunter la fusée ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		warp "ars_dun71",216,238; 
+		end;	
+}
+//=================================================================================
+function	script	ars_pass07en	{
+
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Will you take the rocket?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		warp "ars_dun71",216,238; 
+		end;	
+}

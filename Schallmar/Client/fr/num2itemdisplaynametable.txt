@@ -1,0 +1,107 @@
+//Schallmar
+
+
+
+//Cartes
+29084#Carte Maritime de l'Archipel de Coppalana#
+29085#Carte Maritime des îles de Brynnlaw#
+29086#Carte Maritime des îles de Schallmar#
+
+//Cartes au Trésor
+29090#Carte au trésor n°1#
+29091#Carte au trésor n°2#
+29092#Carte au trésor n°3#
+29093#Carte au trésor n°4#
+29094#Carte au trésor n°5#
+29095#Carte au trésor n°6#
+29096#Carte au trésor n°7#
+29097#Carte au trésor n°8#
+29098#Carte au trésor n°9#
+29099#Carte au trésor n°10#
+29100#Carte au trésor n°11#
+29101#Carte au trésor n°12#
+29102#Carte au trésor n°13#
+29103#Carte au trésor n°14#
+29104#Carte au trésor n°15#
+29105#Carte au trésor n°16#
+
+//Les Perles Noires
+29120#Perle noire n°1#
+29121#Perle noire n°2#
+29122#Perle noire n°3#
+29123#Perle noire n°4#
+29124#Perle noire n°5#
+29125#Perle noire n°6#
+29126#Perle noire n°7#
+
+
+//Objets
+29130#Spore de Mush Bleu#
+29131#Bois de Saintale#
+29132#Philtre de Koweitel#
+29133#Huile de Cortès#
+29134#Détecteur de Cortès#
+
+//Les Sceaux
+29140#Sceau de l'Archipel de Coppalana#
+29141#Sceau de l'Île aux Perles#
+29142#Sceau de l'Hôtel du Croizic#
+29143#Sceau de Brynnlaw#
+29144#Sceau des Jumelles Jacamar#
+29145#Sceau du Comptoir Mascate#
+29146#Sceau des Îles aux épices#
+29147#Sceau du Monastère de Tibérine#
+29148#Sceau de la Forteresse de la Défense#
+
+29150#Rune de Ta#
+29151#Manganite#
+29152#Rune de Chimay#
+29153#Rune d'Orval#
+29154#Scalp de Pirate#
+29155#Roche de Solinari#
+29156#Bagage du Croizic#
+29157#Perle Gigantesque#
+29158#Bicorne de Flibustier#
+29159#Maillet de Gong#
+29160#Vision D'Or#
+29161#Fibre de Champignon#
+29162#Tissu Mycetozoa#
+
+29170#Heaume du Champion#
+29171#Vision-Vraie#
+29172#Herbe à Chat#
+29173#Fléau des Dieux#
+29174#Parade d'Harpocrate#
+29175#Voile de Danifae#
+29176#Bottes de Sept Lieues#
+29177#Rune du Martyr#
+29178#Anneau de Sauvegarde#
+29179#Armure à Plates du Dragon#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

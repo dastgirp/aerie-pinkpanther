@@ -1,0 +1,299 @@
+70500#Schallmar Islands#Arsinoe2#4_m_tra#
+Now you can rent ships and travel in Schallmar sea, however attention to the pirates!#
+#
+70501#Schallmar Islands#Arsinoe2#4_m_tra#
+The Followers of Shinaere of Schallmar are looking for 7 Black Pearls of their Goddess. These pearls have been stolen by the Pirates of the Fang of brass, but they followed a storm have lost.#
+You should get the 7 black pearls of Shinaere.#
+
+
+//Pirates de Coppalana
+70505#Pirates of Coppalana#Arsinoe2#4_m_rasw#
+Pirates have kidnapped tourists at the Hotel du Croizic against ransom, you should set them free!#
+You must visit the pirates at the south of the Hotel du Croizic.#
+70506#Pirates of Coppalana#Arsinoe2#4_m_rasw#
+Pirates have kidnapped tourists at the Hotel du Croizic against ransom, you should set them free!#
+The hostages were released, you must report the news to the Hotel du Croizic.#
+
+
+//Quête de la fille de Rose-Marie
+70507#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+You must investigate the disappearance of the girl, her father is Narcisse in their home in the Spice Island, it can give you information on the situation.#
+70508#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+Narcisse, the father of Marguerite, said to you that among the sailors there were witnesses to the last pirate raid.#
+70509#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+According to sailors, pirates disappeared at the Monastery of Tiberine, you should go there to ask some questions.#
+70510#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+The Abbot of Tiberine does not seem to be aware of the presence of pirates in the region of his monastery.#
+70511#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+The Pirates have infiltrated the monastery, their leader is BrightSilver, you should force him to reveal.#
+70512#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+BrightLight is dead, you have freed the monastery of Tiberine.#
+
+70513#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+Pirates of the cave is located on the Big Island of Tiberian Islands. You should find a passage leading to their benchmark.#
+70514#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+A name is often in the records of Rajckam, that of Jan Vaneyeck counter Muscat. You should visit him.#
+70515#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+Jan Vaneyeck has just completed a legal action against you, you must respond to your allegations before the court of Brynnlaw.#
+70516#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+Unbelievable, you just end up in jail. The militia of the city appears to be corrupted, you have to get out of this mess.#
+70517#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+You have the militia to the Northwest, you must find a way to end the activities of Jan Vaneyeck.#
+70518#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+Rako Magnie just give you a key to access to the sweatshop of Jan Vaneyeck.#
+70519#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+Vaneyeck is died. The presence of militia in the sweatshop Brynnlaw leaves no doubt as to the corruption. You must conduct an assault on the barracks Brynnlaw.#
+
+70520#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+The betrayal of the Guard is no longer any doubt, it's time to go back to the judge Brynnlaw.#
+70521#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+You are now in the pay of Judge Brynnlaw! You must investigate the Copper Coronet to find the daughter of Narcisse and Rose-Marie.#
+70522#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+Madame Claude does not seem to give you access to the brothel. We have to find someone who can confirm the existence of this place.#
+70523#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+A client has confirmed the existence of the brothel, there is access through the sewers of the city, however you will have to find an invitation.#
+70524#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+You have an invitation to the brothel of Madame Claude, you're going to venture into the sewers.#
+70525#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+Marguerite is finally free, you can announce this great news to her parents.#
+70526#Rose-Marie's Daughter#Arsinoe2#1_f_orig#
+Rose-Marie, a resident of the Spice Island, is looking for her daughter kidnapped by the pirates of the Fang Brazen.#
+You must report the facts concerning the house of Madame Claude Brynnlaw to judge.#
+
+//Les Moines Disparus
+70540#Missing Monks#Arsinoe2#4_m_oldf#
+Peter the Hermit of the monastery of Tiberian wants you to find the monks held hostage by pirates.#
+You have to find the monks hostage.#
+
+
+//MonteChristos
+70550#Quest Treasury of MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos is in Brynnlaw's prison.#
+You must find his book in his house on the Pearls Island.#
+70551#Quest Treasury of MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos is in Brynnlaw's prison.#
+You must return the book of MonteChristos in the prison of Brynnlaw.#
+70552#Quest Treasury of MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos is in Brynnlaw's prison.#
+The militia continues MonteChristos to get his notes, you must join by using the card he gave you.#
+70553#Quest Treasury of MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos is in Brynnlaw's prison.#
+You must find the Rune of Ta lost in the vicinity of the Archipelago Coppalana. #
+70554#Quest Treasury of MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos is in Brynnlaw's prison.#
+You must find the mechanism activating the gate of the temple. #
+
+//Society of Treasure Hunter
+70560#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+If you want to subscribe to the Company, you must go to see Gwen St. Glen.#
+70561#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+You must investigate about a monster seen in the sewers of Brynnlaw. The only witness who saw this monster is Joan Beez, you should ask him for more information.#
+70562#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+Joan told you where he saw the monster, you must go down the sewers to direct you to the Caverns of Gwened.#
+70563#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+You have found a mutant, an experience of mages living in these caves. He asked you to help free others from Gwened Cobayes.#
+70564#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+The Mutants of Gwened asked you to create a magic potion to reverse the spell effects of the Magi. You must contact Kowietel in the archipelago of Coppalana.#
+70565#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+You have to find spores of Great Blue Mush in Gwened Caves.#
+70566#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+You must report the spores of Great Blue Mush to Koweitel.#
+70567#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+You must find Saintale Wood in the Jacamar islands.#
+70568#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+You must return the Saintale wood to Koweitel.#
+70569#Society of Treasure Hunter#Arsinoe2#4_m_hume#
+Gwen St. Glen offers adventurous missions in search of secrets and treasures.#
+You can make the potion for help the mutants in Gwened Cavernes.#
+
+
+//Schallmar Seals
+70570#Schallmar Seals#Arsinoe2#4_m_nfde#
+Schallmar Seals#
+You must find Schallmar Seals and bring them to the Cortes in Coppalana Archipelago.#
+70571#Schallmar Seals#Arsinoe2#4_m_nfde#
+Schallmar Seals#
+You have just completed the mission given by Cortes, you will have to go see him once he recovered from his emotions.#
+70572#Schallmar Seals#Arsinoe2#4_m_nfde#
+Schallmar Seals#
+You must join the Cortes, he gave you a card to join.#
+70573#Schallmar Seals#Arsinoe2#4_m_nfde#
+Schallmar Seals#
+You must fill the tanks with Manganites of the Alfraganus's laboratory.#
+70574#Schallmar Seals#Arsinoe2#4_m_nfde#
+Schallmar Seals#
+You must find Cortes in his home in the archipelago of Coppalana.#
+70575#Schallmar Seals#Arsinoe2#4_m_nfde#
+Schallmar Seals#
+You have received a treasure map to find the second laboratory of Alfraganus.#
+
+
+//Quête de Black Hand : Black Hand de Brynnlaw
+70580#Black Hand#Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region.#
+You must find Galen in the Spice Islands and encourage it to pay its debts to the Black Hand.#
+70581#Black Hand#Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region.#
+Galen has paid his debts, you must go back to Man'Uchao to tell him the news.#
+70582#Black Hand#Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region.#
+Man'Uchao spokes to officials from Black Hand of Brynnlaw of you, you must visit their premises.#
+70583#Black Hand#Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region.#
+Your first offered by the Black Hand is to occupy Brynnlaw Keisha while the other guild members will plunder the stocks of spices.#
+70584#Black Hand#Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region.#
+Mission accomplished, you can go back to Marrick, it will surely be very proud of you!#
+70585#Black Hand#Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region.#
+You must go to the point indicated by the Treasure Map n°8 to participate in a transaction between Black Hand and the Pirates of Schallmar.#
+70586#Black Hand#Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region.#
+The exchange went wrong, the Black Hand members are back in their den Brynnlaw, Boliv'Art awaits you.#
+70587#Black Hand#Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region.#
+You must avenge the deaths of Black Hand. You will be introduced into the fortress and turn different lights to give the signal to attack.#
+
+//Quête de la Guilde d'Harcourt : La Vermine des mers
+70590#D'Harcourt Guild#Arsinoe2#4_m_4thp#
+Quest of the Guild D'Harcourt: The Vermin of the seas.#
+Annabelle d'Harcourt asked you to bring him the scalps of pirates. You will get paid and you will receive reputation points that will reduce the risk of hacker attacks.#
+
+//Quête de la Pierre Rouge.
+70595#The Red Roc#Arsinoe2#4_m_miki#
+Quest for the Red Stone.#
+Julius Varennes, a child of the Archipelago Coppalana, wants a piece of a moon, Solinari one.#
+
+
+//Quête Principale de Schallmar
+70600#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+The judge Brynnlaw gave you a letter to the authorities and the map Schallmar Marine Schallmar. You'll have to go to the capital and ask for a new governor is appointed.#
+70601#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+Senator Palatine just make sure that a new governor will be sent to Brynnlaw in a short time.#
+70602#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+On leaving the Royal Palace, Ganaëlle you encounter that invites you to join the Guild Schallmar Harcourt.#
+70603#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+You must climb the stairs to meet the guild leader of it and receive your mission.#
+70604#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+Marcellius Vinus asked you to investigate in the Palais Royal to find out what could have happened to the King.#
+70605#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+Arivila referred you to force the door of the King's chamber to see how he could disappear from his room.#
+70606#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+You just follow the path used by the king, you must find in the islands region Iawah.#
+70607#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+The king asks you to monitor and investigate about the Senator Palatine of Schallmar.#
+70608#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+You have followed up the President of the Senate remains a pond, you must report that fact to the King in the islands Iawah.#
+70609#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+The king has asked you to make an alliance with the Guild D'Harcourt and begin the investigation into the remains of the President of the Senate.#
+70610#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+Marcellius Vinus from the Guild D'Harcourt gave you the order to contact Pizarro, leader of the Pirates of the fortress of Bronze : Menez Mikael ar Mor.#
+70611#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+Forces gather in the Guild Harcourt, you must attend the meeting.#
+70612#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+Senator Palatus left since the Occult Guild to a hidden temple.#
+70613#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+Ganaëlle would like to see you at the D'Harcourt Guild.#
+70614#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+Ganaëlle ask you to help priests find the Shinaere Black Pearls of their goddess.#
+70615#Mysteries of Schallmar#Arsinoe2#4_m_mini#
+The Capital of the Schallmar Sea is home to many secrets that it is better to ignore otherwise you will have to confront it!#
+You must take the teleportation portal in the Temple of Shinaere to drop pearls.#
+
+
+//Quête de Black Hand : Menez 
+70630#Black Hand : Menez #Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region. #
+Boliv'art wants to steal the treasures of the Pirates of Defense. You must find him at Menez Mikael ar Mor in a tavern. #
+70631#Black Hand : Menez #Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region. #
+You must find Boliv'Art in the command center of Pirates of Defense at the Summit of the island. #
+70632#Black Hand : Menez #Arsinoe2#4_m_moca#
+The Black Hand of Brynnlaw is a powerful guild in the region. #
+You must recover the treasure, Boliv'art meet you at the Ar Gwez Boel. #
+
+//Quête Conte des Contes
+70635#Tale of Tales#Arsinoe2#4_f_rusx#
+Books of magic were created in ancient times to live the adventures of readers more vividly. But the authorities have banned because they can be death traps.#
+Bède le Vénérable told you there was a magic book in the Monastery of Tiberian.#
+
+//Quête Abordage
+70640#Boarding !#Arsinoe2#4_m_drak#
+Jean Bart offers to become Filibuster in the waters of Schallmar! You received the cocked the Filibuster that allows you to name Jean Bart to attack ships.#
+You must do more than 50 Collisions to become a Pirate King!#
+
+//Quête Abordage
+70645#Dragon Island#Arsinoe2#4_m_drak#
+Arthur, an apprentice knight, wants to free the island from the yoke of the Dragon Monmouth.#
+You must go to the Dragon Island.#
+70646#Dragon Island#Arsinoe2#4_m_drak#
+Arthur, an apprentice knight, wants to free the island from the yoke of the Dragon Monmouth.#
+You have in your possession Dragon scales, you should find a blacksmith who can turn them into armor.#
+
+//Quête Hilary
+70650#Hilary#Arsinoe2#4_f_anni#
+Hilary of Schallmar search of the first city of Arsinoe before the Cataclysm.#
+If you find a treasure map of the Dragon Island, you should bring her.#
+
+//Quête Franky
+70655#Franky Family#Arsinoe2#4_m_cru3#
+Nair'Outo seems to want you to understand it would be nice to clean Franky's House, you promised a reward.#
+You need to clean the Franky House in Schallmar the city.#
+70656#Franky Family#Arsinoe2#4_m_cru3#
+Nair'Outo seems to want you to understand it would be nice to clean Franky's House, you promised a reward.#
+You should report the news to Nair'Outo, you killed Franky.#
+70657#Franky Family#Arsinoe2#4_m_cru3#
+Nair'Outo seems to want you to understand it would be nice to clean Franky's House, you promised a reward.#
+You must eliminate the rest of the Franky Family who lives in the streets of Schallmar.#
+70658#Franky Family#Arsinoe2#4_m_cru3#
+Nair'Outo seems to want you to understand it would be nice to clean Franky's House, you promised a reward.#
+You have eliminated the Franky Family, you can go back see Nair'Outo.#
+
+//Quête Kenders
+70660#Kenders#Arsinoe2#1_m_siz0#
+Tass the Hoff, from the prison of Schallmar, wants you to find his five conpagnons.#
+The Kenderes are really pests!#
+

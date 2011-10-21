@@ -1,0 +1,1588 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Trésors
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 3.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//= 3.0 English version
+//= 3.1 Treasure formula change / array fix
+//
+//
+//================================================================================================= 
+
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Trésors : Grottes
+// 2 = Trésors : Core
+// 3 = Trésors : Von Stoffel		
+//	
+//_________________________________________________________________
+//________________ Trésors : Grottes ______________________________
+//_________________________________________________________________
+
+ars_fild64,176,128,0	script	#schallGrotte1	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor01fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor01en";}
+
+OnTouch:
+
+	if(EP7_PROUGE >= 2) {specialeffect 21;}
+	end;
+}
+
+//=================================================================================
+ars_dun52,104,127,0	script	#schallGrotte2	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor02fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor02en";}
+
+OnTouch:
+
+	if(EP7_MOINE >= 3) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun60,28,145,0	script	#schallGrotte3	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor03fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor03en";}
+	
+OnTouch:
+
+	if(EP7_TRESORB >= 6) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun45,44,135,0	script	#schallGrotte4	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor04fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor04en";}
+
+OnTouch:
+
+	if(EP7_TRESORB >= 8) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun62,81,97,0	script	#schallGrotte5	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor05fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor05en";} 
+
+OnTouch:
+
+	if(EP7_TRESORB >= 11) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_fild71,243,231,0	script	#schallGrotte6	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor06fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor06en";}
+
+OnTouch:
+
+	if(EP7_CHASSEUR >= 4) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_fild63,24,272,0	script	#schallGrotte7	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor07fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor07en";}
+
+OnTouch:
+
+	if(EP7_MONTECHRI >= 3) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_fild70,199,268,0	script	#schallGrotte8	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor08fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor08en";}
+
+OnTouch:
+
+	if(EP7_MANONEGRA >= 8) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun93,122,70,0	script	#schallGrotte9	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor09fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor09en";}
+
+OnTouch:
+
+	if(EP8_HILARY == 2) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun93,51,50,0	script	#schallGrotte10	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor10fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor10en";}
+
+OnTouch:
+
+	if(EP7_MANONEGRA >= 17) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_fild74,198,226,0	script	#schallGrotte11	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor11fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor11en";}
+
+OnTouch:
+
+	if(EP7_CHASSEUR >= 8) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun94,34,93,0	script	#schallGrotte12	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor12fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor12en";}
+
+OnTouch:
+
+	if(EP7_SCHALLMAR >= 42) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun88,223,61,0	script	#schallGrotte13	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor13fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor13en";}
+
+OnTouch:
+
+	if(Ep8_rumbleP >= 3) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun90,95,82,0	script	#schallGrotte14	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor14fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor14en";}
+
+OnTouch:
+
+	if(EP8_DRAGON >= 2) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_fild73,166,159,0	script	#schallGrotte15	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor15fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor15en";} 
+
+OnTouch:
+
+	if(EP8_Q5377 >= 1) {specialeffect 21;}
+	end;
+}
+//=================================================================================
+ars_dun45,121,123,0	script	#schallGrotte16	111,5,5,{
+	
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Regarder^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Look^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor16fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor16en";}
+
+OnTouch:
+
+	if(EP8_FRANKY >= 8) {specialeffect 21;}
+	end;
+}
+//_________________________________________________________________
+//________________ Trésors : Core _________________________________
+//_________________________________________________________________
+
+-	script	EP7_schalltresor	-1,{
+
+OnInit:
+
+	//Postions 5 par trésor (5 par map)
+	//1-5 = ars_fild63 ||//6-10 = ars_fild64 ||//11-15 = ars_fild65 ||//16-20 = ars_fild66
+	//21-25 = ars_fild67 ||//26-30 = ars_fild68 || //31-35 = ars_fild69 || //36-40 = ars_fild70 || //41-45 = ars_fild71
+	//,1,1,1,1,1
+	
+	setarray .Schall_TreaX[1],182,89,28,277,350,215,186,39,81,23,45,59,173,324,319,273,271,58,49,243,37,91,223,272,208,339,171,60,168,342,65,149,320,302,121,269,316,178,60,167,118,234,299,204,39;
+	setarray .Schall_TreaY[1],303,293,156,96,195,201,51,49,134,139,290,151,51,53,214,247,354,250,84,121,184,56,84,219,367,76,121,233,331,237,173,37,130,341,354,50,191,342,186,143,97,133,285,326,313;
+
+	end;
+
+//===============================================
+OnMoveNPC1:
+	set .@rand, rand(1,5);
+	movenpc "#schallTrea1",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+//===============================================
+OnMoveNPC2:
+	set .@rand, rand(6,10);
+	movenpc "#schallTrea2",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+//===============================================
+OnMoveNPC3:
+	set .@rand, rand(11,15);
+	movenpc "#schallTrea3",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+//===============================================
+OnMoveNPC4:
+	set .@rand, rand(16,20);
+	movenpc "#schallTrea4",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+//===============================================
+OnMoveNPC5:
+	set .@rand, rand(21,25);
+	movenpc "#schallTrea5",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+//===============================================
+OnMoveNPC6:
+	set .@rand, rand(26,30);
+	movenpc "#schallTrea6",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+//===============================================
+OnMoveNPC7:
+	set .@rand, rand(31,35);
+	movenpc "#schallTrea7",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+//===============================================
+OnMoveNPC8:
+	set .@rand, rand(36,40);
+	movenpc "#schallTrea8",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+//===============================================
+OnMoveNPC9:
+	set .@rand, rand(41,45);
+	movenpc "#schallTrea9",.Schall_TreaX[.@rand],.Schall_TreaY[.@rand];
+	end;
+}
+
+//=================================================================================
+//                  ars_fild63
+//=================================================================================
+ars_fild63,257,247,0	script	#schallTrea1	111,6,6,{
+	
+	set @mapregion$,"ars_fild63";
+	set @npcname$,"OnMoveNPC1";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+//=================================================================================
+//                  ars_fild64
+//=================================================================================
+ars_fild64,215,201,0	script	#schallTrea2	111,6,6,{
+	
+	set @mapregion$,"ars_fild64";
+	set @npcname$,"OnMoveNPC2";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+//=================================================================================
+//                  ars_fild65
+//=================================================================================
+ars_fild65,45,290,0	script	#schallTrea3	111,6,6,{
+	
+	set @mapregion$,"ars_fild65";
+	set @npcname$,"OnMoveNPC3";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+//=================================================================================
+//                  ars_fild66
+//=================================================================================
+ars_fild66,273,247,0	script	#schallTrea4	111,6,6,{
+	
+	set @mapregion$,"ars_fild66";
+	set @npcname$,"OnMoveNPC4";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+//=================================================================================
+//                  ars_fild67
+//=================================================================================
+ars_fild67,37,184,0	script	#schallTrea5	111,6,6,{
+	
+	set @mapregion$,"ars_fild67";
+	set @npcname$,"OnMoveNPC5";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+//=================================================================================
+//                  ars_fild68
+//=================================================================================
+ars_fild68,339,76,0	script	#schallTrea6	111,6,6,{
+	
+	set @mapregion$,"ars_fild68";
+	set @npcname$,"OnMoveNPC6";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+//=================================================================================
+//                  ars_fild69
+//=================================================================================
+ars_fild69,65,173,0	script	#schallTrea7	111,6,6,{
+	
+	set @mapregion$,"ars_fild69";
+	set @npcname$,"OnMoveNPC7";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+//=================================================================================
+//                  ars_fild70
+//=================================================================================
+ars_fild70,65,173,0	script	#schallTrea8	111,6,6,{
+	
+	set @mapregion$,"ars_fild70";
+	set @npcname$,"OnMoveNPC8";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+//=================================================================================
+//                  ars_fild71
+//=================================================================================
+ars_fild71,65,173,0	script	#schallTrea9	111,6,6,{
+	
+	set @mapregion$,"ars_fild71";
+	set @npcname$,"OnMoveNPC9";
+	callfunc "arsi_Tresor";
+	end;
+	
+OnTouch:
+
+	if(EP7_CHASSEUR >= 2) {specialeffect 175;}
+	end;
+}
+
+//=================================================================================
+function	script	arsi_Tresor	{
+
+	if(EP7_CHASSEUR == 0) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) { mes "Ceci est de l'eau ...  Étonnant, non ?";}
+		if(EP7_LANGUE == 1) { mes "This is water ...  Amazing, no ?";}
+		close;}
+		
+	if(EP7_CHASSEUR > 0) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) { mes "Voulez-vous utiliser votre grue ici ?";}
+		if(EP7_LANGUE == 1) { mes "Want to use your crane here ?";}
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		if(countitem(29133) < 1) {
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			if(EP7_LANGUE == 0) { mes "Vous n'avez pas d'Huile de Cortès, il vous est impossible d'utiliser votre grue.";}
+			if(EP7_LANGUE == 1) { mes "You don't have Cortes Oil, si you can't use your crane.";}
+			close;}
+		
+		if(@mapregion$ == "ars_fild63") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,29140,29150;
+			setarray .@Schall_TreaRQ[1],1,10,1,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		if(@mapregion$ == "ars_fild64") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,$ep7_Tcoins,29141;
+			setarray .@Schall_TreaRQ[1],1,5,15,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		if(@mapregion$ == "ars_fild65") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,29142,29156;
+			setarray .@Schall_TreaRQ[1],1,15,1,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		if(@mapregion$ == "ars_fild66") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,$ep7_Tcoins,29143;
+			setarray .@Schall_TreaRQ[1],1,5,15,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		if(@mapregion$ == "ars_fild67") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,$ep7_Tcoins,29144;
+			setarray .@Schall_TreaRQ[1],1,5,15,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		if(@mapregion$ == "ars_fild68") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,$ep7_Tcoins,29145;
+			setarray .@Schall_TreaRQ[1],1,5,15,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		if(@mapregion$ == "ars_fild69") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,29146,29152;
+			setarray .@Schall_TreaRQ[1],1,15,1,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		if(@mapregion$ == "ars_fild70") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,29147,29152;
+			setarray .@Schall_TreaRQ[1],1,15,1,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		if(@mapregion$ == "ars_fild71") {
+			setarray .@Schall_TreaR[1],$ep7_Tcoins,$ep7_Tcoins,29148,29160;
+			setarray .@Schall_TreaRQ[1],1,15,1,1;
+			setarray .@Schall_TreaLuck[1],75,60,50,25;}
+		
+			set .@rand, rand(0,99);
+			
+			if(.@rand > 75) {
+				mes "[^33CC00" + strcharinfo(0) + "^000000]";
+				if(EP7_LANGUE == 0) { mes "Hélas votre pêche a été infructueuse !";}
+				if(EP7_LANGUE == 1) { mes "Unfortunately, your attemp was unsuccessful!";}
+				close2;
+				donpcevent "EP7_schalltresor::"+@npcname$+"";
+				end;}
+						
+			for( set .@i, 1; .@i < getarraysize(.@Schall_TreaR); set .@i, .@i +1 ) {
+				if(.@rand < .@Schall_TreaLuck[.@i]) {set .@item,.@Schall_TreaR[.@i]; set .@itemQ,.@Schall_TreaRQ[.@i];}} 
+			
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			if(EP7_LANGUE == 0) { mes "Vous venez d'obtenir ^663399["+.@itemQ+"] ["+getitemname(.@item)+"]^000000 !"; }
+			if(EP7_LANGUE == 1) { mes "You have found ^663399["+.@itemQ+"] ["+getitemname(.@item)+"]^000000 !";}
+			close2;
+			getitem .@item,.@itemQ;
+			delitem 29133,1;
+			donpcevent "EP7_schalltresor::"+@npcname$+"";
+			end;
+		}	
+}
+//_________________________________________________________________
+//________________ Trésors : Von Stoffel __________________________
+//_________________________________________________________________
+
+ars_dun56,123,77,5	script	Von Stoffel#ep7	748,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFVon Stoffel^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFVon Stoffel^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_tresor17fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_tresor17en";}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//_________________________________________________________________
+//________________ Trésors : Traductions __________________________
+//_________________________________________________________________
+
+
+
+
+
+//=================================================================================
+// Grottes de Schallmar 1
+//=================================================================================
+function	script	ars_tresor01fr	{
+
+if(EP7_PROUGE <= 1) { 
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_PROUGE >= 2) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte n°1.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Les parois sont humides et glissantes, mais après quelques mètres vous réussissez à atteindre une grande salle.";
+		close2;
+		warp "ars_dun72",102,220;
+		end;
+		}	
+}
+//=================================================================================
+function	script	ars_tresor01en	{
+
+if(EP7_PROUGE <= 1) { 
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_PROUGE >= 2) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°1.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "The walls are wet and slippery, but after a few meters you manage to reach a large room.";
+		close2;
+		warp "ars_dun72",102,220;
+		end;
+		}
+}
+//=================================================================================
+// Grottes de Schallmar 2
+//=================================================================================
+function	script	ars_tresor02fr	{
+
+if(EP7_MOINE <= 2) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_MOINE >= 3) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte n°2.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Les parois sont humides et glissantes, mais après quelques mètres vous réussissez à atteindre une grande salle.";
+		close2;
+		warp "ars_dun52",153,174;
+		end;
+		}	
+}
+//=================================================================================
+function	script	ars_tresor02en	{
+
+if(EP7_MOINE <= 2) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_MOINE >= 3) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°2.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "The walls are wet and slippery, but after a few meters you manage to reach a large room.";
+		close2;
+		warp "ars_dun52",153,174;
+		end;
+		}	
+}
+//=================================================================================
+// Grottes de Schallmar 3
+//=================================================================================
+function	script	ars_tresor03fr	{
+
+if(EP7_TRESORB <= 5) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_TRESORB >= 6) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte n°3.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Les parois sont humides et glissantes, mais après quelques mètres vous réussissez à atteindre une grande salle.";
+		close2;
+		warp "ars_dun63",150,58;
+		end;
+		}
+}
+//=================================================================================
+function	script	ars_tresor03en	{
+
+if(EP7_TRESORB <= 5) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_TRESORB >= 6) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°3.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "The walls are wet and slippery, but after a few meters you manage to reach a large room.";
+		close2;
+		warp "ars_dun63",150,58;
+		end;
+		}
+}
+//=================================================================================
+// Grottes de Schallmar 4
+//=================================================================================
+function	script	ars_tresor04fr	{
+
+if(EP7_TRESORB <= 7) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_TRESORB >= 8) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte n°4.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Les rochers laissent entrevoir une interstice, vous vous y engouffrez.";
+		close2;
+		warp "ars_dun64",36,181;
+		end;
+		}		
+}
+//=================================================================================
+function	script	ars_tresor04en	{
+
+if(EP7_TRESORB <= 7) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_TRESORB >= 8) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°4.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Rocks suggest a gap, you try to look for a passage.";
+		close2;
+		warp "ars_dun64",36,181;
+		end;
+		}	
+}
+//=================================================================================
+// Grottes de Schallmar 5
+//=================================================================================
+function	script	ars_tresor05fr	{
+
+if(EP7_TRESORB <= 10) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_TRESORB >= 11) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°5.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Les parois sont humides et glissantes, mais après quelques mètres vous réussissez à atteindre une grande salle.";
+		close2;
+		warp "ars_dun63",52,161;
+		end;
+		}		
+}
+//=================================================================================
+function	script	ars_tresor05en	{
+
+if(EP7_TRESORB <= 10) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_TRESORB >= 11) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°5.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "The walls are wet and slippery, but after a few meters you manage to reach a large room.";
+		close2;
+		warp "ars_dun63",52,161;
+		end;
+		}	
+}
+//=================================================================================
+// Grottes de Schallmar 6
+//=================================================================================
+function	script	ars_tresor06fr	{
+
+if(EP7_CHASSEUR <= 3) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_CHASSEUR >= 4) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par la carte au trésor n°6.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Vous avez trouvé un passage dans la paroi, après un long tunnel vous apercevez une jungle luxuriante.";
+		close2;
+		warp "ars_dun70",193,143;
+		end;
+		}		
+}
+//=================================================================================
+function	script	ars_tresor06en	{
+
+if(EP7_CHASSEUR <= 3) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_CHASSEUR >= 4) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°6.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "You found a passage in the wall after a long tunnel you see a lush jungle.";
+		close2;
+		warp "ars_dun70",193,143;
+		end;
+		}	
+}
+//=================================================================================
+// Grottes de Schallmar 7
+//=================================================================================
+function	script	ars_tresor07fr	{
+
+if(EP7_MONTECHRI <= 2) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_MONTECHRI >= 3) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°7.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Vous avez trouvé un passage dans la paroi, après un long tunnel vous apercevez une jungle luxuriante.";
+		close2;
+		warp "ars_dun65",137,63;
+		end;
+		}		
+}
+//=================================================================================
+function	script	ars_tresor07en	{
+
+if(EP7_MONTECHRI <= 2) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_MONTECHRI >= 3) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°7.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "You found a passage in the wall after a long tunnel you see a lush jungle.";
+		close2;
+		warp "ars_dun65",137,63;
+		end;
+		}	
+}
+//=================================================================================
+// Grottes de Schallmar 8
+//=================================================================================
+function	script	ars_tresor08fr	{
+
+if(EP7_MANONEGRA <= 7) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_MANONEGRA >= 8) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°8.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Vous avez trouvé un passage dans la paroi, après un long tunnel vous apercevez une pièce éclairée.";
+		close2;
+		warp "ars_dun67",102,181;
+		end;
+		}		
+}
+//=================================================================================
+function	script	ars_tresor08en	{
+
+if(EP7_MANONEGRA <= 7) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_MANONEGRA >= 8) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°8.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "You found a passage in the wall after a long tunnel you see a lighted room.";
+		close2;
+		warp "ars_dun67",102,181;
+		end;
+		}	
+}
+//=================================================================================
+// Grottes de Schallmar 9
+//=================================================================================
+function	script	ars_tresor09fr	{
+
+	if(EP8_HILARY <= 1 || EP8_HILARY >= 3) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+	if(EP8_HILARY == 2) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°9.";
+		mes "Voulez-vous creuser à cet endroit ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Vous venez de trouver un ^33CC00"+getitemname(29170)+"^000000.";
+		close2;
+		set EP8_HILARY,3;
+		getitem 29170,1;
+		set ep7_CarteTresor,ep7_CarteTresor|256;
+		end;
+}		
+}
+//=================================================================================
+function	script	ars_tresor09en	{
+
+	if(EP8_HILARY <= 1 || EP8_HILARY >= 3) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+	if(EP8_HILARY == 2) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°9.";
+		mes "Do you want to dig here ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "You have found a ^33CC00"+getitemname(29170)+"^000000.";
+		close2;
+		set EP8_HILARY,3;
+		completequest 70650;
+		getitem 29170,1;
+		set ep7_CarteTresor,ep7_CarteTresor|256;
+		end;
+}	
+}
+//=================================================================================
+// Grottes de Schallmar 10
+//=================================================================================
+function	script	ars_tresor10fr	{
+
+	if(EP7_MANONEGRA <= 16) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+	if(EP7_MANONEGRA >= 17) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°10.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Après un long tunnel, vous apercevez une petite salle éclairée.";
+		close2;
+		warp "ars_dun93",59,171;
+		set ep7_CarteTresor,ep7_CarteTresor|512;
+		end;
+	}		
+}
+//=================================================================================
+function	script	ars_tresor10en	{
+
+	if(EP7_MANONEGRA <= 16) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+	if(EP7_MANONEGRA >= 17) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°10.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "You found a passage in the wall after a long tunnel you see a lighted room.";
+		close2;
+		warp "ars_dun93",59,171;
+		set ep7_CarteTresor,ep7_CarteTresor|512;
+		end;
+	}	
+}
+//=================================================================================
+// Grottes de Schallmar 11
+//=================================================================================
+function	script	ars_tresor11fr	{
+
+if(EP7_CHASSEUR <= 7) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+if(EP7_CHASSEUR >= 8) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°11.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Vous avez trouvé un passage dans la paroi, après un long tunnel vous ressentez une vive chaleur.";
+		close2;
+		if(EP7_CHASSEUR == 8) { 
+			set ep7_CarteTresor,ep7_CarteTresor|1024;
+			set EP7_CHASSEUR,9;
+		}
+		warp "ars_dun77",200,69;
+		end;
+		}		
+}
+//=================================================================================
+function	script	ars_tresor11en	{
+
+if(EP7_CHASSEUR <= 7) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+if(EP7_CHASSEUR >= 8) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°11.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "You found a passage in the wall after a long tunnel you feel a strong heat.";
+		close2;
+		if(EP7_CHASSEUR == 8) { 
+			set ep7_CarteTresor,ep7_CarteTresor|1024;
+			set EP7_CHASSEUR,9;
+		}
+		warp "ars_dun77",200,69;
+		end;
+		}	
+}
+//=================================================================================
+// Grottes de Schallmar 12
+//=================================================================================
+function	script	ars_tresor12fr	{
+
+	if(EP7_SCHALLMAR <= 41) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+	if(EP7_SCHALLMAR >= 42) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°12.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Après un long tunnel, vous apercevez une petite salle éclairée.";
+		close2;
+		warp "ars_dun94",224,10;
+		set ep7_CarteTresor,ep7_CarteTresor|2048;
+		end;
+	}		
+}
+//=================================================================================
+function	script	ars_tresor12en	{
+
+	if(EP7_SCHALLMAR <= 41) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+	if(EP7_SCHALLMAR >= 42) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°12.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "You found a passage in the wall after a long tunnel you see a lighted room.";
+		close2;
+		warp "ars_dun94",224,10;
+		set ep7_CarteTresor,ep7_CarteTresor|2048;
+		end;
+	}	
+}
+//=================================================================================
+// Grottes de Schallmar 13
+//=================================================================================
+function	script	ars_tresor13fr	{
+
+	if(Ep8_rumbleP <= 2) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+	if(Ep8_rumbleP >= 3) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°13.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Un petit couloir vous permet d'accéder à une nouvelle salle.";
+		close2;
+		warp "ars_dun96",56,58;
+		set ep7_CarteTresor,ep7_CarteTresor|4096;
+		end;
+	}		
+}
+//=================================================================================
+function	script	ars_tresor13en	{
+
+	if(Ep8_rumbleP <= 2) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+	if(Ep8_rumbleP >= 3) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°13.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "A small corridor provides access to a new room.";
+		close2;
+		warp "ars_dun96",56,58;
+		set ep7_CarteTresor,ep7_CarteTresor|4096;
+		end;
+	}	
+}
+//=================================================================================
+// Grottes de Schallmar 14
+//=================================================================================
+function	script	ars_tresor14fr	{
+
+	if(EP8_DRAGON <= 1) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+	if(EP8_DRAGON >= 2) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°14.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Après avoir ouvert la trappe vous apercevez une petite grotte.";
+		close2;
+		warp "ars_dun90",67,147;
+		set ep7_CarteTresor,ep7_CarteTresor|8192;
+		end;
+	}		
+}
+//=================================================================================
+function	script	ars_tresor14en	{
+
+	if(EP8_DRAGON <= 1) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+	if(EP8_DRAGON >= 2) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°14.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "After opening the door you see a small cave.";
+		close2;
+		warp "ars_dun90",67,147;
+		set ep7_CarteTresor,ep7_CarteTresor|8192;
+		end;
+	}	
+}
+//=================================================================================
+// Grottes de Schallmar 15
+//=================================================================================
+function	script	ars_tresor15fr	{
+
+	if(EP8_Q5377 <= 0) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+	if(EP8_Q5377 >= 1) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°15.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Ce faux mur recèle un étroit passage menant vers une pièce secrète.";
+		close2;
+		warp "ars_dun88",216,174;
+		set ep7_CarteTresor,ep7_CarteTresor|16384;
+		end;
+	}		
+}
+//=================================================================================
+function	script	ars_tresor15en	{
+
+	if(EP8_Q5377 <= 0) {
+		mes "[" + @name$ + "]";
+	mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+	if(EP8_Q5377 >= 1) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°15.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "The false wall conceals a narrow passage leading to a secret room.";
+		close2;
+		warp "ars_dun88",216,174;
+		set ep7_CarteTresor,ep7_CarteTresor|16384;
+		end;
+	}	
+}
+//=================================================================================
+// Grottes de Schallmar 16
+//=================================================================================
+function	script	ars_tresor16fr	{
+
+	if(EP8_FRANKY <= 7) {
+		mes "[" + @name$ + "]";
+		mes "Vous ne voyez rien à vous intéresser dans ce recoin.";
+		close;}
+	
+	if(EP8_FRANKY >= 8) {
+		mes "[" + @name$ + "]";
+		mes "Cet endroit semble celui indiqué par votre carte au trésor n°16.";
+		mes "Voulez-vous y entrer ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Ce tronc d'arbre cache une nouvelle partie du bois de Jacamar.";
+		close2;
+		warp "ars_dun46",132,25;
+		set ep7_CarteTresor,ep7_CarteTresor|32768;
+		end;
+	}		
+}
+//=================================================================================
+function	script	ars_tresor16en	{
+
+	if(EP8_FRANKY <= 7) {
+		mes "[" + @name$ + "]";
+		mes "You don't see anything to interest you in this corner.";
+		close;}
+	
+	if(EP8_FRANKY >= 8) {
+		mes "[" + @name$ + "]";
+		mes "This place seems to be indicated by the treasure map n°16.";
+		mes "Do you want to enter ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "This tree trunk lies a new part of the wood Jacamar.";
+		close2;
+		warp "ars_dun46",132,25;
+		set ep7_CarteTresor,ep7_CarteTresor|32768;
+		end;
+	}	
+}
+
+
+
+
+
+
+
+
+//=================================================================================
+// Von Stoffel 17
+//=================================================================================
+
+function	script	ars_tresor17fr	{
+
+	mes "[" + @name$ + "]";
+	mes "Von Stoffel pour vous servir !";
+	mes "Je tiens à jour les registres concernant les trouvailles en grottes secrètes !";
+	next;
+	switch( select("•Mon Avancement:•Mon Titre:•Quitter") ) {
+			
+//==============================
+
+		case 1:
+			mes "[" + @name$ + "]";
+			if(ep7_CarteTresor & 1) { mes ""+getitemname(29090)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29090)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 2) { mes ""+getitemname(29091)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29091)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 4) { mes ""+getitemname(29092)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29092)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 8) { mes ""+getitemname(29093)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29093)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 16) { mes ""+getitemname(29094)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29094)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 32) { mes ""+getitemname(29095)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29095)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 64) { mes ""+getitemname(29096)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29096)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 128) { mes ""+getitemname(29097)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29097)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 256) { mes ""+getitemname(29098)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29098)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 512) { mes ""+getitemname(29099)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29099)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 1024) { mes ""+getitemname(29100)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29100)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 2048) { mes ""+getitemname(29101)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29101)+" : ^FF3300 Absent^000000";}		
+			if(ep7_CarteTresor & 4096) { mes ""+getitemname(29102)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29102)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 8192) { mes ""+getitemname(29103)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29103)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 16384) { mes ""+getitemname(29104)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29104)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 32768) { mes ""+getitemname(29105)+" : ^66FF33 Obtenu^000000";}
+			else { mes ""+getitemname(29105)+" : ^FF3300 Absent^000000";}
+			close;			
+			
+//==============================
+
+		case 2:
+		
+			if(EP8_INVTDONE == 1) {
+				mes "[" + @name$ + "]";
+				mes "Vous avez déjà reçu votre titre : ^66FF33Inventeur de Trésor^000000 !";
+				close;
+			}
+			
+			setarray .var[0],1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768;
+			for(set .@i, 0; .@i < getarraysize(.var); set .@i, .@i + 1) {
+				if(ep7_CarteTresor & .var[.@i]) { set .@var,.@var+1;}
+			}
+			
+			if(.@var == getarraysize(.var)) {
+				mes "[" + @name$ + "]";
+				mes "Félicitations, vous venez d'obtenir le Titre ^66FF33Inventeur de Trésor^000000.";
+				//Titre
+				set $EP8_TINVENT,$EP8_TINVENT+1;
+				for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+				if ($EP8_TINVENT == .@i){ setarray $EP7_NINVENT$[.@i],strcharinfo(0);}		
+				if($ep7_LangChoice & 1) { announce "[" + strcharinfo(0) +"] est devenu le [" + $EP8_TINVENT + "] Inventeur de Trésor !",bc_all,0x33FF00;}
+				if($ep7_LangChoice & 2) { announce "[" + strcharinfo(0) +"] becomes the [" + $EP8_TINVENT + "] Tresor Hunter !",bc_all,0x33FF00;}
+				set EP8_INVTDONE,1;
+				close;
+			}
+						
+			mes "[" + @name$ + "]";
+			mes "Vous n'avez pour le moment que [^66FF33"+.@var+"/ "+getarraysize(.var)+"^000000] cartes au trésor !";
+			close;
+		
+//==============================
+
+		case 3:
+			mes "[" + @name$ + "]";
+			mes "Un jour nous trouverons le plus précieux des trésors.";
+			mes "Celui où des générations d'explorateurs ont perdu leur vie !";
+			close;}
+
+}
+//=================================================================================
+
+function	script	ars_tresor17en	{
+
+	mes "[" + @name$ + "]";
+	mes "Von Stoffel read for help you !";
+	mes "I want to update the records of the findings in secret caves!";
+	next;
+	switch( select("•My Progress:•My Title:•Quit") ) {
+			
+//==============================
+
+		case 1:
+			mes "[" + @name$ + "]";
+			if(ep7_CarteTresor & 1) { mes ""+getitemname(29090)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29090)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 2) { mes ""+getitemname(29091)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29091)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 4) { mes ""+getitemname(29092)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29092)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 8) { mes ""+getitemname(29093)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29093)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 16) { mes ""+getitemname(29094)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29094)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 32) { mes ""+getitemname(29095)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29095)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 64) { mes ""+getitemname(29096)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29096)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 128) { mes ""+getitemname(29097)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29097)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 256) { mes ""+getitemname(29098)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29098)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 512) { mes ""+getitemname(29099)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29099)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 1024) { mes ""+getitemname(29100)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29100)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 2048) { mes ""+getitemname(29101)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29101)+" : ^FF3300 Absent^000000";}		
+			if(ep7_CarteTresor & 4096) { mes ""+getitemname(29102)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29102)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 8192) { mes ""+getitemname(29103)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29103)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 16384) { mes ""+getitemname(29104)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29104)+" : ^FF3300 Absent^000000";}
+			if(ep7_CarteTresor & 32768) { mes ""+getitemname(29105)+" : ^66FF33 Obtained^000000";}
+			else { mes ""+getitemname(29105)+" : ^FF3300 Absent^000000";}
+			close;			
+			
+//==============================
+
+		case 2:
+		
+			if(EP8_INVTDONE == 1) {
+				mes "[" + @name$ + "]";
+				mes "You have already received your title : ^66FF33Tresor Hunter^000000 !";
+				close;
+			}
+			
+			setarray .var[0],1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768;
+			for(set .@i, 0; .@i < getarraysize(.var); set .@i, .@i + 1) {
+				if(ep7_CarteTresor & .var[.@i]) { set .@var,.@var+1;}
+			}
+			
+			if(.@var == getarraysize(.var)) {
+				mes "[" + @name$ + "]";
+				mes "Congratulations, you just get the title of ^66FF33Tresor Hunter^000000.";
+				//Titre
+				set $EP8_TINVENT,$EP8_TINVENT+1;
+				for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+				if ($EP8_TINVENT == .@i){ setarray $EP7_NINVENT$[.@i],strcharinfo(0);}		
+				if($ep7_LangChoice & 1) { announce "[" + strcharinfo(0) +"] est devenu le [" + $EP8_TINVENT + "] Inventeur de Trésor !",bc_all,0x33FF00;}
+				if($ep7_LangChoice & 2) { announce "[" + strcharinfo(0) +"] becomes the [" + $EP8_TINVENT + "] Tresor Hunter !",bc_all,0x33FF00;}
+				set EP8_INVTDONE,1;
+				close;
+			}
+						
+			mes "[" + @name$ + "]";
+			mes "You get for the moment [^66FF33"+.@var+"/ "+getarraysize(.var)+"^000000] treasure maps !";
+			close;
+		
+//==============================
+
+		case 3:
+			mes "[" + @name$ + "]";
+			mes "One day we will find the most precious treasures.";
+			mes "One in which generations of explorers lost their lives!";
+			close;}
+
+}

@@ -1,0 +1,3053 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+
+
+//===== Arsinoé Script ============================================================================ 
+//
+//= Misc quests for Arsinoé Mod
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : True Noir & Mirabell & DesertFox
+//= Spanish Version : Destiny
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.3
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.x Versions without multi-language support.
+//= 2.0 release
+//= 2.1 Prigent Danon fix colored name
+//= 2.2 Monster Name / Menu Symbol
+//= 2.3 Revisited English version by DesertFox
+//
+//================================================================================================= 
+
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+// 1 = Coppalana : La Fête du Village
+// 2 = Coppalana : Le Concours de Pêche
+// 3 = Kiman Farès : La Plante du Désert
+// 4 = Euhéméria : Les Pleurs de Tarine
+// 5 = Hylarheim : Les Marins Disparus
+//
+//_________________________________________________________________
+//___________________Coppalana : La Fête du Village _______________
+//_________________________________________________________________
+	
+coppa,191,128,4	script	Klerozonheg#1	477,8,8,{
+
+set @name$,"^66CCFFKlerozonheg^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers01fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers01en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers01sp";}
+
+OnTouch:
+	if (EP7_FETE == 1) {showevent 1,0;} end;
+
+}
+
+
+//=========================================================================================
+
+-	script	EP7_FeteCurupira	-1,{
+
+OnCuruMort:
+
+	if (EP7_FETE >= 1 && EP7_FETE <= 49) {set EP7_FETE,EP7_FETE+1;}
+	end;
+
+}
+
+//Monstre
+coppa,0,0,0,0	monster	Curupira 	2074,70,60000,0,EP7_FeteCurupira::OnCuruMort
+
+//_________________________________________________________________
+//___________________Coppalana : Le Concours de Pêche _____________
+//_________________________________________________________________
+
+
+//29052 = Anguille		(Rana)			(Tout le Temps) (Commun)	(numero 1)
+//29053 = Poisson rouge		(Kiman)   		(Jour) 		(Rare) 		(numero 2)
+//29054 = Poisson scorpion	(Siwah)   		(Nuit)		(Moyen) 	(numero 3)
+//29055 = Poulpe		(Thébaïde) 		(Tout le Temps)	(Commun)	(numero 4)
+//29056 = Limande		(OmbreTerre) 		(Nuit)		(Commun) 	(numero 5)
+//29057 = Hippocampe		(Hylarheim) 		(Tout le Temps)	(Moyen) 	(numero 6)
+//29058 = Requin		(Coppa / Traiana)	(Tout le Temps)	(Moyen) 	(numero 7)
+//29059 = Bar			(Urunesti)   		(Jour) 		(Commun) 	(numero 8)
+//29060 = Bar commun		(Urunesti)  		(Tout le Temps)	(Moyen) 	(numero 9)
+//29061 = Saumon		(Crystal)   		(Jour) 		(Moyen) 	(numero 10)
+//29062 = Écrevisse		(Rana)   		(Jour)		(Rare) 		(numero 11)
+//29063 = Saumon rose		(Crystal)  		(Tout le temps)	(Rare) 		(numero 12)
+//29064 = Perche jaune		(Thébaïde)  		(Tout le Temps)	(Commun) 	(numero 13)
+//29065 = Piranha		(Rana)   		(Jour)		(Moyen) 	(numero 14)
+//29066 = Carpe 		(Kiman)   		(Jour)		(Moyen) 	(numero 15)
+//29067 = Thon 			(Coppa / Traiana)  	(Tout le Temps)	(Commun)	(numero 16)
+//29068 = Poisson ange 		(OmbreTerre)  		(Tout le Temps)	(Moyen) 	(numero 17)
+//29069 = Poisson clown 	(Coppa / Traiana)  	(Nuit)		(Rare) 		(numero 18)
+//29070 = Vandoise 		(Crystal) 		(Tout le Temps) (Commun) 	(numero 19)
+//29071 = Grenouille		(Kiman)  		(Nuit)		(Commun) 	(numero 20)
+//29072 = Poisson lanterne	(OmbreTerre)   		(Nuit)		(Rare) 		(numero 21)
+
+//=========================================================================================
+
+coppa,207,116,4	script	Zeladys#ep7	832,8,8,{
+
+set @name$,"^66CCFFZeladys^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers02fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers02en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers02sp";}
+
+OnTouch:
+	if (EP7_PECHE == 0) {showevent 1,0;} end;
+
+}
+
+//=========================================================================================
+
+ars_fild20,117,64,4	script	Lyrric#ep7	804,{
+
+set @name$,"^66CCFFLyrric^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers03fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers03en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers03sp";}
+}
+
+//=========================================================================================
+ars_fild28,230,124,4	script	#ep7fisha1	111,4,4,{
+
+	set @region$,"Rana";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+ars_fild29,103,117,4	duplicate(#ep7fisha1)	#ep7fisha2	111,4,4
+//=====================================
+ars_fild01,161,216,4	script	#ep7fishb1	111,4,4,{
+
+	set @region$,"Kiman";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+ars_fild02,116,63,4	duplicate(#ep7fishb1)	#ep7fishb2	111,4,4
+ars_fild03,221,121,4	duplicate(#ep7fishb1)	#ep7fishb3	111,4,4
+//=====================================
+ars_fild39,80,73,4	script	#ep7fishc1	111,4,4,{
+
+	set @region$,"Ombre";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+ars_fild40,233,172,4	duplicate(#ep7fishc1)	#ep7fishc2	111,4,4
+//=====================================
+ars_fild20,94,56,4	script	#ep7fishd1	111,4,4,{
+
+	set @region$,"Crystal";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+ars_fild51,131,22,4	duplicate(#ep7fishd1)	#ep7fishd2	111,4,4
+//=====================================
+ars_fild49,173,100,4	script	#ep7fishe1	111,4,4,{
+
+	set @region$,"Siwah";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+//=====================================
+coppa,247,86,4	script	#ep7fishf1	111,4,4,{
+
+	set @region$,"Coppa";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+tantale_ile,164,84,4	duplicate(#ep7fishf1)	#ep7fishf2	111,4,4
+ars_fild04,269,49,4	duplicate(#ep7fishf1)	#ep7fishf3	111,4,4
+//=====================================
+ars_fild18,126,111,4	script	#ep7fishg1	111,4,4,{
+
+	set @region$,"Thebaide";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+ars_fild19,191,147,4	duplicate(#ep7fishg1)	#ep7fishg2	111,4,4
+//=====================================
+ars_fild33,125,85,4	script	#ep7fishh1	111,4,4,{
+
+	set @region$,"Hylar";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+ars_fild36,71,73,4	duplicate(#ep7fishh1)	#ep7fishh2	111,4,4
+//=====================================
+ars_fild41,142,123,4	script	#ep7fishi1	111,4,4,{
+
+	set @region$,"Urunesti";
+	callfunc "arsi_peche";
+	end;
+
+OnTouch: if (EP7_PECHE >= 2) {showevent 2,0;} end;
+}
+ars_fild42,65,111,4	duplicate(#ep7fishi1)	#ep7fishi2	111,4,4
+
+//=========================================================================================
+
+function	script	arsi_peche	{
+
+	
+if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Pêcher^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Fishing^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^33CC00Action : Pescar^000000";}
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers04fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers04en";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers04sp";}
+}
+
+
+//=========================================================================================
+
+
+-	script	EP7_FishTime	-1,{
+
+OnTimeOut:
+
+	sleep2 $@ep7_time;
+	set $@timeout,1;
+	end;
+}
+//=========================================================================================
+
+coppa,203,115,3	script	Tableau de Pêche#1	857,{
+
+if(EP7_LANGUE == 0) {
+
+	set @name$,"^33CC00Tableau de Pêche^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Nombre de Poissons obtenus :";
+	mes "- Anguille : ^4d4dff - "+ep7fishnb1+"/30^000000 -";
+	mes "- Poisson rouge : ^4d4dff - "+ep7fishnb2+"/5^000000 -";
+	mes "- Poisson scorpion : ^4d4dff - "+ep7fishnb3+"/10^000000 -";
+	mes "- Poulpe : ^4d4dff - "+ep7fishnb4+"/20^000000 -";
+	mes "- Limande : ^4d4dff - "+ep7fishnb5+"/30^000000 -";
+	mes "- Hippocampe : ^4d4dff - "+ep7fishnb6+"/10^000000 -";
+	mes "- Requin : ^4d4dff - "+ep7fishnb7+"/10^000000 -";
+	mes "- Bar : ^4d4dff - "+ep7fishnb8+"/30^000000 -";
+	mes "- Bar commun : ^4d4dff - "+ep7fishnb9+"/10^000000 -";
+	mes "- Saumon : ^4d4dff - "+ep7fishnb10+"/10^000000 -";
+	mes "- Écrevisse : ^4d4dff - "+ep7fishnb11+"/5^000000 -";
+	mes "- Saumon rose : ^4d4dff - "+ep7fishnb12+"/5^000000 -";
+	mes "- Perche jaune : ^4d4dff - "+ep7fishnb13+"/20^000000 -";
+	mes "- Piranha : ^4d4dff - "+ep7fishnb14+"/10^000000 -";
+	mes "- Carpe  : ^4d4dff - "+ep7fishnb15+"/15^000000 -";
+	mes "- Thon : ^4d4dff - "+ep7fishnb16+"/20^000000 -";
+	mes "- Poisson ange : ^4d4dff - "+ep7fishnb17+"/10^000000 -";
+	mes "- Poisson clown : ^4d4dff - "+ep7fishnb18+"/5^000000 -";
+	mes "- Vandoise : ^4d4dff - "+ep7fishnb19+"/25^000000 -";
+	mes "- Grenouille : ^4d4dff - "+ep7fishnb20+"/20^000000 -";
+	mes "- Poisson lanterne : ^4d4dff - "+ep7fishnb21+"/5^000000 -";
+	close;}
+
+if(EP7_LANGUE == 1) {
+	set @name$,"^33CC00Fishing Board^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Number of Fishs obtains :";
+	mes "- Eel : ^4d4dff - "+ep7fishnb1+"/30^000000 -";
+	mes "- GoldFish : ^4d4dff - "+ep7fishnb2+"/5^000000 -";
+	mes "- Scorpion Fish : ^4d4dff - "+ep7fishnb3+"/10^000000 -";
+	mes "- Octopus : ^4d4dff - "+ep7fishnb4+"/20^000000 -";
+	mes "- Limande : ^4d4dff - "+ep7fishnb5+"/30^000000 -";
+	mes "- Seahorse : ^4d4dff - "+ep7fishnb6+"/10^000000 -";
+	mes "- Shark : ^4d4dff - "+ep7fishnb7+"/10^000000 -";
+	mes "- Bar : ^4d4dff - "+ep7fishnb8+"/30^000000 -";
+	mes "- Bar commun : ^4d4dff - "+ep7fishnb9+"/10^000000 -";
+	mes "- Salmon : ^4d4dff - "+ep7fishnb10+"/10^000000 -";
+	mes "- Crab : ^4d4dff - "+ep7fishnb11+"/5^000000 -";
+	mes "- Pink Salmon : ^4d4dff - "+ep7fishnb12+"/5^000000 -";
+	mes "- Perche jaune : ^4d4dff - "+ep7fishnb13+"/20^000000 -";
+	mes "- Piranha : ^4d4dff - "+ep7fishnb14+"/10^000000 -";
+	mes "- Carpe  : ^4d4dff - "+ep7fishnb15+"/15^000000 -";
+	mes "- Thon : ^4d4dff - "+ep7fishnb16+"/20^000000 -";
+	mes "- Angel Fish : ^4d4dff - "+ep7fishnb17+"/10^000000 -";
+	mes "- clown Fish : ^4d4dff - "+ep7fishnb18+"/5^000000 -";
+	mes "- Vandoise : ^4d4dff - "+ep7fishnb19+"/25^000000 -";
+	mes "- Frog : ^4d4dff - "+ep7fishnb20+"/20^000000 -";
+	mes "- Lantern Fish : ^4d4dff - "+ep7fishnb21+"/5^000000 -";
+	close;	}
+	
+if(EP7_LANGUE == 2) {	
+	set @name$,"^33CC00Pescados Board^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Número de pescados obtenidos :";
+	mes "- Eel : ^4d4dff - "+ep7fishnb1+"/30^000000 -";
+	mes "- GoldFish : ^4d4dff - "+ep7fishnb2+"/5^000000 -";
+	mes "- Scorpion Fish : ^4d4dff - "+ep7fishnb3+"/10^000000 -";
+	mes "- Octopus : ^4d4dff - "+ep7fishnb4+"/20^000000 -";
+	mes "- Limande : ^4d4dff - "+ep7fishnb5+"/30^000000 -";
+	mes "- Seahorse : ^4d4dff - "+ep7fishnb6+"/10^000000 -";
+	mes "- Shark : ^4d4dff - "+ep7fishnb7+"/10^000000 -";
+	mes "- Bar : ^4d4dff - "+ep7fishnb8+"/30^000000 -";
+	mes "- Bar commun : ^4d4dff - "+ep7fishnb9+"/10^000000 -";
+	mes "- Salmon : ^4d4dff - "+ep7fishnb10+"/10^000000 -";
+	mes "- Crab : ^4d4dff - "+ep7fishnb11+"/5^000000 -";
+	mes "- Pink Salmon : ^4d4dff - "+ep7fishnb12+"/5^000000 -";
+	mes "- Perche jaune : ^4d4dff - "+ep7fishnb13+"/20^000000 -";
+	mes "- Piranha : ^4d4dff - "+ep7fishnb14+"/10^000000 -";
+	mes "- Carpe  : ^4d4dff - "+ep7fishnb15+"/15^000000 -";
+	mes "- Thon : ^4d4dff - "+ep7fishnb16+"/20^000000 -";
+	mes "- Angel Fish : ^4d4dff - "+ep7fishnb17+"/10^000000 -";
+	mes "- clown Fish : ^4d4dff - "+ep7fishnb18+"/5^000000 -";
+	mes "- Vandoise : ^4d4dff - "+ep7fishnb19+"/25^000000 -";
+	mes "- Frog : ^4d4dff - "+ep7fishnb20+"/20^000000 -";
+	mes "- Lantern Fish : ^4d4dff - "+ep7fishnb21+"/5^000000 -";
+	close;}
+
+
+
+}
+
+//_________________________________________________________________
+//___________________Kiman Farès : La Plante du Désert ____________
+//_________________________________________________________________
+
+ars_fild02,236,183,1	script	Prigent Danon#ep7	473,8,8,{
+
+set @name$,"^66CCFFPrigent Danon^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers05fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers05en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers05sp";}
+	
+OnTouch:
+	if (EP7_PLANTE == 0) {showevent 1,0;} end;
+}
+
+//=====================================================================
+
+ars_fild05,117,97,4	script	Herboriste#ep7	750,{
+
+if(EP7_LANGUE == 0) {set @name$,"^FF00CCHerboriste^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^FF00CCHerborist^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^FF00CCHerbalista^000000";}
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers06fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers06en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers06sp";}
+}
+
+
+
+//=========================================================================================
+
+ars_fild12,299,125,4	script	Lophophora#ep7	1080,{
+
+set @name$,"^33CC00Lophophora^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers07fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers07en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers07sp";}
+
+}
+
+//=====================================================================
+
+-	script	EP7_Plante	-1,{
+
+OnInit:
+	set $@EP7_plante,0;
+	end;
+	
+OnMonsterSpawn:
+	
+	//variable event
+	set $@EP7_plante,1;
+	//NPC
+	disablenpc "Lophophora#ep7";
+	//Boss
+	monster "ars_fild12",299,125,""+getmonsterinfo(3835,0)+"",3835,1,"EP7_Plante::OnMonsterKill"; 
+	set $@monster_ep7plante,1;
+	end;
+
+OnMonsterKill:
+
+	set $@monster_ep7plante, $@monster_ep7plante-1;
+	if($@monster_ep7plante==0) {
+		donpcevent "EP7_Plante::OnEnd";
+	}
+	end;
+	
+OnEnd:
+	if($ep7_LangChoice & 1) {mapannounce "ars_fild12","Vous pouvez désormais cueillir la Lophophora",0,0x66CC33;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_fild12","Now, You can pick the Lophophora",0,0x66CC33;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_fild12","Ahora puede tomar la Lophophora",0,0x66CC33;}
+	set $@EP7_plante,2;
+	enablenpc "Lophophora#ep7";
+	sleep2 180000;
+	donpcevent "EP7_Plante::OnInit";
+	end;
+}
+
+//_________________________________________________________________
+//___________________Les Pleurs de Tarine _________________________
+//_________________________________________________________________
+
+ars_fild05,53,250,4	script	Tarine#ep7	803,8,8,{
+
+set @name$,"^FF00CCTarine^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers08fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers08en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers08sp";}
+
+OnTouch:
+	if (EP7_AME == 0) {showevent 1,0;} end;
+}
+
+//==============================================================================
+
+ars_fild10,174,76,5	script	Caporal Leon#ep7	966,{
+
+set @name$,"^66CCFFCaporal Leon^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers09fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers09en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers09sp";}
+}
+
+
+//==============================================================================
+
+ars_fild11,153,30,6	script	Caporal Castille#ep7	966,{
+
+set @name$,"^66CCFFCaporal Castille^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers10fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers10en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers10sp";}
+}
+
+
+
+//==============================================================================
+
+ars_fild12,211,205,4	script	Action : Fouiller#ep7ame	111,{
+
+if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Fouiller^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Search^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^33CC00Action : Bùsqueda^000000";}
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers11fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers11en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers11sp";}
+}
+
+
+
+//_________________________________________________________________
+//___________________Les Marins Disparus __________________________
+//_________________________________________________________________
+
+ars_fild33,119,106,6	script	Salve Regina#ep7	803,8,8,{
+
+set @name$,"^FF00CCSalve Regina^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Divers12fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Divers12en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Divers12sp";}
+
+
+OnTouch:
+	if (EP7_SAIL == 0) {showevent 1,0;} end;
+}
+//==============================================================================
+
+ars_fild46,53,103,6	script	Marin Hylar#ep7s1	806,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFMarin Hylar^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFSailor Hylar^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFMarina Hylar^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Nous avons eu le temps de fuir le Fort Orage lorsque les liches sont arrivées ...";
+	mes "Si tu pouvais contacter nos familles à Hylarheim pour leur dire que nous sommes toujours en vie !";}
+	if(EP7_LANGUE == 1) {mes "We have had time to flee when the Storm Fort liches came ...";
+	mes "If you could contact our families in Hylarheim for tell them we're still alive!";}
+	if(EP7_LANGUE == 2) {mes "Hemos tenido tiempo de huir cuando Storm Fort llegó ...";
+	mes "Si usted puede ponerse en contacto nuestras familias por su dorado Hylarheim aun estamos vivos!";}
+	
+	close2;
+	if (EP7_SAIL == 1) {
+	changequest 70425,70426;
+	set EP7_SAIL,2;}
+	end;
+}
+
+//_________________________________________________________________
+//___________________Scripts_______________________________________
+//_________________________________________________________________
+
+//========================================================================================================
+//                                Klerozoneg
+//========================================================================================================
+
+function	script	arsi_Divers01fr	{
+
+
+if (EP7_FETE == 0)  goto sub1;
+if (EP7_FETE == 1)  goto sub2;
+if (EP7_FETE <= 49)  goto sub3;
+if (EP7_FETE == 50)  goto sub4;
+if (EP7_FETE == 51)  goto sub5;
+if (EP7_FETE == 52)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Je suis le cuisinier de notre village, comme nous vivons en une communauté restreinte les repas se font en commun."; 
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Notre village te doit beaucoup ! Le Chef m'a demandé d'organiser une fête en ton honneur pour célébrer l'apaisement du Boitata.";
+	mes "Il va falloir que tu ailles nous chercher les vivres, comme nous vivons en une communauté restreinte les repas se font en commun."; 	
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Apporte-moi 50 Curupira, ce devrait nous faire matière à un grand festin !"; 		
+	close2;
+	set EP7_FETE,2;
+	changequest 70210,70211;
+	end;
+
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Alors cette viande de Curupira ? Elle arrive ? Tu n'as rapporté que " + EP7_FETE + " curupira, il t'en faut 50 !";
+	close;
+
+sub4:
+	mes "[" + @name$ + "]"; 
+	mes "Ah Parfait ! Maintenant passons aux fruits ! Je m'en régale d'avance ! Alors voici ma liste :";
+	mes "- 50 Bananes";
+	mes "- 40 Pommes";
+	mes "- 52 Oranges";
+	mes "- 15 Mastela Fruit";
+	mes "- 20 Prickly Fruit";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Je sais, je sais, ça en fait des courses à faire mais je te laisse imaginer quel grandiose festin nous allons faire !";	
+	close2;
+	set EP7_FETE,51;
+	changequest 70211,70212;
+	end;
+
+sub5:
+	mes "[" + @name$ + "]"; 
+	mes "Alors, voyons voir ce que tu m'as rapporté :";
+	next;
+	if (countitem(513) < 50) goto L_insufficient1;
+	if (countitem(512) < 40) goto L_insufficient1;
+	if (countitem(582) < 52) goto L_insufficient1;
+	if (countitem(522) < 15) goto L_insufficient1;
+	if (countitem(576) < 20) goto L_insufficient1;
+	mes "[" + @name$ + "]"; 
+	mes "Parfait ! Commençons la fête ! Laisse nous finir les préparatifs et reviens à la nuit tombée pour la grande fête en ton honneur !";
+	mes "Voici en dédommagement pour les courses effectuées !";
+	close2;
+	completequest 70212;
+	getitem $ep7recompense[2],$ep7recompensenb[2];
+	set EP7_FETE,52;
+	delitem 513,50;
+	delitem 512,40;
+	delitem 582,52;
+	delitem 522,15;
+	delitem 576,20;
+	end;
+
+sub6:
+
+	mes "[" + @name$ + "]";
+	mes "Laisse nous finir les préparatifs et reviens à la nuit tombée pour la grande fête en ton honneur !";
+	close;
+
+
+L_insufficient1:
+
+	mes "[" + @name$ + "]"; 
+	mes "Non, non et non ! Tu as encore du rater quelque chose ... Il me faut :";
+	mes "- 50 Bananes";
+	mes "- 40 Pommes";
+	mes "- 52 Oranges";
+	mes "- 15 Mastela Fruit";
+	mes "- 20 Prickly Fruit";
+	close;}
+
+
+//========================================================================================================
+
+function	script	arsi_Divers01en	{
+
+if (EP7_FETE == 0)  goto sub1;
+if (EP7_FETE == 1)  goto sub2;
+if (EP7_FETE <= 49)  goto sub3;
+if (EP7_FETE == 50)  goto sub4;
+if (EP7_FETE == 51)  goto sub5;
+if (EP7_FETE == 52)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "I am the cook of our village because we live in a small community meals are shared."; 
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Our village owes you a lot! The Chief asked me to organize a party in your honor to celebrate the healing of Boitata.";
+	mes "we'll have you go gather food for us because we live in a small community and meals are shared.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Bring me 50 Curupira, This should give us food for a great feast!"; 		
+	close2;
+	set EP7_FETE,2;
+	changequest 70210,70211;
+	end;
+
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Did you find the Curupira meat? You have reported only " + EP7_FETE + " curupira, the amount is 50! ";
+	close;
+
+sub4:
+	mes "[" + @name$ + "]"; 
+	mes "Oh Great! Now for the fruit! I regale in advance! So here's my list :";
+	mes "- 50 Bananas";
+	mes "- 40 Apples";
+	mes "- 52 Oranges";
+	mes "- 15 Mastela Fruit";
+	mes "- 20 Prickly Fruit";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "I know, I know, it will make shopping for you to go do but imagine how great we are going to feast!";	
+	close2;
+	set EP7_FETE,51;
+	changequest 70211,70212;
+	end;
+
+sub5:
+	mes "[" + @name$ + "]"; 
+	mes "So, let's see what you have reported :";
+	next;
+	if (countitem(513) < 50) goto L_insufficient1;
+	if (countitem(512) < 40) goto L_insufficient1;
+	if (countitem(582) < 52) goto L_insufficient1;
+	if (countitem(522) < 15) goto L_insufficient1;
+	if (countitem(576) < 20) goto L_insufficient1;
+	mes "[" + @name$ + "]"; 
+	mes "Perfect! Let's celebrate! Let us finish the preparations and come back tonight for the big party in your honor! ";
+	mes "Here is compensation for the shopping completed!";
+	close2;
+	getitem $ep7recompense[2],$ep7recompensenb[2];
+	set EP7_FETE,52;
+	delitem 513,50;
+	delitem 512,40;
+	delitem 582,52;
+	delitem 522,15;
+	delitem 576,20;
+	completequest 70212;
+	end;
+
+sub6:
+
+	mes "[" + @name$ + "]";
+	mes "Let us finish the preparations and come back at night for the big party in your honor!";
+	close;
+
+
+L_insufficient1:
+
+	mes "[" + @name$ + "]"; 
+	mes "No, no and no! You're still missing something ... I need:";
+	mes "- 50 Bananas";
+	mes "- 40 Apples";
+	mes "- 52 Oranges";
+	mes "- 15 Mastela Fruit";
+	mes "- 20 Prickly Fruit";
+	close;}
+
+//========================================================================================================
+
+function	script	arsi_Divers01sp	{
+
+
+if (EP7_FETE == 0)  goto sub1;
+if (EP7_FETE == 1)  goto sub2;
+if (EP7_FETE <= 49)  goto sub3;
+if (EP7_FETE == 50)  goto sub4;
+if (EP7_FETE == 51)  goto sub5;
+if (EP7_FETE == 52)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Yo soy el cocinero de nuestro pueblo, porque vivimos en una pequeña comunidad se comparte la comida."; 
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Nuestro pueblo le debe mucho! El jefe me pidió que organizar una fiesta en su honor para celebrar la curación de Boitata.";
+	mes "Va a tener que ir a buscar alimentos como nosotros vivimos en una comida pequeña comunidad se comparten.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Tráeme 50 Curupira, ya que debemos hacer espacio para una gran fiesta!"; 		
+	close2;
+	set EP7_FETE,2;
+	changequest 70210,70211;
+	end;
+
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Entonces la carne Curupira? Qué paso? Usted sólo han informado de " + EP7_FETE + " curupira, muy lejos de 50! ";
+	close;
+
+sub4:
+	mes "[" + @name$ + "]"; 
+	mes "Oh Genial! Ahora la fruta! me adelanté!! Así que ésta es la lista :P :";
+	mes "- 50 Bananas";
+	mes "- 40 Apples";
+	mes "- 52 Oranges";
+	mes "- 15 Mastela Fruit";
+	mes "- 20 Prickly Fruit";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Lo sé, lo sé, quedan muchas compras por hacer, pero te dejo imaginar cuán grande vamos a la fiesta!";	
+	close2;
+	set EP7_FETE,51;
+	changequest 70211,70212;
+	end;
+
+sub5:
+	mes "[" + @name$ + "]"; 
+	mes "Entonces, veamos lo que ha traido :";
+	next;
+	if (countitem(513) < 50) goto L_insufficient1;
+	if (countitem(512) < 40) goto L_insufficient1;
+	if (countitem(582) < 52) goto L_insufficient1;
+	if (countitem(522) < 15) goto L_insufficient1;
+	if (countitem(576) < 20) goto L_insufficient1;
+	mes "[" + @name$ + "]"; 
+	mes "Perfecto! Vamos a celebrar! Vamos a terminar los preparativos y regresar por la noche para la gran fiesta en su honor! ";
+	mes "Tome, en compensación por la compra hecho!";
+	close2;
+	getitem $ep7recompense[2],$ep7recompensenb[2];
+	set EP7_FETE,52;
+	delitem 513,50;
+	delitem 512,40;
+	delitem 582,52;
+	delitem 522,15;
+	delitem 576,20;
+	completequest 70212;
+	end;
+
+sub6:
+
+	mes "[" + @name$ + "]";
+	mes "Vamos a terminar los preparativos y regresar por la noche para la gran fiesta en su honor!";
+	close;
+
+
+L_insufficient1:
+
+	mes "[" + @name$ + "]"; 
+	mes "No, no y no! Estás todavía falta algo ... lo necesito:";
+	mes "- 50 Bananas";
+	mes "- 40 Apples";
+	mes "- 52 Oranges";
+	mes "- 15 Mastela Fruit";
+	mes "- 20 Prickly Fruit";
+	close;
+	}
+
+//========================================================================================================
+//                                Zeladys
+//========================================================================================================
+
+function	script	arsi_Divers02fr	{
+
+
+if (EP7_PECHE == 0 || EP7_PECHE == 1)  goto sub1;
+if (EP7_PECHE == 2)  goto sub2;
+if (EP7_PECHE == 3)  goto sub3;
+if (EP7_PECHE == 4)  goto sub4;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Je suis Zeladys, je m'occupe de la Guilde des Pêcheurs d'Arsinoé et nous sommes toujours à la recherche de nouveaux membres.";
+	mes "Nous préparons un grand concours pour connaître le meilleur pêcheur du continent, si tu souhaites participer à ce concours, rien de plus simple !";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Il te suffit d'acheter une canne à pêche, mais pas n'importe laquelle, il te faut la meilleure, celle du Lac Crystalmir dans les Monts Bacchias !";
+	mes "Lyrric est le vendeur, je te fournirai les âppats si tu le souhaites ensuite."; 
+	close2;
+	if (EP7_PECHE == 0) {
+	set EP7_PECHE,1;
+	setquest 70420;}
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Ah voilà, tu as une canne ! Tu vas pouvoir débuter le concours !";
+	mes "Tu dois remplir les objectifs du tableau à côté de moi, et ensuite revenir me voir pour obtenir ton titre."; 	
+	close2;
+	set EP7_PECHE,3;
+	changequest 70421,70422;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Que puis-je pour toi ?";
+	next;
+	menu "•Réclamer mon Titre",-,"•Acheter des âppats",submenu1;
+
+	if(ep7fishnb1 < 30) goto nonaccompli;
+	if(ep7fishnb2 < 5) goto nonaccompli;
+	if(ep7fishnb3 < 10) goto nonaccompli;
+	if(ep7fishnb4 < 20) goto nonaccompli;
+	if(ep7fishnb5 < 30) goto nonaccompli;
+	if(ep7fishnb6 < 10) goto nonaccompli;
+	if(ep7fishnb7 < 10) goto nonaccompli;
+	if(ep7fishnb8 < 30) goto nonaccompli;
+	if(ep7fishnb9 < 10) goto nonaccompli;
+	if(ep7fishnb10 < 10) goto nonaccompli;
+	if(ep7fishnb11 < 5) goto nonaccompli;
+	if(ep7fishnb12 < 5) goto nonaccompli;
+	if(ep7fishnb13 < 20) goto nonaccompli;
+	if(ep7fishnb14 < 10) goto nonaccompli;
+	if(ep7fishnb15 < 15) goto nonaccompli;
+	if(ep7fishnb16 < 20) goto nonaccompli;
+	if(ep7fishnb17 < 10) goto nonaccompli;
+	if(ep7fishnb18 < 5) goto nonaccompli;
+	if(ep7fishnb19 < 25) goto nonaccompli;
+	if(ep7fishnb20 < 20) goto nonaccompli;
+	if(ep7fishnb21 < 5) goto nonaccompli;
+
+	mes "[" + @name$ + "]";
+	mes "Félicitations, tu as bien mérité ce titre !";
+	close2;
+	callfunc "arsi_fishTitre";
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TFISH + "] Pêcheur d'Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] became the [" + $EP7_TFISH + "] Fisherman of Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convirtió en el [" + $EP7_TFISH + "] Fisherman de Arsinoé !",bc_all,0x33FF00;}		
+	completequest 70422;
+	getitem $ep7recompense[37],$ep7recompensenb[37];
+	set EP7_PECHE,4;
+	getitem 29075,1;
+	end;
+
+
+	submenu1:
+
+		mes "[" + @name$ + "]";  
+		mes "Combien d'âppats voulez-vous ?";
+		next;
+		input @input;
+		if(countitem($ep7_Tcoins) < @input) goto L_NOSC;
+		delitem $ep7_Tcoins,@input;
+		getitem 29073,@input;
+		mes "[" + @name$ + "]";  
+		mes "Voilà vos "+@input+" âppats !";
+		close;
+
+sub4:
+	mes "[" + @name$ + "]";
+	mes "Félicitations, tu as bien mérité ce titre !";
+	mes "Il ne te reste plus qu'à pêcher pour le plaisir cette fois-ci !";
+	next;
+	menu "•Acheter des âppats",submenu1,"•Quitter",-;
+
+		close;
+
+
+nonaccompli:
+
+	mes "[" + @name$ + "]";
+	mes "Il te manque encore des poissons à pêcher ! Tu dois vérifier ton avancement sur le tableau de pêche !";
+	close;
+	
+L_NOSC:
+
+	mes "[" + @name$ + "]";  
+	mes "Tu n'as pas assez de "+getitemname($ep7_Tcoins)+" sur toi !";
+	close; 
+}
+//========================================================================================================
+
+function	script	arsi_Divers02en	{
+
+
+if (EP7_PECHE == 0 || EP7_PECHE == 1)  goto sub1;
+if (EP7_PECHE == 2)  goto sub2;
+if (EP7_PECHE == 3)  goto sub3;
+if (EP7_PECHE == 4)  goto sub4;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "I'm Zeladys, I'm the Guild Leader of the Fishing men Arsinoe and we are always looking for new members.";
+    next;
+	mes "We are preparing a major competition to find the best fisherman on the continent, if you wish to participate in this contest it's simple!";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "All you need to do is buy a fishing rod, but not just any rod, you need the best, you can get it from the Lake in the Mountains Crystalmir Bacchias!";
+	mes "Lyrric is the seller of the rod, I will provide the bait if you want."; 
+	close2;
+	if (EP7_PECHE == 0) {
+	set EP7_PECHE,1;
+	setquest 70420;}
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Ah here, you have a rod! Now you can start the contest!";
+	mes "You must meet the objectives of the table beside me, and then come back and see me for your title."; 	
+	close2;
+	set EP7_PECHE,3;
+	changequest 70421,70422;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "What can I do for you?";
+	next;
+	menu "•Claim the title",-,"•Buy bait",submenu1;
+
+	if(ep7fishnb1 < 30) goto nonaccompli;
+	if(ep7fishnb2 < 5) goto nonaccompli;
+	if(ep7fishnb3 < 10) goto nonaccompli;
+	if(ep7fishnb4 < 20) goto nonaccompli;
+	if(ep7fishnb5 < 30) goto nonaccompli;
+	if(ep7fishnb6 < 10) goto nonaccompli;
+	if(ep7fishnb7 < 10) goto nonaccompli;
+	if(ep7fishnb8 < 30) goto nonaccompli;
+	if(ep7fishnb9 < 10) goto nonaccompli;
+	if(ep7fishnb10 < 10) goto nonaccompli;
+	if(ep7fishnb11 < 5) goto nonaccompli;
+	if(ep7fishnb12 < 5) goto nonaccompli;
+	if(ep7fishnb13 < 20) goto nonaccompli;
+	if(ep7fishnb14 < 10) goto nonaccompli;
+	if(ep7fishnb15 < 15) goto nonaccompli;
+	if(ep7fishnb16 < 20) goto nonaccompli;
+	if(ep7fishnb17 < 10) goto nonaccompli;
+	if(ep7fishnb18 < 5) goto nonaccompli;
+	if(ep7fishnb19 < 25) goto nonaccompli;
+	if(ep7fishnb20 < 20) goto nonaccompli;
+	if(ep7fishnb21 < 5) goto nonaccompli;
+
+	mes "[" + @name$ + "]";
+	mes "Congratulations, you deserved this title!";
+	close2;
+	callfunc "arsi_fishTitre";
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TFISH + "] Pêcheur d'Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] became the [" + $EP7_TFISH + "] Fisherman of Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convirtió en el [" + $EP7_TFISH + "] Fisherman de Arsinoé !",bc_all,0x33FF00;}			
+	completequest 70422;
+	getitem $ep7recompense[37],$ep7recompensenb[37];
+	set EP7_PECHE,4;
+	getitem 29075,1;
+	end;
+
+
+	submenu1:
+
+		mes "[" + @name$ + "]";  
+		mes "How many bait do you want ?";
+		next;
+		input @input;
+		if(countitem($ep7_Tcoins) < @input) goto L_NOSC;
+		delitem $ep7_Tcoins,@input;
+		getitem 29073,@input;
+		mes "[" + @name$ + "]";  
+		mes "There's your "+@input+" bait !";
+		close;
+
+sub4:
+	mes "[" + @name$ + "]";
+	mes "Congratulations, you deserved this title!";
+	mes "You can fish for fun this time!";
+	next;
+	menu "•Buy bait",submenu1,"•Quit",-;
+
+		close;
+
+
+nonaccompli:
+
+	mes "[" + @name$ + "]";
+	mes "You still need fish to catch! You should check your progress on the fishing table";
+	close;
+	
+L_NOSC:
+
+	mes "[" + @name$ + "]";  
+	mes "You don't have enough "+getitemname($ep7_Tcoins)+" with you!";
+	close; 
+}
+
+//========================================================================================================
+
+function	script	arsi_Divers02sp	{
+
+
+if (EP7_PECHE == 0 || EP7_PECHE == 1)  goto sub1;
+if (EP7_PECHE == 2)  goto sub2;
+if (EP7_PECHE == 3)  goto sub3;
+if (EP7_PECHE == 4)  goto sub4;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Soy Zeladys, yo soy parte del Gremio de Pescadores de Arsinoe y siempre estamos buscando nuevos miembros.";
+	mes "Estamos preparando una gran comtepencia para encontrar el mejor pescador en el continente, si usted desea participar en este concurso es bastante simple!";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Todo lo que necesitas para comprar una caña de pescar, pero no cualquiera, usted necesita la mejor, la del lago Crystalmir en las Montañas de Bacchias!";
+	mes "Lyrric es el vendedor, si gustas te presento el cebo."; 
+	close2;
+	if (EP7_PECHE == 0) {
+	set EP7_PECHE,1;
+	setquest 70420;}
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Ah aquí, tienes una caña! Ahora puede comenzar el concurso!";
+	mes "Usted debe cumplir con los objetivos de la mesa que está a mi lado, y luego volver a verme para el título."; 	
+	close2;
+	set EP7_PECHE,3;
+	changequest 70421,70422;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Qué puedo hacer por ti?";
+	next;
+	menu "•Reclamar el Título",-,"•Comprar cebo",submenu1;
+
+	if(ep7fishnb1 < 30) goto nonaccompli;
+	if(ep7fishnb2 < 5) goto nonaccompli;
+	if(ep7fishnb3 < 10) goto nonaccompli;
+	if(ep7fishnb4 < 20) goto nonaccompli;
+	if(ep7fishnb5 < 30) goto nonaccompli;
+	if(ep7fishnb6 < 10) goto nonaccompli;
+	if(ep7fishnb7 < 10) goto nonaccompli;
+	if(ep7fishnb8 < 30) goto nonaccompli;
+	if(ep7fishnb9 < 10) goto nonaccompli;
+	if(ep7fishnb10 < 10) goto nonaccompli;
+	if(ep7fishnb11 < 5) goto nonaccompli;
+	if(ep7fishnb12 < 5) goto nonaccompli;
+	if(ep7fishnb13 < 20) goto nonaccompli;
+	if(ep7fishnb14 < 10) goto nonaccompli;
+	if(ep7fishnb15 < 15) goto nonaccompli;
+	if(ep7fishnb16 < 20) goto nonaccompli;
+	if(ep7fishnb17 < 10) goto nonaccompli;
+	if(ep7fishnb18 < 5) goto nonaccompli;
+	if(ep7fishnb19 < 25) goto nonaccompli;
+	if(ep7fishnb20 < 20) goto nonaccompli;
+	if(ep7fishnb21 < 5) goto nonaccompli;
+
+	mes "[" + @name$ + "]";
+	mes "Felicitaciones, usted se merece este título!";
+	close2;
+	callfunc "arsi_fishTitre";
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TFISH + "] Pêcheur d'Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] became the [" + $EP7_TFISH + "] Fisherman of Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convirtió en el [" + $EP7_TFISH + "] Fisherman de Arsinoé !",bc_all,0x33FF00;}			
+	completequest 70422;
+	getitem $ep7recompense[37],$ep7recompensenb[37];
+	set EP7_PECHE,4;
+	getitem 29075,1;
+	end;
+
+
+	submenu1:
+
+		mes "[" + @name$ + "]";  
+		mes "Cuántos cebos quieres ?";
+		next;
+		input @input;
+		if(countitem($ep7_Tcoins) < @input) goto L_NOSC;
+		delitem $ep7_Tcoins,@input;
+		getitem 29073,@input;
+		mes "[" + @name$ + "]";  
+		mes "Le entrego "+@input+" cebo(s) !";
+		close;
+
+sub4:
+	mes "[" + @name$ + "]";
+	mes "Felicitaciones, usted se merece este título!!";
+	mes "No desea pescar ahora solo por diversión?!";
+	next;
+	menu "•Comprar cebos",submenu1,"•Quitar",-;
+
+		close;
+
+
+nonaccompli:
+
+	mes "[" + @name$ + "]";
+	mes "Aun faltan peces por pescar! Tiene lo necesario en la tabla de pesca de la mesa";
+	close;
+	
+L_NOSC:
+
+	mes "[" + @name$ + "]";  
+	mes "No tiene suficientes SilverCoins!";
+	close; 
+	}
+//========================================================================================================
+//                                Pêche
+//========================================================================================================
+
+function	script	arsi_Divers03fr	{
+
+
+if (EP7_PECHE >= 1)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "Si un jour tu as besoin d'une canne à pêche, il te suffira de venir me voir.";
+	mes "Je tiens à préciser que je fabrique les meilleures du continent !";
+
+sub1:
+
+	mes "[" + @name$ + "]"; 
+	mes "Je vends des cannes à pêche en effet, et pas n'importe lesquelles !";
+	mes "Fixons un prix et restons bons seigneurs !";
+	mes "50 "+getitemname($ep7_Tcoins)+" la canne, et je te jure qu'elle fera son temps !";
+	next;
+	menu "•Acheter",submenu1,"•Quitter",-;
+
+	close;
+
+	submenu1:
+
+		if ((countitem($ep7_Tcoins) < 50)) goto PasAssez;
+		mes "[" + @name$ + "]"; 
+		mes "Voici une canne, amuses-toi bien !";
+		close2;
+		if (EP7_PECHE == 1) {
+		set EP7_PECHE,2;
+		changequest 70420,70421;}
+		//Achat
+		delitem $ep7_Tcoins,50;
+		getitem 29074,1;
+		end;
+PasAssez:
+
+	mes "[" + @name$ + "]"; 
+	mes "Il te faut au moins 50 "+getitemname($ep7_Tcoins)+" pour m'acheter une canne !";
+	close;
+
+}
+//========================================================================================================
+
+function	script	arsi_Divers03en	{
+
+
+if (EP7_PECHE >= 1)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "If one day you need a fishing pole, you can just come see me.";
+	mes "I want to clarify that I make the best fishing poles of the continent!";
+
+sub1:
+
+	mes "[" + @name$ + "]"; 
+	mes "I sell fishing rods, and not just any rods but the best rods!";
+	mes "Let us fix a price!";
+	mes "50 "+getitemname($ep7_Tcoins)+" for a rod, and I swear it will be worth the price!";
+	next;
+	menu "•Buy",submenu1,"•Leave",-;
+
+	close;
+
+	submenu1:
+
+		if ((countitem($ep7_Tcoins) < 50)) goto PasAssez;
+		mes "[" + @name$ + "]"; 
+		mes "Here is a rod, amuse yourself!";
+		close2;
+		if (EP7_PECHE == 1) {
+		set EP7_PECHE,2;
+		changequest 70420,70421;}
+		//Achat
+		delitem $ep7_Tcoins,50;
+		getitem 29074,1;
+		end;
+PasAssez:
+
+	mes "[" + @name$ + "]"; 
+	mes "You need at least 50 "+getitemname($ep7_Tcoins)+" to buy myself a rod!";
+	close;
+}
+
+//========================================================================================================
+
+function	script	arsi_Divers03sp	{
+
+
+if (EP7_PECHE >= 1)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "Si un día necesitas una caña de pescar, puedes venir a verme.";
+	mes "Quiero aclarar que yo hago las mejores del continente!";
+
+sub1:
+
+	mes "[" + @name$ + "]"; 
+	mes "Vendo cañas de pescar, y no cualquieras!";
+	mes "Vamos a fijar un precio y mantenerlo para los buenos señores!";
+	mes "50 Silvers Coins y te juro que estará a tiempo!";
+	next;
+	menu "•Comprar",submenu1,"•Salir",-;
+
+	close;
+
+	submenu1:
+
+		if ((countitem($ep7_Tcoins) < 50)) goto PasAssez;
+		mes "[" + @name$ + "]"; 
+		mes "Aquí está tu caña, diviertete!";
+		close2;
+		if (EP7_PECHE == 1) {
+		set EP7_PECHE,2;
+		changequest 70420,70421;}
+		//Achat
+		delitem $ep7_Tcoins,50;
+		getitem 29074,1;
+		end;
+PasAssez:
+
+	mes "[" + @name$ + "]"; 
+	mes "Necesitas almenos 50 "+getitemname($ep7_Tcoins)+" para comprarme una caña!";
+	close;
+}
+//========================================================================================================
+//                                Script Pêche
+//========================================================================================================
+
+function	script	arsi_Divers04fr	{
+
+
+	//Canne à pêche de base
+	set @result1,50;set @result2,80;set @result3,95;set @result4,99;
+	//Canne à pêche champion
+	if ((countitem(29075) == 1)) {set @result1,20;set @result2,55;set @result3,80;set @result4,101;}
+	if ((countitem(29073) == 0) || (countitem(29074) == 0))  {mes "[" + @name$ + "]"; mes "Vous n'avez aucun âppat pour lancer votre ligne"; close;}
+	
+	//Rand
+	set @rand,rand(100);	
+
+	//Régions
+	if (@region$ == "Rana") goto groupe1;
+	if (@region$ == "Kiman") goto groupe2;
+	if (@region$ == "Ombre") goto groupe3;
+	if (@region$ == "Crystal") goto groupe4;
+	if (@region$ == "Siwah") goto groupe5;
+	if (@region$ == "Coppa") goto groupe6;
+	if (@region$ == "Thebaide") goto groupe7;
+	if (@region$ == "Hylar") goto groupe8;
+	if (@region$ == "Urunesti") goto groupe9;
+
+	mes "[" + @name$ + "]"; mes "Vous n'avez aucun âppat pour lancer votre ligne"; close;
+
+//========================================
+groupe1:
+
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Anguille";set @poissonid,"29052";set ep7fishnb1,ep7fishnb1+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Carpe";set @poissonid,"29066";set ep7fishnb15,ep7fishnb15+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Écrevisse";set @poissonid,"29062";set ep7fishnb11,ep7fishnb11+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;
+
+//========================================
+groupe2:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Grenouille";set @poissonid,"29071";set ep7fishnb20,ep7fishnb20+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Piranha";set @poissonid,"29065";set ep7fishnb14,ep7fishnb14+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Poisson Rouge";set @poissonid,"29053";set ep7fishnb2,ep7fishnb2+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;
+
+//========================================
+groupe3:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Limande";set @poissonid,"29056";set ep7fishnb5,ep7fishnb5+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {set @poisson$,"Poisson ange";set @poissonid,"29068";set ep7fishnb17,ep7fishnb17+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Poisson Lanterne";set @poissonid,"29072";set ep7fishnb21,ep7fishnb21+1;callfunc "arsi_pecheR"; end;}	
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;
+
+//========================================
+groupe4:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Vandoise";set @poissonid,"29070";set ep7fishnb19,ep7fishnb19+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Saumon";set @poissonid,"29061";set ep7fishnb10,ep7fishnb10+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Saumon Rose";set @poissonid,"29063";set ep7fishnb12,ep7fishnb12+1;callfunc "arsi_pecheR"; end;}	
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;
+
+//========================================
+groupe5:
+
+	//Rien
+	if(@rand < @result1) {if($ep7jouron == 1) goto Horaires;mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	
+	if(@rand < @result4) {set @poisson$,"Poisson scorpion";set @poissonid,"29054";set ep7fishnb3,ep7fishnb3+1;callfunc "arsi_pecheR"; end;}	
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;
+
+//========================================
+groupe6:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Thon";set @poissonid,"29067";set ep7fishnb16,ep7fishnb16+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {set @poisson$,"Requin";set @poissonid,"29058";set ep7fishnb7,ep7fishnb7+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Poisson Clown";set ep7fishnb18,ep7fishnb18+1;set @poissonid,"29069"; callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe7:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Poulpe";set @poissonid,"29055";set ep7fishnb4,ep7fishnb4+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Perche Jaune";set @poissonid,"29064";set ep7fishnb13,ep7fishnb13+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe8:
+
+	//Rien
+	if(@rand < @result2) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	
+	if(@rand < @result4) {set @poisson$,"Hippocampe";set @poissonid,"29057";set ep7fishnb6,ep7fishnb6+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe9:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Bar";set @poissonid,"29059";set ep7fishnb8,ep7fishnb8+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {mes "[" + @name$ + "]"; mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Bar Commun";set @poissonid,"29060";set ep7fishnb9,ep7fishnb9+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Vous venez de casser votre ligne !"; close2; delitem 29074,1; end;
+	
+//========================================
+
+	Horaires: mes "[" + @name$ + "]";mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;
+}
+
+
+//========================================================================================================
+
+function	script	arsi_Divers04en	{
+
+
+	//Canne à pêche de base
+	set @result1,50;set @result2,80;set @result3,95;set @result4,99;
+	//Canne à pêche champion
+	if ((countitem(29075) == 1)) {set @result1,20;set @result2,55;set @result3,80;set @result4,101;}
+	if ((countitem(29073) == 0) || (countitem(29074) == 0))  {mes "[" + @name$ + "]"; mes "You can't use your fishing pole without an âppat."; close;}
+	
+	//Rand
+	set @rand,rand(100);	
+
+	//Régions
+	if (@region$ == "Rana") goto groupe1;
+	if (@region$ == "Kiman") goto groupe2;
+	if (@region$ == "Ombre") goto groupe3;
+	if (@region$ == "Crystal") goto groupe4;
+	if (@region$ == "Siwah") goto groupe5;
+	if (@region$ == "Coppa") goto groupe6;
+	if (@region$ == "Thebaide") goto groupe7;
+	if (@region$ == "Hylar") goto groupe8;
+	if (@region$ == "Urunesti") goto groupe9;
+
+	mes "[" + @name$ + "]"; mes "You can't use your fishing pole without a bait"; close;
+
+//========================================
+groupe1:
+
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Eel";set @poissonid,"29052";set ep7fishnb1,ep7fishnb1+1;callfunc "arsi_pecheR2"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Carpe";set @poissonid,"29066";set ep7fishnb15,ep7fishnb15+1;callfunc "arsi_pecheR2"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Crab";set @poissonid,"29062";set ep7fishnb11,ep7fishnb11+1;callfunc "arsi_pecheR2"; end;}
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe2:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Frog";set @poissonid,"29071";set ep7fishnb20,ep7fishnb20+1;callfunc "arsi_pecheR2"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Piranha";set @poissonid,"29065";set ep7fishnb14,ep7fishnb14+1;callfunc "arsi_pecheR2"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Goldfish";set @poissonid,"29053";set ep7fishnb2,ep7fishnb2+1;callfunc "arsi_pecheR2"; end;}
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe3:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Limande";set @poissonid,"29056";set ep7fishnb5,ep7fishnb5+1;callfunc "arsi_pecheR2"; end;}
+	//Moyen
+	if(@rand < @result3) {set @poisson$,"Angel Fish";set @poissonid,"29068";set ep7fishnb17,ep7fishnb17+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Lantern Fish";set @poissonid,"29072";set ep7fishnb21,ep7fishnb21+1;callfunc "arsi_pecheR2"; end;}	
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe4:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Vandoise";set @poissonid,"29063";set ep7fishnb19,ep7fishnb19+1;callfunc "arsi_pecheR2"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Salmon";set @poissonid,"29061";set ep7fishnb10,ep7fishnb10+1;callfunc "arsi_pecheR2"; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Pink Salmon";set @poissonid,"29063";set ep7fishnb12,ep7fishnb12+1;callfunc "arsi_pecheR2"; end;}	
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe5:
+
+	//Rien
+	if(@rand < @result1) {if($ep7jouron == 1) goto Horaires;mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	
+	if(@rand < @result4) {set @poisson$,"Scorpion Fish";set @poissonid,"29054";set ep7fishnb3,ep7fishnb3+1;callfunc "arsi_pecheR2"; end;}	
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe6:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Thon";set @poissonid,"29067";set ep7fishnb16,ep7fishnb16+1;callfunc "arsi_pecheR2"; end;}
+	//Moyen
+	if(@rand < @result3) {set @poisson$,"Shark";set @poissonid,"29058";set ep7fishnb7,ep7fishnb7+1;callfunc "arsi_pecheR2"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Clownfish";set ep7fishnb18,ep7fishnb18+1;set @poissonid,"29069"; callfunc "arsi_pecheR2"; end;}
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe7:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Octopus";set @poissonid,"29055";set ep7fishnb4,ep7fishnb4+1;callfunc "arsi_pecheR2"; end;}
+	//Moyen
+	if(@rand < @result3) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Perche Jaune";set @poissonid,"29064";set ep7fishnb13,ep7fishnb13+1;callfunc "arsi_pecheR2"; end;}
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe8:
+
+	//Rien
+	if(@rand < @result2) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	
+	if(@rand < @result4) {set @poisson$,"Seahorse";set @poissonid,"29057";set ep7fishnb6,ep7fishnb6+1;callfunc "arsi_pecheR2"; end;}
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe9:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Bar";set @poissonid,"29059";set ep7fishnb8,ep7fishnb8+1;callfunc "arsi_pecheR2"; end;}
+	//Moyen
+	if(@rand < @result3) {mes "[" + @name$ + "]"; mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Bar Commun";set @poissonid,"29060";set ep7fishnb9,ep7fishnb9+1;callfunc "arsi_pecheR2"; end;}
+	mes "[" + @name$ + "]"; mes "You have broke your line!"; close2; delitem 29074,1; end;
+	
+//========================================
+
+	Horaires: mes "[" + @name$ + "]";mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;
+}
+//========================================================================================================
+
+function	script	arsi_Divers04sp	{
+
+	//Canne à pêche de base
+	set @result1,50;set @result2,80;set @result3,95;set @result4,99;
+	//Canne à pêche champion
+	if ((countitem(29075) == 1)) {set @result1,20;set @result2,55;set @result3,80;set @result4,101;}
+	if ((countitem(29073) == 0) || (countitem(29074) == 0))  {mes "[" + @name$ + "]"; mes "Usted no puede utilizar su caña de pescar sin un cebo."; close;}
+	
+	//Rand
+	set @rand,rand(100);	
+
+	//Régions
+	if (@region$ == "Rana") goto groupe1;
+	if (@region$ == "Kiman") goto groupe2;
+	if (@region$ == "Ombre") goto groupe3;
+	if (@region$ == "Crystal") goto groupe4;
+	if (@region$ == "Siwah") goto groupe5;
+	if (@region$ == "Coppa") goto groupe6;
+	if (@region$ == "Thebaide") goto groupe7;
+	if (@region$ == "Hylar") goto groupe8;
+	if (@region$ == "Urunesti") goto groupe9;
+
+	mes "[" + @name$ + "]"; mes "Usted no puede utilizar su caña de pescar sin un cebo"; close;
+
+//========================================
+groupe1:
+
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Eel";set @poissonid,"29052";set ep7fishnb1,ep7fishnb1+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Carpe";set @poissonid,"29066";set ep7fishnb15,ep7fishnb15+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Crab";set @poissonid,"29062";set ep7fishnb11,ep7fishnb11+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe2:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Frog";set @poissonid,"29071";set ep7fishnb20,ep7fishnb20+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Piranha";set @poissonid,"29065";set ep7fishnb14,ep7fishnb14+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Goldfish";set @poissonid,"29053";set ep7fishnb2,ep7fishnb2+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe3:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Limande";set @poissonid,"29056";set ep7fishnb5,ep7fishnb5+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {set @poisson$,"Angel Fish";set @poissonid,"29068";set ep7fishnb17,ep7fishnb17+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Lantern Fish";set @poissonid,"29072";set ep7fishnb21,ep7fishnb21+1;callfunc "arsi_pecheR"; end;}	
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe4:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Vandoise";set @poissonid,"29063";set ep7fishnb12,ep7fishnb12+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Salmon";set @poissonid,"29061";set ep7fishnb10,ep7fishnb10+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Pink Salmon";set @poissonid,"29063";set ep7fishnb12,ep7fishnb12+1;callfunc "arsi_pecheR"; end;}	
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe5:
+
+	//Rien
+	if(@rand < @result1) {if($ep7jouron == 1) goto Horaires;mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	
+	if(@rand < @result4) {set @poisson$,"Scorpion Fish";set @poissonid,"29054";set ep7fishnb3,ep7fishnb3+1;callfunc "arsi_pecheR"; end;}	
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;
+
+//========================================
+groupe6:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Thon";set @poissonid,"29067";set ep7fishnb16,ep7fishnb16+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {set @poisson$,"Shark";set @poissonid,"29058";set ep7fishnb7,ep7fishnb7+1;callfunc "arsi_pecheR"; end;}
+	//Rare
+	if(@rand < @result4) {if($ep7jouron == 1) goto Horaires;set @poisson$,"Clownfish";set @poissonid,"29069"; callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe7:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {set @poisson$,"Octopus";set @poissonid,"29055";set ep7fishnb4,ep7fishnb4+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Perche Jaune";set @poissonid,"29064";set ep7fishnb13,ep7fishnb13+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe8:
+
+	//Rien
+	if(@rand < @result2) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	
+	if(@rand < @result4) {set @poisson$,"Seahorse";set @poissonid,"29057";set ep7fishnb6,ep7fishnb6+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;	
+
+//========================================
+groupe9:
+
+	//Rien
+	if(@rand < @result1) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Commun
+	if(@rand < @result2) {if($ep7jouron == 0) goto Horaires;set @poisson$,"Bar";set @poissonid,"29059";set ep7fishnb8,ep7fishnb8+1;callfunc "arsi_pecheR"; end;}
+	//Moyen
+	if(@rand < @result3) {mes "[" + @name$ + "]"; mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;}
+	//Rare
+	if(@rand < @result4) {set @poisson$,"Bar Commun";set @poissonid,"29060";set ep7fishnb9,ep7fishnb9+1;callfunc "arsi_pecheR"; end;}
+	mes "[" + @name$ + "]"; mes "Se ha roto la cuerda!"; close2; delitem 29074,1; end;
+	
+//========================================
+
+	Horaires: mes "[" + @name$ + "]";mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;
+}
+
+
+//========================================================================================================
+//                                Action Fish
+//========================================================================================================
+
+function	script	arsi_pecheR	{
+
+	//Reset
+	set $@timeout,0;
+	//Geste
+	switch( rand(3) ) {
+		case 0:set @geste$,"Haut";break;
+		case 1:set @geste$,"Bas";break;
+		case 2:set @geste$,"Gauche";break;
+		case 3:set @geste$,"Droite";break;}
+
+	//Temps de Pêche
+	set @rand, rand(2000,5000);
+	set $@ep7_time, rand(2000,4500);
+
+	//Texte
+	mes "[" + @name$ + "]";
+	mes "Le Poisson approche ...";
+	sleep2 @rand;
+	mes "Vous devez tirer votre ligne : "+@geste$+" !";
+
+	//Time out
+	donpcevent "EP7_FishTime::OnTimeOut";
+
+	//Message
+	soundeffect "crab_stand.wav",0;
+	set @Tgeste$,@geste$;
+	input @Tgeste$;
+	if (@Tgeste$ == @geste$) goto L_Bon;
+	if (@Tgeste$ != @geste$) goto L_Bad;
+	end;
+
+
+L_Bon:
+	//Réussite
+	if ($@timeout == 1) goto L_Bad2;
+	mes " ";
+	mes "Vous venez de pêcher un "+@poisson$+" !";
+	close2;
+	delitem 29073,1;
+	getitem @poissonid,1;
+	end;
+
+L_Bad2:
+
+	mes " ";
+	mes "Trop tard, le poisson est parti !"; close2; delitem 29073,1; end;
+	close;
+
+L_Bad:
+
+	mes " ";
+	mes "Vous n'avez rien au bout de votre ligne."; close2; delitem 29073,1; end;
+
+
+}
+//========================================================================================================
+
+function	script	arsi_pecheR2	{
+
+	//Reset
+	set $@timeout,0;
+	//Geste
+		switch( rand(3) ) {
+		case 0:set @geste$,"Top";break;
+		case 1:set @geste$,"Bottom";break;
+		case 2:set @geste$,"Left";break;
+		case 3:set @geste$,"Right";break;}
+
+
+	//Temps de Pêche
+	set @rand, rand(2000,5000);
+	set $@ep7_time, rand(2000,4500);
+
+	//Texte
+	mes "[" + @name$ + "]";
+	mes "The Fish is comming ...";
+	sleep2 @rand;
+	mes "You should grab the line to : "+@geste$+" !";
+
+	//Time out
+	donpcevent "EP7_FishTime::OnTimeOut";
+
+	//Message
+	soundeffect "crab_stand.wav",0;
+	set @Tgeste$,@geste$;
+	input @Tgeste$;
+	if (@Tgeste$ == @geste$) goto L_Bon;
+	if (@Tgeste$ != @geste$) goto L_Bad;
+	end;
+
+
+L_Bon:
+	//Réussite
+	if ($@timeout == 1) goto L_Bad2;
+	mes " ";
+	mes "You have fishing a "+@poisson$+" !";
+	close2;
+	delitem 29073,1;
+	getitem @poissonid,1;
+	end;
+
+L_Bad2:
+
+	mes " ";
+	mes "Too late, the fish gone !"; close2; delitem 29073,1; end;
+	close;
+
+L_Bad:
+
+	mes " ";
+	mes "You have nothing at the end of your line."; close2; delitem 29073,1; end;
+
+
+}
+//========================================================================================================
+
+function	script	arsi_pecheR3	{
+
+	//Reset
+	set $@timeout,0;
+	//Geste
+	set @geste, rand(3);
+	if(@geste == 0) {set @geste$,"Arriba";}
+	if(@geste == 1) {set @geste$,"Abajo";}
+	if(@geste == 2) {set @geste$,"Izquierda";}
+	if(@geste == 3) {set @geste$,"Derecha";}
+
+	//Temps de Pêche
+	set @rand, rand(2000,5000);
+	set $@ep7_time, rand(2000,4500);
+
+	//Texte
+	mes "[" + @name$ + "]";
+	mes "Ahi viene el pescado ...";
+	sleep2 @rand;
+	mes "Debería jalar la cuerda hacia la : "+@geste$+" !";
+
+	//Time out
+	donpcevent "EP7_FishTime::OnTimeOut";
+
+	//Message
+	soundeffect "crab_stand.wav",0;
+	set @Tgeste$,@geste$;
+	input @Tgeste$;
+	if (@Tgeste$ == @geste$) goto L_Bon;
+	if (@Tgeste$ != @geste$) goto L_Bad;
+	end;
+
+
+L_Bon:
+	//Réussite
+	if ($@timeout == 1) goto L_Bad2;
+	mes " ";
+	mes "Ha pescado un "+@poisson$+" !";
+	close2;
+	delitem 29073,1;
+	getitem @poissonid,1;
+	end;
+
+L_Bad2:
+
+	mes " ";
+	mes "Demasiado tarde, el pescado ha ido !"; close2; delitem 29073,1; end;
+	close;
+
+L_Bad:
+
+	mes " ";
+	mes "Usted no tiene nada en la final de la cuerda."; close2; delitem 29073,1; end;
+
+
+}
+//========================================================================================================
+//                                Prigent
+//========================================================================================================
+
+function	script	arsi_Divers05fr	{
+
+
+if (EP7_GLOBAL < 10)  goto niveauquete;
+if (EP7_PLANTE == 0)  goto sub1;
+if (EP7_PLANTE == 1)  goto sub2;
+if (EP7_PLANTE == 2)  goto sub3;
+if (EP7_PLANTE == 3)  goto sub4;
+if (EP7_PLANTE == 4)  goto sub5;
+if (EP7_PLANTE == 5)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Bien le bonjour aventurier !"; 
+	mes "Mauvais temps pour les herboristes, je ne peux plus me procurer les herbes essentielles à mon art ..."; 
+	mes "Avec ces abominations, je peine à me déplacer en forêt, mais surtout je ne peux pas me rendre à Euhéméria au marché des plantes !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Pourrais-tu te rendre pour moi à Euhéméria voir le grossiste en herbes diverses ?";
+	mes "Les blessés dans notre village sont de plus en plus nombreux et mes soins sans les plantes ne font que ralentir les infections !"; 
+	close2;
+	setquest 70100;
+	set EP7_PLANTE,1;
+	end;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Mauvais temps pour les herboristes, je ne peux plus me procurer les herbes essentielles à mon art ..."; 
+	mes "Avec ces abominations, je peine à me déplacer en forêt, mais surtout je ne peux pas me rendre à Euhéméria au marché des plantes !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Pourrais-tu te rendre pour moi à Euhéméria voir le grossiste en herbes diverses ?";
+	mes "Les blessés dans notre village sont de plus en plus nombreux et mes soins sans les plantes ne font que ralentir les infections !"; 
+	close;
+
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Merci pour les herbes ! Je vais sans plus tarder préparer mes mixtures et onguements, hélas le fils de notre chef à de graves blessures."; 
+	mes "De très graves blessures infligées par un Turlutte, ces satanés monstres l'ont totalement retourné.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Il va me falloir quelque chose de plus puissant, hélas je ne vois pas comment me procurer cette fleur ...";
+	mes "Une fleur très rare qui pousse dans le désert de Kargha, dans son endroit le plus aride.";
+	mes "Serais-tu assez brave pour aller me la chercher ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Recherche une Lophophora, elle pousse dans le sable, bonne recherche, il te suffira de la cueillir et de me l'apporter.";
+	close2;
+	changequest 70101,70102;
+	set EP7_PLANTE,3;
+	end;
+
+sub4:
+	mes "[" + @name$ + "]";
+	mes "Merci pour les herbes ! Je vais sans plus tarder préparer mes mixtures et onguements, hélas le fils de notre chef à de graves blessures."; 
+	mes "De très graves blessures infligées par un Turlutte, ces satanés monstres l'ont totalement retourné.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Il va me falloir quelque chose de plus puissant, hélas je ne vois pas comment me procurer cette fleur ...";
+	mes "Une fleur très rare qui pousse dans le désert de Kargha, dans son endroit le plus aride.";
+	mes "Serais-tu assez brave pour aller me la chercher ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Recherche une Lophophora, elle pousse dans le sable, bonne recherche, il te suffira de la cueillir et de me l'apporter.";
+	close;
+sub5:
+	mes "[" + @name$ + "]";
+	mes "Oh ! Merci beaucoup, une fleur de Lophophora, c'est si rare d'en trouver une de nos jours !";
+	mes "Je vais enfin pouvoir en extraire son essence pour en faire un puissant onguement qui chassera les blessures infligées par les turluttes."; 
+	close2;
+	set EP7_PLANTE,5;
+	completequest 70103;
+	getitem $ep7recompense[14],$ep7recompensenb[14];
+	end;
+
+sub6:
+	mes "[" + @name$ + "]";
+	mes "Oh ! Merci beaucoup, une fleur de Lophophora, c'est si rare d'en trouver une de nos jours !";
+	mes "Je vais enfin pouvoir en extraire son essence pour en faire un puissant onguement qui chassera les blessures infligées par les turluttes."; 
+	close;
+
+niveauquete:
+
+	mes "[" + @name$ + "]"; 
+	mes "Mauvais temps pour les herboristes, je ne peux plus me procurer les herbes essentielles à mon art..."; 
+	close;
+}
+
+//========================================================================================================
+
+function	script	arsi_Divers05en	{
+
+
+if (EP7_GLOBAL < 10)  goto niveauquete;
+if (EP7_PLANTE == 0)  goto sub1;
+if (EP7_PLANTE == 1)  goto sub2;
+if (EP7_PLANTE == 2)  goto sub3;
+if (EP7_PLANTE == 3)  goto sub4;
+if (EP7_PLANTE == 4)  goto sub5;
+if (EP7_PLANTE == 5)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Good day adventurer!";
+	mes "Bad time for herborists, I can't get the essential herbs so i can practice my medicine art ...";
+	mes "With my back problems, I can hardly get around in the woods, let alone go to the plants market of Euhéméria !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Could you go shopping for me, go see Euhéméria herbs seller.";
+	mes "There are wounded people in our village, and my healing power without the plants can just slow infections!";
+	close2;
+	setquest 70100;
+	set EP7_PLANTE,1;
+	end;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Bad time for herborists, I can't get the essential herbs so i can practice my medicine art ...";
+	mes "With my back problems, I can hardly get around in the woods, let alone go to the plants market of Euhéméria !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Could you make shopping for me, go see Euhéméria herbs seller.";
+	mes "There are wounded people in our village, and my healing power without the plants can just slow infections!";
+	close;
+
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Thank you for herbs, I'm going without delay and prepare my mixtures and antidotes because unfortunately the son of our leader has serious injuries.";
+	mes "Very serious injuries inflicted by a turtle, those pesky monsters have completely injured him.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "I will need something more powerful, unfortunately don't know how I can get this flower ...";
+	mes "A rare flower that grows in the Kargha desert in the most rugged place.";
+	mes "Would you be brave enough to go and bring me one ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Looking for a Lophophora, it grows in the sand, you can just pick it and bring it to me.";
+	close2;
+	changequest 70101,70102;
+	set EP7_PLANTE,3;
+	end;
+
+sub4:
+	mes "[" + @name$ + "]";
+	mes "Thank you for herbs, I'm going without delay and prepare my mixtures and antidotes because unfortunately the son of our leader has serious injuries.";
+	mes "Very serious injuries inflicted by a turtle, those pesky monsters have completely injured him.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "I will need something more powerful, unfortunately don't know how I can get this flower ...";
+	mes "A rare flower that grows in the Kargha desert in the most rugged place.";
+	mes "Would you be brave enough to go and bring me one ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Looking for a Lophophora, it grows in the sand, you can just pick it and bring it to me.";
+	close;
+sub5:
+	mes "[" + @name$ + "]";
+	mes "Oh Thank you, a flower Lophophora is so rare to find nowadays!";
+	mes "I'll finally be able to extract this essence into a powerful antidote that will cure the wounds inflicted by Turtles.";
+	close2;
+	set EP7_PLANTE,5;
+	completequest 70103;
+	getitem $ep7recompense[14],$ep7recompensenb[14];
+	end;
+
+sub6:
+	mes "[" + @name$ + "]";
+	mes "Oh Thank you, a flower Lophophora is so rare to find nowadays!";
+	mes "I'll finally be able to extract his essence into a powerful antidote that will cure the wounds inflicted by Turtles.";
+	close;
+
+niveauquete:
+
+	mes "[" + @name$ + "]"; 
+	mes "Bad time for herborists, I can't get the essential herbs for practice my medicine art ...";
+	close;
+}
+//========================================================================================================
+
+function	script	arsi_Divers05sp	{
+
+if (EP7_GLOBAL < 10)  goto niveauquete;
+if (EP7_PLANTE == 0)  goto sub1;
+if (EP7_PLANTE == 1)  goto sub2;
+if (EP7_PLANTE == 2)  goto sub3;
+if (EP7_PLANTE == 3)  goto sub4;
+if (EP7_PLANTE == 4)  goto sub5;
+if (EP7_PLANTE == 5)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Buenos días aventurero!";
+	mes "Mal tiempo para los hierberos, no puedo conseguir las hierbas esenciales para practicar mi arte ...";
+	mes "Con estas abominaciones, apenas puedo moverme por el bosque, but mostly I can't go to plants market of Euhéméria !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Podría usted hacer las compras para mí, ir a ver Euhéméria vendedor hierbas.";
+	mes "Las personas heridas, en nuestro pueblo son más y más, y mi poder de cuidado sin plantas sólo pueden aumentar las infecciones!";
+	close2;
+	setquest 70100;
+	set EP7_PLANTE,1;
+	end;
+
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Mal tiempo para los hierberos, no puedo conseguir las hierbas esenciales para practicar mi arte ...";
+	mes "Con estas abominaciones, apenas puedo moverme por el bosque, but mostly I can't go to plants market of Euhéméria !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Podría usted hacer las compras para mí, ir a ver Euhéméria vendedor hierbas.";
+	mes "Las personas heridas, en nuestro pueblo son más y más, y mi poder de cuidado sin plantas sólo pueden aumentar las infecciones!";
+	close;
+
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Gracias por las hierbas, me voy sin demora y preparar mis mezclas y unguentos por desgracia, el hijo de nuestro líder con quemaduras graves.";
+	mes "Muy graves heridas infligidas por la tortura, esos molestos monstruos asi lo devolvieron.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Podría tener algo mas potente, por desgracia, no veo cómo puedo obtener esta flor ...";
+	mes "Una flor rara que crece en el desierto Kargha en su lugar más árido.";
+	mes "Es usted lo suficientemente valiente como para traerme una ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Para encontrar un Lophophora, crece en la arena, segun una buena investigación, usted puede recogerlo y traerlo a mí.";
+	close2;
+	changequest 70101,70102;
+	set EP7_PLANTE,3;
+	end;
+
+sub4:
+	mes "[" + @name$ + "]";
+	mes "Gracias por las hierbas, me voy sin demora y preparar mis mezclas y unguentos por desgracia, el hijo de nuestro líder con quemaduras graves.";
+	mes "Muy graves heridas infligidas por la tortura, esos molestos monstruos asi lo devolvieron.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Podría tener algo mas potente, por desgracia, no veo cómo puedo obtener esta flor ...";
+	mes "Una flor rara que crece en el desierto Kargha en su lugar más árido.";
+	mes "Es usted lo suficientemente valiente como para traerme una ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Para encontrar un Lophophora, crece en la arena, segun una buena investigación, usted puede recogerlo y traerlo a mí.";
+	close;
+sub5:
+	mes "[" + @name$ + "]";
+	mes "Oh, gracias, una flor Lophophora es tan raro encontrar uno hoy en día!";
+	mes "Por fin sere capaz de extraer su esencia en un poderoso unguento que cure las heridas infligidas por esos monstruos.";
+	close2;
+	set EP7_PLANTE,5;
+	completequest 70103;
+	getitem $ep7recompense[14],$ep7recompensenb[14];
+	end;
+
+sub6:
+	mes "[" + @name$ + "]";
+	mes "Oh, gracias, una flor Lophophora es tan raro encontrar uno hoy en día!";
+	mes "Por fin sere capaz de extraer su esencia en un poderoso unguento que cure las heridas infligidas por esos monstruos.";
+	close;
+
+niveauquete:
+
+	mes "[" + @name$ + "]"; 
+	mes "Mal tiempo para los hierberos, no puedo conseguir las hierbas esenciales para practicar mi arte ...";
+	close;
+	}
+
+
+
+
+//========================================================================================================
+//                                Herboriste
+//========================================================================================================
+
+function	script	arsi_Divers06fr	{
+
+
+if (EP7_PLANTE == 0)  goto sub1;
+if (EP7_PLANTE == 1)  goto sub2;
+if (EP7_PLANTE == 2)  goto sub3;
+if (EP7_PLANTE >= 3)  goto sub1;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Je fais venir de tout l'Arsinoé les plantes les plus rares, les plantes médicinales comme les pires poisons !"; 
+	mes "Le commerce est quelque peu perturbé en ce moment mais que voulez-vous, même les bandits ne savent saisir la vraie valeur des herbes, sauf si on parle de Lotus Noir !";
+	close;
+
+sub2:
+	
+	mes "[" + @name$ + "]"; 
+	mes "Je fais venir de tout l'Arsinoé les plantes les plus rares, les plantes médicinales comme les pires poisons !"; 
+	mes "Le commerce est quelque peu perturbé en ce moment mais que voulez-vous, même les bandits ne savent saisir la vraie valeur des herbes, sauf si on parle de Lotus Noir !";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, vous venez de la part de Prigent Danon, j'ai sa commande, mais cela fait plusieurs semaines que je l'attends.";
+	mes "Je me doute bien qu'il doit avoir fort à faire à Kiman Farès, bon voici ses plantes et herbes.";
+	mes "Je suis à votre service, ne l'oubliez pas !"; 
+	close2;
+	changequest 70100,70101;
+	set EP7_PLANTE,2;
+	end;
+sub3:
+	
+	mes "[" + @name$ + "]"; 
+	mes "Je fais venir de tout l'Arsinoé les plantes les plus rares, les plantes médicinales comme les pires poisons !"; 
+	mes "Le commerce est quelque peu perturbé en ce moment mais que voulez-vous, même les bandits ne savent saisir la vraie valeur des herbes, sauf si on parle de Lotus Noir !";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, vous venez de la part de Prigent Danon, j'ai sa commande, mais cela fait plusieurs semaines que je l'attends.";
+	mes "Je me doute bien qu'il doit avoir fort à faire à Kiman Farès, bon voici ses plantes et herbes.";
+	mes "Je suis à votre service, ne l'oubliez pas !"; 
+	close;
+}
+
+//========================================================================================================
+
+function	script	arsi_Divers06en	{
+
+
+if (EP7_PLANTE == 0)  goto sub1;
+if (EP7_PLANTE == 1)  goto sub2;
+if (EP7_PLANTE == 2)  goto sub3;
+if (EP7_PLANTE >= 3)  goto sub1;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "I have gathered Arsinoe the rarest plant, some medicinal plants are just as bad as the worst poisons!";
+	mes "Trade is somewhat disturbed at the moment but even the bandits don't understand the true values of herbs, unless we talk about Black Lotus!";
+	close;
+
+sub2:
+	
+	mes "[" + @name$ + "]"; 
+	mes "I have gathered Arsinoe the rarest plant, some medicinal plants are just as bad as the worst poisons!";
+	mes "Trade is somewhat disturbed at the moment but even the bandits don't understand the true values of herbs, unless we talk about Black Lotus!";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Oh, came from Prigent Danon, I have his command, but it has been many weeks since i expected it.";
+	mes "I suspect it must have alot to do with Kiman Fares, he has good plants and herbs.";
+	mes "I am at your service, don't forget it!";
+	close2;
+	changequest 70100,70101;
+	set EP7_PLANTE,2;
+	end;
+sub3:
+	
+	mes "[" + @name$ + "]"; 
+	mes "I have gathered Arsinoe the rarest plant, some medicinal plants are just as bad as the worst poisons!";
+	mes "Trade is somewhat disturbed at the moment but even the bandits don't understand the true values of herbs, unless we talk about Black Lotus!";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Oh, came from Prigent Danon, I have his command, but it has been many weeks since i expected it.";
+	mes "I suspect it must have alot to do with Kiman Fares, he has good plants and herbs.";
+	mes "I am at your service, don't forget it!";
+	close;
+}
+//========================================================================================================
+
+function	script	arsi_Divers06sp	{
+
+
+if (EP7_PLANTE == 0)  goto sub1;
+if (EP7_PLANTE == 1)  goto sub2;
+if (EP7_PLANTE == 2)  goto sub3;
+if (EP7_PLANTE >= 3)  goto sub1;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Me voy a comprar a través de Arsinoe las plantas más raras, plantas medicinales para el peor veneno!";
+	mes "El comercio es un poco caotico por el momento pero que pueden saber los bandidos e incluso ustedes del verdadero valor de las hierbas, a menos que se habla de Lotus Negro!";
+	close;
+
+sub2:
+	
+	mes "[" + @name$ + "]"; 
+	mes "Me voy a comprar a través de Arsinoe las plantas más raras, plantas medicinales para el peor veneno!";
+	mes "El comercio es un poco caotico por el momento pero que pueden saber los bandidos e incluso ustedes del verdadero valor de las hierbas, a menos que se habla de Lotus Negro!";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, usted viene de Prigent Danon, Tengo su orden, pero ha pasado mas tiempo del que pense.";
+	mes "Sospecho que debe haber mucho que hacer en Kiman Fares, aquí hay buenas plantas y hierbas.";
+	mes "Estoy a su servicio, no lo olvides!";
+	close2;
+	changequest 70100,70101;
+	set EP7_PLANTE,2;
+	end;
+sub3:
+	
+	mes "[" + @name$ + "]"; 
+	mes "Me voy a comprar a través de Arsinoe las plantas más raras, plantas medicinales para el peor veneno!";
+	mes "El comercio es un poco caotico por el momento pero que pueden saber los bandidos e incluso ustedes del verdadero valor de las hierbas, a menos que se habla de Lotus Negro!";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, usted viene de Prigent Danon, Tengo su orden, pero ha pasado mas tiempo del que pense.";
+	mes "Sospecho que debe haber mucho que hacer en Kiman Fares, aquí hay buenas plantas y hierbas.";
+	mes "Estoy a su servicio, no lo olvides!";
+	close;}
+
+
+//========================================================================================================
+//                                Lophophora
+//========================================================================================================
+
+function	script	arsi_Divers07fr	{
+
+
+if ($@EP7_plante == 2)  goto recompense;
+if (EP7_PLANTE <= 2)  goto sub1;
+if (EP7_PLANTE == 3)  goto sub2;
+if (EP7_PLANTE >= 4)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Ceci est une Lophophora, une plante très rare et très recherchée par les herboristes."; 
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Ceci est une Lophophora, une plante très rare et très recherchée par les herboristes."; 
+	close2;
+	if ($@EP7_plante == 0)  {donpcevent "EP7_Plante::OnMonsterSpawn";}
+	end;
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Vous avez déjà cueilli cette plante.";
+	close;
+
+recompense:
+
+	if (EP7_PLANTE >= 4)  goto sub3;
+	mes "[" + @name$ + "]"; 
+	mes "Vous venez de récupérer une fleur de Lophophora."; 
+	close2;
+	getitem 29002,1;
+	set EP7_PLANTE,4;
+	changequest 70102,70103;
+	end;
+}
+//========================================================================================================
+
+function	script	arsi_Divers07en	{
+
+
+if ($@EP7_plante == 2)  goto recompense;
+if (EP7_PLANTE <= 2)  goto sub1;
+if (EP7_PLANTE == 3)  goto sub2;
+if (EP7_PLANTE >= 4)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "This is a Lophophora, a plant that is very rare and highly prized by herbalists.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "This is a Lophophora, a plant that is very rare and highly prized by herbalists.";
+	close2;
+	if ($@EP7_plante == 0)  {donpcevent "EP7_Plante::OnMonsterSpawn";}
+	end;
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "You've already pick this plant.";
+	close;
+
+recompense:
+
+	if (EP7_PLANTE >= 4)  goto sub3;
+	mes "[" + @name$ + "]"; 
+	mes "You just pick up a Lophophora flower."; 
+	close2;
+	getitem 29002,1;
+	set EP7_PLANTE,4;
+	changequest 70102,70103;
+	end;
+}	
+//========================================================================================================
+
+function	script	arsi_Divers07sp	{
+
+if ($@EP7_plante == 2)  goto recompense;
+if (EP7_PLANTE <= 2)  goto sub1;
+if (EP7_PLANTE == 3)  goto sub2;
+if (EP7_PLANTE >= 4)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Esta es una Lophophora, una planta muy rara y muy apreciada por los herbolarios.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Esta es una Lophophora, una planta muy rara y muy apreciada por los herbolarios.";
+	close2;
+	if ($@EP7_plante == 0)  {donpcevent "EP7_Plante::OnMonsterSpawn";}
+	end;
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Ya has tomado ésta planta.";
+	close;
+
+recompense:
+
+	if (EP7_PLANTE >= 4)  goto sub3;
+	mes "[" + @name$ + "]"; 
+	mes "Usted acaba de recoger una flor de Lophophora."; 
+	close2;
+	getitem 29002,1;
+	set EP7_PLANTE,4;
+	changequest 70102,70103;
+	end;
+	
+
+}
+
+//========================================================================================================
+//                                Tarine
+//========================================================================================================
+
+function	script	arsi_Divers08fr	{
+
+
+if (EP7_GLOBAL < 10)  goto niveauquete;
+if (EP7_AME == 0)  goto sub1;
+if (EP7_AME <= 2)  goto sub2;
+if (EP7_AME == 3)  goto sub3;
+if (EP7_AME <= 5)  goto sub4;
+if (EP7_AME == 6)  goto sub5;
+if (EP7_AME == 7)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Je suis inquiète, mon mari est réserviste de la I Légion des chevaliers d'Arsinoé en tant que piéton.";
+	mes "Mais je crois que jamais, non jamais je ne pourrai le revoir dans ce monde, ses lettres ne me parviennent plus et les miennes restent mortes.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Les troupes gobelines assiègent notre lime du Torn-Thalas ne nous savons toujours pas si cette ligne va tenir ...";
+	mes "Pourrais-tu, s'il te plait, le rechercher pour moi ?";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Je ne peux pas me rendre en Arsinoé, comme tout le monde par ailleurs, pour prendre des nouvelles de mon mari, Goussil.";
+	mes "Il faudrait accèder directement à la lime de Torn-Thalas en passant par le Mont Bacchias et le Col du Feymur, puis demander aux différentes garnisons pour leur demander s'ils n'ont pas vu Goussil, mon mari ! Aide moi !";
+	close2;
+	set EP7_AME,1;
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Je suis inquiète, mon mari est réserviste de la I Légion des chevaliers d'Arsinoé en tant que piéton.";
+	mes "Mais je crois que jamais, non jamais je ne pourrai le revoir dans ce monde, ses lettres ne me parviennent plus et les miennes restent mortes.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Les troupes gobelines assiègent notre lime du Torn-Thalas ne nous savons toujours pas si cette ligne va tenir ...";
+	mes "Pourrais-tu, s'il te plait, le rechercher pour moi ?";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Je ne peux pas me rendre en Arsinoé, comme tout le monde par ailleurs, pour prendre des nouvelles de mon mari, Goussil.";
+	mes "Il faudrait accèder directement à la lime de Torn-Thalas en passant par le Mont Bacchias et le Col du Feymur, puis demander aux différentes garnisons pour leur demander s'ils n'ont pas vu Goussil, mon mari ! Aide moi !";
+	close;
+
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Hélas, je me doutais bien de ce funeste dénouement ... Notre empathie était forte, je l'avais senti au fond de moi.";
+	mes "Son âme n'a pas poursuivi son chemin, elle est restée bloquée ici bas, je t'en supplie retrouve sa dépouille, et enterre-là décemment dans un cimetière.";
+	close2;
+	set EP7_AME,4;
+	end;
+
+sub4:
+	mes "[" + @name$ + "]"; 
+	mes "Hélas, je me doutais bien de ce funeste dénouement ... Notre empathie était forte, je l'avais senti au fond de moi.";
+	mes "Son âme n'a pas poursuivi son chemin, elle est restée bloquée ici bas, je t'en supplie retrouve sa dépouille, et enterre-là décemment dans un cimetière.";
+	close;
+
+sub5:
+	mes "[" + @name$ + "]"; 
+	mes "Merci beaucoup pour ton aide, j'ai eu beaucoup de chance de te rencontrer, sans toi j'aurai été dans le même cas que de nombreuses autres veuves.";
+	mes "Son âme est en paix, voilà le principal, dès que la situation aura été régularisée au Nord, j'irai à Nèsos me recueillir sur sa tombe.";
+	mes "Voici pour te remercier :";
+	close2;
+	getitem $ep7recompense[13],$ep7recompensenb[13];
+	set EP7_AME,7;
+	end;
+
+sub6:
+	mes "[" + @name$ + "]"; 
+	mes "Merci beaucoup pour ton aide, j'ai eu beaucoup de chance de te rencontrer, sans toi j'aurai été dans le même cas que de nombreuses autres veuves.";
+	mes "Son âme est en paix, voilà le principal, dès que la situation aura été régularisée au Nord, j'irai à Nèsos me recueillir sur sa tombe.";
+	close;
+	
+
+niveauquete:
+
+	mes "[" + @name$ + "]"; 
+	mes "Je suis inquiète, mon mari est réserviste de la I Légion des chevaliers d'Arsinoé en tant que piéton.";
+	mes "Mais je crois que jamais, non jamais je ne pourrai le revoir dans ce monde, ses lettres ne me parviennent plus et les miennes restent mortes.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Les troupes gobelines assiègent notre lime du Torn-Thalas ne nous savons toujours pas si cette ligne va tenir ...";
+	close;
+}
+
+//========================================================================================================
+
+function	script	arsi_Divers08en	{
+
+if (EP7_GLOBAL < 10)  goto niveauquete;
+if (EP7_AME == 0)  goto sub1;
+if (EP7_AME <= 2)  goto sub2;
+if (EP7_AME == 3)  goto sub3;
+if (EP7_AME <= 5)  goto sub4;
+if (EP7_AME == 6)  goto sub5;
+if (EP7_AME == 7)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "I'm worried, my husband is a reservist of the Legion Knights of Arsinoe as a pedestrian.";
+	mes "But I think i'll never be able to see him agian, his letters never reached me and i fear that he is dead.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Goblin troops stole our file of Torn-Thalas we do not yet know if this line will take ...";
+	mes "Could you, please, search for me?";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "I can't go to Arsinoe, to look for news of my husband, Goussil.";
+	mes "You should go directly to the file-Torn Thalas through Mount Bacchias and Col du Feymur, then ask different garrisons to see if they have seen Goussil, my husband! Help me!";
+	close2;
+	set EP7_AME,1;
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "I'm worried, my husband is a reservist of the Legion Knights of Arsinoe as a pedestrian.";
+	mes "But I think i'll never be able to see him agian, his letters never reached me and i fear that he is dead.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Goblin troops stole our file of Torn-Thalas we do not yet know if this line will take ...";
+	mes "Could you, please, search for me?";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "I can't go to Arsinoe, as everyone also for news of my husband, Goussil.";
+	mes "You should go directly to the city Torn-Thalas through Mount Bacchias and Col du Feymur, then ask different garrisons to see if they have seen Goussil, my husband! Help me!";
+	close;
+
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Unfortunately, I was pretty sure of this fatal outcome... Our empathy was strong, I had felt in my heart.";
+	mes "His soul has not gone way, it is stuck down there, I beg you to find his remains and bury them in a cemetery and give him a decent burrial.";
+	close2;
+	set EP7_AME,4;
+	end;
+
+sub4:
+	mes "[" + @name$ + "]"; 
+	mes "Unfortunately, I was pretty sure of this fatal outcome ... Our empathy was strong, I had felt in my heart.";
+	mes "His soul has not gone way, it is stuck down there, I beg you to find his remains and bury them in a cemetery and give him a decent burrial.";
+	close;
+
+sub5:
+	mes "[" + @name$ + "]"; 
+	mes "Thank you very much for your help, I was very lucky to meet you, without you I was in the same situation as many other widows.";
+	mes "His soul is at peace, is the important thing, as soon as the situation has been corrected in the North, I'll will go to Nêsos to his grave.";
+	mes "Here's to thank you :";
+	close2;
+	getitem $ep7recompense[13],$ep7recompensenb[13];
+	set EP7_AME,7;
+	end;
+
+sub6:
+	mes "[" + @name$ + "]"; 
+	mes "Thank you very much for your help, I was very lucky to meet you, without you I was in the same situation as many other widows.";
+	mes "His soul is at peace, is the important thing, as soon as the situation has been corrected in the North, I'll will go to Nêsos to his grave.";
+	close;
+	
+
+niveauquete:
+
+	mes "[" + @name$ + "]"; 
+	mes "I'm worried, my husband is a reservist of the Legion Knights of Arsinoe as a pedestrian.";
+	mes "But I think i'll never be able to see him agian, his letters never reached me and i fear that he is dead.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Goblin troops besiege our file of Torn-Thalas we do not yet know if this line will take ...";
+	close;
+}
+//========================================================================================================
+
+function	script	arsi_Divers08sp	{
+
+if (EP7_GLOBAL < 10)  goto niveauquete;
+if (EP7_AME == 0)  goto sub1;
+if (EP7_AME <= 2)  goto sub2;
+if (EP7_AME == 3)  goto sub3;
+if (EP7_AME <= 5)  goto sub4;
+if (EP7_AME == 6)  goto sub5;
+if (EP7_AME == 7)  goto sub6;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Estoy preocupada, mi esposo forma parte de las reservas de la Legion I de los Caballeros de Arsinoe.";
+	mes "Pero yo nunca, no nunca podré verlo de nuevo en éste mundo, he dejado de recibir sus cartas.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Tropas de Goblin asedian las filas de Torn-Thalas que no sabemos todavía si esta línea se llevará a ...";
+	mes "podría usted, por favor, buscarlo por mi?";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "No puedo ir a Arsinoe, como todo el mundo por noticias de mi esposo, Goussil.";
+	mes "Es necesario ir directamente al archivo Thalas-Torn a través del Monte Bacchias y Col du Feymur, despúes preguntar a los diferentes guardias si han visto Goussil, mi esposo! Ayúdeme!";
+	close2;
+	set EP7_AME,1;
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Estoy preocupada, mi esposo forma parte de las reservas de la Legion I de los Caballeros de Arsinoe.";
+	mes "Pero yo nunca, no nunca podré verlo de nuevo en éste mundo, he dejado de recibir sus cartas.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Tropas de Goblin asedian las filas de Torn-Thalas que no sabemos todavía si esta línea se llevará a ...";
+	mes "podría usted, por favor, buscarlo por mi?";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "No puedo ir a Arsinoe, como todo el mundo por noticias de mi esposo, Goussil.";
+	mes "Es necesario ir directamente al archivo Thalas-Torn a través del Monte Bacchias y Col du Feymur, despúes preguntar a los diferentes guardias si han visto Goussil, mi esposo! Ayúdeme!";
+	close;
+
+sub3:
+	mes "[" + @name$ + "]"; 
+	mes "Desafortunadamente, yo estaba bastante segura de un desenlace fatal ... Nuestra empatía era fuerte, lo había sentido en mi corazón.";
+	mes "El alma no ha ido a su manera, ella está parada aquí, te ruego que encontres sus restos y los enterres en un cementerio decentemente.";
+    close2;
+	set EP7_AME,4;
+	end;
+
+sub4:
+	mes "[" + @name$ + "]"; 
+	mes "Desafortunadamente, yo estaba bastante segura de un desenlace fatal ... Nuestra empatía era fuerte, lo había sentido en mi corazón.";
+	mes "El alma no ha ido a su manera, ella está parada aquí, te ruego que encontres sus restos y los enterres en un cementerio decentemente.";
+	close;
+
+sub5:
+	mes "[" + @name$ + "]"; 
+	mes "Muchas gracias por su ayuda, tuve mucha suerte de conocerte, sin ti yo estaría en la misma situación que muchas otras viudas.";
+	mes "Su alma está en paz, eso es lo principal, tan pronto como la situación se mejore en el norte, voy a visitar su tumba.";
+    mes "Toma en agradecimiento :";
+	close2;
+	getitem $ep7recompense[13],$ep7recompensenb[13];
+	set EP7_AME,7;
+	end;
+
+sub6:
+	mes "[" + @name$ + "]"; 
+	mes "Muchas gracias por su ayuda, tuve mucha suerte de conocerte, sin ti yo estaría en la misma situación que muchas otras viudas.";
+	mes "Su alma está en paz, eso es lo principal, tan pronto como la situación se mejore en el norte, voy a visitar su tumba.";
+	close;
+	
+
+niveauquete:
+
+	mes "[" + @name$ + "]"; 
+	mes "Estoy preocupada, mi esposo forma parte de las reservas de la Legion I de los Caballeros de Arsinoe.";
+	mes "Pero yo nunca, no nunca podré verlo de nuevo en éste mundo, he dejado de recibir sus cartas.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Tropas de Goblin asedian las filas de Torn-Thalas que no sabemos todavía si esta línea se llevará a ...";
+	close;
+	}
+
+
+
+//========================================================================================================
+//                                Caporal Leon
+//========================================================================================================
+
+function	script	arsi_Divers09fr	{
+
+
+if (EP7_AME == 0)  goto sub1;
+if (EP7_AME == 1)  goto sub2;
+if (EP7_AME >= 2)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Sale temps pour une bataille, si tu veux mon avis.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Oui, je suis bien caporal dans la I Légion ...";
+	mes "Le Soldat Goussil ? Oui, je vois bien qui c'est il était sous mon commandement ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Il a été envoyé en mission avec quelques autres soldats sous le commandement du Caporal Castille ...";
+	mes "Ils devaient rejoindre la II Légion, pour apporter les plans de bataille, qui aux dernières nouvelles est bloquée près de l'Oasis de Siwah.";
+	close2;
+	set EP7_AME,2;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Oui, je suis bien caporal dans la I Légion ...";
+	mes "Le Soldat Goussil ? Oui, je vois bien qui c'est il était sous mon commandement ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Il a été envoyé en mission avec quelques autres soldats sous le commandement du Caporal Castille ...";
+	mes "Ils devaient rejoindre la II Légion, pour apporter les plans de bataille, qui aux dernières nouvelles est bloquée près de l'Oasis de Siwah.";
+	close;
+
+}
+//========================================================================================================
+
+function	script	arsi_Divers09en	{
+
+
+if (EP7_AME == 0)  goto sub1;
+if (EP7_AME == 1)  goto sub2;
+if (EP7_AME >= 2)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Bad time for a battle, if you ask me.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Yes, I am a corporal in the Legion I ...";
+	mes "Private Goussil, Yes? he was under my command ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "He was sent on a mission with some other soldiers under the command of Corporal Castile ...";
+	mes "They had to join the Second Legion, to make the battle plans, which at last count is blocked near the Oasis of Siwah.";
+	close2;
+	set EP7_AME,2;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Yes, I am a corporal in the Legion I ...";
+	mes "Private Goussil, Yes? he was under my command...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "He was sent on a mission with some other soldiers under the command of Corporal Castile ...";
+	mes "They had to join the Second Legion, to make the battle plans, which at last count is blocked near the Oasis of Siwah.";
+	close;
+
+}
+//========================================================================================================
+
+function	script	arsi_Divers09sp	{
+
+if (EP7_AME == 0)  goto sub1;
+if (EP7_AME == 1)  goto sub2;
+if (EP7_AME >= 2)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Tiempos duros para la batalla, si usted me pregunta.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Si, soy un cabo de la Legion I ...";
+	mes "Goussil, Si? Estaba bajo mi mando ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Fue enviado en una misión con otros soldados bajo el mando del cabo Castile ...";
+	mes "Tuvieron que unirse a la Segunda Legion, para realizar planes de batalla, que hasta donde sé, está bloqueado cerca del Oasis de Siwah.";
+	close2;
+	set EP7_AME,2;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Si, soy un cabo de la Legion I ...";
+	mes "Goussil, Si? Estaba bajo mi mando ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Fue enviado en una misión con otros soldados bajo el mando del cabo Castile ...";
+	mes "Tuvieron que unirse a la Segunda Legion, para realizar planes de batalla, que hasta donde sé, está bloqueado cerca del Oasis de Siwah.";
+	close;
+
+}
+
+//========================================================================================================
+//                                Caporal Castille
+//========================================================================================================
+
+function	script	arsi_Divers10fr	{
+
+
+
+if (EP7_AME <= 1)  goto sub1;
+if (EP7_AME == 2)  goto sub2;
+if (EP7_AME >= 3)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Nous avons été fait prisonniers, moi et mon escouade, ces foutus gobelins m'ont pris mes hommes et les ont executés dans le désert.";
+	mes "Nous devions apporter des plans de bataille à la deuxième légion, hélas nous n'avons pas réussi ...";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Nous avons été fait prisonniers, moi et mon escouade, ces foutus gobelins m'ont pris mes hommes et les ont executés dans le désert.";
+	mes "Nous devions apporter des plans de bataille à la deuxième légion, hélas nous n'avons pas réussi ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, tu recherches le soldat Goussil, oui, il était sous mes ordres, hélas son corps doit se trouver dans le désert ...";
+	mes "Vu le nombre de charognards, il ne doit plus en rester grand chose, veuillez transmettre toutes mes condéléances à sa jeune veuve ...";
+	close2;
+	set EP7_AME,3;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Nous avons été fait prisonniers, moi et mon escouade, ces foutus gobelins m'ont pris mes hommes et les ont executés dans le désert.";
+	mes "Nous devions apporter des plans de bataille à la deuxième légion, hélas nous n'avons pas réussi ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, tu recherches le soldat Goussil, oui, il était sous mes ordres, hélas son corps doit se trouver dans le désert ...";
+	mes "Vu le nombre de charognards, il ne doit plus en rester grand chose, veuillez transmettre toutes mes condéléances à sa jeune veuve ...";
+	close;
+
+}
+
+//========================================================================================================
+
+function	script	arsi_Divers10en	{
+
+if (EP7_AME <= 1)  goto sub1;
+if (EP7_AME == 2)  goto sub2;
+if (EP7_AME >= 3)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "We have been captured, me and my squad, they took away my friggen goblin men and executed them in the desert.";
+	mes "We needed to send battle plans to the second legion, unfortunately we have not succeeded ...";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "We have been captured, me and my squad, they took away my friggen goblin men and executed them in the desert.";
+	mes "We needed to send battle plans to the second legion, unfortunately we have not succeeded ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, you seek the soldier Goussil, yes, he was under my orders, unfortunately his body is still in the desert ...";
+	mes "Given the number of scavengers, it shouldn't remain there much longer, please send all my condolences his young widow ...";
+	close2;
+	set EP7_AME,3;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "We have been captured, me and my squad, they took away my friggen goblin men and executed them in the desert.";
+	mes "We needed to send battle plans to the second legion, unfortunately we have not succeeded ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, you seek the soldier Goussil, yes, he was under my orders, unfortunately his body is still in the desert ...";
+	mes "Given the number of scavengers, it shouldn't remain there much longer, please send all my condolences his young widow ...";
+	close;
+
+}
+//========================================================================================================
+
+function	script	arsi_Divers10sp	{
+
+
+if (EP7_AME <= 1)  goto sub1;
+if (EP7_AME == 2)  goto sub2;
+if (EP7_AME >= 3)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Hemos sido capturados, yo y mi equipo, el maldito duende me quito a mis hombres y los ejecutaron en el desierto..";
+	mes "Necesitábamos planes de batalla de la segunda legión, por desgracia no hemos tenido éxito ...";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Hemos sido capturados, yo y mi equipo, el maldito duende me quito a mis hombres y los ejecutaron en el desierto..";
+	mes "Necesitábamos planes de batalla de la segunda legión, por desgracia no hemos tenido éxito ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, usted busca el soldado Goussil, sí, que estaba bajo mis órdenes, lamentablemente, su cuerpo debe estar en el desierto ...";
+	mes "Dado el número de animales carroñeros, no debe quedar mucho ya, por favor envíe toda mi condéléances su joven viuda ...";
+	close2;
+	set EP7_AME,3;
+	end;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Hemos sido capturados, yo y mi equipo, el maldito duende me quito a mis hombres y los ejecutaron en el desierto..";
+	mes "Necesitábamos planes de batalla de la segunda legión, por desgracia no hemos tenido éxito ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Ah, usted busca el soldado Goussil, sí, que estaba bajo mis órdenes, lamentablemente, su cuerpo debe estar en el desierto ...";
+	mes "Dado el número de animales carroñeros, no debe quedar mucho ya, por favor envíe toda mi condéléances su joven viuda ...";
+	close;
+
+}
+//========================================================================================================
+//                                Action
+//========================================================================================================
+
+function	script	arsi_Divers11fr	{
+
+
+if (EP7_AME <= 3)  goto sub1;
+if (EP7_AME == 4)  goto sub2;
+if (EP7_AME >= 5)  goto sub1;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Ceci est le corps d'un homme, les charognards et les vers sont passés avant vous.";
+	mes "Les lambeaux de son uniforme vous laissent penser qu'il était un soldat d'Arsinoé.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Ceci est le corps d'un homme, les charognards et les vers sont passés avant vous.";
+	mes "Les lambeaux de son uniforme vous laissent penser qu'il était un soldat d'Arsinoé.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "En fouillant dans les poches de sa veste militaire, vous trouvez son carnet militaire, il s'agit bien de Goussil.";
+	mes "Vous devez aller voir le prêtre au cimetière de Nèsos pour qu'il puisse revevoir sa dernière demeure.";
+	close2;
+	set EP7_AME,5;
+	end;
+
+
+}
+
+//========================================================================================================
+
+function	script	arsi_Divers11en	{
+
+
+if (EP7_AME <= 3)  goto sub1;
+if (EP7_AME == 4)  goto sub2;
+if (EP7_AME >= 5)  goto sub1;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "This is the body of a man, scavengers and worms have gotten here before you.";
+	mes "The remnants of his uniform will suggest he was a soldier of Arsinoe.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "This is the body of a man, scavengers and worms have gotten here before you.";
+	mes "The remnants of his uniform will suggest he was a soldier of Arsinoe.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "In searching through the pockets of his army jacket, you find the book a soldier, he is indeed Goussil.";
+	mes "You must go see the priest in the cemetery Nêsos reserve a place for him to meet his final resting place.";
+	close2;
+	set EP7_AME,5;
+	end;
+
+
+}
+//========================================================================================================
+
+function	script	arsi_Divers11sp	{
+
+
+if (EP7_AME <= 3)  goto sub1;
+if (EP7_AME == 4)  goto sub2;
+if (EP7_AME >= 5)  goto sub1;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Este es el cuerpo de un hombre, y gusanos carroñeros han llegado antes.";
+	mes "Los restos de su uniforme le sugiere que era un soldado de Arsinoe.";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Este es el cuerpo de un hombre, y gusanos carroñeros han llegado antes.";
+	mes "Los restos de su uniforme le sugiere que era un soldado de Arsinoe.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "En la búsqueda a través de los bolsillos de su chaqueta militar, se encuentra el libro de un soldado, él es de hecho Goussil.";
+	mes "Usted debe ir a ver al sacerdote en el cementerio y que le prepare su última morada.";
+	close2;
+	set EP7_AME,5;
+	end;
+
+
+}
+//========================================================================================================
+//                                Marins
+//========================================================================================================
+
+function	script	arsi_Divers12fr	{
+
+
+if (EP7_SAIL == 0 || EP7_SAIL == 1)  goto sub1;
+if (EP7_SAIL == 2 || EP7_SAIL >= 3)  goto sub2;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Beaucoup des nôtres ont disparus lors de l'attaque du Fort Orage. Nos chefs disent qu'ils sont morts durant l'attaque, mais je suis persuadée qu'ils sont toujours en vie.";
+	mes "Tu dois retrouver nos marins !";
+	close2;
+	if (EP7_SAIL == 0) {
+	setquest 70425;
+	set EP7_SAIL,1;}
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "J'en étais sûre ! Ils sont toujours en vie, même s'ils sont à Sidon, ls reviendront bien un jour.";
+	mes "Merci à toi, voici le village qui s'est cotisé pour toi !";
+	close2;
+	if (EP7_SAIL == 2) {
+	completequest 70426;
+	set EP7_SAIL,3;
+	getitem $ep7_Tcoins,$ep7silvercoinnb[9];}
+	end;
+}
+//========================================================================================================
+
+function	script	arsi_Divers12en	{
+;
+
+if (EP7_SAIL == 0 || EP7_SAIL == 1)  goto sub1;
+if (EP7_SAIL == 2 || EP7_SAIL >= 3)  goto sub2;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Many of our sailors have disappeared during the attack on Fort Storm. Our leaders say they died in the attack, but I'm sure they are still alive.";
+	mes "You have to find our sailors!";
+	close2;
+	if (EP7_SAIL == 0) {
+	setquest 70425;
+	set EP7_SAIL,1;}
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "I knew it! They are still alive, even if they are in Sidon, they will return one day.";
+	mes "Thank you, here is a reward from the village that has contributed for you!";
+	close2;
+	if (EP7_SAIL == 2) {
+	completequest 70426;
+	set EP7_SAIL,3;
+	getitem $ep7_Tcoins,$ep7silvercoinnb[9];}
+	end;
+}
+
+//========================================================================================================
+
+function	script	arsi_Divers12sp	{
+
+
+if (EP7_SAIL == 0 || EP7_SAIL == 1)  goto sub1;
+if (EP7_SAIL == 2 || EP7_SAIL >= 3)  goto sub2;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Muchos de nosotros han desaparecido durante el ataque a Fort Storm. Nuestros dirigentes dicen que murió en el ataque, pero estoy seguro de que todavía están vivos.";
+	mes "Usted tiene que encontrar nuestros marineros!";
+	close2;
+	if (EP7_SAIL == 0) {
+	setquest 70425;
+	set EP7_SAIL,1;}
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "¡Lo sabía! Ellos todavía están vivos, aunque estén en Sidon, regresaran un dia.";
+	mes "Gracias, aquí está lo que el pueblo que ha contribuido para ti!";
+	close2;
+	if (EP7_SAIL == 2) {
+	completequest 70426;
+	set EP7_SAIL,3;
+	getitem $ep7_Tcoins,$ep7silvercoinnb[9];}
+	end;
+	}

@@ -1,0 +1,296 @@
+//Schallmar
+
+
+//Cartes
+29084#
+^777777Carte Maritime de l'Archipel de Coppalana^000000
+Cette carte vous permet de naviguer dans les eaux de Coppalana.
+#
+29085#
+^777777Carte Maritime des îles de Brynnlaw^000000
+Cette carte vous permet de naviguer dans les eaux de Brynnlaw.
+#
+29086#
+^777777Carte Maritime des îles de Schallmar^000000
+Cette carte vous permet de naviguer dans les eaux de Schallmar.
+#
+
+//Cartes au Trésor
+29090#
+^777777Carte au trésor n°1^000000
+La carte représente une perle.
+#
+29091#
+^777777Carte au trésor n°2^000000
+La carte représente le Monastère de Tibérine.
+#
+29092#
+^777777Carte au trésor n°3^000000
+La carte représente les grottes du Gwened.
+#
+29093#
+^777777Carte au trésor n°4^000000
+La carte représente les Jumelles de Jacamar.
+#
+29094#
+^777777Carte au trésor n°5^000000
+La carte représente les grottes du Gwened.
+#
+29095#
+^777777Carte au trésor n°6^000000
+La carte représente la Forteresse de la Défense.
+#
+29096#
+^777777Carte au trésor n°7^000000
+La carte représente l'Archipel de Coppalana.
+#
+29097#
+^777777Carte au trésor n°8^000000
+La carte représente le Monastère de Tibérine.
+#
+29098#
+^777777Carte au trésor n°9^000000
+La carte représente l'Île du Dragon.
+#
+29099#
+^777777Carte au trésor n°10^000000
+La carte indique la Cité d'Arsinoé mais elle ne ressemble pas du tout à l'actuelle ...
+#
+29100#
+^777777Carte au trésor n°11^000000
+La carte représente les îles Iawah.
+#
+29101#
+^777777Carte au trésor n°12^000000
+La carte représente la cité de Schallmar.
+#
+29102#
+^777777Carte au trésor n°13^000000
+La carte représente l'Ar Gwez Boel.
+#
+29103#
+^777777Carte au trésor n°14^000000
+La carte représente le Menez Mikael ar Mor.
+#
+29104#
+^777777Carte au trésor n°15^000000
+La carte représente le Menez Mikael ar Mor.
+#
+29105#
+^777777Carte au trésor n°16^000000
+La carte représente les Bois de Jacamar.
+#
+
+
+
+
+//Les Perles Noires
+29120#
+^777777Perle noire n°1^000000
+Ceci est un d'une des sept perles de Shinaere.
+#
+29121#
+^777777Perle noire n°2^000000
+Ceci est un d'une des sept perles de Shinaere.
+#
+29122#
+^777777Perle noire n°3^000000
+Ceci est un d'une des sept perles de Shinaere.
+#
+29123#
+^777777Perle noire n°4^000000
+Ceci est un d'une des sept perles de Shinaere.
+#
+29124#
+^777777Perle noire n°5^000000
+Ceci est un d'une des sept perles de Shinaere.
+#
+29125#
+^777777Perle noire n°6^000000
+Ceci est un d'une des sept perles de Shinaere.
+#
+29126#
+^777777Perle noire n°7^000000
+Ceci est un d'une des sept perles de Shinaere.
+#
+
+
+
+//Objets
+29130#
+^777777Spore de Mush Bleu^000000
+Ces spores de Grand Mush Bleu sont très rares.
+#
+29131#
+^777777Bois de Saintale^000000
+Ce bois est rare et ne se trouve que dans les îles de Jacamar.
+#
+29132#
+^777777Philtre de Koweitel^000000
+Le Philtre de Koweitel va permettre aux mutants des grottes du Gwened de recouver un aspect humain.
+#
+29133#
+^777777Huile de Cortès^000000
+Cette Huile vous permet d'utiliser la grue de votre navire.
+#
+29134#
+^777777Détecteur de Cortès^000000
+Vous devez garder sur vous ce détecteur pour afficher les trésors de la mer.
+#
+
+//Les Sceaux
+29140#
+^777777Sceau de l'Archipel de Coppalana^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+29141#
+^777777Sceau de l'Île aux Perles^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+29142#
+^777777Sceau de l'Hôtel du Croizic^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+29143#
+^777777Sceau de Brynnlaw^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+29144#
+^777777Sceau des Jumelles Jacamar^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+29145#
+^777777Sceau du Comptoir Mascate^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+29146#
+^777777Sceau des Îles aux épices^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+29147#
+^777777Sceau du Monastère de Tibérine^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+29148#
+^777777Sceau de la Forteresse de la Défense^000000
+Ceci est un des sceaux que Cortès recherche.
+#
+
+
+
+//Objets Quête
+
+29150#
+^777777Rune de Ta^000000
+Ceci est une rune magique.
+#
+29151#
+^777777Manganite^000000
+Matière utilisée comme combustible.
+#
+29152#
+^777777Rune de Chimay^000000
+Ceci est une rune magique.
+#
+29153#
+^777777Rune d'Orval^000000
+Ceci est une rune magique.
+#
+29154#
+^777777Scalp de Pirate^000000
+Ce scalp de pirate est le symbole de votre bravoure.
+#
+29155#
+^777777Roche de Solinari^000000
+Cette roche provient d'une des trois lunes, celle de Solinari.
+#
+29156#
+^777777Bagage du Croizic^000000
+Les vacanciers de l'hôtel du Croizic ont perdu leurs bagages durant l'attaques des pirates.
+#
+29157#
+^777777Perle Gigantesque^000000
+Cette perle est gigantesque et doit coûter son poids !
+#
+29158#
+^777777Bicorne de Flibustier^000000
+Vous devez équiper cet objet pour pouvoir attaquer les navires.
+#
+29159#
+^777777Maillet de Gong^000000
+Ceci est un maillet en Or.
+#
+29160#
+^777777Vision D'Or^000000
+Cet objet vous permet de visualiser les positions probables des trésors dans les îles de Schallmar.
+#
+29161#
+^777777Fibre de Champignon^000000
+Fibre qui tisée peut-être très résistante.
+#
+29162#
+^777777Tissu Mycetozoa^000000
+Le Tissu Mycetozoa est léger et d'une solidité rare. Très utile pour forger des boucliers résistants et légers.
+#
+
+
+
+
+
+29170#
+^777777Heaume du Champion^000000
+Heaume du Héros. Ses pouvoirs sont mystérieux.
+#
+29171#
+^777777Vision-Vraie^000000
+Ses pouvoirs sont mystérieux.
+#
+29172#
+^777777Herbe à Chat^000000
+Ses pouvoirs sont mystérieux.
+#
+29173#
+^777777Fléau des Dieux^000000
+Ses pouvoirs sont mystérieux.
+#
+29174#
+^777777Parade d'Harpocrate^000000
+Ses pouvoirs sont mystérieux.
+#
+29175#
+^777777Voile de Danifae^000000
+Ses pouvoirs sont mystérieux.
+#
+29176#
+^777777Bottes de Sept Lieues^000000
+Ses pouvoirs sont mystérieux.
+#
+29177#
+^777777Rune du Martyr^000000
+Ses pouvoirs sont mystérieux.
+#
+29178#
+^777777Anneau de Sauvegarde^000000
+Ses pouvoirs sont mystérieux.
+#
+29179#
+^777777Armure à Plates du Dragon^000000
+Ses pouvoirs sont mystérieux.
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

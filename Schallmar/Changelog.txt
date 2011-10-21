@@ -1,0 +1,29 @@
+Schallmar Islands _ Episode 8
+
+             by Aerie PinkPanther
+
+Stand-alone who takes place in south sea of Arsinoé. The adventure begins in the Tantale Island.
+Not need Arsinoé main continent, totally independant, but of course both can work together.
+
+
+21/10/11 : rev.7 - Move to GoogleCode
+
+
+
+02/09/11 : rev.6 - English Traduction of Client and DB part
+                 - Scripts traduction : Cortès / Fonctions
+
+
+14/08/11 : rev.5 - Main Noire : Menez Warp Correction
+				 - Elu : Rumble Fix / Chaperon Rouge reward
+				 - Schallmar : Warp fix
+				 - Cortès : Can back to solinari
+				 - Fonctions : Trap rand fix with Harcout quest				 
+				 - Mob_db2 : Garilla fix				 
+				 - Traduction in english of : Tresors / Pieges / MonteChristos / Coppa / Passages
+				 
+
+07/08/11 : rev.4 - Second part of Schallmar Avaible !
+
+16/02/11 : rev.1 - First release for testing only. (Scripts in French Only) 
+                 - First part of the adventure, next will be release later !

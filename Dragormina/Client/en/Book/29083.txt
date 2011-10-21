@@ -1,0 +1,13 @@
+^ 4682B4 Account Book of Comte de Nemours
+
+Accounts for the month of Filrune:
+
+- Expenses common: 2.000 silver
+- Supplies of troops: 12,000 pieces of silver
+- Setting up tunnels: 100,000 silver
+- Retirement of Baron Sengir: 8200 silver coins
+- Maintenance of tunnels 4,700 silver coins
+- Widows Pension: 1,200 silver
+
+Preparing the day of the Fronde, contact the Magi Grey and implement the attack
+final.

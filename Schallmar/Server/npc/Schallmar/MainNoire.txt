@@ -1,0 +1,1527 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= MainNoire
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//= 2.1 Menez warp correction / Asmodée warp
+//
+//
+//================================================================================================= 
+
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Main Noire : Contact
+// 2 = Main Noire : Mission 1
+// 3 = Main Noire : Négoce
+// 4 = Main Noire : Vengeance
+// 5 = Main Noire : Menez
+//
+//_________________________________________________________________
+//________________ Main Noire : Contact ___________________________
+//_________________________________________________________________
+
+ars_dun48,34,59,5	script	Man'Uchao#ep7	54,4,4,{
+
+set @name$,"^66CCFFMan'Uchao^000000";
+
+	if (EP7_SCHALLMAR <= 4) {
+
+		mes "[" + @name$ + "]";
+		mes "Traine pas trop dans le coin ...";
+		close;}
+
+	if (EP7_MANONEGRA == 0 || EP7_MANONEGRA == 1) {
+
+		mes "[" + @name$ + "]";
+		mes "J'suis un peu fatigué ! T'vois ces maudites pintes sont pas sans me retirer une certaine volonté ...";
+		mes "Pour quelques "+getitemname($ep7_Tcoins)+", t'pourrais me rendre un service, quoi ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "J'dois, t'vois, rendre visite à un mauvais payeur histoire de la brusquer un p'tit peu ...";
+		mes "C'est ce macaque de ^66CCFFGalen^000000 qui habite dans l'îles aux épices, dis lui que la Main Noire veut son argent !";	
+		close2;
+		if (EP7_MANONEGRA == 0) {
+			set EP7_MANONEGRA,1;
+			setquest 70580;}
+		end;}
+		
+	if (EP7_MANONEGRA == 2 || EP7_MANONEGRA == 3) {
+
+		mes "[" + @name$ + "]";
+		mes "Eh'beh, t'es un rapide toi !";
+		mes "J'vais te présenter à des amis, ils auront surement du travail pour toi.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Il faut que tu ailles rendre visite aux responsables de la Main Noire, leurs locaux sont ici à Brynnlaw.";
+		mes "Y'aura du travail pour toi là-bas, c'est comme une grande famille !";
+		close2;
+		if (EP7_MANONEGRA == 2) {
+			set EP7_MANONEGRA,3;
+			changequest 70581,70582;}
+		end;}
+		
+	if (EP7_MANONEGRA >= 4) {
+	
+		mes "[" + @name$ + "]";
+		mes "Bienvenu dans la Guilde !";
+		mes "Il va tout de même falloir se méfier de ces bougres de la Défense et d'Arain ...";
+		close;}
+		
+
+OnTouch:
+
+	if (EP7_SCHALLMAR <= 4 && EP7_MANONEGRA == 0) {
+		showevent 1,0;
+		npctalk "Hep' par ici mon bon !";
+		} 
+	end;
+}
+//=================================================================================
+
+ars_dun56,209,109,3	script	Galen#ep7	748,{
+
+set @name$,"^66CCFFGalen^000000";
+
+if (EP7_MANONEGRA == 0) {
+	mes "[" + @name$ + "]";
+	mes "^33CC00Aaaaahhhhh !^000000";
+	mes "Vous êtes qui ? Que me voulez-vous !?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Rien !? Donc partez !!";
+	close;}
+	
+if (EP7_MANONEGRA == 1 && $@ep7Main1 == 1) {	
+	mes "[" + @name$ + "]";
+	mes "Mes Singes vont vous déchiqueter ! Vous ne serez plus que des charpies !";
+	close;}
+	
+if (EP7_MANONEGRA == 1 && $@ep7Main1 == 2) {	
+	mes "[" + @name$ + "]";	
+	mes "^33CC00Aaaaahhhhh !^000000";
+	mes "Mes singes de Combat ! Comment avez-vous osé !";
+	next;
+	mes "[" + @name$ + "]";		
+	mes "J'aurai du me méfier des tables de jeu de la Main Noire ... Voici un accompte sur mes dettes ...";
+	mes "La suite de l'argent arrivera plus tard ...";
+	close2;
+	set EP7_MANONEGRA,2;
+	changequest 70580,70581;
+	end;}
+	
+if (EP7_MANONEGRA == 1) {
+	mes "[" + @name$ + "]";
+	mes "^33CC00Aaaaahhhhh !^000000";
+	mes "Vous êtes qui ? Que me voulez-vous !?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "^33CC00Kaiiiiiiii !!^000000";
+	mes "La Main Noire ! Vous êtes un de leur nouveau sbire !!?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Je me doutais bien que vous viendriez un jour pour réclamer cet argent !";
+	mes "Hélas, je n'ai rien pour vous ! Singes à moi !";
+	close2;
+	if ($@ep7Main1 == 0) {
+		donpcevent "EP7_SchallMain1::OnStart";}
+	end;}
+	
+if (EP7_MANONEGRA >= 2) {
+	mes "[" + @name$ + "]";
+	mes "J'ai payé inutile d'insister.";
+	mes "Mais attention à toi, je pourrais être tenté t'en coller une un de ces jours.";
+	close;}
+	
+}
+//=================================================================================
+-	script	EP7_SchallMain1	-1,{
+
+OnInit:
+	
+	killmonsterall "ars_dun56";
+	set $@ep7Main1,0;
+	end;
+
+OnStart:
+
+	set $@ep7Main1,1;
+	monster "ars_dun56",204,115,""+getmonsterinfo(3963,0)+"",3963,2,"EP7_SchallMain1::OnMobDead";
+	monster "ars_dun56",194,100,""+getmonsterinfo(3963,0)+"",3963,2,"EP7_SchallMain1::OnMobDead";
+	monster "ars_dun56",185,110,""+getmonsterinfo(3963,0)+"",3963,2,"EP7_SchallMain1::OnMobDead";
+
+	set $@monster_ep7Main1,6;
+	end;
+
+OnMobDead:
+
+	set $@monster_ep7Main1, $@monster_ep7Main1 -1;
+	if($@monster_ep7Main1==0) {
+		donpcevent "EP7_SchallMain1::OnEnd";}
+		end;
+
+OnEnd:
+		set $@ep7Main1,2;
+		sleep2 5000;
+		mapannounce "ars_dun56","Vous venez de tuer les Singes de Combat de Galen.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallMain1::OnInit";
+		end;
+}
+
+//_________________________________________________________________
+//________________ Main Noire : Mission 1 _________________________
+//_________________________________________________________________
+
+ars_dun56,52,156,5	script	Boliv'Art#ep7	899,{
+
+set @name$,"^66CCFFBoliv'Art^000000";
+
+if (EP7_MANONEGRA <= 2) {
+	mes "[" + @name$ + "]";
+	mes "Ceci est une guilde privée, je ne pense pas que vous soyez le bienvenu dans nos quartiers.";
+	mes "Vous vous souvenez par où vous êtes entré ? Et bien la sortie est dans la même direction ...";
+	close;}
+
+if (EP7_MANONEGRA == 3 || EP7_MANONEGRA == 4 || EP7_MANONEGRA == 5) {
+	mes "[" + @name$ + "]";
+	mes "Vous m'avez l'air d'être celui dont ^66CCFFMan'Uchao^000000 m'a annoncé l'arrivée.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Je ne suis pas là pour vous inviter dans notre guilde de la Main Noire pour le moment.";
+	mes "Notre guilde est faite de membres dignes de confiance, pas de simples mercenaires trouvés de-ci et de-là.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Nous avons besoin d'associés pour quelques coups de main, comme en ce moment.";
+	mes "Si au bout d'un moment nous vous jugeons apte à nous rejoindre, nous vous ferons part de notre souhait.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Vous pouvez demander à ^66CCFFMarrick^000000 à côté de moi, pour le prochain coup de main.";
+	close2;
+	if (EP7_MANONEGRA == 3) {
+		set EP7_MANONEGRA,5;}
+	end;}	
+	
+if (EP7_MANONEGRA <= 8) {
+	mes "[" + @name$ + "]";
+	mes "Je ne m'occupe que des membres de notre guilde, pour les auxiliaires il faut s'adresser à ^66CCFFMarrick^000000.";
+	close;}
+	
+if (EP7_MANONEGRA >= 9) {
+
+	if (EP7_MANONEGRA == 9 || EP7_MANONEGRA == 10) {
+		mes "[" + @name$ + "]";
+		mes "Nous avons été trahis ! Je ne pensais pas que les Pirates de la Défense oseraient nous attaquer ainsi ...";
+		mes "Et encore moins qu'ils se mettaient à protéger des marchands et ce sur notre territoire !";
+		next;}
+		
+	mes "[" + @name$ + "]";
+	mes "Vous êtes désormais un membre de notre guilde, vous pouvez rejoindre nos hommes dans la salle du fond.";
+	mes "Je serais là-bas pour préparer nos futures actions.";
+	mes "Si tu as besoin de la guilde pour des actions, nous sommes à ton service.";
+	close2;
+	if (EP7_MANONEGRA == 9) {
+		set EP7_MANONEGRA,10;}
+	end;
+	}
+}
+//=================================================================================
+ars_dun56,61,161,5	script	Marrick#ep7	997,{
+
+set @name$,"^66CCFFMarrick^000000";
+
+if (EP7_MANONEGRA <= 4) {
+	mes "[" + @name$ + "]";
+	mes "Je ne parle pas aux étrangers, c'est ^66CCFFBoliv'Art^000000 qui commande ici, si tu as des questions il y répondra.";
+	close;}
+
+if (EP7_MANONEGRA == 5 || EP7_MANONEGRA == 6) {
+	mes "[" + @name$ + "]";
+	mes "Alors comme ça, tu vas devenir un des nôtres ?";
+	mes "Bah les recrutements ne me regardent pas ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Bon aujourd'hui, nous devons rendre une petite visite à ^FF00CCKesha^000000 qui tient la fabrique des épices de Brynnlaw.";
+	mes "Elle a oublié de payer la dîme pour sa protection, c'est bête ça ! Hein !?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "On la protège des pirates, sa cargaison arrive toujours à bon port et voilà qu'elle oublie à qui elle doit tout cela.";
+	mes "Vous allez lui parler, l'occuper un peu à votre façon, pendant ce temps-là nous irons nous servir dans la marchandise pour reprendre notre dû ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Des questions ?";
+	mes "De toute, j'ai pas envie de te répondre, ta tête elle me revient vraiment pas ...";
+	close2;
+	if (EP7_MANONEGRA == 5) {
+		set EP7_MANONEGRA,6;
+		changequest 70582,70583;}
+	end;}
+	
+if (EP7_MANONEGRA == 7 || EP7_MANONEGRA == 8) {
+	mes "[" + @name$ + "]";
+	mes "Félicitations, ce coup de main s'est parfaitement déroulé, nous n'avons aucune perte à déplorer.";
+	mes "Maintenant que ^FF00CCKesha^000000 a compris qu'il lui fallait payer l'impôt pour sa sécurité, elle ne devrait plus nous poser de problèmes.";
+	next;
+	mes "[" + @name$ + "]";	
+	mes "Nous avons les épices, les pirates d'Airain sont prêts à nous acheter la cargaison.";
+	mes "En fait, ils travaillent avec nous, ils attaquent les navires d'épices que nous ne protégeons pas.";
+	mes "Ainsi avec ce système nous sommes sûrs de récolter l'impôt chez tous les producteurs d'épice.";
+	next;
+	mes "[" + @name$ + "]";	
+	mes "Nous vendons les prises faites sur les mauvais payeurs à ces mêmes pirates pour qu'ils puissent en faire de la contrebande vers Schallmar, mais aussi dans les régions reculées d'Arsinoé.";
+	next;
+	mes "[" + @name$ + "]";	
+	mes "Donc voilà, nous allons apporter la cargaison d'épices de ^FF00CCKesha^000000 au point de négoce secret.";
+	mes "Voici une carte pour que tu puisses la retrouver. On a beau y avoir un intérêt commun, je me méfie toujours des Pirates d'Airain.";
+	close2;
+	if (EP7_MANONEGRA == 7) {
+		set EP7_MANONEGRA,8;
+		changequest 70584,70585;
+		getitem 29097,1;}
+	end;}
+	
+if (EP7_MANONEGRA >= 9) {
+	mes "[" + @name$ + "]";
+	mes "Nos intérêts sont importants dans ces îles.";
+	close;}
+}
+//=================================================================================
+ars_dun50,92,95,5	script	Kesha#ep7	859,{
+
+set @name$,"^FF00CCKesha^000000";
+
+if (EP7_MANONEGRA <= 5) {
+	mes "[" + @name$ + "]";
+	mes "Je me présente ^FF00CCKesha^000000 ! Je suis grossiste en épices et ses produits finis.";
+	mes "Si vous avez besoin de votre dose, adressez-vous plutôt à des commerçants de la cité, je ne m'occupe que de la vente en gros.";
+	close;}
+
+if (EP7_MANONEGRA == 6 && $@ep7Main2 == 1) {
+	mes "[" + @name$ + "]";
+	mes "Gardes ! Gardes ! Gardes à moi !";
+	mes "Eloignez donc ce manant !";
+	close;}
+	
+if (EP7_MANONEGRA == 6 && $@ep7Main2 == 2 || EP7_MANONEGRA >= 7) {
+	mes "[" + @name$ + "]";
+	mes "Vous n'êtes qu'un chien !";
+	mes "Allez ! Prenez ce que vous voulez ! Cela n'a plus d'importance pour moi !";
+	mes "Mais sâchez que la ^33CC00Défense^000000 ne se laissera pas ainsi insulter !";
+	close2;
+	if (EP7_MANONEGRA == 6) {
+		set EP7_MANONEGRA,7;
+		changequest 70583,70584;}
+	end;}
+
+	
+if (EP7_MANONEGRA == 6) {
+	mes "[" + @name$ + "]";
+	mes "Je me présente ^FF00CCKesha^000000, je suis grossiste en épices et ses produits finis ...";
+	mes "Mais qu'est-ce que ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Gardes ! La Main Noire est là ! Battez-vous !";
+	mes "Aucun ne doit s'en sortir vivant !";
+	close2;
+	if ($@ep7Main2 == 0) {
+		donpcevent "EP7_SchallMain2::OnStart";}
+	end;}
+	
+}
+//=================================================================================
+-	script	EP7_SchallMain2	-1,{
+
+OnInit:
+	
+	killmonsterall "ars_dun53";
+	set $@ep7Main2,0;
+	end;
+
+OnStart:
+
+	set $@ep7Main2,1;
+	areamonster "ars_dun50",0,200,200,0,""+getmonsterinfo(3964,0)+"",3964,20,"EP7_SchallMain2::OnMobDead";	
+	set $@monster_ep7Main2,20;
+	end;
+
+OnMobDead:
+
+	set $@monster_ep7Main2, $@monster_ep7Main2 -1;
+	if($@monster_ep7Main2==0) {
+		donpcevent "EP7_SchallMain2::OnEnd";}
+		end;
+
+OnEnd:
+		set $@ep7Main2,2;
+		sleep2 5000;
+		mapannounce "ars_dun53","Vous venez de tuer les Singes de Combat de Galen.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallMain2::OnInit";
+		end;
+}	
+//_________________________________________________________________
+//________________ Main Noire : Négoce ____________________________
+//_________________________________________________________________
+	
+ars_dun67,78,78,5	script	Marrick#ep71	997,{
+
+set @name$,"^66CCFFMarrick^000000";	
+
+if (EP7_MANONEGRA <= 7) {
+	mes "[" + @name$ + "]";
+	mes "Vous n'avez pas votre place ici ... Veuillez-vous en aller.";
+	close;}
+
+if (EP7_MANONEGRA == 8) {	
+	mes "[" + @name$ + "]";
+	mes "Voyez avec ^66CCFFBoliv'Art^000000 concernant la transaction, mais restez sur vos gardes, on ne sait jamais avec ces pirates.";
+	close;}
+	
+if (EP7_MANONEGRA == 8 && $@ep7Main3 == 1 || EP7_MANONEGRA == 8 && $@ep7Main3 == 2) {
+	mes "[" + @name$ + "]";
+	mes "J'm'en doutais, les pirates d'Airain viennent de nous trahir ! Qu'ils meurent !";
+	close;}
+	
+if (EP7_MANONEGRA == 8 && $@ep7Main3 == 3 || EP7_MANONEGRA >= 9) {
+	mes "[" + @name$ + "]";
+	mes "Bordel ! Cette victoire nous a coûté bien cher si vous voulez mon avis !";
+	mes "Allez voir ^66CCFFBoliv'Art^000000, il vous donnera la marche à suivre.";
+	close;}
+	
+}
+//=================================================================================
+ars_dun67,82,79,5	script	Boliv'Art#ep71	899,{
+
+set @name$,"^66CCFFBoliv'Art^000000";
+
+if (EP7_MANONEGRA <= 7) {
+	mes "[" + @name$ + "]";
+	mes "Vous n'avez pas votre place ici ... Veuillez-vous en aller.";
+	close;}
+
+if (EP7_MANONEGRA == 8 && $@ep7Main3 == 1) {	
+	mes "[" + @name$ + "]";
+	mes "Je parlemente vous permettez ?";
+	close;}
+	
+if (EP7_MANONEGRA == 8 && $@ep7Main3 == 2) {	
+	mes "[" + @name$ + "]";
+	mes "Les Traitres !";
+	close;}
+	
+if (EP7_MANONEGRA == 8 && $@ep7Main3 == 3 || EP7_MANONEGRA >= 9) {	
+	mes "[" + @name$ + "]";
+	mes "Nous sommes tombés dans un piège ... Ce n'était pas les Pirates d'Airain mais ceux de la Forteresse de la Défense !";
+	mes "Comment ces imbéciles ont su pour notre rendez-vous !?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Les Pirates de la Forteresse de la Défense sont une guilde de moyenne importance qui sévit dans les eaux de Coppalana.";
+	mes "Du moins, sévissaient, car depuis un moment ils se sont orientés vers le commerce, délaissant les abordages de navires et autres razzias.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Nous avons perdu beaucoup d'hommes aujourd'hui, c'est un coup dur pour la Main Noire, je vais devoir contacter la Forteresse d'Airain pour obtenir plus d'informations.";
+	mes "Bon, voici des "+getitemname($ep7_Tcoins)+", c'est ton salaire pour cette mission. Retrouvons-nous au siège de la Guilde, nous devons parler.";
+	close2;
+	if (EP7_MANONEGRA == 8) {
+		getitem $ep7_Tcoins,$ep7silvercoinnb[17];
+		set ep7_CarteTresor,ep7_CarteTresor|128;
+		set EP7_MANONEGRA,9;
+		changequest 70585,70586;
+	}
+	end;}
+	
+if (EP7_MANONEGRA == 8) {	
+	mes "[" + @name$ + "]";
+	mes "Ah vous voilà, restez sur vos gardes, ils arrivent.";
+	mes "Si ça tourne au vinaigre, sortez vos armes rapidement et ne les ratez pas !";
+	close2;
+	if ($@ep7Main3 == 0) {
+		donpcevent "EP7_SchallMain3::OnStart";
+		}
+	end;}
+	
+OnTalk1:
+	npctalk "Bien, nous pouvons commencer ...";
+	end;
+	
+OnTalk2:
+	npctalk "Nous avons les stocks de Kesha, celle qui avait refusé de payer notre arrangement.";
+	end;
+	
+OnTalk3:
+	npctalk "Nous avons 500 litres de liqueur, votre prix ?";
+	end;
+	
+OnTalk4:
+	npctalk "Je ne suis pas très sûr de bien comprendre ...";
+	end;
+	
+OnTalk5:
+	npctalk "Un piège ! Pour la Main Noire !";
+	end;
+}
+//=================================================================================
+ars_dun67,85,71,2	script	Khargax le Jeune#ep7	825,{
+
+set @name$,"^66CCFFKhargax le Jeune^000000";
+
+
+if (EP7_MANONEGRA <= 8) {
+	mes "[" + @name$ + "]";
+	mes "Je m'occupe avec ton supérieur, ne reste pas dans le coin, tu risques d'avoir des ennuis.";
+	close;}
+	
+if (EP7_MANONEGRA >= 9) {
+	mes "[" + @name$ + "]";
+	mes "Ceci est la dépouille de ^66CCFFKhargax le Jeune^000000.";
+	close;}
+	
+OnTalk1:
+	npctalk "Notre prix !? Il va être élevé ...";
+	end;
+	
+OnTalk2:
+	npctalk "Alors laissez-moi vous expliquer la situation ...";
+	end;
+	
+OnTalk3:
+	npctalk "Vous avez attaqué Kesha, une marchande sous notre protection, vous n'avez plus le monopole.";
+	end;
+	
+OnTalk4:
+	npctalk "Vos amis de la Forteresse d'Airain ne sont plus. Nous nous en sommes occupés et maintenant c'est votre tour !";
+	end;
+	
+OnTalk5:
+	npctalk "Allez les gars ! Egorgez-moi ces chiens de la Main Noire !";
+	end;
+}
+
+//=================================================================================
+ars_dun67,90,73,5	script	Pirate de la Défense#1	946,{
+
+set @name$,"^66CCFFPirate de la Défense^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Je m'occupe avec ton supérieur, ne reste pas dans le coin, tu risques d'avoir des ennuis.";
+	close;
+	
+OnMove: npcwalkto 81,71; end;
+OnTalk: 
+	npctalk "A l'assaut !";
+	end;
+}
+//=================================================================================
+ars_dun67,90,68,5	script	Pirate de la Défense#2	946,{
+
+set @name$,"^66CCFFPirate de la Défense^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Je m'occupe avec ton supérieur, ne reste pas dans le coin, tu risques d'avoir des ennuis.";
+	close;
+	
+OnMove: npcwalkto 83,78; end;
+OnTalk: 
+	npctalk "Mort à la Main Noire !";
+	end;
+}
+
+	//=================================================================================
+-	script	EP7_SchallMain3	-1,{
+
+OnInit:
+	
+	enablenpc "Khargax le Jeune#ep7";
+	movenpc "Pirate de la Défense#1",90,73;
+	movenpc "Pirate de la Défense#2",90,68;
+	disablenpc "Pirate de la Défense#1";
+	disablenpc "Pirate de la Défense#2";
+	
+	killmonsterall "ars_dun67";
+	set $@ep7Main3,0;
+	end;
+
+OnStart:
+
+	set $@ep7Main3,1;
+	donpcevent "EP7_intro::OnEvent16";
+	end;
+	
+OnSpawn:
+
+	set $@ep7Main3,2;
+	disablenpc "Khargax le Jeune#ep7";
+	areamonster "ars_dun67",0,200,200,0,""+getmonsterinfo(3966,0)+"",3966,20,"EP7_SchallMain3::OnMobDead2";	
+	monster "ars_dun67",85,71,""+getmonsterinfo(3965,0)+"",3965,1,"EP7_SchallMain3::OnMobDead";
+	set $@monster_ep7Main3,1;
+	end;
+
+OnMove:
+
+	enablenpc "Pirate de la Défense#1";
+	enablenpc "Pirate de la Défense#2";
+	sleep2 500;
+	donpcevent "Pirate de la Défense#1::OnMove";
+	donpcevent "Pirate de la Défense#2::OnMove";
+	sleep2 1500;
+	donpcevent "Pirate de la Défense#1::OnTalk";
+	donpcevent "Pirate de la Défense#2::OnTalk";
+	sleep2 30000;
+	disablenpc "Pirate de la Défense#1";
+	sleep2 15000;
+	disablenpc "Pirate de la Défense#2";	
+	end;
+	
+OnMobDead2:end;
+
+OnMobDead:
+
+	set $@monster_ep7Main3, $@monster_ep7Main3 -1;
+	if($@monster_ep7Main3==0) {
+		donpcevent "EP7_SchallMain3::OnEnd";}
+		end;
+
+OnEnd:
+		set $@ep7Main3,3;
+		sleep2 5000;
+		mapannounce "ars_dun67","Boliv'Art : Fichtre ! Ils sont en fuite, revenez me voir.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallMain3::OnInit";
+		end;
+}
+
+//_________________________________________________________________
+//________________ Main Noire : Vengeance _________________________
+//_________________________________________________________________
+
+ars_dun56,172,198,3	script	Boliv'Art#ep72	899,{
+
+set @name$,"^66CCFFBoliv'Art^000000";
+
+if (EP7_MANONEGRA <= 9) {
+	mes "[" + @name$ + "]";
+	mes "Vous n'avez pas votre place ici ... Veuillez-vous en aller.";
+	close;}
+	
+if (EP7_MANONEGRA == 10 || EP7_MANONEGRA == 11) {
+	mes "[" + @name$ + "]";
+	mes "Voilà un mauvais coup pour nous ... Nous avons perdu pas mal d'hommes dans l'attaque.";
+	mes "J'ai reçu des émissaires des Pirates d'Airain, ils comprennent la situation et réclament du sang.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Notre guilde seule ne peut pas mener des représailles seules contre la Forteresse de la Défense.";
+	mes "Mais nous devons à tout prix nous venger ou bien nous perdrons toute notre crédibilité.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Avec les pirates d'Airain, nous allons mettre à sac leur forteresse qui se situe dans les eaux de Coppalana.";
+	mes "Vous allez agir en éclaireur dans la citadelle.";
+	mes "Voici notre plan :";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Tu vas t'introduire dans leur forteresse et allumer les phares pour lancer l'attaque.";
+	mes "Nous débarquerons la nuit et nous tiendrons prêt à envahir la forteresse. Un coup, un seul, il faut absolument qu'il soit fatal.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Que votre mission soit un succès ! Pour la Main Noire !";
+	close2;
+	if (EP7_MANONEGRA == 10) {
+		set EP7_MANONEGRA,11;
+		changequest 70586,70587;}
+	end;}
+
+if (EP7_MANONEGRA == 12 && EP7_SCHALLMAR == 40 || EP7_MANONEGRA <= 13) {
+	mes "[" + @name$ + "]";
+	mes "Félicitations ! Te voilà dans les petits souliers du ^66CCFFRoi Waclav^000000 !";
+	mes "Tu te souviens de notre *petit secret* ?";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Comme tu as pu le voir à Schallmar les pirtates de la Défense semblent bien occupés à maintenir l'odre dans la capitale.";
+	mes "C'est une occassion unique pour toi et pour nous de leur faire un mauvais coup. Le ^33CC00Menez Mikael ar Mor^000000 n'est plus assez défendu pour des voleurs comme nous !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Nous voulons récupérer certains trésors qu'ils possèdent et toi tu veux la Perle Noire, non ?";
+	mes "Retouvons-nous au ^33CC00Menez Mikael ar Mor^000000, je serais dans la taverne de ^33CC00Ar Gwez Boel^000000.";
+	mes "Pas un mot de tout cela, ils sont encore officiellement nos *alliés* !";	
+	close2;
+	if (EP7_MANONEGRA == 12) { 
+		set EP7_MANONEGRA,13;
+		setquest 70630;
+	}
+	end;
+}	
+if (EP7_MANONEGRA == 12) {
+	mes "[" + @name$ + "]";
+	mes "Ces allers-retours avec l'île de la Forteresse de la Défense sont épuisants.";
+	mes "N'oublie pas notre *petit secret* ...";
+	close;}
+	
+
+}
+//=================================================================================
+ars_fild71,122,227,5	script	#arsfild71a	45,1,1,{
+
+	if (EP7_MANONEGRA <= 10) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Le Garde vous fait signe qu'il ne faut mieux pas insister.";
+		mes "Manifestement, vous n'êtes pas le bienvenu à la Forteresse de la Défense.";
+		close;}
+		
+	if (EP7_MANONEGRA == 11) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Les gardes ont l'air préoccupé avec les rumeurs d'une attaque.";
+		mes "Vous en profitez pour vous introduire dans la Forteresse.";
+		close2;}
+		
+	warp "ars_dun68",106,47;
+	end;
+}
+ars_dun68,110,47,0	warp	EP7Sfild71a1	1,1,ars_fild71,125,227
+//=================================================================================
+ars_fild71,156,251,5	script	#arsfild71b	45,1,1,{
+
+	if (EP7_MANONEGRA <= 10) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Le Garde vous fait signe qu'il ne faut mieux pas insister.";
+		mes "Manifestement, vous n'êtes pas le bienvenu à la Forteresse de la Défense.";
+		close;}
+		
+	if (EP7_MANONEGRA == 11) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Les gardes ont l'air préoccupé avec les rumeurs d'une attaque.";
+		mes "Vous en profitez pour vous introduire dans la Forteresse.";
+		close2;}
+		
+	warp "ars_dun68",138,80;
+	end;
+}
+ars_dun68,138,76,0	warp	EP7Sfild71a2	1,1,ars_fild71,156,247
+//=================================================================================	
+	
+ars_dun68,105,59,5	script	Garde de la Forteresse#1	946,4,4,{
+
+if (EP7_MANONEGRA <= 11) {set @name$,"^66CCFFGarde de la Défense^000000";}
+if (EP7_MANONEGRA >= 12) {set @name$,"^66CCFFGarde d'Airain^000000";}
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+	
+	mes "[" + @name$ + "]";	
+	mes "Salutations ^33CC00" + strcharinfo(0) + "^000000 ! Merci pour ton aide !";
+	mes "Cet assaut sur la forteresse a été un franc succès !";
+	close;
+
+OnInit: 
+		npcwalkto 97,66;
+		sleep2 5000;
+		npcwalkto 105,59;
+		sleep2 5000;
+		donpcevent "Garde de la Forteresse#1::OnInit";
+		end;
+OnTouch:
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+}	
+//=================================================================================
+
+-	script	EP7_SchallMain4	-1,{
+
+OnInit:
+
+	disablenpc "#phrarevent1";
+	disablenpc "#phrarevent2";
+	disablenpc "#phrarevent3";
+	disablenpc "#phrarevent4";
+	
+	disablenpc "Boliv'Art#ep75";
+
+	monster "ars_fild71",88,227,"Phare",3967,1,"EP7_SchallMain4::OnPhareActivate1";
+	monster "ars_fild71",126,291,"Phare",3967,1,"EP7_SchallMain4::OnPhareActivate2";
+	monster "ars_fild71",98,262,"Phare",3967,1,"EP7_SchallMain4::OnPhareActivate3";
+	monster "ars_fild71",177,236,"Phare",3967,1,"EP7_SchallMain4::OnPhareActivate4";
+	
+	set $@ep7Main4,0;
+	end;
+
+OnPhareActivate1:
+	enablenpc "#phrarevent1";
+	donpcevent "#phrarevent1::OnLight";
+	donpcevent "EP7_SchallMain4::OnPhareActivate";
+	end;
+OnPhareActivate2:
+	enablenpc "#phrarevent2";
+	donpcevent "#phrarevent2::OnLight";
+	donpcevent "EP7_SchallMain4::OnPhareActivate";
+	end;
+OnPhareActivate3:
+	enablenpc "#phrarevent3";
+	donpcevent "#phrarevent3::OnLight";
+	donpcevent "EP7_SchallMain4::OnPhareActivate";
+	end;
+OnPhareActivate4:
+	enablenpc "#phrarevent4";
+	donpcevent "#phrarevent4::OnLight";
+	donpcevent "EP7_SchallMain4::OnPhareActivate";
+	end;
+	
+	
+	
+OnPhareActivate:
+	set $@ep7Main4,$@ep7Main4+1;
+	if($@ep7Main4 == 1) {donpcevent "EP7_SchallMain4::OnTime";}
+	if($@ep7Main4 == 4) {donpcevent "EP7_SchallMain4::OnSecondPart";}
+	mapannounce "ars_fild71","Vous venez d'allumer ["+$@ep7Main4+"/4] signaux pour le débarquement.",1,0xFFCC66;
+	mapannounce "ars_dun68","Vous venez d'allumer ["+$@ep7Main4+"/4] signaux pour le débarquement.",1,0xFFCC66;	
+	end;
+	
+OnTime:
+
+	sleep2 5000;
+	mapannounce "ars_fild71","Il vous reste 30 minutes pour exterminer les Pirates de la Forteresse d'Airain.",1,0xFFCC66;
+	mapannounce "ars_dun68","Il vous reste 30 minutes pour exterminer les Pirates de la Forteresse d'Airain.",1,0xFFCC66;
+	sleep2 1800000;
+	if($@ep7Main4 >= 4) {end;}
+	mapannounce "ars_fild71","L'Assaut vient d'être repoussé par des troupes auxiliaires de la Défense ! Vous devez reculer !",1,0xFFCC66;
+	mapannounce "ars_dun68","L'Assaut vient d'être repoussé par des troupes auxiliaires de la Défense ! Vous devez reculer !",1,0xFFCC66;
+	sleep2 5000;
+	mapwarp "ars_dun68","ars_fild71",245,108;
+	mapwarp "ars_fild71","ars_fild71",245,108;
+	sleep2 10000;
+	donpcevent "EP7_SchallMain4::OnInit";
+	end;
+	
+OnSecondPart:	
+
+	sleep2 5000;
+	mapannounce "ars_fild71","L'Attaque est lancée ! Vous devez vous rendre dans la salle de contrôle pour renverser le chef des Pirates de la Forteresse d'Airain.",1,0xFFCC66;
+	mapannounce "ars_dun68","L'Attaque est lancée ! Vous devez vous rendre dans la salle de contrôle pour renverser le chef des Pirates de la Forteresse d'Airain.",1,0xFFCC66;
+	
+	monster "ars_dun68",197,171,""+getmonsterinfo(3968,0)+"",3968,1,"EP7_SchallMain4::OnMobDead";
+	monster "ars_dun68",190,169,""+getmonsterinfo(3969,0)+"",3969,1,"EP7_SchallMain4::OnMobDead";
+	
+	areamonster "ars_fild68",0,200,0,200,"Pirate de la Forteresse",3966,20,"EP7_SchallMain4::OnMobDead2";	
+	set $@monster_ep7Main4,2;
+	end;
+	
+OnMobDead2: end;
+
+OnMobDead:
+
+	set $@monster_ep7Main4, $@monster_ep7Main4 -1;
+	if($@monster_ep7Main4==0) {
+		donpcevent "EP7_SchallMain4::OnEnd";}
+		end;
+
+OnEnd:
+		set $@ep7Main4,5;
+		sleep2 5000;
+		enablenpc "Boliv'Art#ep75";
+		mapannounce "ars_dun68","Boliv'Art : La Victoire est nôtre ! Nos hommes investissent la forteresse !",1,0xFFCC66;
+		sleep2 5000;
+		mapannounce "ars_dun68","Boliv'Art : Venez me voir, nous allons discuter avec les Pirates de la Forteresse d'Airain.",1,0xFFCC66;
+		sleep2 720000;
+		donpcevent "EP7_SchallMain4::OnInit";
+		end;
+}	
+//=================================================================================
+ars_fild71,88,227,5	script	#phrarevent1	111,{
+	end;	
+OnLight: 
+	specialeffect 280; 
+	sleep2 1000;
+	if($@ep7Main4 <4){donpcevent "#phrarevent1::OnLight";}
+	end;
+}
+//=================================================================================
+ars_fild71,126,291,5	script	#phrarevent2	111,{
+	end;	
+OnLight: 
+	specialeffect 280; 
+	sleep2 1000;
+	if($@ep7Main4 <4){donpcevent "#phrarevent2::OnLight";}
+	end;
+}
+//=================================================================================
+ars_fild71,98,262,5	script	#phrarevent3	111,{
+	end;	
+OnLight: 
+	specialeffect 280; 
+	sleep2 1000;
+	if($@ep7Main4 <4){donpcevent "#phrarevent3::OnLight";}
+	end;
+}
+//=================================================================================
+ars_fild71,177,236,5	script	#phrarevent4	111,{
+	end;	
+OnLight: 
+	specialeffect 280; 
+	sleep2 1000;
+	if($@ep7Main4 <4){donpcevent "#phrarevent4::OnLight";}
+	end;
+}
+//=================================================================================
+ars_dun68,201,158,5	script	Boliv'Art#ep75	899,{
+
+set @name$,"^66CCFFBoliv'Art^000000";
+
+if (EP7_MANONEGRA <= 10) {
+	mes "[" + @name$ + "]";
+	mes "Vous n'avez pas votre place ici ... Veuillez-vous en aller.";
+	close;}
+	
+if (EP7_MANONEGRA == 11 || EP7_MANONEGRA >= 12) {
+
+	mes "[" + @name$ + "]";
+	mes "Quelle brillante victoire !";
+	mes "Notre soif du sang a été comblée et qui plus est, nous avons éliminé de dangereux rivaux.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Cette forteresse sera gérée par la Main Noire et ceux d'Airain. Elle pourra servir à notre dispositif commercial.";
+	mes "Le Seigneur des Airains vient tout juste de rentrer dans les eaux de Schallmar.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Il faut dire qu'ils sont préoccupés à propos des perles noires de Shinaere.";
+	mes "C'est devenu leur principal objectif désormais, il parait qu'à la capitale les gens s'entretuent pour cela.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Nous te faisons confiance maintenant que tu es dans notre Guilde, alors j'ai une dernière requête pour toi ...";
+	mes "Je viens tout juste de trouver une perle noire dans les affaires de ^66CCFFNicola Sacco^000000.";
+	mes "Tu vas le protéger, ce sera notre monnaie d'échange au cas où les Pirates d'Airain se montrent moins coopératifs.";
+	close2;
+	if (EP7_MANONEGRA == 11) {
+		getitem 29121,1;
+		getitem $ep7_Tcoins,$ep7silvercoinnb[18];
+		set EP7_MANONEGRA,12;
+		completequest 70587;}
+	end;}
+	
+}
+
+//=================================================================================	
+	
+ars_dun68,70,86,5	script	Garde de la Forteresse#2	946,4,4,{
+
+if (EP7_MANONEGRA <= 11) {set @name$,"^66CCFFGarde de la Défense^000000";}
+if (EP7_MANONEGRA >= 12) {set @name$,"^66CCFFGarde d'Airain^000000";}
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+	
+	mes "[" + @name$ + "]";	
+	mes "Salutations ^33CC00" + strcharinfo(0) + "^000000 ! Merci pour ton aide !";
+	mes "Cet assaut sur la forteresse a été un franc succès !";
+	close;
+
+OnInit: 
+		npcwalkto 68,102;
+		sleep2 5000;
+		npcwalkto 70,86;
+		sleep2 5000;
+		donpcevent "Garde de la Forteresse#2::OnInit";
+		end;
+OnTouch:
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+}	
+//=================================================================================	
+	
+ars_dun68,147,88,5	script	Garde de la Forteresse#3	946,4,4,{
+
+if (EP7_MANONEGRA <= 11) {set @name$,"^66CCFFGarde de la Défense^000000";}
+if (EP7_MANONEGRA >= 12) {set @name$,"^66CCFFGarde d'Airain^000000";}
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+	
+	mes "[" + @name$ + "]";	
+	mes "Salutations ^33CC00" + strcharinfo(0) + "^000000 ! Merci pour ton aide !";
+	mes "Cet assaut sur la forteresse a été un franc succès !";
+	close;
+
+OnInit: 
+		npcwalkto 130,88;
+		sleep2 5000;
+		npcwalkto 147,88;
+		sleep2 5000;
+		donpcevent "Garde de la Forteresse#3::OnInit";
+		end;
+OnTouch:
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+}	
+//=================================================================================	
+	
+ars_dun68,180,80,5	script	Garde de la Forteresse#4	946,4,4,{
+
+if (EP7_MANONEGRA <= 11) {set @name$,"^66CCFFGarde de la Défense^000000";}
+if (EP7_MANONEGRA >= 12) {set @name$,"^66CCFFGarde d'Airain^000000";}
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+	
+	mes "[" + @name$ + "]";	
+	mes "Salutations ^33CC00" + strcharinfo(0) + "^000000 ! Merci pour ton aide !";
+	mes "Cet assaut sur la forteresse a été un franc succès !";
+	close;
+
+OnInit: 
+		npcwalkto 163,81;
+		sleep2 5000;
+		npcwalkto 180,80;
+		sleep2 5000;
+		donpcevent "Garde de la Forteresse#4::OnInit";
+		end;
+OnTouch:
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+}	
+//=================================================================================	
+	
+ars_dun68,181,94,5	script	Garde de la Forteresse#5	946,4,4,{
+
+if (EP7_MANONEGRA <= 11) {set @name$,"^66CCFFGarde de la Défense^000000";}
+if (EP7_MANONEGRA >= 12) {set @name$,"^66CCFFGarde d'Airain^000000";}
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+	
+	mes "[" + @name$ + "]";	
+	mes "Salutations ^33CC00" + strcharinfo(0) + "^000000 ! Merci pour ton aide !";
+	mes "Cet assaut sur la forteresse a été un franc succès !";
+	close;
+
+OnInit: 
+		npcwalkto 162,94;
+		sleep2 5000;
+		npcwalkto 181,94;
+		sleep2 5000;
+		donpcevent "Garde de la Forteresse#5::OnInit";
+		end;
+OnTouch:
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+}	
+//=================================================================================	
+	
+ars_dun68,100,126,5	script	Garde de la Forteresse#6	946,4,4,{
+
+if (EP7_MANONEGRA <= 11) {set @name$,"^66CCFFGarde de la Défense^000000";}
+if (EP7_MANONEGRA >= 12) {set @name$,"^66CCFFGarde d'Airain^000000";}
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+	
+	mes "[" + @name$ + "]";	
+	mes "Salutations ^33CC00" + strcharinfo(0) + "^000000 ! Merci pour ton aide !";
+	mes "Cet assaut sur la forteresse a été un franc succès !";
+	close;
+
+OnInit: 
+		npcwalkto 100,147;
+		sleep2 5000;
+		npcwalkto 100,126;
+		sleep2 5000;
+		donpcevent "Garde de la Forteresse#6::OnInit";
+		end;
+OnTouch:
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+}	
+//=================================================================================	
+	
+ars_dun68,163,22,5	script	Garde de la Forteresse#7	946,4,4,{
+
+if (EP7_MANONEGRA <= 11) {set @name$,"^66CCFFGarde de la Défense^000000";}
+if (EP7_MANONEGRA >= 12) {set @name$,"^66CCFFGarde d'Airain^000000";}
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+	
+	mes "[" + @name$ + "]";	
+	mes "Salutations ^33CC00" + strcharinfo(0) + "^000000 ! Merci pour ton aide !";
+	mes "Cet assaut sur la forteresse a été un franc succès !";
+	close;
+
+OnInit: 
+		npcwalkto 176,32;
+		sleep2 5000;
+		npcwalkto 163,22;
+		sleep2 5000;
+		donpcevent "Garde de la Forteresse#7::OnInit";
+		end;
+OnTouch:
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+}	
+//=================================================================================	
+	
+ars_dun68,101,80,5	script	Garde de la Forteresse#8	946,5,5,{
+
+if (EP7_MANONEGRA <= 11) {set @name$,"^66CCFFGarde de la Défense^000000";}
+if (EP7_MANONEGRA >= 12) {set @name$,"^66CCFFGarde d'Airain^000000";}
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+	
+	mes "[" + @name$ + "]";	
+	mes "Salutations ^33CC00" + strcharinfo(0) + "^000000 ! Merci pour ton aide !";
+	mes "Cet assaut sur la forteresse a été un franc succès !";
+	close;
+
+OnInit: 
+		npcwalkto 101,111;
+		sleep2 5000;
+		npcwalkto 101,80;
+		sleep2 5000;
+		donpcevent "Garde de la Forteresse#8::OnInit";
+		end;
+OnTouch:
+
+if (EP7_MANONEGRA <= 11) {
+
+	set .@rand, rand(1,5);
+	
+	mes "[" + @name$ + "]";
+	if (.@rand == 1) {mes "Hep' Cochaille ! Vas-t'en mauvais bougre !";}
+	if (.@rand == 2) {mes "T'es un vrai voleur toi !";}
+	if (.@rand == 3) {mes "Tu n'as rien à faire ici !";}
+	if (.@rand == 4) {mes "Les visiteurs ne sont pas les bienvenus dans notre forteresse.";}
+	if (.@rand == 5) {mes "Pas d'espions ici !";}
+	close2;	
+	warp "ars_fild71",149,220;
+	end;
+	}
+}	
+
+//_________________________________________________________________
+//________________ Main Noire : Menez _____________________________
+//_________________________________________________________________
+
+ars_dun88,34,190,3	script	Boliv'Art#ep77	899,{
+
+set @name$,"^66CCFFBoliv'Art^000000";
+
+if (EP7_MANONEGRA <= 12)  goto sub1;
+if (EP7_MANONEGRA <= 15)  goto sub2;
+if (EP7_MANONEGRA == 16)  goto sub3;
+if (EP7_MANONEGRA >= 17)  goto sub4;
+
+sub1:
+	mes "[" + @name$ + "]";
+	mes "*Chut* Nous ne nous sommes pas vu ...";
+	close;
+	
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Bien, comme tu as pu le voir la place est plutôt bien défendue ...";
+	mes "Mais comme nous sommes connus ici, nous ne devrions pas avoir de mal à demander une audience.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Tu rentreras parmi ma suite et tu iras dans la salle au trésor pendant que nous occuperons les reponsables à propos de notre alliance pour la Citadelle de la Défense.";
+	mes "Leur centre de commandement se situe au sommet de l'île, retrouvons-nous à l'intérieur.";
+	close2;
+	if (EP7_MANONEGRA == 13) {
+		set EP7_MANONEGRA,14;
+		changequest 70630,70631;}
+	end;
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Voilà un coup de maître ! Les Pirates de la Défense ne se douteront de rien !";
+	mes "Voilà les caisses de notre guilde bien remplie ... Nous allons pouvoir voir bien plus grand désormais !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Voici une carte au trésor qui était dans le lot.";
+	mes "Bonne chance pour tes aventures !";
+	close2;
+	completequest 70632;
+	getitem 29099,1;
+	set EP7_MANONEGRA,17;
+	end;
+sub4:
+	mes "[" + @name$ + "]";	
+	mes "Eh eh ! Ces couillons cherchent toujours le responsable !";
+	mes "Prend garde à toi lorsque tu bois trop de verres à ne pas parle de ton *exploit* !";
+	close;
+}
+//=================================================================================	
+
+ars_dun83,27,68,3	script	Boliv'Art#ep78	899,{
+
+set @name$,"^66CCFFBoliv'Art^000000";
+
+if (EP7_MANONEGRA <= 13)  goto sub1;
+if (EP7_MANONEGRA == 14 || EP7_MANONEGRA == 15)  goto sub2;
+if (EP7_MANONEGRA >= 16)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]";
+	mes "Hmm !?";
+	close;
+	
+sub2:
+	mes "[" + @name$ + "]";
+	mes "Regarde la porte de droite, leur trésor est dans cette direction ...";
+	mes "Je vais les occuper un moment ainsi ils ne pourront pas me soupçonner.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Une fois le trésor en ta possession, retrouvons-nous à ^33CC00l'Ar Gwez Boel^000000.";
+	mes "Allez bonne chance ! Et n'essaye pas de me doubler !";
+	close2;
+	if (EP7_MANONEGRA == 14) {
+		set EP7_MANONEGRA,15;
+		changequest 70631,70632;}
+	end;
+
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Imbécile ! Ne reste pas dans les parages, ils vont finir par comprendre ce qu'il se trame.";
+	close;
+}
+//=================================================================================	
+ars_fild73,220,166,5	script	#arsdun73b	45,1,1,{
+
+	if (EP7_SCHALLMAR >= 36) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Les nouvelles recrues qui gardent l'entrée semblent endormies. Vous en profitez pour passer.";
+		close2;
+		warp "ars_dun83",17,18;
+		end;}
+
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	mes "Les gardes vous font comprendre, d'un air assez menaçant que vous ne pouvez pas passer.";
+	close;
+}
+//=================================================================================	
+ars_dun83,38,59,5	script	#arsdun83a	45,1,1,{
+
+	if (EP7_MANONEGRA >= 15) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous profitez que les gardes soient occupés pour vous infiltrer dans un couloir.";
+		close2;
+		warp "ars_dun83",138,22;
+		end;}
+
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	mes "Les gardes vous font comprendre, d'un air assez menaçant que vous ne pouvez pas passer.";
+	close;
+}
+//=================================================================================	
+-	script	EP7_Menez01	-1,{
+
+OnInit:
+
+	set $@ep8Menez01,0;
+	setarray .LightNPC$[1],"#ep8flash1","#ep8flash2","#ep8flash3","#ep8flash4","#ep8flash5","#ep8flash6","#ep8flash7","#ep8flash8","#ep8flash9","#ep8flash10","#ep8flash11","#ep8flash12","#ep8flash13","#ep8flash14","#ep8flash15","#ep8flash16";
+	donpcevent "EP7_Menez01::OnMapWarp";
+	donpcevent "EP7_Menez01::OnMapWall";
+	donpcevent "EP7_Menez01::OnSpawn";
+	end;
+	
+	
+OnMapWarp:
+	areawarp "ars_dun83",132,77,135,48,"ars_dun83",138,22;
+	areawarp "ars_dun83",140,77,143,48,"ars_dun83",138,22;
+	areawarp "ars_dun83",134,97,141,82,"ars_dun83",138,22;
+	areawarp "ars_dun83",128,107,147,100,"ars_dun83",138,22;
+	areawarp "ars_dun83",130,125,135,110,"ars_dun83",138,22;
+	areawarp "ars_dun83",140,127,145,110,"ars_dun83",138,22;
+	areawarp "ars_dun83",132,139,149,128,"ars_dun83",138,22;
+	areawarp "ars_dun83",150,129,161,126,"ars_dun83",138,22;
+	areawarp "ars_dun83",152,141,161,132,"ars_dun83",138,22;
+	areawarp "ars_dun83",60,177,71,166,"ars_dun83",138,22;
+	sleep2 200;
+	donpcevent "EP7_Menez01::OnMapWarp";
+	end;
+	
+OnMapWall:
+
+	set .@size, getarraysize(.LightNPC$);
+	
+		for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {	
+				specialeffect 9,AREA,.LightNPC$[.@i];
+			}
+			
+		for( set .@i, 1; .@i < 10; set .@i, .@i +1 ) {			
+		areawarp "ars_dun83",171,137,175,130,"ars_dun83",138,22;
+		areawarp "ars_dun83",183,137,185,130,"ars_dun83",138,22;
+		areawarp "ars_dun83",186,143,193,145,"ars_dun83",138,22;
+		areawarp "ars_dun83",186,157,193,159,"ars_dun83",138,22;
+		areawarp "ars_dun83",186,167,193,169,"ars_dun83",138,22;
+		sleep2 200;
+		}		
+		sleep2 2000;
+		donpcevent "EP7_Menez01::OnMapWall";
+		end;
+		
+OnSpawn:
+	monster "ars_dun83",87,171,""+getmonsterinfo(3979,0)+"",3979,1,"EP7_Menez01::OnBossDead";
+	set $@monster_ep8Menez01,1;
+	end;
+	
+OnBossDead:
+set $@monster_ep8Menez01, $@monster_ep8Menez01-1;
+	if($@monster_ep8Menez01==0) {
+		mapannounce "ars_dun83","Le Gardien Asmodée vient d'être éliminé, vous devriez vous en aller au plus vite.",1,0xff80ff;
+		set $@ep8Menez01,1;
+		donpcevent "EP7_Menez01::OnEnd";
+		}
+	end;
+	
+OnEnd:
+	sleep2 180000;
+	donpcevent "EP7_Menez01::OnInit";
+	end;
+}
+//=================================================================================
+ars_dun83,171,130,0	script	#ep8flash1	111,{
+}
+ars_dun83,171,132,4	duplicate(#ep8flash1)	#ep8flash2	111
+ars_dun83,171,134,4	duplicate(#ep8flash1)	#ep8flash3	111
+ars_dun83,171,136,4	duplicate(#ep8flash1)	#ep8flash4	111
+
+ars_dun83,184,136,4	duplicate(#ep8flash1)	#ep8flash5	111
+ars_dun83,184,134,4	duplicate(#ep8flash1)	#ep8flash6	111
+ars_dun83,184,132,4	duplicate(#ep8flash1)	#ep8flash7	111
+
+ars_dun83,192,146,4	duplicate(#ep8flash1)	#ep8flash8	111
+ars_dun83,190,146,4	duplicate(#ep8flash1)	#ep8flash9	111
+ars_dun83,188,146,4	duplicate(#ep8flash1)	#ep8flash10	111
+
+ars_dun83,192,158,4	duplicate(#ep8flash1)	#ep8flash11	111
+ars_dun83,190,158,4	duplicate(#ep8flash1)	#ep8flash12	111
+ars_dun83,188,158,4	duplicate(#ep8flash1)	#ep8flash13	111
+
+ars_dun83,192,168,4	duplicate(#ep8flash1)	#ep8flash14	111
+ars_dun83,190,168,4	duplicate(#ep8flash1)	#ep8flash15	111
+ars_dun83,188,168,4	duplicate(#ep8flash1)	#ep8flash16	111
+//=================================================================================
+ars_dun83,183,190,0	warp	#arsdun83b	1,1,ars_dun83,66,145
+ars_dun83,189,190,0	warp	#arsdun83c	1,1,ars_dun83,138,22
+ars_dun83,195,190,0	warp	#arsdun83d	1,1,ars_dun83,138,22
+//=================================================================================	
+ars_dun83,66,198,5	script	#arsdun83e	45,1,1,{
+
+	if ($@ep8Menez01 == 1) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous avez vaincu le Gardien Asmodée.";
+		if (EP7_MANONEGRA == 15) { mes "Vous venez de récupérer une Perle Noire de Schallmar ainsi qu'une partie du trésor demandée par ^66CCFFBoliv'Art^000000"; }
+		close2;
+		if (EP7_MANONEGRA == 15) { set EP7_MANONEGRA,16; getitem 29124,1; }
+		warp "ars_fild73",155,127;
+		end;}
+
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	mes "Vous devez vaincre le Gardien Asmodée avant de pouvoir sortir.";
+	close;
+}

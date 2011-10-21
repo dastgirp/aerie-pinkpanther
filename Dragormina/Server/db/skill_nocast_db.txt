@@ -1,0 +1,24 @@
+//Zone 6 - Arsinoé
+
+334,1024 //mariage
+335,1024 //mariage
+336,1024 //mariage
+408,1024 //mariage
+409,1024 //mariage
+410,1024 //mariage
+27,1024 //AL_WARP
+26,1024 //AL_TELEPORT
+
+//Zone 7 - Marathon
+
+29,2048 //agi
+264,2048 //body
+63,2048 //riding
+387,2048 //boost
+383,2048 //wind
+411,2048 //running
+359,2048 //berserk
+150,2048 //back
+
+
+

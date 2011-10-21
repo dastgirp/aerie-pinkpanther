@@ -1,0 +1,80 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Configuration
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//= 2.1 Rumble reward added
+//
+//
+//================================================================================================= 
+
+
+-	script	EP7_ConfigurationSchall	-1,{
+
+OnInit:
+
+set $Ep7_BoatID,1002; //Boat Sprite ID / ID du sprite de bateau
+
+//Number of names saved per Title / Nombre de noms sauvegardés par titre
+set $EP8_TitreNbP,50;
+
+//Allow items / maps
+setarray $@allowedmaps1$[0], "tantale_ile","ars_phare","ars_fild01","ars_fild02","ars_fild03","ars_fild04","ars_fild05","ars_fild06","ars_fild07","ars_fild08","ars_fild09","ars_fild10","ars_fild11","ars_fild12","ars_fild13","ars_fild14","ars_fild15","ars_fild16","ars_fild17","ars_fild18","ars_fild19","ars_fild20","ars_fild21","ars_fild22","ars_fild23","ars_fild24","ars_fild25","ars_fild26","ars_fild27","ars_fild28","ars_fild29","ars_fild30","ars_fild31","ars_fild32","ars_fild33","ars_fild34","ars_fild35","ars_fild36","ars_fild37","ars_fild38","ars_fild39","ars_fild40","ars_fild41","ars_fild42","ars_fild43","ars_fild44","ars_fild45","ars_fild46","ars_fild47","ars_fild48","ars_fild49","ars_fild50","ars_fild51","ars_fild52","ars_fild53","ars_fild54","ars_fild55","ars_fild56","ars_fild57","ars_fild58","ars_fild59","ars_fild60","ars_fild61","ars_fild62","ars_fild63","ars_fild64","ars_fild65","ars_fild66","ars_fild67","ars_fild68","ars_fild69","ars_fild70","ars_fild71","ars_fild72","ars_fild73","ars_fild74","ars_fild75","ars_fild76";
+setarray $@allowedmaps2$[0], "ars_dun01","ars_dun02","ars_dun03","ars_dun04","ars_dun05","ars_dun06","ars_dun07","ars_dun08","ars_dun09","ars_dun10","ars_dun11","ars_dun12","ars_dun13","ars_dun14","ars_dun15","ars_dun16","ars_dun17","ars_dun18","ars_dun19","ars_dun20","ars_dun21","ars_dun22","ars_dun23","ars_dun24","ars_dun25","ars_dun26","ars_dun27","ars_dun28","ars_dun29","ars_dun30","ars_dun31","ars_dun32","ars_dun33","ars_dun34","ars_dun35","ars_dun36","ars_dun37","ars_dun38","ars_dun39","ars_dun40","ars_dun41","ars_dun42","ars_dun43","ars_dun44","ars_dun45","ars_dun46","ars_dun47","ars_dun48","ars_dun49","ars_dun50","ars_dun51","ars_dun52","ars_dun53","ars_dun54","ars_dun55","ars_dun56","ars_dun57","ars_dun58","ars_dun59","ars_dun60","ars_dun61","ars_dun62","ars_dun63","ars_dun64","ars_dun65","ars_dun66","ars_dun67","ars_dun68","ars_dun69","ars_dun70","ars_dun71","ars_dun72","ars_dun73","ars_dun74","ars_dun75","ars_dun76","ars_dun77","ars_dun78","ars_dun79","ars_dun80","ars_dun81","ars_dun82","ars_dun83","ars_dun84","ars_dun85","ars_dun86","ars_dun87","ars_dun88","ars_dun89","ars_dun90","ars_dun91","ars_dun92","ars_dun93","ars_dun94","ars_dun95","ars_dun96";
+setarray $@allowedmaps3$[0], "ars_in01","ars_in02","ars_in03","ars_in04","ars_in05","ars_in06","ars_in07","ars_in08","ars_in09","ars_in10","ars_in11","ars_in12","ars_in13","ars_in14","ars_in15","ars_in16","ars_in17";
+setarray $@itemsdenied[0],29170,29171,29172,29173,29174,29175,29176,29177,29178,29179;
+	
+//Atcommand symbol (Used for Aerie's Call)
+set $ep7_Atcom$,"!";
+	
+//Rewards / Récompenses
+setarray $ep7silvercoinnb[14],150; //Brynnlaw : Rajckam
+setarray $ep7silvercoinnb[15],100; //Brynnlaw : Majere
+setarray $ep7silvercoinnb[16],50; //Coppa : Ta Phrom
+setarray $ep7silvercoinnb[17],200; //Brynnlaw : Main Noire Negoce
+setarray $ep7silvercoinnb[18],400; //Main Noire : Final
+setarray $ep7silvercoinnb[19],150; //Julius : La Pierre Rouge
+
+setarray $ep7recompense[42],2358; //Brynnlaw : Milice
+setarray $ep7recompensenb[42],1; //Brynnlaw : Milice
+
+setarray $ep7recompense[43],5489; //Brynnlaw : Milice
+setarray $ep7recompensenb[43],1; //Brynnlaw : Milice
+
+setarray $ep7recompense[44],2780; //Coppa : Ta Phrom
+setarray $ep7recompensenb[44],1; //Coppa : Ta Phrom
+
+setarray $ep7recompense[45],2779; //Coppa : Cortes Farganhi
+setarray $ep7recompensenb[45],1; //Coppa : Cortes Farganhi
+
+setarray $ep7recompense[46],5379; //Brynnlaw : Moines Disparus
+setarray $ep7recompensenb[46],1; //Brynnlaw : Moines Disparus
+
+setarray $ep7recompense[47],5377; //Schallmar : Final
+setarray $ep7recompensenb[47],1; //Schallmar : Final
+
+setarray $ep7recompense[48],5261; //Elu : Rumble
+
+}

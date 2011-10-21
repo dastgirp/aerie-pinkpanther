@@ -1,0 +1,921 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+
+
+//===== Arsinoé Script ============================================================================ 
+//
+//= Arsinoé quests for Arsinoé Mod
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : True Noir & Mirabell & DesertFox
+//= Spanish Version : Destiny
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.3
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.x Versions without multi-language support.
+//= 2.0 release
+//= 2.1 npc #ep7carte14 added
+//= 2.2 Monster Name / Menu Symbol
+//= 2.3 Revisited English version by DesertFox
+//
+//================================================================================================= 
+
+//_________________________________________________________________
+//___________________ Agathon Paraclet ____________________________
+//_________________________________________________________________
+
+ars_in02,132,245,4	script	Agathon Paraclet#ep7	483,{
+
+set @name$,"^66CCFFAgathon Paraclet^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Arsi01fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Arsi01en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Arsi01sp";}
+
+}
+
+//_________________________________________________________________
+//___________________ De Martonne, Cartographe ____________________
+//_________________________________________________________________
+
+
+function	script	arsi_carte	{
+	
+if(EP7_LANGUE == 0) {
+
+	if (EP7_CARTE == 0) {mes "[" + @name$ + "]"; mes "Il n'y a rien à vous intéresser ici."; close;}
+	if ((countitem(@item) == 1)) { mes "[" + @name$ + "]"; mes "Vous avez déjà obtenu cette carte."; close;}
+	if (EP7_CARTE >= 21) { mes "[" + @name$ + "]"; mes "Vous avez déjà obtenu cette carte."; close;}
+
+	mes "[" + @name$ + "]";
+	mes "Vous venez de trouver la carte "+ @card$ +" !";
+	close2;
+	getitem @item,1;
+	set EP7_CARTE,EP7_CARTE+1;
+	end;}
+
+if(EP7_LANGUE == 1) {
+
+	if (EP7_CARTE == 0) {mes "[" + @name$ + "]"; mes "There is nothing interesting you hear."; close;}
+	if ((countitem(@item) == 1)) { mes "[" + @name$ + "]"; mes "You already found this map."; close;}
+	if (EP7_CARTE >= 21) { mes "[" + @name$ + "]"; mes "You already found this Card."; close;}
+
+	mes "[" + @name$ + "]";
+	mes "You found "+ @card$ +" map!";
+	close2;
+	getitem @item,1;
+	set EP7_CARTE,EP7_CARTE+1;
+	end;}
+	
+if(EP7_LANGUE == 2) {	
+	if (EP7_CARTE == 0) {mes "[" + @name$ + "]"; mes "No hay nada interesante aquí."; close;}
+	if ((countitem(@item) == 1)) { mes "[" + @name$ + "]"; mes "Usted ya ha encontrado esta tarjeta."; close;}
+	if (EP7_CARTE >= 21) { mes "[" + @name$ + "]"; mes "Usted ya ha encontrado esta tarjeta."; close;}
+
+	mes "[" + @name$ + "]";
+	mes "Encontraste "+ @card$ +" card!";
+	close2;
+	getitem @item,1;
+	set EP7_CARTE,EP7_CARTE+1;
+	end;}
+
+}
+
+//==============================================================================
+
+ars_fild22,143,162,4	script	De Martonne#ep7	832,8,8,{
+
+set @name$,"^66CCFFDe Martonne^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Arsi02fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Arsi02en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Arsi02sp";}
+
+OnTouch:
+	if (EP7_CARTE == 0) {showevent 1,0;} end;
+}
+
+//==============================================================================
+tantale_ile,165,154,4	script	#ep7carte1	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29017";
+	if(EP7_LANGUE == 0) {set @card$,"de l'île de Tantale";}
+	if(EP7_LANGUE >= 1) {set @card$,"Tantale Island";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29017";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+coppa,376,211,4	script	#ep7carte2	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29018";
+	if(EP7_LANGUE == 0) {set @card$,"de Coppalana";}
+	if(EP7_LANGUE >= 1) {set @card$,"Coppalana Beach";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29018";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_dun01,184,64,4	script	#ep7carte3	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29019";
+	if(EP7_LANGUE == 0) {set @card$,"de la Nécropole de Gomorrhe";}
+	if(EP7_LANGUE >= 1) {set @card$,"Gomorrhe Necropolis";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29019";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild04,344,187,4	script	#ep7carte4	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29020";
+	if(EP7_LANGUE == 0) {set @card$,"du Phare de Traïana";}
+	if(EP7_LANGUE >= 1) {set @card$,"Traïana's Lighthouse";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29020";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild05,216,159,4	script	#ep7carte5	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29021";
+	if(EP7_LANGUE == 0) {set @card$,"d'Euhéméria";}
+	if(EP7_LANGUE >= 1) {set @card$,"Euhéméria";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29021";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild08,28,66,4	script	#ep7carte6	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29022";
+	if(EP7_LANGUE == 0) {set @card$,"de la Passe d'Octavie";}
+	if(EP7_LANGUE >= 1) {set @card$,"Octavie's Pass";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29022";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild11,56,57,4	script	#ep7carte7	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29023";
+	if(EP7_LANGUE == 0) {set @card$,"du Village de Nèsos";}
+	if(EP7_LANGUE >= 1) {set @card$,"Nèsos Village";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29023";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild15,226,36,4	script	#ep7carte8	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29024";
+	if(EP7_LANGUE == 0) {set @card$,"de Terkish";}
+	if(EP7_LANGUE >= 1) {set @card$,"Terkish Citadel";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29024";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild16,62,27,4	script	#ep7carte9	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29025";
+	if(EP7_LANGUE == 0) {set @card$,"de la Citadelle de Lumière";}
+	if(EP7_LANGUE >= 1) {set @card$,"The Light Citadel";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29025";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild18,251,100,4	script	#ep7carte10	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29026";
+	if(EP7_LANGUE == 0) {set @card$,"de la Thébaïde";}
+	if(EP7_LANGUE >= 1) {set @card$,"Thébaïde";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29026";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild23,21,98,4	script	#ep7carte11	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29027";
+	if(EP7_LANGUE == 0) {set @card$,"de la Forêt Rouge";}
+	if(EP7_LANGUE >= 1) {set @card$,"Red Forest";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29027";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild25,67,173,4	script	#ep7carte12	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29028";
+	if(EP7_LANGUE == 0) {set @card$,"des Deux-Portes";}
+	if(EP7_LANGUE >= 1) {set @card$,"Two-Gates";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29028";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild29,23,68,4	script	#ep7carte13	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29029";
+	if(EP7_LANGUE == 0) {set @card$,"de la Rana, les Arènes";}
+	if(EP7_LANGUE >= 1) {set @card$,"La Rana, Arena";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29029";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild22,50,364,4	script	#ep7carte14	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29031";
+	if(EP7_LANGUE == 0) {set @card$,"Arsinoé";}
+	if(EP7_LANGUE >= 1) {set @card$,"Arsinoé";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29030";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild21,110,21,4	script	#ep7carte15	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29031";
+	if(EP7_LANGUE == 0) {set @card$,"de Lalibela";}
+	if(EP7_LANGUE >= 1) {set @card$,"Lalibela";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29031";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild33,179,33,4	script	#ep7carte16	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29032";
+	if(EP7_LANGUE == 0) {set @card$,"de l'Hylarheim";}
+	if(EP7_LANGUE >= 1) {set @card$,"Hylarheim";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29032";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild36,189,83,4	script	#ep7carte17	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29033";
+	if(EP7_LANGUE == 0) {set @card$,"de Port-Sirène";}
+	if(EP7_LANGUE >= 1) {set @card$,"Sirène's Deck";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29033";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_fild37,69,38,4	script	#ep7carte18	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29034";
+	if(EP7_LANGUE == 0) {set @card$,"des Soupirs du Morloc'h";}
+	if(EP7_LANGUE >= 1) {set @card$,"Morloc'h's whispers";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29034";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_in08,103,107,4	script	#ep7carte19	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29035";
+	if(EP7_LANGUE == 0) {set @card$,"du Soulavein : Le Temple";}
+	if(EP7_LANGUE >= 1) {set @card$,"Soulavein : Temple";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29035";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//==============================================================================
+ars_in04,37,71,4	script	#ep7carte20	111,8,8,{
+
+	if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Prendre^000000";}
+	if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Take^000000";}
+	if(EP7_LANGUE == 2) {set @name$,"^33CC00Acción : Tomar^000000";}
+	set @item,"29036";
+	if(EP7_LANGUE == 0) {set @card$,"du Monastère d'Harpocrate";}
+	if(EP7_LANGUE >= 1) {set @card$,"Harpocrate's Monastry";}
+	callfunc "arsi_carte";
+	end;
+
+OnTouch:
+	set @item,"29036";
+	if (EP7_CARTE > 0 && EP7_CARTE < 21 && (countitem(@item) == 0)) {showevent 1,0;} end;
+}
+//========================================================================================================
+//                                Paraclet
+//========================================================================================================
+
+function	script	arsi_Arsi01fr	{
+
+
+	if (EP7_MAGE >= 12)  goto L_Fin;	
+	if (EP7_GLOBAL == 38 && EP7_MAGE == 11)  goto L_Final;
+	if (EP7_GLOBAL <= 27)  goto sub1;
+	if (EP7_GLOBAL <= 37)  goto sub2;
+	if (EP7_GLOBAL == 38)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Je suis responsable de la coordination entre les ordres religieux d'Arsinoé. Et pour tout te dire, je ne chôme pas en ce moment ...";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Je m'occupe des affaires religieuses d'Arsinoé, tant les conflits religieux que la coordination des missions.";
+	mes "Nous avons de nombreux problèmes non-résolus pour le moment, une vague de vols d'artefacts ont été constaté.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Enfin bon, que puis-je pour toi ?";
+	next;
+	menu "•Réclamer le Titre",submenu1,"•Avancement des Quêtes",submenu2,"•Quitter",-;
+		
+	close;
+
+submenu1:
+
+	if (EP7_GLOBAL <= 36)  goto L_Pasniveau; //Variable 37 = Fin - Quête Lalibela
+	if (EP7_DANIFAE <= 9)  goto L_Pasniveau; //Variable 10 = Fin - Quête Danifae
+	if (EP7_HARPO <= 10)  goto L_Pasniveau; //Variable x = Fin - Quête Harpocrate
+
+	mes "[" + @name$ + "]"; 
+	mes "Félicitations ! Ton aide a été très importante pour nous tous !";
+	mes "Je te décerne le Titre de Grand Inquisiteur !";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Comme tu as pu le constater la situation est critique, ce sont les mages qui ont pris le commandement de la lutte contre les Mages Gris.";
+	mes "Tu dois soit contacter l'Archimage Ornélia ou la Mage Gawelle pour pouvoir continuer la lutte !";
+	close2;
+	set EP7_GLOBAL,38;
+	callfunc "arsi_inquiTitre";
+	//retour
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TInquisiteur + "] Grand Inquisiteur d'Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] becomes the [" + $EP7_TInquisiteur + "] Grand Inquisitor of Arsinoé !",bc_all,0x33FF00;}		
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convierte en el [" + $EP7_TInquisiteur + "] Gran Inquisidor de Arsinoe !",bc_all,0x33FF00;}		
+	getitem $ep7_Tcoins,$ep7silvercoinnb[6];
+	completequest 70338;
+	completequest 70324;
+	completequest 70248;
+	end;	
+
+submenu2:
+
+	mes "[" + @name$ + "]"; 
+	if (EP7_GLOBAL <= 36)  { mes "La Naissance de Lalibela :^FF3300 Quête Non Accomplie ^000000";}
+	if (EP7_GLOBAL >= 37)  { mes "La Naissance de Lalibela :^66FF33 Quête Accomplie ^000000";}
+	if (EP7_DANIFAE <= 9)  { mes "La Disparition de Danifae :^FF3300 Quête Non Accomplie ^000000";}
+	if (EP7_DANIFAE >= 10)  { mes "La Disparition de Danifae :^66FF33 Quête Accomplie ^000000";}
+	if (EP7_HARPO <= 10)  { mes "Le Heaume Glorieux d'Harpocrate :^FF3300 Quête Non Accomplie ^000000";}
+	if (EP7_HARPO >= 11)  { mes "Le Heaume Glorieux d'Harpocrate :^66FF33 Quête Accomplie ^000000";}
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Pour débuter la Naissance de Lalibela : Il faut s'adresser à Daphnis.";
+	mes "Pour débuter la Disparition de Danifae : Il faut s'adresser au Clerc Graivois.";
+	mes "Pour débuter le Heaume Glorieux d'Harpocrate : Il faut s'adresser à Julien l'Apostat.";
+	close;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Comme tu as pu le constater la situation est critique, ce sont les mages qui ont pris le commandement de la lutte contre les Mages Gris.";
+	mes "Tu dois soit contacter l'Archimage Ornélia ou la Mage Gawelle pour pouvoir continuer la lutte !";
+	close;
+
+//======================================= Labels
+
+L_Pasniveau:
+
+	mes "[" + @name$ + "]"; 
+	mes "Tu ne peux pas revendiquer le titre de Grand Inquisiteur pour le moment.";
+	mes "Regarde ton avancement dans les quêtes pour savoir où tu en es.";
+	close;
+
+L_Final:
+
+	mes "[" + @name$ + "]"; 
+	mes "Ah, tu as des informations de l'Archimage Ornélia ! Bon vu que tu as déjà le titre de Grand Inquisiteur, symbole des services rendus aux cultes d'Arsinoé, tu peux retourner la voir.";
+	mes "Le dénouement de cette sombre affaire me semble proche, allons ! Courage !"; 
+	close2;
+	set EP7_MAGE,12;
+	completequest 70270;
+	setquest 70340;
+	end;
+
+L_Fin:
+
+	mes "[" + @name$ + "]"; 
+	mes "Ah, tu as des informations de l'Archimage Ornélia ! Bon vu que tu as déjà le titre de Grand Inquisiteur, symbole des services rendus aux cultes d'Arsinoé, tu peux retourner la voir.";
+	mes "Le dénouement de cette sombre affaire me semble proche, allons ! Courage !"; 
+	close;
+	
+}
+//========================================================================================================
+
+function	script	arsi_Arsi01en	{
+
+
+	if (EP7_MAGE >= 12)  goto L_Fin;	
+	if (EP7_GLOBAL == 38 && EP7_MAGE == 11)  goto L_Final;
+	if (EP7_GLOBAL <= 27)  goto sub1;
+	if (EP7_GLOBAL <= 37)  goto sub2;
+	if (EP7_GLOBAL == 38)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "I am responsible for coordination between the religious orders of Arsinoe. And to tell you everything I am not asleep right now ...";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "I am the manager of religious affairs of Arsinoe, I handle religious conflicts and coordination of religious missions.";
+	mes "We have many unresolved issues at this time, a wave of thefts of artifacts have been reported.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Anyway, what can I do for you ?";
+	next;
+	menu "•Claim The Title",submenu1,"•Progress Quest",submenu2,"•Cancel",-;
+		
+	close;
+
+submenu1:
+
+	if (EP7_GLOBAL <= 36)  goto L_Pasniveau; //Variable 37 = Fin - Quête Lalibela
+	if (EP7_DANIFAE <= 9)  goto L_Pasniveau; //Variable 10 = Fin - Quête Danifae
+	if (EP7_HARPO <= 10)  goto L_Pasniveau; //Variable x = Fin - Quête Harpocrate
+
+	mes "[" + @name$ + "]"; 
+	mes "Congratulations! Your help was very important to all of us !";
+	mes "I award you the title of Grand Inquisitor!";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "As you can see the situation is critical, it is the magicians who took the command of the fight against the Grey Magicians.";
+	mes "You must either contact the Archimage Ornelia or Mage Gawell to continue the fight !";
+	close2;
+	set EP7_GLOBAL,38;
+	callfunc "arsi_inquiTitre";
+	//retour
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TInquisiteur + "] Grand Inquisiteur d'Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] becomes the [" + $EP7_TInquisiteur + "] Grand Inquisitor of Arsinoé !",bc_all,0x33FF00;}		
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convierte en el [" + $EP7_TInquisiteur + "] Gran Inquisidor de Arsinoe !",bc_all,0x33FF00;}		
+	getitem $ep7_Tcoins,$ep7silvercoinnb[6];
+	end;	
+
+submenu2:
+
+	mes "[" + @name$ + "]"; 
+	if (EP7_GLOBAL <= 36)  { mes "The Birth of Lalibela :^FF3300 Quest Not Completed ^000000";}
+	if (EP7_GLOBAL >= 37)  { mes "The Birth of Lalibela :^66FF33 Quest Completed ^000000";}
+	if (EP7_DANIFAE <= 9)  { mes "The Disappearance of Danifae :^FF3300 Quest Not Completed ^000000";}
+	if (EP7_DANIFAE >= 10)  { mes "The Disappearance of Danifae :^66FF33 Quest Completed ^000000";}
+	if (EP7_HARPO <= 10)  { mes "Helm of Glorious Harpocrate :^FF3300 Quest Not Completed ^000000";}
+	if (EP7_HARPO >= 11)  { mes "Helm of Glorious Harpocrate :^66FF33 Quest Completed ^000000";}
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "To begin the Birth of Lalibela: You must contact Daphnis.";
+	mes "To begin the disappearance of Danifae: You must contact the Clerc Graivois.";
+	mes "To begin the Helm of Glorious Harpocrates: You must contact Julien l'Apostat.";
+	close;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "As you can see the situation is critical, it is the magicians who took the command of the fight against the Grey Magicians.";
+	mes "You must either contact the Archimage Ornelia or Mage Gawell to continue the fight !";
+	close;
+
+//======================================= Labels
+
+L_Pasniveau:
+
+	mes "[" + @name$ + "]"; 
+	mes "You can not claim the title of Grand Inquisitor yet.";
+	mes "Look at your progress in the quest to find out where you are.";
+	close;
+
+L_Final:
+
+	mes "[" + @name$ + "]"; 
+	mes "Ah, you have the information Archimage Ornelia! Well since you already have the title of Grand Inquisitor, a symbol of service to cults of Arsinoe, you can go see her.";
+	mes "The outcome of this dark matter seems to be close, come! Courage!"; 
+	close2;
+	set EP7_MAGE,12;
+	completequest 70270;
+	end;
+
+L_Fin:
+
+	mes "[" + @name$ + "]"; 
+	mes "Ah, you have the information Archimage Ornelia! Well since you already have the title of Grand Inquisitor, a symbol of service to cults of Arsinoe, you can go see her.";
+	mes "The outcome of this dark matter seems to be close, come! Courage!"; 
+	close;
+	
+}
+//========================================================================================================
+
+function	script	arsi_Arsi01sp	{
+
+
+	if (EP7_MAGE >= 12)  goto L_Fin;	
+	if (EP7_GLOBAL == 38 && EP7_MAGE == 11)  goto L_Final;
+	if (EP7_GLOBAL <= 27)  goto sub1;
+	if (EP7_GLOBAL <= 37)  goto sub2;
+	if (EP7_GLOBAL == 38)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Yo soy el responsable de la coordinación entre las órdenes religiosas de Arsinoe. Y a decir verdad no todo es tan tranquilo ahora ...";
+	close;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Me encargo de asuntos religiosos de Arsinoe, al igual que los conflictos religiosos y la coordinación de las misiones religiosas.";
+	mes "Tenemos muchos problemas no resueltos en este momento, se ha visto una ola de robos de artefactos.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "De todos modos, ¿qué puedo hacer por ti ?";
+	next;
+	menu "•Reclamar el Título",submenu1,"•Progreso de la Quest",submenu2,"•Cancelar",-;
+		
+	close;
+
+submenu1:
+
+	if (EP7_GLOBAL <= 36)  goto L_Pasniveau; //Variable 37 = Fin - Quête Lalibela
+	if (EP7_DANIFAE <= 9)  goto L_Pasniveau; //Variable 10 = Fin - Quête Danifae
+	if (EP7_HARPO <= 10)  goto L_Pasniveau; //Variable x = Fin - Quête Harpocrate
+
+	mes "[" + @name$ + "]"; 
+	mes "¡Felicitaciones! Su ayuda fue muy importante para todos nosotros !";
+	mes "Le concedo el título de Gran Inquisidor!";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Como se puede ver la situación es crítica, los magos que tomaron el mando de la lucha contra los Magos Grises.";
+	mes "Usted debe contactar a la Archimaga Ornelia o al Mago Gawell para continuar la lucha !";
+	close2;
+	set EP7_GLOBAL,38;
+	callfunc "arsi_inquiTitre";
+	//retour
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TInquisiteur + "] Grand Inquisiteur d'Arsinoé !",bc_all,0x33FF00;}
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] becomes the [" + $EP7_TInquisiteur + "] Grand Inquisitor of Arsinoé !",bc_all,0x33FF00;}		
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convierte en el [" + $EP7_TInquisiteur + "] Gran Inquisidor de Arsinoe !",bc_all,0x33FF00;}		
+	getitem $ep7_Tcoins,$ep7silvercoinnb[6];
+	end;	
+
+submenu2:
+
+	mes "[" + @name$ + "]"; 
+	if (EP7_GLOBAL <= 36)  { mes "El nacimiento de Lalibela :^FF3300 Quest No Completada ^000000";}
+	if (EP7_GLOBAL >= 37)  { mes "El nacimiento de Lalibela :^66FF33 Quest Completada ^000000";}
+	if (EP7_DANIFAE <= 9)  { mes "La desaparición de Danifae :^FF3300 Quest No Completada ^000000";}
+	if (EP7_DANIFAE >= 10)  { mes "La desaparición de Danifae :^66FF33 Quest Completada ^000000";}
+	if (EP7_HARPO <= 10)  { mes "Helm del Glorioso Harpocrate :^FF3300 Quest No Completada ^000000";}
+	if (EP7_HARPO >= 11)  { mes "Helm del Glorioso Harpocrate :^66FF33 Quest Completada ^000000";}
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Para empezar el nacimiento de Lalibela: Debe ponerse en contacto Dafnis.";
+	mes "Para empezar la desaparición de Danifae: Usted debe contactar a la Clerica Graivois.";
+	mes "Para empezar el Helm del Glorioso Harpocrate: Debe ponerse en contacto Julien l'Apostat.";
+	close;
+
+sub3:
+
+	mes "[" + @name$ + "]"; 
+	mes "Como se puede ver la situación es crítica, los magos que tomaron el mando de la lucha contra los Magos Grises.";
+	mes "Usted debe contactar a la Archimaga Ornelia o al Mago Gawell para continuar la lucha !";
+	close;
+
+//======================================= Labels
+
+L_Pasniveau:
+
+	mes "[" + @name$ + "]"; 
+	mes "Usted no puede reclamar el título de Gran Inquisidor todavía.";
+	mes "Mira a tu progreso en la búsqueda para averiguar dónde te encuentras.";
+	close;
+
+L_Final:
+
+	mes "[" + @name$ + "]"; 
+	mes "Ah, usted tiene la información archimago Ornelia! Bueno pues ya tiene el título de Gran Inquisidor, un símbolo de servicio a los cultos de Arsinoe, así que puede ir a verla.";
+	mes "El resultado de esta materia oscura me parece cerca, ven! ¡Ánimo!!"; 
+	close2;
+	set EP7_MAGE,12;
+	completequest 70270;
+	end;
+
+L_Fin:
+
+	mes "[" + @name$ + "]"; 
+	mes "Ah, usted tiene la información archimago Ornelia! Bueno pues ya tiene el título de Gran Inquisidor, un símbolo de servicio a los cultos de Arsinoe, así que puede ir a verla.";
+	mes "El resultado de esta materia oscura me parece cerca, ven! ¡Ánimo!!";
+	close;
+	
+}
+//========================================================================================================
+//                                Martonne
+//========================================================================================================
+
+function	script	arsi_Arsi02fr	{
+
+	
+	if (EP7_CARTE == 0)  goto sub1;
+	if (EP7_CARTE >= 1 && EP7_CARTE <= 20)  goto sub2;
+	if (EP7_CARTE >= 21)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Je recherche des aventuriers pour cartographier Arsinoé ! Il me faut récupérer une vingtaine de cartes dans différentes régions.";
+	mes "Si tu souhaites m'aider, voici déjà ta première carte ! Complète cette quête et tu pourras recevoir le titre d'Explorateur d'Arsinoé !";
+	close2;
+	set EP7_CARTE,1;
+	setquest 70392;
+	getitem 29030,1;
+	end;
+
+sub2:
+
+	mes "[" + @name$ + "]"; 
+	mes "Pour le moment tu as ["+ EP7_CARTE +"/20] cartes.";
+	mes "Que souhaites-tu faire ?";
+	next;
+	menu "•Réclamer mon Titre !",submenu1,"•Quitter",-;
+
+	close;
+
+	submenu1:
+
+	if ((countitem(29017) == 0) || (countitem(29018) == 0) || (countitem(29019) == 0) || (countitem(29020) == 0) ||
+	(countitem(29021) == 0) || (countitem(29022) == 0) || (countitem(29023) == 0) || (countitem(29024) == 0) ||
+	(countitem(29025) == 0) || (countitem(29026) == 0) || (countitem(29027) == 0) || (countitem(29028) == 0) ||
+	(countitem(29029) == 0) || (countitem(29030) == 0) || (countitem(29031) == 0) || (countitem(29032) == 0) ||
+	(countitem(29033) == 0) || (countitem(29034) == 0) || (countitem(29035) == 0) || (countitem(29036) == 0)) {
+	mes "[" + @name$ + "]"; mes "Je suis désolé mais vous n'avez pas vos 20 cartes !"; close;}
+
+	mes "[" + @name$ + "]"; 
+	mes "Félicitations, vous venez d'obtenir le Titre d'Explorateur d'Arsinoé !";
+	close2;
+	completequest 70392;
+	set EP7_carte,21;
+	getitem $ep7recompense[30],$ep7recompensenb[30];
+	callfunc "arsi_ExplTitre";
+	//retour
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TEXP + "] Explorateur d'Arsinoé !",bc_all,0x33FF00;}	
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] becomes the [" + $EP7_TEXP + "] Arsinoe Explorer !",bc_all,0x33FF00;	}
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convierte en el [" + $EP7_TEXP + "] Arsinoe Explorer !",bc_all,0x33FF00;}	
+	//Effacer les Items
+	delitem 29017,1;delitem 29018,1;delitem 29019,1;delitem 29020,1;delitem 29021,1;delitem 29022,1;delitem 29023,1;delitem 29024,1;
+	delitem 29025,1;delitem 29026,1;delitem 29027,1;delitem 29028,1;delitem 29029,1;delitem 29030,1;delitem 29031,1;delitem 29032,1;
+	delitem 29033,1;delitem 29034,1;delitem 29035,1;delitem 29036,1;
+	end;
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Merci beaucoup pour ton aide ! Tu es désormais un explorateur d'Arsinoé !";
+	close;
+}
+
+//========================================================================================================
+
+function	script	arsi_Arsi02en	{
+
+
+	if (EP7_CARTE == 0)  goto sub1;
+	if (EP7_CARTE >= 1 && EP7_CARTE <= 20)  goto sub2;
+	if (EP7_CARTE >= 21)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "I'm looking for adventurers to map Arsinoe. I need to get twenty maps of the different regions.";
+	mes "If you want to help me, here's your first map! Complete this quest and you'll receive the title of Arsinoe Explorer!";
+	close2;
+	set EP7_CARTE,1;
+	setquest 70392;
+	getitem 29030,1;
+	end;
+
+sub2:
+
+	mes "[" + @name$ + "]"; 
+	mes "You got ["+ EP7_CARTE +"/20] maps.";
+	mes "What would you like to do?";
+	next;
+	menu "Reclaimin my title!",submenu1,"Cancel",-;
+	close;
+
+	submenu1:
+
+	if ((countitem(29017) == 0) || (countitem(29018) == 0) || (countitem(29019) == 0) || (countitem(29020) == 0) ||
+	(countitem(29021) == 0) || (countitem(29022) == 0) || (countitem(29023) == 0) || (countitem(29024) == 0) ||
+	(countitem(29025) == 0) || (countitem(29026) == 0) || (countitem(29027) == 0) || (countitem(29028) == 0) ||
+	(countitem(29029) == 0) || (countitem(29030) == 0) || (countitem(29031) == 0) || (countitem(29032) == 0) ||
+	(countitem(29033) == 0) || (countitem(29034) == 0) || (countitem(29035) == 0) || (countitem(29036) == 0)) {
+	mes "[" + @name$ + "]"; mes "I'm sorry but you do not have your 20 cards !"; close;}
+
+	mes "[" + @name$ + "]"; 
+	mes "Congratulations, you just earned the title of Arsinoe Explorer!";
+	close2;
+	completequest 70392;
+	set EP7_carte,21;
+	getitem $ep7recompense[30],$ep7recompensenb[30];
+	callfunc "arsi_ExplTitre";
+	//retour
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TEXP + "] Explorateur d'Arsinoé !",bc_all,0x33FF00;}	
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] becomes the [" + $EP7_TEXP + "] Arsinoe Explorer !",bc_all,0x33FF00;	}
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convierte en el [" + $EP7_TEXP + "] Arsinoe Explorer !",bc_all,0x33FF00;}	
+	//Effacer les Items
+	delitem 29017,1;delitem 29018,1;delitem 29019,1;delitem 29020,1;delitem 29021,1;delitem 29022,1;delitem 29023,1;delitem 29024,1;
+	delitem 29025,1;delitem 29026,1;delitem 29027,1;delitem 29028,1;delitem 29029,1;delitem 29030,1;delitem 29031,1;delitem 29032,1;
+	delitem 29033,1;delitem 29034,1;delitem 29035,1;delitem 29036,1;
+	end;
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Thank you very much for your help! You're now an explorer of Arsinoe!";
+	close;
+}
+
+//========================================================================================================
+
+function	script	arsi_Arsi02sp	{
+	
+	if (EP7_CARTE == 0)  goto sub1;
+	if (EP7_CARTE >= 1 && EP7_CARTE <= 20)  goto sub2;
+	if (EP7_CARTE >= 21)  goto sub3;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Estoy buscando aventureros para hacer un mapa de Arsinoe. Tengo que conseguir veinte tarjetas de las diferentes regiones.";
+	mes "Si quieres ayudarme, esta es tu primera tarjeta! Completa esta búsqueda y recibirás el título de Arsinoe Explorer!";
+	close2;
+	set EP7_CARTE,1;
+	setquest 70392;
+	getitem 29030,1;
+	end;
+
+sub2:
+
+	mes "[" + @name$ + "]"; 
+	mes "You got ["+ EP7_CARTE +"/20] cards.";
+	mes "Qué te gustaría hacer?";
+	next;
+	menu "•Reclamar mi Título!",submenu1,"•Cancelar",-;
+
+	close;
+
+	submenu1:
+
+	if ((countitem(29017) == 0) || (countitem(29018) == 0) || (countitem(29019) == 0) || (countitem(29020) == 0) ||
+	(countitem(29021) == 0) || (countitem(29022) == 0) || (countitem(29023) == 0) || (countitem(29024) == 0) ||
+	(countitem(29025) == 0) || (countitem(29026) == 0) || (countitem(29027) == 0) || (countitem(29028) == 0) ||
+	(countitem(29029) == 0) || (countitem(29030) == 0) || (countitem(29031) == 0) || (countitem(29032) == 0) ||
+	(countitem(29033) == 0) || (countitem(29034) == 0) || (countitem(29035) == 0) || (countitem(29036) == 0)) {
+	mes "[" + @name$ + "]"; mes "Lo siento, aún no tienes las 20 tarjetas !"; close;}
+
+	mes "[" + @name$ + "]"; 
+	mes "Felicidades, usted acaba de obtener el título de Arsinoe Explorer!";
+	close2;
+	completequest 70392;
+	set EP7_carte,21;
+	getitem $ep7recompense[30],$ep7recompensenb[30];
+	callfunc "arsi_ExplTitre";
+	//retour
+	if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu le [" + $EP7_TEXP + "] Explorateur d'Arsinoé !",bc_all,0x33FF00;}	
+	if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] becomes the [" + $EP7_TEXP + "] Arsinoe Explorer !",bc_all,0x33FF00;	}
+	if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convierte en el [" + $EP7_TEXP + "] Arsinoe Explorer !",bc_all,0x33FF00;}	
+	//Effacer les Items
+	delitem 29017,1;delitem 29018,1;delitem 29019,1;delitem 29020,1;delitem 29021,1;delitem 29022,1;delitem 29023,1;delitem 29024,1;
+	delitem 29025,1;delitem 29026,1;delitem 29027,1;delitem 29028,1;delitem 29029,1;delitem 29030,1;delitem 29031,1;delitem 29032,1;
+	delitem 29033,1;delitem 29034,1;delitem 29035,1;delitem 29036,1;
+	end;
+sub3:
+	mes "[" + @name$ + "]";
+	mes "Muchas gracias por su ayuda! Ahora es un explorador de Arsinoe!";
+	close;
+
+OnTouch:
+	if (EP7_CARTE == 0) {showevent 1,0;} end;
+}
+
+
+
+

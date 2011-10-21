@@ -1,0 +1,1226 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Pièges
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 English version.
+//= 2.1 Boarding function fix (for move npc after attack)
+//
+//
+//================================================================================================= 
+
+
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Pièges : Archipel Coppalana
+// 2 = Pièges : Îles de Brynnlaw
+// 3 = Pièges : Core
+// 4 = Pièges : Schallmar
+// 5 = Pièges : Franky
+//
+//_________________________________________________________________
+//________________ Pièges : Archipel Coppalana_____________________
+//_________________________________________________________________
+
+//====================================================================
+// Archipel Coppalana
+//====================================================================
+
+ars_fild63,132,171,0	script	#ep7Schal1	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf63";
+	set $@piegecoorX,132;
+	set $@piegecoorY,171;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild63,185,315,0	script	#ep7Schal2	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf63";
+	set $@piegecoorX,185;
+	set $@piegecoorY,315;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild63,301,188,0	script	#ep7Schal3	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf63";
+	set $@piegecoorX,301;
+	set $@piegecoorY,188;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild63,169,62,0	script	#ep7Schal4	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf63";
+	set $@piegecoorX,169;
+	set $@piegecoorY,62;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild63,1,1,0	script	#ep7SchalEf63	111,{
+}
+//====================================================================
+// Ile aux Perles
+//====================================================================
+
+ars_fild64,61,131,0	script	#ep7Schal5	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf64";
+	set $@piegecoorX,61;
+	set $@piegecoorY,131;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild64,215,154,0	script	#ep7Schal6	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf64";
+	set $@piegecoorX,215;
+	set $@piegecoorY,154;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild64,1,1,0	script	#ep7SchalEf64	111,{
+}
+
+//====================================================================
+// Pointe du Croizic
+//====================================================================
+
+ars_fild65,298,187,0	script	#ep7Schal7	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf65";
+	set $@piegecoorX,298;
+	set $@piegecoorY,187;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild65,159,203,0	script	#ep7Schal8	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf65";
+	set $@piegecoorX,159;
+	set $@piegecoorY,203;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild65,76,81,0	script	#ep7Schal9	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf65";
+	set $@piegecoorX,76;
+	set $@piegecoorY,81;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild65,1,1,0	script	#ep7SchalEf65	111,{
+}
+//====================================================================
+// Les Jumelles Jacamar
+//====================================================================
+ars_fild67,275,51,0	script	#ep7Schal120	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf67";
+	set $@piegecoorX,275;
+	set $@piegecoorY,51;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild67,264,226,0	script	#ep7Schall21	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf67";
+	set $@piegecoorX,264;
+	set $@piegecoorY,226;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild67,148,283,0	script	#ep7Schal122	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc$,"#ep7SchalEf67";
+	set $@piegecoorX,148;
+	set $@piegecoorY,283;
+	callfunc "arsi_piege";
+	end;
+}
+//===================================
+ars_fild67,1,1,0	script	#ep7SchalEf67	111,{
+}
+
+
+//_________________________________________________________________
+//________________ Pièges : Îles de Brynnlaw ______________________
+//_________________________________________________________________
+
+//====================================================================
+// Brynnlaw
+//====================================================================
+
+ars_fild66,180,67,0	script	#ep7Schal123	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf66";
+	set $@piegecoorX2,180;
+	set $@piegecoorY2,67;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild66,73,206,0	script	#ep7Schal124	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf66";
+	set $@piegecoorX2,73;
+	set $@piegecoorY2,206;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild66,288,329,0	script	#ep7Schal125	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf66";
+	set $@piegecoorX2,288;
+	set $@piegecoorY2,329;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild66,1,1,0	script	#ep7SchalEf66	111,{
+}
+//====================================================================
+// Mascate
+//====================================================================
+
+ars_fild68,143,291,0	script	#ep7Schal126	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf68";
+	set $@piegecoorX2,143;
+	set $@piegecoorY2,291;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild68,86,138,0	script	#ep7Schal127	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf68";
+	set $@piegecoorX2,86;
+	set $@piegecoorY2,138;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild68,281,65,0	script	#ep7Schal128	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf68";
+	set $@piegecoorX2,281;
+	set $@piegecoorY2,65;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild68,1,1,0	script	#ep7SchalEf68	111,{
+}
+
+//====================================================================
+// Île aux épices
+//====================================================================
+
+ars_fild69,261,229,0	script	#ep7Schal129	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf69";
+	set $@piegecoorX2,261;
+	set $@piegecoorY2,229;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild69,131,231,0	script	#ep7Schal130	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf69";
+	set $@piegecoorX2,131;
+	set $@piegecoorY2,231;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild69,86,41,0	script	#ep7Schal131	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf69";
+	set $@piegecoorX2,86;
+	set $@piegecoorY2,41;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild69,265,80,0	script	#ep7Schal132	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf69";
+	set $@piegecoorX2,265;
+	set $@piegecoorY2,80;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild69,1,1,0	script	#ep7SchalEf69	111,{
+}
+
+//====================================================================
+// Tibérine
+//====================================================================
+ars_fild70,221,139,0	script	#ep7Schal133	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf70";
+	set $@piegecoorX2,221;
+	set $@piegecoorY2,139;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild70,101,147,0	script	#ep7Schal134	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf70";
+	set $@piegecoorX2,101;
+	set $@piegecoorY2,147;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild70,151,330,0	script	#ep7Schal135	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf70";
+	set $@piegecoorX2,151;
+	set $@piegecoorY2,330;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild70,274,231,0	script	#ep7Schal136	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf70";
+	set $@piegecoorX2,274;
+	set $@piegecoorY2,231;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild70,1,1,0	script	#ep7SchalEf70	111,{
+}
+//====================================================================
+// Citadelle de la Forteresse
+//====================================================================
+ars_fild71,334,140,0	script	#ep7Schal137	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf71";
+	set $@piegecoorX2,334;
+	set $@piegecoorY2,140;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild71,257,284,0	script	#ep7Schal138	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf71";
+	set $@piegecoorX2,257;
+	set $@piegecoorY2,284;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild71,57,133,0	script	#ep7Schal139	-1,10,10,{
+
+OnTouch:
+	set $@namepiegenpc2$,"#ep7SchalEf71";
+	set $@piegecoorX2,57;
+	set $@piegecoorY2,133;
+	callfunc "arsi_piege2";
+	end;
+}
+//===================================
+ars_fild71,1,1,0	script	#ep7SchalEf71	111,{
+}
+
+
+
+
+
+//_________________________________________________________________
+//________________ Pièges : Core __________________________________
+//_________________________________________________________________
+
+-	script	arsi_schallTrap1	-1,{
+
+OnInit:	
+	initnpctimer;
+	setnpctimer 0;
+	disablenpc "#ep7SchalEf63";
+	disablenpc "#ep7SchalEf64";
+	disablenpc "#ep7SchalEf65";
+	disablenpc "#ep7SchalEf67";
+	
+	disablenpc "#warpschall1";	
+	disablenpc "#warpschall2";
+	disablenpc "#warpschall3";
+	set $@Schal_trap1,0;
+	end;
+
+//===============================================
+
+OnPCLoadMapEvent:
+
+	getmapxy @map$,@x,@y,0;
+	if ( @map$ == "ars_dun41" || @map$ == "ars_dun42" || @map$ == "ars_dun43") {undisguise;}
+	end;	
+
+
+//===============================================
+
+OnReroll:
+
+	set .number, rand(0,2);
+
+		if(.number == 0) {
+			setarray .mapname2$[0],"ars_dun42","116","61";
+			if($ep7_LangChoice & 1) { mapannounce ""+$@mapname1$+"","Le Navire de "+$@SchallPlayer$+" vient de subir un abordage ! Vous devez lui porter Secours !",1,0x990000;}
+			if($ep7_LangChoice & 2) { mapannounce ""+$@mapname1$+"","The "+$@SchallPlayer$+" ship has been boarding! You must help !",1,0x990000;}
+			donpcevent "arsi_schallTrap1::OnStart";end;}
+
+		if(.number== 1) {
+			setarray .mapname2$[0],"ars_dun41","120","88";
+			if($ep7_LangChoice & 1) { mapannounce ""+$@mapname1$+"","Le Navire de "+$@SchallPlayer$+" vient d'être attaqué par des Monstres Marins !",1,0x990000;}
+			if($ep7_LangChoice & 2) { mapannounce ""+$@mapname1$+"","The "+$@SchallPlayer$+" ship has just been attacked by sea monsters !",1,0x990000;}
+			donpcevent "arsi_schallTrap1::OnStart";end;}
+
+		if(.number == 2) {
+			setarray .mapname2$[0],"ars_dun43","139","106";
+			if($ep7_LangChoice & 1) { mapannounce ""+$@mapname1$+"","Le Navire de "+$@SchallPlayer$+" vient d'être entrainé vers les fonds marins !",1,0x990000;}
+			if($ep7_LangChoice & 2) { mapannounce ""+$@mapname1$+"","The "+$@SchallPlayer$+" ship recently led to the ocean floor!",1,0x990000;}
+			donpcevent "arsi_schallTrap1::OnStart";end;}
+	end;
+
+//===============================================
+
+OnStart:
+
+	disablenpc "#warpschall1";	
+	disablenpc "#warpschall2";
+	disablenpc "#warpschall3";
+	
+	
+	//Les Indicateurs Effects
+	if($@mapname1$ == "ars_fild63") {enablenpc "#ep7SchalEf63";}
+	if($@mapname1$ == "ars_fild64") {enablenpc "#ep7SchalEf64";}
+	if($@mapname1$ == "ars_fild65") {enablenpc "#ep7SchalEf65";}
+	if($@mapname1$ == "ars_fild67") {enablenpc "#ep7SchalEf67";}
+
+	areawarp ""+$@mapname1$+"",$@mapxPC1+15,$@mapyPC1+15,$@mapxPC1-15,$@mapyPC1-15,""+.mapname2$[0]+"",0,0;
+	
+	for( set .@i, 1; .@i < 20; set .@i, .@i +1 ) {
+		sleep2 500;
+		specialeffect 14,AREA,$@namepiegenpc$;}
+
+	areawarp ""+$@mapname1$+"",$@mapxPC1+15,$@mapyPC1+15,$@mapxPC1-15,$@mapyPC1-15,""+.mapname2$[0]+"",0,0;	
+	
+	//A Enlever
+	if($@mapname1$ == "ars_fild63") {disablenpc "#ep7SchalEf63";}
+	if($@mapname1$ == "ars_fild64") {disablenpc "#ep7SchalEf64";}
+	if($@mapname1$ == "ars_fild65") {disablenpc "#ep7SchalEf65";}
+	if($@mapname1$ == "ars_fild67") {disablenpc "#ep7SchalEf67";}
+		
+	donpcevent "arsi_schallTrap1::OnTimer";
+	
+	//Mob Set 1
+	if(.number == 0) {
+		areamonster "ars_dun42",0,200,200,0,""+getmonsterinfo(3943,0)+"",3943,8,"arsi_schallTrap1::OnMobDead";
+		areamonster "ars_dun42",0,200,200,0,""+getmonsterinfo(3945,0)+"",3945,1,"arsi_schallTrap1::OnMobDead";
+		set $@ep7_SchallMob1,9;
+		end;}
+
+	//Mob Set 2
+	if(.number == 1) {
+		areamonster "ars_dun41",0,200,200,0,""+getmonsterinfo(3955,0)+"",3955,1,"arsi_schallTrap1::OnMobDead";
+		areamonster "ars_dun41",0,200,200,0,""+getmonsterinfo(3945,0)+"",3945,10,"arsi_schallTrap1::OnMobDead";
+		set $@ep7_SchallMob1,11;
+		end;}
+
+	//Mob Set 3
+	if(.number == 2) {
+		areamonster "ars_dun43",0,200,200,0,""+getmonsterinfo(3955,0)+"",3955,2,"arsi_schallTrap1::OnMobDead";
+		areamonster "ars_dun43",0,200,200,0,""+getmonsterinfo(3956,0)+"",3956,10,"arsi_schallTrap1::OnMobDead";
+		areamonster "ars_dun43",0,200,200,0,""+getmonsterinfo(3957,0)+"",3957,8,"arsi_schallTrap1::OnMobDead";
+		set $@ep7_SchallMob1,20;
+		end;}
+
+	end;
+
+
+//===============================================
+
+OnMobDead:
+
+	set $@ep7_SchallMob1, $@ep7_SchallMob1-1;
+	if($@ep7_SchallMob1==0) {donpcevent "arsi_schallTrap1::OnEnd";}
+	end;
+
+//===============================================
+
+OnTimer:
+
+	sleep2 300000;
+	if($@Schal_trap1 == 1) {
+		killmonsterall "ars_dun41";
+		killmonsterall "ars_dun42";
+		killmonsterall "ars_dun43";
+		mapwarp "ars_dun41","ars_fild63",345,303;
+		mapwarp "ars_dun42","ars_fild63",345,303;
+		mapwarp "ars_dun43","ars_fild63",345,303;}
+		end;
+		
+//===============================================
+OnEnd:
+
+	if($ep7_LangChoice & 1) { mapannounce ""+.mapname2$[0]+"","Les Monstres ont été repoussés grâce à votre vaillance !",1,0x990000;}
+	if($ep7_LangChoice & 2) { mapannounce ""+.mapname2$[0]+"","The Monsters were pushed through your courage !",1,0x990000;}
+	sleep2 5000;
+	enablenpc "#warpschall1";
+	enablenpc "#warpschall2";
+	enablenpc "#warpschall3";	
+	sleep2 24000;	
+	set $@Schal_trap1,0;
+	end;
+}
+
+//=================================================================================
+
+ars_dun41,120,83,0	script	#warpschall1	45,1,1,{
+
+	if(EP7_LANGUE == 0) { dispbottom "Vous pouvez reprendre votre Route.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can resume your route.";}
+	callfunc "arsi_Boat";
+	warp ""+$@mapname1$+"",$@mapxPC1,$@mapyPC1;
+	end;	
+}
+//=================================================================================
+
+ars_dun42,109,107,0	script	#warpschall2	45,1,1,{
+
+	if(EP7_LANGUE == 0) { dispbottom "Vous pouvez reprendre votre Route.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can resume your route.";}
+	callfunc "arsi_Boat";
+	warp ""+$@mapname1$+"",$@mapxPC1,$@mapyPC1;
+	end;	
+}
+//=================================================================================
+
+ars_dun43,146,105,0	script	#warpschall3	45,1,1,{
+
+	if(EP7_LANGUE == 0) { dispbottom "Vous pouvez reprendre votre Route.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can resume your route.";}
+	callfunc "arsi_Boat";
+	warp ""+$@mapname1$+"",$@mapxPC1,$@mapyPC1;
+	end;	
+}
+
+//=================================================================================
+//         Région de Brynnlaw
+//=================================================================================
+
+
+-	script	arsi_schallTrap2	-1,{
+
+OnInit:	
+	initnpctimer;
+	setnpctimer 0;
+	disablenpc "#ep7SchalEf66";
+	disablenpc "#ep7SchalEf68";
+	disablenpc "#ep7SchalEf69";
+	disablenpc "#ep7SchalEf70";
+	disablenpc "#ep7SchalEf71";
+	
+	disablenpc "#warpschall4";	
+	disablenpc "#warpschall5";
+	disablenpc "#warpschall6";
+	set $@Schal_trap1,0;
+	end;
+
+//===============================================
+
+OnPCLoadMapEvent:
+
+	getmapxy @map$,@x,@y,0;
+	if ( @map$ == "ars_dun57" || @map$ == "ars_dun58" || @map$ == "ars_dun59") {undisguise;}
+	end;	
+
+
+//===============================================
+
+OnReroll:
+
+	set .number, rand(0,2);
+
+		if(.number == 0) {
+			setarray .mapname3$[0],"ars_dun57","148","111";
+			if($ep7_LangChoice & 1) { mapannounce ""+$@mapname2$+"","Le Navire de "+$@SchallPlayer2$+" vient de subir un abordage ! Vous devez lui porter Secours !",1,0x990000;}
+			if($ep7_LangChoice & 2) { mapannounce ""+$@mapname2$+"","The "+$@SchallPlayer2$+" ship has been boarding! You must help !",1,0x990000;}
+			donpcevent "arsi_schallTrap2::OnStart";end;}
+
+		if(.number == 1) {
+			setarray .mapname3$[0],"ars_dun58","105","140";
+			if($ep7_LangChoice & 1) { mapannounce ""+$@mapname2$+"","Le Navire de "+$@SchallPlayer2$+" vient d'être attaqué par des Monstres Marins !",1,0x990000;}
+			if($ep7_LangChoice & 2) { mapannounce ""+$@mapname2$+"","The "+$@SchallPlayer2$+" ship has just been attacked by sea monsters !",1,0x990000;}
+			donpcevent "arsi_schallTrap2::OnStart";end;}
+
+		if(.number == 2) {
+			setarray .mapname3$[0],"ars_dun59","139","106";
+			if($ep7_LangChoice & 1) { mapannounce ""+$@mapname2$+"","Le Navire de "+$@SchallPlayer2$+" vient d'être entrainé vers les fonds marins !",1,0x990000;}
+			if($ep7_LangChoice & 2) { mapannounce ""+$@mapname2$+"","The "+$@SchallPlayer2$+" ship recently led to the ocean floor!",1,0x990000;}
+			donpcevent "arsi_schallTrap2::OnStart";end;}
+	end;
+
+//===============================================
+
+OnStart:
+
+	disablenpc "#warpschall4";	
+	disablenpc "#warpschall5";
+	disablenpc "#warpschall6";
+	
+	
+	//Les Indicateurs Effects
+	if($@mapname2$ == "ars_fild66") {enablenpc "#ep7SchalEf66";}
+	if($@mapname2$ == "ars_fild68") {enablenpc "#ep7SchalEf68";}
+	if($@mapname2$ == "ars_fild69") {enablenpc "#ep7SchalEf69";}
+	if($@mapname2$ == "ars_fild70") {enablenpc "#ep7SchalEf70";}
+
+
+	areawarp ""+$@mapname2$+"",$@mapxPC2+15,$@mapyPC2+15,$@mapxPC2-15,$@mapyPC2-15,""+.mapname3$[0]+"",0,0;	
+	
+	for( set .@i, 1; .@i < 20; set .@i, .@i +1 ) {
+		sleep2 500;
+		specialeffect 14,AREA,$@namepiegenpc2$;}
+
+	areawarp ""+$@mapname2$+"",$@mapxPC2+15,$@mapyPC2+15,$@mapxPC2-15,$@mapyPC2-15,""+.mapname3$[0]+"",0,0;	
+	
+	//A Enlever
+	if($@mapname2$ == "ars_fild66") {disablenpc "#ep7SchalEf66";}
+	if($@mapname2$ == "ars_fild68") {disablenpc "#ep7SchalEf68";}
+	if($@mapname2$ == "ars_fild69") {disablenpc "#ep7SchalEf69";}
+	if($@mapname2$ == "ars_fild70") {disablenpc "#ep7SchalEf70";}
+	donpcevent "arsi_schallTrap2::OnTimer";
+	
+	//Mob Set 1
+	if(.number == 0) {
+		areamonster "ars_dun57",0,200,200,0,""+getmonsterinfo(3943,0)+"",3943,8,"arsi_schallTrap2::OnMobDead";
+		areamonster "ars_dun57",0,200,200,0,""+getmonsterinfo(3945,0)+"",3945,1,"arsi_schallTrap2::OnMobDead";
+		set $@ep7_SchallMob2,9;
+		end;}
+
+	//Mob Set 2
+	if(.number == 1) {
+		areamonster "ars_dun58",0,200,200,0,""+getmonsterinfo(3955,0)+"",3955,1,"arsi_schallTrap2::OnMobDead";
+		areamonster "ars_dun58",0,200,200,0,""+getmonsterinfo(3945,0)+"",3945,10,"arsi_schallTrap2::OnMobDead";
+		set $@ep7_SchallMob2,11;
+		end;}
+
+	//Mob Set 3
+	if(.number == 2) {
+		areamonster "ars_dun59",0,200,200,0,""+getmonsterinfo(3955,0)+"",3955,2,"arsi_schallTrap2::OnMobDead";
+		areamonster "ars_dun59",0,200,200,0,""+getmonsterinfo(3956,0)+"",3956,10,"arsi_schallTrap2::OnMobDead";
+		areamonster "ars_dun59",0,200,200,0,""+getmonsterinfo(3957,0)+"",3957,8,"arsi_schallTrap2::OnMobDead";
+		set $@ep7_SchallMob2,20;
+		end;}
+
+	end;
+
+
+//===============================================
+
+OnMobDead:
+
+	set $@ep7_SchallMob2, $@ep7_SchallMob2-1;
+	if($@ep7_SchallMob2==0) {donpcevent "arsi_schallTrap2::OnEnd";}
+	end;
+
+//===============================================
+
+OnTimer:
+
+	sleep2 300000;
+	if($@Schal_trap2 == 1) {
+		killmonsterall "ars_dun57";
+		killmonsterall "ars_dun58";
+		killmonsterall "ars_dun59";
+		mapwarp "ars_dun57","ars_fild63",345,303;
+		mapwarp "ars_dun58","ars_fild63",345,303;
+		mapwarp "ars_dun59","ars_fild63",345,303;}
+		end;
+		
+//===============================================
+OnEnd:
+
+	if($ep7_LangChoice & 1) { mapannounce ""+.mapname3$[0]+"","Les Monstres ont été repoussés grâce à votre vaillance !",1,0x990000;}
+	if($ep7_LangChoice & 2) { mapannounce ""+.mapname3$[0]+"","The Monsters were pushed through your courage !",1,0x990000;}
+	sleep2 5000;
+	enablenpc "#warpschall4";
+	enablenpc "#warpschall5";
+	enablenpc "#warpschall6";	
+	sleep2 24000;	
+	set $@Schal_trap2,0;
+	end;
+}
+
+//=================================================================================
+
+ars_dun57,148,120,0	script	#warpschall4	45,1,1,{
+
+	if(EP7_LANGUE == 0) { dispbottom "Vous pouvez reprendre votre Route.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can resume your route.";}
+	callfunc "arsi_Boat";
+	warp ""+$@mapname2$+"",$@mapxPC2,$@mapyPC2;
+	end;	
+}
+//=================================================================================
+
+ars_dun58,105,146,0	script	#warpschall5	45,1,1,{
+
+	if(EP7_LANGUE == 0) { dispbottom "Vous pouvez reprendre votre Route.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can resume your route.";}
+	callfunc "arsi_Boat";
+	warp ""+$@mapname2$+"",$@mapxPC2,$@mapyPC2;
+	end;	
+}
+//=================================================================================
+
+ars_dun59,146,105,0	script	#warpschall6	45,1,1,{
+
+	if(EP7_LANGUE == 0) { dispbottom "Vous pouvez reprendre votre Route.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can resume your route.";}	
+	callfunc "arsi_Boat";
+	warp ""+$@mapname2$+"",$@mapxPC2,$@mapyPC2;
+	end;	
+}
+
+//_________________________________________________________________
+//________________ Pièges : Défense _______________________________
+//_________________________________________________________________
+
+ars_fild66,164,219,0	script	#ep7SchalPir66	-1,10,10,{
+
+OnTouch:
+
+if(EP7_MANONEGRA >= 6 || EP7_MANONEGRA <= 11) {
+	set $@namepiegenpc1b$,"#ep7SchalP66";
+	set $@piegecoorX1b,164;
+	set $@piegecoorY1b,219;
+	callfunc "arsi_piege1b";}
+	end;
+}
+//===================================================================
+ars_fild68,252,136,0	script	#ep7SchalPir68	-1,10,10,{
+
+OnTouch:
+if(EP7_MANONEGRA >= 6 || EP7_MANONEGRA <= 11) {
+	set $@namepiegenpc1b$,"#ep7SchalP68";
+	set $@piegecoorX1b,252;
+	set $@piegecoorY1b,136;
+	callfunc "arsi_piege1b";}
+	end;
+}
+//===================================================================
+ars_fild69,175,137,0	script	#ep7SchalPir69	-1,10,10,{
+
+OnTouch:
+if(EP7_MANONEGRA >= 6 || EP7_MANONEGRA <= 11) {
+	set $@namepiegenpc1b$,"#ep7SchalP69";
+	set $@piegecoorX1b,175;
+	set $@piegecoorY1b,137;
+	callfunc "arsi_piege1b";}
+	end;
+}
+//===================================================================
+ars_fild70,130,256,0	script	#ep7SchalPir70	-1,10,10,{
+
+OnTouch:
+if(EP7_MANONEGRA >= 6 || EP7_MANONEGRA <= 11) {
+	set $@namepiegenpc1b$,"#ep7SchalP70";
+	set $@piegecoorX1b,130;
+	set $@piegecoorY1b,256;
+	callfunc "arsi_piege1b";}
+	end;
+}
+//===================================================================
+
+ars_fild66,1,1,0	script	#ep7SchalP66	111,{
+}
+ars_fild68,1,1,0	script	#ep7SchalP68	111,{
+}
+ars_fild69,1,1,0	script	#ep7SchalP69	111,{
+}
+ars_fild70,1,1,0	script	#ep7SchalP70	111,{
+}
+//===================================================================
+
+-	script	arsi_schallTrap1b	-1,{
+
+OnInit:	
+
+	initnpctimer;
+	setnpctimer 0;
+	disablenpc "#ep7SchalP66";
+	disablenpc "#ep7SchalP68";
+	disablenpc "#ep7SchalP69";
+	disablenpc "#ep7SchalP70";
+	
+	disablenpc "#warpschallSexp1";	
+	set $@Schal_trap1b,0;
+	end;
+//===================================================================
+
+OnReroll:
+			setarray .mapname3$[0],"ars_dun69","141","80";
+			if($ep7_LangChoice & 1) { mapannounce ""+$@mapname1b$+"",""+$@SchallPlayer1b$+" vient d'être attaqué par des Pirates !",1,0x990000;}
+			if($ep7_LangChoice & 2) { mapannounce ""+$@mapname1b$+"",""+$@SchallPlayer1b$+" has just been attacked by Pirates !",1,0x990000;}
+			donpcevent "arsi_schallTrap1b::OnStart";
+			end;
+
+//===============================================
+
+OnStart:
+
+	disablenpc "#warpschallSexp1";	
+	
+	//Les Indicateurs Effects
+	if($@mapname1b$ == "ars_fild66") {enablenpc "#ep7SchalP66";}
+	if($@mapname1b$ == "ars_fild68") {enablenpc "#ep7SchalP68";}
+	if($@mapname1b$ == "ars_fild69") {enablenpc "#ep7SchalP69";}
+	if($@mapname1b$ == "ars_fild70") {enablenpc "#ep7SchalP70";}
+
+
+	areawarp ""+$@mapname1b$+"",$@mapxPC1b+15,$@mapyPC1b+15,$@mapxPC1b-15,$@mapyPC1b-15,""+.mapname3$[0]+"",0,0;	
+	
+	for( set .@i, 1; .@i < 20; set .@i, .@i +1 ) {
+		sleep2 500;
+		specialeffect 14,AREA,$@namepiegenpc1b$;}
+
+	areawarp ""+$@mapname1b$+"",$@mapxPC1b+15,$@mapyPC1b+15,$@mapxPC1b-15,$@mapyPC1b-15,""+.mapname3$[0]+"",0,0;	
+	
+	
+	//A Enlever
+	if($@mapname1b$ == "ars_fild66") {disablenpc "#ep7SchalP66";}
+	if($@mapname1b$ == "ars_fild68") {disablenpc "#ep7SchalP68";}
+	if($@mapname1b$ == "ars_fild69") {disablenpc "#ep7SchalP69";}
+	if($@mapname1b$ == "ars_fild70") {disablenpc "#ep7SchalP70";}
+	donpcevent "arsi_schallTrap1b::OnTimer";
+	
+
+		areamonster "ars_dun69",0,200,200,0,""+getmonsterinfo(3966,0)+"",3966,6,"arsi_schallTrap1b::OnMobDead";
+		set $@ep7_SchallMob1b,6;
+		end;
+
+
+//===============================================
+
+OnMobDead:
+
+	set $@ep7_SchallMob1b, $@ep7_SchallMob1b-1;
+	if($@ep7_SchallMob1b==0) {donpcevent "arsi_schallTrap1b::OnEnd";}
+	end;
+
+//===============================================
+
+OnTimer:
+
+	sleep2 300000;
+	if($@Schal_trap1b == 1) {
+		killmonsterall "ars_dun69";
+		mapwarp "ars_dun69","ars_fild66",185,147;}
+		end;
+		
+//===============================================
+OnEnd:
+
+	if($ep7_LangChoice & 1) { mapannounce ""+.mapname3$[0]+"","C'était des Pirates de la Défense qui vous ont attaqué !",1,0x990000;}
+	if($ep7_LangChoice & 2) { mapannounce ""+.mapname3$[0]+"","It was the Pirates defense that attacked you !",1,0x990000;}
+	sleep2 5000;
+	enablenpc "#warpschallSexp1";
+	sleep2 24000;	
+	set $@Schal_trap1b,0;
+	end;
+}
+
+//=================================================================================
+
+ars_dun69,153,86,0	script	#warpschallSexp1	45,1,1,{
+
+	if(EP7_LANGUE == 0) { dispbottom "Vous pouvez reprendre votre Route.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can resume your route.";}
+	warp ""+$@mapname1b$+"",$@mapxPC1b,$@mapyPC1b;
+	end;	
+}
+
+
+//_________________________________________________________________
+//________________ Pièges : Schallmar _____________________________
+//_________________________________________________________________
+
+ars_fild74,337,352,0	script	#ep8SchWarp1	-1,10,10,{
+
+OnTouch:
+	if (getequipid(1) != 29158 || $@Schall_Abordage == 1) { end; }
+	set $@abordagenpc$,"#ep8SchEff1";
+	set $@abordagenpc2$,"#ep8SchWarp1"; 
+	getmapxy $@abordagemap$,$@abordcoorX,$@abordcoorY,1;
+	set $@AbordagePlayer$,strcharinfo(0);
+	set $@Schall_Abordage,1; 
+	donpcevent "arsi_SchallAbord::OnStart";
+	end;
+}
+//====================================================================
+ars_fild75,166,87,0	script	#ep8SchWarp2	-1,10,10,{
+
+OnTouch:
+	if (getequipid(1) != 29158 || $@Schall_Abordage == 1) { end; }
+	set $@abordagenpc$,"#ep8SchEff2";
+	set $@abordagenpc2$,"#ep8SchWarp2"; 
+	getmapxy $@abordagemap$,$@abordcoorX,$@abordcoorY,1;
+	set $@AbordagePlayer$,strcharinfo(0);
+	set $@Schall_Abordage,1; 
+	donpcevent "arsi_SchallAbord::OnStart";
+	end;
+}
+//====================================================================
+ars_fild76,326,125,0	script	#ep8SchWarp3	-1,10,10,{
+
+OnTouch:
+	if (getequipid(1) != 29158 || $@Schall_Abordage == 1) { end; }
+	set $@abordagenpc$,"#ep8SchEff3";
+	set $@abordagenpc2$,"#ep8SchWarp3"; 
+	getmapxy $@abordagemap$,$@abordcoorX,$@abordcoorY,1;
+	set $@AbordagePlayer$,strcharinfo(0);
+	set $@Schall_Abordage,1; 
+	donpcevent "arsi_SchallAbord::OnStart";
+	end;
+}
+//====================================================================
+ars_fild74,1,1,0	script	#ep8SchEff1	111,{
+}
+//====================================================================
+ars_fild75,1,1,0	script	#ep8SchEff2	111,{
+}
+//====================================================================
+ars_fild76,1,1,0	script	#ep8SchEff3	111,{
+}
+//====================================================================
+-	script	arsi_SchallAbord	-1,{
+
+OnInit:
+
+	initnpctimer;
+	setnpctimer 0;
+	set $@Schall_Abordage,0;
+	setarray .movenpcX[1],243,279,74,337,166,330,112,69,326,243,99,210;
+	setarray .movenpcY[1],102,241,201,352,87,165,313,146,125,282,311,59;
+	
+	disablenpc "#arsdun91";
+	disablenpc "#arsdun92";
+	end;
+//===============================================
+OnPCLoadMapEvent:
+
+	getmapxy @map$,@x,@y,0;
+	if ( @map$ == "ars_dun91" || @map$ == "ars_dun92") { 
+		if ( getequipid(1) != 29158) { 
+			warp "ars_fild74",0,0;
+			if(EP7_LANGUE == 0) { dispbottom "Pour mener un abordage vous devez avoir l'autorisation de Jean Bart du Menez Mikael ar Mor.";}
+			if(EP7_LANGUE == 1) { dispbottom "To carry out a collision you must have permission from Jean Bart of Menez Mikael ar Mor.";}
+			end;
+		}
+		undisguise;
+	}
+	end;	
+//===============================================	
+OnStart:
+			
+	setarray .mapname$[1],"ars_dun91","ars_dun92";	
+	setarray .mapcoorX[1],151,78;
+	setarray .mapcoorY[1],125,97;
+	set .rand,rand(1,2);
+	
+	if($ep7_LangChoice & 1) { mapannounce ""+$@abordagemap$+"","Abordage : "+$@AbordagePlayer$+" vient d'attaquer un navire !",1,0x9683EC;	}
+	if($ep7_LangChoice & 2) { mapannounce ""+$@abordagemap$+"","Collision : "+$@AbordagePlayer$+" just attack a ship !",1,0x9683EC;	}
+	
+	//Les Indicateurs Effects
+	if($@abordagemap$ == "ars_fild74") { enablenpc "#ep8SchEff1"; set .moverand, rand(1,4);}
+	if($@abordagemap$ == "ars_fild75") { enablenpc "#ep8SchEff2"; set .moverand, rand(5,8);}
+	if($@abordagemap$ == "ars_fild76") { enablenpc "#ep8SchEff3"; set .moverand, rand(9,12);}
+
+	areawarp ""+$@abordagemap$+"",$@abordcoorX+15,$@abordcoorY+15,$@abordcoorX-15,$@abordcoorY-15,""+.mapname$[.rand]+"",.mapcoorX[.rand],.mapcoorY[.rand];	
+	
+	movenpc ""+$@abordagenpc$+"",$@abordcoorX,$@abordcoorY;
+	for( set .@i, 1; .@i < 20; set .@i, .@i +1 ) {
+		sleep2 500;
+		specialeffect 14,AREA,$@abordagenpc$;}
+
+	areawarp ""+$@abordagemap$+"",$@abordcoorX+15,$@abordcoorY+15,$@abordcoorX-15,$@abordcoorY-15,""+.mapname$[.rand]+"",.mapcoorX[.rand],.mapcoorY[.rand];
+	sleep2 2000;
+	//Move Trigger NPC
+	movenpc ""+$@abordagenpc2$+"",.movenpcX[.moverand],.movenpcY[.moverand];	
+	if($ep7_LangChoice & 1) { mapannounce ""+.mapname$[.rand]+"","Abordage : Vous devez éliminer tout l'équipage ennemi !",1,0x9683EC;}
+	if($ep7_LangChoice & 2) { mapannounce ""+.mapname$[.rand]+"","Boarding: You must eliminate the enemy crew!",1,0x9683EC;}
+	sleep2 5000;
+	
+	if(.rand == 1) {
+		areamonster ""+.mapname$[.rand]+"",0,200,200,0,""+getmonsterinfo(3702,0)+"",3702,15,"arsi_SchallAbord::OnMobDead";
+		areamonster ""+.mapname$[.rand]+"",0,200,200,0,""+getmonsterinfo(3703,0)+"",3703,3,"arsi_SchallAbord::OnMobDead";
+		set $@ep8_AbordageMob,18;
+	}
+	if(.rand == 2) {
+		areamonster ""+.mapname$[.rand]+"",0,200,200,0,""+getmonsterinfo(3702,0)+"",3702,8,"arsi_SchallAbord::OnMobDead";
+		areamonster ""+.mapname$[.rand]+"",0,200,200,0,""+getmonsterinfo(3703,0)+"",3703,1,"arsi_SchallAbord::OnMobDead";
+		set $@ep8_AbordageMob,9;
+	}	
+	donpcevent "arsi_SchallAbord::OnTimer";
+	end;
+
+//===============================================
+OnTimer:
+
+	sleep2 300000;
+	if($@Schall_Abordage == 1) {
+		if($ep7_LangChoice & 1) { mapannounce ""+.mapname$[.rand]+"","Abordage : Trop tard ! Vous n'avez pas réussi à prendre d'assaut le navire ennemi !",1,0x9683EC;}
+		if($ep7_LangChoice & 2) { mapannounce ""+.mapname$[.rand]+"","Abordage: Too late! You have failed to storm the enemy ship!",1,0x9683EC;}
+		killmonsterall ""+.mapname$[.rand]+"";
+		mapwarp ""+.mapname$[.rand]+"",""+$@abordagemap$+"",$@abordcoorX,$@abordcoorY;
+	}
+	end;
+//===============================================
+OnMobDead:
+
+	set $@ep8_AbordageMob, $@ep8_AbordageMob-1;
+	if($@ep8_AbordageMob==0) { donpcevent "arsi_SchallAbord::OnEnd";}
+	end;
+	
+//===============================================
+OnEnd:
+	if($ep7_LangChoice & 1) { mapannounce ""+.mapname$[.rand]+"","Abordage : Vous pouvez piller le navire ennemi !",1,0x9683EC;}
+	if($ep7_LangChoice & 2) { mapannounce ""+.mapname$[.rand]+"","Abordage: You can loot the enemy ship!",1,0x9683EC;}
+	enablenpc "#arsdun91";
+	enablenpc "#arsdun92";
+	//5 Minutes
+	sleep2 300000;
+	donpcevent "arsi_SchallAbord::OnInit";
+	end;
+	
+}
+//=================================================================================
+ars_dun91,156,148,5	script	#arsdun91	1324,{
+
+if(EP7_LANGUE == 0) {set @name$,"^33CC00Coffre^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^33CC00Chest^000000";}
+	
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) { mes "Vous venez de récupérer un trésor sur le bateau !";}
+	if(EP7_LANGUE == 1) { mes "You just get a treasure on the boat!";}
+	close2;
+	if (EP8_ABORD != 50) {
+		set EP8_ABORD,EP8_ABORD+1;
+	}
+	warp ""+$@abordagemap$+"",$@abordcoorX,$@abordcoorY;
+	
+	set @n,rand(0,99);	
+	if(@n > 65) { getitem $ep7_Tcoins,1;end;}
+	if(@n > 30) { getitem $ep7_Tcoins,10;end;}
+	if(@n > 15) { getitem 29159,1;end;}
+	if(@n > 0 && EP8_Q5377 == 0) { set EP8_Q5377,1; getitem 29104,1; end;}
+	if(@n > 0 && EP8_Q5377 >= 1) { getitem 29177,1;end;}
+	end;
+}
+ars_dun92,63,95,3	duplicate(#arsdun91)	#arsdun92	1324
+
+//_________________________________________________________________
+//________________ Pièges : Franky  _______________________________
+//_________________________________________________________________
+
+ars_fild72,122,180,0	script	#ep8SchF1	-1,10,10,{
+
+OnTouch:
+	if ($@Schall_FrankyAtt == 1 || EP8_FRANKY >= 7 || EP8_FRANKY <= 2) { end; }
+	set $@frankynpc$,"#ep8SchF1";
+	set $@frankynpc2$,"#ep8SchEffa"; 
+	getmapxy $@frankymap$,$@frankycoorX,$@frankycoorY,1;
+	set $@FrankyPlayer$,strcharinfo(0);
+	set $@FrankyLvL,EP8_FRANKY;
+	set $@Schall_FrankyAtt,1; 
+	donpcevent "arsi_FrankyAtt::OnStart";
+	end;
+}
+//====================================================================
+ars_fild72,1,1,0	script	#ep8SchEffa	111,{
+}
+//====================================================================
+-	script	arsi_FrankyAtt	-1,{
+
+OnInit:
+
+	initnpctimer;
+	setnpctimer 0;
+	set $@Schall_FrankyAtt,0;
+	setarray .movenpcX[1],122,124,282,226;
+	setarray .movenpcY[1],180,274,282,129;
+	disablenpc "#arsdun95";
+	end;
+//===============================================
+OnPCLoadMapEvent:
+
+	getmapxy @map$,@x,@y,0;
+	if ( @map$ == "ars_dun95") { 
+		undisguise;
+	}
+	end;	
+//===============================================	
+OnStart:
+	
+	setarray .monsterid[3],3707,3708,3709,3710;
+	if($EP7_LANGUE == 0) { setarray .monstername$[3],"Frère de Franky","Mère de Franky","Cousin de Franky","Oncle de Franky";}
+	if($EP7_LANGUE == 1) { setarray .monstername$[3],"Franky's Brother","Franky's Mum","Franky's Cousin","Franky's Uncle";}
+	
+	if($ep7_LangChoice & 1) { mapannounce ""+$@frankymap$+"","Franky Family : "+$@FrankyPlayer$+" vient d'être attaqué par "+.monstername$[$@FrankyLvL]+"  !",1,0x7FFF00;}		
+	if($ep7_LangChoice & 2) { mapannounce ""+$@frankymap$+"","Franky Family : "+$@FrankyPlayer$+" have been kill by "+.monstername$[$@FrankyLvL]+"  !",1,0x7FFF00;}
+	//Les Indicateurs Effects
+	enablenpc "#ep8SchEffa"; 
+
+	areawarp ""+$@frankymap$+"",$@frankycoorX+15,$@frankycoorY+15,$@frankycoorX-15,$@frankycoorY-15,"ars_dun95",0,0;	
+	
+	movenpc ""+$@frankynpc2$+"",$@frankycoorX,$@frankycoorY;
+	for( set .@i, 1; .@i < 20; set .@i, .@i +1 ) {
+		sleep2 500;
+		specialeffect 14,AREA,$@frankynpc2$;}
+
+	areawarp ""+$@frankymap$+"",$@frankycoorX+15,$@frankycoorY+15,$@frankycoorX-15,$@frankycoorY-15,"ars_dun95",0,0;
+	sleep2 2000;
+	//Move Trigger NPC
+	set .moverand, rand(1,4);
+	movenpc ""+$@frankynpc2$+"",.mapcoorX[.moverand],.mapcoorX[.moverand];	
+	
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun95","Franky Family : Vous devez éliminer le "+.monstername$[$@FrankyLvL]+" !",1,0x7FFF00;}	
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun95","Franky Family : You must eliminate "+.monstername$[$@FrankyLvL]+" !",1,0x7FFF00;}
+	sleep2 5000;
+	
+		areamonster "ars_dun95",0,200,200,0,""+getmonsterinfo(3705,0)+"",3705,10,"arsi_FrankyAtt::OnMobDead";
+		areamonster "ars_dun95",0,200,200,0,""+getmonsterinfo(.monsterid[$@FrankyLvL],0)+"",.monsterid[$@FrankyLvL],1,"arsi_FrankyAtt::OnMobDead";
+		set $@ep8_FrankAttMob,11;
+
+	donpcevent "arsi_FrankyAtt::OnTimer";
+	end;
+
+//===============================================
+OnTimer:
+
+	sleep2 300000;
+	if($@Schall_FrankyAtt == 1) {
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun95","Franky Family : Trop tard ! Vous n'avez pas réussi à tuer le membre de la Franky Family !",1,0x7FFF00;	}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun95","Franky Family : Too late ! You don't succeed to eliminate the member of the Franky Family !",1,0x7FFF00;}
+		killmonsterall "ars_dun95";
+		mapwarp "ars_dun95",""+$@frankymap$+"",$@frankycoorX,$@frankycoorY;
+	}
+	end;
+//===============================================
+OnMobDead:
+
+	set $@ep8_FrankAttMob, $@ep8_FrankAttMob-1;
+	if($@ep8_FrankAttMob == 0) { donpcevent "arsi_FrankyAtt::OnEnd";}
+	end;
+	
+//===============================================
+OnEnd:
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun95","Franky Family : Vous pouvez sortir !",1,0x7FFF00;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun95","Franky Family : You can go out !",1,0x7FFF00;}
+	enablenpc "#arsdun95";
+	//5 Minutes
+	sleep2 300000;
+	donpcevent "arsi_FrankyAtt::OnInit";
+	end;
+	
+}
+//====================================================================
+ars_dun95,111,71,5	script	#arsdun95	45,1,1,{
+
+	if(EP8_FRANKY >= 3 || EP8_FRANKY < 7) {	
+		set EP8_FRANKY,EP8_FRANKY+1;
+		if(EP7_LANGUE == 0) { dispbottom "Vous venez de vaincre un membre de la famille de Franky.";}
+		if(EP7_LANGUE == 1) { dispbottom "You just eliminate a member of the Franky Family.";}
+		
+		if(EP8_FRANKY == 6) { 
+			getitem 29178,1;
+			if(EP7_LANGUE == 0) { dispbottom "Vous venez de trouver un "+getitemname(29178)+" !";}
+			if(EP7_LANGUE == 1) { dispbottom "You have found a "+getitemname(29178)+" !";}
+		}
+		if(EP8_FRANKY == 7) { 
+			changequest 70657,70658; 
+			if(EP7_LANGUE == 0) { dispbottom "Toute la Franky Family a été tuée.";}
+			if(EP7_LANGUE == 1) { dispbottom "All the Franky Family habve been kill.";}
+		}
+	}	
+	warp ""+$@frankymap$+"",$@frankycoorX,$@frankycoorY;
+	end;
+	
+}

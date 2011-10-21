@@ -1,0 +1,715 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Habitants
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 1.0
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//
+//
+//================================================================================================= 
+
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Habitants : Coppalana
+// 2 = Habitants : Brynnlaw
+//
+//_________________________________________________________________
+//________________ Habitants : Coppalana __________________________
+//_________________________________________________________________
+
+tantale_ile,124,164,5	script	Marchand#ep71	49,{
+
+	set @name$,"^66CCFFMarchand^000000";
+	set @region$,"tantale_march";
+	callfunc "arsi_habitants";
+	end;
+}
+tantale_ile,132,176,3	duplicate(Marchand#ep71)	Marchand#ep72	50
+tantale_ile,111,175,3	duplicate(Marchand#ep71)	Marchand#ep73	59
+//=========================================================================
+tantale_ile,115,159,5	script	Marchande#ep7	73,{
+
+	set @name$,"^FF00CCMarchande^000000";
+	set @region$,"tantale_march";
+	callfunc "arsi_habitants";
+	end;
+}
+tantale_ile,130,176,1	duplicate(Marchande#ep7)	Marchande#ep7a	74
+
+//=========================================================================
+//                         Habitants
+//=========================================================================
+
+ars_dun61,200,29,5	script	Habitant#ep7C1	476,{
+
+	set @name$,"^66CCFFMarchand^000000";
+	set @region$,"Coppa_Hab";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild63,91,164,3	duplicate(Habitant#ep7C1)	Habitant#ep7C2	477
+ars_fild64,107,114,3	duplicate(Habitant#ep7C1)	Habitant#ep7C3	477
+ars_fild64,169,111,3	duplicate(Habitant#ep7C1)	Habitant#ep7C4	476
+//=========================================================================
+ars_fild63,68,164,5	script	Habitante#ep7C1	478,{
+
+	set @name$,"^FF00CCMarchande^000000";
+	set @region$,"Coppa_Hab";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild63,95,140,3	duplicate(Habitante#ep7C1)	Habitante#ep7C2	478
+
+//=========================================================================
+//                         Vacanciers
+//=========================================================================
+
+ars_fild65,244,316,3	script	Touriste#ep7M1	841,{
+
+	set @name$,"^66CCFFTouriste^000000";
+	if (EP7_SCHALLMAR <= 4) {set @region$,"Coppa_Hotel1";}
+	if (EP7_SCHALLMAR >= 5) {set @region$,"Coppa_Hotel2";}
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild65,239,331,3	duplicate(Touriste#ep7M1)	Touriste#ep7M2	869
+ars_fild65,316,336,3	duplicate(Touriste#ep7M1)	Touriste#ep7M3	904
+ars_fild65,136,332,3	duplicate(Touriste#ep7M1)	Touriste#ep7M4	841
+//=========================================================================
+ars_fild65,246,335,5	script	Touriste#ep7F1	101,{
+
+	set @name$,"^FF00CCTouriste^000000";
+	if (EP7_SCHALLMAR <= 4) {set @region$,"Coppa_Hotel1";}
+	if (EP7_SCHALLMAR >= 5) {set @region$,"Coppa_Hotel2";}
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild65,311,314,3	duplicate(Touriste#ep7F1)	Touriste#ep7F2	724
+ars_fild65,184,300,5	duplicate(Touriste#ep7F1)	Touriste#ep7F3	101
+ars_fild65,162,329,3	duplicate(Touriste#ep7F1)	Touriste#ep7F4	815
+//=========================================================================
+//                         Personnel
+//=========================================================================
+
+ars_fild65,252,329,5	script	Majordome#ep7M1	822,{
+
+	set @name$,"^66CCFFMajordome^000000";
+	if (EP7_SCHALLMAR <= 4) {set @region$,"Coppa_Staff1";}
+	if (EP7_SCHALLMAR >= 5) {set @region$,"Coppa_Staff2";}
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild65,188,319,3	duplicate(Majordome#ep7M1)	Majordome#ep7M2	822
+//=========================================================================
+ars_dun61,153,86,5	script	Servante#ep7F1	112,{
+
+	set @name$,"^FF00CCServante^000000";
+	if (EP7_SCHALLMAR <= 4) {set @region$,"Coppa_Staff1";}
+	if (EP7_SCHALLMAR >= 5) {set @region$,"Coppa_Staff2";}
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun61,136,40,3	duplicate(Servante#ep7F1)	Servante#ep7F2	113
+ars_dun61,67,60,3	duplicate(Servante#ep7F1)	Servante#ep7F3	114
+
+//=========================================================================
+//                         Otages
+//=========================================================================
+
+ars_dun44,93,164,3	script	Otage#ep7	870,{
+
+	set @name$,"^66CCFFOtage^000000";
+	if (EP7_SCHALLMAR <= 4) {set @region$,"Coppa_Priso1";}
+	if (EP7_SCHALLMAR >= 5) {set @region$,"Coppa_Priso2";}
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun44,75,162,5	duplicate(Otage#ep7)	Otage#ep7a	870
+
+//_________________________________________________________________
+//________________ Habitants : Brynnlaw ___________________________
+//_________________________________________________________________
+
+ars_fild66,125,202,5	script	Commerçant#ep7	88,{
+
+	set @name$,"^66CCFFCommerçant^000000";
+	set @region$,"Brynn_March";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild66,159,211,5	duplicate(Commerçant#ep7)	Commerçant#ep7a	89
+ars_fild66,189,213,5	duplicate(Commerçant#ep7)	Commerçant#ep7b	930
+ars_fild66,215,204,3	duplicate(Commerçant#ep7)	Commerçant#ep7c	931
+ars_fild66,170,173,3	duplicate(Commerçant#ep7)	Commerçant#ep7d	88
+ars_fild66,258,205,3	duplicate(Commerçant#ep7)	Commerçant#ep7e	930
+ars_fild66,256,164,3	duplicate(Commerçant#ep7)	Commerçant#ep7f	89
+ars_fild69,91,284,3	duplicate(Commerçant#ep7)	Commerçant#ep7g	89
+ars_fild69,92,171,3	duplicate(Commerçant#ep7)	Commerçant#ep7h	931
+ars_fild69,172,165,5	duplicate(Commerçant#ep7)	Commerçant#ep7i	930
+ars_fild68,271,150,5	duplicate(Commerçant#ep7)	Commerçant#ep7j	88
+ars_fild68,251,138,5	duplicate(Commerçant#ep7)	Commerçant#ep7k	89
+
+ars_fild66,148,157,5	duplicate(Commerçant#ep7)	Commerçant#ep7l	930
+//=========================================================================
+ars_fild66,168,221,3	script	Commerçante#ep7	73,{
+
+	set @name$,"^FF00CCCommerçante^000000";
+	set @region$,"Brynn_March";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild66,188,216,5	duplicate(Commerçante#ep7)	Commerçante#ep7a	74
+ars_fild66,224,217,5	duplicate(Commerçante#ep7)	Commerçante#ep7b	102
+ars_fild66,190,179,5	duplicate(Commerçante#ep7)	Commerçante#ep7c	73
+ars_fild66,169,130,5	duplicate(Commerçante#ep7)	Commerçante#ep7d	74
+ars_fild66,233,165,5	duplicate(Commerçante#ep7)	Commerçante#ep7e	102
+ars_fild69,267,287,5	duplicate(Commerçante#ep7)	Commerçante#ep7f	102
+ars_fild69,174,185,5	duplicate(Commerçante#ep7)	Commerçante#ep7g	73
+ars_fild68,250,155,5	duplicate(Commerçante#ep7)	Commerçante#ep7h	74
+
+ars_fild66,153,133,5	duplicate(Commerçante#ep7)	Commerçante#ep7i	74
+ars_fild71,125,250,5	duplicate(Commerçante#ep7)	Commerçante#ep7j	102
+ars_fild71,153,238,5	duplicate(Commerçante#ep7)	Commerçante#ep7k	73
+ars_fild71,138,207,5	duplicate(Commerçante#ep7)	Commerçante#ep7l	73
+//=========================================================================
+//                         Habitant de Brynnlaw
+//=========================================================================
+
+ars_fild66,123,234,3	script	Brynnlawien#ep7	865,{
+
+	set @name$,"^66CCFFBrynnlawien^000000";
+	set @region$,"Brynn_hab";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild66,151,202,1	duplicate(Brynnlawien#ep7)	Brynnlawien#ep7a	904
+ars_fild66,216,217,5	duplicate(Brynnlawien#ep7)	Brynnlawien#ep7b	921
+ars_fild66,247,172,5	duplicate(Brynnlawien#ep7)	Brynnlawien#ep7c	943
+ars_fild66,180,190,5	duplicate(Brynnlawien#ep7)	Brynnlawien#ep7d	904
+ars_fild66,159,110,5	duplicate(Brynnlawien#ep7)	Brynnlawien#ep7e	865
+//=========================================================================
+ars_fild66,124,194,1	script	Brynnlawienne#ep7	69,{
+
+	set @name$,"^FF00CCBrynnlawienne^000000";
+	set @region$,"Brynn_hab";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild66,160,230,5	duplicate(Brynnlawienne#ep7)	Brynnlawienne#ep7a	124
+ars_fild66,251,209,5	duplicate(Brynnlawienne#ep7)	Brynnlawienne#ep7b	877
+ars_fild66,219,186,5	duplicate(Brynnlawienne#ep7)	Brynnlawienne#ep7c	892
+ars_fild66,167,142,5	duplicate(Brynnlawienne#ep7)	Brynnlawienne#ep7d	69
+//=========================================================================
+//                         Client de la Couronne de Cuivre
+//=========================================================================
+
+ars_dun48,120,42,3	script	Client#cep7	967,{
+
+	set @name$,"^66CCFFClient^000000";
+	set @region$,"Brynn_Couronne";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun48,67,44,5	duplicate(Client#cep7)	Client#cep7a	964
+ars_dun48,63,26,5	duplicate(Client#cep7)	Client#cep7b	921
+ars_dun48,35,79,5	duplicate(Client#cep7)	Client#cep7c	943
+//=========================================================================
+ars_dun48,71,44,3	script	Cliente#cep7	979,{
+
+	set @name$,"^FF00CCCliente^000000";
+	set @region$,"Brynn_Couronne";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun48,87,27,5	duplicate(Cliente#cep7)	Cliente#cep7a	877
+ars_dun48,45,58,5	duplicate(Cliente#cep7)	Cliente#cep7b	124
+//=========================================================================
+//                         Noble de la Couronne de Cuivre
+//=========================================================================
+
+ars_dun55,160,100,3	script	Noble#cep7	872,{
+
+	set @name$,"^66CCFFNoble^000000";
+	set @region$,"Brynn_clientspe";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun55,176,92,5	duplicate(Noble#cep7)	Noble#cep7a	903
+ars_dun55,178,112,5	duplicate(Noble#cep7)	Noble#cep7b	872
+ars_dun55,180,103,3	duplicate(Noble#cep7)	Noble#cep7c	967
+ars_dun55,154,133,5	duplicate(Noble#cep7)	Noble#cep7d	903
+ars_dun55,173,149,1	duplicate(Noble#cep7)	Noble#cep7e	967
+
+ars_dun48,109,68,0	duplicate(Noble#cep7)	Noble#cep7f	967
+ars_dun48,104,78,0	duplicate(Noble#cep7)	Noble#cep7g	903
+ars_dun48,120,73,0	duplicate(Noble#cep7)	Noble#cep7h	872
+ars_dun48,134,68,2	duplicate(Noble#cep7)	Noble#cep7i	967
+//=========================================================================
+//                         Videur de la Couronne de Cuivre
+//=========================================================================
+
+ars_dun48,58,48,3	script	Videur#cep7	810,{
+
+	set @name$,"^66CCFFVideur^000000";
+	set @region$,"Brynn_videur";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun48,116,22,5	duplicate(Videur#cep7)	Videur#cep7a	810
+ars_dun48,113,47,5	duplicate(Videur#cep7)	Videur#cep7b	808
+//=========================================================================
+//                         Catin de la Couronne de Cuivre
+//=========================================================================
+
+ars_dun55,180,94,3	script	Catin#cep7	940,{
+
+	set @name$,"^FF00CCCatin^000000";
+	set @region$,"Brynn_catin";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun55,176,87,5	duplicate(Catin#cep7)	Catin#cep7a	940
+ars_dun55,182,110,3	duplicate(Catin#cep7)	Catin#cep7b	940
+ars_dun55,142,101,5	duplicate(Catin#cep7)	Catin#cep7c	940
+ars_dun55,150,134,5	duplicate(Catin#cep7)	Catin#cep7d	940
+ars_dun55,173,151,5	duplicate(Catin#cep7)	Catin#cep7e	940
+ars_dun55,165,163,5	duplicate(Catin#cep7)	Catin#cep7f	940
+
+ars_dun48,107,79,2	duplicate(Catin#cep7)	Catin#cep7g	940
+ars_dun48,124,71,2	duplicate(Catin#cep7)	Catin#cep7h	940
+ars_dun48,140,65,2	duplicate(Catin#cep7)	Catin#cep7i	940
+//=========================================================================
+//                         Moine de Tibérine
+//=========================================================================
+
+ars_dun52,89,101,0	script	Moine de Tibérine#ep7a	412,{
+
+	set @name$,"^66CCFFMoine de Tibérine^000000";
+	set @region$,"Brynn_tiberM";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun52,94,90,0	duplicate(Moine de Tibérine#ep7a)	Moine de Tibérine#ep7b	412
+ars_dun52,56,49,5	duplicate(Moine de Tibérine#ep7a)	Moine de Tibérine#ep7c	412
+ars_dun52,154,42,3	duplicate(Moine de Tibérine#ep7a)	Moine de Tibérine#ep7d	412
+ars_dun52,144,70,3	duplicate(Moine de Tibérine#ep7a)	Moine de Tibérine#ep7e	412
+ars_dun52,95,96,0	duplicate(Moine de Tibérine#ep7a)	Moine de Tibérine#ep7f	412
+ars_dun52,95,108,0	duplicate(Moine de Tibérine#ep7a)	Moine de Tibérine#ep7g	412
+ars_dun52,87,108,0	duplicate(Moine de Tibérine#ep7a)	Moine de Tibérine#ep7h	412
+//=========================================================================
+//                         Marin de Brynnlaw
+//=========================================================================
+
+ars_fild70,293,330,3	script	Marin de Brynnlaw#ep7	429,{
+
+	set @name$,"^66CCFFMarin de Brynnlaw^000000";
+	set @region$,"Brynn_Marin";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild70,321,326,3	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7a	964
+ars_fild69,262,276,3	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7b	964
+ars_fild69,74,288,3	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7c	429
+ars_fild69,163,187,3	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7d	429
+ars_fild69,103,117,3	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7e	964
+ars_fild68,248,295,0	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7f	964
+ars_fild68,273,290,0	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7g	100
+ars_fild68,276,138,3	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7h	964
+ars_fild68,238,124,5	duplicate(Marin de Brynnlaw#ep7)	Marin de Brynnlaw#ep7i	100
+//=========================================================================
+//                         Esclave
+//=========================================================================
+
+ars_dun51,103,189,5	script	Esclave#cep7	870,{
+
+	set @name$,"^66CCFFEsclave^000000";
+	set @region$,"Brynn_esclave";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun51,103,208,5	duplicate(Esclave#cep7)	Esclave#cep7a	870
+ars_dun51,199,202,3	duplicate(Esclave#cep7)	Esclave#cep7b	870
+ars_dun51,199,191,3	duplicate(Esclave#cep7)	Esclave#cep7c	870
+ars_dun51,110,133,3	duplicate(Esclave#cep7)	Esclave#cep7d	870
+ars_dun51,118,129,3	duplicate(Esclave#cep7)	Esclave#cep7e	870
+//=========================================================================
+ars_dun51,146,174,3	script	Esclave#fcep7	919,{
+
+	set @name$,"^FF00CCEsclave^000000";
+	set @region$,"Brynn_esclave";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun51,137,165,5	duplicate(Esclave#fcep7)	Esclave#fcep7a	123
+ars_dun51,187,199,5	duplicate(Esclave#fcep7)	Esclave#fcep7b	919
+ars_dun51,187,208,5	duplicate(Esclave#fcep7)	Esclave#fcep7c	123
+ars_dun51,113,148,5	duplicate(Esclave#fcep7)	Esclave#fcep7d	123
+ars_dun51,104,149,5	duplicate(Esclave#fcep7)	Esclave#fcep7e	919
+//=========================================================================
+//                         Paysan
+//=========================================================================
+
+ars_fild69,272,301,3	script	Paysan#cep7	99,{
+
+	set @name$,"^66CCFFPaysan^000000";
+	set @region$,"Brynn_paysanEpices";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild69,326,266,5	duplicate(Paysan#cep7)	Paysan#cep7a	968
+ars_fild69,139,304,5	duplicate(Paysan#cep7)	Paysan#cep7b	945
+ars_fild69,122,301,5	duplicate(Paysan#cep7)	Paysan#cep7c	841
+ars_fild69,240,135,5	duplicate(Paysan#cep7)	Paysan#cep7d	945
+ars_fild69,135,74,0	duplicate(Paysan#cep7)	Paysan#cep7e	841
+//=========================================================================
+ars_fild69,302,267,3	script	Paysanne#cep7	101,{
+
+	set @name$,"^FF00CCPaysanne^000000";
+	set @region$,"Brynn_paysanEpices";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild69,327,290,5	duplicate(Paysanne#cep7)	Paysanne#cep7a	863
+ars_fild69,131,289,5	duplicate(Paysanne#cep7)	Paysanne#cep7b	942
+ars_fild69,142,141,5	duplicate(Paysanne#cep7)	Paysanne#cep7c	863
+ars_fild69,122,76,0	duplicate(Paysanne#cep7)	Paysanne#cep7d	942
+ars_fild69,130,92,0	duplicate(Paysanne#cep7)	Paysanne#cep7e	101
+//=========================================================================
+//                         Fonctionnaire
+//=========================================================================
+
+ars_dun54,127,55,3	script	Fonctionnaire#cep7	952,{
+
+	set @name$,"^66CCFFFonctionnaire^000000";
+	set @region$,"Brynn_fonctionnaire";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun54,146,67,5	duplicate(Fonctionnaire#cep7)	Fonctionnaire#cep7a	952
+ars_dun54,166,63,5	duplicate(Fonctionnaire#cep7)	Fonctionnaire#cep7b	952
+ars_dun54,123,95,0	duplicate(Fonctionnaire#cep7)	Fonctionnaire#cep7c	952
+ars_dun54,119,104,5	duplicate(Fonctionnaire#cep7)	Fonctionnaire#cep7d	952
+ars_dun54,123,100,2	duplicate(Fonctionnaire#cep7)	Fonctionnaire#cep7e	952
+ars_dun54,119,141,5	duplicate(Fonctionnaire#cep7)	Fonctionnaire#cep7f	952
+
+//=========================================================================
+//                         La Main Noire
+//=========================================================================
+
+ars_dun56,64,210,3	script	Guildien#cep7	880,{
+
+	set @name$,"^66CCFFGuildien^000000";
+	set @region$,"Brynn_main";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun56,87,214,2	duplicate(Guildien#cep7)	Guildien#cep7a	884
+ars_dun56,101,202,2	duplicate(Guildien#cep7)	Guildien#cep7b	884
+ars_dun56,146,203,5	duplicate(Guildien#cep7)	Guildien#cep7c	880
+ars_dun56,163,208,5	duplicate(Guildien#cep7)	Guildien#cep7d	998
+ars_dun56,166,167,0	duplicate(Guildien#cep7)	Guildien#cep7e	997
+
+//=========================================================================
+//                         Mutants du Gwened
+//=========================================================================
+
+ars_dun62,122,11,5	script	Mutant#ep7F1	999,{
+
+	set @name$,"^66CCFFMutant^000000";
+	if (EP7_TRESORB <= 8) {set @region$,"Brynn_Mutant1";}
+	if (EP7_TRESORB >= 9) {set @region$,"Brynn_Mutant2";}
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun62,33,198,5	duplicate(Mutant#ep7F1)	Mutant#ep7F2	980
+ars_dun62,180,203,5	duplicate(Mutant#ep7F1)	Mutant#ep7F3	981
+ars_dun62,216,215,2	duplicate(Mutant#ep7F1)	Mutant#ep7F4	980
+ars_dun62,206,140,3	duplicate(Mutant#ep7F1)	Mutant#ep7F5	981
+
+//=========================================================================
+//                         Gardes de Schallmar
+//=========================================================================
+
+ars_dun73,131,47,3	script	Garde Schallmar#ep7a	417,{
+
+	set @name$,"^66CCFFGuildien^000000";
+	set @region$,"Schall_Garde1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun73,140,47,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7b	417
+ars_dun73,145,120,2	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7c	417
+ars_dun73,145,113,2	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7d	417
+ars_fild72,220,79,2	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7e	417
+ars_fild72,227,79,2	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7f	417
+ars_fild72,214,187,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7g	417
+ars_fild72,214,180,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7h	417
+ars_fild72,97,277,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7i	417
+ars_fild72,97,268,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7j	417
+ars_fild72,212,285,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7k	417
+ars_fild72,277,297,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7l	417
+ars_fild72,286,297,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7m	417
+ars_fild72,301,175,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7n	417
+ars_fild72,139,97,3	duplicate(Garde Schallmar#ep7a)	Garde Schallmar#ep7o	417
+
+//=========================================================================
+//                         Marchands de Schallmar
+//=========================================================================
+
+ars_fild72,92,257,3	script	Marchand#ep8a	67,{
+
+	set @name$,"^66CCFFMarchand^000000";
+	set @region$,"Schall_Merch1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild72,95,307,3	duplicate(Marchand#ep8a)	Marchand#ep8b	85
+ars_fild72,159,282,5	duplicate(Marchand#ep8a)	Marchand#ep8c	86
+ars_fild72,246,253,3	duplicate(Marchand#ep8a)	Marchand#ep8d	59
+ars_fild72,267,264,3	duplicate(Marchand#ep8a)	Marchand#ep8e	85
+ars_fild72,310,284,5	duplicate(Marchand#ep8a)	Marchand#ep8f	86
+ars_fild72,251,312,3	duplicate(Marchand#ep8a)	Marchand#ep8g	59
+ars_fild72,279,123,5	duplicate(Marchand#ep8a)	Marchand#ep8h	86
+ars_fild72,294,97,3	duplicate(Marchand#ep8a)	Marchand#ep8i	59
+ars_fild72,200,85,5	duplicate(Marchand#ep8a)	Marchand#ep8j	67
+ars_fild72,180,101,3	duplicate(Marchand#ep8a)	Marchand#ep8k	85
+ars_fild72,137,124,3	duplicate(Marchand#ep8a)	Marchand#ep8l	85
+//=========================================================================
+ars_fild72,89,292,3	script	Marchande#ep8a	75,{
+
+	set @name$,"^FF00CCMarchande^000000";
+	set @region$,"Schall_Merch1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild72,81,309,3	duplicate(Marchande#ep8a)	Marchande#ep8b	77
+ars_fild72,235,289,3	duplicate(Marchande#ep8a)	Marchande#ep8c	73
+ars_fild72,287,232,3	duplicate(Marchande#ep8a)	Marchande#ep8d	74
+ars_fild72,295,274,3	duplicate(Marchande#ep8a)	Marchande#ep8e	77
+ars_fild72,309,293,3	duplicate(Marchande#ep8a)	Marchande#ep8f	73
+ars_fild72,259,312,3	duplicate(Marchande#ep8a)	Marchande#ep8g	74
+ars_fild72,271,105,3	duplicate(Marchande#ep8a)	Marchande#ep8h	73
+ars_fild72,269,85,3	duplicate(Marchande#ep8a)	Marchande#ep8i	74
+ars_fild72,195,98,3	duplicate(Marchande#ep8a)	Marchande#ep8j	75
+ars_fild72,154,84,3	duplicate(Marchande#ep8a)	Marchande#ep8k	77
+ars_fild72,165,132,3	duplicate(Marchande#ep8a)	Marchande#ep8l	77
+
+//=========================================================================
+//                         Habitants de Schallmar
+//=========================================================================
+
+ars_fild72,120,187,3	script	Habitant#ep8a	54,{
+
+	set @name$,"^66CCFFHabitant^000000";
+	set @region$,"Schall_Habit1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild72,147,277,3	duplicate(Habitant#ep8a)	Habitant#ep8b	55
+ars_fild72,167,261,2	duplicate(Habitant#ep8a)	Habitant#ep8c	86
+ars_fild72,163,138,3	duplicate(Habitant#ep8a)	Habitant#ep8d	54
+ars_fild72,287,79,2	duplicate(Habitant#ep8a)	Habitant#ep8e	86
+ars_fild72,273,122,3	duplicate(Habitant#ep8a)	Habitant#ep8f	55
+ars_fild72,245,248,3	duplicate(Habitant#ep8a)	Habitant#ep8g	54
+ars_fild72,309,278,2	duplicate(Habitant#ep8a)	Habitant#ep8h	86
+ars_fild72,234,314,3	duplicate(Habitant#ep8a)	Habitant#ep8i	55
+//=========================================================================
+ars_fild72,152,210,3	script	Habitante#ep8a	95,{
+
+	set @name$,"^FF00CCHabitante^000000";
+	set @region$,"Schall_Habit1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild72,86,233,3	duplicate(Habitante#ep8a)	Habitante#ep8b	103
+ars_fild72,162,286,3	duplicate(Habitante#ep8a)	Habitante#ep8c	102
+ars_fild72,208,96,3	duplicate(Habitante#ep8a)	Habitante#ep8d	95
+ars_fild72,281,133,3	duplicate(Habitante#ep8a)	Habitante#ep8e	102
+ars_fild72,267,199,3	duplicate(Habitante#ep8a)	Habitante#ep8f	103
+ars_fild72,272,265,3	duplicate(Habitante#ep8a)	Habitante#ep8g	95
+ars_fild72,252,294,3	duplicate(Habitante#ep8a)	Habitante#ep8h	102
+ars_fild72,200,315,3	duplicate(Habitante#ep8a)	Habitante#ep8i	103
+
+//=========================================================================
+//                         Policier de Schallmar
+//=========================================================================
+
+ars_dun94,27,29,3	script	Policier#ep8a	852,{
+
+	set @name$,"^66CCFFPolicier^000000";
+	set @region$,"Schall_Police1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun94,60,45,3	duplicate(Policier#ep8a)	Policier#ep8b	852
+ars_dun94,38,44,3	duplicate(Policier#ep8a)	Policier#ep8c	852
+
+//=========================================================================
+//                         Sénateur de Schallmar
+//=========================================================================
+
+ars_dun74,84,124,3	script	Sénateur#ep8a	833,{
+
+	set @name$,"^66CCFFSénateur^000000";
+	set @region$,"Schall_Senat1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun74,78,130,2	duplicate(Sénateur#ep8a)	Sénateur#ep8b	833
+ars_dun74,97,113,3	duplicate(Sénateur#ep8a)	Sénateur#ep8c	833
+ars_dun74,138,138,3	duplicate(Sénateur#ep8a)	Sénateur#ep8d	833
+ars_dun74,140,106,3	duplicate(Sénateur#ep8a)	Sénateur#ep8e	833
+
+//=========================================================================
+//                         Marchands de Schallmar
+//=========================================================================
+ars_dun94,192,88,3	shop	Joaillier#ep8a	91,721:-1,723:-1,726:-1,728:-1,729:-1,730:-1,2613:-1
+ars_dun94,105,38,5	shop	Fermière#ep8a	91,515:-1,516:-1,535:-1
+ars_dun94,98,23,5	shop	Fruits#ep8a	102,512:-1,513:-1
+
+//=========================================================================
+//                         Marchands du Menez
+//=========================================================================
+ars_fild73,260,280,5	shop	Boucher#ep8a	54,517:-1
+ars_fild73,272,284,2	shop	Souvenirs#ep8a	91,734:-1,735:-1,736:-1,737:-1,746:-1
+ars_fild73,215,279,5	shop	Quincaillerie#ep8a	84,1750:-1,611:-1,501:-1,502:-1,503:-1,504:-1,506:-1,645:-1,656:-1,601:-1,602:-1
+ars_fild73,193,267,5	shop	Fermière#ep8b	91,515:-1,516:-1,535:-1
+ars_fild73,179,279,5	shop	Fruits#ep8b	102,512:-1,513:-1
+ars_fild73,178,256,5	shop	Boucher#ep8b	54,517:-1
+ars_fild73,166,257,3	shop	Souvenirs#ep8b	91,734:-1,735:-1,736:-1,737:-1,746:-1
+ars_fild73,183,244,5	shop	Quincaillerie#ep8b	84,1750:-1,611:-1,501:-1,502:-1,503:-1,504:-1,506:-1,645:-1,656:-1,601:-1,602:-1
+ars_fild73,207,237,3	shop	Fermière#ep8c	91,515:-1,516:-1,535:-1
+ars_fild73,231,240,3	shop	Fruits#ep8c	102,512:-1,513:-1
+ars_dun90,20,29,3	shop	Fermière#ep8d	91,515:-1,516:-1,535:-1
+ars_dun90,19,16,3	shop	Fruits#ep8d	102,512:-1,513:-1
+ars_dun90,211,33,3	shop	Fermière#ep8e	91,515:-1,516:-1,535:-1
+ars_dun90,211,18,3	shop	Fruits#ep8e	102,512:-1,513:-1
+//=========================================================================
+//                         Client de Bar
+//=========================================================================
+
+ars_dun94,208,204,3	script	Client#ep8a	826,{
+
+	set @name$,"^66CCFFClient^000000";
+	set @region$,"Schall_Client1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun94,216,193,2	duplicate(Client#ep8a)	Client#ep8b	754
+ars_dun94,147,186,3	duplicate(Client#ep8a)	Client#ep8c	742
+ars_dun94,147,211,3	duplicate(Client#ep8a)	Client#ep8u	89
+//Menez
+ars_dun88,50,22,3	duplicate(Client#ep8a)	Client#ep8d	89
+ars_dun88,52,85,3	duplicate(Client#ep8a)	Client#ep8e	754
+ars_dun88,63,98,3	duplicate(Client#ep8a)	Client#ep8f	742
+ars_dun88,67,85,3	duplicate(Client#ep8a)	Client#ep8g	826
+ars_dun88,111,98,3	duplicate(Client#ep8a)	Client#ep8h	826
+ars_dun88,135,110,3	duplicate(Client#ep8a)	Client#ep8i	89
+ars_dun88,137,124,3	duplicate(Client#ep8a)	Client#ep8j	754
+ars_dun88,126,107,3	duplicate(Client#ep8a)	Client#ep8k	752
+ars_dun88,131,77,3	duplicate(Client#ep8a)	Client#ep8l	754
+ars_dun88,132,58,3	duplicate(Client#ep8a)	Client#ep8m	89
+ars_dun88,180,74,3	duplicate(Client#ep8a)	Client#ep8n	742
+ars_dun88,61,164,3	duplicate(Client#ep8a)	Client#ep8o	826
+ars_dun88,50,179,3	duplicate(Client#ep8a)	Client#ep8p	89
+ars_dun88,133,192,3	duplicate(Client#ep8a)	Client#ep8q	826
+ars_dun88,163,201,3	duplicate(Client#ep8a)	Client#ep8r	754
+//=========================================================================
+//                        Soldat de la Défense
+//=========================================================================
+
+ars_fild73,252,240,3	script	Soldat de la Défense#a	413,{
+
+	set @name$,"^66CCFFSoldat de la Défense^000000";
+	set @region$,"Schall_defsold1";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild73,237,258,3	duplicate(Soldat de la Défense#a)	Soldat de la Défense#b	413
+ars_fild73,191,277,3	duplicate(Soldat de la Défense#a)	Soldat de la Défense#c	413
+ars_fild73,222,286,3	duplicate(Soldat de la Défense#a)	Soldat de la Défense#d	413
+ars_fild73,326,250,5	duplicate(Soldat de la Défense#a)	Soldat de la Défense#e	413
+ars_fild73,136,225,5	duplicate(Soldat de la Défense#a)	Soldat de la Défense#f	413
+ars_fild73,186,192,5	duplicate(Soldat de la Défense#a)	Soldat de la Défense#g	413
+ars_fild73,222,163,5	duplicate(Soldat de la Défense#a)	Soldat de la Défense#h	413
+ars_fild73,222,170,5	duplicate(Soldat de la Défense#a)	Soldat de la Défense#i	413
+
+//=========================================================================
+//                        Habitant Menez
+//=========================================================================
+ars_fild73,243,304,3	script	Habitant#ep9a	54,{
+
+	set @name$,"^66CCFFHabitant^000000";
+	set @region$,"Schall_Habit2";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild73,243,263,3	duplicate(Habitant#ep9a)	Habitant#ep9b	97
+ars_fild73,156,265,3	duplicate(Habitant#ep9a)	Habitant#ep9c	98
+ars_fild73,200,208,3	duplicate(Habitant#ep9a)	Habitant#ep9d	753
+ars_fild73,261,207,3	duplicate(Habitant#ep9a)	Habitant#ep9e	55
+//=========================================================================
+//                        Habitante Menez
+//=========================================================================
+ars_fild73,263,298,3	script	Habitante#ep9a	95,{
+
+	set @name$,"^FF00CCHabitante^000000";
+	set @region$,"Schall_Habit2";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_fild73,163,217,3	duplicate(Habitante#ep9a)	Habitante#ep9b	769
+ars_fild73,220,211,3	duplicate(Habitante#ep9a)	Habitante#ep9c	103
+ars_fild73,219,137,3	duplicate(Habitante#ep9a)	Habitante#ep9d	818
+ars_fild73,128,141,3	duplicate(Habitante#ep9a)	Habitante#ep9e	860
+
+//=========================================================================
+//                        Guildienne Harcourt
+//=========================================================================
+ars_dun75,119,34,3	script	Guildienne#ep8a	951,{
+
+	set @name$,"^FF00CCGuildienne^000000";
+	set @region$,"Schall_Guilde";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun75,131,41,3	duplicate(Guildienne#ep8a)	Guildienne#ep8b	989
+ars_dun75,151,45,3	duplicate(Guildienne#ep8a)	Guildienne#ep8c	951
+ars_dun75,138,68,3	duplicate(Guildienne#ep8a)	Guildienne#ep8d	484
+//=========================================================================
+//                        Guildien Harcourt
+//=========================================================================
+ars_dun75,118,48,3	script	Guildien#ep8a	953,{
+
+	set @name$,"^66CCFFGuildien^000000";
+	set @region$,"Schall_Guilde";
+	callfunc "arsi_habitants";
+	end;
+}
+ars_dun75,134,58,3	duplicate(Guildien#ep8a)	Guildien#ep8b	964
+ars_dun75,152,37,3	duplicate(Guildien#ep8a)	Guildien#ep8c	953
+ars_dun75,152,153,3	duplicate(Guildien#ep8a)	Guildien#ep8d	963

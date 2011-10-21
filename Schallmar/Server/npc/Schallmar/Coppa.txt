@@ -1,0 +1,758 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ==========================================================================
+//
+//= Coppalana
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 3.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//= 3.0 English Version
+//= 3.1 Added Introduction NPC in Tantale Island
+//
+//
+//================================================================================================= 
+
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Les Îles de Schalmar : Accès
+// 2 = Les Îles de Schalmar : Croizic
+// 3 = Les Îles de Schalmar : Pierre Rouge
+// 4 = Les Îles de Schalmar : Les Bagages
+//
+//_________________________________________________________________
+//________________ Les Îles de Schalmar : Accès ___________________
+//_________________________________________________________________
+
+tantale_ile,192,102,6	script	Informations#ep8	858,{
+
+set @name$,"^33CC00Informations^000000";
+
+if(EP7_LANGUE == 0) {
+	mes "[" + @name$ + "]"; 
+	mes "Vous êtes ici dans l'île de Tantale.";
+	mes "Depuis cette île vous pouvez faire les deux scénarii proposés.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Soit vous vous rendez sur le continent de Schallmar pour poursuivre la quête avec ^66CCFFDaphnis^000000,";
+	mes "Soit vous tentez l'aventure dans les îles de Schallmar avec la ^FF00CCCompagnie Britanny^000000 !";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Il est conseillé de faire en premier Schallmar qui est plus facile pour un joueur seul et permet de débloquer des bonus pour l'aventure en Arsinoé.";
+	mes "Vous pouvez y trouver un équipement de l'Elu facilitant votre progression dans le jeu.";
+	close;
+}
+
+if(EP7_LANGUE == 1) {
+	mes "[" + @name$ + "]"; 
+	mes "You are on the Tantale's Island.";
+	mes "From this island you can do the two scenarios proposed.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Either you go to the continent of Schallmar to continue the quest with ^66CCFFDaphnis^000000,";
+	mes "Either you try an adventure in the Schallmar islands with the  ^FF00CCBritanny's Compagny^000000 !";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "It is advisable to first Schallmar is easier for a single player and unlocks bonuses for adventures in Arsinoe.";
+	mes "You can find equipment of the Chosen facilitating your progress in the game.";
+	close;
+}
+
+OnInit:
+	if($EP7_LANGUE == 0) { waitingroom "Informations",0;}
+	if($EP7_LANGUE == 1) { waitingroom "Informations",0;}
+	if($EP7_LANGUE == 2) { waitingroom "información",0;}
+
+}
+
+//=================================================================================
+
+tantale_ile,101,178,6	script	Compagnie Britanny#ep7	510,6,6,{
+
+if(EP7_LANGUE == 0) { set @name$,"^FF00CCCompagnie Britanny^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^FF00CCBritanny's Compagny^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_coppa01fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_coppa01en";}
+	
+OnTouch:
+	if (EP7_SCHALLMAR == 0) {showevent 1,0;} end;
+}
+
+//=================================================================================
+
+ars_fild63,174,141,4	script	Pencroff#ep7	900,8,8,{
+
+set @name$,"^66CCFFPencroff^000000";
+
+if(EP7_LANGUE == 0) {
+	mes "[" + @name$ + "]"; 
+	mes "Bonne houle ? Vous vous en venez de Coppalana, non ?"; 
+	mes "L'archipel de Coppalana est un endroit paisible pour canoter, du moins, l'était."; 
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Depuis quelques semaines nous subissons des raids meurtriers de la part des Pirates du Croc d'Airain.";
+	mes "Une triste histoire, mais tout le monde dans la mer de Schallmar est agité depuis la disparition des Perles Noires de Shinaere.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Les Pirates ont fait un raid sur Schallmar pour récupérer les Perles Noires de Shinaere. Leur forfait accompli, ils ont subi une violente tempête qui a dispersé les Perles dans les îles de Schallmar ...";
+	mes "Les prêtres de Schallmar appellent à toutes les bonnes volontés pour réunir à nouveau ce trésor pour regagner les bonnes grâces de Shinaere.";
+	mes "Celui qui contrôle les Perles Noires voyagera sans peine, plus de tempêtes, ni monstres ... Ce qui attire enormément de Corporations dans cette quête !";
+}
+
+if(EP7_LANGUE == 1) {
+	mes "[" + @name$ + "]"; 
+	mes "Good waves? You just arrive from Coppalana, right?"; 
+	mes "The archipelago of Coppalana is a peaceful place to paddle, at least, it was."; 
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "In recent weeks we face deadly raids from the Pirates of the Fang Brazen.";
+	mes "A sad story, but everyone in the sea is agitated Schallmar since the disappearance of black pearls of Shinaere.";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "The Pirates have raided Schallmar to retrieve the black pearls Shinaere. Accomplished their crime, they have suffered a violent storm that scattered the pearls in the islands of Schallmar ...";
+	mes "The priests of Schallmar call for all people of goodwill to meet again this treasure to regain the good graces of Shinaere.";
+	mes "The onz who controls the Black Pearls will travel easily, nomore storms or monster ... That's why it attracts many Corporations in this quest!";
+}
+	
+	if(EP7_SCHALLMAR <= 2 ){
+		next;
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) { mes "Vous allez avoir besoin de cartes maritimes pour naviguer, essayez de retrouver ^66CCFFGongafilir^000000, il doit être sur une île des environs en ce moment.";}
+		if(EP7_LANGUE == 1) { mes "You'll need to navigate with nautical charts, try to find ^66CCFFGongafilir^000000, he must be on an island around this one.";}
+		close2;}
+
+	if(EP7_SCHALLMAR == 1) {
+		changequest 70500,70501;
+		set EP7_SCHALLMAR,2;}
+
+	close;
+		end;
+
+	
+OnTouch:
+	if (EP7_SCHALLMAR == 1) {showevent 1,0;} end;
+}
+
+//=================================================================================
+
+ars_fild63,48,255,4	script	Gongafilir#ep7	847,{
+
+set @name$,"^66CCFFGongafilir^000000";
+
+	if (EP7_SCHALLMAR <= 1) {
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) { mes "Je suis un cartographe maritime ! Ces îles sont très intéressantes, bien que la population de Coppalana soit plus portée à vivre le long des côtes.";}
+		if(EP7_LANGUE == 1) { mes "I am a cartographer shipping! These islands are very interesting, although the population increased to more Coppalana live along the coast.";}
+		close;}
+
+	if (EP7_SCHALLMAR == 2) {
+		
+		mes "[" + @name$ + "]"; 
+if(EP7_LANGUE == 0) { 
+		mes "Je suis un cartographe maritime ! Ces îles sont très intéressantes, bien que la population de Coppalana soit plus portée à vivre le long des côtes.";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "Et je ne doute pas que tu vas être intéressé par ma proposition ..."; 
+		mes "Je vais pouvoir te fournir une carte de l'Archipel de Coppalana, elle te sera fortemment utile, sans ... impossible de naviguer !";
+		mes "Dans ces mers, il y a de nombreux courants marins qui entrainent les personnes inexpérimentées vers la Mer de l'Oubli ...";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "Je suis de généreuse humeur aujourd'hui, prend donc cette carte et essaye de ne pas mourir avant d'atteindre Schallmar !";
+		close2;
+		dispbottom "Vous pouvez désormais naviguer dans les eaux de l'Archipel de Coppalana.";}
+		
+		
+if(EP7_LANGUE == 1) { 
+		mes "I am a cartographer shipping! These islands are very interesting, although the population increased to more Coppalana live along the coast.";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "And I have no doubt that you will be interested in my proposal ..."; 
+		mes "I'll be able to provide you a map of the Archipelago Coppalana, it'll be useful  without ... impossible to navigate!";
+		mes "In these seas there are many ocean currents that drive the inexperienced to the Sea of Forgetfulness ...";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "I am generous mood today, so take this card and trying to not die before reaching Schallmar!";
+		close2;
+		dispbottom "You can now navigate the waters of the Archipelago Coppalana.";}
+		
+		
+		set EP7_SCHALLMAR,3;
+		end;}
+
+	
+	if (EP7_SCHALLMAR >= 3) {
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) { mes "Encore en vie à ce que je vois !"; }
+		if(EP7_LANGUE == 1) { mes "Still alive as I can see!"; }
+		close;
+		}
+
+	close;
+}
+
+//_________________________________________________________________
+//________________ Les Îles de Schalmar : Croizic _________________
+//_________________________________________________________________
+
+ars_dun61,110,38,6	script	Maitre Nab#ep7	833,8,8,{
+
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFMaitre Nab^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFMaster Nab^000000";}
+
+if (EP7_SCHALLMAR <= 2) {
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) { mes "Quelle Catastrophe pour notre hôtel !";}
+	if(EP7_LANGUE == 1) { mes "What a disaster for our hotel!";}
+	close;}
+
+if (EP7_SCHALLMAR == 3 || EP7_SCHALLMAR == 4) {
+
+if(EP7_LANGUE == 0) {
+	mes "[" + @name$ + "]"; 
+	mes "Une Catastrophe ! Une vraie Catastrophe !"; 
+	mes "Ces maudits pirates viennent d'enlever nos clients ! Rendez-vous compte ! Et en plus ceux-ci n'ont pas encore réglé leur note !"; 
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Nous devons leur verser une de ses sommes ! Ces maudits pirates ne veulent pas comprendre que nous y sommes pour rien, ce ne sont que des clients et non refusons de payer pour eux !";
+	mes "Mais leur famille, c'est autre chose, ils menacent de brûler l'hôtel si nous n'avançons pas les rançons ...";
+	next;
+ 	mes "[" + @name$ + "]"; 
+	mes "Nous attendons toujours des nouvelles d'Arsinoé, mais nos messagers ont du rencontrer quelques problèmes en traversant la région de La Rana.";
+	mes "Mais maintenant que j'y pense, vous me semblez plutôt bien armé, un noble coeur comme le vôtre ne pourrait pas longtemps résister à l'envie de tuer quelques pirates, non ?";
+	mes "Oui, oui voilà une bonne quête pour des valeureux comme vous et une non-négligeable mane pour mon hôtel !"; 
+}
+if(EP7_LANGUE == 1) {
+	mes "[" + @name$ + "]"; 
+	mes "A Catastrophe! A real disaster!"; 
+	mes "These pirates are fools to take off our clients! Be aware! And in addition they havn't paid their bill!"; 
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "We have to pay their ransom! Those damned pirates do not want to understand that we are for nothing, they are only customer and not refuse to pay for them!";
+	mes "But their family is something else, they threaten to burn the hotel if we don't advance the ransom ...";
+	next;
+ 	mes "[" + @name$ + "]"; 
+	mes "We are still awaiting news from Arsinoe, but our messengers meet some of the problems across the region of La Rana.";
+	mes "But now that I think, you seem pretty well armed, a noble heart as yours couldn't long resist the urge to kill some pirates, right?";
+	mes "Yes, yes that's a good quest for values as you and a non-negligible mane to my hotel !"; 
+}
+
+
+	close2;
+	if (EP7_SCHALLMAR == 3) {
+		set EP7_SCHALLMAR,4;
+		setquest 70505;
+		end;}
+	}
+
+if (EP7_SCHALLMAR >= 5) {
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) { mes "Merci pour votre aide, voilà des tracas financiers qui ne nous concernerons plus !"; }
+	if(EP7_LANGUE == 1) { mes "Thank you for your help, these are financial worries doesn't concerns us anymore !"; }
+	if(EP7_LANGUE == 0) { mes "Ces maudits pirates ont besoin de beaucoup d'argent en ce moment, ils souhaitent réunir toutes les perles disparues ...";}
+	if(EP7_LANGUE == 1) { mes "Those damned pirates need a lot of money right now, they want to gather all the missing pearls ...";}
+	close2;
+	if (EP7_SCHALLMAR == 5) {
+		completequest 70506;}
+	end;}
+	
+OnTouch:
+	if (EP7_SCHALLMAR == 3) {showevent 1,0;} end;
+}
+
+//=================================================================================
+
+ars_fild65,230,108,0	script	#ep7PirEventCroizic	-1,5,5,{
+
+OnTouch:
+
+if(EP7_LANGUE == 0) { callfunc "ars_coppa02fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_coppa02en";}
+
+}
+
+
+//=================================================================================
+
+-	script	EP7_Croizic	-1,{
+
+OnInit:
+	
+	killmonsterall "ars_fild65";
+	killmonsterall "ars_dun44";
+
+	set $@ep7Croizic,0;
+
+	setnpctimer 0;
+	stopnpctimer;
+	end;
+
+OnStart:
+
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) { mapannounce "ars_fild65","Instance -- Les Pirates du Croizic vient de débuter !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) { announce "Instance -- Les Pirates du Croizic vient de débuter !",0,0xFFCC66;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) { mapannounce "ars_fild65","Instance -- Pirates of Croizic has just begun!",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) { announce "Instance -- Pirates of Croizic has just begun! !",0,0xFFCC66;}
+	
+	initnpctimer;
+	set $@ep7Croizic,1;
+
+	monster "ars_fild65",136,97,""+getmonsterinfo(3941,0)+"",3941,1,"EP7_Croizic::OnBossDead";
+	areamonster "ars_fild65",123,88,187,120,""+getmonsterinfo(3943,0)+"",3943,20,"EP7_Croizic::OnMobDead";	
+	set $@monster_ep7croizic,1;
+	end;
+	
+//=======================
+
+OnBossDead:
+
+	set $@monster_ep7croizic, $@monster_ep7croizic-1;
+	if($@monster_ep7croizic==0) {
+		if($ep7_LangChoice & 1) { mapannounce "ars_fild65","Vous venez de récupérer les clés du Navire !",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_fild65","You just pick up the keys of the Ship !",1,0xFFCC66;}
+		monster "ars_dun44",194,168,""+getmonsterinfo(3942,0)+"",3942,1,"EP7_Croizic::OnBossDead2";
+		areamonster "ars_dun44",0,200,200,0,""+getmonsterinfo(3943,0)+"",3943,20,"EP7_Croizic::OnMobDead";
+		set $@monster_ep7croizic,1;
+		set $@ep7Croizic,2;}
+	end;
+
+OnMobDead:end;	
+
+
+OnBossDead2:
+
+	set $@monster_ep7croizic, $@monster_ep7croizic-1;
+	if($@monster_ep7croizic==0) {donpcevent "EP7_Croizic::OnEnd";}
+	end;
+//=======================	
+
+
+OnEnd:
+
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun44","Les Pirates ont été éliminé, vous pouvez désormais vous adresser aux otages.",1,0xFFCC66;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun44","The Pirates were eliminated, you can now contact the hostages.",1,0xFFCC66;}
+	set $@ep7Croizic,3; 
+	sleep2 180000;
+	areawarp "ars_fild65",64,56,224,175,"ars_fild65",245,108;
+	mapwarp "ars_dun44","ars_fild65",245,108;
+	donpcevent "EP7_Croizic::OnInit";
+	end;
+
+OnTimer900000:
+
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun44","Les Otages ont été exécutés, votre mission a échoué.",1,0xFFCC66;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun44","Hostages were executed, your mission has failed.",1,0xFFCC66;}
+	if($ep7_LangChoice & 1) { mapannounce "ars_fild65","Les Otages ont été exécutés, votre mission a échoué.",1,0xFFCC66;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_fild65","Hostages were executed, your mission has failed.",1,0xFFCC66;}
+	sleep2 5000;
+	areawarp "ars_fild65",64,56,224,175,"ars_fild65",245,108;
+	mapwarp "ars_dun44","ars_fild65",245,108;
+	sleep2 5000;
+	donpcevent "EP7_Croizic::OnInit";
+	end;
+
+}
+
+//=================================================================================
+
+ars_dun44,92,161,4	script	Marik Ghoka#ep7	806,5,5,{
+
+set @name$,"^66CCFFMarik Ghoka^000000";
+
+	if ($@ep7Croizic == 3) {
+	
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) { 
+			mes "Une âme charitable pour nous sauver, cela était bien inattendu !";
+			mes "Merci pour les clefs, nous allons vous suivre pour regagner notre liberté !";
+		}
+		if(EP7_LANGUE == 1) { 
+			mes "A charitable soul to save us, this was very unexpected!";
+			mes "hank you for the keys, we will take to regain our freedom!";
+		}
+		
+		close2;
+		if (EP7_SCHALLMAR == 4) {
+			set EP7_SCHALLMAR,5;
+			changequest 70505,70506;
+			if(EP7_LANGUE == 0) { dispbottom "Marik vient de vous donner une Carte des îles de Brynnlaw récupérée dans les affaires du Capitaine.";}
+			if(EP7_LANGUE == 0) { dispbottom "Vous pouvez désormais naviguer dans les eaux des îles de Brynnlaw.";}
+			if(EP7_LANGUE == 1) { dispbottom "Marik just give you a map of the islands of Brynnlaw recovered in the affairs of the Captain.";}
+			if(EP7_LANGUE == 1) { dispbottom "You can now navigate in the waters of the islands of Brynnlaw.";}
+			}
+		warp "ars_fild65",245,108;
+		end;}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) { mes "Oh de l'aide ! Vite, vite prenez les clefs et sortez nous de là par pitié !"; }
+	if(EP7_LANGUE == 1) { mes "Oh help! Quickly, quickly take the keys and free us !"; }
+	close;
+
+	
+OnTouch:
+	if ($@ep7Croizic == 3) {showevent 1,0;} end;
+}
+
+//=================================================================================
+ars_fild65,209,85,0	script	#EP7Sw65K	45,1,1,{
+
+		if ($@ep7Croizic < 2) {
+			if(EP7_LANGUE == 0) { dispbottom "Vous n'avez pas encore les clés pour descendre dans la cale du navire.";}
+			if(EP7_LANGUE == 1) { dispbottom "You don't have the keys to go to the ship's hold.";}
+			end;}
+		warp "ars_dun44",84,16; 
+		end;	
+}
+
+//_________________________________________________________________
+//________________ Les Îles de Schalmar : Pierre Rouge ____________
+//_________________________________________________________________
+
+ars_fild63,231,125,4	script	Julius Varenes#ep7	975,5,5,{
+
+set @name$,"^66CCFFJulius Varenes^000000";
+
+	if (EP7_PROUGE <= 1) {
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) { 
+			mes "J'aime regarder le ciel, quand je serais grand j'irai moi aussi dans les étoiles !";
+			mes "Je voudrais tant avoir un morceau de Solinari la Rouge, une de nos trois lune ...";
+		}
+		if(EP7_LANGUE == 1) { 
+			mes "I love watching the sky, when I grew up I will go myself to the stars!";
+			mes "I wish I had a piece of the Red Solinari, one of our three moon ...";
+		}
+		close2;
+		if (EP7_PROUGE == 0) {
+			set EP7_PROUGE,1;
+			setquest 70595;
+			}
+		end;}
+
+if (EP7_PROUGE == 2) {
+	mes "[" + @name$ + "]"; 
+	
+	if(EP7_LANGUE == 0) {
+		mes "Es-ce bien une pierre de Solinari !?";
+		mes "Incroyable ! Comment as-tu pu t'en procurer une !?";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "C'est incroyable ! Merci ! Merci !";
+		mes "Moi aussi un jour j'irai sur Solinari !";
+	}
+	if(EP7_LANGUE == 1) {
+		mes "Is it a stone from Solinari!?";
+		mes "Incredible! How could you get a one!?";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "It's amazing! Thank you! Thank you!";
+		mes "Me too one day I will go on Solinari!";
+	}
+	
+	close2;
+	if(countitem(29155) > 0) { delitem 29155,1;}
+	set EP7_PROUGE,3;
+	completequest 70595;
+	getitem 29090,1;
+	end;
+	}
+
+if (EP7_PROUGE >= 3) {
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) { mes "Je garde précieusement ton cadeau !  Un jour moi aussi j'irai Solinari !"; }
+	if(EP7_LANGUE == 1) { mes "I treasure your gift! One day I will go to Solinari too !"; }
+	close;}
+	
+OnTouch:
+	if (EP7_PROUGE == 0) {showevent 1,0;} end;
+}
+//=================================================================================
+ars_dun71,169,44,4	script	Action : Ramasser#ep7k	111,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Ramasser^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Pick up^000000";}
+
+	if (EP7_PROUGE == 1) {
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) {
+			mes "Vous vous souvenez de votre promesse à Julius Varenes.";
+			mes "Vous venez de ramasser une pierre rouge de Solinari.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "You just remember your promise to Julius Varenes.";
+			mes "You just pick up a red stone from Solinari.";
+		}
+		close2;
+		set EP7_PROUGE,2;	
+		getitem 29155,1;
+		end;}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) { mes "Il n'y a rien à vous intéresser ici."; }
+	if(EP7_LANGUE == 1) { mes "There is nothing to interest you here."; }
+	close;
+}
+//=================================================================================
+ars_dun72,129,140,5	script	Coffre#Sch4	1324,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Coffre^000000"; }
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Chest^000000"; }
+	
+	if (EP7_PROUGE == 3) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { 
+			mes "Vous venez de récupérer le trésor de l'île aux Perles.";
+			mes "Il contient des ^884DA7"+getitemname($ep7_Tcoins)+"^000000 !";
+		}
+		if(EP7_LANGUE == 1) { 
+			mes "You just get the treasure of the Island of pearls.";
+			mes "It contains ^884DA7"+getitemname($ep7_Tcoins)+"^000000 !";
+		}
+		close2;
+		getitem $ep7_Tcoins,$ep7silvercoinnb[19];
+		set ep7_CarteTresor,ep7_CarteTresor|1;
+		set EP7_PROUGE,4;
+		end;
+		}
+	
+	if (EP7_PROUGE <= 2) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Il n'y a, hélas, rien pour vous ici.";}
+		if(EP7_LANGUE == 1) { mes "There is, alas, nothing for you here.";}
+		close;}
+		
+	if (EP7_PROUGE >= 4) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Ce coffre est vide.";}
+		if(EP7_LANGUE == 1) { mes "This chest is empty. ";}
+		close;}
+}
+//_________________________________________________________________
+//________________ Les Îles de Schalmar : Les Bagages _____________
+//_________________________________________________________________
+
+ars_fild65,165,310,4	script	Kelkirie Kanav#ep7	807,{
+
+set @name$,"^66CCFFKelkirie Kanav^000000";
+
+if(EP7_LANGUE == 0) { callfunc "ars_coppa03fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_coppa03en";}
+
+}
+
+//_________________________________________________________________
+//________________ Coppa : Traductions ____________________________
+//_________________________________________________________________
+
+
+
+//=================================================================================
+// Brittany
+//=================================================================================
+function	script	ars_coppa01fr	{
+
+if (EP7_SCHALLMAR == 0)  goto sub1;
+if (EP7_SCHALLMAR >= 1)  goto sub2;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Heureuse Rencontre ! Je me présente, ^FF00CCBritanny^000000, nous sommes une compagnie de transport maritime."; 
+	mes "Nous desservons les îles de Schallmar, en réalité c'est plutôt la mer de Schallmar qui occupe les régions australes de l'Arsinoé."; 
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Si vous le souhaitez, je peux vous louer un bateau pour vous aventurer dans cette mer, du moins dans l'archipel de Coppalana.";
+	mes "Vous pouvez débloquer nos différents ports, avec nos lignes régulières pour voyager plus rapidemment.";
+	close2;
+	setquest 70500;
+	set EP7_SCHALLMAR,1;
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "Que puis-je pour vous ?";
+	next;
+	if( select("•Louer un Navire:•Les Services") == 2 )
+		{callfunc "arsi_Brit";end;}
+
+	
+		mes "[" + @name$ + "]"; 
+		mes "Alors bonne navigation ! Que Shinaere vous guide !";
+		mes "N'oubliez pas que ces mers sont infestées de pirates et de monstres marins ... Il va vous falloir être prudent et voyager en convoi !";
+		close2;
+		warp "ars_fild63",370,357; 
+		callfunc "arsi_Boat";
+		end;
+}
+//=================================================================================
+function	script	ars_coppa01en	{
+
+if (EP7_SCHALLMAR == 0)  goto sub1;
+if (EP7_SCHALLMAR >= 1)  goto sub2;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	mes "Happy Encounter! Let me introduce myself, ^FF00CCBritanny^000000, we are a shipping company."; 
+	mes "We serve the islands of Schallmar in reality it is rather the Sea Schallmar which occupies the southern regions of Arsinoe."; 
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "If you wish, you can hire a boat to venture into the sea, at least in the archipelago of Coppalana.";
+	mes "You can unlock our various ports, with our scheduled to travel as swiftly.";
+	close2;
+	setquest 70500;
+	set EP7_SCHALLMAR,1;
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	mes "What can I do for you?";
+	next;
+	if( select("•Rent a Ship:•Services") == 2 )
+		{ callfunc "arsi_Brit";end;}
+
+	
+		mes "[" + @name$ + "]"; 
+		mes "So happy surfing ! Shinaere guides you ";
+		mes "Remember that these seas are infested with pirates and sea monsters ... You will have to be cautious and travel in convoy !";
+		close2;
+		warp "ars_fild63",370,357; 
+		callfunc "arsi_Boat";
+		end;
+}
+
+//=================================================================================
+// Trigger Event
+//=================================================================================
+function	script	ars_coppa02fr	{
+
+	if(EP7_SCHALLMAR >= 4) {
+		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous aborder le Bateau Pirate, pour sauver les otages ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			{close;}
+
+		if($@ep7Croizic == 0) {donpcevent "EP7_Croizic::OnStart";}
+		if($@ep7Croizic >= 3) {mes "[" + @name$ + "]"; mes "Vous ne pouvez pas y accèder pour le moment.";close;}
+		warp "ars_fild65",217,107;
+		}
+	
+
+end;
+}
+//=================================================================================
+function	script	ars_coppa02en	{
+
+	if(EP7_SCHALLMAR >= 4) {
+		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Do you want to aboard the Pirate Ship for save the hostages?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			{close;}
+
+		if($@ep7Croizic == 0) {donpcevent "EP7_Croizic::OnStart";}
+		if($@ep7Croizic >= 3) {mes "[" + @name$ + "]"; mes "You can't aboard the ship for now.";close;}
+		warp "ars_fild65",217,107;
+		}
+	
+
+end;
+}
+
+//=================================================================================
+// Kelkirie Kanav
+//=================================================================================
+function	script	ars_coppa03fr	{
+
+		mes "[" + @name$ + "]"; 
+		mes "Avec cette attaque des pirates, nous avons perdu de nombreux bagages dans les eaux de l'Hôtel du Croizic.";
+		mes "Si tu en repêches quelques uns, je veux bien les racheter !";
+		next;
+		if( select("•En vendre:•Non, je n'en ai pas.") == 2 )
+			close;	
+
+		if(countitem(29156) == 0) {
+			mes "[" + @name$ + "]";
+			mes "Désolé, mais tu n'as pas de ^884DA7 "+getitemname(29156)+"^000000 !";
+			mes "Reviens donc me voir lorsque tu en auras à me proposer !";
+			close;}
+		
+		set @q,countitem(29156);
+		
+		mes "[" + @name$ + "]"; 
+		mes "Ah je vois que tu as ^884DA7"+countitem(29156)+" "+getitemname(29156)+"^000000 !";
+		mes "Veux-tu les échanger contre ^884DA7"+@q*10+" "+getitemname($ep7_Tcoins)+"^000000 ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+				
+		getitem $ep7_Tcoins,@q*10;
+		delitem 29156,@q;
+		
+		mes "[" + @name$ + "]"; 
+		mes "Et voilà ^884DA7"+@q*10+" "+getitemname($ep7_Tcoins)+"^000000 pour toi !";
+		mes "Merci pour ton aide !";
+		close;		
+}
+//=================================================================================
+function	script	ars_coppa03en	{
+
+		mes "[" + @name$ + "]"; 
+		mes "With this attack of pirates, we lost a lot of luggage in the waters of the Hotel du Croizic.";
+		mes "If you are rescued some, I will buy them back!";
+		next;
+		if( select("•Sell luggages:•No") == 2 )
+			close;	
+
+		if(countitem(29156) == 0) {
+			mes "[" + @name$ + "]";
+			mes "Sorry, but you don't have ^884DA7 "+getitemname(29156)+"^000000 !";
+			mes "Come see me when thou shalt have to offer to me some luggages!";
+			close;}
+		
+		set @q,countitem(29156);
+		
+		mes "[" + @name$ + "]"; 
+		mes "Ah I see you have ^884DA7"+countitem(29156)+" "+getitemname(29156)+"^000000 !";
+		mes "Would you want to exchange them against ^884DA7"+@q*10+" "+getitemname($ep7_Tcoins)+"^000000 ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+				
+		getitem $ep7_Tcoins,@q*10;
+		delitem 29156,@q;
+		
+		mes "[" + @name$ + "]"; 
+		mes "And now ^884DA7"+@q*10+" "+getitemname($ep7_Tcoins)+"^000000 for you !";
+		mes "Thanks for your help !";
+		close;		
+}
+//=================================================================================
+
+
+
+

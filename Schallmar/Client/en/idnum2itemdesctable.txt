@@ -1,0 +1,296 @@
+//Schallmar
+
+
+//Cartes
+29084#
+^777777Maritime Map of Coppalana Archipelago^000000
+This card allows you to navigate in the waters of Coppalana.
+#
+29085#
+^777777Maritime Map of Brynnlaw Islands^000000
+This card allows you to navigate in the waters of Brynnlaw.
+#
+29086#
+^777777Maritime Map of Schallmar Islands^000000
+This card allows you to navigate in the waters of Schallmar.
+#
+
+//Cartes au Trésor
+29090#
+^777777Treasure Map n°1^000000
+The map shows a pearl.
+#
+29091#
+^777777Treasure Map n°2^000000
+The map shows the Tibérine Monastery.
+#
+29092#
+^777777Treasure Map n°3^000000
+The map shows Gwened Caves.
+#
+29093#
+^777777Treasure Map n°4^000000
+The map shows the Jacamar Twins.
+#
+29094#
+^777777Treasure Map n°5^000000
+The map shows Gwened Caves.
+#
+29095#
+^777777Treasure Map n°6^000000
+The map shows Fortress of the Defense.
+#
+29096#
+^777777Treasure Map n°7^000000
+The map shows Coppalana Archipelago.
+#
+29097#
+^777777Treasure Map n°8^000000
+The map shows Tibérine Monastery.
+#
+29098#
+^777777Treasure Map n°9^000000
+The map shows Dragon Island.
+#
+29099#
+^777777Treasure Map n°10^000000
+The map shows the City of Arsinoé but it doesn't look like the actual one ...
+#
+29100#
+^777777Treasure Map n°11^000000
+The map shows Iawah Islands.
+#
+29101#
+^777777Treasure Map n°12^000000
+The map shows Schallmar City.
+#
+29102#
+^777777Treasure Map n°13^000000
+The map shows Ar Gwez Boel.
+#
+29103#
+^777777Treasure Map n°14^000000
+The map shows Menez Mikael ar Mor.
+#
+29104#
+^777777Treasure Map n°15^000000
+The map shows Menez Mikael ar Mor.
+#
+29105#
+^777777Treasure Map n°16^000000
+The map shows Jacamar Woods.
+#
+
+
+
+
+//Les Perles Noires
+29120#
+^777777Black Pearl n°1^000000
+This is one of the seven pearls Shinaere.
+#
+29121#
+^777777Black Pearl n°2^000000
+This is one of the seven pearls Shinaere.
+#
+29122#
+^777777Black Pearl n°3^000000
+This is one of the seven pearls Shinaere.
+#
+29123#
+^777777Black Pearl n°4^000000
+This is one of the seven pearls Shinaere.
+#
+29124#
+^777777Black Pearl n°5^000000
+This is one of the seven pearls Shinaere.
+#
+29125#
+^777777Black Pearl n°6^000000
+This is one of the seven pearls Shinaere.
+#
+29126#
+^777777Black Pearl n°7^000000
+This is one of the seven pearls Shinaere.
+#
+
+
+
+//Objets
+29130#
+^777777Spore of Blue Mush^000000
+Spore of Blue Mush are really rare.
+#
+29131#
+^777777Saintale's Wood^000000
+This wood is rare and can be only found in the islands of Jacamar.
+#
+29132#
+^777777Philtre of Koweitel^000000
+The Potion of Koweitel mutants will allow the caves Gwened recouver to human.
+#
+29133#
+^777777Oil of Cortès^000000
+This oil allows you to use the crane of your ship.
+#
+29134#
+^777777Cortès Detector^000000
+You need to keep you on the detector to display the treasures of the sea.
+#
+
+//Les Sceaux
+29140#
+^777777Seal of Coppalana Archipelago^000000
+This is one of the seals that Cortes research.
+#
+29141#
+^777777Seal de Pearl Island^000000
+This is one of the seals that Cortes research.
+#
+29142#
+^777777Seal of Hôtel du Croizic^000000
+This is one of the seals that Cortes research.
+#
+29143#
+^777777Seal of Brynnlaw^000000
+This is one of the seals that Cortes research.
+#
+29144#
+^777777Seal of Jacamar Twins^000000
+This is one of the seals that Cortes research.
+#
+29145#
+^777777Seal of Comptoir Mascate^000000
+This is one of the seals that Cortes research.
+#
+29146#
+^777777Seal of Spices Island^000000
+This is one of the seals that Cortes research.
+#
+29147#
+^777777Seal of Tibérine Monastery^000000
+This is one of the seals that Cortes research.
+#
+29148#
+^777777Seal of Fortress of the Defense^000000
+This is one of the seals that Cortes research.
+#
+
+
+
+//Objets Quête
+
+29150#
+^777777Rune of Ta^000000
+This is a magical rune.
+#
+29151#
+^777777Manganite^000000
+Material used as fuel.
+#
+29152#
+^777777Rune of Chimay^000000
+This is a magical rune.
+#
+29153#
+^777777Rune of Orval^000000
+Ceci est une rune magique.
+#
+29154#
+^777777Scalp of Pirate^000000
+The Pirate scalp is the symbol of your bravery.
+#
+29155#
+^777777Solinari's roc^000000
+This rock comes from one of three moons, the Solinari one.
+#
+29156#
+^777777Luggage of Croizic^000000
+Holidaymakers from the hotel's Croizic lost their luggage during the attacks of pirates.
+#
+29157#
+^777777Huge Pearl^000000
+This pearl is huge and has a cost like its weight!
+#
+29158#
+^777777Cocked Filibuster^000000
+You must fit this object to be able to attack ships.
+#
+29159#
+^777777Gong Mallet^000000
+This is a mallet in gold.
+#
+29160#
+^777777Vision of Gold^000000
+This object allows you to view the probable positions of the treasures on the islands of Schallmar.
+#
+29161#
+^777777Fiber Mushroom^000000
+Mented or even privatized fiber that can be very strong.
+#
+29162#
+^777777Tissue Mycetozoa^000000
+The Mycetozoa fabric is light and strength rare. Very useful to build strong, lightweight shields.
+#
+
+
+
+
+
+29170#
+^777777Helm of the Champion^000000
+Helm of Heroes. Its powers are mysterious.
+#
+29171#
+^777777Veridict-Vision^000000
+Its powers are mysterious.
+#
+29172#
+^777777Catnip^000000
+Its powers are mysterious.
+#
+29173#
+^777777Scourge of the Gods^000000
+Its powers are mysterious.
+#
+29174#
+^777777Parade of Harpocrates^000000
+Its powers are mysterious.
+#
+29175#
+^777777Veil of Danifae^000000
+Its powers are mysterious.
+#
+29176#
+^777777Seven League Boots^000000
+Its powers are mysterious.
+#
+29177#
+^777777Rune of the Martyr^000000
+Its powers are mysterious.
+#
+29178#
+^777777Backup ring^000000
+Its powers are mysterious.
+#
+29179#
+^777777Dragon Armor Plates^000000
+Its powers are mysterious.
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

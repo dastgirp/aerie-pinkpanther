@@ -1,0 +1,107 @@
+//Schallmar
+
+
+
+//Cartes
+29084#Maritime Map of Coppalana Archipelago#
+29085#Maritime Map of Brynnlaw Islands#
+29086#Maritime Map of Schallmar Islands#
+
+//Cartes au Trésor
+29090#Treasure Map n°1#
+29091#Treasure Map n°2#
+29092#Treasure Map n°3#
+29093#Treasure Map n°4#
+29094#Treasure Map n°5#
+29095#Treasure Map n°6#
+29096#Treasure Map n°7#
+29097#Treasure Map n°8#
+29098#Treasure Map n°9#
+29099#Treasure Map n°10#
+29100#Treasure Map n°11#
+29101#Treasure Map n°12#
+29102#Treasure Map n°13#
+29103#Treasure Map n°14#
+29104#Treasure Map n°15#
+29105#Treasure Map n°16#
+
+//Les Perles Noires
+29120#Black Pearl n°1#
+29121#Black Pearl n°2#
+29122#Black Pearl n°3#
+29123#Black Pearl n°4#
+29124#Black Pearl n°5#
+29125#Black Pearl n°6#
+29126#Black Pearl n°7#
+
+
+//Objets
+29130#Spore of Blue Mush#
+29131#Saintale's Wood#
+29132#Philtre of Koweitel#
+29133#Cortès oil#
+29134#Cortès detector#
+
+//Les Sceaux
+29140#Seal of Coppalana Archipelago#
+29141#Seal de Pearl Island#
+29142#Seal of Hôtel du Croizic#
+29143#Seal of Brynnlaw#
+29144#Seal of Jacamar Twins#
+29145#Seal of Comptoir Mascate#
+29146#Seal of Spices Island#
+29147#Seal of Tibérine Monastery#
+29148#Seal of Fortress of the Defense#
+
+29150#Rune of Ta#
+29151#Manganite#
+29152#Rune of Chimay#
+29153#Rune of Orval#
+29154#Scalp of Pirate#
+29155#Solinari's roc#
+29156#Luggage of Croizic#
+29157#Huge Pearl#
+29158#Cocked Filibuster#
+29159#Gong Mallet#
+29160#Vision of Gold#
+29161#Fiber Mushroom#
+29162#Tissue Mycetozoa#
+
+29170#Helm of the Champion#
+29171#Veridict-Vision#
+29172#Catnip#
+29173#Scourge of the Gods#
+29174#Parade of Harpocrates#
+29175#Veil of Danifae#
+29176#Seven League Boots#
+29177#Rune of the Martyr#
+29178#Backup ring#
+29179#Dragon Armor Plates#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

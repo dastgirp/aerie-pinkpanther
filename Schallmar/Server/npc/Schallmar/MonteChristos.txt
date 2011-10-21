@@ -1,0 +1,894 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= MonteChristos
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.0
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 English version
+//
+//
+//================================================================================================= 
+
+
+
+//_________________________________________________________________
+//________________ Brynnlaw : MonteChristos _______________________
+//_________________________________________________________________
+
+
+ars_dun53,63,219,5	script	MonteChritos#ep7	878,{
+
+set @name$,"^66CCFFMonteChritos^000000";
+
+if(EP7_LANGUE == 0) { callfunc "ars_christos01fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_christos01en";}
+
+}
+//=================================================================================
+ars_dun61,209,116,5	script	Action : Prendre#Sch3	111,{
+
+set @name$,"^33CC00Action : Prendre^000000"; 
+
+	if (EP7_MONTECHRI  == 0 || EP7_MONTECHRI  >= 2) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Il n'y a rien à vous intéresser ici.";}
+		if(EP7_LANGUE == 1) { mes "There is nothing to interest you here.";}
+		close;}
+
+	if (EP7_MONTECHRI == 1) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Pendant que le garde a le dos tourné, vous ouvrez cette commode.";}
+		if(EP7_LANGUE == 0) { mes "Il semble contenir le manuscrit demandé par MonteChritos.";}
+		if(EP7_LANGUE == 1) { mes "While the guard's back is turned, you open this chest of drawers.";}
+		if(EP7_LANGUE == 1) { mes "There appears to contain the manuscript requested by MonteChritos.";}
+		close2;
+		changequest 70550,70551;
+		set EP7_MONTECHRI,2;
+		end;}
+
+}
+
+//=================================================================================
+
+ars_dun65,137,156,5	script	MonteChritos#ep71	878,{
+
+set @name$,"^66CCFFMonteChritos^000000";
+
+if(EP7_LANGUE == 0) { callfunc "ars_christos02fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_christos02en";}
+
+}
+//=================================================================================
+ars_dun65,132,166,5	script	#arsdun65a	45,1,1,{
+
+
+	if (EP7_MONTECHRI <= 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) { mes "Cette entrée est protégée par un champ de force.";}
+		if(EP7_LANGUE == 1) { mes "This entry is protected by a force field.";}
+		close;	
+	}
+
+	warp "ars_dun66",122,19;
+	end;
+}
+//=================================================================================
+
+ars_dun66,124,85,5	script	MonteChritos#ep72	878,{
+
+set @name$,"^66CCFFMonteChritos^000000";	
+	
+	if (EP7_MONTECHRI <= 4) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Avez-vous vu un lapin blanc ?";}
+		if(EP7_LANGUE == 1) { mes "Have you seen a white rabbit?";}
+		close;}
+	
+	if ($@Ep7_monte1 == 2 && EP7_MONTECHRI == 6) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "C'est bon !";
+		mes "Nous pouvons entrer dans la prochaine salle !";}
+		if(EP7_LANGUE == 1) { mes "Well !";
+		mes "We can enter the next room!";}
+		
+		close;}
+	
+	if (EP7_MONTECHRI == 5 || EP7_MONTECHRI == 6) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Hmm, cette porte est fermée par un mécanisme et non par la magie ...";
+		mes "Il falloir trouver un moyen de l'ouvrir pour pouvoir progresser dans ce temple ...";}
+		if(EP7_LANGUE == 1) { mes "Hmm, this door is closed by a mechanism and not by magic ...";
+		mes "There have to find a way to open it in order to progress in this temple ...";}
+		close2;
+		if (EP7_MONTECHRI == 5) {
+			changequest 70553,70554;
+			set EP7_MONTECHRI,6;}
+		}	
+
+}
+//=================================================================================	
+	
+ars_dun66,167,59,5	script	Bloc#ep7monte1	1905,{
+
+if($ep7_montebloc1 == 1) {
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	if(EP7_LANGUE == 0) { mes "Ce bloc est déjà en place.";}
+	if(EP7_LANGUE == 1) { mes "This block is already in place.";}
+	close;}
+
+	//Coordonnées Joueur et NPC
+	getmapxy .@mapname$,.@mapxNPC,.@mapyNPC,1;
+	getmapxy .@mapname$,.@mapxPC,.@mapyPC,0;
+
+	//Vérification de la distance
+	if (distance(.@mapxNPC,.@mapyNPC,.@mapxPC,.@mapyPC)>2) {
+	if(EP7_LANGUE == 0) { dispbottom "Vous ne pouvez pas pousser cette pierre depuis cette distance.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can not push this stone from that distance.";}
+	end;}
+	
+	set .@rand,2;
+	specialeffect 632;
+	//  X
+	if (.@mapxPC<.@mapxNPC) set .@movementX, .@rand;
+	else if (.@mapxPC>.@mapxNPC) set .@movementX, -.@rand;
+	else set .@movementX, 0;
+	//  Y
+	if (.@mapyPC<.@mapyNPC) set .@movementY, .@rand;
+	else if (.@mapyPC>.@mapyNPC) set .@movementY, -.@rand;
+	else set .@movementY, 0;
+
+	set .@mapxNPC, .@mapxNPC+.@movementX;
+	set .@mapyNPC, .@mapyNPC+.@movementY;
+
+	npcwalkto .@mapxNPC,.@mapyNPC;
+
+if ((.@mapxNPC<=115) &&(.@mapyNPC>=84) && (.@mapxNPC>=112) &&(.@mapyNPC<=87)) {
+
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun66","Vous venez de placer un bloc, le grincement d'un mécanisme vient de se faire entendre.",0,0x00CCFF;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun66","You just place a block, the grinding mechanism is to be heard.",0,0x00CCFF;}
+	set $ep7_montebloc1,1;
+	donpcevent "EP7_SchallMonte1::OnCheck";}
+	
+	end;
+}
+//=================================================================================	
+	
+ars_dun66,71,38,5	script	Bloc#ep7monte2	1905,{
+
+if($ep7_montebloc2 == 1) {
+	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+	if(EP7_LANGUE == 0) { mes "Ce bloc est déjà en place.";}
+	if(EP7_LANGUE == 1) { mes "This block is already in place.";}
+	close;}
+
+	//Coordonnées Joueur et NPC
+	getmapxy .@mapname$,.@mapxNPC,.@mapyNPC,1;
+	getmapxy .@mapname$,.@mapxPC,.@mapyPC,0;
+
+	//Vérification de la distance
+	if (distance(.@mapxNPC,.@mapyNPC,.@mapxPC,.@mapyPC)>2) {
+	if(EP7_LANGUE == 0) { dispbottom "Vous ne pouvez pas pousser cette pierre depuis cette distance.";}
+	if(EP7_LANGUE == 1) { dispbottom "You can not push this stone from that distance.";}
+	end;}
+	
+	set .@rand,2;
+	specialeffect 632;
+	//  X
+	if (.@mapxPC<.@mapxNPC) set .@movementX, .@rand;
+	else if (.@mapxPC>.@mapxNPC) set .@movementX, -.@rand;
+	else set .@movementX, 0;
+	//  Y
+	if (.@mapyPC<.@mapyNPC) set .@movementY, .@rand;
+	else if (.@mapyPC>.@mapyNPC) set .@movementY, -.@rand;
+	else set .@movementY, 0;
+
+	set .@mapxNPC, .@mapxNPC+.@movementX;
+	set .@mapyNPC, .@mapyNPC+.@movementY;
+
+	npcwalkto .@mapxNPC,.@mapyNPC;
+
+if ((.@mapxNPC<=131) &&(.@mapyNPC>=84) && (.@mapxNPC>=128) &&(.@mapyNPC<=87)) {
+
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun66","Vous venez de placer un bloc, le grincement d'un mécanisme vient de se faire entendre.",0,0x00CCFF;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun66","You just place a block, the grinding mechanism is to be heard.",0,0x00CCFF;}
+	set $ep7_montebloc2,1;
+	donpcevent "EP7_SchallMonte1::OnCheck";}
+	
+	end;
+}
+//=================================================================================
+-	script	EP7_SchallMonte1	-1,{	
+
+OnInit:
+
+	set $ep7_montebloc1,0;
+	set $ep7_montebloc2,0;
+	set $@Ep7_monte1,0;
+	end;
+	
+OnReset:
+
+	set $ep7_montebloc1,0;
+	set $ep7_montebloc2,0;
+	set $@Ep7_monte1,0;
+	movenpc "Bloc#ep7monte1",167,59;
+	movenpc "Bloc#ep7monte2",71,38;
+	end;
+	
+OnCheck:
+
+	set $@Ep7_monte1,$@Ep7_monte1+1;
+	if ($@Ep7_monte1 == 2) {
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun66","La Porte vient de s'ouvrir, vous pouvez désormais l'emprunter.",0,0x00CCFF;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun66","The door just opened, now you can use it.",0,0x00CCFF;}
+		sleep2 180000;
+		donpcevent "EP7_SchallMonte1::OnInit";}
+		
+	end;
+	
+}
+//=================================================================================	
+
+ars_dun66,121,46,5	script	Action : Activer#1	111,{
+
+if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Activer^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Activate^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_christos03fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_christos03en";}
+
+}	
+
+//=================================================================================
+ars_dun66,121,90,5	script	#arsdun66a	45,1,1,{
+
+	if (EP7_MONTECHRI == 6 && $@Ep7_monte1 == 2) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) { mes "Vous venez d'ouvrir cette porte.";}
+		if(EP7_LANGUE == 1) { mes "You just opened the door.";}
+		close2;
+		set EP7_MONTECHRI,7;
+		warp "ars_dun66",122,105;
+		end;}
+		
+	if (EP7_MONTECHRI <= 6) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) { mes "Cette porte est fermée, il semble y avoir un mécanisme à activer.";}
+		if(EP7_LANGUE == 1) { mes "This door is closed, there seems to be a mechanism to activate.";}
+		close;	
+	}
+
+	warp "ars_dun66",122,105;
+	end;
+}
+//=================================================================================
+
+ars_dun66,126,138,5	script	MonteChritos#ep73	878,{
+
+set @name$,"^66CCFFMonteChritos^000000";	
+
+if(EP7_LANGUE == 0) { callfunc "ars_christos04fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_christos04en";}
+		
+OnTalk1:		
+	if($ep7_LangChoice & 1) { npctalk "Kaii ! Kaii ! La revoilà ! Mercenaires soyez à mes côtés !";}
+	if($ep7_LangChoice & 2) { npctalk "Kaii ! Kaii ! The back! Mercenaries with me!";}
+	end;
+	
+OnTalk2:		
+	if($ep7_LangChoice & 1) { npctalk "Je ne travaille pas avec la milice !";}
+	if($ep7_LangChoice & 2) { npctalk "I don't work for the militia!";}
+	end;
+	
+OnTalk3:		
+	if($ep7_LangChoice & 1) { npctalk "Je suis aux ordres des miens, nous avons suffisament appris de vous et vos ambitions.";}
+	if($ep7_LangChoice & 2) { npctalk "I 'm at mine, we have learned enough of you and your ambitions.";}
+	end;
+	
+OnTalk4:		
+	if($ep7_LangChoice & 1) { npctalk "Les Mages Gris sont une aberration de notre monde !";}
+	if($ep7_LangChoice & 2) { npctalk "The Black Mages are an aberration of our world!";}
+	end;
+}
+//=================================================================================
+
+ars_dun66,122,122,5	script	Caporale Pietitchev#ep7	727,{
+
+set @name$,"^FF00CCCaporale Pietitchev^000000";	
+	
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Hors de mon chemin !";}
+		if(EP7_LANGUE == 1) { mes "Get out of my way !";}
+		close;
+		
+OnMove1:
+	npcwalkto 122,135;
+	end;
+	
+OnTalk1:		
+	if($ep7_LangChoice & 1) { npctalk "MonteChritos ! Les Geôles n'étaient point à ton goût ?";}
+	if($ep7_LangChoice & 2) { npctalk "MonteChritos ! Jails were not enough plessant for you ?";}
+	end;
+	
+OnTalk2:		
+	if($ep7_LangChoice & 1) { npctalk "Tu pensais pouvoir me duper ?";}
+	if($ep7_LangChoice & 2) { npctalk "You think you can fool me ?";}
+	end;
+	
+OnTalk3:		
+	if($ep7_LangChoice & 1) { npctalk "Je ne parle pas de la milice ! Ce n'est pour moi qu'une couverture ...";}
+	if($ep7_LangChoice & 2) { npctalk "I don't speak of the militia! This is a cover for me ... ";}
+	end;
+	
+OnTalk4:		
+	if($ep7_LangChoice & 1) { npctalk "Mon ordre n'a pas apprécié ta défection de nos rangs, d'autant plus que nous avons su que tu étais un espion !";}
+	if($ep7_LangChoice & 2) { npctalk "My order didn't appreciate your defection from our ranks, especially since we knew you were a spy!";}
+	end;
+	
+OnTalk5:		
+	if($ep7_LangChoice & 1) { npctalk "Soit, les registres de Ta Phrom seront miens !";}
+	if($ep7_LangChoice & 2) { npctalk "Records of Ta Phrom will be mine!";}
+	end;
+	
+OnTalk6:		
+	if($ep7_LangChoice & 1) { npctalk "Pour Shandalar !";}
+	if($ep7_LangChoice & 2) { npctalk "For Shandalar !";}
+	end;
+	
+OnAction1: 
+	specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; end;	
+	
+OnAction2: 
+	npcwalkto 122,122;end;
+}
+//=================================================================================
+-	script	EP7_SchallMonte2	-1,{	
+
+OnInit:
+
+	disablenpc "Caporale Pietitchev#ep7";
+	set $@Ep7_monte2,0;
+	end;
+	
+OnStart:
+
+	set $@Ep7_monte2,1;
+	enablenpc "Caporale Pietitchev#ep7";
+	donpcevent "EP7_intro::OnEvent15";
+	end;
+	
+OnFight:	
+	
+	disablenpc "Caporale Pietitchev#ep7";
+	monster "ars_dun66",122,135,""+getmonsterinfo(3961,0)+"",3961,1,"EP7_SchallMonte2::OnMobDead";
+	areamonster "ars_dun66",131,126,109,146,"Mage Gris",3962,5,"EP7_SchallMonte2::OnMobDead2";
+	set $@monster_SchallMonte2,1;
+	end;
+
+OnMobDead:	
+
+	set $@monster_SchallMonte2, $@monster_SchallMonte2-1;
+	if($@monster_SchallMonte2==0) {
+	
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun66","La Caporale Pietitchev et ses sbires sont morts.",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun66","The Pietitchev Caporale and his henchmen are dead.",1,0xFFCC66;}
+		donpcevent "EP7_SchallMonte2::OnEnd";
+		}
+	end;
+
+OnMobDead2:end;
+
+OnEnd:
+
+	sleep2 5000;
+	set $@Ep7_monte2,2;
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun66","Vous pouvez accèder aux coffres contenant les registres du temple de Ta Phrom.",1,0xFFCC66;	}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun66","You can access to the boxes containing the records of the temple of Ta Phrom.",1,0xFFCC66;	}
+	sleep2 240000;
+	donpcevent "EP7_SchallMonte2::OnInit";
+	donpcevent "Caporale Pietitchev#ep7::OnAction2";
+	end;
+}
+//=================================================================================
+ars_dun66,144,153,5	script	Coffre#Sch2	1324,{
+
+set @name$,"^33CC00Coffre^000000"; 
+	
+	if (EP7_MONTECHRI == 7 && $@Ep7_monte2 == 2) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Vous venez de récupérer les archives du temple de Ta Phrom.";}
+		if(EP7_LANGUE == 1) { mes "You just get the archives of the temple of Ta Phrom.";}
+		if(EP7_LANGUE == 0) { mes "Au fond de ce coffre vous trouvez des ^FF3300"+getitemname($ep7_Tcoins)+"^000000 ainsi que ^FF3300"+getitemname($ep7silvercoin[44])+"^000000.";}
+		if(EP7_LANGUE == 1) { mes "At the bottom of the chest you find ^FF3300"+getitemname($ep7_Tcoins)+"^000000 and also ^FF3300"+getitemname($ep7silvercoin[44])+"^000000.";}
+		next;
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Vous devez apporter les registres à ^66CCFFMonteChritos^000000.";}
+		if(EP7_LANGUE == 1) { mes "You must bring the records to ^66CCFFMonteChritos^000000.";}
+		close2;
+		getitem $ep7_Tcoins,$ep7silvercoinnb[16];
+		getitem $ep7recompense[44],$ep7recompensenb[44];
+		set EP7_MONTECHRI,8;
+		end;
+		}
+	
+	if (EP7_MONTECHRI <= 7) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Vous ne pouvez pas prendre le trésor tant que le gardien est en vie.";}
+		if(EP7_LANGUE == 1) { mes "You can't take the treasure as the guard is alive.";}
+		close;}
+		
+	if (EP7_MONTECHRI >= 8) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Ce coffre est vide.";}
+		if(EP7_LANGUE == 1) { mes "This chest is empty.";}
+		close;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//_________________________________________________________________
+//________________ Christos : Traductions _________________________
+//_________________________________________________________________
+
+
+
+//=================================================================================
+// MonteChristos
+//=================================================================================
+function	script	ars_christos01fr	{
+
+	if (EP7_MONTECHRI == 2) {
+		mes "[" + @name$ + "]";
+		mes "Bien joué ! Voici mes précieuses notes ... Ils les ont cherché pendant un moment alors qu'elles étaient simplement dans ma commode !";
+		mes "Vraiment des imbéciles ces miliciens !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ce livre contient mes recherches, des recherches à propos d'un temple ancien, très ancien.";
+		mes "J'ai réussi à le localiser et je voulais monter une expédition avec ^66CCFFGwen de Saint-Glen^000000 et sa société,";
+		mes "mais hélas la ^FF00CCCaporale Pietitchev^000000 m'a attrapé avant lors de mon arrivée à Brynnlaw.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Qui pourrait croire qu'un soldat pouvait bien s'intéresser à l'archéologie ! La scélérate avait lu mes parutions !";
+		mes "L'appât du gain l'a poussé à m'emprisonner pour que je lui dise tout sur mes recherches ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Mais grâce à vous nous allons pouvoir explorer ce temple ! Tentant, non !?";
+		mes "Nous aurons plus de chances de nous retrouver là-bas si nous partons chacun de notre côté, ainsi la garde aura bien plus de mal à nous coincer.";
+		mes "Voici une carte ! Retrouvons-nous là-bas !";
+		close2;
+		set EP7_MONTECHRI,3;
+		getitem 29096,1;
+		changequest 70551,70552;
+		end;}
+	
+	if (EP7_MONTECHRI == 3) {
+		mes "[" + @name$ + "]";
+		mes "Nous aurons plus de chances de nous retrouver là-bas si nous partons chacun de notre côté, ainsi la garde aura bien plus de mal à nous coincer.";
+		mes "Utilisez la carte que je vous ai donné, on se retrouve là-bas !";
+		close;}
+		
+		
+	if (EP7_SCHALLMAR == 15) {
+		mes "[" + @name$ + "]";
+		mes "Oh un compagnon de cellule !";
+		mes "Comment se fait-il que tu sois là ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ah !? Quelques problèmes avec notre chère milice !";
+		mes "Et bien de même pour moi ! C'est incroyable cette coïncidence !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Tu veux sortir au plus vite j'imagine ? Je peux te montrer la sortie ...";
+		mes "Mais il faudrait que tu me jures quelque chose.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "J'ai creusé un tunnel pour sortir, mais il me faut récupérer un livre chez moi ...";
+		mes "C'est un livre bien précieux, mais hélas ma maison à l'île aux perles de Coppalana est sous surveillance de la milice.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Nous partagerons ses secrets, c'est la moindre des choses !";
+		mes "Pour la sortie, il faut déplacer une pierre de long du mur ...";
+		close2;
+		changequest 70516,70517;
+		setquest 70550;
+		set EP7_SCHALLMAR,16;
+		set EP7_MONTECHRI,1;
+		end;}
+
+	if (EP7_SCHALLMAR >= 16) {
+		mes "[" + @name$ + "]";
+		mes "Ah, te revoilà !?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "J'ai creusé un tunnel pour sortir, mais il me faut récupérer un livre chez moi ...";
+		mes "C'est un livre bien précieux, mais hélas ma maison à l'île aux perles de Coppalana est sous surveillance de la milice.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Nous partagerons ses secrets, c'est la moindre des choses !";
+		mes "Pour la sortie, il faut déplacer une pierre de long du mur ...";
+		close;}
+
+	mes "[" + @name$ + "]";
+	mes "Je suis innocent pourtant !";
+	close;
+
+}
+//=================================================================================
+
+function	script	ars_christos01en	{
+
+	if (EP7_MONTECHRI == 2) {
+		mes "[" + @name$ + "]";
+		mes "Well done! Here are my precious notes ... They tried for a while when they were just in my chest";
+		mes "Really fools those militiamen !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "This book contains my research, research about an ancient temple, a very old one.";
+		mes "I managed to locate him and I wanted to mount an expedition with ^66CCFFGwen de Saint-Glen^000000 and his society,";
+		mes "But ^FF00CCCaporal Pietitchev^000000 grabbed me before when I arrived at Brynnlaw.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Who could believe that a soldier might well be interested in archeology! That rogue had read my publications!";
+		mes "Greed led him to imprison me for me to tell her all about my research ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "But with you we can explore this temple! Tempting, no!?";
+		mes "We will have more chances to find us there if we go by separate ways, and It will be much more difficult for the militia to catch us.";
+		mes "Here's a map! Meet us there !";
+		close2;
+		set EP7_MONTECHRI,3;
+		getitem 29096,1;
+		changequest 70551,70552;
+		end;}
+	
+	if (EP7_MONTECHRI == 3) {
+		mes "[" + @name$ + "]";
+		mes "We will have more chances to find us there if we go our separate ways, and the guard will be much more difficult to catch us.";
+		mes "Use the card I gave you, you get there!";
+		close;}
+		
+		
+	if (EP7_SCHALLMAR == 15) {
+		mes "[" + @name$ + "]";
+		mes "Oh a cellmate!";
+		mes "How is it you're here?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Oh? Some problems with our dear militia!";
+		mes "And much the same for me! It's amazing that coincidence!";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Want to get out as soon as possible I guess? I can show you the exit ...";
+		mes "But you should swear something first.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "I dug a tunnel out, but I have to get a book at me ...";
+		mes "It is a precious book, but unfortunately my house in the island of pearls Coppalana is under surveillance of the militia.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "We will share its secrets, it's the least we can do!";
+		mes "To exit, you must move a stone along the wall ...";
+		close2;
+		changequest 70516,70517;
+		setquest 70550;
+		set EP7_SCHALLMAR,16;
+		set EP7_MONTECHRI,1;
+		end;}
+
+	if (EP7_SCHALLMAR >= 16) {
+		mes "[" + @name$ + "]";
+		mes "Ah, you're back!?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "I dug a tunnel out, but I have to get a book at me ...";
+		mes "It is a precious book, but unfortunately my house in the island of pearls Coppalana is under surveillance of the militia.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "We will share its secrets, it's the least we can do!";
+		mes "To exit, you must move a stone along the wall ...";
+		close;}
+
+	mes "[" + @name$ + "]";
+	mes "I am innocent !!";
+	close;
+
+}
+
+//=================================================================================
+// MonteChristos
+//=================================================================================
+function	script	ars_christos02fr	{
+
+if (EP7_MONTECHRI <= 2) {
+		mes "[" + @name$ + "]";
+		mes "Il doit bien y avoir un moyen d'y entrer ...";
+		close;}
+		
+	if (EP7_MONTECHRI == 3 || EP7_MONTECHRI == 4) {
+	
+		if(countitem(29150) > 0 && EP7_MONTECHRI == 4) {
+			mes "[" + @name$ + "]";
+			mes "Ah vous avez trouvé la Rune de Ta !";
+			mes "Félicitations, nous allons pouvoir progresser dans le temple ...";
+			mes "En avant ! Pour la science ! Mais surtout pour la gloire !";
+			close2;
+			set EP7_MONTECHRI,5;
+			end;}
+			}
+	
+		mes "[" + @name$ + "]";
+		mes "Vous voilà finalement ! J'espère que vous n'avez pas été suivi pour venir jusqu'ici.";
+		mes "Nous voilà devant la porte d'entrée du temple de Ta Phrom.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Manifestement il faut une rune pour y entrer ... Ce n'est pas de chance hein ?";
+		mes "Prêt pour aller à la pêche ? Il faut retrouver la Rune de Ta ...";
+		mes "Selon le manuscrit des survivants de Ta Phrom, celle-ci se trouverait au fond des mers ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Lors de leur fuite du temple, ils l'ont fermé par des runes magiques en espérant pour un jour y revenir.";
+		mes "Hélas, ils ont perdu la Rune de Ta Phrom dans l'Archipel de Coppalana, non loin de l'entrée de cette grotte.";
+		mes "Un de leurs navires a coulé dans les environs, il va vous falloir la retrouver ...";
+		close2;
+		if (EP7_MONTECHRI == 3) {
+			set ep7_CarteTresor,ep7_CarteTresor|64;
+			changequest 70552,70553;
+			set EP7_MONTECHRI,4;}
+		end;
+	
+	if (EP7_MONTECHRI >= 5) {
+		mes "[" + @name$ + "]";
+		mes "On se retrouve à l'intérieur ! Il me tarde de voir cet antique temple !";
+		close;}	
+		
+}
+//=================================================================================
+function	script	ars_christos02en	{
+
+if (EP7_MONTECHRI <= 2) {
+		mes "[" + @name$ + "]";
+		mes "There must be a way to enter ...";
+		close;}
+		
+	if (EP7_MONTECHRI == 3 || EP7_MONTECHRI == 4) {
+	
+		if(countitem(29150) > 0 && EP7_MONTECHRI == 4) {
+			mes "[" + @name$ + "]";
+			mes "Ah you found the Rune of Ta!";
+			mes "Congratulations, we can move forward in the temple ...";
+			mes "Forward! For science! But above all for the glory!";
+			close2;
+			set EP7_MONTECHRI,5;
+			end;}
+			}
+	
+		mes "[" + @name$ + "]";
+		mes "You are now finally! I hope you have not been followed to get here.";
+		mes "Here we are at the front door of the temple of Ta Phrom.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Obviously you need a rune to enter ... It is not likely eh?";
+		mes "Ready to go fishing? We must find the Rune of Ta ...";
+		mes "According to the manuscript of the survivors of Ta Phrom, it would be at the bottom of the sea ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "When they fled the temple, they closed by magical runes and hope to one day return.";
+		mes "Alas, they lost the Rune of Ta Phrom Coppalana in the Archipelago, near the entrance to the cave.";
+		mes "One of their ships sank in the area, you will have to find it ...";
+		close2;
+		if (EP7_MONTECHRI == 3) {
+			set ep7_CarteTresor,ep7_CarteTresor|64;
+			changequest 70552,70553;
+			set EP7_MONTECHRI,4;}
+		end;
+	
+	if (EP7_MONTECHRI >= 5) {
+		mes "[" + @name$ + "]";
+		mes "See you inside! I can not wait to see this ancient temple!";
+		close;}	
+		
+}
+//=================================================================================
+// Action : Activer
+//=================================================================================
+function	script	ars_christos03fr	{
+
+	if (EP7_MONTECHRI <= 5 || EP7_MONTECHRI >= 7) {
+		mes "[" + @name$ + "]";
+		mes "Ceci est une statue.";
+		close;}
+	
+	if (EP7_MONTECHRI == 6) {	
+		mes "[" + @name$ + "]";
+		mes "Voulez-vous réinitialiser la position des blocs ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "Les blocs ont repris leur position d'origine.";
+		close2;
+		donpcevent "EP7_SchallMonte1::OnReset";
+		end;}
+}
+//=================================================================================
+function	script	ars_christos03en	{
+
+	if (EP7_MONTECHRI <= 5 || EP7_MONTECHRI >= 7) {
+		mes "[" + @name$ + "]";
+		mes "This is a statue.";
+		close;}
+	
+	if (EP7_MONTECHRI == 6) {	
+		mes "[" + @name$ + "]";
+		mes "Do you want to reset the position of the blocks?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+			
+		mes "[" + @name$ + "]";
+		mes "The blocks have resumed their original position.";
+		close2;
+		donpcevent "EP7_SchallMonte1::OnReset";
+		end;}
+}
+
+//=================================================================================
+// MonteChristos
+//=================================================================================
+function	script	ars_christos04fr	{
+	
+	if (EP7_MONTECHRI <= 6) {
+		mes "[" + @name$ + "]";
+		mes "Avez-vous vu un lapin blanc ?";
+		close;}
+	
+	if (EP7_MONTECHRI == 7 && $@Ep7_monte2 == 1) {
+		mes "[" + @name$ + "]";
+		mes "Nous sommes en plein combat ! Nous n'avons pas le temps pour de vaines palabres !";
+		close;}
+
+	if (EP7_MONTECHRI == 7 && $@Ep7_monte2 == 2) {
+		mes "[" + @name$ + "]";
+		mes "Allez prendre les archives et revenez me voir !";
+		close;}
+		
+	if (EP7_MONTECHRI == 7) {
+		mes "[" + @name$ + "]";
+		mes "Regardez-moi donc cette salle, elle est magnifique, n'es-ce pas ?";
+		mes "Maintenant tâchons de retrouver les coffres contenant les registres du Temple de Ta Phrom !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ils contiennent des informations très importantes sur leur antique science ...";
+		mes "Voilà ce que la milice de Brynnlaw veut à tout prix récupérer !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "C'est pour cela que ^FF00CCCaporale Pietitchev^000000 me persécute depuis ...";
+		mes "Oh ! Regardez ! ....";
+		close2;
+		if($@Ep7_monte2 == 0) {
+			donpcevent "EP7_SchallMonte2::OnStart";
+		}
+	end;}
+	
+	if (EP7_MONTECHRI == 8 || EP7_MONTECHRI == 9) {
+		mes "[" + @name$ + "]";
+		mes "Les registres ! Les voilà enfin !";
+		mes "Cette maudite ^FF00CCCaporale Pietitchev^000000 ne pourra plus m'ennuyer, mais les siens ...";
+		mes "Elle fait partie d'une congrégation de magiciens qui trempent dans de sales histoires si vous voulez mon avis.";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "J'étais à la solde de l'Archimage d'Ornélia pour le compte de l'Académie de Magie d'Arsinoé.";
+		mes "Ma couverture étant brisée, j'ai du me recycler dans des activités moins dangereuses ...";
+		mes "Sur ce merci pour votre aide ^33CC00" + strcharinfo(0) + "^000000 ...";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "Je vais me cacher à la Société des Inventeurs de trésor pendant quelques temps et je vais en profiter pour extraire toute la connaissance possible de ces registres.";
+		close2;
+		if (EP7_MONTECHRI == 8) {
+			set EP7_MONTECHRI,9;
+			completequest 70554;}
+			end;
+	}
+		
+	if (EP7_MONTECHRI >= 10) {
+		mes "[" + @name$ + "]";	
+		mes "Je vais me cacher à la Société des Inventeurs de trésor pendant quelques temps et je vais en profiter pour extraire toute la connaissance possible de ces registres.";
+		close;}
+}
+//=================================================================================
+function	script	ars_christos04en	{
+	
+	if (EP7_MONTECHRI <= 6) {
+		mes "[" + @name$ + "]";
+		mes "Have you seen the white rabbit ?";
+		close;}
+	
+	if (EP7_MONTECHRI == 7 && $@Ep7_monte2 == 1) {
+		mes "[" + @name$ + "]";
+		mes "We are in combat! We have no time for idle palaver!";
+		close;}
+
+	if (EP7_MONTECHRI == 7 && $@Ep7_monte2 == 2) {
+		mes "[" + @name$ + "]";
+		mes "Go to the archives and return to me!";
+		close;}
+		
+	if (EP7_MONTECHRI == 7) {
+		mes "[" + @name$ + "]";
+		mes "Look at this room so it is beautiful, isn't it ?";
+		mes "Now try to find the boxes containing the records of the Temple of Ta Phrom!";
+		next;
+		mes "[" + @name$ + "]";
+		mes "They contain very important information on their ancient science ...";
+		mes "That's what the militia Brynnlaw desperate to recover them !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "That is why ^FF00CCCaporale Pietitchev^000000 persecutes me since ...";
+		mes "Oh ! Look ! ....";
+		close2;
+		if($@Ep7_monte2 == 0) {
+			donpcevent "EP7_SchallMonte2::OnStart";
+		}
+	end;}
+	
+	if (EP7_MONTECHRI == 8 || EP7_MONTECHRI == 9) {
+		mes "[" + @name$ + "]";
+		mes "Records! Here they are at last!";
+		mes "This cursed ^FF00CCCaporale Pietitchev^000000 no longer bored me, but her ...";
+		mes "It is part of a congregation of wizards soaking in dirty stories if you ask me.";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "I was in the pay of the Archmage of Ornélia on behalf of the Magic Academy of Arsinoe..";
+		mes "My cover is broken, I had to retrain in activities less dangerous ...";
+		mes "Thank you for your help ^33CC00" + strcharinfo(0) + "^000000 ...";
+		next;
+		mes "[" + @name$ + "]";	
+		mes "I'll hide the Society of Inventors treasure for a while and I'll take the opportunity to extract all the possible knowledge of these registers.";
+		close2;
+		if (EP7_MONTECHRI == 8) {
+			set EP7_MONTECHRI,9;
+			completequest 70554;}
+			end;
+	}
+		
+	if (EP7_MONTECHRI >= 10) {
+		mes "[" + @name$ + "]";	
+		mes "I'll hide the Society of Inventors treasure for a while and I'll take the opportunity to extract all the possible knowledge of these registers.";
+		close;}
+}
+

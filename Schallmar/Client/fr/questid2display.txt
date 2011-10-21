@@ -1,0 +1,299 @@
+70500#Les Îles de Schallmar#Arsinoe2#4_m_tra#
+Vous pouvez désormais louer des navires et voyager dans la mer de Schallmar, cependant attention aux pirates !#
+#
+70501#Les Îles de Schallmar#Arsinoe2#4_m_tra#
+Les Suivants de Shinaere de Schallmar sont à la recherche des 7 Perles Noires de leur Déesse. Ces Perles ont été volées par les Pirates du Croc D'Airain, mais ceux-ci suite à une tempête les ont perdu.#
+Vous devez rassembler les 7 Perles Noires de Shinaere.#
+
+
+//Pirates de Coppalana
+70505#Les Pirates de Coppalana#Arsinoe2#4_m_rasw#
+Des Pirates ont enlevé des vacanciers à l'Hôtel du Croizic contre rançon, vous devriez les libérer !#
+Vous devez rendre visite aux pirates au sud de l'Hôtel du Croizic.#
+70506#Les Pirates de Coppalana#Arsinoe2#4_m_rasw#
+Des Pirates ont enlevé des vacanciers à l'Hôtel du Croizic contre rançon, vous devriez les libérer !#
+Les Otages ont été libérés, vous devez rapporter cette nouvelle à l'Hôtel du Croizic.#
+
+
+//Quête de la fille de Rose-Marie
+70507#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Vous devez enquêter sur la disparition de la fille, Narcisse le père est dans leur maison dans l'île aux épices, il pourra vous donner des informations sur la situation.#
+70508#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Narcisse, le père de Marguerite, vous a indiqué que parmi les marins il y avait des témoins de la dernière razzia des pirates.#
+70509#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Selon les marins, les pirates ont disparu au niveau du Monastère de Tibérine, vous devriez vous y rendre pour poser quelques questions.#
+70510#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+L'Abbé de Tiberine ne semble pas être au courant de la présence de pirates dans la région de son monastère.#
+70511#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Les Pirates ont infiltré le monastère, leur chef est BrightSilver, vous devriez le forcer à se dévoiler.#
+70512#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+BrightLight est mort, vous avez libéré le monastère de Tibérine.#
+
+70513#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+La grotte des Pirates se situe dans la Grande île des îles de Tibérine. Vous devriez y trouver un passage menant à leur repère.#
+70514#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Un nom revient souvent dans les registres de Rajckam, celui de Jan Vaneyeck du comptoir Mascate. Vous devriez lui rendre visite.#
+70515#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Jan Vaneyeck vient de mener contre vous une action judiciaire, vous devez répondre de vos allégations devant le tribunal de Brynnlaw.#
+70516#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Incroyable, vous venez de vous retrouver en prison. La milice de la ville semble corrompue, vous allez devoir sortir de ce mauvais pas.#
+70517#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Vous avez la milice aux trousses, vous devez trouver un moyen de mettre fin aux activités de Jan Vaneyeck.#
+70518#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Rako Magnie vient de vous donner une clé permettant d'accèder à l'atelier clandestin de Jan Vaneyeck.#
+70519#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Jan Vaneyeck est mort. La présence des miliciens de Brynnlaw dans l'atelier clandestin ne laisse plus aucun doute quant à la corruption. Vous devez mener un assaut sur la caserne de Brynnlaw.#
+
+70520#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Le trahison de la Garde ne fait plus aucun doute, il est temps de retourner voir le Juge de Brynnlaw.#
+70521#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Vous voilà désormais à la solde du Juge de Brynnlaw ! Vous devez enquêter à la Couronne de Cuivre pour retrouver la fille de Rose-Marie et Narcisse.#
+70522#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Madame Claude ne semble pas vouloir vous laisser un accès à sa maison close. Il va falloir trouver une personne pouvant confirmer l'existence de cet endroit.#
+70523#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Un client vous a confirmé l'existence du bordel, il existe un accès par les égouts de la ville, il va cependant vous falloir trouver un carton d'invitation.#
+70524#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Vous avez un carton d'invitation pour le bordel de Madame Claude, vous allez devoir vous aventurer dans les égouts.#
+70525#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Marguerite est enfin libre, vous pouvez annoncer cette grande nouvelle à ses parents.#
+70526#La Fille de Rose-Marie#Arsinoe2#1_f_orig#
+Rose-Marie, habitante de l'île aux épices, est à la recherche de sa fille enlevée par les pirates du Croc d'Airain.#
+Vous devez rapporter les faits concernant la maison de Madame Claude au Juge de Brynnlaw.#
+
+//Les Moines Disparus
+70540#Les Moines Disparus#Arsinoe2#4_m_oldf#
+Pierre L'Hermite du monastère de Tibérine souhaite que vous retrouviez des moines pris en otage par les pirates.#
+Vous devez retrouver les moines pris en otage.#
+
+
+//MonteChristos
+70550#Quête du Trésor de MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos est en prison à Brynnlaw.#
+Vous devez retrouver son livre dans sa maison dans l'île aux perles.#
+70551#Quête du Trésor de MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos est en prison à Brynnlaw.#
+Vous devez rapporter le livre de MonteChristos à la prison de Brynnlaw.#
+70552#Quête du Trésor de MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos est en prison à Brynnlaw.#
+La milice poursuit MonteChristos pour obtenir ses notes, vous devez le rejoindre en utilisant la carte qu'il vous a donné.#
+70553#Quête du Trésor de MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos est en prison à Brynnlaw.#
+Vous devez retrouver la Rune de Ta perdue dans les environs de l'Archipel de Coppalana. #
+70554#Quête du Trésor de MonteChristos#Arsinoe2#4_m_nove#
+MonteChristos est en prison à Brynnlaw.#
+Vous devez trouver le mécanisme activant la porte du temple. #
+
+//la Société des Inventeurs de Trésor
+70560#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Si vous souhaitez souscrire à cette Société, vous devez vous présenter devant Gwen de Saint-Glen.#
+70561#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Vous devez enquêter sur un monstre aperçu dans les égouts de Brynnlaw. Le seul témoin ayant vu ce monstre est Joan Beeze, vous devriez l'interroger pour obtenir de plus amples informations.#
+70562#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Joan vous a indiqué l'endroit où il a aperçu le monstre, vous devez vous rendre dans les égouts pour vous diriger vers les Grottes du Gwened.#
+70563#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Vous avez trouvé un mutant, une expérience des mages vivant dans ces grottes. Il vous a demandé de l'aider à libérer les autres cobayes du Gwened.#
+70564#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Les Mutants du Gwened vous ont demandé de créer un philtre magique pour inverser les effets des sorts des Mages. Vous devez contacter Kowietel dans l'archipel de Coppalana.#
+70565#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Vous devez retrouver des Spores de Grand Mush Bleu dans les Grottes du Gwened.#
+70566#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Vous devez rapporter les Spores de Grand Mush Bleu à Koweitel.#
+70567#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Vous devez retrouver du Bois de Saintale dans les îles Jacamar.#
+70568#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Vous devez rapporter le Bois de Saintale à Koweitel.#
+70569#La Société des Inventeurs de Trésor#Arsinoe2#4_m_hume#
+Gwen de Saint-Glen propose aux aventuriers des missions à la recherche de secrets et de trésors.#
+Vous pouvez apporter le philtre aux mutants des Grottes du Gwened.#
+
+
+//Les Sceaux de Schallmar
+70570#Les Sceaux de Schallmar#Arsinoe2#4_m_nfde#
+Les Sceaux de Schallmar#
+Vous devez retrouver les Sceaux de Schallmar et les rapportez à Cortès de l'Archipel de Coppalana.#
+70571#Les Sceaux de Schallmar#Arsinoe2#4_m_nfde#
+Les Sceaux de Schallmar#
+Vous venez de compléter la mission donnée par Cortès, vous devez repasser le voir une fois qu'il sera remis de ses émotions.#
+70572#Les Sceaux de Schallmar#Arsinoe2#4_m_nfde#
+Les Sceaux de Schallmar#
+Vous devez rejoindre Cortès, il vous a donné un carte pour le rejoindre.#
+70573#Les Sceaux de Schallmar#Arsinoe2#4_m_nfde#
+Les Sceaux de Schallmar#
+Vous devez remplir les réservoirs du laboratoire d'Alfraganus de Manganites.#
+70574#Les Sceaux de Schallmar#Arsinoe2#4_m_nfde#
+Les Sceaux de Schallmar#
+Vous devez retrouver Cortès dans sa demeure de l'Archipel de Coppalana.#
+70575#Les Sceaux de Schallmar#Arsinoe2#4_m_nfde#
+Les Sceaux de Schallmar#
+Vous avez reçu une carte au trésor pour retrouver le second laboratoire d'Alfraganus.#
+
+
+//Quête de la Main Noire : La Main Noire de Brynnlaw
+70580#La Main Noire#Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Vous devez retrouver Galen dans l'îles aux épices et l'inciter à payer ses dettes à la Main Noire.#
+70581#La Main Noire#Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Galen a payé ses dettes, vous devez retourner voir Man'Uchao pour lui annoncer la nouvelle.#
+70582#La Main Noire#Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Man'Uchao a parlé de vous aux responsables de la Main Noire de Brynnlaw, vous devez vous rendre dans leurs locaux.#
+70583#La Main Noire#Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Votre première offerte par la Main Noire de Brynnlaw est d'occuper Keisha pendant que les autres membres de guilde iront piller les stocks d'épices.#
+70584#La Main Noire#Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Mission accomplie, vous pouvez retourner voir Marrick, il sera surement très fier de vous !#
+70585#La Main Noire#Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Vous devez vous rendre au point indiqué par la Carte au trésor n°8 pour participer à une transaction entre la Main Noire et les Pirates de Schallmar.#
+70586#La Main Noire#Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+L'échange s'est mal déroulé, les membres de la Main Noire sont de retour dans leur repaire de Brynnlaw, Boliv'Art vous y attend.#
+70587#La Main Noire#Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Vous devez venger les morts de la Main Noire. Vous allez vous introduire dans la forteresse et allumer différents feux pour donner le signal de l'assaut.#
+
+//Quête de la Guilde d'Harcourt : La Vermine des mers
+70590#Guilde d'Harcourt#Arsinoe2#4_m_4thp#
+Quête de la Guilde d'Harcourt : La Vermine des mers.#
+Annabelle d'Harcourt vous a proposé de lui rapporter les scalps de pirates. Vous serez payé et vous receverez des points de réputation qui réduiront les risques d'attaques de pirates.#
+
+//Quête de la Pierre Rouge.
+70595#La Pierre Rouge#Arsinoe2#4_m_miki#
+Quête de la Pierre Rouge.#
+Julius Varenes, un petit enfant de l'Archipel de Coppalana, souhaite obtenir un morceau d'une des lunes, celle de Solinari.#
+
+
+//Quête Principale de Schallmar
+70600#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Le Juge de Brynnlaw vous a donné une missive pour les autorités de Schallmar ainsi que la carte maritime de Schallmar. Vous allez devoir vous rendre dans la capitale et demander qu'un nouveau gouverneur soit nommé.#
+70601#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Le Sénateur Palatin vient de vous assurer qu'un nouveau gouverneur sera envoyé à Brynnlaw dans peu de temps.#
+70602#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+A la sortie du Palais Royal, vous rencontrez Ganaëlle qui vous invite à la rejoindre dans la Guilde d'Harcourt à Schallmar.#
+70603#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Vous devez monter les escaliers de la guilde pour rencontrer le chef de celle-ci et recevoir votre mission.#
+70604#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Marcellius Vinus vous a demandé d'enquêter dans le Palais Royal pour découvrir ce qui avait pu arriver au Roi.#
+70605#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Arivila vous a recommandé de forcer la porte de la chambre du Roi pour savoir comment il a pu disparaître depuis sa chambre.#
+70606#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Vous venez de suivre le chemin employé par le Roi, vous devez le retrouver dans la région des îles Iawah.#
+70607#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Le Roi vous demande de suivre et d'enquêter sur le Sénateur Palatin à Schallmar.#
+70608#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Vous avez suivi le Président du Sénat jusqu'à une demeure étange, vous devez rapporter ce fait au Roi dans les îles Iawah.#
+70609#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Le Roi vous a demandé de faire une alliance avec la Guilde d'Harcourt et de débuter l'enquête sur la demeure du Président du Sénat.#
+70610#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Marcellius Vinus de la Guilde Harcourt vous a donné l'ordre de contacter Pizarre, le chef des Pirates de la forteresse d'Airain : Menez Mikael ar Mor.#
+70611#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Les Forces se réunissent dans la Guilde Harcourt, vous devez participer à la réunion.#
+70612#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Le Sénateur Palatus est parti depuis la Guilde Occulte vers un Temple Caché.#
+70613#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Ganaëlle aimerait vous revoir à la Guilde Harcourt.#
+70614#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Ganaëlle vous demande d'aider les prêtres de Shinaere à retrouver les Perles Noires de leur déesse.#
+70615#Les Mystères de Schallmar#Arsinoe2#4_m_mini#
+La Capitale de la mer de Schallmar abrite de nombreux secrets qu'il vaut mieux ignorer sans quoi vous devrez vous y confronter !#
+Vous devez emprunter le portail de téléportation dans le Temple de Shinaere pour y déposer les perles.#
+
+
+//Quête de la Main Noire : Menez 
+70630#La Main Noire : Menez #Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Boliv'art veut voler les trésors des Pirates de la Défense. Vous devez le retrouver au Menez Mikael ar Mor dans une taverne.#
+70631#La Main Noire : Menez #Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Vous devez retrouver Boliv'Art dans au centre de commandement des Pirates de la Défense au Sommet de l'île.#
+70632#La Main Noire : Menez #Arsinoe2#4_m_moca#
+La Main Noire de Brynnlaw est une guilde puissante de cette région.#
+Vous devez récupérer le trésor, Boliv'art vous attendra à l'Ar Gwez Boel.#
+
+//Quête Conte des Contes
+70635#Conte des Contes#Arsinoe2#4_f_rusx#
+Des Livres magiques ont été crées dans des temps anciens pour faire vivre aux lecteurs les aventures de façon plus vive. Mais les autorités les ont interdit car ils peuvent se révéler des pièges mortels.#
+Bède le Vénérable vous a parlé qu'il existait un livre magique dans le Monastère de Tibérine.#
+
+//Quête Abordage
+70640#Abordage !#Arsinoe2#4_m_drak#
+Jean Bart vous propose de devenir Flibustier dans les eaux de Schallmar ! Vous avez reçu le Bicorne du Flibustier qui vous permet au nom de Jean Bart d'attaquer des navires.#
+Vous devez effectuer plus de 50 Abordages pour devenir un Seigneur des Pirates !#
+
+//Quête Abordage
+70645#L'Île du Dragon#Arsinoe2#4_m_drak#
+Arthur, apprenti chevalier, souhaite libérer son île du joug de Monmouth le Dragon.#
+Vous devez vous rendre dans l'Île du Dragon.#
+70646#L'Île du Dragon#Arsinoe2#4_m_drak#
+Arthur, apprenti chevalier, souhaite libérer son île du joug de Monmouth le Dragon.#
+Vous avez en votre possession des écailles de Dragon, vous devriez trouver un forgeron qui puisse les transformer en armure.#
+
+//Quête Hilary
+70650#Hilary#Arsinoe2#4_f_anni#
+Hilary de Schallmar recherche la première cité d'Arsinoé d'avant le Cataclysme.#
+Si vous trouvez une carte au trésor de l'île du dragon, vous devriez lui apporter.#
+
+//Quête Franky
+70655#Franky Family#Arsinoe2#4_m_cru3#
+Nair'Outo semble vouloir vous faire comprendre qu'il serait bien de faire le ménage chez les Franky, il vous a promis une récompense.#
+Vous devez faire le ménage à la Franky House de Schallmar, la Cité.#
+70656#Franky Family#Arsinoe2#4_m_cru3#
+Nair'Outo semble vouloir vous faire comprendre qu'il serait bien de faire le ménage chez les Franky, il vous a promis une récompense.#
+Vous devriez rapporter la nouvelle à Nair'Outo, vous avez tué Franky.#
+70657#Franky Family#Arsinoe2#4_m_cru3#
+Nair'Outo semble vouloir vous faire comprendre qu'il serait bien de faire le ménage chez les Franky, il vous a promis une récompense.#
+Vous devez éliminer le reste de la Franky Famille qui vit dans les rues de Schallmar.#
+70658#Franky Family#Arsinoe2#4_m_cru3#
+Nair'Outo semble vouloir vous faire comprendre qu'il serait bien de faire le ménage chez les Franky, il vous a promis une récompense.#
+Vous avez éliminé la Franky Family, vous pouvez retourner voir Nair'Outo.#
+
+//Quête Kenders
+70660#Les Kenders#Arsinoe2#1_m_siz0#
+Tass le Hoff, de la prison de Schallmar, souhaite que vous retrouviez ses cinq conpagnons dans les îles de Brynnlaw.#
+Les Kenders sont vraiment des pestes !#
+

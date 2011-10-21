@@ -1,0 +1,2001 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Configuration
+//
+//===== By: =======================================================================================  
+//
+// = Original Version : Aerie PinkPanther
+// = English Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 3.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//= 2.1 Solinari access after ending quest fix
+//= 3.1 English Version
+//
+//
+//================================================================================================= 
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Cortes : Principal
+// 2 = Cortes : Temple
+// 3 = Cortes : Marchand
+// 3 = Cortes : Alfraganus
+//
+//_________________________________________________________________
+//________________ Cortes : Principal _____________________________
+//_________________________________________________________________
+
+ars_dun61,33,37,5	script	Cortès#ep7	731,{
+
+set @name$,"^66CCFFCortès^000000";
+
+if(EP7_LANGUE == 0) { callfunc "ars_cortes01fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_cortes01en";}
+
+}
+
+
+//_________________________________________________________________
+//________________ Cortes : Temple ________________________________
+//_________________________________________________________________
+
+ars_dun70,237,191,5	script	Cortès#ep71	731,{
+
+set @name$,"^66CCFFCortès^000000";
+
+	if(EP7_CHASSEUR <= 3) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Alors ces runes ? Elles arrivent ?";}
+		if(EP7_LANGUE == 1) { mes "While these runes? They comes?";}
+		close;
+	}
+
+	if(EP7_CHASSEUR == 4) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) {
+			mes "Ah vous voilà ! Vous voilà !";
+			mes "Prêt pour le grand voyage !?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Il est vrai que je ne vous ai pas encore expliqué ce qui se passait ici, ni quel est cet endroit.";
+			mes "Je vais vous expliquer la situation et l'histoire d'Alfraganus ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Alfraganus était un savant dans les anciens temps, pas un simple savant mais surement le plus grand de tous les temps !";
+			mes "Il a crée des engins pouvant se rendre dans les lunes de notre monde !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Depuis des années, je recherche ces runes pour pouvoir accèder à ses laboratoires, des laboratoires comme celui-ci ...";
+			mes "Je vais activer les runes, puis nous pourrons mettre en route les mécanismes et nous envoler dans l'espace !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Nous allons tenter de retrouver la trace d'Alfraganus, du moins ce qu'il peut en rester ...";
+			mes "Il est parti avec ses ouvrages, tout son savoir, et je souhaite récupérer ces informations, comprenez-vous ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Bon allons-y !";
+			close2;
+			if($@ep7Cortes1 == 0) {donpcevent "EP7_SchallCortes1::OnStart";}
+			end;
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Ah ! You're here ! You're here !";
+			mes "Ready for the big trip !?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "It's true that I've not yet explained what was happening here, or what is there.";
+			mes "I'll explain the situation and the history of Alfraganus ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Alfraganus was a scholar in ancient times, not just a scientist but surely the greatest of all time!";
+			mes "He creates gear that can travel to the moons of our world!";
+			next;
+			mes "[" + @name$ + "]";
+			mes "For years, I look for these runes to gain access to his laboratories, laboratories like this one ...";
+			mes "I will activate the runes, then we can set in motion the mechanisms and we'll fly in space!";
+			next;
+			mes "[" + @name$ + "]";
+			mes "We will try to trace Alfraganus, at least what happens to him ...";
+			mes "Il est parti avec ses ouvrages, tout son savoir, et je souhaite récupérer ces informations, comprenez-vous ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Let's go !";
+			close2;
+			if($@ep7Cortes1 == 0) {donpcevent "EP7_SchallCortes1::OnStart";}
+			end;
+		}
+	}
+	
+	if(EP7_CHASSEUR == 4 && $@ep7Cortes1 == 2) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Prenez ce portail, puis remplissons ces réservoirs pour faire décoller cet engin !";}
+		if(EP7_LANGUE == 1) { mes "Take the portal and fill the tanks to take off this craft!";}
+		close;}
+		
+	if(EP7_CHASSEUR == 5) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Il faut absolument que vous remplissiez les réservoirs de Manganite pour que cet engin décolle ! ";}
+		if(EP7_LANGUE == 1) { mes "It's imperative that you fill the tank of Manganites for this thing off! ";}
+		close;
+	}
+	
+	if(EP7_CHASSEUR >= 6) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { 
+			mes "Dommage, tant d'efforts pour rien ... Aucune trace d'Alfraganus sur Solinari, il va me falloir fouiller encore les îles de Schallmar pour découvrir les autres laboratoires ... ";
+			mes "Outre la ballade sur Solinari, j'espère que tu as apprécié l'aventure ... Nous nous retrouverons bientôt, nous avons encore tant à explorer !";
+		}
+		if(EP7_LANGUE == 1) { 
+			mes "Too bad, so much effort for nothing ... No trace of Alfraganus Solinari on, I will have to dig even the islands of Schallmar other laboratories to discover ...";
+			mes "In addition to the walk on Solinari, I hope you enjoyed the adventure ... We will meet again soon, we still have so much to explore!";
+		}
+		close;
+	}
+	
+OnTalk1:
+	if($ep7_LangChoice & 1) { npctalk "Bon, je vais placer les runes ...";}
+	if($ep7_LangChoice & 2) { npctalk "Well, I'll set runes ...";}
+	end;
+		
+OnTalk2:
+
+	set $@ep7cortesNB,$@ep7cortesNB+1;
+	if($@ep7cortesNB == 1 && $ep7_LangChoice & 1) {npctalk "Voici le sceau de l'Archipel de Coppalana !";}
+	if($@ep7cortesNB == 2 && $ep7_LangChoice & 1) {npctalk "Voici le sceau de l'Île aux Perles.";}
+	if($@ep7cortesNB == 3 && $ep7_LangChoice & 1) {npctalk "Voici le sceau de l'Hôtel du Croizic.";}
+	if($@ep7cortesNB == 4 && $ep7_LangChoice & 1) {npctalk "Voici le sceau de Brynnlaw.";}
+	if($@ep7cortesNB == 5 && $ep7_LangChoice & 1) {npctalk "Voici le sceau des Jumelles Jacamar !";}
+	if($@ep7cortesNB == 6 && $ep7_LangChoice & 1) {npctalk "Voici le sceau du Comptoir Mascate !";}
+	if($@ep7cortesNB == 7 && $ep7_LangChoice & 1) {npctalk "Voici le sceau des Îles aux épices !";}
+	if($@ep7cortesNB == 8 && $ep7_LangChoice & 1) {npctalk "Voici le sceau du Monastère de Tibérine !";}
+	if($@ep7cortesNB == 9 && $ep7_LangChoice & 1) {npctalk "Voici le sceau de la Forteresse de la Défense.";}
+	if($@ep7cortesNB == 1 && $ep7_LangChoice & 2) {npctalk "Here the Seal of Coppalana Archipelago !";}
+	if($@ep7cortesNB == 2 && $ep7_LangChoice & 2) {npctalk "Here the Seal of Pearl Island.";}
+	if($@ep7cortesNB == 3 && $ep7_LangChoice & 2) {npctalk "Here the Seal of l'Hôtel du Croizic.";}
+	if($@ep7cortesNB == 4 && $ep7_LangChoice & 2) {npctalk "Here the Seal of Brynnlaw.";}
+	if($@ep7cortesNB == 5 && $ep7_LangChoice & 2) {npctalk "Here the Seal of Jacamar Twins !";}
+	if($@ep7cortesNB == 6 && $ep7_LangChoice & 2) {npctalk "Here the Seal of Comptoir Mascate !";}
+	if($@ep7cortesNB == 7 && $ep7_LangChoice & 2) {npctalk "Here the Seal of Spices Island !";}
+	if($@ep7cortesNB == 8 && $ep7_LangChoice & 2) {npctalk "Here the Seal of Monastery of Tibérine !";}
+	if($@ep7cortesNB == 9 && $ep7_LangChoice & 2) {npctalk "Here the Seal of Fortress of Defense.";}
+	end;
+	
+OnWalk:
+
+	set $@ep7PosiCo,$@ep7PosiCo+1;
+	npcwalkto $@ep7PosiCoX[$@ep7PosiCo],$@ep7PosiCoY[$@ep7PosiCo];
+	end;
+}
+//=================================================================================
+-	script	EP7_SchallCortes1	-1,{
+
+OnInit:
+
+	set $@ep7Cortes1,0;
+	set $@ep7Cortes2,0;
+	
+	set $@ep7PosiCo,0;
+	
+	setarray $@ep7PosiCoX[1],231,231,231,227,227,243,243,243,247,237;
+	setarray $@ep7PosiCoY[1],189,193,197,197,193,190,194,198,198,191;
+	
+	setarray .ep7CortesName$[1],"#sceauevent1","#sceauevent2","#sceauevent3","#sceauevent4","#sceauevent5","#sceauevent6","#sceauevent7","#sceauevent8","#sceauevent9";
+	
+	set $@ep7cortesNB,0;
+	
+	end;
+
+OnStart:
+
+	set $@ep7Cortes1,1;
+	sleep2 2000;
+	donpcevent "Cortès#ep71::OnTalk1";
+	sleep2 2000;
+
+OnPlay:
+	
+	if($@ep7cortesNB == 9) {donpcevent "EP7_SchallCortes1::OnPlay2";end;}
+	if($@ep7cortesNB == 0) {donpcevent "EP7_SchallCortes1::OnLight";}
+		
+		donpcevent "Cortès#ep71::OnWalk";
+		sleep2 2000;	
+		donpcevent "Cortès#ep71::OnTalk2";
+		sleep2 2000;	
+		donpcevent "EP7_SchallCortes1::OnPlay";
+		end;
+	
+OnLight:
+	
+	for( set .@i, 1; .@i < 10; set .@i, .@i +1 ) {
+		if($@ep7cortesNB >= .@i) {specialeffect 13,AREA,.ep7CortesName$[.@i];}
+		}
+	sleep2 2500;
+	if($@ep7Cortes1 == 1) {donpcevent "EP7_SchallCortes1::OnLight";}
+	end;
+
+//=============================
+
+OnPlay2:
+
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun70","Cortès : La Porte du laboratoire d'Alfraganus vient de s'ouvrir.",1,0xFFCC66;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun70","Cortès : The Gate of  Alfraganus laboratory just opened.",1,0xFFCC66;}
+	set $@ep7Cortes1,2;
+	sleep2 5000;
+	donpcevent "Cortès#ep71::OnWalk";
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun70","Cortès : Nous allons devoir lancer  les machines pour nous rendre sur Solinari !",1,0xFFCC66;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun70","Cortès : We will have to run the machines to lend us to Solinari!",1,0xFFCC66;}
+	sleep2 5000;
+	if($ep7_LangChoice & 1) { mapannounce "ars_dun70","Cortès : Vous devez mener les Manganites dans les réservoirs du temple.",1,0xFFCC66;}
+	if($ep7_LangChoice & 2) { mapannounce "ars_dun70","Cortès : You must conduct Manganites in the tanks of the temple.",1,0xFFCC66;}
+	sleep2 180000;
+	donpcevent "EP7_SchallCortes1::OnInit";
+	end;
+	
+//=============================
+OnCheck:
+
+	if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun70","Cortès : Les réservoirs sont remplis, je vais activer les moteurs du vaisseau.",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun70","Cortès : The tanks are filled, I activate the engines of the ship.",1,0xFFCC66;}
+		sleep2 5000;
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun70","Cortès : Allons-y ! Nous sommes prêts à partir ! Ne tardez pas, montez dans le vaisseau et c'est parti !",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun70","Cortès : Let's go! We are ready to go! Don't delay, get on the ship and go!",1,0xFFCC66;}
+		set $@ep7Cortes2,1;
+		donpcevent "EP7_SchallCortes1::OnLight2";
+		sleep2 300000;
+		set $@ep7Cortes2,0;
+		set $ep7cortesReserV1,$ep7cortesReserV1-50;
+		set $ep7cortesReserV2,$ep7cortesReserV2-50;
+		}
+	end;
+	
+//=============================
+OnLight2:
+	
+	specialeffect 260,AREA,"#arsdun70a";	
+	sleep2 1500;
+	if($@ep7Cortes2 == 1) { donpcevent "EP7_SchallCortes1::OnLight2";}
+	end;
+}
+//=================================================================================
+ars_dun70,231,190,5	script	#sceauevent1	111,{
+	end;}
+//=================================================================================
+ars_dun70,231,194,5	script	#sceauevent2	111,{
+	end;}
+//=================================================================================
+ars_dun70,231,198,5	script	#sceauevent3	111,{
+	end;}
+//=================================================================================
+ars_dun70,227,198,5	script	#sceauevent4	111,{
+	end;}
+//=================================================================================
+ars_dun70,227,194,5	script	#sceauevent5	111,{
+	end;}
+//=================================================================================
+ars_dun70,244,190,5	script	#sceauevent6	111,{
+	end;}
+//=================================================================================
+ars_dun70,244,194,5	script	#sceauevent7	111,{
+	end;}
+//=================================================================================
+ars_dun70,244,198,5	script	#sceauevent8	111,{
+	end;}
+//=================================================================================
+ars_dun70,248,198,5	script	#sceauevent9	111,{
+	end;}
+//=================================================================================
+ars_dun70,238,202,5	script	#arsdun70	45,1,1,{
+
+	if (EP7_CHASSEUR == 4 && $@ep7Cortes1 == 2) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if($EP7_LANGUE == 0) { mes "Vous venez d'ouvrir le portail du laboratoire.";}
+		if($EP7_LANGUE == 1) { mes "You just open the gate of the laboratory.";}
+		close2;
+		set EP7_CHASSEUR,5;
+		changequest 70572,70573;
+		set ep7_CarteTresor,ep7_CarteTresor|32;
+		warp "ars_dun70",237,219;
+		end;}
+	
+	if (EP7_CHASSEUR <= 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if($EP7_LANGUE == 0) { mes "Vous n'avez pas le niveau requis pour  emprunter ce portail.";}
+		if($EP7_LANGUE == 1) { mes "You don't have the required level to take this portal.";}
+		close;}
+		
+	if (EP7_CHASSEUR >= 5) {		
+		warp "ars_dun70",237,219;
+		end;}
+}
+//=================================================================================
+ars_dun70,133,162,5	script	Action : Remplir#ep7a	111,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_cortes02fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_cortes02en";}
+
+}
+
+//=================================================================================
+ars_dun70,97,311,5	script	Action : Remplir#ep7b	111,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_cortes03fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_cortes03en";}
+
+}
+//=================================================================================
+ars_dun70,176,236,5	script	#arsdun70a	111,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_cortes04fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_cortes04en";}
+
+}
+//=================================================================================
+ars_dun71,116,113,5	script	Cortès#ep72	731,{
+
+set @name$,"^66CCFFCortès^000000";
+
+	if(EP7_CHASSEUR <= 5) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Que faites-vous sur cette planète !?";}
+		if(EP7_LANGUE == 1) { mes "What are you doing on this planet!?";}
+		close;}
+		
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) { mes "Je ne vois aucune trace d'Alfraganus, manifestement il a été bien plus loin dans son exploration. Hmm, il va falloir lancer une nouvelle campagne de recherche.";}
+	if(EP7_LANGUE == 1) { mes "I see no trace of Alfraganus obviously it was much further in its exploration. Hmm, we'll have to start a new search campaign.";}
+	if(EP7_CHASSEUR == 6) { 
+		if(EP7_LANGUE == 0) { mes "Mais ill est passé par ici, voilà pour vous en guise de paiement, un objet qu'il a abandonné ...";}
+		if(EP7_LANGUE == 1) { mes "But fell ill here, so much for you as payment, an object he abandoned ... ";}
+	}
+	next;
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) { mes "Bon, il me reste encore des laboratoires à retrouver, je vais continuer la lecture de son carnet de bord.";}
+	if(EP7_LANGUE == 1) { mes "Well, I still find labs, I will continue reading his diary.";}
+	if(EP7_LANGUE == 0) { mes "Retrouvons-nous dans ma demeure de l'Archipel de Coppalana.";}
+	if(EP7_LANGUE == 1) { mes "Let's meet in my home of the Archipelago Coppalana.";}
+	close2;
+	if(EP7_CHASSEUR == 6) {
+		set EP7_CHASSEUR,7;
+		getitem $ep7recompense[45],$ep7recompensenb[45];
+		changequest 70573,70574;
+		}
+	end;
+}
+
+//_________________________________________________________________
+//________________ Cortes : Marchand ______________________________
+//_________________________________________________________________
+
+
+ars_fild71,142,238,5	script	Guilde Heliodore#ep7	482,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Guilde Heliodore^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Heliodore Guild^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_cortes05fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_cortes05en";}
+			
+			
+//=================================================================================
+OnPrice:
+							
+		set .@size, getarraysize($PR2_DynamicShop1);
+		
+		for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+		
+			set .@var1,$PR_DynamicShop1[.@i];
+			set .@var2,$PR2_DynamicShop1[.@i];
+			set .@var,.@var2-.@var1;
+			
+		setarray $PR_DynamicShop1[.@i],$PR_DynamicShop1[.@i]+.@var;}
+		
+		copyarray $PR2_DynamicShop1[1],$PR_DynamicShop1[1],127;
+		
+		for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+			if($PR_DynamicShop1[.@i] < $MI_DynamicShop1[.@i] && .@choiceID == $ID_DynamicShop1[.@i]) {
+				setarray $PR_DynamicShop1[.@i],$MI_DynamicShop1[.@i];}
+		}
+		
+		for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+			if($PR_DynamicShop1[.@i] > $MAX_DynamicShop1[.@i] && .@choiceID == $ID_DynamicShop1[.@i]) {
+				setarray $PR_DynamicShop1[.@i],$MAX_DynamicShop1[.@i];}
+		}
+		
+		copyarray $PR2_DynamicShop1[1],$PR_DynamicShop1[1],127;
+		end;
+			
+
+//=================================================================================
+OnInit:
+
+
+	
+//Objets à disposition
+setarray $ID_DynamicShop1[1],533,7063,29151,29154,29140,29141,29142,29143,29144,29145,29146,29147,29148,29152,29153,29150;
+//Nombre d'objets à disposition au début
+setarray $NB_DynamicShop1[1],40,30,20,25,0,0,0,0,0,0,0,0,0,0,0,0;
+//Quantité Maximum
+setarray $MX_DynamicShop1[1],40,80,50,50,15,15,15,15,15,15,15,15,15,15,15,15;
+//Prix de Base de l'Objet
+setarray $PR_DynamicShop1[1],1,2,5,5,90,90,90,90,90,90,90,90,90,80,80,80;
+//Prix minimal de l'Objet
+setarray $MI_DynamicShop1[1],1,2,2,1,60,60,60,60,60,60,60,60,60,55,55,55;
+//Prix Maximal de l'objet
+setarray $MAX_DynamicShop1[1],5,5,5,10,100,100,100,100,100,100,100,100,100,100,100,100;
+
+
+copyarray $PR2_DynamicShop1[1],$PR_DynamicShop1[1],127;
+end;
+
+}
+ars_fild69,193,157,3	duplicate(Guilde Heliodore#ep7)	Guilde Heliodore#ep7a	482
+ars_fild68,260,182,5	duplicate(Guilde Heliodore#ep7)	Guilde Heliodore#ep7b	482
+ars_fild66,198,181,5	duplicate(Guilde Heliodore#ep7)	Guilde Heliodore#ep7c	482
+ars_fild65,152,293,6	duplicate(Guilde Heliodore#ep7)	Guilde Heliodore#ep7d	482
+
+//_________________________________________________________________
+//________________ Cortes : Alfraganus ____________________________
+//_________________________________________________________________
+
+ars_dun77,133,93,5	script	Cortès#ep76	731,{
+
+set @name$,"^66CCFFCortès^000000";
+	
+	if(EP7_CHASSEUR <= 8) {
+		mes "[" + @name$ + "]";
+		mes "Hmm !?";
+		close;
+	}
+		
+	if(EP7_CHASSEUR == 9) {	
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Que d'aventures ! Nous voilà au beau milieu d'un volcan en activité !";}
+		if(EP7_LANGUE == 1) { mes "What adventures! We are in the midst of an active volcano!";}
+		if(EP7_LANGUE == 0) { mes "Et une fusée est prête au lancement vers Solinari nous attend !";}
+		if(EP7_LANGUE == 1) { mes "And a rocket ready to launch us to Solinari awaits us!";}
+		next;
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Nous trouverons peut-être ^66CCFFAlfraganus^000000 dans cette partie de la lune !";}
+		if(EP7_LANGUE == 1) { mes "We may find ^66CCFFAlfraganus^000000 in this part of that moon !";}
+		close;
+	}
+	if(EP7_CHASSEUR >= 10) {		
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Quel histoire et quel homme !";}
+		if(EP7_LANGUE == 1) { mes "What story and what a man !";}
+		if(EP7_LANGUE == 0) { mes "Qui aurait pu penser qu'il était toujours parmi nous ...";}
+		if(EP7_LANGUE == 1) { mes "Who would have thought he was still with us ...";}
+		next;
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Disons que nous n'avons rien vu là haut ...";}
+		if(EP7_LANGUE == 1) { mes "Let's say we havn't seen anything up there ...";}
+		if(EP7_LANGUE == 0) { mes "Les gens ne sont pas prêt à comprendre ce que nous avons entendu.";}
+		if(EP7_LANGUE == 1) { mes "People aren't ready to understand what we heard.";}
+		close;
+	}	
+}
+//=================================================================================
+ars_dun77,126,89,5	script	#arsdun77a	1905,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_cortes06fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_cortes06en";}
+
+}
+//=================================================================================
+ars_dun82,100,95,5	script	#arsdun82a	1905,{
+
+if(EP7_LANGUE == 0) { callfunc "ars_cortes07fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_cortes07en";}
+
+}
+//=================================================================================
+ars_dun82,95,110,5	script	Cortès#ep75	731,{
+
+set @name$,"^66CCFFCortès^000000";
+	
+	if(EP7_CHASSEUR >= 11) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Incroyable, je ne pensais pas que l'on pouvait vivre aussi longtemps ...";}
+		if(EP7_LANGUE == 1) { mes "Incredible, I didn't think we could live as long ...";}
+		if(EP7_LANGUE == 0) { mes "Et il va me laisser lire quelques uns de ses livres !";}
+		if(EP7_LANGUE == 1) { mes "And he will let me read some of his books!";}
+		next;
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "J'ai bien peur que notre collaboration se termine ici ! Repasse tout de même me voir à Coppalana pour continuer de chasser des trésors !";}
+		if(EP7_LANGUE == 1) { mes "I fear that our work ends here! Returns see me at Coppalana to continue to hunt for treasures!";}
+		close;
+	}
+		
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) { mes "Incroyable après toutes ces années, il est encore en vie !";}
+	if(EP7_LANGUE == 1) { mes "Amazing after all these years, he is still alive!";}
+	if(EP7_CHASSEUR == 9) { 
+		if(EP7_LANGUE == 0) { mes "Attendez un peu, nous allons en savoir plus !"; }		
+		if(EP7_LANGUE == 1) { mes "Wait a minute, we'll learn more!"; }		
+	}
+	close2;
+	if(EP7_CHASSEUR == 9 && $@ep7Anim18 == 0) { donpcevent "EP7_intro::OnEvent19"; }
+	end;
+	
+OnTalk1:
+	if($ep7_LangChoice & 1) { npctalk "Alfraganus ! Nous n'espérions pas vous retrouver en vie après tout ce temps ... Ces siècles !";}
+	if($ep7_LangChoice & 2) { npctalk "Alfraganus! We didn't expect to find you alive after all this time ... These centuries!";}
+	end;	
+	
+OnTalk2:
+	if($ep7_LangChoice & 1) { npctalk "Je n'aime pas trop la tournure que prennent les choses ...";}
+	if($ep7_LangChoice & 2) { npctalk "I don't like the way things goes ...";}
+	end;	
+
+OnTalk3:
+	if($ep7_LangChoice & 1) { npctalk "Comment a-t-il pu survivre au Cataclysme des temps anciens ?";}
+	if($ep7_LangChoice & 2) { npctalk "How did he survive the cataclysm in ancient times?";}
+	end;	
+}
+//=================================================================================
+ars_dun82,91,108,5	script	Alfraganus#ep8	451,{
+
+set @name$,"^66CCFFAlfraganus^000000";
+
+	if (EP7_CHASSEUR == 10 && $@ep7Cortes04 == 1 || EP7_CHASSEUR == 11) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) {mes "Parfait, je vais pouvoir retourner dans mon laboratoire ... Ces cyborgs ne sont pas encore assez fiables et bien trop avancés pour notre monde actuel.";}
+		if(EP7_LANGUE == 1) {mes "Perfect, I'll be able to return to my laboratory ... These cyborgs are not yet reliable enough and far too advanced for our world today.";}
+		if(EP7_LANGUE == 0) {mes "Enfin, les événements qui se préparent ne vont pas nous laisser beaucoup de repos ...";}
+		if(EP7_LANGUE == 1) {mes "Finally, the events that are preparing will not leave us plenty of rest ...";}
+		next;
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) {mes "Votre quête va se poursuivre ... Vous devez rapporter les 7 Perles Noires au Temple de Shinaere à Schallmar.";}
+		if(EP7_LANGUE == 1) {mes "Your quest will continue ... You must report the seven Pearls in the Hall of Shinaere in Schallmar.";}
+		if(EP7_LANGUE == 0) {mes "On se retrouvera là-bas ... Ce ne sera pas de tout repos vous pouvez me croire ...";}
+		if(EP7_LANGUE == 1) {mes "We will meet there ... It will not be an easy believe me ...";}
+		close2;
+		if (EP7_CHASSEUR == 10) {
+			completequest 70575;
+			getitem 29125,1;
+			set EP7_CHASSEUR,11;}
+		end;
+	}
+	if(EP7_CHASSEUR == 9 && $@ep7Anim18 == 2 || EP7_CHASSEUR == 10 || EP7_CHASSEUR == 9) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) {mes "Prenez cette rune d'^66CCFFAlfraganus^000000, vous pourrez ainsi vous rendre dans son laboratoire.";}
+		if(EP7_LANGUE == 1) {mes "You take the rune of d'^66CCFFAlfraganus^000000,so you'll be able to go in his labotory.";}
+		close2;
+		if(EP7_CHASSEUR == 9) { set EP7_CHASSEUR,10; }
+		end;
+	}		
+
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Nous n'avons d'autres choix que de suivre SA volonté !";}
+	if(EP7_LANGUE == 1) {mes "We have no choice, we must follow Her will!";}
+	close;
+	
+OnTalk1:
+	if($ep7_LangChoice & 1) { npctalk "Elle m'avait annoncé votre venue. SA volonté est ma vie.";}
+	if($ep7_LangChoice & 2) { npctalk "She had told me your coming. Her will is my life.";}
+	end;
+	
+OnTalk2:
+	if($ep7_LangChoice & 1) { npctalk "Je suis toujours en vie, j'ai passé longtemps parmi les Do'Urdein aux longues vies.";}
+	if($ep7_LangChoice & 2) { npctalk "I am still alive, I spent a long time among the Do'Urdein with long lives.";}
+	end;
+	
+OnTalk3:
+	if($ep7_LangChoice & 1) { npctalk "Une bénédiction des Dieux me maintient en vie, je suis le gardien d'Arsinoé et de ses îles.";}
+	if($ep7_LangChoice & 2) { npctalk "A blessing of the gods keeps me alive, I am the guardian of Arsinoe and its islands.";}
+	end;
+	
+OnTalk4:
+	if($ep7_LangChoice & 1) { npctalk "Votre venue n'aurait pu se faire sans ma volonté. Nous avons besoin de vous ...";}
+	if($ep7_LangChoice & 2) { npctalk "Your arrival could not have happened without my will. We need you ...";}
+	end;
+	
+OnTalk5:
+	if($ep7_LangChoice & 1) { npctalk "La Déesse Aérie m'a donné une Perle Noire pour être sûre qu'elles ne soient pas rassemblées par nos ennemis.";}
+	if($ep7_LangChoice & 2) { npctalk "Goddess Aerie gave me a Black Pearl to make sure they aren't collected by our enemies.";}
+	end;
+	
+OnTalk6:
+	if($ep7_LangChoice & 1) { npctalk "Qui penserait venir sur Solinari la reprendre ? Si ce n'est mon ancien disciple ...";}
+	if($ep7_LangChoice & 2) { npctalk "Who would think of coming Solinari resume? Except my old disciple ...";}
+	end;
+	
+OnTalk7:
+	if($ep7_LangChoice & 1) { npctalk "Oui, je parle de Shandalar la Liche !";}
+	if($ep7_LangChoice & 2) { npctalk "Yes, I speak of Shandalar the Lich !";}
+	end;
+	
+OnTalk8:
+	if($ep7_LangChoice & 1) { npctalk "En devenant une liche justement ... Les Anciens Temps n'ont pas d'importance pour vous ...";}
+	if($ep7_LangChoice & 2) { npctalk "By becoming a lich just ... Ancient times don't matter for you ...";}
+	end;
+
+OnTalk9:
+	if($ep7_LangChoice & 1) { npctalk "C'est un monde qui n'existe plus et oublié par tous. Shandalar veut récupérer les 7 perles pour ouvrir le Sanctuaire de Shinaere ...";}
+	if($ep7_LangChoice & 2) { npctalk "It is a world that no longer exists and forgotten by all. Shandalar wants to recover the 7  pearls to open the Sanctuary Shinaere ...";}
+	end;
+	
+OnTalk10:
+	if($ep7_LangChoice & 1) { npctalk "Il veut qu'elle soit neutre pour le combat à venir. Il a donc volé les Perles pour sceller le sanctuaire en y laissant des troupes.";}
+	if($ep7_LangChoice & 2) { npctalk "He wants it to be neutral for the fight ahead. So he stole the pearls to seal the shrine, leaving the troops.";}
+	end;
+
+OnTalk11:
+	if($ep7_LangChoice & 1) { npctalk "Une gigantesque tempête a pu être déclenchée par Shinaere avec ses dernières forces, ce qui dispera ses perles.";}
+	if($ep7_LangChoice & 2) { npctalk "A huge storm has been triggered by Shinaere with his last strength, which dispersed its pearls.";}
+	end;
+	
+OnTalk12:
+	if($ep7_LangChoice & 1) { npctalk "Vous êtes un élu d'Arsinoé, il est de votre devoir de réunir les 7 Perles et d'ouvrir le sanctuaire de Shinaere.";}
+	if($ep7_LangChoice & 2) { npctalk "You are an elected official of Arsinoe, it is your duty to gather the seven pearls, and open the sanctuary of Shinaere.";}
+	end;
+	
+OnTalk13:
+	if($ep7_LangChoice & 1) { npctalk "Une de mes créations s'est réveillée de mauvaise humeur et je ne peux plus entrer dans mon laboratoire ...";}
+	if($ep7_LangChoice & 2) { npctalk "One of my creations woke up in a bad mood and I can not get into my lab ...";}
+	end;
+	
+OnTalk14:
+	if($ep7_LangChoice & 1) { npctalk "Venez me voir, je vais vous donner une rune pour entrer dans mon laboratoire de Solinari.";}
+	if($ep7_LangChoice & 2) { npctalk "Come and see me, I'll give you a rune to get into my lab Solinari.";}
+	end;
+}
+//=================================================================================
+ars_dun82,207,124,5	script	#ep7bar84	-1,15,0,{
+
+OnTouch:
+
+if (EP7_CHASSEUR <= 9) {
+		if(EP7_LANGUE == 0) { dispbottom "Un Champ de Force vous empêche de pénétrer dans le laboratoire.";}
+		if(EP7_LANGUE == 1) { dispbottom "A force field preventing you from entering the laboratory.";}
+		warp "ars_dun82",203,113;
+		end;}
+}
+//=================================================================================
+-	script	EP7_Cortes04	-1,{
+
+OnInit:
+
+	monster "ars_dun82",201,163,""+getmonsterinfo(3981,0)+"",3981,1,"EP7_Cortes04::OnBossDead";
+	set $@monster_ep7Cortes04,1;
+	set $@ep7Cortes04,0;
+	end;
+	
+OnBossDead:
+
+	set $@monster_ep7Cortes04, $@monster_ep7Cortes04-1;
+	if($@monster_ep7Cortes04==0) {
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun82","Alfraganus : Parfait ! Revenez me voir près de la  fusée !",1,0xff80ff;}
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun82","Alfraganus : Perfect! Come back next to the rocket!",1,0xff80ff;}
+		set $@ep7Cortes04,1;
+		donpcevent "EP7_Cortes04::OnEnd";
+		}
+	end;
+OnEnd:
+
+	sleep2 240000;
+	donpcevent "EP7_Cortes04::OnInit";
+	end;
+}
+
+
+//_________________________________________________________________
+//________________ Cortes : Traductions ___________________________
+//_________________________________________________________________
+
+
+//=================================================================================
+// Cortes
+//=================================================================================
+function	script	ars_cortes01fr	{
+
+if(EP7_CHASSEUR == 0) {
+
+	mes "[" + @name$ + "]";
+	mes "Hep' l'aventurier !";
+	mes "T'en penserai quoi de devenir un des nôtres ?";
+	mes "Avec ton bateau, tu pourrais devenir un sacré chasseur de trésor comme moi !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "J'ai jamais vu un péquenaud refuser ce lucratif passe-temps !";
+	mes "J'vais te passer une grue pour ton bateau, tu vas voir comment que c'est simple à utiliser ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Avant d'aller plus loin et de te méfier de ma soudaine générosité, je vais t'expliquer pourquoi j'agis ainsi ...";
+	mes "Vois-tu je suis le seul à vendre ce genre matériel, il te faut mon mélange spécial d'huile pour utiliser ma grue ..";
+	mes "Donc va te falloir aligner les "+getitemname($ep7_Tcoins)+" pour pouvoir partir à la chasse !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Voici 10 bidons d'Huile de Cortès, la grue est installée sur ton bateau ... Il ne te restera plus qu'à trouver des endroits où utiliser le tout.";
+	mes "S'tu veux ensuite, j'ai un détecteur à trésor ce qui sera des plus utile pour ta recherche.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "J'ai aussi une quête pour toi, je vais te l'ajouter à ton carnet ...";
+	close2;
+	set EP7_CHASSEUR,1;
+	getitem 29133,10;
+	end;}
+
+	mes "[" + @name$ + "]";
+	mes "Mais revoilà mon ami ^33CC00" + strcharinfo(0) + "^000000 !";
+	mes "Que puis-je pour toi en cette merveilleuse journée ?";
+	next;
+	switch( select("•De l'Huile:•Détecteur de Trésors:•Quête de Cortès:•Quitter") ) {
+			
+//==============================
+
+		case 1:
+			mes "[" + @name$ + "]";
+			mes "Mais pas de problèmes mon ami, je suis là pour ça !";
+			mes "Alors combien de bidons de mon huile veux-tu ?";
+			next;
+			input @input;
+			mes "[" + @name$ + "]";
+			mes "Donc ^FF0000["+@input+"]^000000 Bidons.";
+			mes "Soit un total de ^FF0000["+@input*2+"]^000000 "+getitemname($ep7_Tcoins)+".";
+			mes "C'est bien cela ?";
+			next;
+			if( select("•Oui:•Non") == 2 ) {
+				mes "[" + @name$ + "]";
+				mes "Bon, reviens lorsque tu seras décidé, comme tu peux le voir j'ai du monde en caisse !";
+				close;
+			}
+			
+			if (countitem($ep7_Tcoins) < @input*2) {
+				mes "[" + @name$ + "]";
+				mes "Il te manque des "+getitemname($ep7_Tcoins)+".";
+				mes "Il m'en faut ^FF0000["+@input*2+"]^000000 et toi tu n'en as que "+countitem($ep7_Tcoins)+" !";
+				close;}
+		
+			mes "[" + @name$ + "]";
+			mes "Parfait, faisons donc cette transaction !";
+			close2;
+			delitem $ep7_Tcoins,@input*2;
+			getitem 29133,@input;
+			end;
+//==============================			
+
+		case 2:
+			mes "[" + @name$ + "]";
+			mes "Ah ! Tu es un malin toi !";
+			mes "C'est assez cher mais quel gain de temps !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Ce détecteur permet de signaler par un faisceau lumineux l'emplacement d'un trésor.";
+			mes "Bon inutile de faire plus de palabres, c'est ^FF0000300 "+getitemname($ep7_Tcoins)+"^000000, tu passes à la caisse ?";
+			next;
+			if( select("•Oui:•Non") == 2 ) {
+				mes "[" + @name$ + "]";
+				mes "Penses-y, je te fais un prix d'ami !";
+				close;
+			}
+			
+			if (countitem($ep7_Tcoins) < 300) {
+				mes "[" + @name$ + "]";
+				mes "T'as pas oublié ta bourse ?";
+				mes "Tu n'as que ^FF0000"+countitem($ep7_Tcoins)+" "+getitemname($ep7_Tcoins)+"^000000";
+				close;}
+				
+			mes "[" + @name$ + "]";	
+			mes "Et voici ! Attention, il faut que tu gardes le détecteur sur toi lors de tes chasses au trésor !";
+			close2;
+			getitem 29134,1;
+			delitem $ep7_Tcoins,300;
+			end;
+//==============================	
+
+		case 3:
+			if(EP7_CHASSEUR < 2) {
+				mes "[" + @name$ + "]";
+				mes "Ah te voilà, donc j'ai une quête à te présenter ...";
+				mes "Il existe dans chaque région un sceau, les Sceaux de Schallmar ont été dispersé il y a fort longtemps ...";
+				next;
+				mes "[" + @name$ + "]";
+				mes "Je ne vais pas te donner plus d'informations pour le moment ... mais à chaque fois que tu en trouveras une, pense à me l'apporter.";
+				close2;
+				setquest 70570;
+				set EP7_CHASSEUR,2;
+				end;}
+				
+			if(EP7_CHASSEUR == 2) {
+				mes "[" + @name$ + "]";
+				mes "Alors as-tu des Sceaux pour moi ?";
+				next;
+				switch( select("•Déposer des Sceaux:•Voir mon avancement:•Quitter") ) {
+				
+					case 1:
+						setarray .@Itemid[1],29140,29141,29142,29143,29144,29145,29146,29147,29148;
+						setarray .@Varid[1],1,2,4,8,16,32,64,128,256;
+						set .@size, getarraysize(.@Itemid);
+						
+						for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+							if(countitem(.@Itemid[.@i]) > 0) {set .@iditem,.@i;}}
+							
+							if(.@iditem == 0) {
+								mes "[" + @name$ + "]";
+								mes "Je ne vois aucun sceau pouvant m'être utile.";
+								close;}
+						
+						mes "[" + @name$ + "]";
+						mes "Voulez-vous déposer votre ^FF0000"+getitemname(.@Itemid[.@iditem])+"^000000 ?";
+						next;
+						if( select("•Oui:•Non") == 2 ) {
+							mes "[" + @name$ + "]";
+							mes "N'oublie pas, je veux ces sceaux !";
+							close;}
+							
+						mes "[" + @name$ + "]";
+						mes "Et voilà, merci bien pour ton aide, il me les faut toutes !";
+						mes "Je ne suis qu'un simple amateur d'art !";
+						close2;
+						delitem .@Itemid[.@iditem],1;
+						set ep7_tresorcortes,ep7_tresorcortes|.@Varid[.@iditem];
+						end;
+				//==============================	
+				
+					case 2:
+						setarray .@Itemid[1],29140,29141,29142,29143,29144,29145,29146,29147,29148;
+						setarray .@Varid[1],1,2,4,8,16,32,64,128,256;
+						set .@size, getarraysize(.@Itemid);
+						
+						for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+							if(ep7_tresorcortes & .@Varid[.@i]) {set .@count,.@count+1;}}
+							
+								if(.@count == 9) { 
+									mes "[" + @name$ + "]";
+									mes "Oh vous les avez tous apportés ! Enfin ! Je réalise le rêve de mes ancêtres !";
+									mes "Je ne vous ai encore rien dit sur ces sceaux ... Revenez me voir plus tard, j'ai besoin de reprendre mes esprits.";
+									close2;
+									changequest 70570,70571;
+									set EP7_CHASSEUR,3;
+									end;
+									}
+							
+						mes "[" + @name$ + "]";
+						mes "Alors voyons ce que vous avez déjà rapporté :";
+							
+						for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+							if(ep7_tresorcortes & .@Varid[.@i]) {mes "^663399"+getitemname(.@Itemid[.@i])+"^000000 : ^66FF33 Obtenu^000000";}
+							else {mes "^663399"+getitemname(.@Itemid[.@i])+"^000000 : ^FF3300 Absent^000000";}
+							}
+							close;
+				//==============================				
+							
+					case 3:	
+						mes "[" + @name$ + "]";
+						mes "Bonne chasse !";
+						close;
+				}
+			}
+				
+			if(EP7_CHASSEUR <= 6) {
+			
+				mes "[" + @name$ + "]";
+				mes "Ah désolé pour la dernière fois ... C'était l'émotion ...";
+				mes "Bon ces sceaux ne sont pas de simples objets, mais ils sont magiques et d'une puissance !";
+				next;
+				mes "[" + @name$ + "]";
+				mes "Inutile de rentrer dans les détails, vous allez me suivre, prenez cette carte et suivez-moi !";
+				mes "On se retrouve là-bas !";
+				close2;
+				if(EP7_CHASSEUR == 3) {
+					set EP7_CHASSEUR,4;
+					getitem 29095,1;
+					changequest 70571,70572;}
+					end;
+				}	
+			
+			if(EP7_CHASSEUR == 7 || EP7_CHASSEUR == 8 || EP7_CHASSEUR == 9) {
+			
+				mes "[" + @name$ + "]";
+				mes "Hmm, j'ai continué la lecture du carnet d'Alfraganus et avec les nouveaux éléments trouvés dans son laboratoire, j'ai fait une découverte sensationnelle !";
+				mes "Il est retourné sur Terre ! Il n'est pas resté coincé sur Solinari.";
+				next;
+				mes "[" + @name$ + "]";
+				mes "Il était pourchassé par les Mages du Haut-Concile d'Arsinoé, il a du donc se réfugier dans une nouvelle cache.";
+				mes "Si je suis bien son raisonnement, il a du s'installer dans une région volcanique pour utiliser la force d'un volcan et retourner sur Solinari.";
+				next;
+				mes "[" + @name$ + "]";
+				mes "Voici une carte au trésor que j'ai pu établir à partir des informations retrouvées ... Cette fois-ci, on se rend à Schallmar !";
+				close2;
+				if(EP7_CHASSEUR == 7) {
+					changequest 70574,70575;
+					getitem 29100,1;
+					set EP7_CHASSEUR,8;
+				}
+				end;
+			}
+			
+			if(EP7_CHASSEUR >= 10) {
+			
+				mes "[" + @name$ + "]";
+				mes "C'est formidable ! Quelles aventures ! Merci à toi !";
+				close;
+			}
+			
+//==============================	
+
+		case 4:	
+			mes "[" + @name$ + "]";
+			mes "Bonne chasse !";
+			close;
+		}
+}
+//=================================================================================
+// Cortes
+//=================================================================================
+function	script	ars_cortes01en	{
+
+if(EP7_CHASSEUR == 0) {
+
+	mes "[" + @name$ + "]";
+	mes "Hep 'adventurer!";
+	mes "What do you think of becoming one of us?";
+	mes "With your boat, you could become a famous treasure hunter like me!";
+	next;
+	mes "[" + @name$ + "]";
+	mes "I've never seen a hillbilly who refuse this lucrative hobby!";
+	mes "I'll do without a hoist for your boat, you'll see how it's easy to use ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Before we go any further and you seems suspicious of my sudden generosity, I'll explain why I do so ...";
+	mes "You see, I'm the only one to sell this kind of equipment, you need my special blend of oil to use my crane ..";
+	mes "So you will have to align"+getitemname($ep7_Tcoins)+" In order to go hunting!";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Here are 10 cans of oil Cortes, the crane is installed on your boat ... It does more than you will find places to use it.";
+	mes "If'you want then I switch to a treasure that will be most useful for your research.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "I've also a quest for you, I'll add it to your notebook ...";
+	close2;
+	set EP7_CHASSEUR,1;
+	getitem 29133,10;
+	end;}
+
+	mes "[" + @name$ + "]";
+	mes "Isn't my friend who's back again" + strcharinfo(0) + "!";
+	mes "What can I do for you in this wonderful day?";
+	next;
+	switch( select("•Buy Oil:•Detector Treasures:•Cortès Quest:•Leave") ) {
+			
+//==============================
+
+		case 1:
+			mes "[" + @name$ + "]";
+			mes "But no problem my friend, I'm here for you!";
+			mes "So how many cans of my oil do you want?";
+			next;
+			input @input;
+			mes "[" + @name$ + "]";
+			mes " So ["+@input+"] cans.";
+			mes " For a total of ["+@input*2+"]"+getitemname($ep7_Tcoins)+"]";
+			mes ".";
+			next;
+			if( select("•Oui:•Non") == 2 ) {
+				mes "[" + @name$ + "]";
+				mes "As you wish.";
+				close;
+			}
+			
+			if (countitem($ep7_Tcoins) < @input*2) {
+				mes "[" + @name$ + "]";
+				mes " Well, back when you are decided, as you can see you don't have enough "+getitemname($ep7_Tcoins)+". There is still";
+				mes "."+@input*2+" missing. I need ["+countitem($ep7_Tcoins)+"] and you don't have that";
+				close;}
+		
+			mes "[" + @name$ + "]";
+			mes "That's a deal, boy !";
+			close2;
+			delitem $ep7_Tcoins,@input*2;
+			getitem 29133,@input;
+			end;
+//==============================			
+
+		case 2:
+			mes "[" + @name$ + "]";
+			mes "Okay, so let's deal!";
+			mes "Ah! You're a clever !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "It's pretty expensive but what a time saver!";
+			mes "This detector signal works by a light beam who shows the location of a treasure. Well no need to do more haggling, it's 300 "+getitemname($ep7_Tcoins)+" !";
+			next;
+			if( select("•Yes:•No") == 2 ) {
+				mes "[" + @name$ + "]";
+				mes "As you wish.";
+				close;
+			}
+			
+			if (countitem($ep7_Tcoins) < 300) {
+				mes "[" + @name$ + "]";
+				mes "Think about it, It's a friendly price!";
+				mes "You don't forget your purse? You have only "+countitem($ep7_Tcoins)+" "+getitemname($ep7_Tcoins)+"";
+				close;}
+				
+			mes "[" + @name$ + "]";	
+			mes "Oh Yeah ~Big Boy !";
+			close2;
+			getitem 29134,1;
+			delitem $ep7_Tcoins,300;
+			end;
+//==============================	
+
+		case 3:
+			if(EP7_CHASSEUR < 2) {
+				mes "[" + @name$ + "]";
+				mes "And behold! Attention must you keep the detector on you in your treasure hunt!";
+				mes "Ah there you are, so I'll have a quest ...";
+				next;
+				mes "[" + @name$ + "]";
+				mes "There is a seal in each region, the Schallmar Seals were dispersed a long time ago ...";
+				close2;
+				setquest 70570;
+				set EP7_CHASSEUR,2;
+				end;}
+				
+			if(EP7_CHASSEUR == 2) {
+				mes "[" + @name$ + "]";
+				mes "I will not give you more information for now ... but whenever you find one, bring it to me to think.";
+				next;
+				switch( select("•Deposit the Seals:•Progress:•Leave") ) {
+				
+					case 1:
+						setarray .@Itemid[1],29140,29141,29142,29143,29144,29145,29146,29147,29148;
+						setarray .@Varid[1],1,2,4,8,16,32,64,128,256;
+						set .@size, getarraysize(.@Itemid);
+						
+						for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+							if(countitem(.@Itemid[.@i]) > 0) {set .@iditem,.@i;}}
+							
+							if(.@iditem == 0) {
+								mes "[" + @name$ + "]";
+								mes "Are you sure to have a Seal for me ?";
+								close;}
+						
+						mes "[" + @name$ + "]";
+						mes "Do you want to place your "+getitemname(.@Itemid[.@iditem])+" ?";
+						next;
+						if( select("•Yes:•No") == 2 ) {
+							mes "[" + @name$ + "]";
+							mes "Don't forgot, I want Seals !";
+							close;}
+							
+						mes "[" + @name$ + "]";
+						mes "And now, thank you for your help, I need them all!";
+						mes "I'm just a lover of art!";
+						close2;
+						delitem .@Itemid[.@iditem],1;
+						set ep7_tresorcortes,ep7_tresorcortes|.@Varid[.@iditem];
+						end;
+				//==============================	
+				
+					case 2:
+						setarray .@Itemid[1],29140,29141,29142,29143,29144,29145,29146,29147,29148;
+						setarray .@Varid[1],1,2,4,8,16,32,64,128,256;
+						set .@size, getarraysize(.@Itemid);
+						
+						for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+							if(ep7_tresorcortes & .@Varid[.@i]) {set .@count,.@count+1;}}
+							
+								if(.@count == 9) { 
+									mes "[" + @name$ + "]";
+									mes "Oh you all have made! Finally! I realize the dream of my ancestors!";
+									mes "I've said nothing about these seals ... Come back later I need to calm down.";
+									close2;
+									changequest 70570,70571;
+									set EP7_CHASSEUR,3;
+									end;
+									}
+							
+						mes "[" + @name$ + "]";
+						mes "So let's see what you have already reported :";
+							
+						for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+							if(ep7_tresorcortes & .@Varid[.@i]) {mes "^663399"+getitemname(.@Itemid[.@i])+"^000000 : ^66FF33 Obtained^000000";}
+							else {mes "^663399"+getitemname(.@Itemid[.@i])+"^000000 : ^FF3300 Absent^000000";}
+							}
+							close;
+				//==============================				
+							
+					case 3:	
+						mes "[" + @name$ + "]";
+						mes "Happy hunting!";
+						close;
+				}
+			}
+				
+			if(EP7_CHASSEUR <= 6) {
+			
+				mes "[" + @name$ + "]";
+				mes " Ah sorry for the last time ... It was the emotion ...";
+				mes " Well these seals arn't mere objects, but they are magic and power!";
+				next;
+				mes "[" + @name$ + "]";
+				mes "I don't go into details, you will follow me, take this map and follow me!";
+				mes "See you there!";
+				close2;
+				if(EP7_CHASSEUR == 3) {
+					set EP7_CHASSEUR,4;
+					getitem 29095,1;
+					changequest 70571,70572;}
+					end;
+				}	
+			
+			if(EP7_CHASSEUR == 7 || EP7_CHASSEUR == 8 || EP7_CHASSEUR == 9) {
+			
+				mes "[" + @name$ + "]";
+				mes " Hmm, I continued reading the book and Alfraganus with new items found in his laboratory, I made a sensational discovery!";
+				mes " He returned to Earth! He's not stuck on Solinari.";
+				next;
+				mes "[" + @name$ + "]";
+				mes " He was chased by the Mages of the High Council of Arsinoe, so he has to take refuge in a new cache.";
+				mes " If I follow his reasoning, he had to settle in a volcanic region to use the force of a volcano and return Solinari.";
+				next;
+				mes "[" + @name$ + "]";
+				mes " Here is a treasure map that I could determine from the information found ... This time, we go to Schallmar!";
+				close2;
+				if(EP7_CHASSEUR == 7) {
+					changequest 70574,70575;
+					getitem 29100,1;
+					set EP7_CHASSEUR,8;
+				}
+				end;
+			}
+			
+			if(EP7_CHASSEUR >= 10) {
+			
+				mes "[" + @name$ + "]";
+				mes " It's great! What adventures! Thank you to you!";
+				close;
+			}
+			
+//==============================	
+
+		case 4:	
+			mes "[" + @name$ + "]";
+			mes "May the astuce with you !";
+			close;
+		}
+}
+
+//=================================================================================
+// Manganite
+//=================================================================================
+function	script	ars_cortes02fr	{
+
+	if (EP7_CHASSEUR <= 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ce réservoir est vide.";
+		close;}
+		
+	if (EP7_CHASSEUR == 5) {		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous remplir ce réservoir ?";
+		next;
+		switch( select("•Verser la Manganite:•Voir mon avancement:•Quitter") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "Combien d'unités voulez-vous verser ?";
+				next;
+				input @q;
+				if(countitem(29151) < @q) {
+					mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+					mes "Vous n'avez pas assez de Manganite sur vous.";
+					close;}
+				
+				delitem 29151,@q;
+				set $ep7cortesReserV1,$ep7cortesReserV1+@q;
+				
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "Vous venez de verser ^884DA7"+@q+"^000000.";
+				if($ep7cortesReserV1 >= 50) {mes "Le réservoir est maintenant rempli à [^66FF33 "+$ep7cortesReserV1*2+"^000000] %";}
+				if($ep7cortesReserV1 < 50) {mes "Le réservoir est maintenant rempli à [^FF3300"+$ep7cortesReserV1*2+"^000000] %";}
+				close2;
+				if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {donpcevent "EP7_SchallCortes1::OnCheck";}
+				end;
+			
+			case 2:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				if($ep7cortesReserV1 >= 50) {mes "Le réservoir est rempli à [^66FF33 "+$ep7cortesReserV1*2+"^000000] %";}
+				if($ep7cortesReserV1 < 50) {mes "Le réservoir est rempli à [^FF3300"+$ep7cortesReserV1*2+"^000000] %";}
+				close2;
+				if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {donpcevent "EP7_SchallCortes1::OnCheck";}
+				end;
+			
+			case 3: close;
+		}
+	}
+			
+}
+//=================================================================================
+function	script	ars_cortes02en	{
+
+	if (EP7_CHASSEUR <= 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "This tank is empty.";
+		close;}
+		
+	if (EP7_CHASSEUR == 5) {		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Do you want to fill this tank?";
+		next;
+		switch( select("•Verse Manganite:•See Progress:•Leave") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "How many units do you want verse ?";
+				next;
+				input @q;
+				if(countitem(29151) < @q) {
+					mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+					mes "You don't have enough Manganite on you.";
+					close;}
+				
+				delitem 29151,@q;
+				set $ep7cortesReserV1,$ep7cortesReserV1+@q;
+				
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "You have verse ^884DA7"+@q+"^000000 units.";
+				if($ep7cortesReserV1 >= 50) {mes "The tank is now filled to [^66FF33 "+$ep7cortesReserV1*2+"^000000] %";}
+				if($ep7cortesReserV1 < 50) {mes "The tank is now filled to [^FF3300"+$ep7cortesReserV1*2+"^000000] %";}
+				close2;
+				if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {donpcevent "EP7_SchallCortes1::OnCheck";}
+				end;
+			
+			case 2:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				if($ep7cortesReserV1 >= 50) {mes "The tank is now filled to [^66FF33 "+$ep7cortesReserV1*2+"^000000] %";}
+				if($ep7cortesReserV1 < 50) {mes "The tank is now filled to [^FF3300"+$ep7cortesReserV1*2+"^000000] %";}
+				close2;
+				if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {donpcevent "EP7_SchallCortes1::OnCheck";}
+				end;
+			
+			case 3: close;
+		}
+	}
+			
+}
+//=================================================================================
+// Manganite
+//=================================================================================
+function	script	ars_cortes03fr	{
+
+	if (EP7_CHASSEUR <= 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ce réservoir est vide.";
+		close;}
+		
+	if (EP7_CHASSEUR == 5) {		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous remplir ce réservoir ?";
+		next;
+		switch( select("•Verser la Manganite:•Voir mon avancement:•Quitter") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "Combien d'unités voulez-vous verser ?";
+				next;
+				input @q;
+				if(countitem(29151) < @q) {
+					mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+					mes "Vous n'avez pas assez de Manganite sur vous.";
+					close;}
+				
+				delitem 29151,@q;
+				set $ep7cortesReserV2,$ep7cortesReserV2+@q;
+				
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "Vous venez de verser ^884DA7"+@q+"^000000.";
+				if($ep7cortesReserV2 >= 50) {mes "Le réservoir est maintenant rempli à [^66FF33 "+$ep7cortesReserV2*2+"^000000] %";}
+				if($ep7cortesReserV2 < 50) {mes "Le réservoir est maintenant rempli à [^FF3300"+$ep7cortesReserV2*2+"^000000] %";}
+				close2;
+				if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {donpcevent "EP7_SchallCortes1::OnCheck";}
+				end;
+			
+			case 2:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				if($ep7cortesReserV2 >= 50) {mes "Le réservoir est rempli à [^66FF33 "+$ep7cortesReserV2*2+"^000000] %";}
+				if($ep7cortesReserV2 < 50) {mes "Le réservoir est rempli à [^FF3300"+$ep7cortesReserV2*2+"^000000] %";}
+				close2;
+				if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {donpcevent "EP7_SchallCortes1::OnCheck";}
+				end;
+			
+			case 3: close;
+		}
+	}
+			
+}
+//=================================================================================
+function	script	ars_cortes03en	{
+
+	if (EP7_CHASSEUR <= 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "This tank is empty.";
+		close;}
+		
+	if (EP7_CHASSEUR == 5) {		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Do you want to fill this tank?";
+		next;
+		switch( select("•Verse Manganite:•See Progress:•Leave") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "How many units do you want verse ?";
+				next;
+				input @q;
+				if(countitem(29151) < @q) {
+					mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+					mes "You don't have enough Manganite on you.";
+					close;}
+				
+				delitem 29151,@q;
+				set $ep7cortesReserV2,$ep7cortesReserV2+@q;
+				
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "You have verse ^884DA7"+@q+"^000000 units.";
+				if($ep7cortesReserV1 >= 50) {mes "The tank is now filled to [^66FF33 "+$ep7cortesReserV1*2+"^000000] %";}
+				if($ep7cortesReserV1 < 50) {mes "The tank is now filled to [^FF3300"+$ep7cortesReserV1*2+"^000000] %";}
+				close2;
+				if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {donpcevent "EP7_SchallCortes1::OnCheck";}
+				end;
+			
+			case 2:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				if($ep7cortesReserV1 >= 50) {mes "The tank is now filled to [^66FF33 "+$ep7cortesReserV1*2+"^000000] %";}
+				if($ep7cortesReserV1 < 50) {mes "The tank is now filled to [^FF3300"+$ep7cortesReserV1*2+"^000000] %";}
+				close2;
+				if($ep7cortesReserV1 >= 50 && $ep7cortesReserV2 >= 50) {donpcevent "EP7_SchallCortes1::OnCheck";}
+				end;
+			
+			case 3: close;
+		}
+	}
+			
+}
+
+//=================================================================================
+// Flee
+//=================================================================================
+function	script	ars_cortes04fr	{
+
+	if (EP7_CHASSEUR == 5 && $@ep7Cortes2 == 1) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous vous envoler vers Solinari ?";
+		next;
+		switch( select("•Oui:•Non") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "Après être entré dans le vaisseau d'Alfraganus, son moteur commence à vrombir.";
+				mes "Après une traversée de plusieurs heures, vous apercevez à travers le hublot une terre immense et rouge.";
+				close2;
+				set EP7_CHASSEUR,6;
+				completequest 70573;
+				warp "ars_dun71",132,100;
+				end;
+				
+			case 2:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "Vous devriez vous dépêcher tant que les réservoirs sont remplis, ils se vident vite !";
+				close;
+		}
+	}		
+	if (EP7_CHASSEUR <= 5) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Les réservoirs n'ont pas été activés, vous devez remplir les deux réservoirs à 100 % pour pouvoir lancer l'engin.";
+		close;}
+		
+		
+	if (EP7_CHASSEUR >= 6) {
+		warp "ars_dun71",132,100;
+		end;}
+}
+//=================================================================================
+function	script	ars_cortes04en	{
+
+	if (EP7_CHASSEUR == 5 && $@ep7Cortes2 == 1) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Do you want to fly to Solinari?";
+		next;
+		switch( select("•Yes:•No") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "After entering in the ship of Alfraganus, his engine began to roar.";
+				mes "After a journey of several hours, you see through the window a huge and red earth.";
+				close2;
+				set EP7_CHASSEUR,6;
+				completequest 70573;
+				warp "ars_dun71",132,100;
+				end;
+				
+			case 2:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "You should hurry as the tanks are full, they empty quickly!";
+				close;
+		}
+	}		
+	if (EP7_CHASSEUR <= 5) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "The tanks haven't been activated, you must fill both tanks at 100% in order to launch the craft.";
+		close;}
+		
+		
+	if (EP7_CHASSEUR >= 6) {
+		warp "ars_dun71",132,100;
+		end;}
+}
+//=================================================================================
+// Heliodore
+//=================================================================================
+function	script	ars_cortes05fr	{
+
+
+	mes "[" + @name$ + "]";
+	mes "Nous sommes la " + @name$ + " pour vous servir !";
+	mes "Attention nos stocks évoluent en fonction des achats et des ventes !";
+	next;
+	switch( select("•Acheter:•Vendre:•Voir les objets proposés") ) {
+
+//=================================================================================
+//                                  Achat
+//=================================================================================
+	
+			case 1:
+				mes "[" + @name$ + "]";
+				mes "Que voulez-vous acheter ?";
+				next;
+				set .@size, getarraysize($ID_DynamicShop1);
+				
+				set .@Menu$, "";
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					set .@Menu$, .@Menu$ + getitemname($ID_DynamicShop1[.@i]) + ":";}
+				
+				set @choiceID, $ID_DynamicShop1[select(.@Menu$)];
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@choiceID == $ID_DynamicShop1[.@i]) {set @choiceNB,$NB_DynamicShop1[.@i]; set @choicePR,$PR_DynamicShop1[.@i];}
+				}
+		
+				if(@choiceNB == 0) {
+					mes "[" + @name$ + "]";
+					mes "Je suis navré mais nous n'avons plus de ^0000FF" + getitemname(@choiceID) + "^000000 en stock !";
+					mes "Si vous en avez à vendre nous pouvons vous en acheter à prix d'or !";
+					close;}
+				
+				mes "[" + @name$ + "]";
+				mes "Vous avez choisi des ^0000FF" + getitemname(@choiceID) + "^000000, nous en avons ^FF0000["+@choiceNB+"]^000000 en stock.";
+				mes "Ce produit coûte en ce moment à l'unité ^884DA7"+@choicePR+" "+getitemname($ep7_Tcoins)+"^000000.";
+				next;				
+				mes "[" + @name$ + "]";
+				mes "Combien de ^0000FF" + getitemname(@choiceID) + "^000000 voulez-vous ?";
+				next;
+				input .@q;
+				
+				if(.@q == 0) {
+					mes "[" + @name$ + "]";
+					mes "Autant me dire de suite que vous ne souhaitiez rien acheter ! Des clients attendent !";
+					close;}
+					
+				if(.@q > @choiceNB) {
+					mes "[" + @name$ + "]";
+					mes "Nous n'avons pas assez de ^0000FF" + getitemname(@choiceID) + "^000000 en stock !";
+					close;}
+				
+				if(.@q*@choicePR > countitem($ep7_Tcoins)) {
+					mes "[" + @name$ + "]";
+					mes "Je suis désolé ^33CC00" + strcharinfo(0) + "^000000, mais vous n'avez pas les ^884DA7"+.@q*@choicePR+" "+getitemname($ep7_Tcoins)+"^000000 requis.";
+					close;}
+				
+				
+				set @uptemp,@choicePR+.@q;
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@uptemp > $MAX_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) { set @uptemp,$MAX_DynamicShop1[.@i];}
+					if(@uptemp < $MI_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) { set @uptemp,$MI_DynamicShop1[.@i];}
+				}
+				//Baisse du Prix				
+				for( set .@i, 1; .@i < .@q; set .@i, .@i +1 ) {
+					set @uptemp,@choicePR+1;
+				}
+				
+				mes "[" + @name$ + "]";
+				mes "Souhaitez-vous acheter ^FF3300["+.@q+"]^000000 ^0000FF" + getitemname(@choiceID) + "^000000 pour ^884DA7"+@uptemp+" "+getitemname($ep7_Tcoins)+"^000000 ?";
+				next;
+				
+				if( select("•Oui:•Quitter") == 2 ) {
+					mes "[" + @name$ + "]";
+					mes "Comme il vous plaira ...";
+					close;
+				}
+					
+				
+				delitem $ep7_Tcoins,@uptemp;					
+				getitem @choiceID,.@q;
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+				
+					if(@choiceNB == $NB_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) {
+						set .@nb,$NB_DynamicShop1[.@i];
+						set .@nb,.@nb-.@q;
+						setarray $NB_DynamicShop1[.@i],.@nb;}
+						
+					if(@choicePR == $PR2_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) {
+						setarray $PR2_DynamicShop1[.@i],@uptemp;}
+				}
+				set .@choiceID,@choiceID;
+				donpcevent "Guilde Heliodore#ep7::OnPrice";
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@choiceID == $ID_DynamicShop1[.@i]) { set @pr,$PR_DynamicShop1[.@i];}
+				}
+				
+				mes "[" + @name$ + "]";
+				mes "Et voici votre commande ! Désormais le prix des ^0000FF" + getitemname(@choiceID) + "^000000 est à ^884DA7"+@pr+" "+getitemname($ep7_Tcoins)+"^000000.";
+				close;
+
+//=================================================================================
+//                                  Vente
+//=================================================================================
+
+				
+			case 2:			
+				mes "[" + @name$ + "]";
+				mes "Que voulez-vous vendre ?";
+				next;
+				set .@size, getarraysize($ID_DynamicShop1);
+				
+				set .@Menu$, "";
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					set .@Menu$, .@Menu$ + getitemname($ID_DynamicShop1[.@i]) + ":";}
+				
+				set @choiceID, $ID_DynamicShop1[select(.@Menu$)];
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@choiceID == $ID_DynamicShop1[.@i]) {set @choiceNB,$NB_DynamicShop1[.@i];}
+					if(@choiceID == $ID_DynamicShop1[.@i]) {set @choicePR,$PR_DynamicShop1[.@i];}
+					if(@choiceID == $ID_DynamicShop1[.@i]) {set @choiceMX,$MX_DynamicShop1[.@i];}
+				}
+		
+				if(@choiceNB == @choiceMX) {
+					mes "[" + @name$ + "]";
+					mes "Je suis navré mais nos stocks de ^0000FF" + getitemname(@choiceID) + "^000000 sont déjà pleins !";
+					mes "Nous faisons justement des promotions sur ces produits en ce moment !";
+					close;}
+					
+				set .@max,@choiceMX-.@choiceNB;
+				
+				mes "[" + @name$ + "]";
+				mes "Vous avez choisi des ^0000FF" + getitemname(@choiceID) + "^000000, nous en avons ^FF0000["+@choiceNB+"]^000000 en stock.";
+				mes "Nous pouvons acheter ce produit, en ce moment, à ^884DA7"+@choicePR+" "+getitemname($ep7_Tcoins)+"^000000 l'unité.";
+				mes "Mais nous ne pouvons pas en acheter plus de ^FF0000"+.@max+"^000000 !";
+				next;				
+				mes "[" + @name$ + "]";
+				mes "Combien de ^0000FF" + getitemname(@choiceID) + "^000000 voulez-vous nous vendre?";
+				next;
+				input .@q;
+				
+				if(.@q == 0) {
+					mes "[" + @name$ + "]";
+					mes "Autant me dire de suite que vous ne souhaitiez rien vendre !";
+					close;}
+					
+				if(.@q > .@max) {
+					mes "[" + @name$ + "]";
+					mes "Nous n'avons pas besoin d'autant de ^0000FF" + getitemname(@choiceID) + "^000000!";
+					close;}
+				
+				if(.@q > countitem(@choiceID)) {
+					mes "[" + @name$ + "]";
+					mes "Je suis désolé ^33CC00" + strcharinfo(0) + "^000000, mais vous n'avez pas les ^884DA7"+.@q+" "+getitemname(@choiceID)+"^000000 que vous proposez.";
+					close;}
+				
+				set @uptemp,@choicePR-.@q;
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@uptemp > $MAX_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) { set @uptemp,$MAX_DynamicShop1[.@i];}
+					if(@uptemp < $MI_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) { set @uptemp,$MI_DynamicShop1[.@i];}
+				}
+				
+
+				mes "[" + @name$ + "]";
+				mes " Souhaitez-vous vendre ^FF3300["+.@q+"]^000000 ^0000FF" + getitemname(@choiceID) + "^000000 pour ^884DA7"+@uptemp*.@q+" "+getitemname($ep7_Tcoins)+"^000000 ?";
+				next;
+				
+				if( select("•Oui:•Quitter") == 2 ) {
+					mes "[" + @name$ + "]";
+					mes "Comme il vous plaira ...";
+					close;
+				}
+					
+				
+				getitem $ep7_Tcoins,@uptemp*.@q;					
+				delitem @choiceID,.@q;
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+				
+					if(@choiceNB == $NB_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) {
+						set @nb,$NB_DynamicShop1[.@i];
+						set @nb,@nb+.@q;
+						setarray $NB_DynamicShop1[.@i],@nb;}
+						
+					if(@choicePR == $PR2_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) {
+						setarray $PR2_DynamicShop1[.@i],@uptemp;}
+				}
+				set .@choiceID,@choiceID;
+				donpcevent "Guilde Heliodore#ep7::OnPrice";
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@choiceID == $ID_DynamicShop1[.@i]) { set @pr,$PR_DynamicShop1[.@i];}
+				}
+				
+				mes "[" + @name$ + "]";
+				mes "Merci pour les objets ! Désormais le prix des ^0000FF" + getitemname(@choiceID) + "^000000 est à ^884DA7"+@pr+" "+getitemname($ep7_Tcoins)+"^000000.";
+				close;
+
+//=================================================================================
+//                                  Liste
+//=================================================================================			
+			case 3: 
+			
+				mes "[" + @name$ + "]";
+				mes "Voici ce que vous est proposé :";
+				
+				set .@size, getarraysize($ID_DynamicShop1);
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+				mes "-  ^FF0000["+$NB_DynamicShop1[.@i]+"]^000000 ^0000FF" + getitemname($ID_DynamicShop1[.@i]) + "^000000 au prix de ^884DA7"+$PR_DynamicShop1[.@i]+" "+getitemname($ep7_Tcoins)+"^000000";}
+				close;
+				
+	}
+}
+//=================================================================================
+function	script	ars_cortes05en	{
+
+
+	mes "[" + @name$ + "]";
+	mes "We are the " + @name$ + ", to serve you !";
+	mes "Please note our stocks change in response to purchases and sales!";
+	next;
+	switch( select("•Buy:•Sell:•See items") ) {
+
+//=================================================================================
+//                                  Achat
+//=================================================================================
+	
+			case 1:
+				mes "[" + @name$ + "]";
+				mes "What do you bought ?";
+				next;
+				set .@size, getarraysize($ID_DynamicShop1);
+				
+				set .@Menu$, "";
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					set .@Menu$, .@Menu$ + getitemname($ID_DynamicShop1[.@i]) + ":";}
+				
+				set @choiceID, $ID_DynamicShop1[select(.@Menu$)];
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@choiceID == $ID_DynamicShop1[.@i]) {set @choiceNB,$NB_DynamicShop1[.@i]; set @choicePR,$PR_DynamicShop1[.@i];}
+				}
+		
+				if(@choiceNB == 0) {
+					mes "[" + @name$ + "]";
+					mes "I'm sorry, we don't have ^0000FF" + getitemname(@choiceID) + "^000000 in stock !";
+					mes "If you have to sell we can buy them at exorbitant prices !";
+					close;}
+				
+				mes "[" + @name$ + "]";
+				mes "You have choose ^0000FF" + getitemname(@choiceID) + "^000000, and we have ^FF0000["+@choiceNB+"]^000000 in stock.";
+				mes "This product costs currently in the unit ^884DA7"+@choicePR+" "+getitemname($ep7_Tcoins)+"^000000.";
+				next;				
+				mes "[" + @name$ + "]";
+				mes "How many ^0000FF" + getitemname(@choiceID) + "^000000 do you want ?";
+				next;
+				input .@q;
+				
+				if(.@q == 0) {
+					mes "[" + @name$ + "]";
+					mes "So many tell me once that you don't want to buy anything! Customers are waiting!";
+					close;}
+					
+				if(.@q > @choiceNB) {
+					mes "[" + @name$ + "]";
+					mes "We don't have enough ^0000FF" + getitemname(@choiceID) + "^000000 in stock !";
+					close;}
+				
+				if(.@q*@choicePR > countitem($ep7_Tcoins)) {
+					mes "[" + @name$ + "]";
+					mes "I'm sorry ^33CC00" + strcharinfo(0) + "^000000, but you don't have ^884DA7"+.@q*@choicePR+" "+getitemname($ep7_Tcoins)+"^000000 needed.";
+					close;}
+				
+				
+				set @uptemp,@choicePR+.@q;
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@uptemp > $MAX_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) { set @uptemp,$MAX_DynamicShop1[.@i];}
+					if(@uptemp < $MI_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) { set @uptemp,$MI_DynamicShop1[.@i];}
+				}
+				//Baisse du Prix				
+				for( set .@i, 1; .@i < .@q; set .@i, .@i +1 ) {
+					set @uptemp,@choicePR+1;
+				}
+				
+				mes "[" + @name$ + "]";
+				mes "Do you want bought ^FF3300["+.@q+"]^000000 ^0000FF" + getitemname(@choiceID) + "^000000 for ^884DA7"+@uptemp+" "+getitemname($ep7_Tcoins)+"^000000 ?";
+				next;
+				
+				if( select("•Yes:•Leave") == 2 ) {
+					mes "[" + @name$ + "]";
+					mes "As you wish ...";
+					close;
+				}
+					
+				
+				delitem $ep7_Tcoins,@uptemp;					
+				getitem @choiceID,.@q;
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+				
+					if(@choiceNB == $NB_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) {
+						set .@nb,$NB_DynamicShop1[.@i];
+						set .@nb,.@nb-.@q;
+						setarray $NB_DynamicShop1[.@i],.@nb;}
+						
+					if(@choicePR == $PR2_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) {
+						setarray $PR2_DynamicShop1[.@i],@uptemp;}
+				}
+				set .@choiceID,@choiceID;
+				donpcevent "Guilde Heliodore#ep7::OnPrice";
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@choiceID == $ID_DynamicShop1[.@i]) { set @pr,$PR_DynamicShop1[.@i];}
+				}
+				
+				mes "[" + @name$ + "]";
+				mes "And here's your order! Now the price of ^0000FF" + getitemname(@choiceID) + "^000000 is at ^884DA7"+@pr+" "+getitemname($ep7_Tcoins)+"^000000.";
+				close;
+
+//=================================================================================
+//                                  Vente
+//=================================================================================
+
+				
+			case 2:			
+				mes "[" + @name$ + "]";
+				mes "What do you sell ?";
+				next;
+				set .@size, getarraysize($ID_DynamicShop1);
+				
+				set .@Menu$, "";
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					set .@Menu$, .@Menu$ + getitemname($ID_DynamicShop1[.@i]) + ":";}
+				
+				set @choiceID, $ID_DynamicShop1[select(.@Menu$)];
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@choiceID == $ID_DynamicShop1[.@i]) {set @choiceNB,$NB_DynamicShop1[.@i];}
+					if(@choiceID == $ID_DynamicShop1[.@i]) {set @choicePR,$PR_DynamicShop1[.@i];}
+					if(@choiceID == $ID_DynamicShop1[.@i]) {set @choiceMX,$MX_DynamicShop1[.@i];}
+				}
+		
+				if(@choiceNB == @choiceMX) {
+					mes "[" + @name$ + "]";
+					mes "I'm sorry but our stocks ^0000FF" + getitemname(@choiceID) + "^000000 are already full !";
+					mes "We just promotions on these products at this time !";
+					close;}
+					
+				set .@max,@choiceMX-.@choiceNB;
+				
+				mes "[" + @name$ + "]";
+				mes "You have choose ^0000FF" + getitemname(@choiceID) + "^000000, we have ^FF0000["+@choiceNB+"]^000000 in stock.";
+				mes "We can buy this product at this time to ^884DA7"+@choicePR+" "+getitemname($ep7_Tcoins)+"^000000 unit.";
+				mes "But we can not buy more ^FF0000"+.@max+"^000000 !";
+				next;				
+				mes "[" + @name$ + "]";
+				mes "How many ^0000FF" + getitemname(@choiceID) + "^000000 do you want buy ?";
+				next;
+				input .@q;
+				
+				if(.@q == 0) {
+					mes "[" + @name$ + "]";
+					mes "So many tell me once that you don't want to sell anything!";
+					close;}
+					
+				if(.@q > .@max) {
+					mes "[" + @name$ + "]";
+					mes "We don't need as many ^0000FF" + getitemname(@choiceID) + "^000000!";
+					close;}
+				
+				if(.@q > countitem(@choiceID)) {
+					mes "[" + @name$ + "]";
+					mes "I'm sorry ^33CC00" + strcharinfo(0) + "^000000, but you don't have ^884DA7"+.@q+" "+getitemname(@choiceID)+"^000000 you propose.";
+					close;}
+				
+				set @uptemp,@choicePR-.@q;
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@uptemp > $MAX_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) { set @uptemp,$MAX_DynamicShop1[.@i];}
+					if(@uptemp < $MI_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) { set @uptemp,$MI_DynamicShop1[.@i];}
+				}
+				
+
+				mes "[" + @name$ + "]";
+				mes "Do you want sold ^FF3300["+.@q+"]^000000 ^0000FF" + getitemname(@choiceID) + "^000000 for ^884DA7"+@uptemp*.@q+" "+getitemname($ep7_Tcoins)+"^000000 ?";
+				next;
+				
+				if( select("•Yes:•Leave") == 2 ) {
+					mes "[" + @name$ + "]";
+					mes "As you wish ...";
+					close;
+				}
+					
+				
+				getitem $ep7_Tcoins,@uptemp*.@q;					
+				delitem @choiceID,.@q;
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+				
+					if(@choiceNB == $NB_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) {
+						set @nb,$NB_DynamicShop1[.@i];
+						set @nb,@nb+.@q;
+						setarray $NB_DynamicShop1[.@i],@nb;}
+						
+					if(@choicePR == $PR2_DynamicShop1[.@i] && @choiceID == $ID_DynamicShop1[.@i]) {
+						setarray $PR2_DynamicShop1[.@i],@uptemp;}
+				}
+				set .@choiceID,@choiceID;
+				donpcevent "Guilde Heliodore#ep7::OnPrice";
+				
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+					if(@choiceID == $ID_DynamicShop1[.@i]) { set @pr,$PR_DynamicShop1[.@i];}
+				}
+				
+				mes "[" + @name$ + "]";
+				mes "Thank you for the items! Now the price of ^0000FF" + getitemname(@choiceID) + "^000000 is at ^884DA7"+@pr+" "+getitemname($ep7_Tcoins)+"^000000.";
+				close;
+
+//=================================================================================
+//                                  Liste
+//=================================================================================			
+			case 3: 
+			
+				mes "[" + @name$ + "]";
+				mes "Here is what is offered :";
+				
+				set .@size, getarraysize($ID_DynamicShop1);
+				for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+				mes "-  ^FF0000["+$NB_DynamicShop1[.@i]+"]^000000 ^0000FF" + getitemname($ID_DynamicShop1[.@i]) + "^000000 at the price of ^884DA7"+$PR_DynamicShop1[.@i]+" "+getitemname($ep7_Tcoins)+"^000000";}
+				close;
+				
+	}
+}
+
+//=================================================================================
+// Warp Soli 2
+//=================================================================================
+function	script	ars_cortes06fr	{
+
+	if (EP7_CHASSEUR >= 9) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous vous envoler vers Solinari ?";
+		next;
+		switch( select("•Oui:•Non") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "Après être entré dans le vaisseau d'Alfraganus, son moteur commence à vrombir.";
+				mes "Après une traversée de plusieurs heures, vous apercevez à travers le hublot une terre immense et rouge.";
+				close2;
+				warp "ars_dun82",97,98;
+				end;
+				
+			case 2:
+				close;
+		}
+	}		
+	if (EP7_CHASSEUR <= 8) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous ne pouvez pas emprunter la navette.";
+		close;}
+}
+//=================================================================================
+function	script	ars_cortes06en	{
+
+	if (EP7_CHASSEUR >= 9) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Do you want to fly to Solinari?";
+		next;
+		switch( select("•Yes:•No") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "After entering the ship of Alfraganus, his engine began to roar.";
+				mes "After a journey of several hours, you see through the window a huge and red earth.";
+				close2;
+				warp "ars_dun82",97,98;
+				end;
+				
+			case 2:
+				close;
+		}
+	}		
+	if (EP7_CHASSEUR <= 8) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "You can't take the shuttle.";
+		close;}
+}
+//=================================================================================
+// Warp Soli 2
+//=================================================================================
+function	script	ars_cortes07fr	{
+
+	if (EP7_CHASSEUR >= 9) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Voulez-vous vous envoler vers l'Arsinoé ?";
+		next;
+		switch( select("•Oui:•Non") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "Après être entré dans le vaisseau d'Alfraganus, son moteur commence à vrombir.";
+				mes "Après une traversée de plusieurs heures, vous apercevez à travers le hublot l'Arsinoé.";
+				close2;
+				warp "ars_dun77",130,90;
+				end;
+				
+			case 2:
+				close;
+		}
+	}		
+	if (EP7_CHASSEUR <= 8) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous ne pouvez pas emprunter la navette.";
+		close;}
+}
+//=================================================================================
+function	script	ars_cortes07en	{
+
+	if (EP7_CHASSEUR >= 9) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Do you want to fly to the Arsinoe?";
+		next;
+		switch( select("•Yes:•No") ) {
+				
+			case 1:
+				mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+				mes "After entering the ship of Alfraganus, his engine began to roar.";
+				mes "After a journey of several hours, you see through the window of Arsinoe.";
+				close2;
+				warp "ars_dun77",130,90;
+				end;
+				
+			case 2:
+				close;
+		}
+	}		
+	if (EP7_CHASSEUR <= 8) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "You can't take the shuttle.";
+		close;}
+}

@@ -1,0 +1,1478 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= L'élu
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 1.2
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 1.1 Rumble fix
+//= 1.2 Chaperon Rouge reward fix
+//
+//
+//================================================================================================= 
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Rumble
+// 2 = Le Conte des Contes
+// 3 = Abordage !
+// 4 = Île du Dragon
+// 5 = Hilary
+// 6 = Invocations d'Aérie
+// 7 = Les Franky
+// 8 = Les Kenders
+// 9 = La Vision d'Or
+//
+//_________________________________________________________________
+//________________ Elu : Rumble ___________________________________
+//_________________________________________________________________
+
+ars_dun88,126,98,5	script	Gunter Baimam'bre#ep8	448,{
+
+set @name$,"^66CCFFGunter Baimam'bre^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Nous accueillons ceux qui veulent mesurer leur force !";
+	mes "Vous pouvez parier sur vos combats et gagner de l'argent en combattant nos champions !";
+	mes "Le Rumble est actuellement :";
+	if($rumble_state == 0) { mes "^33CC00Disponible^000000"; }
+	if($rumble_state == 1) { mes "^33CC00En phase d'enregistrement / Paris^000000"; }
+	if($rumble_state == 2) { mes "^33CC00En phase de combat^000000"; }
+	if($rumble_state == 3) { mes "^33CC00En phase de récompense^000000"; }	
+	next;
+	switch(select("•S'inscrire:•Cote:•Participer:•Prix:•Quitter")){
+
+//====================================================
+
+		case 1:
+		
+			if ($rumble_state > 1) {
+				mes "[" + @name$ + "]";
+				mes "Vous ne pouvez pas vous enregistrer pour le moment, une équipe est déjà inscrite.";
+				close;
+			}
+			
+			for(set .@i, 1; .@i < getarraysize($rumble_player$); set .@i, .@i + 1) { 
+				if(strcharinfo(0) == $rumble_player$[.@i]) {
+					mes "[" + @name$ + "]";
+					mes "Vous êtes déjà inscrit !";
+					mes "Veuillez attendre la fin des inscriptions pour participer au Rumble.";
+					close;}
+			}
+			
+			mes "[" + @name$ + "]";
+			mes "^33CC00" + strcharinfo(0) + "^000000 vous êtes désormais inscrit !";
+			mes "Le Rumble va bientôt débuter.";
+			close2;
+			set $rumble_player,$rumble_player+1;
+			setarray $rumble_player$[$rumble_player],strcharinfo(0);
+			mapannounce "ars_dun88","Rumble : " + strcharinfo(0) + " vient de s'inscrire.",1,0xFFCC66;
+			if($rumble_state == 0) {
+				set $rumble_state,1;
+				if( $EP7Annonce == 0 ) { mapannounce "ars_dun88","Rumble -- Le Rumble vient de débuter vous avez une minute pour vous inscrire !",1,0xFFCC66;}
+				if( $EP7Annonce == 1 ) { announce "Rumble -- Le Rumble vient de débuter vous avez une minute pour vous inscrire !",0,0xFFCC66;}
+				donpcevent "EP8_Rumble::OnStart";
+			}
+			end;
+			
+//====================================================
+	
+		case 2:		
+			mes "[" + @name$ + "]";
+			mes "L'adversaire du jour est : ^884DA7"+$rumble_name$[$rumble_opp]+"^000000";
+			mes "Sa cote est de : [^884DA7"+$rumble_value[$rumble_opp]+"^000000]";
+			close;
+
+//====================================================
+			
+		case 3:
+			if($rumble_state != 2) {
+				mes "[" + @name$ + "]";
+				mes "Vous ne pouvez pas vous rendre dans l'arène pour le moment.";
+				close;
+			}
+			
+			for(set .@i, 1; .@i < getarraysize($rumble_player$); set .@i, .@i + 1) { 
+				if(strcharinfo(0) == $rumble_player$[.@i]) {
+					mes "[" + @name$ + "]";
+					mes "Voulez-vous rendre dans l'arène ?";
+					next;
+					switch(select("•Participer:•Quitter")){
+					
+						case 1:
+							mes "[" + @name$ + "]";
+							mes "Allons-y !";
+							close2;
+							warp "ars_dun88",151,92;
+							end;
+							
+						case 2:
+							close;
+					}
+				}
+			 }
+			 
+			 mes "[" + @name$ + "]";
+			 mes "Vous n'êtes pas enregistré, donc vous ne pouvez pas participer.";
+			 close;
+
+//====================================================
+			 
+		case 4:
+			mes "[" + @name$ + "]";
+			mes "Vous pouvez gagner des prix en fonction de votre nombre de victoires !";
+			mes "Qui puis-je pour vous ?";
+			next;
+			switch(select("•Liste des Prix:•Retirer un Prix:•Quitter")){
+			
+				case 1:
+					mes "[" + @name$ + "]";
+					if(Ep8_rumbleP >= 1) { mes "Pour ^884DA710 Victoires^000000 : 200 "+getitemname($ep7_Tcoins)+" : ^66FF33 Obtenu^000000"; }
+					else { mes "Pour ^884DA710 Victoires^000000 : 200 "+getitemname($ep7_Tcoins)+" : ^FF3300 Non Obtenu^000000";}
+					if(Ep8_rumbleP >= 2) { mes "Pour ^884DA720 Victoires^000000 : 400 "+getitemname($ep7_Tcoins)+" : ^66FF33 Obtenu^000000"; }
+					else { mes "Pour ^884DA720 Victoires^000000 : 400 "+getitemname($ep7_Tcoins)+" : ^FF3300 Non Obtenu^000000";}
+					if(Ep8_rumbleP >= 3) { mes "Pour ^884DA740 Victoires^000000 : "+getitemname(29102)+" : ^66FF33 Obtenu^000000"; }
+					else { mes "Pour ^884DA740 Victoires^000000 : "+getitemname(29102)+" : ^FF3300 Non Obtenu^000000";}
+					if(Ep8_rumbleP >= 4) { mes "Pour ^884DA750 Victoires^000000 : "+getitemname($ep7recompense[48])+" : ^66FF33 Obtenu^000000"; }
+					else { mes "Pour ^884DA750 Victoires^000000 : "+getitemname($ep7recompense[48])+" : ^FF3300 Non Obtenu^000000";}
+					close;
+					
+				case 2:
+					mes "[" + @name$ + "]";
+					mes "Vous avez pour le moment : ["+Ep8_rumble+"] victoires.";
+					
+					if(Ep8_rumbleP == 0 && Ep8_rumble >= 10) { set @reward,$ep7_Tcoins; set @number,200; set .@true,1;}
+					if(Ep8_rumbleP == 1 && Ep8_rumble >= 20) { set @reward,$ep7_Tcoins; set @number,400; set .@true,1;}
+					if(Ep8_rumbleP == 2 && Ep8_rumble >= 40) { set @reward,29102; set @number,1; set .@true,1;}
+					if(Ep8_rumbleP == 3 && Ep8_rumble >= 50) { set @reward,$ep7recompense[48]; set @number,1; set .@true,1;}
+					
+					if(.@true == 1) {
+						mes "Vous venez de recevoir ^884DA7["+@number+"] "+getitemname(@reward)+" ^000000";
+						close2;
+						set Ep8_rumbleP,Ep8_rumbleP+1;
+						getitem @reward,@number;
+						end;
+					}
+					mes "Vous n'avez aucun prix à recevoir pour le moment.";
+					close;
+					
+				case 3:
+					close;
+			}			
+			
+//====================================================
+			 
+		case 5:
+			close;
+	}	
+		
+}
+//=================================================================================
+-	script	EP8_Rumble	-1,{
+
+OnInit:
+
+	//Name of Oppo + price
+	setarray $rumble_name$[1],"Rev'Kapajo","Romuald Koric","Anrilu","Inti","Carivano","Gropius","Kandizky","Ittel","Nomura","Hito","Rannie","Garilla","Rondache","Zoroastre","Arius","Mani";
+	setarray $rumble_ID[1],3985,3986,3987,3988,3989,3990,3991,3992,3993,3994,3995,3996,3997,3998,3999,3700;
+	setarray $rumble_value[1],10,15,20,25,30,35,40,45,50,60,70,75,80,100,120,150;
+	//Event Variable - 0= Can register / 1= register / 2= warp / 3= fight / 4= Reward
+	set $rumble_state,0;
+	//Players variable
+	cleararray $rumble_player$[0],0,127;
+	set $rumble_player,0;
+	//Calculate opponant
+	set $rumble_opp,rand(1,16);
+	end;
+
+OnStart:
+	
+	sleep2 60000;
+	mapannounce "ars_dun88","Rumble -- Les Inscriptions sont closes, vous avez 30 secondes pour vous rendre l'arène.",1,0xFFCC66;
+	set $rumble_state,2;
+	sleep2 30000;
+	mapannounce "ars_dun88","Rumble -- Le Combat contre "+$rumble_name$[$rumble_opp]+" va bientôt débuter !",1,0xFFCC66;
+	set $rumble_state,3;
+	sleep2 5000;
+	monster "ars_dun88",175,91,""+$rumble_name$[$rumble_opp]+"",$rumble_ID[$rumble_opp],1,"EP8_Rumble::OnBossDead";
+	set $@monster_ep8rumble,1;
+	initnpctimer;
+	end;
+	
+OnBossDead:
+
+	set $@monster_ep8rumble, $@monster_ep8rumble-1;
+		if($@monster_ep8rumble==0) {
+			mapannounce "ars_dun88","Rumble -- "+$rumble_name$[$rumble_opp]+" vient d'être battu !",1,0xFFCC66;
+			donpcevent "EP8_Rumble::OnEnd";
+		}
+	end;
+	
+OnEnd:
+	setnpctimer 0;
+	stopnpctimer;
+	set $rumble_state,4;
+	sleep2 5000;
+	mapannounce "ars_dun88","Rumble -- Vous pouvez prendre votre récompense !",1,0xFFCC66;
+	sleep2 120000;
+	donpcevent "EP8_Rumble::OnInit";
+	end;
+	
+OnTimer600000:
+	setnpctimer 0;
+	stopnpctimer;
+	mapannounce "ars_dun88","Rumble -- Vous n'avez pas réussi à battre "+$rumble_name$[$rumble_opp]+" dans les temps !",1,0xFFCC66;
+	sleep2 5000;
+	areawarp "ars_dun88",144,123,175,60,"ars_dun88",131,92;
+	areawarp "ars_dun88",176,99,183,84,"ars_dun88",131,92;
+	areawarp "ars_dun88",184,123,215,60,"ars_dun88",131,92;
+	killmonsterall "ars_dun88";
+	sleep2 60000;
+	donpcevent "EP8_Rumble::OnInit";
+	end;	
+}
+//=================================================================================
+ars_dun88,147,92,5	script	#arsdun88a	45,1,1,{
+		
+	if ($rumble_state <= 3) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous pouvez sortir mais vous n'aurez pas de récompense.";
+		mes "Voulez-vous sortir ?";
+		next;
+		if( select("•Oui:•Non") == 2 )
+			close;
+			
+		close2;
+		warp "ars_dun88",131,92;
+		end;
+	}
+	
+	if ($rumble_state == 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous avez vaincu : "+$rumble_name$[$rumble_opp]+".";
+		mes "Vous avez gagné une prime de ^884DA7["+$rumble_value[$rumble_opp] / $rumble_player+"]^000000 !";
+		close2;
+		warp "ars_dun88",131,92;
+		set Ep8_rumble,Ep8_rumble+1;
+		getitem $ep7_Tcoins,$rumble_value[1]/getarraysize($rumble_player$);
+		end;}
+}
+
+//_________________________________________________________________
+//________________ Elu : Le Conte des Contes ______________________
+//_________________________________________________________________
+
+ars_fild72,126,144,1	script	Bède le Vénérable#ep8	448,5,5,{
+
+set @name$,"^66CCFFBède le Vénérable^000000";
+
+	if (EP8_CONTE <= 1) {
+		mes "[" + @name$ + "]";
+		mes "J'aimerai tant retrouver un livre magique ... Ce sont de véritables merveilles !";
+		mes "Hélas, ils ne sont plus autorisés en Arsinoé ... Bien trop dangereux.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ces livres vous permettent de vivre réellement les histoires ... de ressentir les aventures ...";
+		mes "J'ai cru comprendre que les moines du ^33CC00Monsatère de Tibèrine^000000 avaient encore un de ces ouvrages dans leur bibliothèque ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Vous devriez essayer ce livre et me donner vos impressions !";
+		close2;
+		if(EP8_CONTE == 0) { 
+			setquest 70635;
+			set EP8_CONTE,1;
+		}
+		end;
+	}
+	
+	if (EP8_CONTE >= 2) {
+		mes "[" + @name$ + "]";
+		mes "Ainsi tu as réussi à finir l'histoire ... Voilà qui est formidable ...";
+		mes "Je n'avais pas réussi à la sauver moi-même ...";
+		close;
+	}	
+
+OnTouch:
+	if (EP8_CONTE == 0) {showevent 1,0;} end;
+}
+//=================================================================================
+ars_dun52,91,14,5	script	#arslivreact01	111,1,1,{
+
+	if(EP8_CONTE == 0) {	
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ceci est un livre. Mais vu que lire ne fait pas parti de vos skills ...";
+		close;
+	}	
+
+	if(EP8_CONTE >= 1) {		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Ceci est le livre dont ^66CCFFBède le Vénérable^000000 vous a parlé.";
+		mes "Que voulez-vous faire ?";
+		next;
+		if( select("•Lire le livre:•Lire, moi !?") == 2 )
+			close;
+	
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "*Vous vous sentez aspriré dans le livre.*";
+		close2;
+		if ($@Ep8_rouge == 0) { donpcevent "EP8_livre::OnStart"; }
+		warp "ars_dun89",204,35;
+		end;
+	}	
+}
+//=================================================================================
+-	script	EP8_livre	-1,{
+
+OnInit:
+	set $@Ep8_rouge,0;
+	disablenpc "Chaperon Rouge#ep8b";
+	disablenpc "Chaperon Rouge#ep8c";
+	disablenpc "Chaperon Rouge#ep8d";
+	disablenpc "Tombe#ep8a";
+	disablenpc "Tombe#ep8b";
+	disablenpc "Tombe#ep8c";
+	donpcevent "Tombe#ep8a::OnBack";
+	donpcevent "Tombe#ep8b::OnBack";
+	donpcevent "Tombe#ep8ac::OnBack";
+	setcell "ars_dun89",150,64,155,69,cell_walkable,0;
+	setcell "ars_dun89",50,114,41,116,cell_walkable,0;
+	setcell "ars_dun89",71,187,76,196,cell_walkable,0;
+	end;
+	
+OnStart:
+	set $@Ep8_rouge,1;
+	sleep2 10000;
+	mapannounce "ars_dun89","Livre - Vous devez aider le petit Chaperon Rouge à apporter des pots de confiture à sa grand-mère.",1,0xFFCC66;
+	end;
+	
+OnEvent1:
+	set $@Ep8_rouge,2;
+	setcell "ars_dun89",150,64,155,69,cell_walkable,1;
+	mapannounce "ars_dun89","Livre - Vous devez vous aventurer dans la forêt pour ouvrir la voie au Chaperon Rouge.",1,0xFFCC66;
+	enablenpc "Chaperon Rouge#ep8b";
+	end;
+	
+OnEvent2:
+	set $@Ep8_rouge,3;
+	setcell "ars_dun89",50,114,41,116,cell_walkable,1;
+	mapannounce "ars_dun89","Livre - Vous devez libérer les 3 âmes de la famille du Chaperon Rouge.",1,0xFFCC66;
+	enablenpc "Tombe#ep8a";
+	enablenpc "Tombe#ep8b";
+	enablenpc "Tombe#ep8c";
+	end;	
+
+OnEvent3:	
+	set $@Ep8_rouge,$@Ep8_rouge+1;
+	if ( $@Ep8_rouge > 5) {
+		mapannounce "ars_dun89","Livre - Mission Accomplie ! Vous devez rejoindre Mère-Grand !",1,0xFFCC66;
+		enablenpc "Chaperon Rouge#ep8c";
+		donpcevent "EP8_livre::OnBoss";
+	}
+	end;
+	
+OnBoss:
+	sleep2 5000;
+	monster "ars_dun89",162,206,""+getmonsterinfo(3701,0)+"",3701,1,"EP8_livre::OnBossDead";
+	mapannounce "ars_dun89","Livre - Attention ! Un Loup Démoniaque nous empêche d'arriver voir Mère-Grand !",1,0xFFCC66;
+	end;
+	
+OnBossDead:
+	setcell "ars_dun89",71,187,76,196,cell_walkable,1;
+	donpcevent "EP8_livre::OnEnd";
+	end;
+	
+OnEnd:
+	mapannounce "ars_dun89","Livre - Formidable, la route vers le village de Mère-Grand est ouverte !",1,0xFFCC66;
+	set $@Ep8_rouge,7;
+	sleep2 240000;
+	donpcevent "EP8_livre::OnInit";
+	mapwarp "ars_dun89","ars_dun52",91,20;
+	end;
+}
+//=================================================================================
+ars_dun89,194,64,5	script	Chaperon Rouge#ep8a	960,{
+
+set @name$,"^FF00CCChaperon Rouge^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Pourriez-vous m'accompagner jusqu'à la maison de ma grand-mère ... ?";
+	mes "J'ai bien trop peur du Grand Loup pour m'aventurer toute seule dans cette sombre forêt ...";
+	close2;
+	if ($@Ep8_rouge == 1) { donpcevent "EP8_livre::OnEvent1"; }
+	end;	
+}
+//=================================================================================
+ars_dun89,41,111,5	script	Chaperon Rouge#ep8b	960,{
+
+set @name$,"^FF00CCChaperon Rouge^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Je n'ai pas tellement envie d'aller plus loin ... Pourriez-vous sur la route menant chez ma mère-grand libérer les âmes de ma famille ?";
+	mes "Le Méchant loup a emprisonné leurs âmes pour les emporter dans les Abysses ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Vous devez retrouver leur tombe puis les asperger d'eau bénite pour que leurs âmes soient enfin en paix.";
+	close2;
+	if ($@Ep8_rouge == 2) { donpcevent "EP8_livre::OnEvent2"; }
+	end;	
+}
+//=================================================================================
+ars_dun89,27,195,5	script	Chaperon Rouge#ep8c	960,{
+
+set @name$,"^FF00CCChaperon Rouge^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Merci beaucoup pour votre aide ! Grâce à vous la malédiction du livre est levée !";
+	mes "Ce livre va maintenant être détruit  ... Si seulement ^66CCFFBède le Vénérable^000000 avait pu le faire auparavant ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Voici un présent pour vous ...";
+	mes "*Vous recevez un ^33CC00"+getitemname(29171)+"^000000 !";
+	close2;
+	if (EP8_CONTE == 1) {
+		getitem 29171,1;
+		set EP8_CONTE,2;
+		completequest 70635;
+	}
+	warp "ars_dun52",91,20;
+	end;
+}
+//=================================================================================
+ars_dun89,52,31,5	script	Tombe#ep8a	801,{
+
+set @name$,"^33CC00Tombe^000000";
+
+	if (.var == 1) { end;}	
+	
+	mes "[" + @name$ + "]";
+	mes "Voulez-vous purifier cette tombe pour libérer l'âme contenue ?";
+	next;
+	if( select("•Oui:•Non") == 2 )
+		close;
+			
+	close2;
+	if (.var == 0) { set .var,1; donpcevent "EP8_livre::OnEvent3"; }
+	end;	
+	
+OnBack: set .var,0;	end;
+}
+//=================================================================================
+ars_dun89,65,151,5	script	Tombe#ep8b	801,{
+
+set @name$,"^33CC00Tombe^000000";
+
+	if (.var == 1) { end;}	
+	
+	mes "[" + @name$ + "]";
+	mes "Voulez-vous purifier cette tombe pour libérer l'âme contenue ?";
+	next;
+	if( select("•Oui:•Non") == 2 )
+		close;
+			
+	close2;
+	if (.var == 0) { set .var,1; donpcevent "EP8_livre::OnEvent3"; }
+	end;	
+	
+OnBack: set .var,0;	end;
+}
+//=================================================================================
+ars_dun89,190,112,5	script	Tombe#ep8c	801,{
+
+set @name$,"^33CC00Tombe^000000";
+
+	if (.var == 1) { end;}	
+	
+	mes "[" + @name$ + "]";
+	mes "Voulez-vous purifier cette tombe pour libérer l'âme contenue ?";
+	next;
+	if( select("•Oui:•Non") == 2 )
+		close;
+			
+	close2;
+	if (.var == 0) { set .var,1; donpcevent "EP8_livre::OnEvent3"; }
+	end;	
+	
+OnBack: set .var,0;	end;
+}
+//_________________________________________________________________
+//________________ Elu : Abordage ! _______________________________
+//_________________________________________________________________
+
+ars_dun90,172,201,5	script	Jean Bart#ep8	947,5,5,{
+
+set @name$,"^66CCFFJean Bart^000000";
+
+		mes "[" + @name$ + "]";
+		mes "Je fais parti de la ^33CC00Guilde des Flibustiers^000000 !";
+		mes "Nous recherchons toujours des bras pour aborder les navires de la région de Schallmar !";
+		mes "Vous avez réalisé ^884DA7["+EP8_ABORD+"]^000000 abordages pour le moment !";
+		next;
+		switch(select("•Devenir Flibustier:•Clamer mon titre:•Quitter")){
+		
+			case 1:
+				mes "[" + @name$ + "]";
+				mes "Pour attaquer les navires vous devez porter notre ^884DA7"+getitemname(29158)+"^000000 !";
+				mes "Si vous ne l'avez pas encore ou si vous l'avez perdu vous pouvez en achter un ici !";
+				mes "Il est vendu pour la modique somme de 50 "+getitemname($ep7_Tcoins)+" !";
+				next;
+				if( select("•Acheter:•Quitter") == 2 )
+					close;
+			
+				if (countitem($ep7_Tcoins) < 50) {
+					mes "[" + @name$ + "]";
+					mes "Vous n'avez pas assez d'argent pour obtenir le ^884DA7"+getitemname(29158)+"^000000 !";
+					close;
+				}
+				
+				mes "[" + @name$ + "]";
+				mes "Parfait voici de quoi mener des abordages !";
+				mes "En équipant votre ^884DA7"+getitemname(29158)+"^000000 dans une région de Schallmar les différents points possibles pour mener une attaque s'afficheront sur votre carte !";
+				close2;
+				delitem $ep7_Tcoins,50;
+				getitem 29158,1;
+				if (EP8_ABORD == 0) {
+					set EP8_ABORD,1;
+					setquest 70640;
+				}
+				end;
+				
+			case 2:
+			
+				if (EP8_ABORD >= 51) {
+					mes "[" + @name$ + "]";
+					mes "Vous avez déjà reçu votre Titre de ^33CC00Seigneur des Pirates^000000 !";
+					close;
+				}
+				
+				if (EP8_ABORD < 50) {
+					mes "[" + @name$ + "]";
+					mes "Pour obtenir le titre de ^33CC00Seigneur des Pirates^000000, vous devez avoir effectué au moins 50 abordages.";
+					mes "Vous avez réalisé pour le moment : ^884DA7["+EP8_ABORD+"]^000000 abordages.";
+					close;
+				}
+				
+				mes "[" + @name$ + "]";
+				mes "Félicitations ! Vous venez d'obtenir le Titre de ^33CC00Seigneur des Pirates^000000 !";
+				mes "Vous recevez par la même occasion : "+getitemname(29175)+".";
+				close2;
+				set EP8_ABORD,51;
+				getitem 29175,1;
+				//Titre
+				set $EP8_TSEIGNP,$EP8_TSEIGNP+1;
+				for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+				if ($EP8_TSEIGNP == .@i){ setarray $EP7_NSEIGNP$[.@i],strcharinfo(0);}		
+				announce "[" + strcharinfo(0) +"] est devenu le [" + $EP8_TSEIGNP + "] Seigneur des Pirates !",bc_all,0x33FF00;
+				end;
+				
+			case 3: close;
+		}
+OnTouch:
+	if (EP8_ABORD == 0) {showevent 1,0;} end;
+}
+//_________________________________________________________________
+//________________ Elu : Île du Dragon ____________________________
+//_________________________________________________________________
+
+ars_fild72,276,281,5	script	Arthur#ep8	707,5,5,{
+
+set @name$,"^66CCFFArthur^000000";
+
+	if (EP8_DRAGON <= 1) {
+		mes "[" + @name$ + "]";
+		mes "Oi Aventurier ! J'suis ^66CCFFArthur^000000 ... Un chevalier en peine d'exploits ...";
+		mes "Je suis originaire de l'île du Dragon ... L'ancienne terre des Arsinoïte avant le Cataclysme.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Hélas, je ne puis plus regagner mon village tant que ce maudit Monmouth le Dragon nous empêche de regagner notre île ...";
+		mes "Je cherche des compagnons pour battre ce dragon ... Mais tout le monde semble trembler de peur à l'idée d'affronter le dragon ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Si vous êtes assez courageux pourquoi ne pas venir avec moi dans cette île pour botter du dragon ?";
+		close2;
+		if (EP8_DRAGON == 0) {
+			set EP8_DRAGON,1;
+			setquest 70645;
+		}
+		end;
+	}
+	
+	if (EP8_DRAGON >= 2) {
+		mes "[" + @name$ + "]";
+		mes "Me voilà un véritable héros ! Mes exploits seront contés des générations durant !";
+		mes "J'aurai du croire en moi bien plutôt !";
+		close;
+	}
+
+OnTouch:
+	if (EP8_DRAGON == 0) {showevent 1,0;} end;
+}
+//=================================================================================
+ars_fild76,137,227,5	script	Gott-Frey#ep8	963,{
+
+set @name$,"^66CCFFGott-Frey^000000";
+
+	if (EP8_DRAGON == 0) {
+		mes "[" + @name$ + "]";
+		mes "Nous ne pouvons plus vivre dans notre île ... Mes compagnons sont partis vivre à Schallmar le temps que ce maudit dragon s'en aille ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Si cela vous tente de libérer notre île ... Notre jeune chevalier ^66CCFFArthur^000000 est parti à Schallmar pour trouver des compagnons et en finir avec ce maudit dragon !";
+		close;
+	}
+
+	if (EP8_DRAGON == 1) {
+		mes "[" + @name$ + "]";
+		mes "Ah ! Vous êtes les compagnons d'^66CCFFArthur^000000, il vous attend à l'intérieur !";
+		mes "Bonne chance ! Tous les membres de notre village attendent avec impatience votre réussite !";
+		close;
+	}
+	
+	if (EP8_DRAGON >= 2) {
+		mes "[" + @name$ + "]";
+		mes "Quelle belle réussite ! ^66CCFFArthur^000000 sera célébré pour son courage ! Vous avez vraiment eu de la chance de côtoyer un guerrier aussi brave !";
+		close;
+	}
+}
+//=================================================================================
+ars_fild76,148,160,5	script	#arsfild76a	45,1,1,{
+		
+	if ($@Ep8_dragon >= 2 && EP8_DRAGON == 1) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		mes "Vous avez vaincu le dragon.";
+		mes "Vous avez obtenu une ^33CC00"+getitemname(29103)+"^000000 ainsi que des ^33CC00Ecailles de dragon rouge^000000.";
+		close2;
+		set EP8_DRAGON,2;
+		dispbottom "Vous venez de recevoir des Ecailles de Dragon.";
+		changequest 70645,70646;
+		getitem 29103,1;
+		warp "ars_fild76",131,216;
+		end;
+	}
+	warp "ars_fild76",131,216;
+	end;
+}
+//=================================================================================
+ars_fild76,79,128,5	script	Gong#ep8	111,{
+
+set @name$,"^33CC00Gong^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Que voulez-vous faire ?";
+	next;
+	if( select("•Frapper:•Quitter") == 2 )
+		close;
+	
+	if(countitem(29159) < 1) {
+		mes "[" + @name$ + "]";
+		mes "Pour pouvoir faire résonner le gong, il vous faut un ^33CC00"+getitemname(29159)+"^000000.";
+		close;
+	}
+	close2;
+	delitem 29159,1;
+	if ($@Ep8_dragon == 0) { donpcevent "EP8_dragon::OnStart"; }
+	npctalk "*Gooooooonnnnnggggggg*";
+	end;
+}
+//=================================================================================
+ars_fild76,78,146,5	script	Arthur#ep8a	707,{
+
+set @name$,"^66CCFFArthur^000000";
+
+	if (EP8_DRAGON == 0) {
+		mes "[" + @name$ + "]";
+		mes "J'ai si peur !";
+		close;
+	}
+	
+	if (EP8_DRAGON == 1 && $@Ep8_dragon == 1) {
+		mes "[" + @name$ + "]";
+		mes "Que le combat commence !";
+		close;
+	}
+	if (EP8_DRAGON == 1 && $@Ep8_dragon == 2) {
+		mes "[" + @name$ + "]";
+		mes "Vous pouvez sortir pour prendre votre récompense !";
+		close;
+	}
+	if (EP8_DRAGON == 1) {
+		mes "[" + @name$ + "]";
+		mes "Il faut absolument trouver un ^33CC00"+getitemname(29159)+"^000000 pour actionner le Gong !";
+		mes "Ce bruit devrait faire sortir le dragon de sa tanière !";
+		close;
+	}
+	
+	if (EP8_DRAGON == 2) {
+		mes "[" + @name$ + "]";
+		mes "Je suis enfin un héros ! Un héros !";
+		mes "Vous aller pouvoir faire de bonnes affaires avec ces ^33CC00Ecailles de dragon rouge^000000 !";
+		close;
+	}	
+}
+//=================================================================================
+-	script	EP8_dragon	-1,{
+
+OnInit:
+	set $@Ep8_dragon,0;
+	end;
+	
+OnStart:
+	set $@Ep8_dragon,1;	
+	sleep2 5000;
+	if( $EP7Annonce == 0 ) { mapannounce "ars_fild76","Instance -- Monmouth, le Dragon Rouge vient de débuter !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 ) { announce "Instance -- Monmouth, le Dragon Rouge vient de débuter !",0,0xFFCC66;}
+	monster "ars_fild76",102,89,""+getmonsterinfo(3704,0)+"",3704,1,"EP8_dragon::OnBossDead";
+	end;
+	
+OnBossDead:
+	donpcevent "EP8_dragon::OnEnd";
+	end;
+	
+OnEnd:
+	mapannounce "ars_fild76","Arthur : Le Dragon est mort  ! Le village est sauvé !",1,0xFFCC66;
+	sleep2 5000;
+	mapannounce "ars_fild76","Arthur : Vous pouvez sortir du village pour prendre votre récompense !",1,0xFFCC66;
+	set $@Ep8_dragon,2;
+	sleep2 120000;
+	donpcevent "EP8_dragon::OnInit";
+	end;
+}
+//=================================================================================
+ars_dun90,158,23,5	script	Torn'Du#ep8	63,{
+
+set @name$,"^66CCFFTorn'Du^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Je suis le meilleur forgeron des îles de Schallmar, pour sûr !";
+	mes "Si tu m'apportes certains matériaux, je pourrais de te forger des armes d'une rare puissance !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Alors voici ce que je peux te proposer comme armes ...";
+	next;
+	switch(select("•"+getitemname(29179)+":•"+getitemname(29174)+":•Quitter")){
+
+		case 1:
+			mes "[" + @name$ + "]";
+			mes "Quel bon choix ! Un choix avisé ! Mais non aisé ...";
+			mes "Il faut pour cela tuer un Dragon Rouge et lui arracher ses écailles ... Ce qui n'est pas de tout repos si vous voulez mon avis ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Il me faut donc pour forger "+getitemname(29179)+" :";
+			mes "- Des ^33CC00Ecailles de dragon rouge^000000.";
+			mes "- 50 "+getitemname($ep7_Tcoins)+" pour les autres matériaux et la main d'oeuvre.";
+			next;
+			if( select("•Fabriquer:•Quitter") == 2 )
+				close;
+			
+			mes "[" + @name$ + "]";
+			if(EP8_DRAGON > 2) {
+				mes "Je ne peux pas en fabriquer un nouveau, sans quoi ce ne serait plus une arme unique !";
+				close;
+			}
+			if(countitem($ep7_Tcoins) < 50) {
+				mes "Vous n'avez pas assez de "+getitemname($ep7_Tcoins)+" !";
+				close;
+			}
+			if(EP8_DRAGON < 2) {
+				mes "Vous n'avez pas d'^33CC00Ecailles de dragon rouge^000000!";
+				close;
+			}
+			mes "Mais c'est que vous avez tout ce qu'il faut pour fabriquer une ^33CC00"+getitemname(29179)+"^000000 !";
+			mes "J'y vais de suite préparer votre arme, bon sieur !";
+			close2;
+			getitem 29179,1;
+			delitem $ep7_Tcoins,50;
+			set EP8_DRAGON,3;
+			end;
+//================================================	
+		case 2:
+			mes "[" + @name$ + "]";
+			mes "Quel bon choix ! Un choix avisé ! Mais non aisé ...";
+			mes "Il faut pour cela un ^33CC00"+getitemname(29162)+"^000000 ... Ce tissu est très rare ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Il me faut donc pour forger "+getitemname(29174)+" :";
+			mes "- Des ^33CC00"+getitemname(29162)+"^000000.";
+			mes "- 75 "+getitemname($ep7_Tcoins)+" pour les autres matériaux et la main d'oeuvre.";
+			next;
+			if( select("•Fabriquer:•Quitter") == 2 )
+				close;
+			
+			mes "[" + @name$ + "]";
+			if(EP8_BOUCLIER > 2) {
+				mes "Je ne peux pas en fabriquer un nouveau, sans quoi ce ne serait plus un objet unique !";
+				close;
+			}
+			if(countitem($ep7_Tcoins) < 75) {
+				mes "Vous n'avez pas assez de "+getitemname($ep7_Tcoins)+" !";
+				close;
+			}
+			if(EP8_BOUCLIER < 2) {
+				mes "Vous n'avez pas d'^33CC00"+getitemname(29162)+"^000000!";
+				close;
+			}
+			mes "Mais c'est que vous avez tout ce qu'il faut pour fabriquer une ^33CC00"+getitemname(29174)+"^000000 !";
+			mes "J'y vais de suite préparer votre bouclier, bon sieur !";
+			close2;
+			getitem 29174,1;
+			if(countitem(29162) > 0) { delitem 29162,1; }
+			delitem $ep7_Tcoins,75;
+			set EP8_BOUCLIER,3;
+			end;
+		//================================================			
+		case 3:
+			close;
+	}
+}
+//=================================================================================
+//Quest With Treasure Card #14 Depending of Dragon's one.
+//=================================================================================
+ars_dun90,42,169,5	script	Coffre#arsdun90	1324,{
+
+set @name$,"^33CC00Coffre^000000"; 
+
+	if (EP8_BOUCLIER >= 1) {
+		mes "[" + @name$ + "]";
+		mes "Il n'y a plus rien à vous intéresser ici.";
+		close;
+	}		
+		
+	mes "[" + @name$ + "]";
+	mes "Vous venez de récupérer un trésor dans ce coffre !";
+	mes "- 50 "+getitemname($ep7_Tcoins)+".";
+	mes "- 1 ^33CC00"+getitemname(29161)+"^000000.";
+	close2;
+	getitem $ep7_Tcoins,50;
+	getitem 29161,1;
+	set EP8_BOUCLIER,1;
+	end;
+}
+//=================================================================================
+//Quest With Treasure Card #15
+//=================================================================================
+ars_dun88,219,168,5	script	Coffre#arsdun88	1324,{
+
+set @name$,"^33CC00Coffre^000000"; 
+	
+if (EP8_Q5377 == 1) {
+		
+	mes "[" + @name$ + "]";
+	mes "Vous venez de récupérer un trésor dans ce coffre !";
+	mes "- 1 ^33CC00"+getitemname(29172)+"^000000.";
+	close2;
+	getitem 29172,1;
+	set EP8_Q5377,2;
+	end;}
+	
+		mes "[" + @name$ + "]";
+		mes "Il n'y a plus rien à vous intéresser ici.";
+		close;
+}
+//=================================================================================
+ars_fild72,147,221,5	script	Tisserand#ep8	122,{
+
+set @name$,"^66CCFFTisserand^000000";
+
+	if (EP8_BOUCLIER >= 2) {
+		mes "[" + @name$ + "]";
+		mes "Alors !? Tu as réussi à utiliser ton ^33CC00"+getitemname(29162)+"^000000 pour en fabriquer un bouclier ?";
+		mes "Il me semble que le meilleur forgeron des îles de Schallmar est originaire du Menez Mikael ar Mor !";
+		close;
+	}
+		
+	if (EP8_BOUCLIER == 1) {
+		mes "[" + @name$ + "]";
+		mes "Bien le bonjour !";
+		mes "Mais voici un bien bel objet ! Un ^33CC00"+getitemname(29161)+"^000000 !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Tu en as une bonne quantité ... Je peux te tisser un ^33CC00"+getitemname(29162)+"^000000 avec, si tu le souhaites ...";
+		mes "Avec cette quantité, on pourra se répartir la production ! Ce tissu est très recherché pour la fabrication de bouclier ...";
+		next;
+		if( select("•Fabriquer:•Quitter") == 2 )
+			close;
+		
+		
+		mes "[" + @name$ + "]";
+		mes "Merci pour cette occasion unique de travailler un tel tissu !";
+		close2;
+		if(countitem(29161) > 0) { delitem 29161,1; }
+		set EP8_BOUCLIER,2;
+		getitem 29162,1;
+		end;
+	}
+	
+	mes "[" + @name$ + "]";
+	mes "Je suis Tisserand, je prépare à partir de végétaux divers tissus ...";
+	mes "Si un jour, tu trouves quelque chose pour moi n'hésite pas à venir m'en parler.";
+	close;
+}
+//_________________________________________________________________
+//________________ Elu : Hilary ___________________________________
+//_________________________________________________________________
+
+ars_dun94,171,32,5	script	Hilary#ep8a	408,{
+
+set @name$,"^FF00CCHilary^000000";
+
+	if(EP8_HILARY == 1 && EP7_SCHALLMAR >= 39 || EP8_HILARY == 2) {
+		mes "[" + @name$ + "]";
+		mes "Alors comment avancent tes recherches !?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Mais cette carte ... c'est LA carte que je recherchais !";
+		mes "Ne perdons plus de temps ... Je vais prendre le matériel de plongée et l'on se retrouve sur place !";
+		close2;
+		if (EP8_HILARY == 1) {
+			set EP8_HILARY,2;}
+		end;
+	}
+
+	if(EP8_HILARY <= 1) {
+		mes "[" + @name$ + "]";
+		mes "L'île du Dragon selon mes recherches abrite l'ancienne cité dont sont originaires les Arsinoïtes !";
+		mes "Et je parle des temps précédents le Cataclysme ... J'aimerai tant retrouver cette antique cité ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Si un jour, tu trouves une carte au trésor indiquant l'île au Dragon ... Viens me voir ... Nous pourrions trouver un accord.";
+		close2;
+		if(EP8_HILARY == 0) {
+			setquest 70650;
+			set EP8_HILARY,1;
+		}
+		end;
+	}
+	
+	if(EP8_HILARY >= 2) {
+		mes "[" + @name$ + "]";
+		mes "Cette ancienne Arsinoé est formidable ! Même plus grande que la nouvelle ... Il est bien dommage que les arsinoïtes ne s'en souviennent quasiment plus.";
+		close;
+	}
+	
+}
+//=================================================================================
+ars_fild76,315,296,5	script	#arsfild76wa	111,{
+
+set @name$,"^33CC00Action : Utiliser^000000"; 
+
+	if(EP8_HILARY <= 1) {
+		mes "[" + @name$ + "]";
+		mes "Ceci est une cloche de plongée, mais il manque du matériel pour s'aventurer plus loin.";
+		close;
+	}
+	
+	if(EP8_HILARY >= 2) {	
+		mes "[" + @name$ + "]";
+		mes "^FF00CCHilary^000000 semble déjà avoir déposé son matériel de plongée ... Le système est opérationnel.";
+		mes "Elle doit surement vous attendre en bas.";
+		next;
+		if( select("•Plonger:•Quitter") == 2 ) 
+			close;
+			
+		warp "ars_dun93",213,28;
+		end;
+	}		
+}
+//=================================================================================
+ars_dun93,93,55,5	script	Hilary#ep8b	408,{
+
+set @name$,"^FF00CCHilary^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Regardez-moi cette proto-arsinoé ! Quelle Merveille ... Tant de connaissances perdues dans la mer suite au Cataclysme ...";
+	mes "J'aimerai tant retourner au temps d'^66CCFFAlfraganus^000000 et de ^66CCFFShandalar^000000 !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Je vais en avoir pour un moment à tout explorer ... Tu devrais chercher le trésor indiqué par ta carte ... Il devrait être ancien !";
+	mes "Et qui dit ancien ... dit magique ! Youhouuuuu ~ ";
+	close;
+}
+
+//_________________________________________________________________
+//________________ Invocations d'Aérie ____________________________
+//_________________________________________________________________
+
+//Obtenue avec carte au trésor n°10
+//Variable globale : ep8_sentences
+
+ars_dun93,43,184,5	script	Stèle#aerie1	111,{
+
+set @name$,"^33CC00Stèle^000000";
+
+	mes "[" + @name$ + "]";
+	if(ep8_sentences & 1) {
+		mes "Cette Stèle vous enseigne une prière que vous pouvez adressez à ^FF00CCLa Déesse Aérie^000000.";
+		mes "En prononçant ces mots vous pourrez recevoir son aide ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Vous devez tout d'abord vous adresser à Elle : ^33CC00NPC:Aerie^000000 ...";
+		mes "Ensuite vous devez prononcer ces mots : ^33CC00Aerie ! Donne-moi la vie !^000000";
+		close;
+	}
+	
+	mes "Cette Stèle vous enseigne une prière que vous pouvez adressez à ^FF00CCLa Déesse Aérie^000000.";
+	mes "En prononçant ces mots vous pourrez recevoir son aide ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Vous devez tout d'abord vous adresser à Elle : ^33CC00NPC:Aerie^000000 ...";
+	mes "Ensuite vous devez prononcer ces mots : ^33CC00Aerie ! Donne-moi la vie !^000000";
+	close2;
+	set ep8_sentences,ep8_sentences|1;
+	end;
+}
+//=================================================================================
+ars_dun94,223,21,5	script	Stèle#aerie2	111,{
+
+set @name$,"^33CC00Stèle^000000";
+
+	mes "[" + @name$ + "]";
+	if(ep8_sentences & 2) {
+		mes "Cette Stèle vous enseigne une prière que vous pouvez adressez à ^FF00CCLa Déesse Aérie^000000.";
+		mes "En prononçant ces mots vous pourrez recevoir son aide ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Vous devez tout d'abord vous adresser à Elle : ^33CC00NPC:Aerie^000000 ...";
+		mes "Ensuite vous devez prononcer ces mots : ^33CC00Aerie ! Je suis ton humble serviteur !^000000";
+		close;
+	}
+	
+	mes "Cette Stèle vous enseigne une prière que vous pouvez adressez à ^FF00CCLa Déesse Aérie^000000.";
+	mes "En prononçant ces mots vous pourrez recevoir son aide ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Vous devez tout d'abord vous adresser à Elle : ^33CC00NPC:Aerie^000000 ...";
+	mes "Ensuite vous devez prononcer ces mots : ^33CC00Aerie ! Je suis ton humble serviteur !^000000";
+	close2;
+	set ep8_sentences,ep8_sentences|2;
+	end;
+}
+//=================================================================================
+ars_dun96,56,76,5	script	Stèle#aerie3	111,{
+
+set @name$,"^33CC00Stèle^000000";
+
+	mes "[" + @name$ + "]";
+	if(ep8_sentences & 4) {
+		mes "Cette Stèle vous enseigne une prière que vous pouvez adressez à ^FF00CCLa Déesse Aérie^000000.";
+		mes "En prononçant ces mots vous pourrez recevoir son aide ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Vous devez tout d'abord vous adresser à Elle : ^33CC00NPC:Aerie^000000 ...";
+		mes "Ensuite vous devez prononcer ces mots : ^33CC00Aerie ! Protège-moi, je suis trop faible !^000000";
+		close;
+	}
+	
+	mes "Cette Stèle vous enseigne une prière que vous pouvez adressez à ^FF00CCLa Déesse Aérie^000000.";
+	mes "En prononçant ces mots vous pourrez recevoir son aide ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Vous devez tout d'abord vous adresser à Elle : ^33CC00NPC:Aerie^000000 ...";
+	mes "Ensuite vous devez prononcer ces mots : ^33CC00Aerie ! Protège-moi, je suis trop faible !^000000";
+	close2;
+	set ep8_sentences,ep8_sentences|4;
+	end;
+}
+//=================================================================================
+ars_dun96,56,161,5	script	Stèle#aerie4	111,{
+
+set @name$,"^33CC00Stèle^000000";
+
+	mes "[" + @name$ + "]";
+	if(ep8_sentences & 8) {
+		mes "Cette Stèle vous enseigne une prière que vous pouvez adressez à ^FF00CCLa Déesse Aérie^000000.";
+		mes "En prononçant ces mots vous pourrez recevoir son aide ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Vous devez tout d'abord vous adresser à Elle : ^33CC00NPC:Aerie^000000 ...";
+		mes "Ensuite vous devez prononcer ces mots : ^33CC00Aerie ! Envole-moi !^000000";
+		close;
+	}
+	
+	mes "Cette Stèle vous enseigne une prière que vous pouvez adressez à ^FF00CCLa Déesse Aérie^000000.";
+	mes "En prononçant ces mots vous pourrez recevoir son aide ...";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Vous devez tout d'abord vous adresser à Elle : ^33CC00NPC:Aerie^000000 ...";
+	mes "Ensuite vous devez prononcer ces mots : ^33CC00Aerie ! Envole-moi !^000000";
+	close2;
+	set ep8_sentences,ep8_sentences|8;
+	end;
+}
+//_________________________________________________________________
+//________________ Les Franky _____________________________________
+//_________________________________________________________________
+
+ars_dun94,213,217,5	script	Nair'Outo#ep8	83,5,5,{
+
+set @name$,"^66CCFFNair'Outo^000000";
+
+	if (EP8_FRANKY <= 1) {
+		mes "[" + @name$ + "]";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		mes "Comment tu vas-tu ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "T'srais pas chébran par un p'tit coup !? Rien d'dégueulasssssee, crétin !";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ya les ^33CC00Franky^000000 qui me foutent le seum grave quoi ...";
+		mes "Faudrait contre maille q't'ailles leur foutre un peu dessus, t'as-tu vu ?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		mes "Du genre ... PAN PAN !! ... grave, j'ai trop la zermi pour le faire moi-même ...";
+		mes "J'te donnerai un truc kwool ....";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		close2;
+		if (EP8_FRANKY == 0) {
+			set EP8_FRANKY,1;
+			setquest 70655;
+		}
+		end;
+	}
+	
+	if (EP8_FRANKY <= 6) {
+		mes "[" + @name$ + "]";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		mes "J'ai-ti pas entendu tes exploits, poto !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Va falloir .. BANG BANG le reste de la smala quoi !";
+		mes "Y sont toujours en ville quoi !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		mes "BANG BANG .... lol quoi ...";
+		close2;
+		if (EP8_FRANKY == 2) {
+			set EP8_FRANKY,3;
+			changequest 70656,70657;
+		}
+		end;
+	}	
+
+	if (EP8_FRANKY == 7) {
+		mes "[" + @name$ + "]";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		mes "C'est bon .... Oooooh ooouuuuiiiii ! Q'c'est bon !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Grav' cimer poto, t'm fous grave la tochepé !";
+		mes "Tiens pour toi gajoe !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		close2;
+		set EP8_FRANKY,8;
+		getitem 29105,1;
+		completequest 70658;
+		end;
+	}
+	
+	if (EP8_FRANKY >= 8) {
+		mes "[" + @name$ + "]";
+		mes "Weeeeeeessssshhhhhhh !!!";
+		mes "Cool bro' ça me turlupine la perche, lol !";
+		close;
+	}
+	
+OnTouch:
+	if (EP8_FRANKY == 0) {showevent 1,0;} end;		
+
+}
+//=================================================================================
+-	script	EP8_Franky	-1,{
+
+OnInit:
+	set $@Ep8_Franky,0;
+	areamonster "ars_dun96",130,119,164,42,""+getmonsterinfo(3705,0)+"",3705,20;
+	monster "ars_dun96",149,102,""+getmonsterinfo(3706,0)+"",3706,1,"EP8_Franky::OnBossDead";
+	end;
+	
+OnBossDead:	
+	donpcevent "EP8_Franky::OnEnd";
+	end;
+	
+OnEnd:
+	mapannounce "ars_dun96","Franky : Enflures ! Vous m'avez tué, ça ne se fait pas !",1,0xFFCC66;
+	sleep2 5000;
+	mapannounce "ars_dun96","Franky : Comment ma famille va s'occuper de vous ! Je meurs pas content !",1,0xFFCC66;
+	sleep2 5000;
+	mapannounce "ars_dun96","Franky : Aaarghhhh !!! Je vais mourir ... ça va, ça va ... ça arrive ...",1,0xFFCC66;	
+	sleep2 5000;
+	mapannounce "ars_dun96","Vous pouvez sortir pour prendre votre récompense.",1,0xFFCC66;	
+	set $@Ep8_Franky,1;
+	sleep2 120000;
+	donpcevent "EP8_Franky::OnInit";
+	end;
+}
+//=================================================================================
+ars_dun96,149,31,5	script	#arsdun94b	45,1,1,{
+
+	if(EP8_FRANKY == 1 && $@Ep8_Franky == 1) {	
+		set EP8_FRANKY,2;
+		changequest 70655,70656;
+		dispbottom "Vous avez vaincu Franky !";
+	}	
+	warp "ars_fild72",194,231;
+	end;
+	
+}
+//=================================================================================
+//Section Pièges pour la dernière partie.
+//=================================================================================
+
+//_________________________________________________________________
+//________________ Les Kenders ____________________________________
+//_________________________________________________________________
+
+ars_dun94,35,112,5	script	Tass le Hoff#ep8	83,5,5,{
+
+set @name$,"^66CCFFTass le Hoff^000000";
+
+	if (EP8_KENDER == 0) {
+		mes "[" + @name$ + "]";
+		mes "Pas terrible cette prison .. Tu peux me croire ...";
+		mes "Je préfère largement celle de Brynnlaw ou même encore du Vanaheim !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "On ne se serait pas déjà rencontré là-bas ? Il y a bien longtemps ... avec la Reine Danifae ?!";
+		mes "Non !?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Il faut dire que vous vous ressemblez tous les humains !";
+		mes "Je suis un Kender et fier de l'être !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Tu savais que les autres races nous méprisent à cause de notre intelligence !?";
+		mes "Vraiment une bande de jaloux ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "J'ai juste regardé une pomme de trop près et me voilà en prison !";
+		mes "C'est de la discrimination envers les Kenders, pour sûr !?";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ils trouvent aussi que l'on parle trop .. Alors que comme je te le disais lors de mon aventure dans l'Yggdrasil ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Ah !? Tu ne connais pas cette histoire ! Je vais te la raconter alors !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Un jour, je suis né de par mes parents dans notre cité Kenderfoule et ...";
+		next;
+		mes "[" + @name$ + "]";
+		mes "*Vous faites mine de partir .. Ce qui le pique à vif ...*";
+		mes "(Même si vous êtes dans la même cellule !)";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Je voulais savoir si tu pouvais m'aider à retrouver mes compagnons ! Ils sont quatre !";
+		mes "Nous nous sommes séparés après une grosse tempête à faire décorner les cocus !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Si tu les retrouves revient faire un tour en prison ! J'aurai surement quelque chose pour toi !";
+		close2;
+		set EP8_KENDER,1;
+		setquest 70660;
+		end;		
+	}	
+
+	if (EP8_KENDER <= 5) {
+
+		mes "[" + @name$ + "]";
+		mes "Alors as-tu retrouvé mes compagnons !?";
+		next;
+		if (EP8_KENDER == 5) {
+			mes "[" + @name$ + "]";
+			mes "Mais oui ! Tu as retrouvé tous mes compagnons !";
+			mes "Nous allons enfin pouvoir nous rendre à la conférence des Kenders.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Voici pour ton aide, te voilà un apprenti Kender !";
+			close2;
+			set EP8_KENDER,6;
+			getitem 29176,1;
+			completequest 70660;
+			end;
+		}
+		mes "[" + @name$ + "]";
+		mes "En me comptant cela ne fait que ^33CC00"+EP8_KENDER+"^000000 Kender(s) de retrouvés !";
+		next;
+	}
+	
+	mes "[" + @name$ + "]";
+	mes "Tu as retrouvé tous mes compagnons !";
+	mes "Nous allons enfin pouvoir nous rendre à la conférence des Kenders.";
+	close;
+	
+OnTouch:
+	if (EP8_KENDER == 0) {showevent 1,0;} end;	
+
+}	
+//=================================================================================
+ars_dun71,125,164,5	script	Kender Dankie#ep8	96,{
+
+set @name$,"^66CCFFKender Dankie^000000";
+
+	if(ep8_kenders & 1) {
+		mes "[" + @name$ + "]";
+		mes "Oh, je suis impatient de revoir ^66CCFFTass le Hoff^000000 !";
+		mes "J'irai bien refaire un tour en prison !";
+		close;
+	}
+	if (EP8_KENDER == 0) {
+		mes "[" + @name$ + "]";
+		mes "C'est un peu rouge par ici, non !?";
+		close;
+	}
+	
+	mes "[" + @name$ + "]";
+	mes "Oh, vous venez de la part de ^66CCFFTass le Hoff^000000 !";
+	mes "J'ai failli oublier la convention des Kenders en Hylarheim !";
+	close2;
+	set ep8_kenders,ep8_kenders|1;
+	set EP8_KENDER,EP8_KENDER+1;
+	end;
+}
+//=================================================================================
+ars_dun46,75,189,5	script	Kender Ramaya#ep8	422,{
+
+set @name$,"^66CCFFKender Ramaya^000000";
+
+	if(ep8_kenders & 2) {
+		mes "[" + @name$ + "]";
+		mes "Oh, je suis impatient de revoir ^66CCFFTass le Hoff^000000 !";
+		mes "J'irai bien refaire un tour en prison !";
+		close;
+	}
+	if (EP8_KENDER == 0) {
+		mes "[" + @name$ + "]";
+		mes "Une forêt dans une montagne ... !?";
+		close;
+	}
+	
+	mes "[" + @name$ + "]";
+	mes "Oh, vous venez de la part de ^66CCFFTass le Hoff^000000 !";
+	mes "J'ai failli oublier la convention des Kenders en Hylarheim !";
+	close2;
+	set ep8_kenders,ep8_kenders|2;
+	set EP8_KENDER,EP8_KENDER+1;
+	end;
+}
+//=================================================================================
+ars_dun93,116,83,5	script	Kender Arakmou#ep8	441,{
+
+set @name$,"^66CCFFKender Arakmou^000000";
+
+	if(ep8_kenders & 4) {
+		mes "[" + @name$ + "]";
+		mes "Oh, je suis impatient de revoir ^66CCFFTass le Hoff^000000 !";
+		mes "J'irai bien refaire un tour en prison !";
+		close;
+	}
+	if (EP8_KENDER == 0) {
+		mes "[" + @name$ + "]";
+		mes "Oh, une ville sous-marine ... !?";
+		mes "Il devrait y avoir des hommes-poissons, non !?";
+		close;
+	}
+	
+	mes "[" + @name$ + "]";
+	mes "Oh, vous venez de la part de ^66CCFFTass le Hoff^000000 !";
+	mes "J'ai failli oublier la convention des Kenders en Hylarheim !";
+	close2;
+	set ep8_kenders,ep8_kenders|4;
+	set EP8_KENDER,EP8_KENDER+1;
+	end;
+}
+//=================================================================================
+ars_dun67,215,88,5	script	Kender Neloora#ep8	716,{
+
+set @name$,"^66CCFFKender Neloora^000000";
+
+	if(ep8_kenders & 8) {
+		mes "[" + @name$ + "]";
+		mes "Oh, je suis impatient de revoir ^66CCFFTass le Hoff^000000 !";
+		mes "J'irai bien refaire un tour en prison !";
+		close;
+	}
+	if (EP8_KENDER == 0) {
+		mes "[" + @name$ + "]";
+		mes "Les méchants sont partis ... !?";
+		close;
+	}
+	
+	mes "[" + @name$ + "]";
+	mes "Oh, vous venez de la part de ^66CCFFTass le Hoff^000000 !";
+	mes "J'ai failli oublier la convention des Kenders en Hylarheim !";
+	close2;
+	set ep8_kenders,ep8_kenders|8;
+	set EP8_KENDER,EP8_KENDER+1;
+	end;
+}
+//=================================================================================
+ars_dun46,98,98,5	script	Coffre#arsdun46	1324,{
+
+set @name$,"^33CC00Coffre^000000"; 
+	
+if (EP8_FRANKY == 8) {
+		
+	mes "[" + @name$ + "]";
+	mes "Vous venez de récupérer un trésor dans ce coffre !";
+	mes "- 1 ^33CC00"+getitemname(29173)+"^000000.";
+	close2;
+	getitem 29173,1;
+	set EP8_FRANKY,9;
+	end;}
+	
+		mes "[" + @name$ + "]";
+		mes "Il n'y a plus rien à vous intéresser ici.";
+		close;
+}
+//_________________________________________________________________
+//________________ La Vision d'Or _________________________________
+//_________________________________________________________________
+ars_fild71,279,234,5	script	Ratafilia#ep8	748,{
+
+set @name$,"^66CCFFRatafilia^000000";
+
+	mes "[" + @name$ + "]";
+	mes "Bouuuh houuuuu ....";
+	mes "J'ai perdu mon précieux artefact .. Ma ^33CC00"+getitemname(29160)+"^000000 !";
+	next;
+	mes "[" + @name$ + "]";
+	mes "Je l'ai fait tombé dans ces eaux ... Il me permettait de retrouver mes trésors directement dans la mer ...";
+	close;
+}
+
+
+
+
+
+
+
+
+

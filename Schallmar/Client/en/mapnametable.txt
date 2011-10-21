@@ -1,0 +1,73 @@
+//Episode VIII - Les Îles de Schallmar
+
+ars_fild63.rsw#Coppalana : Pointe of Coppalana#
+ars_fild64.rsw#Coppalana : Pearls Island#
+ars_fild65.rsw#Coppalana : Croizic Hostel#
+ars_fild66.rsw#Brynnlaw : The City#
+ars_fild67.rsw#Coppalana : Jacamar Twins#
+ars_fild68.rsw#Brynnlaw : Mascate Comptoir#
+ars_fild69.rsw#Brynnlaw : The Spice Islands#
+ars_fild70.rsw#Brynnlaw : Monastery of Tiberine#
+ars_fild71.rsw#Coppalana : Fortress of the Defense#
+ars_fild72.rsw#Schallmar : The City#
+ars_fild73.rsw#Schallmar : Menez Mikael ar Mor#
+ars_fild74.rsw#Schallmar : Iawah Islands#
+ars_fild75.rsw#Schallmar : Atoll Corinthe#
+ars_fild76.rsw#Schallmar : Dragon's Island#
+
+ars_dun41.rsw#Ambush#
+ars_dun42.rsw#Ambush#
+ars_dun43.rsw#Ambush#
+ars_dun44.rsw#Pirate Ship#
+ars_dun45.rsw#Jacamar Woods#
+ars_dun46.rsw#Jacamar Woods#
+ars_dun47.rsw#Mascate Comptoir : Trading office#
+ars_dun48.rsw#Brynnlaw : Copper Crown#
+ars_dun49.rsw#The Spice Islands : Indoor#
+ars_dun50.rsw#Brynnlaw : Kesha's Workshop#
+ars_dun51.rsw#Monastery of Tiberine : Pirates Cave#
+ars_dun52.rsw#Monastery of Tiberine#
+ars_dun53.rsw#Brynnlaw : Militia Barracks#
+ars_dun54.rsw#Brynnlaw : Tribunal#
+ars_dun55.rsw#Brynnlaw : Sewers#
+ars_dun56.rsw#Brynnlaw : Indoor#
+ars_dun57.rsw#Ambush#
+ars_dun58.rsw#Ambush#
+ars_dun59.rsw#Ambush#
+ars_dun60.rsw#Gwened's Caves#
+ars_dun61.rsw#Coppalana Archipelago : Indoor#
+ars_dun62.rsw#Gwened's Caves : Majere's Lair#
+ars_dun63.rsw#Gwened's Caves : Caves#
+ars_dun64.rsw#Jacamar Woods : Caves#
+ars_dun65.rsw#Ta Phrom : Outside#
+ars_dun66.rsw#Ta Phrom : Indoor#
+ars_dun67.rsw#Spices Comptoir : Trading of the Black Hand#
+ars_dun68.rsw#Fortress of the Defense : Indoor#
+ars_dun69.rsw#Fortress of the Defense#
+ars_dun70.rsw#Alfraganus's Laboratory#
+ars_dun71.rsw#Solinari#
+ars_dun72.rsw#The Great Pearl#
+ars_dun73.rsw#Schallmar : Palais Royal#
+ars_dun74.rsw#Schallmar : Senate#
+ars_dun75.rsw#Schallmar : Harcourt's Guild#
+ars_dun76.rsw#Schallmar : Temple of Shinaere#
+ars_dun77.rsw#Schallmar : Volcano of Iawah#
+ars_dun78.rsw#Schallmar : Cursed Temple#
+ars_dun79.rsw#Schallmar : Guild of the Dark Orb#
+ars_dun80.rsw#Schallmar : Indoor#
+ars_dun81.rsw#Schallmar : Insurrection#
+ars_dun82.rsw#Solinari#
+ars_dun83.rsw#Menez Mikael ar Mor : Indoor#
+ars_dun84.rsw#Schallmar : Senate (Insurrection)#
+ars_dun85.rsw#Rift of Corinth Atoll#
+ars_dun86.rsw#Temple of Shinaere : Gateway Pearl#
+ars_dun87.rsw#Temple of Shinaere : Sanctuary#
+ars_dun88.rsw#Ar Gwez Boel#
+ars_dun89.rsw#Magic Forest#
+ars_dun90.rsw#Menez Mikael ar Mor : Indoor#
+ars_dun91.rsw#Boarding#
+ars_dun92.rsw#Boarding#
+ars_dun93.rsw#The Ruin of Arsinoe#
+ars_dun94.rsw#Schallmar : Indoor#
+ars_dun95.rsw#Schallmar : Trap#
+ars_dun96.rsw#Franky's House#

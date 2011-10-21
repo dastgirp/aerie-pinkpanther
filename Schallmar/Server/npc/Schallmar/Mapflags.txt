@@ -1,0 +1,1350 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Configuration
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.0
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//
+//
+//================================================================================================= 
+
+ars_dun45,0,0,0,0	monster	Frilldora 	1119,20,120000,0,0
+ars_dun46,0,0,0,0	monster	Frilldora 	1119,20,120000,0,0
+
+ars_dun51,0,0,0,0	monster	Pirate d'Airain 	3945,25,120000,0,0
+
+ars_dun53,0,0,0,0	monster	Milicien de Brynnlaw 	3950,30,120000,0,0
+
+ars_dun60,0,0,0,0	monster	Moka Aquatique 	3957,15,120000,0,0
+ars_dun60,0,0,0,0	monster	Servant Noir 	3958,2,120000,0,0
+
+ars_dun62,0,0,0,0	monster	Moka Aquatique 	3957,10,120000,0,0
+ars_dun62,0,0,0,0	monster	Servant Noir 	3958,4,120000,0,0
+
+ars_dun65,0,0,0,0	monster	Manganite 	3970,20,120000,0,0
+ars_dun65,0,0,0,0	monster	Manganite 	3970,15,120000,0,0
+
+ars_dun66,0,0,0,0	monster	Manganite 	3970,15,120000,0,0
+
+ars_dun70,0,0,0,0	monster	Manganite 	3970,40,120000,0,0
+
+ars_dun72,0,0,0,0	monster	Méduse 	1148,6,120000,0,0
+
+ars_dun82,0,0,0,0	monster	Marcheur Rouge 	3980,6,120000,0,0
+
+ars_dun89,0,0,0,0	monster	Wolf 	1013,40,120000,0,0
+
+//=================================
+ars_dun41	mapflag	loadevent
+ars_dun42	mapflag	loadevent
+ars_dun43	mapflag	loadevent
+ars_dun57	mapflag	loadevent
+ars_dun58	mapflag	loadevent
+ars_dun59	mapflag	loadevent
+ars_dun91	mapflag	loadevent
+ars_dun92	mapflag	loadevent
+ars_dun95	mapflag	loadevent
+//=================================
+
+ars_fild63	mapflag	noteleport
+ars_fild63	mapflag	nomemo
+ars_fild63	mapflag	nobranch
+ars_fild63	mapflag	restricted	6
+ars_fild63	mapflag	monster_noteleport
+
+ars_fild64	mapflag	noteleport
+ars_fild64	mapflag	nomemo
+ars_fild64	mapflag	nobranch
+ars_fild64	mapflag	restricted	6
+ars_fild64	mapflag	monster_noteleport
+
+ars_fild65	mapflag	noteleport
+ars_fild65	mapflag	nomemo
+ars_fild65	mapflag	nobranch
+ars_fild65	mapflag	restricted	6
+ars_fild65	mapflag	monster_noteleport
+
+ars_fild66	mapflag	noteleport
+ars_fild66	mapflag	nomemo
+ars_fild66	mapflag	nobranch
+ars_fild66	mapflag	restricted	6
+ars_fild66	mapflag	monster_noteleport
+
+ars_fild67	mapflag	noteleport
+ars_fild67	mapflag	nomemo
+ars_fild67	mapflag	nobranch
+ars_fild67	mapflag	restricted	6
+ars_fild67	mapflag	monster_noteleport
+
+ars_fild68	mapflag	noteleport
+ars_fild68	mapflag	nomemo
+ars_fild68	mapflag	nobranch
+ars_fild68	mapflag	restricted	6
+ars_fild68	mapflag	monster_noteleport
+
+ars_fild69	mapflag	noteleport
+ars_fild69	mapflag	nomemo
+ars_fild69	mapflag	nobranch
+ars_fild69	mapflag	restricted	6
+ars_fild69	mapflag	monster_noteleport
+
+ars_fild70	mapflag	noteleport
+ars_fild70	mapflag	nomemo
+ars_fild70	mapflag	nobranch
+ars_fild70	mapflag	restricted	6
+ars_fild70	mapflag	monster_noteleport
+
+ars_fild71	mapflag	noteleport
+ars_fild71	mapflag	nomemo
+ars_fild71	mapflag	nobranch
+ars_fild71	mapflag	restricted	6
+ars_fild71	mapflag	monster_noteleport
+
+ars_fild72	mapflag	noteleport
+ars_fild72	mapflag	nomemo
+ars_fild72	mapflag	nobranch
+ars_fild72	mapflag	restricted	6
+ars_fild72	mapflag	monster_noteleport
+
+ars_fild73	mapflag	noteleport
+ars_fild73	mapflag	nomemo
+ars_fild73	mapflag	nobranch
+ars_fild73	mapflag	restricted	6
+ars_fild73	mapflag	monster_noteleport
+
+ars_fild74	mapflag	noteleport
+ars_fild74	mapflag	nomemo
+ars_fild74	mapflag	nobranch
+ars_fild74	mapflag	restricted	6
+ars_fild74	mapflag	monster_noteleport
+
+ars_fild75	mapflag	noteleport
+ars_fild75	mapflag	nomemo
+ars_fild75	mapflag	nobranch
+ars_fild75	mapflag	restricted	6
+ars_fild75	mapflag	monster_noteleport
+
+ars_fild76	mapflag	noteleport
+ars_fild76	mapflag	nomemo
+ars_fild76	mapflag	nobranch
+ars_fild76	mapflag	restricted	6
+ars_fild76	mapflag	monster_noteleport
+//=================================================
+
+ars_dun41	mapflag	noteleport
+ars_dun41	mapflag	nomemo
+ars_dun41	mapflag	nobranch
+ars_dun41	mapflag	restricted	6
+ars_dun41	mapflag	monster_noteleport
+ars_dun41	mapflag	pvp
+
+ars_dun42	mapflag	noteleport
+ars_dun42	mapflag	nomemo
+ars_dun42	mapflag	nobranch
+ars_dun42	mapflag	restricted	6
+ars_dun42	mapflag	monster_noteleport
+ars_dun42	mapflag	pvp
+
+ars_dun43	mapflag	noteleport
+ars_dun43	mapflag	nomemo
+ars_dun43	mapflag	nobranch
+ars_dun43	mapflag	restricted	6
+ars_dun43	mapflag	monster_noteleport
+ars_dun43	mapflag	pvp
+
+ars_dun44	mapflag	noteleport
+ars_dun44	mapflag	nomemo
+ars_dun44	mapflag	nobranch
+ars_dun44	mapflag	restricted	6
+ars_dun44	mapflag	monster_noteleport
+ars_dun44	mapflag	pvp
+
+ars_dun45	mapflag	noteleport
+ars_dun45	mapflag	nomemo
+ars_dun45	mapflag	nobranch
+ars_dun45	mapflag	restricted	6
+ars_dun45	mapflag	monster_noteleport
+
+ars_dun46	mapflag	noteleport
+ars_dun46	mapflag	nomemo
+ars_dun46	mapflag	nobranch
+ars_dun46	mapflag	restricted	6
+ars_dun46	mapflag	monster_noteleport
+
+ars_dun47	mapflag	noteleport
+ars_dun47	mapflag	nomemo
+ars_dun47	mapflag	nobranch
+ars_dun47	mapflag	restricted	6
+ars_dun47	mapflag	monster_noteleport
+ars_dun47	mapflag	pvp
+
+ars_dun48	mapflag	noteleport
+ars_dun48	mapflag	nomemo
+ars_dun48	mapflag	nobranch
+ars_dun48	mapflag	restricted	6
+ars_dun48	mapflag	monster_noteleport
+
+ars_dun49	mapflag	noteleport
+ars_dun49	mapflag	nomemo
+ars_dun49	mapflag	nobranch
+ars_dun49	mapflag	restricted	6
+ars_dun49	mapflag	monster_noteleport
+
+ars_dun50	mapflag	noteleport
+ars_dun50	mapflag	nomemo
+ars_dun50	mapflag	nobranch
+ars_dun50	mapflag	restricted	6
+ars_dun50	mapflag	monster_noteleport
+ars_dun50	mapflag	pvp
+
+ars_dun51	mapflag	noteleport
+ars_dun51	mapflag	nomemo
+ars_dun51	mapflag	nobranch
+ars_dun51	mapflag	restricted	6
+ars_dun51	mapflag	monster_noteleport
+ars_dun51	mapflag	pvp
+
+ars_dun52	mapflag	noteleport
+ars_dun52	mapflag	nomemo
+ars_dun52	mapflag	nobranch
+ars_dun52	mapflag	restricted	6
+ars_dun52	mapflag	monster_noteleport
+
+ars_dun53	mapflag	noteleport
+ars_dun53	mapflag	nomemo
+ars_dun53	mapflag	nobranch
+ars_dun53	mapflag	restricted	6
+ars_dun53	mapflag	monster_noteleport
+ars_dun53	mapflag	pvp
+
+ars_dun54	mapflag	noteleport
+ars_dun54	mapflag	nomemo
+ars_dun54	mapflag	nobranch
+ars_dun54	mapflag	restricted	6
+ars_dun54	mapflag	monster_noteleport
+
+ars_dun55	mapflag	noteleport
+ars_dun55	mapflag	nomemo
+ars_dun55	mapflag	nobranch
+ars_dun55	mapflag	restricted	6
+ars_dun55	mapflag	monster_noteleport
+
+ars_dun56	mapflag	noteleport
+ars_dun56	mapflag	nomemo
+ars_dun56	mapflag	nobranch
+ars_dun56	mapflag	restricted	6
+ars_dun56	mapflag	monster_noteleport
+
+ars_dun57	mapflag	noteleport
+ars_dun57	mapflag	nomemo
+ars_dun57	mapflag	nobranch
+ars_dun57	mapflag	restricted	6
+ars_dun57	mapflag	monster_noteleport
+ars_dun57	mapflag	pvp
+
+ars_dun58	mapflag	noteleport
+ars_dun58	mapflag	nomemo
+ars_dun58	mapflag	nobranch
+ars_dun58	mapflag	restricted	6
+ars_dun58	mapflag	monster_noteleport
+ars_dun58	mapflag	pvp
+
+ars_dun59	mapflag	noteleport
+ars_dun59	mapflag	nomemo
+ars_dun59	mapflag	nobranch
+ars_dun59	mapflag	restricted	6
+ars_dun59	mapflag	monster_noteleport
+ars_dun59	mapflag	pvp
+
+ars_dun60	mapflag	noteleport
+ars_dun60	mapflag	nomemo
+ars_dun60	mapflag	nobranch
+ars_dun60	mapflag	restricted	6
+ars_dun60	mapflag	monster_noteleport
+ars_dun60	mapflag	pvp
+
+ars_dun61	mapflag	noteleport
+ars_dun61	mapflag	nomemo
+ars_dun61	mapflag	nobranch
+ars_dun61	mapflag	restricted	6
+ars_dun61	mapflag	monster_noteleport
+
+ars_dun62	mapflag	noteleport
+ars_dun62	mapflag	nomemo
+ars_dun62	mapflag	nobranch
+ars_dun62	mapflag	restricted	6
+ars_dun62	mapflag	monster_noteleport
+ars_dun62	mapflag	pvp
+
+ars_dun63	mapflag	noteleport
+ars_dun63	mapflag	nomemo
+ars_dun63	mapflag	nobranch
+ars_dun63	mapflag	restricted	6
+ars_dun63	mapflag	monster_noteleport
+
+ars_dun64	mapflag	noteleport
+ars_dun64	mapflag	nomemo
+ars_dun64	mapflag	nobranch
+ars_dun64	mapflag	restricted	6
+ars_dun64	mapflag	monster_noteleport
+
+ars_dun65	mapflag	noteleport
+ars_dun65	mapflag	nomemo
+ars_dun65	mapflag	nobranch
+ars_dun65	mapflag	restricted	6
+ars_dun65	mapflag	monster_noteleport
+
+ars_dun66	mapflag	noteleport
+ars_dun66	mapflag	nomemo
+ars_dun66	mapflag	nobranch
+ars_dun66	mapflag	restricted	6
+ars_dun66	mapflag	monster_noteleport
+ars_dun66	mapflag	pvp
+
+ars_dun67	mapflag	noteleport
+ars_dun67	mapflag	nomemo
+ars_dun67	mapflag	nobranch
+ars_dun67	mapflag	restricted	6
+ars_dun67	mapflag	monster_noteleport
+ars_dun67	mapflag	pvp
+
+ars_dun68	mapflag	noteleport
+ars_dun68	mapflag	nomemo
+ars_dun68	mapflag	nobranch
+ars_dun68	mapflag	restricted	6
+ars_dun68	mapflag	monster_noteleport
+ars_dun68	mapflag	pvp
+
+ars_dun69	mapflag	noteleport
+ars_dun69	mapflag	nomemo
+ars_dun69	mapflag	nobranch
+ars_dun69	mapflag	restricted	6
+ars_dun69	mapflag	monster_noteleport
+ars_dun69	mapflag	pvp
+
+ars_dun70	mapflag	noteleport
+ars_dun70	mapflag	nomemo
+ars_dun70	mapflag	nobranch
+ars_dun70	mapflag	restricted	6
+ars_dun70	mapflag	monster_noteleport
+
+ars_dun71	mapflag	noteleport
+ars_dun71	mapflag	nomemo
+ars_dun71	mapflag	nobranch
+ars_dun71	mapflag	restricted	6
+ars_dun71	mapflag	monster_noteleport
+
+ars_dun72	mapflag	noteleport
+ars_dun72	mapflag	nomemo
+ars_dun72	mapflag	nobranch
+ars_dun72	mapflag	restricted	6
+ars_dun72	mapflag	monster_noteleport
+
+ars_dun73	mapflag	noteleport
+ars_dun73	mapflag	nomemo
+ars_dun73	mapflag	nobranch
+ars_dun73	mapflag	restricted	6
+ars_dun73	mapflag	monster_noteleport
+
+ars_dun72	mapflag	noteleport
+ars_dun72	mapflag	nomemo
+ars_dun72	mapflag	nobranch
+ars_dun72	mapflag	restricted	6
+ars_dun72	mapflag	monster_noteleport
+
+ars_dun74	mapflag	noteleport
+ars_dun74	mapflag	nomemo
+ars_dun74	mapflag	nobranch
+ars_dun74	mapflag	restricted	6
+ars_dun74	mapflag	monster_noteleport
+
+ars_dun75	mapflag	noteleport
+ars_dun75	mapflag	nomemo
+ars_dun75	mapflag	nobranch
+ars_dun75	mapflag	restricted	6
+ars_dun75	mapflag	monster_noteleport
+
+ars_dun76	mapflag	noteleport
+ars_dun76	mapflag	nomemo
+ars_dun76	mapflag	nobranch
+ars_dun76	mapflag	restricted	6
+ars_dun76	mapflag	monster_noteleport
+
+ars_dun77	mapflag	noteleport
+ars_dun77	mapflag	nomemo
+ars_dun77	mapflag	nobranch
+ars_dun77	mapflag	restricted	6
+ars_dun77	mapflag	monster_noteleport
+
+ars_dun78	mapflag	noteleport
+ars_dun78	mapflag	nomemo
+ars_dun78	mapflag	nobranch
+ars_dun78	mapflag	restricted	6
+ars_dun78	mapflag	monster_noteleport
+ars_dun78	mapflag	pvp
+
+ars_dun79	mapflag	noteleport
+ars_dun79	mapflag	nomemo
+ars_dun79	mapflag	nobranch
+ars_dun79	mapflag	restricted	6
+ars_dun79	mapflag	monster_noteleport
+ars_dun79	mapflag	pvp
+
+ars_dun80	mapflag	noteleport
+ars_dun80	mapflag	nomemo
+ars_dun80	mapflag	nobranch
+ars_dun80	mapflag	restricted	6
+ars_dun80	mapflag	monster_noteleport
+
+ars_dun81	mapflag	noteleport
+ars_dun81	mapflag	nomemo
+ars_dun81	mapflag	nobranch
+ars_dun81	mapflag	restricted	6
+ars_dun81	mapflag	monster_noteleport
+ars_dun81	mapflag	pvp
+
+ars_dun82	mapflag	noteleport
+ars_dun82	mapflag	nomemo
+ars_dun82	mapflag	nobranch
+ars_dun82	mapflag	restricted	6
+ars_dun82	mapflag	monster_noteleport
+
+ars_dun83	mapflag	noteleport
+ars_dun83	mapflag	nomemo
+ars_dun83	mapflag	nobranch
+ars_dun83	mapflag	restricted	6
+ars_dun83	mapflag	monster_noteleport
+
+ars_dun84	mapflag	noteleport
+ars_dun84	mapflag	nomemo
+ars_dun84	mapflag	nobranch
+ars_dun84	mapflag	restricted	6
+ars_dun84	mapflag	monster_noteleport
+ars_dun84	mapflag	pvp
+
+ars_dun85	mapflag	noteleport
+ars_dun85	mapflag	nomemo
+ars_dun85	mapflag	nobranch
+ars_dun85	mapflag	restricted	6
+ars_dun85	mapflag	monster_noteleport
+
+ars_dun86	mapflag	noteleport
+ars_dun86	mapflag	nomemo
+ars_dun86	mapflag	nobranch
+ars_dun86	mapflag	restricted	6
+ars_dun86	mapflag	monster_noteleport
+
+ars_dun87	mapflag	noteleport
+ars_dun87	mapflag	nomemo
+ars_dun87	mapflag	nobranch
+ars_dun87	mapflag	restricted	6
+ars_dun87	mapflag	monster_noteleport
+ars_dun87	mapflag	pvp
+
+ars_dun88	mapflag	noteleport
+ars_dun88	mapflag	nomemo
+ars_dun88	mapflag	nobranch
+ars_dun88	mapflag	restricted	6
+ars_dun88	mapflag	monster_noteleport
+ars_dun88	mapflag	pvp
+
+ars_dun89	mapflag	noteleport
+ars_dun89	mapflag	nomemo
+ars_dun89	mapflag	nobranch
+ars_dun89	mapflag	restricted	6
+ars_dun89	mapflag	monster_noteleport
+
+ars_dun90	mapflag	noteleport
+ars_dun90	mapflag	nomemo
+ars_dun90	mapflag	nobranch
+ars_dun90	mapflag	restricted	6
+ars_dun90	mapflag	monster_noteleport
+
+ars_dun91	mapflag	noteleport
+ars_dun91	mapflag	nomemo
+ars_dun91	mapflag	nobranch
+ars_dun91	mapflag	restricted	6
+ars_dun91	mapflag	monster_noteleport
+ars_dun91	mapflag	pvp
+
+ars_dun92	mapflag	noteleport
+ars_dun92	mapflag	nomemo
+ars_dun92	mapflag	nobranch
+ars_dun92	mapflag	restricted	6
+ars_dun92	mapflag	monster_noteleport
+ars_dun92	mapflag	pvp
+
+ars_dun93	mapflag	noteleport
+ars_dun93	mapflag	nomemo
+ars_dun93	mapflag	nobranch
+ars_dun93	mapflag	restricted	6
+ars_dun93	mapflag	monster_noteleport
+
+ars_dun94	mapflag	noteleport
+ars_dun94	mapflag	nomemo
+ars_dun94	mapflag	nobranch
+ars_dun94	mapflag	restricted	6
+ars_dun94	mapflag	monster_noteleport
+
+ars_dun95	mapflag	noteleport
+ars_dun95	mapflag	nomemo
+ars_dun95	mapflag	nobranch
+ars_dun95	mapflag	restricted	6
+ars_dun95	mapflag	monster_noteleport
+ars_dun95	mapflag	pvp
+
+ars_dun96	mapflag	noteleport
+ars_dun96	mapflag	nomemo
+ars_dun96	mapflag	nobranch
+ars_dun96	mapflag	restricted	6
+ars_dun96	mapflag	monster_noteleport
+ars_dun96	mapflag	pvp
+
+
+//Mapflags
+prontera	mapflag	restricted	8
+geffen	mapflag	restricted	8
+alb_ship	mapflag	restricted	8
+alb2trea	mapflag	restricted	8
+alberta	mapflag	restricted	8
+alberta_in	mapflag	restricted	8
+alde_dun01	mapflag	restricted	8
+alde_dun02	mapflag	restricted	8
+alde_dun03	mapflag	restricted	8
+alde_dun04	mapflag	restricted	8
+aldeba_in	mapflag	restricted	8
+aldebaran	mapflag	restricted	8
+anthell01	mapflag	restricted	8
+anthell02	mapflag	restricted	8
+arena_room	mapflag	restricted	8
+c_tower1	mapflag	restricted	8
+c_tower2	mapflag	restricted	8
+c_tower3	mapflag	restricted	8
+c_tower4	mapflag	restricted	8
+force_1-1	mapflag	restricted	8
+force_1-2	mapflag	restricted	8
+force_1-3	mapflag	restricted	8
+force_2-1	mapflag	restricted	8
+force_2-2	mapflag	restricted	8
+force_2-3	mapflag	restricted	8
+force_3-1	mapflag	restricted	8
+force_3-2	mapflag	restricted	8
+force_3-3	mapflag	restricted	8
+gef_dun00	mapflag	restricted	8
+gef_dun01	mapflag	restricted	8
+gef_dun02	mapflag	restricted	8
+gef_dun03	mapflag	restricted	8
+gef_fild00	mapflag	restricted	8
+gef_fild01	mapflag	restricted	8
+gef_fild02	mapflag	restricted	8
+gef_fild03	mapflag	restricted	8
+gef_fild04	mapflag	restricted	8
+gef_fild05	mapflag	restricted	8
+gef_fild06	mapflag	restricted	8
+gef_fild07	mapflag	restricted	8
+gef_fild08	mapflag	restricted	8
+gef_fild09	mapflag	restricted	8
+gef_fild10	mapflag	restricted	8
+gef_fild11	mapflag	restricted	8
+gef_fild12	mapflag	restricted	8
+gef_fild13	mapflag	restricted	8
+gef_fild14	mapflag	restricted	8
+gef_tower	mapflag	restricted	8
+geffen	mapflag	restricted	8
+geffen_in	mapflag	restricted	8
+gl_cas01	mapflag	restricted	8
+gl_cas02	mapflag	restricted	8
+gl_church	mapflag	restricted	8
+gl_chyard	mapflag	restricted	8
+gl_dun01	mapflag	restricted	8
+gl_dun02	mapflag	restricted	8
+gl_in01	mapflag	restricted	8
+gl_knt01	mapflag	restricted	8
+gl_knt02	mapflag	restricted	8
+gl_prison	mapflag	restricted	8
+gl_prison1	mapflag	restricted	8
+gl_sew01	mapflag	restricted	8
+gl_sew02	mapflag	restricted	8
+gl_sew03	mapflag	restricted	8
+gl_sew04	mapflag	restricted	8
+gl_step	mapflag	restricted	8
+glast_01	mapflag	restricted	8
+hunter_1-1	mapflag	restricted	8
+hunter_2-1	mapflag	restricted	8
+hunter_3-1	mapflag	restricted	8
+in_hunter	mapflag	restricted	8
+in_moc_16	mapflag	restricted	8
+in_orcs01	mapflag	restricted	8
+in_sphinx1	mapflag	restricted	8
+in_sphinx2	mapflag	restricted	8
+in_sphinx3	mapflag	restricted	8
+in_sphinx4	mapflag	restricted	8
+in_sphinx5	mapflag	restricted	8
+iz_dun00	mapflag	restricted	8
+iz_dun01	mapflag	restricted	8
+iz_dun02	mapflag	restricted	8
+iz_dun03	mapflag	restricted	8
+iz_dun04	mapflag	restricted	8
+job_sword1	mapflag	restricted	8
+izlu2dun	mapflag	restricted	8
+izlude	mapflag	restricted	8
+izlude_in	mapflag	restricted	8
+job_thief1	mapflag	restricted	8
+knight_1-1	mapflag	restricted	8
+knight_2-1	mapflag	restricted	8
+knight_3-1	mapflag	restricted	8
+mjo_dun01	mapflag	restricted	8
+mjo_dun02	mapflag	restricted	8
+mjo_dun03	mapflag	restricted	8
+mjolnir_01	mapflag	restricted	8
+mjolnir_02	mapflag	restricted	8
+mjolnir_03	mapflag	restricted	8
+mjolnir_04	mapflag	restricted	8
+mjolnir_05	mapflag	restricted	8
+mjolnir_06	mapflag	restricted	8
+mjolnir_07	mapflag	restricted	8
+mjolnir_08	mapflag	restricted	8
+mjolnir_09	mapflag	restricted	8
+mjolnir_10	mapflag	restricted	8
+mjolnir_11	mapflag	restricted	8
+mjolnir_12	mapflag	restricted	8
+moc_castle	mapflag	restricted	8
+moc_fild01	mapflag	restricted	8
+moc_fild02	mapflag	restricted	8
+moc_fild03	mapflag	restricted	8
+moc_fild04	mapflag	restricted	8
+moc_fild05	mapflag	restricted	8
+moc_fild06	mapflag	restricted	8
+moc_fild07	mapflag	restricted	8
+moc_fild08	mapflag	restricted	8
+moc_fild09	mapflag	restricted	8
+moc_fild10	mapflag	restricted	8
+moc_fild11	mapflag	restricted	8
+moc_fild12	mapflag	restricted	8
+moc_fild13	mapflag	restricted	8
+moc_fild14	mapflag	restricted	8
+moc_fild15	mapflag	restricted	8
+moc_fild16	mapflag	restricted	8
+moc_fild17	mapflag	restricted	8
+moc_fild18	mapflag	restricted	8
+moc_fild19	mapflag	restricted	8
+moc_pryd01	mapflag	restricted	8
+moc_pryd02	mapflag	restricted	8
+moc_pryd03	mapflag	restricted	8
+moc_pryd04	mapflag	restricted	8
+moc_pryd05	mapflag	restricted	8
+moc_pryd06	mapflag	restricted	8
+moc_prydb1	mapflag	restricted	8
+moc_ruins	mapflag	restricted	8
+monk_in	mapflag	restricted	8
+morocc	mapflag	restricted	8
+morocc_in	mapflag	restricted	8
+new_1-1	mapflag	restricted	8
+new_1-2	mapflag	restricted	8
+new_1-3	mapflag	restricted	8
+new_1-4	mapflag	restricted	8
+new_2-1	mapflag	restricted	8
+new_2-2	mapflag	restricted	8
+new_2-3	mapflag	restricted	8
+new_2-4	mapflag	restricted	8
+new_3-1	mapflag	restricted	8
+new_3-2	mapflag	restricted	8
+new_3-3	mapflag	restricted	8
+new_3-4	mapflag	restricted	8
+new_4-1	mapflag	restricted	8
+new_4-2	mapflag	restricted	8
+new_4-3	mapflag	restricted	8
+new_4-4	mapflag	restricted	8
+new_5-1	mapflag	restricted	8
+new_5-2	mapflag	restricted	8
+new_5-3	mapflag	restricted	8
+new_5-4	mapflag	restricted	8
+orcsdun01	mapflag	restricted	8
+orcsdun02	mapflag	restricted	8
+ordeal_1-1	mapflag	restricted	8
+ordeal_1-2	mapflag	restricted	8
+ordeal_1-3	mapflag	restricted	8
+ordeal_1-4	mapflag	restricted	8
+ordeal_2-1	mapflag	restricted	8
+ordeal_2-2	mapflag	restricted	8
+ordeal_2-3	mapflag	restricted	8
+ordeal_2-4	mapflag	restricted	8
+ordeal_3-1	mapflag	restricted	8
+ordeal_3-2	mapflag	restricted	8
+ordeal_3-3	mapflag	restricted	8
+ordeal_3-4	mapflag	restricted	8
+pay_arche	mapflag	restricted	8
+pay_dun00	mapflag	restricted	8
+pay_dun01	mapflag	restricted	8
+pay_dun02	mapflag	restricted	8
+pay_dun03	mapflag	restricted	8
+pay_dun04	mapflag	restricted	8
+pay_fild01	mapflag	restricted	8
+pay_fild02	mapflag	restricted	8
+pay_fild03	mapflag	restricted	8
+pay_fild04	mapflag	restricted	8
+pay_fild05	mapflag	restricted	8
+pay_fild06	mapflag	restricted	8
+pay_fild07	mapflag	restricted	8
+pay_fild08	mapflag	restricted	8
+pay_fild09	mapflag	restricted	8
+pay_fild10	mapflag	restricted	8
+pay_fild11	mapflag	restricted	8
+payon	mapflag	restricted	8
+payon_in01	mapflag	restricted	8
+payon_in02	mapflag	restricted	8
+priest_1-1	mapflag	restricted	8
+priest_2-1	mapflag	restricted	8
+priest_3-1	mapflag	restricted	8
+prontera	mapflag	restricted	8
+prt_are_in	mapflag	restricted	8
+prt_are01	mapflag	restricted	8
+pvp_room	mapflag	restricted	8
+prt_castle	mapflag	restricted	8
+prt_church	mapflag	restricted	8
+prt_fild00	mapflag	restricted	8
+prt_fild01	mapflag	restricted	8
+prt_fild02	mapflag	restricted	8
+prt_fild03	mapflag	restricted	8
+prt_fild04	mapflag	restricted	8
+prt_fild05	mapflag	restricted	8
+prt_fild06	mapflag	restricted	8
+prt_fild07	mapflag	restricted	8
+prt_fild08	mapflag	restricted	8
+prt_fild09	mapflag	restricted	8
+prt_fild10	mapflag	restricted	8
+prt_fild11	mapflag	restricted	8
+prt_in	mapflag	restricted	8
+prt_maze01	mapflag	restricted	8
+prt_maze02	mapflag	restricted	8
+prt_maze03	mapflag	restricted	8
+prt_monk	mapflag	restricted	8
+prt_sewb1	mapflag	restricted	8
+prt_sewb2	mapflag	restricted	8
+prt_sewb3	mapflag	restricted	8
+prt_sewb4	mapflag	restricted	8
+pvp_2vs2	mapflag	restricted	8
+pvp_c_room	mapflag	restricted	8
+pvp_n_1-1	mapflag	restricted	8
+pvp_n_1-2	mapflag	restricted	8
+pvp_n_1-3	mapflag	restricted	8
+pvp_n_1-4	mapflag	restricted	8
+pvp_n_1-5	mapflag	restricted	8
+pvp_n_2-1	mapflag	restricted	8
+pvp_n_2-2	mapflag	restricted	8
+pvp_n_2-3	mapflag	restricted	8
+pvp_n_2-4	mapflag	restricted	8
+pvp_n_2-5	mapflag	restricted	8
+pvp_n_3-1	mapflag	restricted	8
+pvp_n_3-2	mapflag	restricted	8
+pvp_n_3-3	mapflag	restricted	8
+pvp_n_3-4	mapflag	restricted	8
+pvp_n_3-5	mapflag	restricted	8
+pvp_n_4-1	mapflag	restricted	8
+pvp_n_4-2	mapflag	restricted	8
+pvp_n_4-3	mapflag	restricted	8
+pvp_n_4-4	mapflag	restricted	8
+pvp_n_4-5	mapflag	restricted	8
+pvp_n_5-1	mapflag	restricted	8
+pvp_n_5-2	mapflag	restricted	8
+pvp_n_5-3	mapflag	restricted	8
+pvp_n_5-4	mapflag	restricted	8
+pvp_n_5-5	mapflag	restricted	8
+pvp_n_6-1	mapflag	restricted	8
+pvp_n_6-2	mapflag	restricted	8
+pvp_n_6-3	mapflag	restricted	8
+pvp_n_6-4	mapflag	restricted	8
+pvp_n_6-5	mapflag	restricted	8
+pvp_n_7-1	mapflag	restricted	8
+pvp_n_7-2	mapflag	restricted	8
+pvp_n_7-3	mapflag	restricted	8
+pvp_n_7-4	mapflag	restricted	8
+pvp_n_7-5	mapflag	restricted	8
+pvp_n_8-1	mapflag	restricted	8
+pvp_n_8-2	mapflag	restricted	8
+pvp_n_8-3	mapflag	restricted	8
+pvp_n_8-4	mapflag	restricted	8
+pvp_n_8-5	mapflag	restricted	8
+pvp_n_room	mapflag	restricted	8
+pvp_y_1-1	mapflag	restricted	8
+pvp_y_1-2	mapflag	restricted	8
+pvp_y_1-3	mapflag	restricted	8
+pvp_y_1-4	mapflag	restricted	8
+pvp_y_1-5	mapflag	restricted	8
+pvp_y_2-1	mapflag	restricted	8
+pvp_y_2-2	mapflag	restricted	8
+pvp_y_2-3	mapflag	restricted	8
+pvp_y_2-4	mapflag	restricted	8
+pvp_y_2-5	mapflag	restricted	8
+pvp_y_3-1	mapflag	restricted	8
+pvp_y_3-2	mapflag	restricted	8
+pvp_y_3-3	mapflag	restricted	8
+pvp_y_3-4	mapflag	restricted	8
+pvp_y_3-5	mapflag	restricted	8
+pvp_y_4-1	mapflag	restricted	8
+pvp_y_4-2	mapflag	restricted	8
+pvp_y_4-3	mapflag	restricted	8
+pvp_y_4-4	mapflag	restricted	8
+pvp_y_4-5	mapflag	restricted	8
+pvp_y_5-1	mapflag	restricted	8
+pvp_y_5-2	mapflag	restricted	8
+pvp_y_5-3	mapflag	restricted	8
+pvp_y_5-4	mapflag	restricted	8
+pvp_y_5-5	mapflag	restricted	8
+pvp_y_6-1	mapflag	restricted	8
+pvp_y_6-2	mapflag	restricted	8
+pvp_y_6-3	mapflag	restricted	8
+pvp_y_6-4	mapflag	restricted	8
+pvp_y_6-5	mapflag	restricted	8
+pvp_y_7-1	mapflag	restricted	8
+pvp_y_7-2	mapflag	restricted	8
+pvp_y_7-3	mapflag	restricted	8
+pvp_y_7-4	mapflag	restricted	8
+pvp_y_7-5	mapflag	restricted	8
+pvp_y_8-1	mapflag	restricted	8
+pvp_y_8-2	mapflag	restricted	8
+pvp_y_8-3	mapflag	restricted	8
+pvp_y_8-4	mapflag	restricted	8
+pvp_y_8-5	mapflag	restricted	8
+pvp_y_room	mapflag	restricted	8
+sword_1-1	mapflag	restricted	8
+sword_2-1	mapflag	restricted	8
+sword_3-1	mapflag	restricted	8
+treasure01	mapflag	restricted	8
+treasure02	mapflag	restricted	8
+wizard_1-1	mapflag	restricted	8
+wizard_2-1	mapflag	restricted	8
+wizard_3-1	mapflag	restricted	8
+xmas	mapflag	restricted	8
+xmas_dun01	mapflag	restricted	8
+xmas_dun02	mapflag	restricted	8
+xmas_fild01	mapflag	restricted	8
+xmas_in	mapflag	restricted	8
+beach_dun	mapflag	restricted	8
+beach_dun2	mapflag	restricted	8
+beach_dun3	mapflag	restricted	8
+cmd_fild01	mapflag	restricted	8
+cmd_fild02	mapflag	restricted	8
+cmd_fild03	mapflag	restricted	8
+cmd_fild04	mapflag	restricted	8
+cmd_fild05	mapflag	restricted	8
+cmd_fild06	mapflag	restricted	8
+cmd_fild07	mapflag	restricted	8
+cmd_fild08	mapflag	restricted	8
+cmd_fild09	mapflag	restricted	8
+cmd_in01	mapflag	restricted	8
+cmd_in02	mapflag	restricted	8
+comodo	mapflag	restricted	8
+quiz_00	mapflag	restricted	8
+quiz_01	mapflag	restricted	8
+g_room1-1	mapflag	restricted	8
+g_room1-2	mapflag	restricted	8
+g_room1-3	mapflag	restricted	8
+g_room2	mapflag	restricted	8
+tur_dun01	mapflag	restricted	8
+tur_dun02	mapflag	restricted	8
+tur_dun03	mapflag	restricted	8
+tur_dun04	mapflag	restricted	8
+tur_dun05	mapflag	restricted	8
+tur_dun06	mapflag	restricted	8
+alde_gld	mapflag	restricted	8
+aldeg_cas01	mapflag	restricted	8
+aldeg_cas02	mapflag	restricted	8
+aldeg_cas03	mapflag	restricted	8
+aldeg_cas04	mapflag	restricted	8
+aldeg_cas05	mapflag	restricted	8
+gefg_cas01	mapflag	restricted	8
+gefg_cas02	mapflag	restricted	8
+gefg_cas03	mapflag	restricted	8
+gefg_cas04	mapflag	restricted	8
+gefg_cas05	mapflag	restricted	8
+gld_dun01	mapflag	restricted	8
+gld_dun02	mapflag	restricted	8
+gld_dun03	mapflag	restricted	8
+gld_dun04	mapflag	restricted	8
+guild_room	mapflag	restricted	8
+guild_vs1	mapflag	restricted	8
+guild_vs2	mapflag	restricted	8
+guild_vs3	mapflag	restricted	8
+guild_vs4	mapflag	restricted	8
+guild_vs5	mapflag	restricted	8
+guild_vs1-1	mapflag	restricted	8
+guild_vs1-2	mapflag	restricted	8
+guild_vs1-3	mapflag	restricted	8
+guild_vs1-4	mapflag	restricted	8
+guild_vs2-1	mapflag	restricted	8
+guild_vs2-2	mapflag	restricted	8
+job_hunte	mapflag	restricted	8
+job_knt	mapflag	restricted	8
+job_prist	mapflag	restricted	8
+job_wiz	mapflag	restricted	8
+pay_gld	mapflag	restricted	8
+payg_cas01	mapflag	restricted	8
+payg_cas02	mapflag	restricted	8
+payg_cas03	mapflag	restricted	8
+payg_cas04	mapflag	restricted	8
+payg_cas05	mapflag	restricted	8
+prt_gld	mapflag	restricted	8
+prtg_cas01	mapflag	restricted	8
+prtg_cas02	mapflag	restricted	8
+prtg_cas03	mapflag	restricted	8
+prtg_cas04	mapflag	restricted	8
+prtg_cas05	mapflag	restricted	8
+alde_alche	mapflag	restricted	8
+in_rogue	mapflag	restricted	8
+job_cru	mapflag	restricted	8
+job_duncer	mapflag	restricted	8
+job_monk	mapflag	restricted	8
+job_sage	mapflag	restricted	8
+mag_dun01	mapflag	restricted	8
+mag_dun02	mapflag	restricted	8
+monk_test	mapflag	restricted	8
+quiz_test	mapflag	restricted	8
+yuno	mapflag	restricted	8
+yuno_fild01	mapflag	restricted	8
+yuno_fild02	mapflag	restricted	8
+yuno_fild03	mapflag	restricted	8
+yuno_fild04	mapflag	restricted	8
+yuno_in01	mapflag	restricted	8
+yuno_in02	mapflag	restricted	8
+yuno_in03	mapflag	restricted	8
+yuno_in04	mapflag	restricted	8
+yuno_in05	mapflag	restricted	8
+ama_dun01	mapflag	restricted	8
+ama_dun02	mapflag	restricted	8
+ama_dun03	mapflag	restricted	8
+ama_fild01	mapflag	restricted	8
+ama_in01	mapflag	restricted	8
+ama_in02	mapflag	restricted	8
+ama_test	mapflag	restricted	8
+amatsu	mapflag	restricted	8
+gon_dun01	mapflag	restricted	8
+gon_dun02	mapflag	restricted	8
+gon_dun03	mapflag	restricted	8
+gon_fild01	mapflag	restricted	8
+gon_in	mapflag	restricted	8
+gon_test	mapflag	restricted	8
+gonryun	mapflag	restricted	8
+sec_in01	mapflag	restricted	8
+sec_in02	mapflag	restricted	8
+sec_pri	mapflag	restricted	8
+umbala	mapflag	restricted	8
+um_dun01	mapflag	restricted	8
+um_dun02	mapflag	restricted	8
+um_fild01	mapflag	restricted	8
+um_fild02	mapflag	restricted	8
+um_fild03	mapflag	restricted	8
+um_fild04	mapflag	restricted	8
+um_in	mapflag	restricted	8
+niflheim	mapflag	restricted	8
+nif_fild01	mapflag	restricted	8
+nif_fild02	mapflag	restricted	8
+nif_in	mapflag	restricted	8
+yggdrasil01	mapflag	restricted	8
+valkyrie	mapflag	restricted	8
+himinn	mapflag	restricted	8
+lou_in01	mapflag	restricted	8
+lou_in02	mapflag	restricted	8
+lou_dun03	mapflag	restricted	8
+lou_dun02	mapflag	restricted	8
+lou_dun01	mapflag	restricted	8
+lou_fild01	mapflag	restricted	8
+louyang	mapflag	restricted	8
+siege_test	mapflag	restricted	8
+n_castle	mapflag	restricted	8
+nguild_gef	mapflag	restricted	8
+nguild_prt	mapflag	restricted	8
+nguild_pay	mapflag	restricted	8
+nguild_alde	mapflag	restricted	8
+jawaii	mapflag	restricted	8
+jawaii_in	mapflag	restricted	8
+gefenia01	mapflag	restricted	8
+gefenia02	mapflag	restricted	8
+gefenia03	mapflag	restricted	8
+gefenia04	mapflag	restricted	8
+new_zone01	mapflag	restricted	8
+new_zone02	mapflag	restricted	8
+new_zone03	mapflag	restricted	8
+new_zone04	mapflag	restricted	8
+payon_in03	mapflag	restricted	8
+ayothaya	mapflag	restricted	8
+ayo_in01	mapflag	restricted	8
+ayo_in02	mapflag	restricted	8
+ayo_fild01	mapflag	restricted	8
+ayo_fild02	mapflag	restricted	8
+ayo_dun01	mapflag	restricted	8
+ayo_dun02	mapflag	restricted	8
+que_god01	mapflag	restricted	8
+que_god02	mapflag	restricted	8
+yuno_fild05	mapflag	restricted	8
+yuno_fild07	mapflag	restricted	8
+yuno_fild08	mapflag	restricted	8
+yuno_fild09	mapflag	restricted	8
+yuno_fild11	mapflag	restricted	8
+yuno_fild12	mapflag	restricted	8
+alde_tt02	mapflag	restricted	8
+turbo_n_1	mapflag	restricted	8
+turbo_n_4	mapflag	restricted	8
+turbo_n_8	mapflag	restricted	8
+turbo_n_16	mapflag	restricted	8
+turbo_e_4	mapflag	restricted	8
+turbo_e_8	mapflag	restricted	8
+turbo_e_16	mapflag	restricted	8
+turbo_room	mapflag	restricted	8
+airplane	mapflag	restricted	8
+airport	mapflag	restricted	8
+einbech	mapflag	restricted	8
+einbroch	mapflag	restricted	8
+ein_dun01	mapflag	restricted	8
+ein_dun02	mapflag	restricted	8
+ein_fild06	mapflag	restricted	8
+ein_fild07	mapflag	restricted	8
+ein_fild08	mapflag	restricted	8
+ein_fild09	mapflag	restricted	8
+ein_fild10	mapflag	restricted	8
+ein_in01	mapflag	restricted	8
+que_sign01	mapflag	restricted	8
+que_sign02	mapflag	restricted	8
+ein_fild03	mapflag	restricted	8
+ein_fild04	mapflag	restricted	8
+lhz_fild02	mapflag	restricted	8
+lhz_fild03	mapflag	restricted	8
+yuno_pre	mapflag	restricted	8
+lhz_fild01	mapflag	restricted	8
+lighthalzen	mapflag	restricted	8
+lhz_in01	mapflag	restricted	8
+lhz_in02	mapflag	restricted	8
+lhz_in03	mapflag	restricted	8
+lhz_que01	mapflag	restricted	8
+lhz_dun01	mapflag	restricted	8
+lhz_dun02	mapflag	restricted	8
+lhz_dun03	mapflag	restricted	8
+lhz_cube	mapflag	restricted	8
+juperos_01	mapflag	restricted	8
+juperos_02	mapflag	restricted	8
+jupe_area1	mapflag	restricted	8
+jupe_area2	mapflag	restricted	8
+jupe_core	mapflag	restricted	8
+jupe_ele	mapflag	restricted	8
+jupe_ele_r	mapflag	restricted	8
+jupe_gate	mapflag	restricted	8
+y_airport	mapflag	restricted	8
+lhz_airport	mapflag	restricted	8
+airplane_01	mapflag	restricted	8
+jupe_cave	mapflag	restricted	8
+quiz_02	mapflag	restricted	8
+hu_fild07	mapflag	restricted	8
+hu_fild05	mapflag	restricted	8
+hu_fild04	mapflag	restricted	8
+hu_fild01	mapflag	restricted	8
+yuno_fild06	mapflag	restricted	8
+job_soul	mapflag	restricted	8
+job_star	mapflag	restricted	8
+que_job01	mapflag	restricted	8
+que_job02	mapflag	restricted	8
+que_job03	mapflag	restricted	8
+abyss_01	mapflag	restricted	8
+abyss_02	mapflag	restricted	8
+abyss_03	mapflag	restricted	8
+thana_step	mapflag	restricted	8
+thana_boss	mapflag	restricted	8
+tha_scene01	mapflag	restricted	8
+tha_t01	mapflag	restricted	8
+tha_t02	mapflag	restricted	8
+tha_t03	mapflag	restricted	8
+tha_t04	mapflag	restricted	8
+tha_t07	mapflag	restricted	8
+tha_t05	mapflag	restricted	8
+tha_t06	mapflag	restricted	8
+tha_t08	mapflag	restricted	8
+tha_t09	mapflag	restricted	8
+tha_t10	mapflag	restricted	8
+tha_t11	mapflag	restricted	8
+tha_t12	mapflag	restricted	8
+auction_01	mapflag	restricted	8
+auction_02	mapflag	restricted	8
+hugel	mapflag	restricted	8
+hu_in01	mapflag	restricted	8
+que_bingo	mapflag	restricted	8
+que_hugel	mapflag	restricted	8
+p_track01	mapflag	restricted	8
+p_track02	mapflag	restricted	8
+odin_tem01	mapflag	restricted	8
+odin_tem02	mapflag	restricted	8
+odin_tem03	mapflag	restricted	8
+hu_fild02	mapflag	restricted	8
+hu_fild03	mapflag	restricted	8
+hu_fild06	mapflag	restricted	8
+ein_fild01	mapflag	restricted	8
+ein_fild02	mapflag	restricted	8
+ein_fild05	mapflag	restricted	8
+yuno_fild10	mapflag	restricted	8
+kh_kiehl02	mapflag	restricted	8
+kh_kiehl01	mapflag	restricted	8
+kh_dun02	mapflag	restricted	8
+kh_dun01	mapflag	restricted	8
+kh_mansion	mapflag	restricted	8
+kh_rossi	mapflag	restricted	8
+kh_school	mapflag	restricted	8
+kh_vila	mapflag	restricted	8
+force_map1	mapflag	restricted	8
+force_map2	mapflag	restricted	8
+force_map3	mapflag	restricted	8
+job_hunter	mapflag	restricted	8
+job_knight	mapflag	restricted	8
+job_priest	mapflag	restricted	8
+job_wizard	mapflag	restricted	8
+ve_in02	mapflag	restricted	8
+rachel	mapflag	restricted	8
+ra_in01	mapflag	restricted	8
+ra_fild01	mapflag	restricted	8
+ra_fild02	mapflag	restricted	8
+ra_fild03	mapflag	restricted	8
+ra_fild04	mapflag	restricted	8
+ra_fild05	mapflag	restricted	8
+ra_fild06	mapflag	restricted	8
+ra_fild07	mapflag	restricted	8
+ra_fild08	mapflag	restricted	8
+ra_fild09	mapflag	restricted	8
+ra_fild10	mapflag	restricted	8
+ra_fild11	mapflag	restricted	8
+ra_fild12	mapflag	restricted	8
+ra_fild13	mapflag	restricted	8
+ra_san01	mapflag	restricted	8
+ra_san02	mapflag	restricted	8
+ra_san03	mapflag	restricted	8
+ra_san04	mapflag	restricted	8
+ra_san05	mapflag	restricted	8
+ra_temin	mapflag	restricted	8
+ra_temple	mapflag	restricted	8
+ra_temsky	mapflag	restricted	8
+que_rachel	mapflag	restricted	8
+ice_dun01	mapflag	restricted	8
+ice_dun02	mapflag	restricted	8
+ice_dun03	mapflag	restricted	8
+ice_dun04	mapflag	restricted	8
+que_thor	mapflag	restricted	8
+thor_camp	mapflag	restricted	8
+thor_v01	mapflag	restricted	8
+thor_v02	mapflag	restricted	8
+thor_v03	mapflag	restricted	8
+veins	mapflag	restricted	8
+ve_in	mapflag	restricted	8
+ve_fild01	mapflag	restricted	8
+ve_fild02	mapflag	restricted	8
+ve_fild03	mapflag	restricted	8
+ve_fild04	mapflag	restricted	8
+ve_fild05	mapflag	restricted	8
+ve_fild06	mapflag	restricted	8
+ve_fild07	mapflag	restricted	8
+poring_c01	mapflag	restricted	8
+poring_c02	mapflag	restricted	8
+que_ng	mapflag	restricted	8
+nameless_i	mapflag	restricted	8
+nameless_n	mapflag	restricted	8
+nameless_in	mapflag	restricted	8
+abbey01	mapflag	restricted	8
+abbey02	mapflag	restricted	8
+abbey03	mapflag	restricted	8
+poring_w01	mapflag	restricted	8
+poring_w02	mapflag	restricted	8
+que_san04	mapflag	restricted	8
+moscovia	mapflag	restricted	8
+mosk_in	mapflag	restricted	8
+mosk_ship	mapflag	restricted	8
+mosk_fild01	mapflag	restricted	8
+mosk_fild02	mapflag	restricted	8
+mosk_dun01	mapflag	restricted	8
+mosk_dun02	mapflag	restricted	8
+mosk_dun03	mapflag	restricted	8
+mosk_que	mapflag	restricted	8
+force_4-1	mapflag	restricted	8
+force_5-1	mapflag	restricted	8
+06guild_r	mapflag	restricted	8
+06guild_01	mapflag	restricted	8
+06guild_02	mapflag	restricted	8
+06guild_03	mapflag	restricted	8
+06guild_04	mapflag	restricted	8
+06guild_05	mapflag	restricted	8
+06guild_06	mapflag	restricted	8
+06guild_07	mapflag	restricted	8
+06guild_08	mapflag	restricted	8
+z_agit	mapflag	restricted	8
+que_temsky	mapflag	restricted	8
+itemmall	mapflag	restricted	8
+bossnia_01	mapflag	restricted	8
+bossnia_02	mapflag	restricted	8
+bossnia_03	mapflag	restricted	8
+bossnia_04	mapflag	restricted	8
+schg_cas01	mapflag	restricted	8
+schg_cas02	mapflag	restricted	8
+schg_cas03	mapflag	restricted	8
+schg_cas04	mapflag	restricted	8
+schg_cas05	mapflag	restricted	8
+sch_gld	mapflag	restricted	8
+cave	mapflag	restricted	8
+moc_fild20	mapflag	restricted	8
+moc_fild21	mapflag	restricted	8
+moc_fild22	mapflag	restricted	8
+que_ba	mapflag	restricted	8
+que_moc_16	mapflag	restricted	8
+que_moon	mapflag	restricted	8
+arug_cas01	mapflag	restricted	8
+arug_cas02	mapflag	restricted	8
+arug_cas03	mapflag	restricted	8
+arug_cas04	mapflag	restricted	8
+arug_cas05	mapflag	restricted	8
+aru_gld	mapflag	restricted	8
+bat_room	mapflag	restricted	8
+bat_a01	mapflag	restricted	8
+bat_a02	mapflag	restricted	8
+bat_b01	mapflag	restricted	8
+bat_b02	mapflag	restricted	8
+que_qsch01	mapflag	restricted	8
+que_qsch02	mapflag	restricted	8
+que_qsch03	mapflag	restricted	8
+que_qsch04	mapflag	restricted	8
+que_qsch05	mapflag	restricted	8
+que_qaru01	mapflag	restricted	8
+que_qaru02	mapflag	restricted	8
+que_qaru03	mapflag	restricted	8
+que_qaru04	mapflag	restricted	8
+que_qaru05	mapflag	restricted	8
+1@cata	mapflag	restricted	8
+2@cata	mapflag	restricted	8
+e_tower	mapflag	restricted	8
+1@tower	mapflag	restricted	8
+2@tower	mapflag	restricted	8
+3@tower	mapflag	restricted	8
+4@tower	mapflag	restricted	8
+5@tower	mapflag	restricted	8
+6@tower	mapflag	restricted	8
+mid_camp	mapflag	restricted	8
+mid_campin	mapflag	restricted	8
+man_fild01	mapflag	restricted	8
+man_fild03	mapflag	restricted	8
+spl_fild02	mapflag	restricted	8
+spl_fild03	mapflag	restricted	8
+moc_fild22b	mapflag	restricted	8
+que_dan01	mapflag	restricted	8
+que_dan02	mapflag	restricted	8
+schg_que01	mapflag	restricted	8
+schg_dun01	mapflag	restricted	8
+arug_que01	mapflag	restricted	8
+arug_dun01	mapflag	restricted	8
+1@orcs	mapflag	restricted	8
+2@orcs	mapflag	restricted	8
+1@nyd	mapflag	restricted	8
+2@nyd	mapflag	restricted	8
+nyd_dun01	mapflag	restricted	8
+nyd_dun02	mapflag	restricted	8
+manuk	mapflag	restricted	8
+man_fild02	mapflag	restricted	8
+man_in01	mapflag	restricted	8
+splendide	mapflag	restricted	8
+spl_fild01	mapflag	restricted	8
+spl_in01	mapflag	restricted	8
+spl_in02	mapflag	restricted	8
+bat_c01	mapflag	restricted	8
+bat_c02	mapflag	restricted	8
+bat_c03	mapflag	restricted	8
+moc_para01	mapflag	restricted	8
+job3_arch01	mapflag	restricted	8
+job3_arch02	mapflag	restricted	8
+job3_arch03	mapflag	restricted	8
+job3_guil01	mapflag	restricted	8
+job3_guil02	mapflag	restricted	8
+job3_guil03	mapflag	restricted	8
+job3_rang01	mapflag	restricted	8
+job3_rang02	mapflag	restricted	8
+job3_rune01	mapflag	restricted	8
+job3_rune02	mapflag	restricted	8
+job3_rune03	mapflag	restricted	8
+job3_war01	mapflag	restricted	8
+job3_war02	mapflag	restricted	8
+jupe_core2	mapflag	restricted	8
+brasilis	mapflag	restricted	8
+bra_in01	mapflag	restricted	8
+bra_fild01	mapflag	restricted	8
+bra_dun01	mapflag	restricted	8
+bra_dun02	mapflag	restricted	8
+dicastes01	mapflag	restricted	8
+dicastes02	mapflag	restricted	8
+dic_in01	mapflag	restricted	8
+dic_fild01	mapflag	restricted	8
+dic_fild02	mapflag	restricted	8
+dic_dun01	mapflag	restricted	8
+dic_dun02	mapflag	restricted	8
+job3_gen01	mapflag	restricted	8
+s_atelier	mapflag	restricted	8
+job3_sha01	mapflag	restricted	8
+mora	mapflag	restricted	8
+bif_fild01	mapflag	restricted	8
+bif_fild02	mapflag	restricted	8
+1@mist	mapflag	restricted	8
+dewata	mapflag	restricted	8
+dew_in01	mapflag	restricted	8
+dew_fild01	mapflag	restricted	8
+dew_dun01	mapflag	restricted	8
+dew_dun02	mapflag	restricted	8
+que_house_s	mapflag	restricted	8
+malangdo	mapflag	restricted	8
+mal_in01	mapflag	restricted	8
+mal_in02	mapflag	restricted	8
+mal_dun01	mapflag	restricted	8
+1@pump	mapflag	restricted	8
+2@pump	mapflag	restricted	8
+1@cash	mapflag	restricted	8
+iz_dun05	mapflag	restricted	8
+evt_mobroom	mapflag	restricted	8
+alde_tt03	mapflag	restricted	8
+dic_dun03	mapflag	restricted	8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

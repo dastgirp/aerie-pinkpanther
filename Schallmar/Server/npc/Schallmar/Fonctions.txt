@@ -1,0 +1,1542 @@
+// .d8888b.           888               888 888                                
+//d88P  Y88b          888               888 888                                
+//Y88b.               888               888 888                                
+// "Y888b.    .d8888b 88888b.   8888b.  888 888 88888b.d88b.   8888b.  888d888 
+//    "Y88b. d88P"    888 "88b     "88b 888 888 888 "888 "88b     "88b 888P"   
+//      "888 888      888  888 .d888888 888 888 888  888  888 .d888888 888     
+//Y88b  d88P Y88b.    888  888 888  888 888 888 888  888  888 888  888 888     
+// "Y8888P"   "Y8888P 888  888 "Y888888 888 888 888  888  888 "Y888888 888     
+                                                                             
+
+
+//===== Schallmar Script ============================================================================ 
+//
+//= Fonctions
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : Aerie PinkPanther
+//
+//===== Current Version: ==========================================================================  
+//
+//= 3.1
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.0 Release French Version
+//= 2.0 Schallmar Part.2 Version
+//= 2.1 Harcourt rate of aboarding fix
+//= 3.0 English Version
+//= 3.1 Replace Raise by Alive
+//
+//
+//================================================================================================= 
+
+
+//_________________________________________________________________
+//___________________ Index _______________________________________
+//_________________________________________________________________
+//
+//
+// 1 = Fonctions : Brittania
+// 2 = Fonctions : Pièges
+// 3 = Fonctions : Habitants
+// 4 = Fonctions : Items Allow
+// 5 = Fonctions : Abordage
+// 6 = Fonctions : Trésors
+// 7 = Fonctions : Aérie
+// 8 = Fonctions : Vol
+//
+//_________________________________________________________________
+//________________ Fonctions : Brittania __________________________
+//_________________________________________________________________
+
+function	script	arsi_Brit	{
+
+if(EP7_LANGUE == 0) { 
+
+	mes "[" + @name$ + "]"; 
+	mes "Alors que puis-je pour vous ?";
+	next;
+	switch(select("•Dernière Destination:•Lignes Régulières:•Cartes Maritimes:•Améliorer le Bateau:•Titres:•Crédits:•Quitter")){
+
+		case 1:	
+				if(lastmap$=="") { 
+					mes "[" + @name$ + "]";  
+					mes "Vous n'avez été encore téléporté nullepart"; close; }
+			
+			close2;
+			warp lastmap2$,last2x,last2y;
+			end;
+
+//================================
+
+		case 2:
+
+			mes "[" + @name$ + "]"; 
+			mes "Où veux-tu te rendre ?";
+			next;
+			switch(select("•L'île de Tantale [" + getmapusers("tantale_ile") + " personne(s) présente(s)]:•Pointe de Coppalana [" + getmapusers("ars_fild63") + " personne(s) présente(s)]:•Hotêl du Croizic [" + getmapusers("ars_fild65") + " personne(s) présente(s)]:•Brynnlaw [" + getmapusers("ars_fild66") + " personne(s) présente(s)]:•Comptoir Mascate [" + getmapusers("ars_fild68") + " personne(s) présente(s)]:•Monastère de Tibérine [" + getmapusers("ars_fild70") + " personne(s) présente(s)]:•Forteresse de la Défense [" + getmapusers("ars_fild71") + " personne(s) présente(s)]:•La Cité de Schallmar [" + getmapusers("ars_fild72") + " personne(s) présente(s)]:•Menez Mikael ar Mor [" + getmapusers("ars_fild73") + " personne(s) présente(s)]")){
+			
+				case 1:
+					set lastmap2$,"tantale_ile"; 
+					set last2x,101; 
+					set last2y,178; 
+					warp "tantale_ile",101,178; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 2:
+					set lastmap2$,"ars_fild63"; 
+					set last2x,370; 
+					set last2y,357; 
+					warp "ars_fild63.gat",370,357; 
+					callfunc "arsi_Boat";
+					end;
+					
+				case 3:
+					set lastmap2$,"ars_fild65"; 
+					set last2x,220; 
+					set last2y,244; 
+					warp "ars_fild65.gat",220,244; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 4:
+					if (EP7_SCHALLMAR < 5) {mes "[" + @name$ + "]";mes "Vous ne pouvez pas encore vous rendre dans cette île.";close;}
+					set lastmap2$,"ars_fild66"; 
+					set last2x,198; 
+					set last2y,155; 
+					warp "ars_fild66.gat",198,155; 
+					callfunc "arsi_Boat2";
+					end;
+
+				case 5:
+					if (EP7_SCHALLMAR < 5) {mes "[" + @name$ + "]";mes "Vous ne pouvez pas encore vous rendre dans cette île.";close;}
+					set lastmap2$,"ars_fild68"; 
+					set last2x,262; 
+					set last2y,151; 
+					warp "ars_fild68.gat",262,151; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 6:
+					if (EP7_SCHALLMAR < 10) {mes "[" + @name$ + "]";mes "Vous ne pouvez pas encore vous rendre dans cette île.";close;}
+					set lastmap2$,"ars_fild70"; 
+					set last2x,306; 
+					set last2y,321; 
+					warp "ars_fild70",306,321; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 7:
+					if (EP7_MANONEGRA < 12) {mes "[" + @name$ + "]";mes "Vous ne pouvez pas encore vous rendre dans cette île.";close;}
+					set lastmap2$,"ars_fild71"; 
+					set last2x,144; 
+					set last2y,216; 
+					warp "ars_fild71",144,216; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 8:
+					if (EP7_SCHALLMAR < 27) {mes "[" + @name$ + "]";mes "Vous ne pouvez pas encore vous rendre dans cette île.";close;}
+					set lastmap2$,"ars_fild72"; 
+					set last2x,70; 
+					set last2y,258; 
+					warp "ars_fild72",70,258; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 9:
+					if (EP7_SCHALLMAR < 37) {mes "[" + @name$ + "]";mes "Vous ne pouvez pas encore vous rendre dans cette île.";close;}
+					set lastmap2$,"ars_fild73"; 
+					set last2x,244; 
+					set last2y,326; 
+					warp "ars_fild73",244,326; 
+					callfunc "arsi_Boat2";
+					end;
+			}
+
+//================================
+
+		case 3:
+
+			mes "[" + @name$ + "]"; 
+			mes "Il est dangereux de naviguer sans Cartes Maritimes, il faudra vous en procurer !"; 
+			mes "Voici vos Cartes Maritimes :";
+			if (EP7_SCHALLMAR <= 2) {mes "Vous n'avez aucune carte pour le moment.";}
+			if (EP7_SCHALLMAR >= 3)  {mes "- ^33CC00Archipel de Coppalana^000000";}
+			if (EP7_SCHALLMAR >= 5) {mes "- ^33CC00Îles de Brynnlaw^000000";}
+			if (EP7_SCHALLMAR >= 26) {mes "- ^33CC00Îles de Schallmar^000000";}
+			close;
+
+//================================
+
+		case 4:
+		
+			mes "[" + @name$ + "]"; 
+			mes "Voilà une grande idée ! En effet, tu peux améliorer ton bateau pour qu'il aille plus vite, qu'il puisse naviguer plus facilement."; 
+			next;
+			mes "[" + @name$ + "]"; 
+			if (EP7_BATEAUT < 4) {mes "Voici les améliorations disponibles :";}
+			if (EP7_BATEAUT == 0) {mes "Modifier en ^884DA7Acatium^000000";}
+			if (EP7_BATEAUT <= 1) {mes "Modifier en ^884DA7Dinga^000000";}
+			if (EP7_BATEAUT <= 2) {mes "Modifier en ^884DA7Corocore^000000";}
+			if (EP7_BATEAUT <= 3) {mes "Modifier en ^884DA7Voirolle^000000";}
+			if (EP7_BATEAUT == 4) {mes "Vous avez amélioré votre navire au maximum.";close;}
+			next;
+			switch(select("•Améliorer le navire:•Quitter")){
+			
+				case 1:
+				
+					if (EP7_BATEAUT == 0) {set @type$,"^884DA7Acatium^000000";set @price,150;set @var,1;}
+					if (EP7_BATEAUT == 1) {set @type$,"^884DA7Dinga^000000";set @price,300;set @var,2;}
+					if (EP7_BATEAUT == 2) {set @type$,"^884DA7Corocore^000000";set @price,450;set @var,3;}
+					if (EP7_BATEAUT == 3) {set @type$,"^884DA7Voirolle^000000";set @price,800;set @var,4;}
+					
+					mes "[" + @name$ + "]"; 
+					mes "Voulez-vous que votre bateau évolue vers un ^884DA7"+@type$+"^000000 ?";
+					mes "Le prix est de ^33CC00"+@price+" "+getitemname($ep7_Tcoins)+"^000000 !";
+					next;
+					switch(select("•Payer:•Je n'ai pas assez d'argent.")){
+					
+						case 1:
+						
+								if(countitem($ep7_Tcoins) < @price) {
+									mes "[" + @name$ + "]"; 
+									mes "Vous n'avez pas les moyens de vous l'offrir ...";
+									mes "N'oubliez pas que plus vous serez rapide, plus vous ferez de bénéfices !";
+									close;}
+									
+									
+								mes "[" + @name$ + "]"; 
+								mes "Le prix est de ^33CC00"+@price+" "+getitemname($ep7_Tcoins)+"^000000";
+								mes "Tout me semble correct, voici votre ^884DA7"+@type$+"^000000";
+								close2;
+								set EP7_BATEAUT,@var;
+								delitem $ep7_Tcoins,@price;
+								end;
+								
+						case 2:
+						
+							mes "[" + @name$ + "]"; 
+							mes "N'oubliez pas que plus vous serez rapide, plus vous ferez de bénéfices !";
+							close;
+					}		
+			//================================
+				case 2: close;
+			}
+			
+			
+//================================
+
+		case 5:
+			mes "[" + @name$ + "]"; 
+			mes "~ ^884DA7Les Titres de Schallmar ^000000 ~";
+			mes "Quel Titre voulez-vous consulter ?";
+			next;
+			switch(select("•Enfant de Shinaere:•Seigneur des Pirates:•Inventeur du Trésor:•La Vision du Héros")){
+		
+				case 1: 
+					mes "[" + @name$ + "]";
+					for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+					mes "- ["+.@i+"] Enfant de Shinaere : ^4d4dff - " + $EP7_NFinal$[.@i] + "^000000 -";
+					close;
+					
+				case 2: 
+					mes "[" + @name$ + "]";
+					for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+					mes "- ["+.@i+"] Seigneur des Pirates : ^4d4dff - " + $EP7_NSEIGNP$[.@i] + "^000000 -";
+					close;
+					
+				case 3: 
+					mes "[" + @name$ + "]";
+					for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+					mes "- ["+.@i+"] Inventeur du Trésor : ^4d4dff - " + $EP7_NINVENT$[.@i] + "^000000 -";
+					close;
+					
+				case 4: 
+					mes "[" + @name$ + "]";
+					for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+					mes "- ["+.@i+"] La Vision du Héros: ^4d4dff - " + $EP7_NFinal$[.@i] + "^000000 -";
+					close;		
+			}			
+//================================
+
+		case 6:
+			mes "[" + @name$ + "]"; 
+			mes "~ ^884DA7Les Îles de Schallmar ^000000 ~";
+			mes "Histoire complémentaire d'^884DA7Arsinoé : Les Larmes d'Aérie^000000";
+			mes "Ce huitième épisode a été réalisé par ^BD33A4Aerie PinkPanther^000000";
+			mes "Scénario / Maps / Scripts";	
+			close;
+		
+//================================
+
+		case 7:close;
+	}
+}
+
+
+if(EP7_LANGUE == 1) { 
+
+	mes "[" + @name$ + "]"; 
+	mes "So what can I do for you?";
+	next;
+	switch(select("•Last Warp:•Regular Lines:•Maritime Cards:•Improve the Boat:•Titles:•Credits:•Leave")){
+
+		case 1:	
+				if(lastmap$=="") { 
+					mes "[" + @name$ + "]";  
+					mes "You havn't been teleported yet."; close; }
+			
+			close2;
+			warp lastmap2$,last2x,last2y;
+			end;
+
+//================================
+
+		case 2:
+
+			mes "[" + @name$ + "]"; 
+			mes "Where do you want to go ?";
+			next;
+			switch(select("•Tantale Island [" + getmapusers("tantale_ile") + " person(s)]:•Pointe de Coppalana [" + getmapusers("ars_fild63") + " person(s)]:•Hotêl du Croizic [" + getmapusers("ars_fild65") + " person(s)]:•Brynnlaw [" + getmapusers("ars_fild66") + " person(s)]:•Mascate Comptoir [" + getmapusers("ars_fild68") + " person(s)]:•Monastery of Tiberine [" + getmapusers("ars_fild70") + " person(s)]:•Fortress of the Defense [" + getmapusers("ars_fild71") + " person(s)]:•City of Schallmar [" + getmapusers("ars_fild72") + " person(s)]:•Menez Mikael ar Mor [" + getmapusers("ars_fild73") + " person(s)]")){
+			
+				case 1:
+					set lastmap2$,"tantale_ile"; 
+					set last2x,101; 
+					set last2y,178; 
+					warp "tantale_ile",101,178; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 2:
+					set lastmap2$,"ars_fild63"; 
+					set last2x,370; 
+					set last2y,357; 
+					warp "ars_fild63.gat",370,357; 
+					callfunc "arsi_Boat";
+					end;
+					
+				case 3:
+					set lastmap2$,"ars_fild65"; 
+					set last2x,220; 
+					set last2y,244; 
+					warp "ars_fild65.gat",220,244; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 4:
+					if (EP7_SCHALLMAR < 5) {mes "[" + @name$ + "]";mes "You can't go to this island.";close;}
+					set lastmap2$,"ars_fild66"; 
+					set last2x,198; 
+					set last2y,155; 
+					warp "ars_fild66.gat",198,155; 
+					callfunc "arsi_Boat2";
+					end;
+
+				case 5:
+					if (EP7_SCHALLMAR < 5) {mes "[" + @name$ + "]";mes "You can't go to this island.";close;}
+					set lastmap2$,"ars_fild68"; 
+					set last2x,262; 
+					set last2y,151; 
+					warp "ars_fild68.gat",262,151; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 6:
+					if (EP7_SCHALLMAR < 10) {mes "[" + @name$ + "]";mes "You can't go to this island.";close;}
+					set lastmap2$,"ars_fild70"; 
+					set last2x,306; 
+					set last2y,321; 
+					warp "ars_fild70",306,321; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 7:
+					if (EP7_MANONEGRA < 12) {mes "[" + @name$ + "]";mes "You can't go to this island.";close;}
+					set lastmap2$,"ars_fild71"; 
+					set last2x,144; 
+					set last2y,216; 
+					warp "ars_fild71",144,216; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 8:
+					if (EP7_SCHALLMAR < 27) {mes "[" + @name$ + "]";mes "You can't go to this island.";close;}
+					set lastmap2$,"ars_fild72"; 
+					set last2x,70; 
+					set last2y,258; 
+					warp "ars_fild72",70,258; 
+					callfunc "arsi_Boat2";
+					end;
+					
+				case 9:
+					if (EP7_SCHALLMAR < 37) {mes "[" + @name$ + "]";mes "You can't go to this island.";close;}
+					set lastmap2$,"ars_fild73"; 
+					set last2x,244; 
+					set last2y,326; 
+					warp "ars_fild73",244,326; 
+					callfunc "arsi_Boat2";
+					end;
+			}
+
+//================================
+
+		case 3:
+
+			mes "[" + @name$ + "]"; 
+			mes "It's dangerous to navigate without Maritimes maps, you must found them !"; 
+			mes "Here are your Maritimes cards :";
+			if (EP7_SCHALLMAR <= 2) {mes "You have no card yet.";}
+			if (EP7_SCHALLMAR >= 3)  {mes "- ^33CC00Archipelago of Coppalana^000000";}
+			if (EP7_SCHALLMAR >= 5) {mes "- ^33CC00Brynnlaw Islands^000000";}
+			if (EP7_SCHALLMAR >= 26) {mes "- ^33CC00Schallmar Islands^000000";}
+			close;
+
+//================================
+
+		case 4:
+		
+			mes "[" + @name$ + "]"; 
+			mes "This is a great idea! In fact, you can improve your ship so that it goes faster, he can navigate more easily."; 
+			next;
+			mes "[" + @name$ + "]"; 
+			if (EP7_BATEAUT < 4) {mes "Here are the enhancements available :";}
+			if (EP7_BATEAUT == 0) {mes "Upgrade to ^884DA7Acatium^000000";}
+			if (EP7_BATEAUT <= 1) {mes "Upgrade to ^884DA7Dinga^000000";}
+			if (EP7_BATEAUT <= 2) {mes "Upgrade to ^884DA7Corocore^000000";}
+			if (EP7_BATEAUT <= 3) {mes "Upgrade to ^884DA7Voirolle^000000";}
+			if (EP7_BATEAUT == 4) {mes "You have totally improved your ship.";close;}
+			next;
+			switch(select("•Upgrade the Ship:•Leave")){
+			
+				case 1:
+				
+					if (EP7_BATEAUT == 0) {set @type$,"^884DA7Acatium^000000";set @price,150;set @var,1;}
+					if (EP7_BATEAUT == 1) {set @type$,"^884DA7Dinga^000000";set @price,300;set @var,2;}
+					if (EP7_BATEAUT == 2) {set @type$,"^884DA7Corocore^000000";set @price,450;set @var,3;}
+					if (EP7_BATEAUT == 3) {set @type$,"^884DA7Voirolle^000000";set @price,800;set @var,4;}
+					
+					mes "[" + @name$ + "]"; 
+					mes "Do you want improve your boat to ^884DA7"+@type$+"^000000 ?";
+					mes "It costs ^33CC00"+@price+" "+getitemname($ep7_Tcoins)+"^000000 !";
+					next;
+					switch(select("•Paid:•I don't have enough money.")){
+					
+						case 1:
+						
+								if(countitem($ep7_Tcoins) < @price) {
+									mes "[" + @name$ + "]"; 
+									mes "You don't have enough money for upgrade your ship ...";
+									mes "Remember, the more you will be faster, more you will have benefit!";
+									close;}
+									
+									
+								mes "[" + @name$ + "]"; 
+								mes "The price is ^33CC00"+@price+" "+getitemname($ep7_Tcoins)+"^000000";
+								mes "Everything seems okay, here's your ^884DA7"+@type$+"^000000";
+								close2;
+								set EP7_BATEAUT,@var;
+								delitem $ep7_Tcoins,@price;
+								end;
+								
+						case 2:
+						
+							mes "[" + @name$ + "]"; 
+							mes "Remember, the more you will be faster, more you will have benefit!";
+							close;
+					}		
+			//================================
+				case 2: close;
+			}
+			
+			
+//================================
+
+		case 5:
+			mes "[" + @name$ + "]"; 
+			mes "~ ^884DA7Schallmar Titles ^000000 ~";
+			mes "What title do you want to see?";
+			next;
+			switch(select("•Children of Shinaere:•Pirate King:•Treasure Hunter:•The Vision of Heroes")){
+		
+				case 1: 
+					mes "[" + @name$ + "]";
+					for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+					mes "- ["+.@i+"] Children of Shinaere : ^4d4dff - " + $EP7_NFinal$[.@i] + "^000000 -";
+					close;
+					
+				case 2: 
+					mes "[" + @name$ + "]";
+					for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+					mes "- ["+.@i+"] Pirate King : ^4d4dff - " + $EP7_NSEIGNP$[.@i] + "^000000 -";
+					close;
+					
+				case 3: 
+					mes "[" + @name$ + "]";
+					for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+					mes "- ["+.@i+"] Treasure Hunter : ^4d4dff - " + $EP7_NINVENT$[.@i] + "^000000 -";
+					close;
+					
+				case 4: 
+					mes "[" + @name$ + "]";
+					for( set .@i, 1; .@i <= $EP8_TitreNbP; set .@i, .@i +1 )
+					mes "- ["+.@i+"] The Vision of Heroes: ^4d4dff - " + $EP7_NFinal$[.@i] + "^000000 -";
+					close;		
+			}			
+//================================
+
+		case 6:
+			mes "[" + @name$ + "]"; 
+			mes "~ ^884DA7Schallmar Islands^000000 ~";
+			mes "Expansion for d'^884DA7Arsinoé : Aérie's Tears^000000";
+			mes "The eighth episode realize by ^BD33A4Aerie PinkPanther^000000";
+			mes "Scénario / Maps / Scripts";	
+			close;
+		
+//================================
+
+		case 7:close;
+	}
+}
+}
+
+//_________________________________________________________________
+//________________ Fonctions : Pièges _____________________________
+//_________________________________________________________________
+
+function	script	arsi_piege	{
+
+	if($@Schal_trap1b == 1) {end;}
+
+	if($@Schal_trap1b == 0) {
+		
+		if(EP7_HARCOURT <= 20) { set @number, rand(0,20);}
+		if(EP7_HARCOURT > 20) { set @number, rand(0,35);}
+		if(EP7_HARCOURT > 60) { set @number, rand(0,50);}
+		if(EP7_HARCOURT > 100) { set @number, rand(0,75);}
+		if(EP7_HARCOURT > 150) { set @number, rand(0,99);}
+		
+			if(@number > 10) {end;}
+
+			set $@SchallPlayer1b$,strcharinfo(0);
+			set $@Schal_trap1b,1; 
+			getmapxy $@mapname1b$,$@mapxPC1b,$@mapyPC1b,0; 
+			movenpc ""+$@namepiegenpc1b$+"",$@piegecoorX1b,$@piegecoorY1b;
+			donpcevent "arsi_schallTrap1b::OnReroll";
+		}
+	end;
+}
+//=========================================================================
+
+function	script	arsi_piege2	{
+
+	if($@Schal_trap2 == 1) {end;}
+
+		if($@Schal_trap1b == 0) {
+		
+		if(EP7_HARCOURT <= 20) { set @number, rand(0,20);}
+		if(EP7_HARCOURT > 20) { set @number, rand(0,35);}
+		if(EP7_HARCOURT > 60) { set @number, rand(0,50);}
+		if(EP7_HARCOURT > 100) { set @number, rand(0,75);}
+		if(EP7_HARCOURT > 150) { set @number, rand(0,99);}
+		
+			if(@number > 10) {end;}
+
+			set $@SchallPlayer2$,strcharinfo(0);
+			set $@Schal_trap2,1; 
+			getmapxy $@mapname2$,$@mapxPC2,$@mapyPC2,0; 
+			movenpc ""+$@namepiegenpc2$+"",$@piegecoorX2,$@piegecoorY2;
+			donpcevent "arsi_schallTrap2::OnReroll";
+		}
+	end;
+}
+
+//_________________________________________________________________
+//________________ Fonctions : Bateau _____________________________
+//_________________________________________________________________
+function	script	arsi_Boat	{
+
+		set EP7_BATEAUD,1;  
+		disguise $Ep7_BoatID; 
+		
+		if (EP7_BATEAUT == 1) {sc_start SC_SpeedUp1,20000,0;}
+		if (EP7_BATEAUT == 2) {sc_start SC_SpeedUp1,60000,0;}
+		if (EP7_BATEAUT == 3) {sc_start SC_SpeedUp1,180000,0;}
+		if (EP7_BATEAUT == 4) {sc_start SC_SpeedUp1,300000,0;}
+		return;
+	}
+//=========================================================================
+function	script	arsi_Boat2	{
+
+		set EP7_BATEAUD,0;
+		undisguise; 
+		sc_end SC_SpeedUp1;
+		return;
+	}
+//_________________________________________________________________
+//________________ Fonctions : Habitants __________________________
+//_________________________________________________________________			
+			
+function	script	arsi_habitants	{			
+	
+	if(EP7_LANGUE == 0) { callfunc "ars_fonction01fr";}
+	if(EP7_LANGUE == 1) { callfunc "ars_fonction01en";}
+}
+
+
+//_________________________________________________________________
+//________________ Fonctions : Items Allow ________________________
+//_________________________________________________________________
+
+function	script	ars_done	{
+	getmapxy(.@map$,.@x,.@y,0);
+	for(set .@i, 0; .@i < getarraysize($@allowedmaps2$); set .@i, .@i + 1) {
+		if ($@allowedmaps1$[.@i] == .@map$ || $@allowedmaps2$[.@i] == .@map$ || $@allowedmaps3$[.@i] == .@map$) { set .@var, .@var+1;}
+	}
+	if (.@var == 1) { end;}
+	
+	//If Map correct - Check objects
+	for(set .@o, 1; .@o < 11; set .@o, .@o + 1) {
+		for(set .@j, 0; .@j < getarraysize($@itemsdenied); set .@j, .@j + 1) {
+			if(getequipid(.@o) == $@itemsdenied[.@j]) { 
+				if(EP7_LANGUE == 0) { dispbottom "Le '"+getitemname(getequipid(.@o))+"' n'est pas autorisé sur cette map.";}
+				if(EP7_LANGUE == 1) { dispbottom "The '"+getitemname(getequipid(.@o))+"' isn't authorized in this map.";}
+				unequip .@o;
+			}
+		}
+	}
+end;
+}
+
+//_________________________________________________________________
+//________________ Fonctions : Abordage ___________________________
+//_________________________________________________________________
+
+function	script	ars_ViewAbord	{
+
+	getmapxy @mapname$,@X,@Y,0; 
+	setarray .checkmap$[1],"ars_fild74","ars_fild75","ars_fild76";
+	setarray .checkX[1],243,279,74,337,166,330,112,69,326,243,99,210;
+	setarray .checkY[1],102,241,201,352,87,165,313,146,125,282,311,59;
+	setarray .checkV[1],1,1,1,1,2,2,2,2,3,3,3,3;
+	
+	for(set .@i, 0; .@i < getarraysize(.checkmap$); set .@i, .@i + 1) {
+		if(@mapname$ == .checkmap$[.@i]) { set .@var,.@i; }
+	}
+	
+	if(.@var == 0) { 
+		if(EP7_LANGUE == 0) { dispbottom "Il n'y a aucun navire à aborder dans cette région."; }
+		if(EP7_LANGUE == 1) { dispbottom "There is no ship to aboard in this area."; }
+	end;}	
+
+	for(set .@i, 0; .@i < getarraysize(.checkX); set .@i, .@i + 1) {
+		if(.@var == .checkV[.@i]) { viewpoint 1,.checkX[.@i],.checkY[.@i],.@i,0xFF0000; }
+	}	
+	end;		
+}
+
+//_________________________________________________________________
+//________________ Fonctions : Trésors ____________________________
+//_________________________________________________________________
+
+function	script	ars_ViewTrea	{
+
+	getmapxy @mapname$,@X,@Y,0; 
+	setarray .checkmap$[1],"ars_fild63","ars_fild64","ars_fild65","ars_fild66","ars_fild67","ars_fild68","ars_fild69","ars_fild70","ars_fild71";
+	setarray .checkX[1],257,182,89,28,277,350,215,186,39,81,23,45,59,173,324,319,273,271,58,49,243,37,91,223,272,208,339,171,60,168,342,65,149,320,302,121,269,316,178,60,167,118,234,299,204,39;
+	setarray .checkY[1],247,303,293,156,96,195,201,51,49,134,139,290,151,51,53,214,247,354,250,84,121,184,56,84,219,367,76,121,233,331,237,173,37,130,341,354,50,191,342,186,143,97,133,285,326,313;
+	setarray .checkV[1],1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,6,6,6,6,6,7,7,7,7,7,8,8,8,8,8,9,9,9,9,9;
+	
+	for(set .@i, 0; .@i < getarraysize(.checkmap$); set .@i, .@i + 1) {
+		if(@mapname$ == .checkmap$[.@i]) { set .@var,.@i; }
+	}
+	
+	if(.@var == 0) { 
+		if(EP7_LANGUE == 0) { dispbottom "Il n'y a aucun trésor dans cette région.";}
+		if(EP7_LANGUE == 1) { dispbottom "There is no treasure in this area.";}
+	end;}	
+
+	for(set .@i, 0; .@i < getarraysize(.checkX); set .@i, .@i + 1) {
+		if(.@var == .checkV[.@i]) { viewpoint 1,.checkX[.@i],.checkY[.@i],.@i,0xF0C300; }
+	}	
+	end;		
+}
+//_________________________________________________________________
+//________________ Fonctions : Aérie ______________________________
+//_________________________________________________________________
+
+-	script	Aerie	-1,{
+
+OnWhisperGlobal:
+	if (@whispervar0$ == "Aerie ! Donne-moi la vie !" || @whispervar0$ == "Aerie ! Je suis ton humble serviteur !" || @whispervar0$ == "Aerie ! Protège-moi, je suis trop faible !" || @whispervar0$ == "Aerie ! Envole-moi !" || @whispervar0$ == "Aerie ! Give me life !" || @whispervar0$ == "Aerie ! I'm your humble servant !" || @whispervar0$ == "Aerie ! Protect me, I am too weak !" || @whispervar0$ == "Aerie ! Fly me !") {
+		getmapxy(.@map$,.@x,.@y,0);
+		for(set .@i, 0; .@i < getarraysize($@allowedmaps2$); set .@i, .@i + 1) {
+			if ($@allowedmaps1$[.@i] == .@map$ || $@allowedmaps2$[.@i] == .@map$ || $@allowedmaps3$[.@i] == .@map$) { set .@var, .@var+1;}
+		}
+		if (.@var == 0) { end;}
+//===============================		
+		if (@whispervar0$ == "Aerie ! Donne-moi la vie !" && ep8_sentences & 1 || @whispervar0$ == "Aerie ! Give me life !" && ep8_sentences & 1) {
+			if (Hp > 0) {
+				if(EP7_LANGUE == 0) { dispbottom "La Déesse Aérie ne peut vous réssuciter si vous êtes encore en vie ..."; }
+				if(EP7_LANGUE == 1) { dispbottom "Goddess Aerie can't resurrect you if you're still alive ..."; }
+				end;
+			}
+			if (@raise == 1) {
+				if(EP7_LANGUE == 0) { dispbottom "La Déesse Aérie n'a que faire des perdants qui ne peuvent pas se battre pour leur propre vie.";}
+				if(EP7_LANGUE == 1) { dispbottom "Goddess Aerie has no interest for losers who can't fight for their lives.";}
+				end;
+			}				
+			atcommand ""+$BR_Atcom$+"alive";
+			if(EP7_LANGUE == 0) { dispbottom "La Déesse Aérie dans sa grande bonté vous accorde une seconde chance !";}
+			if(EP7_LANGUE == 1) { dispbottom "Aerie Goddess in her kindness gives you a second chance!";}
+			set @raise,1;
+			end;
+		}
+//===============================
+		if (@whispervar0$ == "Aerie ! Je suis ton humble serviteur !" && ep8_sentences & 2 || @whispervar0$ == "Aerie ! I'm your humble servant !" && ep8_sentences & 2) {
+			if(EP7_LANGUE == 0) { dispbottom "La Déesse Aérie reconnait votre misérable existence et vous accorde une bénédiction.";}
+			if(EP7_LANGUE == 1) { dispbottom "Goddess Aerie recognizes your miserable existence and give you a blessing.";}
+			sc_start 30,120000,10; //Blessing
+			sc_start 39,120000,10; //Kyrie
+			sc_start 40,120000,10; //Magnificat
+			sc_start 41,120000,10; //Gloria
+			end;
+		}
+//===============================		
+		if (@whispervar0$ == "Aerie ! Protège-moi, je suis trop faible !" && ep8_sentences & 4 || @whispervar0$ == "Aerie ! Protect me, I am too weak !" && ep8_sentences & 4) {
+			if(EP7_LANGUE == 0) { dispbottom "La Déesse Aérie a pitié de vous, elle vous octroi un de ses anges !";}
+			if(EP7_LANGUE == 1) { dispbottom "Aerie Goddess takes pity on you, She will grant you one of her angels!";}
+			setarray .merco_id[1],2038,2058,1506,1275,2034,6026,6017,6030,6036,6044,6046;
+			set .@var, rand(1,getarraysize(.merco_id));
+			mercenary_create .merco_id[.@var],60000;
+			end;
+		}
+//===============================		
+		if (@whispervar0$ == "Aerie ! Envole-moi !" && ep8_sentences & 8 || @whispervar0$ == "Aerie ! Fly me !" && ep8_sentences & 8) {
+			if(EP7_LANGUE == 0) { setarray .mapname$[1],"Île de Tantale","Hôtel du Croizic","Brynnlaw","Forteresse de la Défense","Schallmar","Menez Mikael Ar Mor";}
+			if(EP7_LANGUE == 1) { setarray .mapname$[1],"Île de Tantale","Hôtel du Croizic","Brynnlaw","Fortress of the Defense","Schallmar","Menez Mikael Ar Mor";}
+			setarray .mapname2$[1],"tantale_ile","ars_fild65","ars_fild66","ars_fild71","ars_fild72","ars_fild73";
+			setarray .mapX[1],101,220,198,144,70,244;
+			setarray .mapY[1],178,244,155,216,258,326;
+			
+			set .@Menu$, "";
+			for( set .@i, 1; .@i < getarraysize(.mapname$); set .@i, .@i +1 )
+			set .@Menu$, .@Menu$ + .mapname$[.@i] + ":";
+			
+			set @choice$, .mapname$[select(.@Menu$)];
+			
+			for( set .@i, 1; .@i < getarraysize(.mapname$); set .@i, .@i +1 ) {
+				if(@choice$ == .mapname$[.@i]) {
+					warp ""+.mapname2$[.@i]+"",.mapX[.@i],.mapY[.@i];
+					callfunc "arsi_Boat2";
+					end;
+				}
+			}
+		}
+	}
+	end;
+	
+}
+//_________________________________________________________________
+//________________ Fonctions : Vol ________________________________
+//_________________________________________________________________
+
+function	script	ars_vol	{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Voler^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Steal^000000";}
+
+if(EP7_LANGUE == 0) {
+	mes "[" + @name$ + "]";
+	mes "Voulez-vous voler une "+getitemname(@stealitem)+" ?";
+	next;
+	if( select("•Voler:•Non !") == 2 )
+		close;
+	
+	mes "[" + @name$ + "]";
+	set @rand,rand(1,100);
+	if (@rand > 50) { mes "Le Marchand vous regarde avec un peu trop d'insistance vous ne voulez pas vous faire prendre."; close;}
+	if (@rand > 20) {
+		mes "Vous venez d'obtenir une "+getitemname(@stealitem)+".";
+		close2;
+		getitem @stealitem,1;
+		end;}
+	mes "Les autorités de Schallmar viennent de vous prendre la main dans le sac ! Les voleurs ne méritent que la prison !";
+	close2;
+	warp "ars_dun94",36,105;
+	end;
+	}
+	
+if(EP7_LANGUE == 1) {
+	mes "[" + @name$ + "]";
+	mes "Would you want steal a "+getitemname(@stealitem)+" ?";
+	next;
+	if( select("•Steal:•No !") == 2 )
+		close;
+	
+	mes "[" + @name$ + "]";
+	set @rand,rand(1,100);
+	if (@rand > 50) { mes "The Merchant looks at you with a little too much emphasis you don't want to get caught."; close;}
+	if (@rand > 20) {
+		mes "You just get a "+getitemname(@stealitem)+".";
+		close2;
+		getitem @stealitem,1;
+		end;}
+	mes "Schallmar authorities comes to take you hand in the bag! Thieves only deserve prison!";
+	close2;
+	warp "ars_dun94",36,105;
+	end;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//_________________________________________________________________
+//________________ Fonctions : Traductions ________________________
+//_________________________________________________________________
+
+
+
+//=================================================================================
+// Habitants
+//=================================================================================
+function	script	ars_fonction01fr	{
+
+//=========================================================================	
+//                  Coppalana
+//=========================================================================
+
+	if (@region$ == "tantale_march") {
+	
+		switch( rand(7) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "On embarque toute la marchandise, direction Brynnlaw !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Vous m'avez l'air d'un nouveau en Arsinoé ! D'ici c'est simple, soit vous partez vers le continent, soit vers les îles de Schallmar."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Encore quelques tonnes de marchandises à débarquer et les taxes à payer !"; close;
+			case 3: mes "[" + @name$ + "]"; mes "L'Archipel de Coppalana n'est pas terrible pour naviguer, les récifs sont nombreux et la navigation dangereuse."; close;
+			case 4: mes "[" + @name$ + "]"; mes "La Compagnie Brittany peut te louer des navires à un bon prix."; close;
+			case 5: mes "[" + @name$ + "]"; mes "La route maritime vers Schallmar est bien longue, les attaques de pirates sont nombreuses."; close;
+			case 6: mes "[" + @name$ + "]"; mes "Attention, tu ne dois pas naviguer dans ces eaux sans Carte Maritime !"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Hab") {
+	
+		switch( rand(7) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Prions pour Shinaere ! Que la navigation soit bonne !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Faites attention ! Dans la région de nombreux pirates sèment la terreur."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Je ne suis pas prêt de revenir commercer à la forteresse d'Airain. Ces maudits pirates m'ont arnaqué !"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Le vieux Gongofilir trace toujours des cartes maritimes de la région."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Hmm ... Je n'arrive plus à me souvenir de son nom. Ah oui ! Cortès ! Un grand chercheur de trésors de la région."; close;
+			case 5: mes "[" + @name$ + "]"; mes "Je n'ai plus de liqueur d'épices de Brynnlaw ... C'est triste ..."; close;
+			case 6: mes "[" + @name$ + "]"; mes "Le Continent n'est pas loin, mais les soldats d'Arsinoé ne viennent jamais dans les parages, ils ne peuvent plus traverser la région de La Rana."; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Hotel1") {
+	
+		switch( rand(11) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "*Hip* Ces cocktails sont des plus fameux ! Vous pouvez me croire."; close;
+			case 1: mes "[" + @name$ + "]"; mes "Je suis bien mieux ici au soleil qu'à me morfondre à Néraka ! Vous connaissez Néraka ?"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Je n'y crois pas ... Vraiment des incapables ces bagagistes ... Pas moyen de retrouver mes bagages !"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Les Chambres sont propres, mais ce n'est pas si étonnant au vu du standing de l'Hôtel du Croizic."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Il y a le ciel, le soleil et la mer ..."; close;
+			case 5: mes "[" + @name$ + "]"; mes "Il faudrait interdire les enfants de ces endroits paradisiaques, ils ne savent pas se tenir tranquilles !"; close;
+			case 6: mes "[" + @name$ + "]"; mes "Ce soir, c'est la soirée Macumba, vous serez là !?"; close;
+			case 7: mes "[" + @name$ + "]"; mes "Les locaux sont un peu frustres, heureusement que tout le monde ne peut venir dans cet hôtel."; close;
+			case 8: mes "[" + @name$ + "]"; mes "Profitez du beau temps ! La mer est calme et les pirates bien loin grâce à votre aide !"; close;
+			case 9: mes "[" + @name$ + "]"; mes "Merci d'avoir libéré nos compagnons ! La milice d'Arsinoé devrait  envoyer une flotte de guerre pour nettoyer tout cela !"; close;
+			case 10: mes "[" + @name$ + "]"; mes "Je ne savais même pas qu'il y avait encore des pirates dans ce monde !"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Hotel2") {
+	
+		switch( rand(6) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "C'est si triste ! Ils étaient dans l'embarcation derrière moi !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Les pirates ont enlevé plusieurs des nôtres, ils les retiennent au large contre rançon !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Connaissez-vous le prix de la rançon !? Une rançon de Roi, sont-ils fous !?"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Nous avons envoyé des émissaires à Arsinoé pour qu'ils puissent  rapporter une partie de la rançon."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Sauvez-nous !? Vous m'avez l'air sacrément bien armé pour ce genre de mission !"; close;
+			case 5: mes "[" + @name$ + "]"; mes "Les Pirates de la Citadelle d'Airain ! Mais que font-ils ici !?"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Staff1") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Notre patron devient fou avec cette histoire de prise d'otage !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Les pirates sont juste en face et nous narguent tous les soirs !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "On sert beaucoup moins de cocktails avec cette triste histoire ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes "Les clients commencent à devenir agressifs ... J'ai bien peur qu'ils s'en prennent à nous !"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Staff2") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Que puis-je pour vous ? Si c'est pour un cocktail, veuillez vous adresser au bar !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Je vous souhaite la bienvenue dans notre hôtel !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Prenez place, je vais venir vous servir au plus vite !"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Si vous avez besoin de quoique ce soit, je me tiens à votre disposition."; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Priso1") {
+	
+		switch( rand(2) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Sauvez-nous ! Ils mangent les enfants !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Nous ne sommes que des touristes , nous n'avons rien à voir avec les pirates !"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Priso2") {
+	
+		switch( rand(2) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Merci de nous avoir sauvé ! "; close;
+			case 1: mes "[" + @name$ + "]"; mes "Il faut tous les pendre, ils ne méritent pas de vivre."; close;
+			}
+	}	
+	
+//=========================================================================	
+//                  Brynnlaw
+//=========================================================================
+
+	if (@region$ == "Brynn_March") {
+	
+		switch( rand(8) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Venez tout de même regarder mes produits ! Prix d'ami, rien que pour toi !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Pas cher ! Pas cher ! Bon tapis !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "T'sais, je ne peux pas plus baisser le prix, c'est la crise tu vois ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes "Nouveau à Brynnlaw ? C'est une île importante pour le commerce des épices, nous avons ici la plus grande usine d'épices !"; close;
+			case 4: mes "[" + @name$ + "]"; mes "Les prix sont chers !? Et bien il faut payer la marchandise, les taxes, les fonctionnaires et notre sécurité ..."; close;
+			case 5: mes "[" + @name$ + "]"; mes "Si tu cherches du travail, tu devrais te rendre à la Couronne de Cuivre, c'est un lieu très prisé des mercenaires."; close;
+			case 6: mes "[" + @name$ + "]"; mes "La Guilde des marchands nous fait beaucoup de tort à nous les petites commerçants."; close;
+			case 7: mes "[" + @name$ + "]"; mes "J'aime regarder ce balet de narives arrivant et sortant du port ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_hab") {
+	
+		switch( rand(7) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "On raconte de drôles d'histoires venant des égouts, de terribles monstres auraient été aperçus."; close;
+			case 1: mes "[" + @name$ + "]"; mes "Au vu de vos armes, vous devez être un sacré guerrier ! Il y a toujours de l'argent à se faire ici pour les gens comme vous ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes "La Milice de Brynnlaw n'est plus ce qu'elle était depuis quelques temps ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes "Le Palais de Justice de la ville croule sous les plaintes des marchands vis à vis de la milice."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Vous devriez faire attention à vos fréquentations, certaines guildes sont très actives ici et n'hésitent pas à tuer pour quelques pièces."; close;
+			case 5: mes "[" + @name$ + "]"; mes "Il y a à Brynnlaw une guilde d'aventuriers, mais ils sont tellement peureux qu'ils ne sortent pas le nez de leurs livres !"; close;
+			case 6: mes "[" + @name$ + "]"; mes "Mon frère est parti pour le Monastère de Tibérine il y a quelques jours et il n'est toujours pas revenu ... Je commence à m'inquiéter."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_Couronne") {
+	
+		switch( rand(7) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Du vin et des amis ! Que demander de plus !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Vous voulez pas vous occuper de la dame à côté, elle semble desepérée ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Cette taverne est vraiment unique et elle offre certains genres de services qui ne sont pas négligeables."; close;
+			case 3: mes "[" + @name$ + "]"; mes "J'ai beau porter plainte ! Personne ne veut m'écouter ici ... J'ai trouvé un rat dans mon lit !"; close;
+			case 4: mes "[" + @name$ + "]"; mes "Madame Claude sait gérer son affaire, vous pouvez me croire."; close;
+			case 5: mes "[" + @name$ + "]"; mes "A ta santé !"; close;
+			case 6: mes "[" + @name$ + "]"; mes "Je n'aime pas trop les questions voyez-vous ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_clientspe") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Je ne vous avez encore jamais vu dans ces soirées privées !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Bien qu'on doit passer par les égouts, les plaisirs offerts sont des plus délicats."; close;
+			case 2: mes "[" + @name$ + "]"; mes "J'attends un combat de gladiateurs ! Ils ne valent pas ceux de Schallmar tout de même."; close;
+			case 3: mes "[" + @name$ + "]"; mes "On paye, on paye mais regardez donc cette jolie cueillette !"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Brynn_catin") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "T'veux venir miauler avec moi ?"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Excusez-moi, mais qu'un à la fois !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Voulez-vous que je vous serve quelque chose ? Un peu de Lotus Noir ?"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Remerciez Madame Claude pour avoir ouvert un tel endroit  !"; close;
+			case 4: mes "[" + @name$ + "]"; mes "Vous êtes ici pour une soirée Banga-Banga ?"; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_videur") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Fais po de conneries ! "; close;
+			case 1: mes "[" + @name$ + "]"; mes "Je suis po là pour parler avec les niais."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Je préfère pas trop voir ta tête, elle ne me revient décidément pas du tout."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_tiberM") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Le silence et la réflexion sont notre Credo."; close;
+			case 1: mes "[" + @name$ + "]"; mes "Il est bien difficile de se retirer du monde."; close;
+			case 2: mes "[" + @name$ + "]"; mes "La cloche vient de sonner, nous allons nous rendre à l'église pour l'office."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_Marin") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Tous ne reviennent pas de leurs voyages."; close;
+			case 1: mes "[" + @name$ + "]"; mes "Les pirates font des razzias de temps en temps dans cette région."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Il manque pas mal de monde dans nos îles, les pirates font bien trop d'esclaves."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_esclave") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Ils m'ont m'enlevé dans les îles aux épices !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Ici, nous ne sommes que dans une gare de triage, je ne sais pas où ils vont nous envoyer ?"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Qu'allons-nous devenir ?"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Je veux rentrer chez moi !"; close;
+			}
+	}						
+//=========================================================================
+
+	if (@region$ == "Brynn_paysanEpices") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Nous devons faire des rondes maintenant, les pirates deviennent de plus en plus agressifs !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Grâce à cette épice nous pouvons faire une liqueur s'approchant du lotus noir."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Des gens de la ville sont venus et nous ont demandé de ne plus vendre notre production à Kesha."; close;
+			case 3: mes "[" + @name$ + "]"; mes "On a tous perdu quelqu'un de sa famille ici avec ces enlèvements."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Si la sècheresse continue, nous ne pourrons plus assurer notre production."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_fonctionnaire") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Du travail, du travail et pas assez de pause café !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Beaucoup trop de disparitions pourque cela soit normal ...."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Veuillez-vous adresser au bureau du juge pour les questions complémentaires."; close;
+			case 3: mes "[" + @name$ + "]"; mes "Avez-vous bien rempli le formulaire E98 pour adressez les requêtes ?"; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_main") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "J'aime bien mon métier, je me sens vraiment utile pour la guilde."; close;
+			case 1: mes "[" + @name$ + "]"; mes "La Main Noire ne craint rien, ni personne !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "J'aime pas trop qu'on me fixe, ça me met une de ces rognes, voyez."; close;
+			case 3: mes "[" + @name$ + "]"; mes "On ne chôme pas ici, les gens ne sont pas très dociles lorsqu'il s'agit d'argent."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_Mutant1") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Achevez-moi, par pitié !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Ces mages ont fait de nous des monstres hideux ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Je souffre tant, faites ce que vous avez à faire !"; close;
+			case 3: mes "[" + @name$ + "]"; mes "J'étais un homme comme vous auparavant et contemplez maintenant l'oeuvre de la magie noire !"; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_Mutant2") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Nous allons pouvoir retourner à la surface grâce à vous !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Merci pour tout ! Je me souviendrai de vous, ah oui ça c'est sûr !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Mais d'où pouvez bien provenir ces mages de l'enfer ?"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Le long des grottes du Gwened, il existe de nombreuses alvéoles."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Garde1") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Notre vie au Sénat ! Vive le Roi !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Attention, nous ne voulons pas d'ennuis ici."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Des tensions dans la ville ? Je ne crois pas ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes "Quelles tristes nouvelles de Brynnlaw ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Merch1") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "C'est qu'il y en a des voleurs sur les marchés ! Ils finissent en prison à coup sûr !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "J'ai tout ce qu'il faut pour vous !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Les îles de Schallmar sont riches, des marchands viennent souvent de l'Arsinoé pour commercer."; close;
+			case 3: mes "[" + @name$ + "]"; mes "Notre Cité est belle et riche ! Le Temple de Shinaere est le symbole de notre prosperité."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Les perles, les perles .. ça ne fait pas vendre ces histoires !"; close;	
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Habit1") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Shinaere est la déesse protectrice de Schallmar."; close;
+			case 1: mes "[" + @name$ + "]"; mes "Les Pirates de la Défense semblent préparer un mauvais coup ...!"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Il n'y a pas de taverne valant l'Ar Gwez Boel à Schallmar ... Pour sûr."; close;
+			case 3: mes "[" + @name$ + "]"; mes "J'ai l'impression que l'on va droit à notre perte ..."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Il paraît que le Déesse Aérie donne des avantages à ses admirateurs ..."; close;	
+			}
+	}	
+//=========================================================================
+
+	if (@region$ == "Schall_Police1") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Les voleurs finissent ici."; close;
+			case 1: mes "[" + @name$ + "]"; mes "Agent de la paix avant tout !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Pause Bière !"; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Senat1") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Nous votons les lois ici !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Nous devons passer en commission bientôt ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Changement de régime .. Il va nous falloir modifier les lois."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Client1") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "A vôtre santé !"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Encore un p'tit et j'm'rentre ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Ah l'eau de vie naine ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_defsold1") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Même si nos activités sont douteuses, l'ordre règne ici."; close;
+			case 1: mes "[" + @name$ + "]"; mes "Nous avons pu récupérer une Perle Noire de Shinaere !"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Toi, je ne t'aime pas."; close;
+			}
+	}
+//=========================================================================
+
+	if (@region$ == "Schall_Habit2") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Nous sommes sous la protection de Schallmar ... Comme si nous en avions besoin."; close;
+			case 1: mes "[" + @name$ + "]"; mes "L'Ar Gwez Boel est réputé dans tout l'Archipel pour son Arène ! Mieux que celle de La Rana."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Notre Ville est un rocher posé sur l'eau, le joyau d'Aérie."; close;
+			case 3: mes "[" + @name$ + "]"; mes "J'ai entendu dire que nos défenseurs avaient une perle noire."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Je vous en pose-moi des questions !?"; close;	
+			}
+	}		
+//=========================================================================
+
+	if (@region$ == "Schall_Guilde") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "On aura surement du boulot dans pas longtemps."; close;
+			case 1: mes "[" + @name$ + "]"; mes "La Guilde d'Harcourt est la plus puissant des guildes de mercenaires."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Erza et Natsu ne sont pas revenus depuis un moment ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes "Le vieux doit être à l'étage ..."; close;
+			}
+	}		
+//=========================================================================
+}
+
+//=================================================================================
+// Anglais
+//=================================================================================
+function	script	ars_fonction01en	{
+
+//=========================================================================	
+//                  Coppalana
+//=========================================================================
+
+	if (@region$ == "tantale_march") {
+	
+		switch( rand(7) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Aboard all merchandises, then let's go to Brynnlaw!"; close;
+			case 1: mes "[" + @name$ + "]"; mes "You look new in Arsinoe! From here it's simple, either you go to the mainland or the islands of Schallmar."; close;
+			case 2: mes "[" + @name$ + "]"; mes "A few more tons of cargo to land and taxes to pay!"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Archipelago Coppalana is terrible to navigate the reefs are numerous and dangerous navigation."; close;
+			case 4: mes "[" + @name$ + "]"; mes "The Company Brittany may rent ships to you at a good price."; close;
+			case 5: mes "[" + @name$ + "]"; mes "For Schallmar the sea route is long, pirats attacks are numerous."; close;
+			case 6: mes "[" + @name$ + "]"; mes "Be careful, you must not navigate these waters without sea charts!"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Hab") {
+	
+		switch( rand(7) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Pray Shinaere! And your navigation will be safe!"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Be careful! In the region of many pirates run riot."; close;
+			case 2: mes "[" + @name$ + "]"; mes "I'm not ready to return to the fortress Menez. Those damned pirates scammed me!"; close;
+			case 3: mes "[" + @name$ + "]"; mes "The old Gongofilir still trace shipping maps in the region."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Hmm ... I can't longer remember his name. Oh yes! Cortes! A great treasure hunter in the area."; close;
+			case 5: mes "[" + @name$ + "]"; mes "I have no liquor spice of Brynnlaw ... It's sad ..."; close;
+			case 6: mes "[" + @name$ + "]"; mes "The Continent isn't far, but the soldiers of Arsinoe never come around, they can't cross the region of La Rana."; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Hotel1") {
+	
+		switch( rand(11) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "*Hip* These are the most famous cocktails! Believe me."; close;
+			case 1: mes "[" + @name$ + "]"; mes "I'm much better here under the sun than be at Néraka! Néraka, you know?"; close;
+			case 2: mes "[" + @name$ + "]"; mes "I don't believe it ... Those baggagist are really dumb ... No way to find my luggage !"; close;
+			case 3: mes "[" + @name$ + "]"; mes "Rooms are clean, but it's not so surprising with the luxury of the Hotel du Croizic."; close;
+			case 4: mes "[" + @name$ + "]"; mes "There is the sky, the sun and the sea ..."; close;
+			case 5: mes "[" + @name$ + "]"; mes "There should be no children in these heavenly places, they can't keep quiet !"; close;
+			case 6: mes "[" + @name$ + "]"; mes "Tonight is the Macumba night, you will be there!?"; close;
+			case 7: mes "[" + @name$ + "]"; mes "The premises are a little frustrated, fortunately, not everyone can come to this hotel."; close;
+			case 8: mes "[" + @name$ + "]"; mes "Enjoy the nice weather! The sea is calm and hackers far with your help!"; close;
+			case 9: mes "[" + @name$ + "]"; mes "Thank you for freeing our comrades! The militia of Arsinoe should send a navy to clean it all!"; close;
+			case 10: mes "[" + @name$ + "]"; mes "I didn't even know that there still pirates in this world!"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Hotel2") {
+	
+		switch( rand(6) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "It's so sad! They were in the boat behind me!"; close;
+			case 1: mes "[" + @name$ + "]"; mes "The pirates removed several of us, they hold them off against ransom!"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Do you know the price of the ransom? A king's ransom, are they crazy!?"; close;
+			case 3: mes "[" + @name$ + "]"; mes "We sent emissaries to Arsinoe so they can bring a part of the ransom."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Save us!? You look damn well equipped for this kind of mission!"; close;
+			case 5: mes "[" + @name$ + "]"; mes "Pirates of the Citadel of Brass! But what are they doing here!?"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Staff1") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Our boss is going mad with this story of hostage-taking!"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Pirates are just taunting us in the face and every night!"; close;
+			case 2: mes "[" + @name$ + "]"; mes "We made less cocktails with this sad story ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes "Customers become aggressive ... I'm afraid they attacking us!"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Staff2") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "What can I do for you? If it's for a cocktail party, please contact the bar!"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Welcome in our hotel!"; close;
+			case 2: mes "[" + @name$ + "]"; mes "Take a seat, I will come to serve you faster!"; close;
+			case 3: mes "[" + @name$ + "]"; mes "If you need anything, I stand at your disposal."; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Priso1") {
+	
+		switch( rand(2) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Save us! They eat children!"; close;
+			case 1: mes "[" + @name$ + "]"; mes "We are just tourists, we have nothing to do with pirates!"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Coppa_Priso2") {
+	
+		switch( rand(2) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Thank you for save us ! "; close;
+			case 1: mes "[" + @name$ + "]"; mes "We must hang all of them, they don't need to live"; close;
+			}
+	}	
+	
+//=========================================================================	
+//                  Brynnlaw
+//=========================================================================
+
+	if (@region$ == "Brynn_March") {
+	
+		switch( rand(8) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Come looking at my products! Friendly price, just for you!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " Cheap! Cheap! Good carpet!"; close;
+			case 2: mes "[" + @name$ + "]"; mes " You know, I can't get a price, you see its the crisis ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes " New to Brynnlaw? The island is important for the spice trade, here we have the largest variety of spices!"; close;
+			case 4: mes "[" + @name$ + "]"; mes " Prices are expensive!? Well you have to pay the goods, taxes, and officials for our security ..."; close;
+			case 5: mes "[" + @name$ + "]"; mes " If you are looking for a job, you ought to go to the Copper Coronet is a popular venue for mercenaries."; close;
+			case 6: mes "[" + @name$ + "]"; mes " The Guild of Merchants takes all money, It's difficult for small traders like us."; close;
+			case 7: mes "[" + @name$ + "]"; mes " I love watching this Ship Dance, ships arriving and leaving the port ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_hab") {
+	
+		switch( rand(7) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " They say some funny stories from the sewers, terrible monsters have been sighted."; close;
+			case 1: mes "[" + @name$ + "]"; mes " If I'm looking to your weapons, you must be a good warrior! There is always money to earn here for people like you ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes " The Militia Brynnlaw isn't such fair as before ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes " The Palace of Justice is empty by complaints of the merchants against the militia abuses."; close;
+			case 4: mes "[" + @name$ + "]"; mes " You should be careful about who you know, some guilds are very active here and don't hesitate to kill for few coins."; close;
+			case 5: mes "[" + @name$ + "]"; mes " There is in Brynnlaw a guild of adventurers, but they are so scared, they don't leave the nose from their books!"; close;
+			case 6: mes "[" + @name$ + "]"; mes " My brother went to the Monastery of Tiberine a few days ago and he isn't back yet ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_Couronne") {
+	
+		switch( rand(7) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Wine and friends! Did we need something else !"; close;
+			case 1: mes "[" + @name$ + "]"; mes " Do you want to take care of the lady next door, she seems desesperate ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes " This tavern is truly unique and offers some kinds of specials services."; close;
+			case 3: mes "[" + @name$ + "]"; mes " I'm angry! Nobody wants to listen to me here ... I've found a rat in my bed!"; close;
+			case 4: mes "[" + @name$ + "]"; mes " Madame Claude can handle her case, believe me."; close;
+			case 5: mes "[" + @name$ + "]"; mes " Cheers !"; close;
+			case 6: mes "[" + @name$ + "]"; mes " I don't like the questions, m'kay ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_clientspe") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " I've never seen you in these private parties before!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " Although it has to go through the sewers, the pleasures are really delicate here."; close;
+			case 2: mes "[" + @name$ + "]"; mes " I am waiting for the gladiator combat!"; close;
+			case 3: mes "[" + @name$ + "]"; mes "We pay, we pay but look this nice place !"; close;
+			}
+	}			
+//=========================================================================
+	if (@region$ == "Brynn_catin") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Do you want make some meow with me?"; close;
+			case 1: mes "[" + @name$ + "]"; mes " Excuse me, but one at the time!"; close;
+			case 2: mes "[" + @name$ + "]"; mes " Do you want me to serve you something? A little fix of Black Lotus?"; close;
+			case 3: mes "[" + @name$ + "]"; mes " Thank Madame Claude for opening this kind of place!"; close;
+			case 4: mes "[" + @name$ + "]"; mes " You are here for a Bunga-Bunga night ?"; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_videur") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Donte try todo crap!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " I'm not here to talk with idiots."; close;
+			case 2: mes "[" + @name$ + "]"; mes " I prefer don't see your head, damn ugly head ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_tiberM") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Silence and meditation are our creed."; close;
+			case 1: mes "[" + @name$ + "]"; mes " It's very difficult to withdraw from the world."; close;
+			case 2: mes "[" + @name$ + "]"; mes " The bell has just rung, we will go to church for the service."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_Marin") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " All of us don't returns from their travels."; close;
+			case 1: mes "[" + @name$ + "]"; mes " The pirates are raiding sometimes in this region."; close;
+			case 2: mes "[" + @name$ + "]"; mes " It lacks a lot of people in our islands, pirates are making slaves with our inhabitants."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_esclave") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " They've lifted me up in the Spice Islands!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " Here we are in a yard, I don't know where they are going to send us?"; close;
+			case 2: mes "[" + @name$ + "]"; mes " What are we becoming?"; close;
+			case 3: mes "[" + @name$ + "]"; mes " I want to go home!"; close;
+			}
+	}						
+//=========================================================================
+
+	if (@region$ == "Brynn_paysanEpices") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " We need to do watch now, pirates are becoming more aggressive!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " With this we can make a spice liquor approaching the taste and effects of the Black Lotus."; close;
+			case 2: mes "[" + @name$ + "]"; mes " People of the city came and asked us to not sell our production to Kesha."; close;
+			case 3: mes "[" + @name$ + "]"; mes " We all lost a family member here with the kidnapping."; close;
+			case 4: mes "[" + @name$ + "]"; mes " If the drought continues, we can't be able to ensure our production."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_fonctionnaire") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Work, work and not enough coffee!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " Too many disappearances for be regular ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes " Please contact the office of the judge for additional questions."; close;
+			case 3: mes "[" + @name$ + "]"; mes " Have you completed the form E98 for send requests ?"; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_main") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " I like my job, I feel really good in the guild."; close;
+			case 1: mes "[" + @name$ + "]"; mes " The Black Hand doesn't fear anything or anyone!"; close;
+			case 2: mes "[" + @name$ + "]"; mes " I don't like how you're looking to me, it makes me one of these gripes, see."; close;
+			case 3: mes "[" + @name$ + "]"; mes " There is no idle here, people aren't very obedient when it's talking about money."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_Mutant1") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Kill me, please!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " These mages have made us hideous monsters ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes " I suffer so much, do what you have to do!"; close;
+			case 3: mes "[" + @name$ + "]"; mes " I was a man like you before and now behold the works of black magic!"; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Brynn_Mutant2") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " We will be able to return to the surface thanks to you!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " Thanks for everything! I will remember you, oh yeah that's for sure!"; close;
+			case 2: mes "[" + @name$ + "]"; mes " But from where these mages can come, hell ?"; close;
+			case 3: mes "[" + @name$ + "]"; mes " Along the Gwened caves, there are many cells."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Garde1") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Our life for the Senate! Long live to the King!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " Attention, we don't want any trouble here."; close;
+			case 2: mes "[" + @name$ + "]"; mes " Tensions in the city? I don't think ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes " What sad news from Brynnlaw ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Merch1") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " That there are thieves in the market! They'll end up in jail for sure!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " I have it only for you!"; close;
+			case 2: mes "[" + @name$ + "]"; mes " The islands of Schallmar are rich, merchants often come from Arsinoe to trade."; close;
+			case 3: mes "[" + @name$ + "]"; mes " Our city is beautiful and rich! The Temple of Shinaere is the symbol of our prosperity."; close;
+			case 4: mes "[" + @name$ + "]"; mes " Pearls, pearls .. Everybody talks about and we can't sell stories!"; close;	
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Habit1") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Shinaere is the patron goddess of Schallmar."; close;
+			case 1: mes "[" + @name$ + "]"; mes " The Pirates seems to prepare an attack ... bad move!"; close;
+			case 2: mes "[" + @name$ + "]"; mes " Not worth the tavern Ar Gwez Boel of Menez  ... For sure."; close;
+			case 3: mes "[" + @name$ + "]"; mes " I feel that one goes straight to our loss ..."; close;
+			case 4: mes "[" + @name$ + "]"; mes " It seems that the Goddess Aerie gives benefits to her fans ..."; close;		
+			}
+	}	
+//=========================================================================
+
+	if (@region$ == "Schall_Police1") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " Thieves end up here."; close;
+			case 1: mes "[" + @name$ + "]"; mes " Peace officer first!"; close;
+			case 2: mes "[" + @name$ + "]"; mes " Beer Break!"; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Senat1") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes " We're voting laws here!"; close;
+			case 1: mes "[" + @name$ + "]"; mes " We have to go to committee soon ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes " Regime change .. We will have to change the laws."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_Client1") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "Cheers!"; close;
+			case 1: mes "[" + @name$ + "]"; mes "Another li'tle and I go back to home ..."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Ah brandy dwarf ..."; close;
+			}
+	}			
+//=========================================================================
+
+	if (@region$ == "Schall_defsold1") {
+	
+		switch( rand(3) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "While our business is bad, the order prevails here."; close;
+			case 1: mes "[" + @name$ + "]"; mes "We were able to get a Black Pearl of Shinaere!"; close;
+			case 2: mes "[" + @name$ + "]"; mes "I don't like you."; close;
+			}
+	}
+//=========================================================================
+
+	if (@region$ == "Schall_Habit2") {
+	
+		switch( rand(5) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "We are under the protection of Schallmar ... As if we needed it."; close;
+			case 1: mes "[" + @name$ + "]"; mes "The Ar Gwez Boel is known throughout the archipelago for his the Arena! More than La Rana."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Our City is a rock lying on the water, the jewel of Aerie."; close;
+			case 3: mes "[" + @name$ + "]"; mes "I heard that our defenders had a black pearl."; close;
+			case 4: mes "[" + @name$ + "]"; mes "Did I ask you questions!?"; close;	
+			}
+	}		
+//=========================================================================
+
+	if (@region$ == "Schall_Guilde") {
+	
+		switch( rand(4) ) {	
+			case 0: mes "[" + @name$ + "]"; mes "We will probably not last long in the job."; close;
+			case 1: mes "[" + @name$ + "]"; mes "The Guild of Harcourt is the most powerful guild of mercenaries."; close;
+			case 2: mes "[" + @name$ + "]"; mes "Erza and Natsu didn't return for a while ..."; close;
+			case 3: mes "[" + @name$ + "]"; mes "The old must be on the floor ..."; close;
+			}
+	}		
+//=========================================================================
+}

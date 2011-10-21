@@ -1,0 +1,588 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+
+
+//===== Arsinoé Script ============================================================================ 
+//
+//= Final Room for Arsinoé Mod
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : True Noir & Mirabell & DesertFox
+//= Spanish Version : GMKira
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.4
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.x Versions without multi-language support.
+//= 2.0 release
+//= 2.1 Warp Exit of Arsinoé Heart
+//= 2.2 Daphnis sprite ID (497) change
+//= 2.3 Monster Name / Menu Symbol
+//= 2.4 Revisited English version by DesertFox
+//
+//================================================================================================= 
+
+
+//_________________________________________________________________
+//________________Le Coeur : Présentation _________________________
+//_________________________________________________________________
+
+
+ars_in17,108,102,4	script	Aerie PinkPanther#coeur	485,{
+
+set @name$,"^FF00CCAerie PinkPanther^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {
+		mes "Vous voilà désormais une divinité en Arsinoé, vous recevrez surement un culte chez les habitants d'Arsinoé.";
+		next;
+		switch(select("•Partir du Coeur:•Annuler")){
+		
+			case 1: close2; warp "$EP7map$",156,202; end;
+			
+			case 2: close;
+		}				
+	}
+	
+	if(EP7_LANGUE == 1) {
+		mes "Now you're a god in Arsinoe, you will probably be worshiped by the inhabitants of Arsinoe.";
+		next;
+		switch(select("•Leave Arsinoé Heart:•Cancel")){
+		
+			case 1: close2; warp "$EP7map$",156,202; end;
+			
+			case 2: close;
+		}				
+	}
+	if(EP7_LANGUE == 2) {
+		mes "Ahora eres un dios de Arsinoe, que probablemente adorado entre los habitantes de Arsinoe.";
+		next;
+		switch(select("•Llevar Arsinoé Heart:•Cancelar")){
+		
+			case 1: close2; warp "$EP7map$",156,202; end;
+			
+			case 2: close;
+		}				
+	}
+	close;
+
+
+OnTalk1:
+	if($ep7_LangChoice & 1) {mapannounce "ars_in17","Aerie PinkPanther : Approchez, approchez, il est temps de conclure !",1,0xFF33CC;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_in17","Aerie PinkPanther : Step right up, it is time to conclude!",1,0xFF33CC;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_in17","Aerie Pantera Rosa: Un paso al frente, es el momento de celebrar!",1,0xFF33CC;}
+	end;
+
+OnTalk2:
+	if($ep7_LangChoice & 1) {npctalk "Quelle aventure ! Ornélia, faites-nous donc le point sur la situation.";}
+	if($ep7_LangChoice & 2) {npctalk "What an adventure! Ornélia, So let us review the situation.";}
+	if($ep7_LangChoice & 4) {npctalk "¡Qué aventura! Ornélia, Así que vamos a examinar la situación.";}
+	end;
+
+OnTalk3:
+	if($ep7_LangChoice & 1) {npctalk "Félicitations !";}
+	if($ep7_LangChoice & 2) {npctalk "Congratulations!";}
+	if($ep7_LangChoice & 4) {npctalk "¡Enhorabuena!";}
+	end;
+
+OnTalk4:
+	if($ep7_LangChoice & 1) {mapannounce "ars_in17","Aerie PinkPanther : Je vous remercie d'avoir joué sur mon Continent !",1,0xFF33CC;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_in17","Aerie PinkPanther : Thank you for playing on my continent!",1,0xFF33CC;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_in17","Aerie Pantera Rosa: Gracias por jugar en mi continente!",1,0xFF33CC;}
+	sleep2 5000;
+	if($ep7_LangChoice & 1) {mapannounce "ars_in17","Aerie PinkPanther : J'espère que vous avez eu autant de plaisir à le faire que moi !",1,0xFF33CC;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_in17","Aerie PinkPanther : I hope you had as much fun as I had!",1,0xFF33CC;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_in17","Aerie Pantera Rosa: Espero que te hayas divertido tanto como yo!",1,0xFF33CC;}
+	sleep2 5000;
+	if($ep7_LangChoice & 1) {mapannounce "ars_in17","Aerie PinkPanther : Et qui sait, peut-être qu'un jour nous nous croiserons dans un des monde de Midgard !",1,0xFF33CC;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_in17","Aerie PinkPanther : And who knows, maybe one day we will cross into a world of Midgard!",1,0xFF33CC;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_in17","Aerie Pantera Rosa: Y quién sabe, quizás algún día nos cruzaremos en un mundo de Midgard!",1,0xFF33CC;}
+	sleep2 5000;
+	if($ep7_LangChoice & 1) {mapannounce "ars_in17","Aerie PinkPanther : Merci aux administrateurs de "+$EP7ServName$+" pour vous avoir mis à disposition Arsinoé !",1,0xFF33CC;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_in17","Aerie PinkPanther : Thank you to the administrators "+$EP7ServName$+" to have made available the world of Arsinoe !",1,0xFF33CC;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_in17","Aerie Pantera Rosa: Gracias a los administradores "+$EP7ServName$+" por tener disponible Arsinoe!",1,0xFF33CC;}
+	sleep2 5000;
+	set $@ep7Anim6,0;
+	end;
+}
+//=====================================================================================
+
+ars_in17,107,106,4	script	Archimage Ornélia#coeur	893,{
+
+set @name$,"^FF00CCArchimage Ornélia^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Tu aurais pu l'éliminer plus vite ... J'ai vidé tout mon livre de sort !";}
+	if(EP7_LANGUE == 1) {mes "You could eliminate it faster ... I emptied my spellbook!";}
+	if(EP7_LANGUE == 2) {mes "Usted podría eliminar más rápido ... Vacié mi libro de hechizos!";}
+	close;
+
+OnTalk1:
+	if($ep7_LangChoice & 1) {npctalk "Comme vous avez pu le constater notre excursion dans les Abysses ont été un succès.";}
+	if($ep7_LangChoice & 2) {npctalk "As you may have noticed our excursion into the Abyss was a success.";}
+	if($ep7_LangChoice & 4) {npctalk "Como te habrás dado cuenta nuestra excursión en el Abyss fue un éxito.";}
+	end;
+
+OnTalk2:
+	if($ep7_LangChoice & 1) {npctalk "Mais nous ne devons pas oublier ceux qui sont morts lors de cette périlleuse opération ...";}
+	if($ep7_LangChoice & 2) {npctalk "But we must not forget those who died during the perilous operation...";}
+	if($ep7_LangChoice & 4) {npctalk "Pero no debemos olvidar a los que murieron durante la peligrosa operación...";}
+	end;
+
+OnTalk3:
+	if($ep7_LangChoice & 1) {npctalk "Aux Soldats de la Quatrième Légion qui ont vaillamment retenu les hordes démionaques aux Portes d'Ust Nashar !";}
+	if($ep7_LangChoice & 2) {npctalk "Soldiers of the Fourth Legion who valiantly engaged the doors to hordes demons Ust Nashar!";}
+	if($ep7_LangChoice & 4) {npctalk "Soldados de la Cuarta Legión que valientemente comprometidos a las puertas contra los demonios de Ust Nashar!";}
+	end;
+
+OnTalk4:
+	if($ep7_LangChoice & 1) {npctalk "Fenrir est retourné dans sa prison et nous allons refermer le Portail des Abysses.";}
+	if($ep7_LangChoice & 2) {npctalk "Fenrir returned to prison and we will close the portal of the Abyss.";}
+	if($ep7_LangChoice & 4) {npctalk "Fenrir regresó a la cárcel y vamos a cerrar el portal de Abyss.";}
+	end;
+
+OnTalk5:
+	if($ep7_LangChoice & 1) {npctalk "Les Objets religieux disparus, point de départ de la Guerre, ont été rendus aux différents Cultes.";}
+	if($ep7_LangChoice & 2) {npctalk "Religious Objects missing, the starting point of the War, were made at different Cults.";}
+	if($ep7_LangChoice & 4) {npctalk "Objetos religiosos desaparecidos, el punto de partida de la guerra, se hicieron a diferentes cultos.";}
+	end;
+
+OnTalk6:
+	if($ep7_LangChoice & 1) {npctalk "Il ne nous reste plus qu'à reconstruire, pacifier certaines régions, ainsi que poursuivre la chasse aux Mages Gris.";}
+	if($ep7_LangChoice & 2) {npctalk "It remains for us to rebuild and pacify certain regions, and continue the hunt for Grey Mages.";}
+	if($ep7_LangChoice & 4) {npctalk "Nos queda por reconstruir y pacificar algunas regiones, y continuar la búsqueda de los Magos Grey.";}
+	end;
+
+OnTalk7:
+	if($ep7_LangChoice & 1) {npctalk "Certains ne changeront jamais ...";}
+	if($ep7_LangChoice & 2) {npctalk "Some will never change...";}
+	if($ep7_LangChoice & 4) {npctalk "Algunos nunca va a cambiar...";}
+	end;
+
+OnTalk8:
+	if($ep7_LangChoice & 1) {npctalk "Tout le Peuple d'Arsinoé vous remercie pour votre dévouement et votre courage !";}
+	if($ep7_LangChoice & 2) {npctalk "All the People of Arsinoe thank you for your dedication and courage!";}
+	if($ep7_LangChoice & 4) {npctalk "Todo el pueblo de Arsinoe te da las gracias por su dedicación y valentía!";}
+	end;
+}
+
+//========================================================================================================
+ars_in17,107,99,4	script	Dynaheir#coeur	510,{
+
+set @name$,"^FF00CCDynaheir^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Ah grâce à notre petite excursion, je vais enfin pouvoir reprendre ma place à l'Académie !";}
+	if(EP7_LANGUE == 1) {mes "Ah thanks to our little excursion, I'll finally be able to resume my place at the Academy!";}
+	if(EP7_LANGUE == 2) {mes "Ah, gracias a nuestra pequeña excursión, por fin voy a poder retomar mi lugar en la Academia!";}
+	close;
+
+OnTalk1:
+	if($ep7_LangChoice & 1) {npctalk "Prions pour ceux qui ne peuvent contempler notre victoire !";}
+	if($ep7_LangChoice & 2) {npctalk "Pray for those who can't contemplate our victory!";}
+	if($ep7_LangChoice & 4) {npctalk "Oremos por aquellos que no pueden contemplar nuestra victoria!";}
+	end;
+
+OnTalk2:
+	if($ep7_LangChoice & 1) {npctalk "Il va bien nous rester quelques nouvelles aventures à mener !";}
+	if($ep7_LangChoice & 2) {npctalk "It's going well we have few new adventures to undertake!";}
+	if($ep7_LangChoice & 4) {npctalk "Todo va bien tenemos algunas nuevas aventuras para llevar a cabo!";}
+	end;
+
+}
+//========================================================================================================
+ars_in17,102,99,4	script	Ursula Hupoi#coeur	850,{
+
+set @name$,"^FF00CCUrsula Hupoi^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Après avoir exploré Sidon et le désert de Kargah, j'aimerai bien me rendre en Midgard ...";}
+	if(EP7_LANGUE == 1) {mes "After exploring the wilderness of Sidon and Kargah, I like to go to Midgard...";}
+	if(EP7_LANGUE == 2) {mes "Después de explorar el desierto de Sidón y Kargah, me gusta ir a Midgard...";}
+	close;
+
+OnTalk1:
+	if($ep7_LangChoice & 1) {npctalk "Et à tous les autres bougres, ceux qui ont été appelés lors du Rêve d'Urunesti !";}
+	if($ep7_LangChoice & 2) {npctalk "And all the other fellows, who were called at Dream Urunesti!";}
+	if($ep7_LangChoice & 4) {npctalk "Y todos los otros compañeros, que fueron llamados en el sueño Urunesti!";}
+	end;
+
+OnTalk2:
+	if($ep7_LangChoice & 1) {npctalk "Et qui n'ont pu aller bien loin pour sauver les leurs, ne dépassant pas les forêts de Kiman Farès.";}
+	if($ep7_LangChoice & 2) {npctalk "And who could go far to save theirs, not exceeding forests Kiman Fares.";}
+	if($ep7_LangChoice & 4) {npctalk "Y quién puede ir muy lejos para salvar a los suyos, que no exceda de los bosques de Kiman Fares.";}
+	end;
+}
+//========================================================================================================
+ars_in17,102,106,4	script	Daphnis#coeur	497,{
+
+set @name$,"^66CCFFDaphnis^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je te rembourserai la traversée depuis Alberta, mais tu sais en ce moment ... Je ne roule pas trop sur l'or ...";}
+	if(EP7_LANGUE == 1) {mes "I will reimburse the journey from Alberta, but so you know... I don't keep too much gold...";}
+	if(EP7_LANGUE == 2) {mes "Yo le reembolsare el viaje de Alberta, pero para que usted sepa... No me quedo demasiado zeny...";}
+	close;
+
+OnTalk1:
+	if($ep7_LangChoice & 1) {npctalk "Aux Mages de l'Académie ! Aux Moins d'Harpocrate !";}
+	if($ep7_LangChoice & 2) {npctalk "For the Magi of the Academy! For Less Harpocrates!";}
+	if($ep7_LangChoice & 4) {npctalk "Para los Reyes Magos de la Academia! Por menos Harpócrates!";}
+	end;
+
+OnTalk2:
+	if($ep7_LangChoice & 1) {npctalk "Quant à moi, parceque personne ne me le demande, je compte rester en Arsinoé !";}
+	if($ep7_LangChoice & 2) {npctalk "As for me, since no one has asked me, I intend to stay in Arsinoe!";}
+	if($ep7_LangChoice & 4) {npctalk "En cuanto a mí, ya que nadie me ha pedido, tengo la intención de permanecer en Arsinoe!";}
+	end;
+
+OnTalk3:
+	if($ep7_LangChoice & 1) {npctalk "Donc si de généreuses personnes pouvaient m'offrir quelques lingots pour que je puisse m'acheter un petit château ...";}
+	if($ep7_LangChoice & 2) {npctalk "So if generous people could offer me some gold bars so I could buy a small castle...";}
+	if($ep7_LangChoice & 4) {npctalk "Así que si la gente generosa me podría ofrecer algunas barras de oro para poder comprar un pequeño castillo...";}
+	end;
+}
+//_________________________________________________________________
+//________________Le Coeur : Urunesti _____________________________
+//_________________________________________________________________
+
+ars_in17,133,96,3	script	Joka l'éclairé#coeur	493,{
+
+set @name$,"^66CCFFJoka l'éclairé^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Ton village, Urunesti, se souviendra longtemps de toi !";}
+	if(EP7_LANGUE == 1) {mes "Your village, Urunesti, you will long remember!";}
+	if(EP7_LANGUE == 2) {mes "Su pueblo, Urunesti, te recordara por mucho tiempo!";}
+	close;
+
+}
+//========================================================================================================
+
+ars_in17,131,98,1	script	Spiria Symphonia#coeur	62,{
+
+set @name$,"^FF00CCSpiria Symphonia^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je n'aurais pas cru que tu puisses devenir aussi fort ! Tous les enfants au village souhaite te ressembler désormais !";}
+	if(EP7_LANGUE == 1) {mes "I would not have believed that you could have become so strong! All children in the village want to be like you now!";}
+	if(EP7_LANGUE == 2) {mes "Yo no hubiera creído que llegues a ser lo más! Los niños en el pueblo quiere ser como tú ahora!";}
+	close;
+}
+//_________________________________________________________________
+//________________Le Coeur : Thébaïde _____________________________
+//_________________________________________________________________
+
+ars_in17,77,85,5	script	Ribald#coeur	751,{
+
+set @name$,"^66CCFFRibald^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je préfère encore boire le thé avec le Nachtstern que de retourner le combattre à la Tour des étoiles.";}
+	if(EP7_LANGUE == 1) {mes "I would not have believed that thou mayest become as much! All children in the village wants to be like you now!";}
+	if(EP7_LANGUE == 2) {mes "Yo prefiero tomar el té con Nachtstern que volver a luchar en la Torre de las Estrellas.";}
+	close;
+}
+//========================================================================================================
+ars_in17,78,88,5	script	NachtStern#coeur	3850,{
+
+set @name$,"^66CCFFNachtStern^000000";
+
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Si un jour tu souhaites venir boire le thé dans ma tour, n'hésites pas.";}
+	if(EP7_LANGUE == 1) {mes "I still prefer to drink tea with Nachtstern than return to fight in the Tower of Stars.";}
+	if(EP7_LANGUE == 2) {mes "Si algún día quieren venir a tomar el té en mi regazo, no dude en venir.";}
+	close;
+}
+//_________________________________________________________________
+//________________Le Coeur : Sidon ________________________________
+//_________________________________________________________________
+
+ars_in17,134,120,3	script	Glohiu Yossik#coeur	739,{
+
+set @name$,"^66CCFFGlohiu Yossik^000000";
+
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Crois-tu que nous avons oublié ce que tu as fait au Coeur de Sidon !";
+	mes "N'espères pas pouvoir, un jour, revenir dans notre monde !";	}
+	if(EP7_LANGUE == 1) {mes "Do you think we've forgotten what you did in the heart of Sidon!";
+	mes "Don't believe to one day return to our world!";	 }
+	if(EP7_LANGUE == 2) {mes "Crees que he olvidado lo que hiciste en el corazón de Sidón!";
+	mes "Moto para regresar un día a nuestro mundo!";}
+	close;
+}
+//_________________________________________________________________
+//________________Le Coeur : OmbreTerre ___________________________
+//_________________________________________________________________
+
+ars_in17,134,84,4	script	Svankmajer#coeur	998,{
+
+set @name$,"^66CCFFSvankmajer^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Merci pour ton aide et la prise Da'Urdein avec la Sphère Planaire.";
+	mes "Désormais, je suis le Seigneur de ces Terres, nos relations ont pu reprendre avec l'Hylarheim grâce à toi.";}
+	if(EP7_LANGUE == 1) {mes "Thank you for your help and taking Da'Urdein with the Planar Sphere.";
+	mes "Now I am the Lord of these lands, our relations were resumed with the Hylarheim thanks to you.";	} 
+	if(EP7_LANGUE == 2) {mes "Gracias por su ayuda y teniendo Da'Urdein con la Esfera Planar.";
+	mes "Ahora yo soy el señor de estas tierras, nuestras relaciones se reanudaron con la Hylarheim gracias a usted.";}	 
+	close;
+}
+
+//_________________________________________________________________
+//________________Le Coeur : Kargah _______________________________
+//_________________________________________________________________
+
+ars_in17,136,111,1	script	Colonel De Nursie#coeur	659,{
+
+set @name$,"^66CCFFColonel De Nursie^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous êtes une légende parmi les Légions d'Arsinoé !";
+	mes "Nous nous souviendrons longtemps de cette mémorable campagne contre les Gobelins qui étaient prêt à envahir notre chère Cité d'Arsinoé.";}	 
+	if(EP7_LANGUE == 1) {mes "You are a legend among legions of Arsinoe!";
+	mes "We will long remember this memorable campaign against the goblins who were ready to invade our beloved city of Arsinoe.";}	 
+	if(EP7_LANGUE == 2) {mes "Usted es una leyenda entre las legiones de Arsinoe!";
+	mes "Nos recordará por mucho tiempo esta memorable campaña contra los duendes que estaban dispuestos a invadir nuestra querida ciudad de Arsinoe.";}
+	close;
+}
+//========================================================================================================
+ars_in17,132,107,4	script	Sénéchal Lin#coeur	416,{
+
+set @name$,"^66CCFFSénéchal Lin^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Quel bel assaut sur Terkish, hélas j'ai du y laisser un oeil ... Mais quel plaisir de massacrer des Gobelins !";}
+	if(EP7_LANGUE == 1) {mes "What a great assault on Terkish unfortunately I had to leave with one eye ... But what fun to massacre des Gobelins!";}
+	if(EP7_LANGUE == 2) {mes "¡Qué gran ataque sobre Terkish lamentablemente me tuve que ir con un ojo... Pero lo divertido masacre de duendes!";}
+	close;
+}
+
+//_________________________________________________________________
+//________________Le Coeur : Rana _________________________________
+//_________________________________________________________________
+
+ars_in17,112,71,2	script	Général Lorill#coeur	414,8,8,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFGénéral Lorill^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFGeneral Lorill^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFGeneral Lorill^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je n'oublie pas que je vous dois ma place et mon titre de général des Légions d'Arsinoé.";
+	mes " J'ai demandé ma mutation, ces maudits arbres et La Rana m'énervent ...";}
+	if(EP7_LANGUE == 1) {mes "I remember that I owe you my place and my title of General of the Legions of Arsinoe.";
+	mes "I requested my transfer, those pesky trees and La Rana annoy me...";}
+	if(EP7_LANGUE == 2) {mes "Recuerdo que te debo mi casa y mi título de General de las Legiones de Arsinoe.";
+	mes "Pedí mi traslado, los árboles molestos y La Rana me molestan...";}
+	close;
+}
+//========================================================================================================
+ars_in17,108,75,1	script	Déesse de La Rana#coeur	3870,{
+
+
+if(EP7_LANGUE == 0) {set @name$,"^FF00CCDéesse de La Rana^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^FF00CCGodness of La Rana^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^FF00CCLa diosa Rana^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Nous aimons les Combattants de talent. Notre Arène de LA Rana te sera toujours ouverte !";}
+	if(EP7_LANGUE == 1) {mes "We love talented fighters. Our Arena LA Rana you will always be open!";}
+	if(EP7_LANGUE == 2) {mes "Nos encanta los combatientes talentosos. Nuestra Arena La Rana siempre estará abierta!";}
+	close;
+}
+
+//_________________________________________________________________
+//________________Le Coeur : Lalibela _____________________________
+//_________________________________________________________________
+
+
+ars_in17,124,72,1	script	Prêtre Merlay#coeur	481,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFPrêtre Merlay^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFPriest Merlay^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFSacerdote Merlay^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Notre Culte à Lalibela a pu reprendre, mon coeur est en Joie surtout depuis le retour de l'Enfant.";}
+	if(EP7_LANGUE == 1) {mes "Our Worship in Lalibela was able to return, my heart is joy, especially since the return of the Child.";}
+	if(EP7_LANGUE == 2) {mes "Nuestra adoración en Lalibela fue capaz de regresar, mi corazón es la alegría, especialmente desde el regreso del Niño.";}
+	close;
+}
+//========================================================================================================
+ars_in17,121,76,4	script	Anne#coeur	75,{
+
+set @name$,"^FF00CCAnne^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Mon enfant est de retour grâce à toi, ce vil Sorcier n'est plus.";}
+	if(EP7_LANGUE == 1) {mes "My child is back thanks to you, this vile Sorcerer is dead.";}
+	if(EP7_LANGUE == 2) {mes "Mi hijo está de vuelta gracias a ti, esto es más un vil hechicero";}
+	close;
+}
+
+//_________________________________________________________________
+//________________Le Coeur : Bacchias _____________________________
+//_________________________________________________________________
+
+ars_in17,97,71,4	script	Mage Gawelle#coeur	661,{
+
+if(EP7_LANGUE == 0) {set @name$,"^FF00CCMage Gawelle^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^FF00CCMage Gawelle^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^FF00CCMago Gawelle^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Toute cette aventure n'a pas rendre mon apprenti plus intelligent, mais bon on ne peut pas tout avoir !";}
+	if(EP7_LANGUE == 1) {mes "This whole adventure didn't help my apprentice smarter, but hey you can't have everything!";}
+	if(EP7_LANGUE == 2) {mes "Toda esta aventura no ayudó a mi aprendiz más inteligente, pero bueno no se puede tener todo!";}
+	close;
+}
+//========================================================================================================
+ars_in17,100,75,1	script	Commandant Paraclet#co	415,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFCommandant Paraclet^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFCommandant Paraclet^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFComandante Paraclet^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Notre garnison de la Passe d'Octavie commence à accueillir les vétérans de Kargah, nous allons ainsi pouvoir chasser définitivement les bandits des Monts Bacchias.";}
+	if(EP7_LANGUE == 1) {mes "Our garrison's Pass Octavia begins to welcome the veterans of Kargah, so we'll definitely be able to hunt the bandits Mountains Bacchias.";}
+	if(EP7_LANGUE == 2) {mes "Nuestra guarnición de Paso de Octavia comienza dar la bienvenida a los veteranos de Kargah, por lo que definitivamente va a ser capaz de cazar a los bandidos de las montañas Bacchias.";}
+	close;
+}
+//_________________________________________________________________
+//________________Le Coeur : Hylarheim ____________________________
+//_________________________________________________________________
+
+ars_in17,87,74,1	script	Shackey Sarinac#coeur	846,{
+
+set @name$,"^FF00CCShackey Sarinac^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Ces liches ne nous embêtent plus, et grâce à ton aide le Fort Orage est enfin de retour en notre possession.";}
+	if(EP7_LANGUE == 1) {mes "These liches not bother us much, and with your help the Strong Storm is finally back in our possession.";}
+	if(EP7_LANGUE == 2) {mes "Estos no liches nos molesta mucho, y con su ayuda la fuerte tormenta es finalmente de vuelta en nuestro poder.";}
+	close;
+}
+
+//_________________________________________________________________
+//________________Le Coeur : Néraka _______________________________
+//_________________________________________________________________
+
+ars_in17,74,122,5	script	Roi Baudouin I#coeur	988,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFRoi Baudouin I^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFKing Baudouin I^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFEl Rey Baudouin I^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "La purge parmi les Nobles va continuer, je suis particulièrement déçu de leur comportement, et nous avons pris beaucoup de retard dans les exportations de fer.";}
+	if(EP7_LANGUE == 1) {mes "The purge will continue among the Nobles, I am particularly disappointed with their behavior, and we have fallen far behind in exports of iron.";}
+	if(EP7_LANGUE == 2) {mes "La purga seguirá entre los nobles, estoy particularmente decepcionado con su comportamiento, y nos hemos quedado muy por detrás de las exportaciones del hierro.";}
+	close;
+}
+//========================================================================================================
+ars_in17,77,120,4	script	Gryphon#coeur	1259,{
+
+if(EP7_LANGUE == 0) {set @name$,"^33CC00Gryphon^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^33CC00Gryphon^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^33CC00Grifo^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Les Gryphons n'aiment pas trop parler avec les étrangers ...";}
+	if(EP7_LANGUE == 1) {mes "The Gryphons do not like talking with strangers...";}
+	if(EP7_LANGUE == 2) {mes "Los grifos no me gusta hablar con extraños...";}
+	close;
+}
+//_________________________________________________________________
+//________________Le Coeur : Gondar _______________________________
+//_________________________________________________________________
+
+ars_in17,87,129,4	script	Icarie#coeur	430,{
+
+set @name$,"^FF00CCIcarie^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "J'ai bien plus de passage désormais, le Roi d'Arsinoé a autorisé les échanges avec l'Hylarheim et l'Ombreterre.";}
+	if(EP7_LANGUE == 1) {mes "I have more pitches now, the King of Arsinoe authorized trade with Hylarheim and the Underdark.";}
+	if(EP7_LANGUE == 2) {mes "Tengo más plazas de ahora, el Rey de Arsinoe autorizó el comercio con Hylarheim y la Infraoscuridad.";}
+	close;
+}
+//========================================================================================================
+
+ars_in17,90,134,4	script	Dragon de Gondar#coeur	3857,{
+
+if(EP7_LANGUE == 0) {set @name$,"^33CC00Dragon de Gondar^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^33CC00Dragon of Gondar^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^33CC00Dragon de Gondar^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "La vuivre est de nouveau en plate, je ne sens plus de perturbations dans les flux magiques d'Arsinoé ... La prochaine fois frappe à la porte au lieu de m'attaquer pour me poser une question.";}
+	if(EP7_LANGUE == 1) {mes "The vuivre is again plate, I feel more disruption in the flow of Arsinoe magic ... Next time knock on the door instead of attacking me and ask me a question.";}
+	if(EP7_LANGUE == 2) {mes "La epidemia es más, me siento más trastornado con en el flujo de la magia Arsinoe... La próxima vez que llaman a la puerta en vez de atacarme, hacerme una pregunta.";}
+	close;
+}
+//_________________________________________________________________
+//________________Le Coeur : Coppalana ____________________________
+//_________________________________________________________________
+
+ars_in17,98,129,4	script	Chef Rafloc'h#coeur	477,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFChef Rafloc'h^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFChief Rafloc'h^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFJefe Rafloc'h^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Que l'esprit du Boitata soit avec toi !";}
+	if(EP7_LANGUE == 1) {mes "May the spirit of boitata be with you!";}
+	if(EP7_LANGUE == 2) {}
+	close;
+}
+//========================================================================================================
+
+ars_in17,102,129,4	script	Servante Kloiacha#coeur	474,{
+
+if(EP7_LANGUE == 0) {set @name$,"^FF00CCServante du Boitata^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^FF00CCDesservant of Boitata^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^FF00CCSiervo de Boitata^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Nous t'attendons toujours pour la fête du village, n'hésite pas y passer à la nuit tombée.";}
+	if(EP7_LANGUE == 1) {mes "We are waiting still for the village feast, do not hesitate to spend the night.";}
+	if(EP7_LANGUE == 2) {mes "Todavía estamos esperando para la fiesta del pueblo, no dude en pasar la noche.";}
+	close;
+}
+//_________________________________________________________________
+//________________Le Coeur : Kiman Farès __________________________
+//_________________________________________________________________
+
+ars_in17,123,131,4	script	Chef Pevnec#coeur	472,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFChef Pevnec^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFChief Pevnec^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFJefe Pevnec^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Il est bien loin le temps où tu tombais à cause d'une simple turlutte !";}
+	if(EP7_LANGUE == 1) {mes "We are waiting still for the village feast, do not hesitate to spend the night.";}
+	if(EP7_LANGUE == 2) {mes "Es un tiempo bastante largo desde que cayó a causa de una plantilla de sencillo!";}
+	close;
+}
+
+
+
+
+//_________________________________________________________________
+//________________Le Coeur : Sortie _______________________________
+//_________________________________________________________________
+
