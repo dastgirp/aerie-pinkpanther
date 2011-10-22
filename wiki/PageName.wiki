@@ -53,7 +53,7 @@
 
 		5.2- Title of Doctor of Urunesti
 	<ul class="head-menu">
-		<li>5.2.1- The remedy against lycanthropy</br></br></li>
+		<li>5.2.1- The remedy against lycanthropy</li>
 			<ul class="head-menu">	
 				<li>5.2.1.1- <a href="en/5.2.1.1.php">On Road to Urunesti</a></li>
 				<li>5.2.1.2- <a href="en/5.2.1.2.php">Shogunka Blood</a></li>
@@ -61,7 +61,7 @@
 				<li>5.2.1.4- <a href="en/5.2.1.4.php">Sidon's Heart</a></li>
 			</ul>
 
-		<li>5.2.2- Pétosiris Temple</br></br></li>
+		<li>5.2.2- Pétosiris Temple</li>
 			<ul class="head-menu">
 				<li>5.2.2.1- <a href="en/5.2.2.1.php">Looking for larvas of Kargah</a></li>
 				<li>5.2.2.2- <a href="en/5.2.2.2.php">Djoser's corpse</a></li>
@@ -69,7 +69,7 @@
 			</ul>
 	</ul>
 		5.3- <a href="en/5.3.php">Dynahéir and the Gnoll Fortress</a>
-		5.4- Abyss</br>
+		5.4- Abyss
 	<ul class="head-menu">
 		<li>5.4.1- <a href="en/5.4.1.php">Portal of Abyss</a></li>
 		<li>5.4.2- <a href="en/5.4.2.php">The Descent into Abyss</a></li>
@@ -97,7 +97,7 @@
 
 <h1>VIII- Néraka</h1>
 
-		8.1- <a href="en/8.1.php">On road to Néraka</a></br></br>
+		8.1- <a href="en/8.1.php">On road to Néraka</a>
 
 		8.2- Title of Condotierre
 	<ul class="head-menu">
@@ -111,9 +111,9 @@
 
 <h1>IX- Kargah Desert</h1>
 
-		9.1- <a href="en/9.1.php">The Lime of Torn-Thalas</a></br></br>
-		9.2- <a href="en/9.2.php">Siwah Oasis</a></br></br>
-		9.3- <a href="en/9.3.php">Terkish Citadel</a></br></br>
+		9.1- <a href="en/9.1.php">The Lime of Torn-Thalas</a>
+		9.2- <a href="en/9.2.php">Siwah Oasis</a>
+		9.3- <a href="en/9.3.php">Terkish Citadel</a>
 
 <h1>X- Other Titles :</h1>
 
@@ -123,7 +123,7 @@
 
 <h1>XI- Quêtes Annexes :</h1>
 
-		11.1- <a href="en/11.1.php">Rail Company</a></br></br>
+		11.1- <a href="en/11.1.php">Rail Company</a>
 		11.2- Bourgmestre of Euhéméria
 	<ul class="head-menu">
 		<li>11.2.1- <a href="en/11.2.1.php">The Bandits Bacchias</a></li>
@@ -136,7 +136,5 @@
 		11.6- <a href="en/11.6.php">Zombies</a>
 		11.7- <a href="en/11.7.php">Missing Sailors</a>
 		11.8- <a href="en/11.8.php">Missionairies of UnderDark</a>
-
-
 
 
