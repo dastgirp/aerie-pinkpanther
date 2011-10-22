@@ -1,10 +1,7 @@
 <p><h2>I- Introduction</h2></p>
 
-==Quest :== 
-<em>Urunesti, The Vision</em> (Optional)
-
-==Prerequisites==
- : None
+Quest :<em>Urunesti, The Vision</em> (Optional)
+Prerequisites : None
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
