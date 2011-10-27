@@ -1,7 +1,7 @@
 <p><h2>I- Introduction</h2></p>
 
-Quest :<em>Urunesti, The Vision</em> (Optional)
-Prerequisites : None
+<p>*Quest* :<em>Urunesti, The Vision</em> (Optional)</p>
+<p>*Prerequisites* : None</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
@@ -37,7 +37,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro06.jpg
 
 
-==<p><em>End of the Quest : Urunesti : The Vision</em>==
+==<p><em>*End of the Quest* : Urunesti : The Vision</em>==
 Guide by Poisse
 
 Traduction by Aerie PinkPanther
