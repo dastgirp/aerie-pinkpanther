@@ -11,7 +11,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
  ==Progress :==
 
-<p>1- This is your first quest: Urunesti, The Vision (to see your quest log do alt + u. You will not need any object / equipment for this quest). Then head to the house (98,100) and enter it. Once inside, go to the position (22,30). You will see the npc Mom with the overhead message "quest!". She will ask you to fetch some milk on the farm, the farm of Fernandel which is in the north of Urunesti.</ p>
+<p>1- This is your first quest: Urunesti, The Vision (to see your quest log do alt + u. You will not need any object / equipment for this quest). Then head to the house (98,100) and enter it. Once inside, go to the position (22,30). You will see the npc Mom with the overhead message "quest!". She will ask you to fetch some milk on the farm, the farm of Fernandel which is in the north of Urunesti.</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro01.jpg
 
