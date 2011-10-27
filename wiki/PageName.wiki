@@ -7,7 +7,7 @@
 <font size="+3"><h2>Table of Contents</h2></font>
 
 <h1>I- Introduction</h1>
-		1- <a href="en/intro.php">Urunesti Vision</a>
+		1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction">Urunesti Vision</a>
 
 <h1>II- On road to Arsinoé</h1>
 	<ul class="head-menu">
@@ -136,5 +136,3 @@
 		11.6- <a href="en/11.6.php">Zombies</a>
 		11.7- <a href="en/11.7.php">Missing Sailors</a>
 		11.8- <a href="en/11.8.php">Missionairies of UnderDark</a>
-
-
