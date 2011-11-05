@@ -15,16 +15,20 @@
 //
 //===== By: =======================================================================================  
 //
-//= Original Version : Aerie PinkPanther
+// = Original Version : Aerie PinkPanther
+// = English Version : Aerie PinkPanther
 //
 //===== Current Version: ==========================================================================  
 //
-//= 2.0
+//= 3.0
 //
 //===== Additional Comments: ======================================================================  
 //
 //= 1.0 Release French Version
 //= 2.0 Schallmar Part.2 Version
+//= 2.1 Monastry runes fix
+//= 2.2 Livre#Sch1 variable fix
+//= 3.0 English Version
 //
 //
 //================================================================================================= 
@@ -54,12 +58,14 @@ if (EP7_SCHALLMAR >= 5)  goto sub2;
 sub1:
 
 	mes "[" + @name$ + "]";
-	mes "Je ne peux hélas vous venir en aide pour le moment !";
+	if(EP7_LANGUE == 0) { mes "Je ne peux hélas vous venir en aide pour le moment !";}
+	if(EP7_LANGUE == 1) { mes "Unfortunately, I can't help you for now!";}
 	close;
 
 sub2:
 	mes "[" + @name$ + "]"; 
-	mes "Heureuse Rencontre ! Je me présente, ^FF00CCBritanny^000000, nous sommes une compagnie de transport maritimes."; 
+	if(EP7_LANGUE == 0) { mes "Heureuse Rencontre ! Je me présente, ^FF00CCBritanny^000000, nous sommes une compagnie de transport maritimes.";}
+	if(EP7_LANGUE == 1) { mes "Happy Encounter ! Let me introduce myself, ^FF00CCBritanny^000000, we are a shipping company.";}
 	next;
 	callfunc "arsi_Brit";
 	end;
@@ -74,23 +80,38 @@ set @name$,"^FF00CCRose-Marie^000000";
 	if (EP7_SCHALLMAR <= 4) {
 
 		mes "[" + @name$ + "]";
-		mes "Je suis ici pour recruter des mercenaires ! Ces maudits Pirates du Croc d'Airain ont enlevé ma fille ...";
+		if(EP7_LANGUE == 0) { mes "Je suis ici pour recruter des mercenaires ! Ces maudits Pirates du Croc d'Airain ont enlevé ma fille ...";}
+		if(EP7_LANGUE == 1) { mes "I'm here to recruit mercenaries! Those pesky Pirates of the Brazen Frang kidnapped my daughter ...";}
 		close;}
 
 	
 	if (EP7_SCHALLMAR == 5 || EP7_SCHALLMAR == 6) {
 
 		mes "[" + @name$ + "]";
-		mes "Je suis ici pour recruter des mercenaires ! Ces maudits Pirates du Croc d'Airain ont enlevé ma fille ...";
-		mes "Personne parmi les autorités ne souhaite m'aider, cette maudite milice de Brynnlaw est corrompue ...";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Êtes-vous des mercenaires ? Je n'ai hélas pas grand chose à vous offrir mais j'ai un objet très recherché duquel vous pourriez en tirer un bon prix.";
-		mes "Mon mari ^66CCFFNarcisse^000000 est encore dans notre maison dans les îles aux épices, vous pouvez commencer à enquêter dans ces îles.";
-		next;
-		mes "[" + @name$ + "]";		
-		mes "Ces îles sont spécialisées dans la culture de l'épice d'Araquie, et nous y sommes de simples producteurs.";
-		mes "Aidez-nous, notre fille, comme de nombreux autres paysans ont été enlevé récemment dans les îles de Brynnlaw.";
+		if(EP7_LANGUE == 0) { 
+			mes "Je suis ici pour recruter des mercenaires ! Ces maudits Pirates du Croc d'Airain ont enlevé ma fille ...";
+			mes "Personne parmi les autorités ne souhaite m'aider, cette maudite milice de Brynnlaw est corrompue ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Êtes-vous des mercenaires ? Je n'ai hélas pas grand chose à vous offrir mais j'ai un objet très recherché duquel vous pourriez en tirer un bon prix.";
+			mes "Mon mari ^66CCFFNarcisse^000000 est encore dans notre maison dans les îles aux épices, vous pouvez commencer à enquêter dans ces îles.";
+			next;
+			mes "[" + @name$ + "]";		
+			mes "Ces îles sont spécialisées dans la culture de l'épice d'Araquie, et nous y sommes de simples producteurs.";
+			mes "Aidez-nous, notre fille, comme de nombreux autres paysans ont été enlevé récemment dans les îles de Brynnlaw.";
+		}	
+		if(EP7_LANGUE == 1) { 
+			mes "I'm here to recruit mercenaries! Those pesky Pirates of the Brazen Frang kidnapped my daughter ...";
+			mes "None of the authorities wants to help me, that damned militia Brynnlaw is so corrupted ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Are you mercenaries? Unfortunately I didn't have much to offer but I have been very popular where you could get a good price.";
+			mes "My husband ^66CCFFNarcisse^000000 is still in our home in the Spice Islands, you can begin to investigate in those islands.";
+			next;
+			mes "[" + @name$ + "]";		
+			mes "These islands are specialized in the cultivation of the spice of Araque, and we're just farmers.";
+			mes "Help us, our daughter, like many other farmers have been kidnapped recently in Brynnlaw Islands.";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 5) {
 			set EP7_SCHALLMAR,6;
@@ -100,17 +121,28 @@ set @name$,"^FF00CCRose-Marie^000000";
 	if (EP7_SCHALLMAR <= 23) {
 
 		mes "[" + @name$ + "]";
-		mes "Pourvu que votre quête soit couronnée de succès !";
+		if(EP7_LANGUE == 0) { mes "Pourvu que votre quête soit couronnée de succès !";}
+		if(EP7_LANGUE == 1) { mes "Provided that your quest is successful!";}
 		close;}
 
 	if (EP7_SCHALLMAR == 24) {
 
 		mes "[" + @name$ + "]";
-		mes "Oh ! Et dire que ma pauvre fille était dans la pièce à côté de moi ... Je ne sais qu'en penser ... Je me sens si impuissante ...";
-		mes "Je vous avais promis de vous payer, nous n'avons hélas pas grand chose comme argent ... Mais voici un objet que mon mari a trouvé, il y a quelques temps ...";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Une des sept perles noires Shinaere ! Tenez, prenez-en grand soin, elle vous attirera de nombreux ennuis ...";
+		if(EP7_LANGUE == 0) {
+			mes "Oh ! Et dire que ma pauvre fille était dans la pièce à côté de moi ... Je ne sais qu'en penser ... Je me sens si impuissante ...";
+			mes "Je vous avais promis de vous payer, nous n'avons hélas pas grand chose comme argent ... Mais voici un objet que mon mari a trouvé, il y a quelques temps ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Une des sept perles noires Shinaere ! Tenez, prenez-en grand soin, elle vous attirera de nombreux ennuis ...";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Oh! And to think that my poor daughter was in the room next to me ... I don't know what to think ... I feel so helpless ...";
+			mes "I promised to pay you, we have unfortunately not many money ... But here's something my husband has found some time ago ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "One of the seven Black Pearl Shinaere! Here, take good care of it you will get many problems ...";
+		}			
+			
 		close2;
 		getitem 29120,1;
 		changequest 70525,70526;
@@ -120,7 +152,8 @@ set @name$,"^FF00CCRose-Marie^000000";
 	if (EP7_SCHALLMAR >= 25) {
 
 		mes "[" + @name$ + "]";
-		mes "Oh ! Et dire que ma pauvre fille était dans la pièce à côté de moi ... Je ne sais qu'en penser ... Je me sens si impuissante ...";
+		if(EP7_LANGUE == 0) { mes "Oh ! Et dire que ma pauvre fille était dans la pièce à côté de moi ... Je ne sais qu'en penser ... Je me sens si impuissante ...";}
+		if(EP7_LANGUE == 1) { mes "Oh! And to think that my poor daughter was in the room next to me ... I don't know what to think ... I feel so helpless ...";}
 		close;}
 
 OnTouch:
@@ -137,23 +170,39 @@ set @name$,"^66CCFFNarcisse^000000";
 	if (EP7_SCHALLMAR <= 5) {
 
 		mes "[" + @name$ + "]";
-		mes "Ma petite ... Ma petite ...";
+		if(EP7_LANGUE == 0) { mes "Ma petite ... Ma petite ...";}
+		if(EP7_LANGUE == 1) { mes "My little girl ... My little girl ...";}
 		close;}
 
 	if (EP7_SCHALLMAR <= 23) {
 
 		mes "[" + @name$ + "]";
-		mes "Ma pauvre petite ^FF00CCMarguerite^000000 ! Jamais, jamais je ne pourrais m'en remettre ...";
-		mes "Vous qui êtes vous ? Que faites-vous donc chez moi ?";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Ah vous êtes des mercenaires, ^FF00CCRose-Marie^000000 a enfin pu trouver des personnes pour nous aider !";
-		mes "Notre fille a été enlevé par les Pirates du Croc d'Airain, de nombreux témoins subsistent encore de cette razzia.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Vous devriez demander aux marins près du comptoir de négoce, ils doivent avoir des indices ...";
-		mes "Beaucoup des notres producteurs comme marins sont enlevés par ces pirates. Il apparait clairement que ces pirates ont un repère dans les îles de Brynnlaw.";
-		mes "Menez votre enquête et retrouvez ma fille par pitié !";
+		if(EP7_LANGUE == 0) { 
+			mes "Ma pauvre petite ^FF00CCMarguerite^000000 ! Jamais, jamais je ne pourrais m'en remettre ...";
+			mes "Vous qui êtes vous ? Que faites-vous donc chez moi ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Ah vous êtes des mercenaires, ^FF00CCRose-Marie^000000 a enfin pu trouver des personnes pour nous aider !";
+			mes "Notre fille a été enlevé par les Pirates du Croc d'Airain, de nombreux témoins subsistent encore de cette razzia.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Vous devriez demander aux marins près du comptoir de négoce, ils doivent avoir des indices ...";
+			mes "Beaucoup des notres producteurs comme marins sont enlevés par ces pirates. Il apparait clairement que ces pirates ont un repère dans les îles de Brynnlaw.";
+			mes "Menez votre enquête et retrouvez ma fille par pitié !";
+		}
+		if(EP7_LANGUE == 1) { 
+			mes "My little girl ^FF00CCMarguerite^000000 ! Never, I could never get over it ...";
+			mes "You, who are you? What are you doing in my home?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Ah you're mercenaries ^FF00CCRose-Marie^000000 was finally able to find people to help us !";
+			mes "Our daughter was kidnapped by Pirates of the Fang Brazen, there are still many witnesses of the raid.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "You should ask the sea near the trading post, they must have evidence ...";
+			mes "Many of our producers like sailors kidnapped by the pirates. Clearly, these pirates have a mark on the islands of Brynnlaw.";
+			mes "Carry out your investigation and find my daughter out of pity!";
+		}		
 		close2;
 		if (EP7_SCHALLMAR == 6) {
 			set EP7_SCHALLMAR,7;
@@ -163,7 +212,8 @@ set @name$,"^66CCFFNarcisse^000000";
 	if (EP7_SCHALLMAR >= 24) {
 
 		mes "[" + @name$ + "]";
-		mes "Je ne sais comment vous remercier, à la fois pour ma fille mais aussi pour tous nos compagnons enlevés !";
+		if(EP7_LANGUE == 0) { mes "Je ne sais comment vous remercier, à la fois pour ma fille mais aussi pour tous nos compagnons enlevés !";}
+		if(EP7_LANGUE == 1) { mes "I don't know how to thank you both for my daughter but for all our fellow kidnapped!";}
 		close;}
 
 }
@@ -172,25 +222,41 @@ set @name$,"^66CCFFNarcisse^000000";
 
 ars_fild69,179,167,2	script	Marin#ep7Bry	100,{
 
-set @name$,"^66CCFFMarin^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFMarin^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFSailor^000000";}
 
 	mes "[" + @name$ + "]";
 
 	if (EP7_SCHALLMAR <= 6) {
-		mes "La vie est dure de nos temps, le prix des épices a beau augmenter, je ne gagne pas plus que mon maigre salaire !";
+		if(EP7_LANGUE == 0) { mes "La vie est dure de nos temps, le prix des épices a beau augmenter, je ne gagne pas plus que mon maigre salaire !";}
+		if(EP7_LANGUE == 1) { mes "Life is hard in our time, the price of spices get a nice increase, I don't win more than my meager salary!";}
 		close;}
 
 	if (EP7_SCHALLMAR == 7 || EP7_SCHALLMAR == 8) {
-		mes "Hmm, oui la fille de ^66CCFFNarcisse^000000, je me souviens de cette razzia ... En plein jour !";
-		mes "C'est rare mais cela devient de plus en plus fréquent avec cette garde de Brynnlaw qui n'est pas foutue de nous protéger, tu vois.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "C'était un beau brin de fille c'te ^FF00CCMarguerite^000000, bien triste pour elle, je vous laisse imaginer le sort qu'ils vont lui réserver ..";
-		mes "Avec quelques compagnons, nous avons suivi ces pirates, mais nous avons perdu leur trace au niveau du Monastère de Tiberine.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Si tu cherches à retrouver ces salopards, tu as ma bénédiction et celle des autres marins, trop des nôtres ont disparu de par leur faute.";
-		mes "Il y aura peut-être quelques indices dans ce coin, va tout de même demander aux moines, ils ont peut-être vu quelque chose !";
+		if(EP7_LANGUE == 0) {
+			mes "Hmm, oui la fille de ^66CCFFNarcisse^000000, je me souviens de cette razzia ... En plein jour !";
+			mes "C'est rare mais cela devient de plus en plus fréquent avec cette garde de Brynnlaw qui n'est pas foutue de nous protéger, tu vois.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "C'était un beau brin de fille c'te ^FF00CCMarguerite^000000, bien triste pour elle, je vous laisse imaginer le sort qu'ils vont lui réserver ..";
+			mes "Avec quelques compagnons, nous avons suivi ces pirates, mais nous avons perdu leur trace au niveau du Monastère de Tiberine.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Si tu cherches à retrouver ces salopards, tu as ma bénédiction et celle des autres marins, trop des nôtres ont disparu de par leur faute.";
+			mes "Il y aura peut-être quelques indices dans ce coin, va tout de même demander aux moines, ils ont peut-être vu quelque chose !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Hmm, the daughter of ^66CCFFNarcisse^000000, I remember this raid ... In broad daylight!";
+			mes "It's rare but becoming more common with the guard of Brynnlaw not able to protect us, you know.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "It was a beautiful little lass th't ^FF00CCMarguerite^000000, very sad for her, you can imagine the fate that they are going to book him ..";
+			mes "With a few companions, we followed the pirates, but we lost track of them at the Monastery of Tiberine.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "If you try to find these bastards, you have my blessing and that of other sailors, too much of us have gone through their fault.";
+			mes "There may be some clues in this area, will still apply to the monks, they may have seen something!";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 7) {
 			set EP7_SCHALLMAR,8;
@@ -198,7 +264,8 @@ set @name$,"^66CCFFMarin^000000";
 		end;}		
 
 	if (EP7_SCHALLMAR > 8) {
-		mes "Allez ! On compte sur toi l'ami !";
+		if(EP7_LANGUE == 0) { mes "Allez ! On compte sur toi l'ami !";}
+		if(EP7_LANGUE == 1) { mes "Go! We count on you friend!";}
 		close;}
 	
 }
@@ -211,17 +278,28 @@ set @name$,"^66CCFFAbbé de Tiberine^000000";
 
 	if (EP7_SCHALLMAR <= 7) {
 		mes "[" + @name$ + "]";
-		mes "Je vais vous demander de ne pas parler, ni faire de bruit, nous sommes ici pour nous recueillir, dans une vie simple et saine et dévouée à notre déesse.";
+		if(EP7_LANGUE == 0) { mes "Je vais vous demander de ne pas parler, ni faire de bruit, nous sommes ici pour nous recueillir, dans une vie simple et saine et dévouée à notre déesse.";}
+		if(EP7_LANGUE == 0) { mes "I'll ask you to not talk or make noise, we are here to collect, in a simple and healthy life and dedicated to our goddess.";}
 		close;}
 
 	if (EP7_SCHALLMAR == 8 || EP7_SCHALLMAR == 9 || EP7_SCHALLMAR == 10) {
 		mes "[" + @name$ + "]";
-		mes "Nous vivons dans le silence et piété, nous n'aimons pas être dérangé durant nos offices.";
-		mes "Cependant accueillir les passants qui souhaitent venir se reposer et prier fait parti de notre Foi.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Des questions ? Sur les Pirates ? Hmm, non ... Il ne me semble pas en avoir entendu parler dans nos eaux.";
-		mes "Vous savez nous sommes retirés du monde ... Nous ne souhaitons pas nous méler de ces ... histoires.";
+		if(EP7_LANGUE == 0) {
+			mes "Nous vivons dans le silence et piété, nous n'aimons pas être dérangé durant nos offices.";
+			mes "Cependant accueillir les passants qui souhaitent venir se reposer et prier fait parti de notre Foi.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Des questions ? Sur les Pirates ? Hmm, non ... Il ne me semble pas en avoir entendu parler dans nos eaux.";
+			mes "Vous savez nous sommes retirés du monde ... Nous ne souhaitons pas nous méler de ces ... histoires.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "We live in silence and piety, we do not like to disturb our offices.";
+			mes "However welcome passersby who want to come to rest and pray is part of our faith.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Questions? The Pirates? Hmm, no ... It doesn't seem to have heard of it in our waters.";
+			mes "You know we are removed from the world ... We don't want to get involved in these ... stories.";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 8) {
 			set EP7_SCHALLMAR,9;
@@ -230,8 +308,14 @@ set @name$,"^66CCFFAbbé de Tiberine^000000";
 		
 	if (EP7_SCHALLMAR >= 11) {
 		mes "[" + @name$ + "]";
-		mes "Merci de nous avoir libérés, mais il faut que tu continues ta sainte oeuvre, ces pirates ont leur repère non loin d'ici.";
-		mes "Tu dois te rendre dans la Gran'île de Tibérine pour mettre fin à leurs incursions dans nos îles.";
+		if(EP7_LANGUE == 0) {
+			mes "Merci de nous avoir libérés, mais il faut que tu continues ta sainte oeuvre, ces pirates ont leur repère non loin d'ici.";
+			mes "Tu dois te rendre dans la Gran'île de Tibérine pour mettre fin à leurs incursions dans nos îles.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Thank you for liberating us, but must you continue your holy work, these pirates have their mark not far from here.";
+			mes "You must go into the Tiber from Gran'île to stop their incursions into our islands.";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 11) {
 			set EP7_SCHALLMAR,12;
@@ -246,22 +330,37 @@ set @name$,"^66CCFFPierre L'Hermite^000000";
 
 	if (EP7_SCHALLMAR <= 8) {
 		mes "[" + @name$ + "]";
-		mes "Je vais vous demander de ne pas parler, ni faire de bruit, nous sommes ici pour nous recueillir, dans une vie simple et saine et dévouée à notre déesse.";
+		if(EP7_LANGUE == 0) { mes "Je vais vous demander de ne pas parler, ni faire de bruit, nous sommes ici pour nous recueillir, dans une vie simple et saine et dévouée à notre déesse.";}
+		if(EP7_LANGUE == 1) { mes "I'll ask you not to talk or make noise, we are here to collect, in a simple and healthy life and dedicated to our goddess.";}
 		close;}
 
 	if (EP7_SCHALLMAR == 9 || EP7_SCHALLMAR == 10) {
 
 		mes "[" + @name$ + "]";
-		mes "Eh' Vous ! Vous êtes un mercenaire non ?";
-		mes "Nous avons besoin d'aide au monastère, tous les frères ont peur ... Nous sommes pris en otage !";
-		mes "Bien que les autres pensent à une Ordalie ..";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Ces pirates sont très peu nombreux, vous ne devriez pas avoir de problèmes pour vous en débarasser.";
-		mes "Nous vous dirons où ces pirates se cachent, ils sont arrivés il y a quelques mois près du monastère.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "BrightSilver est leur chef, vous devriez lui parler pour le forcer à se démasquer !";
+		if(EP7_LANGUE == 0) {
+			mes "Eh' Vous ! Vous êtes un mercenaire non ?";
+			mes "Nous avons besoin d'aide au monastère, tous les frères ont peur ... Nous sommes pris en otage !";
+			mes "Bien que les autres pensent à une Ordalie ..";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Ces pirates sont très peu nombreux, vous ne devriez pas avoir de problèmes pour vous en débarasser.";
+			mes "Nous vous dirons où ces pirates se cachent, ils sont arrivés il y a quelques mois près du monastère.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "BrightSilver est leur chef, vous devriez lui parler pour le forcer à se démasquer !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Eh 'You! You are a mercenary, right?";
+			mes "We need help at the monastery, the brothers are afraid ... We are held hostage!";
+			mes "While others think of an Ordeal ..";
+			next;
+			mes "[" + @name$ + "]";
+			mes "These pirates are very few, you should not have a problem to rid you.";
+			mes "We will tell you where these pirates are hiding, they arrived a few months ago near the monastery.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "BrightSilver is their leader, you should talk to him to force him to come clean!";
+		}		
 		close2;
 		if (EP7_SCHALLMAR == 9) {
 			set EP7_SCHALLMAR,10;
@@ -272,7 +371,8 @@ set @name$,"^66CCFFPierre L'Hermite^000000";
 		
 		if (EP7_MOINE == 2) {
 			mes "[" + @name$ + "]";
-			mes "Ah nous voilà rassurés ! Nous attendons avec impatience le retour de nos frères.";
+			if(EP7_LANGUE == 0) { mes "Ah nous voilà rassurés ! Nous attendons avec impatience le retour de nos frères.";}
+			if(EP7_LANGUE == 1) { mes "Ah here we are reassured! We look forward to the return of our brothers.";}
 			close2;
 			getitem 29091,1;
 			set EP7_MOINE,3;
@@ -280,11 +380,13 @@ set @name$,"^66CCFFPierre L'Hermite^000000";
 			
 		if (EP7_MOINE == 3) {
 			mes "[" + @name$ + "]";
-			mes "C'est bientôt l'heure de la sexte, nous penserons à vous lors de notre office, que nos prières vous accompagnent !";
+			if(EP7_LANGUE == 0) { mes "C'est bientôt l'heure de la sexte, nous penserons à vous lors de notre office, que nos prières vous accompagnent !";}
+			if(EP7_LANGUE == 1) { mes "It's almost time for the Sext, we think of you at our office, our prayers are with you!";}
 			close;}
 
 		mes "[" + @name$ + "]";
-		mes "Merci pour votre aide ! N'oubliez pas certains de nos frères ont été enlevés par ces mêmes pirates, retrouvez-les et venez me voir !";
+		if(EP7_LANGUE == 0) { mes "Merci pour votre aide ! N'oubliez pas certains de nos frères ont été enlevés par ces mêmes pirates, retrouvez-les et venez me voir !";}
+		if(EP7_LANGUE == 1) { mes "Thank you for your help! Remember some of our brothers were kidnapped by those pirates, find them and come see me! ";}
 		close2;
 		if(EP7_MOINE == 0) {
 			set EP7_MOINE,1;
@@ -303,8 +405,14 @@ set @name$,"^66CCFFBrightSilver^000000";
 
 	if($@ep7Tiberine == 2) {
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Ceci est le corps de BrightSilver.";
-		mes "Vous avez libéré les moines de Tibérine, vous devriez vous adresser à l'Abbé.";
+		if(EP7_LANGUE == 0) { 
+			mes "Ceci est le corps de BrightSilver.";
+			mes "Vous avez libéré les moines de Tibérine, vous devriez vous adresser à l'Abbé.";
+		}
+		if(EP7_LANGUE == 1) { 
+			mes "This is the body of BrightSilver.";
+			mes "You have freed the monks of Tiberine, you should speak to the superior.";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 10) {
 			set EP7_SCHALLMAR,11;
@@ -315,30 +423,54 @@ set @name$,"^66CCFFBrightSilver^000000";
 
 	if (EP7_SCHALLMAR <= 9) {
 		mes "[" + @name$ + "]";
-		mes "J'm'en va prier, j'ai pas le temps pour toi, frérot.";
+		if(EP7_LANGUE == 0) { mes "J'm'en va prier, j'ai pas le temps pour toi, frérot.";}
+		if(EP7_LANGUE == 1) { mes "Go to pry, bro'. No time for u.";}
 		close;}
 
 	if (EP7_SCHALLMAR == 10) {
 		mes "[" + @name$ + "]";
-		mes "J'm'en va prier, j'ai pas le temps pour toi, frérot.";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Vous me semblez parler drôlement pour un moine, êtes-vous nouveau ?";
-		next;
-		mes "[" + @name$ + "]";
-		mes "J'sais pas de quoi tu me causes mais j'n'aime pas trop ton ton.";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Loin de moi l'idée de vous ennuyer, je trouve simplement vos manières brusques et peu raffinées.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Bordel ! Arrête de ...  m'enqu .. m'enquiqui ....";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "En effet, BrightSilver souhaite juste nous dire qu'il est bigrement difficile de s'exprimer lorsque l'on est un putain d'analphabète !";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Qu .. Qu .. Quoi !!!??? Raaaaaahhhhhh !";
+		if(EP7_LANGUE == 0) { 
+			mes "J'm'en va prier, j'ai pas le temps pour toi, frérot.";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Vous me semblez parler drôlement pour un moine, êtes-vous nouveau ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "J'sais pas de quoi tu me causes mais j'n'aime pas trop ton ton.";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Loin de moi l'idée de vous ennuyer, je trouve simplement vos manières brusques et peu raffinées.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Bordel ! Arrête de ...  m'enqu .. m'enquiqui ....";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "En effet, BrightSilver souhaite juste nous dire qu'il est bigrement difficile de s'exprimer lorsque l'on est un putain d'analphabète !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Qu .. Qu .. Quoi !!!??? Raaaaaahhhhhh !";
+		}
+		if(EP7_LANGUE == 1) { 
+			mes "Go to pry, bro'. No time for u.";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "You seems to speak odd for a monk, new in the abbey ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Dunno wh't u talk'about, stop piss me off.";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "I don't want to importune you, I just think you don't have enough maners ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Fuck ! Stop Bo... Boor ... Bored mmm ... mmmeeee !";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "In fact, BrightSilver just want to tell us how difficult it's to speak when you're a damn analphabete !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Whhh .. Whhaaa .. What !!!??? Raaaaaahhhhhh !";
+		}				
 		close2;
 		if($@ep7Tiberine == 0) {donpcevent "EP7_Tiberine::OnStart";}
 		end;}
@@ -346,7 +478,8 @@ set @name$,"^66CCFFBrightSilver^000000";
 	if (EP7_SCHALLMAR >= 11) {
 	
 			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-			mes "Ceci est le corps de BrightSilver.";
+			if(EP7_LANGUE == 0) { mes "Ceci est le corps de BrightSilver.";}
+			if(EP7_LANGUE == 1) { mes "This is the corpse of BrightSilver.";}
 			close;
 			}
 			
@@ -367,8 +500,10 @@ OnInit:
 
 OnStart:
 	
-	if( $EP7Annonce == 0 ) {mapannounce "ars_fild65","Instance -- Le Monastère de Tibérine !",1,0xFFCC66;}
-	if( $EP7Annonce == 1 ) {announce "Instance -- Le Monastère de Tibérine !",0,0xFFCC66;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) { mapannounce "ars_fild65","Instance -- Le Monastère de Tibérine !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) { announce "Instance -- Le Monastère de Tibérine !",0,0xFFCC66;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) { mapannounce "ars_fild65","Instance -- The Monastery of Tiberine !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) { announce "Instance -- The Monastery of Tiberine !",0,0xFFCC66;}
 
 	initnpctimer;
 	set $@ep7Tiberine,1;	
@@ -399,13 +534,15 @@ ars_fild70,214,212,0	script	#arsfild70a	45,1,1,{
 	if (EP7_SCHALLMAR <= 11) {
 	
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Il vous semble bien apercevoir une ouverture mais pour le moment vous n'avez aucun moyen d'y accèder.";
+		if(EP7_LANGUE == 0) { mes "Il vous semble bien apercevoir une ouverture mais pour le moment vous n'avez aucun moyen d'y accèder.";}
+		if(EP7_LANGUE == 0) { mes "It seems you see an opening, but for now you have no way to access.";}
 		close;}
 
 if (EP7_SCHALLMAR >= 12) {	
 
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Ceci semble bel et bien la grotte indiquée par l'^66CCFFAbbé de Tiberine^000000. Vous y entrez.";
+		if(EP7_LANGUE == 0) { mes "Ceci semble bel et bien la grotte indiquée par l'^66CCFFAbbé de Tiberine^000000. Vous y entrez.";}
+		if(EP7_LANGUE == 1) { mes "This does seem to be the cave indicated by ^66CCFFAbbot of Tiberine^000000. You enter in.";}
 		close2;
 		warp "ars_dun51",106,207; //retour début
 		end;}
@@ -434,7 +571,8 @@ OnMobDead:
 OnEnd:	
 		set $@ep7Pirate1,1;
 		sleep2 5000;
-		mapannounce "ars_dun51","Vous venez de tuer Rjackam et de récupérer ses clés. Vous devez retrouver des registres avec la destination des esclaves.",1,0xFFCC66;
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun51","Vous venez de tuer Rjackam et de récupérer ses clés. Vous devez retrouver des registres avec la destination des esclaves.",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun51","You just killed Rjackam and retrieve his keys. You must find records with the destination of the slaves.",1,0xFFCC66;}
 		sleep2 720000;
 		donpcevent "EP7_SchallPirate1::OnInit";
 		end;
@@ -443,31 +581,56 @@ OnEnd:
 
 ars_dun51,32,154,0	script	Coffre#arsdun51	111,{
 
-set @name$,"^66CCFFOncle Tom^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFOncle Tom^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFUncle Tom^000000";}
 	
 	if (EP7_SCHALLMAR == 12 && $@ep7Pirate1 == 1) {
 	
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Il y a effectivement des registres dans ce coffre, ainsi que de nombreuses "+getitemname($ep7_Tcoins)+".";
-		next;
-		mes "[" + @name$ + "]";	
-		mes "Merci de nous avoir sauvé aventuriers ! Nous étions retenus ici depuis quelques jours seulement.";
-		mes "Non, ici ce n'est qu'une gare de tri pour répartir les esclaves.";
-		next;
-		mes "[" + @name$ + "]";	
-		mes "Attendez, je vais lire un peu ces registres ...";
-		sleep2 1000;
-		mes "...";
-		sleep2 1000;
-		mes "...";
-		next;
-		mes "[" + @name$ + "]";	
-		mes "Etrange la plupart des esclaves ne sont pas envoyés à la Citadelle d'Airain ...";
-		mes "Un nom revient souvent ... Jan Vaneyeck du comptoir Mascate ...";
-		mes "Vous devriez lui poser quelques questions, il doit trainer dans des histoires des plus louches.";
-		next;
-		mes "[" + @name$ + "]";	
-		mes "Je vais m'occuper des autres esclaves, puis nous marcherons vers la liberté enfin retrouvée !";
+		if(EP7_LANGUE == 0) {
+			mes "Il y a effectivement des registres dans ce coffre, ainsi que de nombreuses "+getitemname($ep7_Tcoins)+".";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Merci de nous avoir sauvé aventuriers ! Nous étions retenus ici depuis quelques jours seulement.";
+			mes "Non, ici ce n'est qu'une gare de tri pour répartir les esclaves.";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Attendez, je vais lire un peu ces registres ...";
+			sleep2 1000;
+			mes "...";
+			sleep2 1000;
+			mes "...";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Etrange la plupart des esclaves ne sont pas envoyés à la Citadelle d'Airain ...";
+			mes "Un nom revient souvent ... Jan Vaneyeck du comptoir Mascate ...";
+			mes "Vous devriez lui poser quelques questions, il doit trainer dans des histoires des plus louches.";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Je vais m'occuper des autres esclaves, puis nous marcherons vers la liberté enfin retrouvée !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "There are actually records in the box, and many "+getitemname($ep7_Tcoins)+".";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Thank you for saving adventure! We were held by only a few days.";
+			mes "No, here it is only a screening station to allocate slaves.";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Wait, I will read some of these books ...";
+			sleep2 1000;
+			mes "...";
+			sleep2 1000;
+			mes "...";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Strange most of the slaves are not sent to the Citadel of Airain ...";
+			mes "A name is often ... January Vaneyeck counter Muscat ...";
+			mes "You should ask him some questions, he must hang out in stories of the most suspicious.";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "I'll take care of the other slaves, then we will walk to freedom finally found!";
+		}		
 		close2;
 		set EP7_SCHALLMAR,13;
 		changequest 70513,70514;
@@ -477,13 +640,15 @@ set @name$,"^66CCFFOncle Tom^000000";
 	if (EP7_SCHALLMAR <= 12) {
 
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Ce coffre est fermé par une clé et vous n'arrivez pas à forcer la serrure.";
+		if(EP7_LANGUE == 0) { mes "Ce coffre est fermé par une clé et vous n'arrivez pas à forcer la serrure.";}
+		if(EP7_LANGUE == 1) { mes "This chest is closed with a key and you can not force the lock.";}
 		close;}	
 		
 	if (EP7_SCHALLMAR > 12) {	
 
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Ce coffre a déjà été vidé par vos soins. Les documents sont en possession de l'Oncle Tom.";
+		if(EP7_LANGUE == 0) { mes "Ce coffre a déjà été vidé par vos soins. Les documents sont en possession de l'Oncle Tom.";}
+		if(EP7_LANGUE == 1) { mes "This chest has been emptied by you. The documents are in possession of Uncle Tom.";}
 		close;}
 	
 }
@@ -491,35 +656,54 @@ set @name$,"^66CCFFOncle Tom^000000";
 
 ars_dun51,31,161,3	script	Oncle Tom#ep7	448,{
 
-set @name$,"^66CCFFOncle Tom^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFOncle Tom^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFUncle Tom^000000";}
 
 	if (EP7_SCHALLMAR <= 12) {
 
 		mes "[" + @name$ + "]";	
-		mes "Oh ! Mais vous n'êtes pas des pirates !";
-		mes "Attaquez Rjackam et apportez moi sa clé s'il vous plait !";
+		if(EP7_LANGUE == 0) {
+			mes "Oh ! Mais vous n'êtes pas des pirates !";
+			mes "Attaquez Rjackam et apportez moi sa clé s'il vous plait !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Oh ! Mais vous n'êtes pas des pirates !";
+			mes "Attaquez Rjackam et apportez moi sa clé s'il vous plait !";
+		}
 		close;}
 
 
 	if (EP7_SCHALLMAR <= 13) {
 	
 		mes "[" + @name$ + "]";	
-		mes "Etrange la plupart des esclaves ne sont pas envoyés à la Citadelle d'Airain ...";
-		mes "Un nom revient souvent ... Jan Vaneyeck du comptoir Mascate ...";
-		mes "Vous devriez lui poser quelques questions, il doit trainer dans des histoires des plus louches.";
-		next;
-		mes "[" + @name$ + "]";	
-		mes "Je vais m'occuper des autres esclaves, puis nous marcherons vers la liberté enfin retrouvée !";
+		if(EP7_LANGUE == 0) {
+			mes "Etrange la plupart des esclaves ne sont pas envoyés à la Citadelle d'Airain ...";
+			mes "Un nom revient souvent ... Jan Vaneyeck du comptoir Mascate ...";
+			mes "Vous devriez lui poser quelques questions, il doit trainer dans des histoires des plus louches.";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Je vais m'occuper des autres esclaves, puis nous marcherons vers la liberté enfin retrouvée !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Etrange la plupart des esclaves ne sont pas envoyés à la Citadelle d'Airain ...";
+			mes "Un nom revient souvent ... Jan Vaneyeck du comptoir Mascate ...";
+			mes "Vous devriez lui poser quelques questions, il doit trainer dans des histoires des plus louches.";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Je vais m'occuper des autres esclaves, puis nous marcherons vers la liberté enfin retrouvée !";
+		}
 		close;}
 
 	if (EP7_SCHALLMAR <= 18) {
 
 		mes "[" + @name$ + "]";	
-		mes "Quoi les documents sont faux ! C'est impossible, ils mentent !";
+		if(EP7_LANGUE == 0) { mes "Quoi les documents sont faux ! C'est impossible, ils mentent !";}
+		if(EP7_LANGUE == 1) { mes "What documents are fake! It is impossible, they lie!";}
 		close;}
 
 	mes "[" + @name$ + "]";	
-	mes "Vous avez fait un grand bien à Brynnlaw avec ce coup de balai.";
+	if(EP7_LANGUE == 0) { mes "Vous avez fait un grand bien à Brynnlaw avec ce coup de balai.";}
+	if(EP7_LANGUE == 1) { mes "You have done great good to Brynnlaw with this clean.";}
 	close;
 }
 //=================================================================================
@@ -530,21 +714,36 @@ set @name$,"^66CCFFJan Vaneyeck^000000";
 
 	if (EP7_SCHALLMAR <= 12) {
 		mes "[" + @name$ + "]";	
-		mes "Si vous voulez des épices adressez-vous plutôt aux marchands du port, je ne vends pas au détail.";
+		if(EP7_LANGUE == 0) { mes "Si vous voulez des épices adressez-vous plutôt aux marchands du port, je ne vends pas au détail.";}
+		if(EP7_LANGUE == 1) { mes "If you want more spice please contact the merchants of the port, I don't sell retail.";}
 		close;}
 
 	if (EP7_SCHALLMAR == 13) {
 		mes "[" + @name$ + "]";	
-		mes "Si vous voulez des épices adressez-vous plutôt aux marchands du port, je ne vends pas au détail.";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "J'ai quelques documents à vous montrer ... Je viens tout juste de les récupérer dans une grotte du Monastère de Tibérine.";
-		mes "Est-ce que cela vous dit quelque chose ?";
-		next;
- 		mes "[" + @name$ + "]";
-		mes "Je n'ai pas à vous répondre, si vous tentez de saboter mon commerce, vous n'allez pas vous en tirer ainsi !";
-		mes "Nous allons régler nos différends au tribunal de Brynnlaw.";
-		mes "Je vais y envoyer mon avocat.";
+		if(EP7_LANGUE == 0) {
+			mes "Si vous voulez des épices adressez-vous plutôt aux marchands du port, je ne vends pas au détail.";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "J'ai quelques documents à vous montrer ... Je viens tout juste de les récupérer dans une grotte du Monastère de Tibérine.";
+			mes "Est-ce que cela vous dit quelque chose ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Je n'ai pas à vous répondre, si vous tentez de saboter mon commerce, vous n'allez pas vous en tirer ainsi !";
+			mes "Nous allons régler nos différends au tribunal de Brynnlaw.";
+			mes "Je vais y envoyer mon avocat.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "If you want more spice please contact the merchants of the port, I don't sell retail.";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "I have some documents to show you ... I just get them back in a cave Monastery Tiberine.";
+			mes "Does this mean anything to you ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "I don't want  answer you, if you try to sabotage my business, you will not get by as well!";
+			mes "We will settle our differences in court of Brynnlaw.";
+			mes "I'll send my lawyer.";
+		}
 		close2;
 		changequest 70514,70515;
 		set EP7_SCHALLMAR,14;
@@ -552,20 +751,29 @@ set @name$,"^66CCFFJan Vaneyeck^000000";
 
 	if (EP7_SCHALLMAR == 14) {
 		mes "[" + @name$ + "]";
-		mes "Je n'ai pas à vous répondre, si vous tentez de saboter mon commerce, vous n'allez pas vous en tirer ainsi !";
-		mes "Nous allons régler nos différends au tribunal de Brynnlaw.";
-		mes "Je vais y envoyer mon avocat.";
+		if(EP7_LANGUE == 0) {
+			mes "Je n'ai pas à vous répondre, si vous tentez de saboter mon commerce, vous n'allez pas vous en tirer ainsi !";
+			mes "Nous allons régler nos différends au tribunal de Brynnlaw.";
+			mes "Je vais y envoyer mon avocat.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "I don't want  answer you, if you try to sabotage my business, you will not get by as well!";
+			mes "We will settle our differences in court of Brynnlaw.";
+			mes "I'll send my lawyer.";
+		}
 		close;}
 
 	if (EP7_SCHALLMAR <= 17 && EP7_SCHALLMAR >= 15) {
 		mes "[" + @name$ + "]";
-		mes "Les gars, menez-le à la garde, il n'a rien à faire ici !";
+		if(EP7_LANGUE == 0) { mes "Les gars, menez-le à la garde, il n'a rien à faire ici !";}
+		if(EP7_LANGUE == 1) { mes "Guys, take him to the care, it has nothing to do here!";}
 		close2;
 		warp "ars_dun53",59,224;
 		end;}
 	
 	mes "[" + @name$ + "]";
-	mes "Ceci est le corps de Jan Vaneyeck.";
+	if(EP7_LANGUE == 0) { mes "Ceci est le corps de Jan Vaneyeck.";}
+	if(EP7_LANGUE == 1) { mes "This is the corpse of Jan Vaneyeck.";}
 	close;
 	
 }
@@ -575,27 +783,35 @@ set @name$,"^66CCFFJan Vaneyeck^000000";
 
 ars_fild66,216,162,5	script	Milice de Brynnlaw#ep7	780,5,5,{
 
-set @name$,"^66CCFFMilice de Brynnlaw^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFMilice de Brynnlaw^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFMilice of Brynnlaw^000000";}
 
 	if (EP7_SCHALLMAR == 14) {
 		mes "[" + @name$ + "]";
-		mes "On vous attend au tribunal de Brynnlaw !";
+		if(EP7_LANGUE == 0) { mes "On vous attend au tribunal de Brynnlaw !";}
+		if(EP7_LANGUE == 1) { mes "We're waiting for you at the Brynnlaw Trial !";}
 		close;}
 
 	mes "[" + @name$ + "]";
-	mes "Je vois que vous portez des armes, je vous garde à l'oeil.";
+	if(EP7_LANGUE == 0) { mes "Je vois que vous portez des armes, je vous garde à l'oeil.";}
+	if(EP7_LANGUE == 0) { mes "I see that you carry weapons, I keep you in the eye.";}
 	close;
 
 OnTouch:
 
-set @name$,"^66CCFFMilice de Brynnlaw^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFMilice de Brynnlaw^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFMilice of Brynnlaw^000000";}
 
-	if (EP7_SCHALLMAR == 14) { npctalk "Eh vous ! On vous attend au tribunal de Brynnlaw !";}
+	if (EP7_SCHALLMAR == 14) { 
+		if(EP7_LANGUE == 0) { npctalk "Eh vous ! On vous attend au tribunal de Brynnlaw !";}
+		if(EP7_LANGUE == 1) { npctalk "Hey you! We expect you at the court of Brynnlaw!";}
+	}
 
 	if (EP7_SCHALLMAR <= 18 && EP7_SCHALLMAR >= 15) {
 
 		mes "[" + @name$ + "]";
-		mes "Vous ! En prison !";
+		if(EP7_LANGUE == 0) { mes "Vous ! En prison !";}
+		if(EP7_LANGUE == 1) { mes "You ! In jail !";}
 		close2;
 		warp "ars_dun53",59,224;
 		end;}
@@ -610,61 +826,117 @@ ars_fild66,137,164,5	duplicate(Milice de Brynnlaw#ep7)	Milice de Brynnlaw#ep7f	7
 
 ars_dun54,128,158,5	script	Juge#ep7	867,{
 
-set @name$,"^66CCFFJuge^000000";
-set @name2$,"^66CCFFAvocat de Jan^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFJuge^000000";}
+if(EP7_LANGUE == 0) { set @name2$,"^66CCFFAvocat de Jan^000000";}
 set @name3$,"^66CCFFSergent Alfraid^000000";
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFJudge^000000";}
+if(EP7_LANGUE == 1) { set @name2$,"^66CCFFLawyer of Jan^000000";}
+
 
 	if (EP7_SCHALLMAR == 14) {
 		mes "[" + @name$ + "]";
-		mes "Bien, vous êtes ^33CC00" + strcharinfo(0) + "^000000 n'es-ce pas ?";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Nous venons de recevoir une plainte pour diffamation à votre encontre.";
-		mes "Le plaignant est ^66CCFFJan Vaneyeck^000000, commerçant de son état.";
-		mes "Vous l'avez accusé d'esclavagisme avec de faux documents ...";
-		next;
-		mes "[" + @name2$ + "]";
-		mes "En effet mon client estime avoir été insulté et sali par ce sinistre individu.";
-		mes "Individu qui est manifestement à la solde d'autres commerçants voulant nuire aux affaires de mon client.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "^33CC00" + strcharinfo(0) + "^000000 avez vous ces documents ?";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Oui, la voici :";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Hmm, en effet les charges sont lourdes, ainsi les razzias des pirates seraient liées au commerce des épices ?";
-		next;
-		mes "[" + @name2$ + "]";
-		mes "Voyez ce que nous pouvons entendre comme anneries !";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Expert ! Venez donc vérifier l'authenticité de ce document ...";
-		next;
-		mes "[" + @name3$ + "]";
-		mes "Sergent Alfraid présent ! Je vais regarder ces documents.";
-		mes "...";
-		next;
-		mes "[" + @name3$ + "]";
-		mes "Ce document est clairement un faux, aucun pirate ne tiendrait ainsi ses registres.";
-		mes "Nous avons à faire à un perfide manipulateur mon Juge.";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Et la grotte et les prisonniers !";
-		next;
-		mes "[" + @name3$ + "]";
-		mes "Nous connaissons cette grotte et nous y faisons régulièrement des rondes.";
-		mes "Monsieur le Juge, je peux déclarer sous serment que cette grotte est vide et ce au nom de toute la Milice de Brynnlaw.";
-		next;
-		mes "[" + @name2$ + "]";
-		mes "Nous demandons face à ce calomniateur, qu'il soit mis aux fers et le plus rapidement possible ! ";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Gardes ! Mettez-le prison le temps que nous fassions une enquête complémentaire !";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Lâchez-moi ... !!!";
+		if(EP7_LANGUE == 0) {
+			mes "Bien, vous êtes ^33CC00" + strcharinfo(0) + "^000000 n'es-ce pas ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Nous venons de recevoir une plainte pour diffamation à votre encontre.";
+			mes "Le plaignant est ^66CCFFJan Vaneyeck^000000, commerçant de son état.";
+			mes "Vous l'avez accusé d'esclavagisme avec de faux documents ...";
+			next;
+			mes "[" + @name2$ + "]";
+			mes "En effet mon client estime avoir été insulté et sali par ce sinistre individu.";
+			mes "Individu qui est manifestement à la solde d'autres commerçants voulant nuire aux affaires de mon client.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "^33CC00" + strcharinfo(0) + "^000000 avez vous ces documents ?";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Oui, la voici :";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Hmm, en effet les charges sont lourdes, ainsi les razzias des pirates seraient liées au commerce des épices ?";
+			next;
+			mes "[" + @name2$ + "]";
+			mes "Voyez ce que nous pouvons entendre comme anneries !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Expert ! Venez donc vérifier l'authenticité de ce document ...";
+			next;
+			mes "[" + @name3$ + "]";
+			mes "Sergent Alfraid présent ! Je vais regarder ces documents.";
+			mes "...";
+			next;
+			mes "[" + @name3$ + "]";
+			mes "Ce document est clairement un faux, aucun pirate ne tiendrait ainsi ses registres.";
+			mes "Nous avons à faire à un perfide manipulateur mon Juge.";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Et la grotte et les prisonniers !";
+			next;
+			mes "[" + @name3$ + "]";
+			mes "Nous connaissons cette grotte et nous y faisons régulièrement des rondes.";
+			mes "Monsieur le Juge, je peux déclarer sous serment que cette grotte est vide et ce au nom de toute la Milice de Brynnlaw.";
+			next;
+			mes "[" + @name2$ + "]";
+			mes "Nous demandons face à ce calomniateur, qu'il soit mis aux fers et le plus rapidement possible ! ";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Gardes ! Mettez-le prison le temps que nous fassions une enquête complémentaire !";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Lâchez-moi ... !!!";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Well, you're ^33CC00" + strcharinfo(0) + "^000000, no ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "We just received a complaint for defamation against you.";
+			mes "The complainant is ^66CCFFJan Vaneyeck^000000, shopping state.";
+			mes "You've accused of slavery with false documents ...";
+			next;
+			mes "[" + @name2$ + "]";
+			mes "In fact my client believes they have been insulted and smeared by this sinister individual.";
+			mes "Individual who is obviously in the pay of other traders wanting to damage the business of my client.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "^33CC00" + strcharinfo(0) + "^000000 you have these documents?";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Yes, here it is:";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Hmm, because the loads are heavy, and pirate raids are linked to the spice trade ?";
+			next;
+			mes "[" + @name2$ + "]";
+			mes "See what we can hear as stupidities !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Expert ! Come check the authenticity of this document ...";
+			next;
+			mes "[" + @name3$ + "]";
+			mes "Sergent Alfraid in place ! I'll check documents.";
+			mes "...";
+			next;
+			mes "[" + @name3$ + "]";
+			mes "This document is clearly a fake, no hacker would do, and its records.";
+			mes "We are dealing with a treacherous manipulator, my Judge.";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "And the cave and the prisoners !";
+			next;
+			mes "[" + @name3$ + "]";
+			mes "We know this cave and we make regular rounds.";
+			mes "Your Honor, I can swear that this cave is empty and in the name of the whole Militia Brynnlaw.";
+			next;
+			mes "[" + @name2$ + "]";
+			mes "We call the face of this slanderer, it is shackled and as soon as possible!";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Guards! Put him jail time that we make further investigation!";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Let me go ... !!!";
+		}
 		close2;
 		changequest 70515,70516;
 		set EP7_SCHALLMAR,15;
@@ -674,7 +946,8 @@ set @name3$,"^66CCFFSergent Alfraid^000000";
 	if (EP7_SCHALLMAR <= 18 && EP7_SCHALLMAR >= 15) {
 
 		mes "[" + @name$ + "]";
-		mes "Vous ! Que faites-vous là ! Gardes ! Menez-le en prison !";
+		if(EP7_LANGUE == 0) { mes "Vous ! Que faites-vous là ! Gardes ! Menez-le en prison !";}
+		if(EP7_LANGUE == 1) { mes "You! What you doing here! Guards! Send 'em in jail!";}
 		close2;
 		warp "ars_dun53",59,224;
 		end;}
@@ -682,47 +955,93 @@ set @name3$,"^66CCFFSergent Alfraid^000000";
 	if (EP7_SCHALLMAR <= 24) {
 
 		mes "[" + @name$ + "]";
-		mes "Vous ! Bon sang ! Ne devriez être vous pas en prison ?!";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Attendez Monsieur le Juge, c'est pas moi, je vous le jure sur la tête à ma mère, y'a une de ces graves méprises.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Vous dites ?";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "J'ai de nouveaux documents à vous montrer !";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Voyons voir ...";
-		mes "Oh ! intéressant ! Même très intéressant !";
-		mes "Sergent Alfraid, venez donc et dites moi ce que vous pensez de cela !";
-		next;
-		mes "[" + @name3$ + "]";
-		mes "Juge Dredd ! La garnison de la milice a été attaquée, le Satrape Rouy est mort !";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Êtes-vous responsable de cette attaque et de la mort de notre Satrape !?";
-		next;
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "En effet, mais comme ces documents le prouvent, je viens de démanteler un atelier clandestin d'épices ;";
-		mes "Ainsi qu'une filière d'esclavagistes qui utilisaient de pauvres hères pour travailler sans peine.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Ces documents sont accablants, cela fait en effet plusieurs temps que je m'en doutais ... mais vous savez cette milice et le satrape étaient très puissants.";
-		mes "La Situation me semble assez critique pour risquer l'instauration d'un couvre-feu.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Je vais prendre le pouvoir et assurer l'intérim, le temps que les autorités de Schallmar arrivent pour rétablir la situation.";
-		mes "Mais attendez un peu !!";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Certaines personnes ont été vendues dans un Bordel ... Celui de Madame Claude !";
-		mes "C'est la patronne de la Couronne de Cuivre ... Je crois bien qu'il va falloir intervenir et ce au plus vite pour ces pauvres filles.";
-		mes "Je vous charge de cette mission ... et pour cause vous avez tué toute ma milice !";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Essayez la discretion cette fois-ci, ce n'est pas la peine de faire un nouveau carnage.";
+		if(EP7_LANGUE == 0) {
+			mes "Vous ! Bon sang ! Ne devriez être vous pas en prison ?!";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Attendez Monsieur le Juge, c'est pas moi, je vous le jure sur la tête à ma mère, y'a une de ces graves méprises.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Vous dites ?";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "J'ai de nouveaux documents à vous montrer !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Voyons voir ...";
+			mes "Oh ! intéressant ! Même très intéressant !";
+			mes "Sergent Alfraid, venez donc et dites moi ce que vous pensez de cela !";
+			next;
+			mes "[" + @name3$ + "]";
+			mes "Juge Dredd ! La garnison de la milice a été attaquée, le Satrape Rouy est mort !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Êtes-vous responsable de cette attaque et de la mort de notre Satrape !?";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "En effet, mais comme ces documents le prouvent, je viens de démanteler un atelier clandestin d'épices ;";
+			mes "Ainsi qu'une filière d'esclavagistes qui utilisaient de pauvres hères pour travailler sans peine.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Ces documents sont accablants, cela fait en effet plusieurs temps que je m'en doutais ... mais vous savez cette milice et le satrape étaient très puissants.";
+			mes "La Situation me semble assez critique pour risquer l'instauration d'un couvre-feu.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Je vais prendre le pouvoir et assurer l'intérim, le temps que les autorités de Schallmar arrivent pour rétablir la situation.";
+			mes "Mais attendez un peu !!";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Certaines personnes ont été vendues dans un Bordel ... Celui de Madame Claude !";
+			mes "C'est la patronne de la Couronne de Cuivre ... Je crois bien qu'il va falloir intervenir et ce au plus vite pour ces pauvres filles.";
+			mes "Je vous charge de cette mission ... et pour cause vous avez tué toute ma milice !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Essayez la discretion cette fois-ci, ce n'est pas la peine de faire un nouveau carnage.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "You! Damn! Shouldn't you be in jail?!";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Wait Your Honor, not me, I swear on my mother's head, there's such a serious misunderstanding.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "You say?";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "I have new material to show you !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Let's see ...";
+			mes "Oh ! Interesting ! Very Intéressant !";
+			mes "Sergent Alfraid, so come and tell me what you think of this !";
+			next;
+			mes "[" + @name3$ + "]";
+			mes "Juge Dredd ! The garrison of militia was attacked, the satrap Rouy died !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Are you responsible for this attack and the death of our Satrap !?";
+			next;
+			mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+			mes "Indeed, but as these documents prove it, I just break up a sweatshop of spices ;";
+			mes "And a slave die of poor wretches who used to work without difficulty.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "These documents are overwhelming, it is indeed more time than I suspected ... but you know the satrap and the militia were very powerful.";
+			mes "The situation seems critical enough to risk the introduction of a curfew.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "I will take power and the interim, until the authorities arrive Schallmar to rectify the situation.";
+			mes "But wait!";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Some people were sold into a brothel ... That of Madame Claude!";
+			mes "It is the patron saint of the Copper Coronet ... I think he will have to intervene and that as soon as possible for these poor girls.";
+			mes "I charge you this mission ... and because you killed my militia!";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Try the discretion this time, it's not worth making a new carnage.";
+		}		
+		
 		close2;
 		if (EP7_SCHALLMAR == 19) {
 			changequest 70520,70521;
@@ -732,15 +1051,28 @@ set @name3$,"^66CCFFSergent Alfraid^000000";
 if (EP7_SCHALLMAR >= 25) {
 
 		mes "[" + @name$ + "]";
-		mes "Félicitations pour votre enquête ! Je n'ai pas eu vent d'un massacre cette fois-ci !";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Les problèmes sont très graves pour le moment, je ne vais pas pouvoir maintenir l'ordre dans la région bien longtemps.";
-		mes "Voulez-vous bien être mon émissaire au près des autorités de Schallmar ?";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Voici une Carte Maritime des îles de Schallmar pour vous aventurer dans ces eaux là.";
-		mes "Et là quelques lettres à remettre à l'Empereur des mers ...";
+		if(EP7_LANGUE == 0) {
+			mes "Félicitations pour votre enquête ! Je n'ai pas eu vent d'un massacre cette fois-ci !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Les problèmes sont très graves pour le moment, je ne vais pas pouvoir maintenir l'ordre dans la région bien longtemps.";
+			mes "Voulez-vous bien être mon émissaire au près des autorités de Schallmar ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Voici une Carte Maritime des îles de Schallmar pour vous aventurer dans ces eaux là.";
+			mes "Et là quelques lettres à remettre à l'Empereur des mers ...";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Congratulations for your inquiry! I have not heard of a massacre this time!";
+			next;
+			mes "[" + @name$ + "]";
+			mes "The problems are very serious for the moment, I will not be able to maintain order in the region for long.";
+			mes "Will you be my emissary to Schallmar authorities?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Here is a maritime map of the islands of Schallmar to venture into these waters there.";
+			mes "And then a few letters to deliver to the Emperor of the Seas ...";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 25) {
 			completequest 70526;
@@ -751,7 +1083,8 @@ if (EP7_SCHALLMAR >= 25) {
 		}
 
 	mes "[" + @name$ + "]";
-	mes "Je m'occupe de juger les différentes affaires des îles de la région de Brynnlaw.";
+	if(EP7_LANGUE == 0) { mes "Je m'occupe de juger les différentes affaires des îles de la région de Brynnlaw.";}
+	if(EP7_LANGUE == 1) { mes "I take care to judge individual cases in islands of the region Brynnlaw.";}
 	close;
 
 }
@@ -759,10 +1092,12 @@ if (EP7_SCHALLMAR >= 25) {
 
 ars_dun54,122,156,5	script	Avocat de Jan#ep7	110,{
 
-set @name$,"^66CCFFAvocat de Jan^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFAvocat de Jan^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFLawyer of Jan^000000";}
 
 	mes "[" + @name$ + "]";
-	mes "Je peux défendre n'importe qui et n'importe quoi tant que je suis payé, mon gars !";
+	if(EP7_LANGUE == 0) { mes "Je peux défendre n'importe qui et n'importe quoi tant que je suis payé, mon gars !";}
+	if(EP7_LANGUE == 1) { mes "I can defend anyone and anything as long as I get paid, son!";}
 	close;
 }
 //=================================================================================
@@ -772,7 +1107,8 @@ ars_dun54,133,156,2	script	Sergent Alfraid#ep7	416,{
 set @name$,"^66CCFFSergent Alfraid^000000";
 
 	mes "[" + @name$ + "]";
-	mes "Je suis expert auprès de la cour.";
+	if(EP7_LANGUE == 0) { mes "Je suis expert auprès de la cour.";}
+	if(EP7_LANGUE == 1) { mes "I am an expert with the court.";}
 	close;
 }
 
@@ -784,12 +1120,14 @@ set @name$,"^33CC00Action : ?^000000";
 
 	if (EP7_SCHALLMAR <= 15) {
 		mes "[" + @name$ + "]";
-		mes " Ceci est un mur de pierre.";
+		if(EP7_LANGUE == 0) { mes " Ceci est un mur de pierre.";}
+		if(EP7_LANGUE == 1) { mes " This is a stone wall.";}
 		close;}
 
 	if (EP7_SCHALLMAR >= 16) {
 		mes "[" + @name$ + "]";
-		mes "Vous venez d'emprunter le tunnel de MonteChritos.";
+		if(EP7_LANGUE == 0) { mes "Vous venez d'emprunter le tunnel de MonteChritos.";}
+		if(EP7_LANGUE == 1) { mes "You just take the tunnel MonteChritos.";}
 		close2;
 		warp "ars_fild66",202,279;
 		end;}
@@ -803,16 +1141,30 @@ set @name$,"^66CCFFRako Magnie^000000";
 
 	if (EP7_SCHALLMAR == 16 || EP7_SCHALLMAR == 17) {
 		mes "[" + @name$ + "]";
-		mes "Je vous ai entendu à l'audience au tribunal de Brynnlaw.";
-		mes "J'ai quelques informations pour vous, voir bien plus ...";
-		next;
-		mes "[" + @name$ + "]";
-		mes "J'ai réussi à m'échapper de l'atelier clandestin de Jan Vaneyeck il y a quelques temps.";
-		mes "Depuis je récupère quelques informations vu que la garde est complétement corrompue.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Dans la maison de Jan Vaneyeck, il y a une porte secrète dans son salon.";
-		mes "Voici la clé ... faites le ménage par pitié et sauvez mes compagnons !";
+		if(EP7_LANGUE == 0) {
+			mes "Je vous ai entendu à l'audience au tribunal de Brynnlaw.";
+			mes "J'ai quelques informations pour vous, voir bien plus ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "J'ai réussi à m'échapper de l'atelier clandestin de Jan Vaneyeck il y a quelques temps.";
+			mes "Depuis je récupère quelques informations vu que la garde est complétement corrompue.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Dans la maison de Jan Vaneyeck, il y a une porte secrète dans son salon.";
+			mes "Voici la clé ... faites le ménage par pitié et sauvez mes compagnons !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "I heard you at the hearing the court Brynnlaw.";
+			mes "I have some information for you to see more ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "I managed to escape from the sweatshop of Jan Vaneyeck some time ago.";
+			mes "Since I get some information since the guard is completely corrupt.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "In Jan Vaneyeck house, there is a secret door in her living room.";
+			mes "Here is the key ... clean the house out of pity and save my friends!";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 16) {
 		changequest 70517,70518;
@@ -821,17 +1173,25 @@ set @name$,"^66CCFFRako Magnie^000000";
 
 	if (EP7_SCHALLMAR >= 18) {
 		mes "[" + @name$ + "]";
-		mes "Merci de pour votre aide !";
-		mes "Cette maudite garde va devoir payer son tribut !";
+		if(EP7_LANGUE == 0) {
+			mes "Merci de pour votre aide !";
+			mes "Cette maudite garde va devoir payer son tribut !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Thank you for your help!";
+			mes "That damned guard will have to pay tribute!";
+		}
 		close;}
 
 	mes "[" + @name$ + "]";
-	mes "Le temps est à l'orage, non ?";
+	if(EP7_LANGUE == 0) { mes "Le temps est à l'orage, non ?";}
+	if(EP7_LANGUE == 1) { mes "The weather is stormy, right?";}
 	close;
 
 OnTouch:
 
-	if (EP7_SCHALLMAR == 16) {npctalk "Hep' vous !";}
+	if (EP7_SCHALLMAR == 16 && EP7_LANGUE == 0) { npctalk "Hep' vous !";}
+	if (EP7_SCHALLMAR == 16 && EP7_LANGUE == 1) { npctalk "Hep' you !";}
 	end;
 }
 
@@ -839,19 +1199,22 @@ OnTouch:
 
 ars_dun47,140,95,5	script	Action : Ouvrir#50	111,{
 
-set @name$,"^33CC00Action : Ouvrir^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Ouvrir^000000"; }
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Open^000000"; }
 
 	if (EP7_SCHALLMAR <= 16) {
 		mes "[" + @name$ + "]";
-		mes "Cette porte est fermée à clé, la serrure ne peut être forcée.";
+		if(EP7_LANGUE == 0) { mes "Cette porte est fermée à clé, la serrure ne peut être forcée.";}
+		if(EP7_LANGUE == 1) { mes "This door is locked, the lock can't be forced.";}
 		close;}
 
 	if (EP7_SCHALLMAR >= 17) {
 		mes "[" + @name$ + "]";
-		mes "Vous venez d'utiliser la clé de Rako Magnie, la porte vient de s'ouvrir.";
+		if(EP7_LANGUE == 0) { mes "Vous venez d'utiliser la clé de Rako Magnie, la porte vient de s'ouvrir.";}
+		if(EP7_LANGUE == 1) { mes "You just used the key to Rako Magne, the door just opened.";}
 		close2;
 		warp "ars_dun47",148,142;
-		if($@ep7Pirate2 == 0) {donpcevent "EP7_SchallPirate2::OnStart";}
+		if($@ep7Pirate2 == 0) { donpcevent "EP7_SchallPirate2::OnStart";}
 		end;}
 }
 
@@ -867,8 +1230,10 @@ OnInit:
 
 OnStart:
 
-	if( $EP7Annonce == 0 ) {mapannounce "ars_dun47","Instance -- L'Atelier Clandestin de Jan Vaneyeck !",1,0xFFCC66;}
-	if( $EP7Annonce == 1 ) {announce "Instance -- L'Atelier Clandestin de Jan Vaneyeck !",0,0xFFCC66;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) { mapannounce "ars_dun47","Instance -- L'Atelier Clandestin de Jan Vaneyeck !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) { announce "Instance -- L'Atelier Clandestin de Jan Vaneyeck !",0,0xFFCC66;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) { mapannounce "ars_dun47","Instance -- The sweatshops of Jan Vaneyeck !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) { announce "Instance -- The sweatshops of Jan Vaneyeck !",0,0xFFCC66;}
 
 	set $@ep7Pirate2,1;
 	monster "ars_dun47",164,183,""+getmonsterinfo(3948,0)+"",3948,1,"EP7_SchallPirate2::OnMobDead";
@@ -890,7 +1255,8 @@ OnMobDead:
 OnEnd:
 		set $@ep7Pirate2,2;
 		sleep2 5000;
-		mapannounce "ars_dun47","Vous venez de tuer Jan Vaneyeck, vous pouvez prendre la sortie.",1,0xFFCC66;
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun47","Vous venez de tuer Jan Vaneyeck, vous pouvez prendre la sortie.",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun47","You just killed Jan Vaneyeck, you can exit.",1,0xFFCC66;}
 		sleep2 720000;
 		donpcevent "EP7_SchallPirate2::OnInit";
 		end;
@@ -904,9 +1270,16 @@ ars_dun47,195,194,5	script	#arsdun49a	45,1,1,{
 	if (EP7_SCHALLMAR >= 17 && $@ep7Pirate2 == 2) {
 
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Vous sortez vers le quai secondaire du Comptoir Mascate.";
-		mes "Les miliciens de Brynnlaw étaient présent, votre prochain objectif est la Caserne de Brynnlaw.";
-		mes "Vous devez mettre fin aux agissements de cette milice corrompue.";
+		if(EP7_LANGUE == 0) {
+			mes "Vous sortez vers le quai secondaire du Comptoir Mascate.";
+			mes "Les miliciens de Brynnlaw étaient présent, votre prochain objectif est la Caserne de Brynnlaw.";
+			mes "Vous devez mettre fin aux agissements de cette milice corrompue.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "You go out to the dock side of Muscat Comptoir.";
+			mes "The Brynnlaw militiamen was here.  Now your next objective is the Barracks of Brynnlaw.";
+			mes "You must end the corrupt actions of the militia.";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 17) {
 		changequest 70518,70519;
@@ -916,7 +1289,8 @@ ars_dun47,195,194,5	script	#arsdun49a	45,1,1,{
 
 
 	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-	mes "Vous ne pouvez pas sortir pour le moment.";
+	if(EP7_LANGUE == 0) { mes "Vous ne pouvez pas sortir pour le moment.";}
+	if(EP7_LANGUE == 1) { mes "You can't leave yet.";}
 	close;
 }
 //=================================================================================
@@ -935,7 +1309,8 @@ ars_dun53,96,29,5	script	#arsdun53a	45,1,1,{
 	if (EP7_SCHALLMAR >= 18) {
 
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Vous venez de forcer la porte de la Caserne de Brynnlaw.";
+		if(EP7_LANGUE == 0) { mes "Vous venez de forcer la porte de la Caserne de Brynnlaw.";}
+		if(EP7_LANGUE == 1) { mes "You just force the door of the barracks of Brynnlaw.";}
 		close2;
 		if($@ep7Pirate3 == 0 ) {donpcevent "EP7_SchallPirate3::OnStart";}
 		warp "ars_dun53",96,37;
@@ -943,7 +1318,8 @@ ars_dun53,96,29,5	script	#arsdun53a	45,1,1,{
 }
 
 	mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-	mes "L'accès à la caserne de Brynnlaw est fermé.";
+	if(EP7_LANGUE == 0) { mes "L'accès à la caserne de Brynnlaw est fermé.";}
+	if(EP7_LANGUE == 1) { mes "Access to the barracks of Brynnlaw is closed.";}
 	close;
 }
 
@@ -959,8 +1335,10 @@ OnInit:
 
 OnStart:
 
-	if( $EP7Annonce == 0 ) {mapannounce "ars_dun53","Instance -- Caserne de Brynnlaw.",1,0xFFCC66;}
-	if( $EP7Annonce == 1 ) {announce "Instance -- Caserne de Brynnlaw.",0,0xFFCC66;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) {mapannounce "ars_dun53","Instance -- Caserne de Brynnlaw.",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) {announce "Instance -- Caserne de Brynnlaw.",0,0xFFCC66;}	
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) {mapannounce "ars_dun53","Instance -- Barracks of Brynnlaw.",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) {announce "Instance -- Barracks of Brynnlaw.",0,0xFFCC66;}
 
 	set $@ep7Pirate3,1;
 	monster "ars_dun53",102,45,""+getmonsterinfo(3951,0)+"",3951,1,"EP7_SchallPirate3::OnMobDead";
@@ -981,7 +1359,8 @@ OnMobDead:
 OnEnd:
 		set $@ep7Pirate3,2;
 		sleep2 5000;
-		mapannounce "ars_dun53","Vous devez vous rendre dans le bureau du Satrape Rouy pour récupérer des documents.",1,0xFFCC66;
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun53","Vous devez vous rendre dans le bureau du Satrape Rouy pour récupérer des documents.",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun53","You must go into the office of satrap Rouy to retrieve documents.",1,0xFFCC66;}
 		sleep2 720000;
 		donpcevent "EP7_SchallPirate3::OnInit";
 		end;
@@ -993,13 +1372,20 @@ OnMobDead2:end;
 
 ars_dun53,162,73,0	script	Tiroir#arsdun53	111,{
 
-set @name$,"^33CC00Tiroir^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Tiroir^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Drawer^000000";}
 
 	if (EP7_SCHALLMAR == 18 && $@ep7Pirate3 == 2) {
 	
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Vous venez de récupérer les documents mettant en évidence la trahison de la Milice.";
-		mes "Vous devez porter ces documents au juge de Brynnlaw pour vous blanchir.";	
+		if(EP7_LANGUE == 0) {
+			mes "Vous venez de récupérer les documents mettant en évidence la trahison de la Milice.";
+			mes "Vous devez porter ces documents au juge de Brynnlaw pour vous blanchir.";	
+		}
+		if(EP7_LANGUE == 1) {
+			mes "You just get the documents revealing the treachery of the Militia.";
+			mes "You must bring these documents to the judgeof Brynnlaw for your trial.";	
+		}
 		close2;
 		set EP7_SCHALLMAR,19;
 		changequest 70519,70520;
@@ -1009,14 +1395,16 @@ set @name$,"^33CC00Tiroir^000000";
 	if (EP7_SCHALLMAR <= 18) {
 
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Ce tiroir est fermé par une clé et vous n'arrivez pas à forcer la serrure.";
+		if(EP7_LANGUE == 0) { mes "Ce tiroir est fermé par une clé et vous n'arrivez pas à forcer la serrure.";}
+		if(EP7_LANGUE == 1) { mes "This drawer is closed with a key and you can not force the lock.";}
 		close;}	
 
 
 	if (EP7_SCHALLMAR > 18) {	
 
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Ce Tiroir a déjà été vidé par vos soins. Les documents doivent être portés au Juge de Brynnlaw.";
+		if(EP7_LANGUE == 0) { mes "Ce Tiroir a déjà été vidé par vos soins. Les documents doivent être portés au Juge de Brynnlaw.";}
+		if(EP7_LANGUE == 1) { mes "This drawer has been emptied by you. The documents must be brought to the Judge of Brynnlaw.";}
 		close;}
 	
 }
@@ -1028,17 +1416,32 @@ set @name$,"^FF00CCMadame Claude^000000";
 
 	if (EP7_SCHALLMAR <= 19) {
 		mes "[" + @name$ + "]";
-		mes "Je vous souhaite la bienvenue à la Couronne de Cuivre, nous offrons de nombreux services à nos clients.";
-		mes "Passez un bon moment parmi nous !";
+		if(EP7_LANGUE == 0) {
+			mes "Je vous souhaite la bienvenue à la Couronne de Cuivre, nous offrons de nombreux services à nos clients.";
+			mes "Passez un bon moment parmi nous !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "I welcome you to the Copper Coronet, we offer many services to our customers.";
+			mes "Spend some good time with us!";
+		}
 		close;}
 
 	if (EP7_SCHALLMAR <= 23) {
 		mes "[" + @name$ + "]";
-		mes "Je vous souhaite la bienvenue à la Couronne de Cuivre, nous offrons de nombreux services à nos clients.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Quoi !? Comment osez-vous un bordel dans mon respectable établissement !?";
-		mes "Veuillez rester correct, je ne vais pas tolérer de telles allégations.";
+		if(EP7_LANGUE == 0) {
+			mes "Je vous souhaite la bienvenue à la Couronne de Cuivre, nous offrons de nombreux services à nos clients.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Quoi !? Comment osez-vous un bordel dans mon respectable établissement !?";
+			mes "Veuillez rester correct, je ne vais pas tolérer de telles allégations.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "I welcome you to the Copper Coronet, we offer many services to our customers.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "What?! How dare you a brothel in my respectable establishment!?";
+			mes "Please remain correct, I will not tolerate such allegations.";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 20) {
 			changequest 70521,70522;
@@ -1047,29 +1450,47 @@ set @name$,"^FF00CCMadame Claude^000000";
 
 	if (EP7_SCHALLMAR >= 24) {
 		mes "[" + @name$ + "]";
-		mes "Vous êtes vraiment un fouineur ... Me voilà avec un procès et une perte de client important !";
-		mes "Mais j'ai des relations haut placées ! Sachez que vous n'allez pas vous en tirer à si bon compte.";
+		if(EP7_LANGUE == 0) {
+			mes "Vous êtes vraiment un fouineur ... Me voilà avec un procès et une perte de client important !";
+			mes "Mais j'ai des relations haut placées ! Sachez que vous n'allez pas vous en tirer à si bon compte.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "You are truly a nosy ... Here I am with a lawsuit and loss of important customer!";
+			mes "But I have relations in high places! Know that you will not get away so easily.";
+		}
 		close;}
 }
 //=================================================================================
 
 ars_dun48,71,22,5	script	Client éméché#ep7	823,{
 
-set @name$,"^66CCFFClient éméché^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFClient éméché^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFClient drunk^000000";}
 
 	if (EP7_SCHALLMAR <= 20) {
 		mes "[" + @name$ + "]";
-		mes "*hic* ... T'sais moi j'vais pas rester dans c'te bled tout bourri *hic* ...";
+		if(EP7_LANGUE == 0) { mes "*hic* ... T'sais moi j'vais pas rester dans c'te bled tout bourri *hic* ...";}
+		if(EP7_LANGUE == 1) { mes "*hic* ... You know I'm not gonna stay in th't rotten tavarn *hic* ...";}
 		close;}
 
 	if (EP7_SCHALLMAR >= 21) {
 		mes "[" + @name$ + "]";
-		mes "*hic* ... Un bordel dans c'te rade !? Ouep et un bon .. *hic*";
-		mes "Mais c'te gourgandine de m'dame Claude, e'veut plus me laisser entrer après mon dernier scandale, t'vois.";
-		mes "Faudrait que j'te bourlingue par les égouts mais j'prefere encore rester sur le zinc, t'vois ?";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Eh pi', faut une invit' s'non ces gorilles vont po'être des plus causant t'vois ?";
+		if(EP7_LANGUE == 0) {
+			mes "*hic* ... Un bordel dans c'te rade !? Ouep et un bon .. *hic*";
+			mes "Mais c'te gourgandine de m'dame Claude, e'veut plus me laisser entrer après mon dernier scandale, t'vois.";
+			mes "Faudrait que j'te bourlingue par les égouts mais j'prefere encore rester sur le zinc, t'vois ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Eh pi', faut une invit' s'non ces gorilles vont po'être des plus causant t'vois ?";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "*hic* ... A whorehouse in th't tavarn !? Yeeeeeshhh and a goooood one .. *hic*";
+			mes "But th's trollop of Claude ma'am, don't let me go in after my last scandal, y'see.";
+			mes "Would have to run sewage but still remain on the zinc, y'see ?";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Eh pi', you must be invit or guardians won't be pleasant, y'see ?";
+		}
 		close2;
 		if (EP7_SCHALLMAR == 21) {
 			changequest 70522,70523;
@@ -1081,18 +1502,27 @@ set @name$,"^66CCFFClient éméché^000000";
 
 ars_dun48,106,40,5	script	Noble#ep7	798,{
 
-set @name$,"^66CCFFNoble^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFNoble^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFNoble^000000";}
 
 	if (EP7_SCHALLMAR <= 21) {
 		mes "[" + @name$ + "]";
-		mes "Oula cette maudite liqueur enivre bien plus de prévu ...";
+		if(EP7_LANGUE == 0) { mes "Oula cette maudite liqueur enivre bien plus de prévu ...";}
+		if(EP7_LANGUE == 1) { mes "Oula that accursed liquor drunk much more than planned ...";}
 		close;}
 
 	if (EP7_SCHALLMAR >= 22) {
 		mes "[" + @name$ + "]";
-		mes "Oula cette maudite liqueur enivre bien plus de prévu ...";
-		mes "Je me retrouve coincé ici dans ce bar car j'ai oublié dans ma demeure mon carton d'inivtation pour ...";
-		mes "Vous savez ... Les soirées de ^FF00CCMadame Claude^000000 ...";
+		if(EP7_LANGUE == 0) {
+			mes "Oula cette maudite liqueur enivre bien plus de prévu ...";
+			mes "Je me retrouve coincé ici dans ce bar car j'ai oublié dans ma demeure mon carton d'inivtation pour ...";
+			mes "Vous savez ... Les soirées de ^FF00CCMadame Claude^000000 ...";
+		}		
+		if(EP7_LANGUE == 1) {
+			mes "Oula that accursed liquor drunk much more than planned ...";
+			mes "I find myself stuck here in this bar because I forgot in my house for my cardboard inivtation ...";
+			mes "You know ... Evenings of ^FF00CCMadame Claude^000000 ...";
+		}		
 		close;}
 
 }
@@ -1101,16 +1531,19 @@ set @name$,"^66CCFFNoble^000000";
 
 ars_dun56,35,32,5	script	Action : Fouiller#ep7	111,{
 
-set @name$,"^33CC00Action : Fouiller^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Fouiller^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Search^000000";}
 
 	if (EP7_SCHALLMAR <= 21 || EP7_SCHALLMAR >= 23) {
 		mes "[" + @name$ + "]";
-		mes "Il n'y a rien à vous intéresser ici.";
+		if(EP7_LANGUE == 0) { mes "Il n'y a rien à vous intéresser ici.";}
+		if(EP7_LANGUE == 1) { mes "There is nothing for you here.";}
 		close;}
 
 	if (EP7_SCHALLMAR == 22) {
 		mes "[" + @name$ + "]";
-		mes "Vous venez de récupérer un carton d'invitation pour le bordel de ^FF00CCMadame Claude^000000.";
+		if(EP7_LANGUE == 0) { mes "Vous venez de récupérer un carton d'invitation pour le bordel de ^FF00CCMadame Claude^000000.";}
+		if(EP7_LANGUE == 1) { mes "You just get an invitation to the brothel of ^FF00CCMadame Claude^000000.";}
 		close2;
 		if (EP7_SCHALLMAR == 22) {
 			changequest 70523,70524;
@@ -1123,17 +1556,25 @@ set @name$,"^33CC00Action : Fouiller^000000";
 
 ars_dun55,128,88,5	script	Videur#ep7	810,{
 
-set @name$,"^66CCFFVideur^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFVideur^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFBouncer^000000";}
 
 	if (EP7_SCHALLMAR <= 22) {
 		mes "[" + @name$ + "]";
-		mes "Avez-vous un carton d'invitation ? Non ? Et bien veuillez laisser la place pour les invités et ne veuillez pas insister.";
+		if(EP7_LANGUE == 0) { mes "Avez-vous un carton d'invitation ? Non ? Et bien veuillez laisser la place pour les invités et ne veuillez pas insister.";}
+		if(EP7_LANGUE == 1) { mes "Do you have an invitation? No? Well please leave room for guests and please don't insist.";}
 		close;}
 
 	if (EP7_SCHALLMAR >= 23) {
 		mes "[" + @name$ + "]";
-		mes "Avez-vous un carton d'invitation ?";
-		mes "Bien parfait, si vous voulez vous donner la peine d'entrer ...";
+		if(EP7_LANGUE == 0) {
+			mes "Avez-vous un carton d'invitation ?";
+			mes "Bien parfait, si vous voulez vous donner la peine d'entrer ...";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "Do you have an invitation?";
+			mes "Although perfect if you want to go to the trouble ...";
+		}
 		close2;
 		warp "ars_dun55",141,88;
 		end;}
@@ -1148,14 +1589,21 @@ set @name$,"^FF00CCMarguerite^000000";
 
 	if (EP7_SCHALLMAR <= 22) {
 		mes "[" + @name$ + "]";
-		mes "Je suis prisonnière ici ... Sauvez-moi de mes geôliers !";
+		if(EP7_LANGUE == 0) { mes "Je suis prisonnière ici ... Sauvez-moi de mes geôliers !";}
+		if(EP7_LANGUE == 1) { mes "I am a prisoner here ... Save me from my captors !";}
 		close;}
 
 
 	if (EP7_SCHALLMAR == 23 && $@ep7Pirate4 == 2) {
 		mes "[" + @name$ + "]";
-		mes "Oh ! Merci pour la clé !";
-		mes "Me voilà enfin libre, je peux enfin retourner dans mon île et retrouver mes parents !";
+		if(EP7_LANGUE == 0) {	
+			mes "Oh ! Merci pour la clé !";
+			mes "Me voilà enfin libre, je peux enfin retourner dans mon île et retrouver mes parents !";
+		}
+		if(EP7_LANGUE == 1) {	
+			mes "Oh! Thank you for the key!";
+			mes "Here I am finally free, I can finally go back to my island and find my parents!";
+		}
 		close2;
 		changequest 70524,70525;
 		set EP7_SCHALLMAR,24;
@@ -1163,13 +1611,20 @@ set @name$,"^FF00CCMarguerite^000000";
 
 	if (EP7_SCHALLMAR == 23 && $@ep7Pirate4 <= 1) {
 		mes "[" + @name$ + "]";
-		mes "Je suis prisonnière ici ... Sauvez-moi de mes geôliers !";
-		mes "Je suis enchainée, il me faut la clé du gardien, le gardien Sade !";
+		if(EP7_LANGUE == 0) {
+			mes "Je suis prisonnière ici ... Sauvez-moi de mes geôliers !";
+			mes "Je suis enchainée, il me faut la clé du gardien, le gardien Sade !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "I am a prisoner here ... Save me from my captors!";
+			mes "I'm chained, I need the key to the guard, the guard Sade!";
+		}
 		close;}
 
 	if (EP7_SCHALLMAR >= 24) {
 		mes "[" + @name$ + "]";
-		mes "Merci pour votre aide ! Je peux enfin retourner dans mon île et retrouver mes parents !";
+		if(EP7_LANGUE == 0) { mes "Merci pour votre aide ! Je peux enfin retourner dans mon île et retrouver mes parents !";}
+		if(EP7_LANGUE == 1) { mes "Thank you for your help! I can finally go back to my island and find my parents!";}
 		close;}
 
 }
@@ -1177,17 +1632,25 @@ set @name$,"^FF00CCMarguerite^000000";
 
 ars_dun48,162,87,3	script	Gardien Sade#ep7	483,{
 
-set @name$,"^66CCFFGardien Sade^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFGardien Sade^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFGuardian Sade^000000";}
 
 	if (EP7_SCHALLMAR <= 22) {
 		mes "[" + @name$ + "]";
-		mes "Bienvenue dans notre maison des plaisirs !";
+		if(EP7_LANGUE == 0) { mes "Bienvenue dans notre maison des plaisirs !";}
+		if(EP7_LANGUE == 1) { mes "Welcome to our house of pleasure!";}
 		close;}
 		
 	if (EP7_SCHALLMAR == 23) {
 		mes "[" + @name$ + "]";
-		mes "^FF00CCMadame Claude^000000 m'a parlé de vous ... ainsi vous-voulez me prendre mon p'tit jouet ?";
-		mes "Elle est mienne !";
+		if(EP7_LANGUE == 0) {
+			mes "^FF00CCMadame Claude^000000 m'a parlé de vous ... ainsi vous-voulez me prendre mon p'tit jouet ?";
+			mes "Elle est mienne !";
+		}		
+		if(EP7_LANGUE == 1) {
+			mes "^FF00CCMadame Claude^000000 told me about you ... and you want me to take my little toy ?";
+			mes "She is mine !";
+		}
 		close2;
 		if($@ep7Pirate4==0) {
 			donpcevent "EP7_SchallPirate4::OnStart";}
@@ -1195,7 +1658,8 @@ set @name$,"^66CCFFGardien Sade^000000";
 		
 	if (EP7_SCHALLMAR >= 24) {
 		mes "[" + @name$ + "]";
-		mes "Ceci est le corps du ^66CCFFGardien Sade^000000.";
+		if(EP7_LANGUE == 0) { mes "Ceci est le corps du ^66CCFFGardien Sade^000000.";}
+		if(EP7_LANGUE == 1) { mes "This is the body of ^66CCFFGuardian Sade^000000.";}
 		close;}
 }
 
@@ -1211,8 +1675,10 @@ OnInit:
 
 OnStart:
 
-	if( $EP7Annonce == 0 ) {mapannounce "ars_dun48","Combat - La Couronne de Cuivre !",1,0xFFCC66;}
-	if( $EP7Annonce == 1 ) {announce "Combat - La Couronne de Cuivre !",0,0xFFCC66;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) { mapannounce "ars_dun48","Combat - La Couronne de Cuivre !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) { announce "Combat - La Couronne de Cuivre !",0,0xFFCC66;}	
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) { mapannounce "ars_dun48","Combat - The Copper Coronet !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) { announce "Combat - The Copper Coronet !",0,0xFFCC66;}
 
 	set $@ep7Pirate4,1;
 	monster "ars_dun48",162,87,""+getmonsterinfo(3954,0)+"",3954,1,"EP7_SchallPirate4::OnMobDead";
@@ -1230,7 +1696,8 @@ OnMobDead:
 OnEnd:
 		set $@ep7Pirate4,2;
 		sleep2 5000;
-		mapannounce "ars_dun48","Vous venez de tuer le Gardien Sade, vous pouvez libérer Marguerite.",1,0xFFCC66;
+		if( $ep7_LangChoice & 1) { mapannounce "ars_dun48","Vous venez de tuer le Gardien Sade, vous pouvez libérer Marguerite.",1,0xFFCC66;}
+		if( $ep7_LangChoice & 2) { mapannounce "ars_dun48","You just killed the Guardian Sade, you can free Marguerite.",1,0xFFCC66;}
 		sleep2 720000;
 		donpcevent "EP7_SchallPirate4::OnInit";
 		end;
@@ -1245,16 +1712,19 @@ OnEnd:
 
 ars_dun47,103,199,5	script	Moine de Tibérine#ep7	412,{
 
-set @name$,"^66CCFFMoine de Tibérine^000000";
+if(EP7_LANGUE == 0) { set @name$,"^66CCFFMoine de Tibérine^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^66CCFFMonk of Tibérine^000000";}
 
 	if (EP7_MOINE == 0) {
 		mes "[" + @name$ + "]";
-		mes "Nous sommes des moines de Tibérine ...";
+		if(EP7_LANGUE == 0) { mes "Nous sommes des moines de Tibérine ...";}
+		if(EP7_LANGUE == 1) { mes "We are monks of Tiberine...";}
 		close;}
 
 	if (EP7_MOINE == 1 && $@ep7Pirate2 == 2) {
 		mes "[" + @name$ + "]";
-		mes "Merci de nous avoir libérés, nous allons nous occuper des autres esclaves, vous pouvez continuer votre noble quête ...";
+		if(EP7_LANGUE == 0) { mes "Merci de nous avoir libérés, nous allons nous occuper des autres esclaves, vous pouvez continuer votre noble quête ...";}
+		if(EP7_LANGUE == 1) { mes "Thank you for liberating us, we will take care of other slaves, you can continue your noble quest ...";}
 		close2;
 		completequest 70540;
 		set EP7_MOINE,2;
@@ -1262,14 +1732,16 @@ set @name$,"^66CCFFMoine de Tibérine^000000";
 		
 	if (EP7_MOINE == 1) {
 		mes "[" + @name$ + "]";
-		mes "Faites ce que vous avez à faire, nous ne pouvons sortir tant que ces esclavagistes nous tiennent sous leur joug.";
+		if(EP7_LANGUE == 0) { mes "Faites ce que vous avez à faire, nous ne pouvons sortir tant que ces esclavagistes nous tiennent sous leur joug.";}
+		if(EP7_LANGUE == 1) { mes "Do what you have to do, we can't get out as the slave keep us under their yoke.";}
 		close;}
 
 
 
 if (EP7_MOINE >= 2) {
 	mes "[" + @name$ + "]";
-	mes "Merci de nous avoir libérés, nous allons nous occuper des autres esclaves, vous pouvez continuer votre noble quête ...";
+	if(EP7_LANGUE == 0) { mes "Merci de nous avoir libérés, nous allons nous occuper des autres esclaves, vous pouvez continuer votre noble quête ...";}
+	if(EP7_LANGUE == 1) { mes "Thank you for liberating us, we will take care of other slaves, you can continue your noble quest ...";}
 	close;}
 	
 }
@@ -1284,43 +1756,79 @@ set @name$,"^66CCFFGwen de Saint-Glen^000000";
 
 	if (EP7_TRESORB >= 3) {
 		mes "[" + @name$ + "]";
-		mes "Je n'ose vous dire avec quel enthousiasme nous attendons les résultats de votre enquête !";
+		if(EP7_LANGUE == 0) { mes "Je n'ose vous dire avec quel enthousiasme nous attendons les résultats de votre enquête !";}
+		if(EP7_LANGUE == 1) { mes "I dare not tell you how enthusiastically we await the results of your survey !";}
 		close;}
 
 	if (EP7_TRESORB <= 2) {
 		mes "[" + @name$ + "]";
-		mes "Ici, vous vous trouvez dans la société des Inventeurs de trésor !";
-		mes "Nous parcourons les mers et les continents à la recherche des mystères de nptre monde !";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Vous m'avez l'air d'un sacré aventurier, affûté comme vous êtes vous ne devez avoir maille à partir avec grand monde !";
-		mes "Nous recherchons des membres, non pour les recherches dans les antiques manuscrits qui nous entourent mais pour se rendre sur le terrain.";
+		if(EP7_LANGUE == 0) {
+			mes "Ici, vous vous trouvez dans la société des Inventeurs de trésor !";
+			mes "Nous parcourons les mers et les continents à la recherche des mystères de notre monde !";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Vous m'avez l'air d'un sacré aventurier, affûté comme vous êtes vous ne devez avoir maille à partir avec grand monde !";
+			mes "Nous recherchons des membres, non pour les recherches dans les antiques manuscrits qui nous entourent mais pour se rendre sur le terrain.";
+		}		
+		if(EP7_LANGUE == 1) {
+			mes "Here you are in the company of the inventors of treasure!";
+			mes "We travel the seas and continents in search of the mysteries of our world!";
+			next;
+			mes "[" + @name$ + "]";
+			mes "You look a hell of an adventurer, you're sharp as you should have trouble with many people!";
+			mes "We are looking for members, not for research into ancient manuscripts around us but to get on the ground.";
+		}
 		next;
 		if (EP7_TRESORB == 0) {
 			mes "[" + @name$ + "]";
-			mes "Ce n'est pas pour vous faire peur, mais nous avons de sacrés pertes parmi nous aventuriers ...";
-			mes "Donc si vous êtes intéressé, vous pouvez revenir me voir pour obtenir un contrat et une mission ...";
+			if(EP7_LANGUE == 0) {
+				mes "Ce n'est pas pour vous faire peur, mais nous avons de sacrés pertes parmi nous aventuriers ...";
+				mes "Donc si vous êtes intéressé, vous pouvez revenir me voir pour obtenir un contrat et une mission ...";
+			}			
+			if(EP7_LANGUE == 1) {
+				mes "This is not to scare you, but we have lost sacred adventurers among us ...";
+				mes "So if you're interested, you can return me to get a contract and a mission ...";
+			}
 			close2;
 			setquest 70560;
 			set EP7_TRESORB,1;
 			end;}
 
 		mes "[" + @name$ + "]";
-		mes "Ainsi vous êtes intéressé ! Quelle merveille !";
-		mes "Cela va faire avancer de nombreux mystères pour la connaissance !";
-		mes "Alors voici ce que j'ai à vous proposer, attention ces données sont confidentielles ...";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Il y a peu, un employé de la ville, affecté à la maintenance des égouts, aurait aperçu un monstre humanoïde sortant des Grottes du Gwened.";
-		mes "Ces grottes sont rattachées à Brynnlaw par les égouts car nous y vidons nos déchets.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Bien qu'aucune trace de ce monstre n'a pu être relevée dans les égouts, nous avons tout lieu de croire que celui-ci existe bel et bien.";
-		mes "Donc votre mission, si vous l'acceptez, est de trouver une preuve, ou mieux le monstre en lui-même, et de nous la rapporter pour que nous puissions l'analyser.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Pour commencer votre enquête, je vous conseille de rendre visite à Joan Beeze à son domicile de Brynnlaw.";
-		mes "Il vous apportera surement des indices cruciaux pour votre quête.";
+		if(EP7_LANGUE == 0) {
+			mes "Ainsi vous êtes intéressé ! Quelle merveille !";
+			mes "Cela va faire avancer de nombreux mystères pour la connaissance !";
+			mes "Alors voici ce que j'ai à vous proposer, attention ces données sont confidentielles ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Il y a peu, un employé de la ville, affecté à la maintenance des égouts, aurait aperçu un monstre humanoïde sortant des Grottes du Gwened.";
+			mes "Ces grottes sont rattachées à Brynnlaw par les égouts car nous y vidons nos déchets.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Bien qu'aucune trace de ce monstre n'a pu être relevée dans les égouts, nous avons tout lieu de croire que celui-ci existe bel et bien.";
+			mes "Donc votre mission, si vous l'acceptez, est de trouver une preuve, ou mieux le monstre en lui-même, et de nous la rapporter pour que nous puissions l'analyser.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Pour commencer votre enquête, je vous conseille de rendre visite à Joan Beeze à son domicile de Brynnlaw.";
+			mes "Il vous apportera surement des indices cruciaux pour votre quête.";
+		}		
+		if(EP7_LANGUE == 1) {
+			mes "So you're interested! How wonderful!";
+			mes "This will advance many mysteries for knowledge!";
+			mes "So here's what I have to offer, beware ... this data is confidential.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Recently, an employee of the city, assigned to the maintenance of sewers, would have seen a humanoid monster coming out of the Caverns of Gwened.";
+			mes "These caves are connected with Brynnlaw through the sewers because we empty our waste.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Although no trace of the monster could be raised in the sewers, we have every reason to believe that it does exist.";
+			mes "So your mission, should you accept it, is to find evidence, or rather the monster itself, and we report it so we can analyze it.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "To begin your investigation, I advise you to visit Joan Beeze at his home in Brynnlaw.";
+			mes "You will probably crucial clues for your quest.";
+		}
 		close2;
 		if (EP7_TRESORB == 1) {
 			changequest 70560,70561;
@@ -1337,9 +1845,16 @@ ars_fild66,260,173,2	script	Rita Malherbe#ep7	879,{
 set @name$,"^FF00CCRita Malherbe^000000";
 
 	mes "[" + @name$ + "]";
-	mes "Je suis inquiète, j'ai beau frapper à sa porte et il ne me répond pas ...";
-	mes "^66CCFFJoan Beeze^000000 était un peu étrange ces temps-ci ... Il a surement du partir ...";
-	mes "*^33CC00Sniff*^000000 .... ^33CC00*Sniff*^000000 ...";
+	if(EP7_LANGUE == 0) {
+		mes "Je suis inquiète, j'ai beau frapper à sa porte et il ne me répond pas ...";
+		mes "^66CCFFJoan Beeze^000000 était un peu étrange ces temps-ci ... Il a surement du partir ...";
+		mes "*^33CC00Sniff*^000000 .... ^33CC00*Sniff*^000000 ...";
+	}
+	if(EP7_LANGUE == 1) {
+		mes "I'm worried, I'm knocking on his door and he doesn't answer me ...";
+		mes "^66CCFFJoan Beeze^000000 was a bit strange these days ... He has probably leave ...";
+		mes "*^33CC00Sniff*^000000 .... ^33CC00*Sniff*^000000 ...";
+	}	
 	close;
 }
 
@@ -1347,26 +1862,37 @@ set @name$,"^FF00CCRita Malherbe^000000";
 
 ars_dun56,199,30,5	script	Action : Fouiller#ep71	111,{
 
-set @name$,"^33CC00Action : Fouiller^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Fouiller^000000"; }
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Search^000000"; }
 
 	if (EP7_TRESORB <= 1) {
 		mes "[" + @name$ + "]";
-		mes "Il n'y a rien à vous intéresser ici.";
+		if(EP7_LANGUE == 0) { mes "Il n'y a rien à vous intéresser ici.";}
+		if(EP7_LANGUE == 1) { mes "There is nothing to interest you here.";}
 		close;}
 
 	if (EP7_TRESORB >= 2) {
 		mes "[" + @name$ + "]";
-		mes "Vous venez de trouver une lettre signée par Joan Beeze :";
-		mes "^66CCFFExcuse-moi Rita, mais j'ai du m'en fuir dans l'Archipel de Coppalana ...^000000";
-		mes "^66CCFFJe ne me sens plus en sécurité ici après ce que j'ai vu dans les égouts.^000000";
-		mes "^66CCFFAh oui, pense à nourrir le chat ...^000000";
+		if(EP7_LANGUE == 0) {
+			mes "Vous venez de trouver une lettre signée par Joan Beeze :";
+			mes "^66CCFFExcuse-moi Rita, mais j'ai du m'en fuir dans l'Archipel de Coppalana ...^000000";
+			mes "^66CCFFJe ne me sens plus en sécurité ici après ce que j'ai vu dans les égouts.^000000";
+			mes "^66CCFFAh oui, pense à nourrir le chat ...^000000";
+		}		
+		if(EP7_LANGUE == 1) {
+			mes "You have just found a letter signed by Joan Beez :";
+			mes "^66CCFFSorry Rita, but I'm away in the Archipelago Coppalana ...^000000";
+			mes "^66CCFFI feel safer here after what I saw in the sewers.^000000";
+			mes "^66CCFFOh, think of feeding the cat...^000000";
+		}
 		close;}
 
 }
 //=================================================================================
 ars_dun56,200,38,5	script	Chat de Joan#ep7	876,{
 
-set @name$,"^33CC00Chat de Joan^000000";
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Chat de Joan^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Cat of Joan^000000";}
 
 	mes "[" + @name$ + "]";
 	mes "^33CC00*Miaouuuu !*^000000";
@@ -1383,7 +1909,8 @@ set @name$,"^66CCFFJoan Beeze^000000";
 		mes "^33CC00*Arghhhhh !!*^000000";
 		next;
 		mes "[" + @name$ + "]";	
-		mes "Excusez-moi, je suis quelque peu sur les nerfs en ce moment ...";
+		if(EP7_LANGUE == 0) { mes "Excusez-moi, je suis quelque peu sur les nerfs en ce moment ...";}
+		if(EP7_LANGUE == 1) { mes "Excuse me, I'm a little on edge right now ...";}
 		close;
 	}
 	
@@ -1392,16 +1919,30 @@ set @name$,"^66CCFFJoan Beeze^000000";
 			mes "^33CC00*Arghhhhh !!*^000000";
 			next;
 			mes "[" + @name$ + "]";
-			mes "Vous m'avez fait peur ... Que faites-vous dans ma chambre ?";
-			next;
-			mes "[" + @name$ + "]";
-			mes "Ah vous venez pour le monstre ? Vous me croyez, n'es-ce pas ?";
-			mes "Ce monstre avait une forme humaine ... mais il était si ...";
-			mes "Hideux ! Dès qu'il m'a vu il a fuit vers les Grottes du Gwened ...";
-			next;
-			mes "[" + @name$ + "]";
-			mes "Si vous êtes assez fou pour le suivre, allez-y !";
-			mes "Je ne me sens plus en sécurité à Brynnlaw, je vais rester ici ...";
+			if(EP7_LANGUE == 0) {
+				mes "Vous m'avez fait peur ... Que faites-vous dans ma chambre ?";
+				next;
+				mes "[" + @name$ + "]";
+				mes "Ah vous venez pour le monstre ? Vous me croyez, n'es-ce pas ?";
+				mes "Ce monstre avait une forme humaine ... mais il était si ...";
+				mes "Hideux ! Dès qu'il m'a vu il a fuit vers les Grottes du Gwened ...";
+				next;
+				mes "[" + @name$ + "]";
+				mes "Si vous êtes assez fou pour le suivre, allez-y !";
+				mes "Je ne me sens plus en sécurité à Brynnlaw, je vais rester ici ...";
+			}			
+			if(EP7_LANGUE == 1) {
+				mes "You scared me ... What are you doing in my room ?";
+				next;
+				mes "[" + @name$ + "]";
+				mes "Oh you come for the monster? You believe me, art is not ?";
+				mes "This monster has a human form ... but he was so ...";
+				mes "Hideous! As soon as he saw me he fled to the Caverns of Gwened ...";
+				next;
+				mes "[" + @name$ + "]";
+				mes "If you are crazy enough to follow him, go ahead!";
+				mes "I feel safer in Brynnlaw, I'll stay here ...";
+			}
 			close2;
 			if (EP7_TRESORB == 2) {
 				changequest 70561,70562;
@@ -1417,7 +1958,8 @@ ars_dun55,75,218,5	script	#arsdun55b	45,1,1,{
 
 	if (EP7_TRESORB <= 2) {
 		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Ce tunnel est bien trop sombre pour s'y aventurer.";
+		if(EP7_LANGUE == 0) { mes "Ce tunnel est bien trop sombre pour s'y aventurer.";}
+		if(EP7_LANGUE == 1) { mes "The tunnel is too dark to venture there.";}
 		close;	
 	}
 
@@ -1434,27 +1976,47 @@ set @name$,"^66CCFFHanric Mutant^000000";
 	if (EP7_TRESORB <= 2) {
 		mes "[" + @name$ + "]";
 		mes "^33CC00*Arghhhhh !!*^000000";
-		mes "Fuyez misérables !";
+		if(EP7_LANGUE == 0) { mes "Fuyez misérables !";}
+		if(EP7_LANGUE == 1) { mes "Flee miserable !";}
 		close;
 	}
 	
 	if (EP7_TRESORB == 3 || EP7_TRESORB == 4) {
 		mes "[" + @name$ + "]";
-		mes "Ne partez pas !";
-		mes "Nous sommes des humains ! Du moins nous l'étions ...";
-		mes "Nous sommes juste des victimes d'expériences interdites ...";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Nous venons tous de la Mer de Schallmar, de différentes îles, les pirates nous ont vendu à des mages ..";
-		mes "Des mages n'appartenant pas au Concile des Mages d'Arsinoé se sont servis de nous pour leur expérimentations.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Nous sommes plusieurs mutants a s'être échappé de leur laboratoire il y a quelques jours.";
-		mes "Dès que nous arrivons dans les égouts de Brynnlaw pour enfin pouvoir ressorir, nous sommes pris à parti par la milice qui tente de nous exterminer.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Les Mages sont toujours là-bas ... Pouvez-vous nous aider à libérer nos frères ?";
-		mes "Pour cela il vous faut prendre cet ascenseur, mais attention ils savent que vous êtes là ! La résistance n'en sera que plus ardue !";
+		if(EP7_LANGUE == 0) {
+			mes "Ne partez pas !";
+			mes "Nous sommes des humains ! Du moins nous l'étions ...";
+			mes "Nous sommes juste des victimes d'expériences interdites ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Nous venons tous de la Mer de Schallmar, de différentes îles, les pirates nous ont vendu à des mages ..";
+			mes "Des mages n'appartenant pas au Concile des Mages d'Arsinoé se sont servis de nous pour leur expérimentations.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Nous sommes plusieurs mutants a s'être échappé de leur laboratoire il y a quelques jours.";
+			mes "Dès que nous arrivons dans les égouts de Brynnlaw pour enfin pouvoir ressorir, nous sommes pris à parti par la milice qui tente de nous exterminer.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Les Mages sont toujours là-bas ... Pouvez-vous nous aider à libérer nos frères ?";
+			mes "Pour cela il vous faut prendre cet ascenseur, mais attention ils savent que vous êtes là ! La résistance n'en sera que plus ardue !";
+		}		
+		if(EP7_LANGUE == 1) {
+			mes "Don't leave !";
+			mes "We are human! At least we were ...";
+			mes "We are just victims of prohibited experiments ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "We all come from the Sea of ??Schallmar from different islands, pirates have sold the Magi ..";
+			mes "Mages outside the Council of Mages Arsinoe have used us for their experiments.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "We had several mutants escaping from the lab a few days ago.";
+			mes "Once we arrive in the sewers of Brynnlaw to finally be able to come away, we are attacked by the militia trying to exterminate us.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Mages are still there ... Can you help us free our brothers?";
+			mes "To do this you must take the elevator, but be careful they know you are there! Resistance will be even more difficult!";
+		}
 		close2;
 		if (EP7_TRESORB == 3) {
 			changequest 70562,70563;
@@ -1463,29 +2025,34 @@ set @name$,"^66CCFFHanric Mutant^000000";
 		
 	if (EP7_TRESORB >= 5) {
 		mes "[" + @name$ + "]";
-		mes "Merci pour votre aide, nous nous retrouverons dans le laboratoire des mages !";
+		if(EP7_LANGUE == 0) { mes "Merci pour votre aide, nous nous retrouverons dans le laboratoire des mages !";}
+		if(EP7_LANGUE == 1) { mes "Thank you for your help, we will find ourselves in the laboratory of the Magi!";}
 		close;
 	}
 }
 //=================================================================================
 ars_dun62,137,32,5	script	Action : Ascenseur#ep7	111,{
 
-set @name$,"^33CC00Action : Ascenseur^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Ascenseur^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Elevator^000000";}
 
 	if (EP7_TRESORB  <= 3) {
 		mes "[" + @name$ + "]";
-		mes "^33CC00Vous ne pouvez pas emprunter cet ascenseur.^000000";
+		if(EP7_LANGUE == 0) { mes "^33CC00Vous ne pouvez pas emprunter cet ascenseur.^000000";}
+		if(EP7_LANGUE == 1) { mes "^33CC00You can't take the elevator.^000000";}
 		close;}
 
 	if (EP7_TRESORB >= 4) {
 		mes "[" + @name$ + "]";
-		mes "Voulez-vous emprunter cet ascenseur ?";
+		if(EP7_LANGUE == 0) { mes "Voulez-vous emprunter cet ascenseur ?";}
+		if(EP7_LANGUE == 1) { mes "Would you take this elevator ?";}
 		next;
 		if( select("•Oui:•Non") == 2 )
 			close;
 		
 		mes "[" + @name$ + "]";
-		mes "^33CC00Un long grincement, cette machine est de fabrication inconnue.^000000";
+		if(EP7_LANGUE == 0) { mes "^33CC00Un long grincement, cette machine est de fabrication inconnue.^000000";}
+		if(EP7_LANGUE == 1) { mes "^33CC00A long grind, this machine is unknown manufacturing.^000000";}
 		close2;
 		if(EP7_TRESORB == 4 && $@ep7Mutant1 == 0) {donpcevent "EP7_SchallMutant1::OnStart";}
 		warp "ars_dun62",138,41;
@@ -1501,8 +2068,10 @@ OnInit:
 
 OnStart:
 
-	if( $EP7Annonce == 0 ) {mapannounce "ars_dun62","Combat - Les Mutants du Gwened !",1,0xFFCC66;}
-	if( $EP7Annonce == 1 ) {announce "Combat - Les Mutants du Gwened !",0,0xFFCC66;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) {mapannounce "ars_dun62","Combat - Les Mutants du Gwened !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) {announce "Combat - Les Mutants du Gwened !",0,0xFFCC66;}	
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) {mapannounce "ars_dun62","Combat - The Mutants of Gwened !",1,0xFFCC66;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) {announce "Combat - The Mutants of Gwened !",0,0xFFCC66;}
 
 	set $@ep7Mutant1,1;
 	areamonster "ars_dun62",39,221,228,194,""+getmonsterinfo(3958,0)+"",3958,10,"EP7_SchallMutant1::OnMobDead2";	
@@ -1525,7 +2094,8 @@ OnMobDead:
 OnEnd:
 		set $@ep7Mutant1,2;
 		sleep2 5000;
-		mapannounce "ars_dun62","Hanric Mutant : Venez me voir, les mages ne sont plus !",1,0xFFCC66;
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun62","Hanric Mutant : Venez me voir, les mages ne sont plus !",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun62","Hanric Mutant : Come and see me, mages are no longer alive !",1,0xFFCC66;}
 		sleep2 720000;
 		donpcevent "EP7_SchallMutant1::OnInit";
 		end;
@@ -1538,19 +2108,31 @@ set @name$,"^66CCFFHanric Mutant^000000";
 	if (EP7_TRESORB <= 3) {
 		mes "[" + @name$ + "]";
 		mes "^33CC00*Arghhhhh !!*^000000";
-		mes "Fuyez misérables !";
+		if(EP7_LANGUE == 0) { mes "Fuyez misérables !";}
+		if(EP7_LANGUE == 1) { mes "Flee miserable !";}
 		close;
 	}
 	
 	if (EP7_TRESORB >= 5 && EP7_TRESORB <= 9 || EP7_TRESORB == 4  && $@ep7Mutant1 == 2) {
 		mes "[" + @name$ + "]";
-		mes "Merci pour votre aide ! Beaucoup sont morts depuis notre fuite ... Des pertes irremplaçables ...";
-		mes "Bien que gravement corrompus nous pouvons faire marche arrière. J'étais un apprenti chimiste et j'ai beaucoup voyagé dans les îles de Schallmar.";
-		mes "Je connais un homme qui pourra nous aider ...";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Cet homme est un alchimiste de l'archipel de Coppalana ... Kowietel, il saura trouver un philtre pour nous aider !";
-		mes "Par pitié soyez notre messager ! Nous ne pouvons pas sortir sans risquer de nous faire tuer ou de créer la panique tant que nous serons sous cette forme.";
+		if(EP7_LANGUE == 0) {
+			mes "Merci pour votre aide ! Beaucoup sont morts depuis notre fuite ... Des pertes irremplaçables ...";
+			mes "Bien que gravement corrompus nous pouvons faire marche arrière. J'étais un apprenti chimiste et j'ai beaucoup voyagé dans les îles de Schallmar.";
+			mes "Je connais un homme qui pourra nous aider ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Cet homme est un alchimiste de l'archipel de Coppalana ... Kowietel, il saura trouver un philtre pour nous aider !";
+			mes "Par pitié soyez notre messager ! Nous ne pouvons pas sortir sans risquer de nous faire tuer ou de créer la panique tant que nous serons sous cette forme.";
+		}		
+		if(EP7_LANGUE == 1) {
+			mes "Thank you for your help! Many have died since our flight ... Irreplaceable losses ...";
+			mes "Although we can seriously corrupt way back. I was an apprentice chemist and I have traveled to the islands of Schallmar.";
+			mes "I know a man who can help us ...";
+			next;
+			mes "[" + @name$ + "]";
+			mes "This man is an alchemist of the archipelago Coppalana ... Kowietel, he will find a potion to help us!";
+			mes "For pity's sake be our messenger? We can not leave us without the risk of killing or create panic while we are in this form.";
+		}
 		close2;
 		if (EP7_TRESORB == 4) {
 			changequest 70563,70564;
@@ -1559,18 +2141,26 @@ set @name$,"^66CCFFHanric Mutant^000000";
 		
 	if (EP7_TRESORB == 4) {
 		mes "[" + @name$ + "]";
-		mes "Nous approchons ... Exterminons Icarian Majere ! Pour la victoire !";
+		if(EP7_LANGUE == 0) { mes "Nous approchons ... Exterminons Icarian Majere ! Pour la victoire !";}
+		if(EP7_LANGUE == 1) { mes "We are nearing ... Icarian exterminate Majere! For the win!";}
 		close;}
 		
 	if (EP7_TRESORB >= 10) {
 		mes "[" + @name$ + "]";
-		mes "Oh le philtre de Koweitel ! Nous allons enfin pouvoir modifier notre état et revenir à la normale ... En espérant que nos séquelles seront mineures.";
-		mes "Nous allons devoir attendre que la potion fasse son effet, merci à vous !";
+		if(EP7_LANGUE == 0) {
+			mes "Oh le philtre de Koweitel ! Nous allons enfin pouvoir modifier notre état et revenir à la normale ... En espérant que nos séquelles seront mineures.";
+			mes "Nous allons devoir attendre que la potion fasse son effet, merci à vous !";
+		}		
+		if(EP7_LANGUE == 1) {
+			mes "Oh Koweitel's potion! We will finally be able to change our state and return to normal ... We hope that our legacy will be minor.";
+			mes "We'll have to wait for the potion to take effect, thank you !";
+		}
 		if (EP7_TRESORB == 10) {
 			next;
 			mes "[" + @name$ + "]";
-			mes "Nous avons récupéré cette carte sur Icarian Majere, elle pourra surement vous servir.";}
-			
+			if(EP7_LANGUE == 0) { mes "Nous avons récupéré cette carte sur Icarian Majere, elle pourra surement vous servir.";}
+			if(EP7_LANGUE == 1) { mes "We recovered this card on Icarian Majere, it could probably serve you.";}
+		}			
 		close2;
 		if (EP7_TRESORB == 10) {
 			completequest 70569;
@@ -1586,25 +2176,47 @@ set @name$,"^66CCFFKowietel^000000";
 
 	if (EP7_TRESORB <= 4) {
 		mes "[" + @name$ + "]";
-		mes "Lorsque je vous vois je ressens comme un léger malaise ...";
-		mes "S'il vous plait veuillez sortir vous me ne faites pas plaisir.";
+		if(EP7_LANGUE == 0) {
+			mes "Lorsque je vous vois je ressens comme un léger malaise ...";
+			mes "S'il vous plait veuillez sortir vous me ne faites pas plaisir.";
+		}	
+		if(EP7_LANGUE == 1) {
+			mes "When I see you I feel a slight discomfort ...";
+			mes "Please, please leave me you're not happy.";
+		}
 		close;
 	}
 	
 	if (EP7_TRESORB == 5 || EP7_TRESORB == 6) {
 		mes "[" + @name$ + "]";
-		mes "Lorsque je vous vois je ressens comme un léger malaise ...";
-		mes "S'il vous plait veuillez sortir vous me ne faites pas plaisir.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Hanric vous-dites ? Approchez ...";
-		mes "Hmm, des mutants ... Il faut un philtre de transmutation pour inverser les effets des sorts de mages ...";
-		mes "Mais, comme vous devez vous en douter, il faut un certain nombre de matériaux rares, j'en possède moi-même une bonne partie ...";
-		mes "Parcontre il va nous manquer deux éléments, éléments rares et bien difficile à trouver, je n'ai osé y retourner dans ces grottes depuis ma jeunesse.";
-		next;
-		mes "[" + @name$ + "]";
-		mes "Commençons donc par la première, il me faut des spores de grand Mush Bleu, il existe dans une des grottes de Gwened.";
-		mes "Voici une carte, revenez me voir une fois que vous aurez ces spores.";
+		if(EP7_LANGUE == 0) {
+			mes "Lorsque je vous vois je ressens comme un léger malaise ...";
+			mes "S'il vous plait veuillez sortir vous me ne faites pas plaisir.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Hanric vous-dites ? Approchez ...";
+			mes "Hmm, des mutants ... Il faut un philtre de transmutation pour inverser les effets des sorts de mages ...";
+			mes "Mais, comme vous devez vous en douter, il faut un certain nombre de matériaux rares, j'en possède moi-même une bonne partie ...";
+			mes "Parcontre il va nous manquer deux éléments, éléments rares et bien difficile à trouver, je n'ai osé y retourner dans ces grottes depuis ma jeunesse.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Commençons donc par la première, il me faut des spores de grand Mush Bleu, il existe dans une des grottes de Gwened.";
+			mes "Voici une carte, revenez me voir une fois que vous aurez ces spores.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "When I see you I feel a slight discomfort ...";
+			mes "Please, please leave me you don't make me happy.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Hanric you said ? Come here ...";
+			mes "Hmm, mutants ... It takes a potion of transmutation to reverse the effects of spells of mages ...";
+			mes "But, as you'd expect, it takes a number of rare materials, I have myself a lot ...";
+			mes "But we will miss two items, rare items and many hard to find, I have dared to return to the caves from my youth.";
+			next;
+			mes "[" + @name$ + "]";
+			mes "Let us begin with the first, I must spores large Mush Blue, there is a Gwened caves.";
+			mes "Here is a map, return to me once you have these spores.";
+		}
 		close2;
 		if (EP7_TRESORB == 5) {
 			changequest 70564,70565;
@@ -1616,15 +2228,29 @@ set @name$,"^66CCFFKowietel^000000";
 	
 		if (EP7_TRESORB == 7) {
 			mes "[" + @name$ + "]";
-			mes "Vous revoilà bien prestement !";
-			mes "^33CC00*Wouahhhh*^000000";
-			mes "Des spores de Grand Mush Bleu !";
+			if(EP7_LANGUE == 0) {
+				mes "Vous revoilà bien prestement !";
+				mes "^33CC00*Wouahhhh*^000000";
+				mes "Des spores de Grand Mush Bleu !";
+			}
+			if(EP7_LANGUE == 1) {
+				mes "You're back quickly though!";
+				mes "^33CC00*Wouahhhh*^000000";
+				mes "Spores of big blue Mush!";
+			}
 			next;}
 			
 		mes "[" + @name$ + "]";	
-		mes "Quel plaisir de pouvoir revoir ces magnifiques et puissantes spores et quelle quantité !";
-		mes "Bon passons au second ingrédient, il me faut du Bois de Saintale que l'on trouve aux îles de Jacamar non loin d'ici.";
-		mes "Voici une carte, que ta recherche soit fructueuse !";
+		if(EP7_LANGUE == 0) {
+			mes "Quel plaisir de pouvoir revoir ces magnifiques et puissantes spores et quelle quantité !";
+			mes "Bon passons au second ingrédient, il me faut du Bois de Saintale que l'on trouve aux îles de Jacamar non loin d'ici.";
+			mes "Voici une carte, que ta recherche soit fructueuse !";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "What a pleasure to see these magnificent and powerful spores and how much!";
+			mes "Good move on to the second ingredient, I need the wood Saintale found to Jacamar islands not far from here.";
+			mes "Here is a map, that your research is fruitful!";
+		}
 		close2;
 		if (EP7_TRESORB == 7) {
 			changequest 70566,70567;
@@ -1635,44 +2261,77 @@ set @name$,"^66CCFFKowietel^000000";
 	
 	if (EP7_TRESORB == 9) {
 		mes "[" + @name$ + "]";
-		mes "Vous revoilà bien prestement !";
-		mes "^33CC00*Wouahhhh*^000000";
-		mes "Du Bois de Saintale de Jacamar !";
-		next;
-		mes "[" + @name$ + "]";	
-		mes "Ce bois contient une essence très puissante et utile à de nombreux composés magiques.";
-		mes "Je vais vous préparer ce philtre ... Il ne me reste plus qu'à ajouter ce bois ...";
-		next;
-		mes "[" + @name$ + "]";	
-		mes "Nous y voilà ...";
-		sleep2 1000;
-		mes "...";
-		sleep2 1000;
-		specialeffect 18;
-		sleep2 500;
-		specialeffect 18;
-		sleep2 500;
-		mes "...";
-		sleep2 500;
-		specialeffect 18;
-		mes "Nous y voilà !";
-		mes "Prenez cette potion et apportez-la à Hanric, il saura me renvoyer l'aide apportée.";
+		if(EP7_LANGUE == 0) {
+			mes "Vous revoilà bien prestement !";
+			mes "^33CC00*Wouahhhh*^000000";
+			mes "Du Bois de Saintale de Jacamar !";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Ce bois contient une essence très puissante et utile à de nombreux composés magiques.";
+			mes "Je vais vous préparer ce philtre ... Il ne me reste plus qu'à ajouter ce bois ...";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Nous y voilà ...";
+			sleep2 1000;
+			mes "...";
+			sleep2 1000;
+			specialeffect 18;
+			sleep2 500;
+			specialeffect 18;
+			sleep2 500;
+			mes "...";
+			sleep2 500;
+			specialeffect 18;
+			mes "Nous y voilà !";
+			mes "Prenez cette potion et apportez-la à Hanric, il saura me renvoyer l'aide apportée.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "You're back quickly though!";
+			mes "^33CC00*Wouahhhh*^000000";
+			mes "Wood of Saintale from Jacamar !";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "This wood has a very powerful and useful essence of many compounds magic.";
+			mes "I will prepare this potion ... It only remains for me to add this wood ...";
+			next;
+			mes "[" + @name$ + "]";	
+			mes "Here we go ...";
+			sleep2 1000;
+			mes "...";
+			sleep2 1000;
+			specialeffect 18;
+			sleep2 500;
+			specialeffect 18;
+			sleep2 500;
+			mes "...";
+			sleep2 500;
+			specialeffect 18;
+			mes "Here we go !";
+			mes "Take this potion and take it to Hanric, he will send me back the aid.";
+		}
 		close2;
 		changequest 70568,70569;
 		getitem 29132,1;
-		if(countitem(29131) > 0) {delitem 29131,1;}
+		if(countitem(29131) > 0) { delitem 29131,1;}
 		set EP7_TRESORB,10;
 		end;}
 		
 	if (EP7_TRESORB == 10) {
 		mes "[" + @name$ + "]";	
-		mes "Apportez cette potion à Hanric, il saura me renvoyer l'aide apportée.";
+		if(EP7_LANGUE == 0) { mes "Apportez cette potion à Hanric, il saura me renvoyer l'aide apportée.";}
+		if(EP7_LANGUE == 1) { mes "Take this potion Hanric, he will send me back the aid.";}
 		close;}
 		
 	if (EP7_TRESORB >= 11) {
 		mes "[" + @name$ + "]";
-		mes "Si un jour vous avez besoin de mon aide sâchez que je serai disposé à vous venir en aide.";
-		mes "Un âme charitable et dévouée comme la votre le mérite amplement.";
+		if(EP7_LANGUE == 0) {
+			mes "Si un jour vous avez besoin de mon aide sâchez que je serai disposé à vous venir en aide.";
+			mes "Un âme charitable et dévouée comme la votre le mérite amplement.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "If you ever need my help know that I'm prepared to help you.";
+			mes "A kind soul and dedicated like on your deserves.";
+		}
 		close;
 	}
 		
@@ -1680,17 +2339,21 @@ set @name$,"^66CCFFKowietel^000000";
 //=================================================================================
 ars_dun63,188,49,5	script	Action : Prendre#Sch1	111,{
 
-set @name$,"^33CC00Action : Prendre^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Prendre^000000"; }
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Take^000000"; }
 
 	if (EP7_TRESORB  <= 5) {
 		mes "[" + @name$ + "]";
-		mes "Ceci est un champignon de grande taille, un mush bleu géant des Grottes de Gwened.";
+		if(EP7_LANGUE == 0) { mes "Ceci est un champignon de grande taille, un mush bleu géant des Grottes de Gwened.";}
+		if(EP7_LANGUE == 1) { mes "This is a large mushroom, a blue giant mush from Caves Gwened.";}
 		close;}
 
 	if (EP7_SCHALLMAR >= 6) {
 		mes "[" + @name$ + "]";
-		mes "Ceci est un champignon de grande taille, un mush bleu géant des Grottes de Gwened.";
-		if (EP7_TRESORB == 6) {mes "Vous venez de ramasser les spores du Grand Mush Bleu.";}
+		if(EP7_LANGUE == 0) { mes "Ceci est un champignon de grande taille, un mush bleu géant des Grottes de Gwened.";}
+		if(EP7_LANGUE == 1) { mes "This is a large mushroom, a blue giant mush from Caves Gwened.";}
+		if (EP7_TRESORB == 6 && EP7_LANGUE == 0) { mes "Vous venez de ramasser les spores du Grand Mush Bleu.";}
+		if (EP7_TRESORB == 6 && EP7_LANGUE == 1) { mes "You just pick up the spores of the Great Blue Mush.";}
 		close2;
 		if (EP7_TRESORB == 6) {
 			changequest 70565,70566;
@@ -1703,17 +2366,21 @@ set @name$,"^33CC00Action : Prendre^000000";
 //=================================================================================
 ars_dun64,114,149,5	script	Action : Prendre#Sch2	111,{
 
-set @name$,"^33CC00Action : Prendre^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Action : Prendre^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Action : Take^000000";}
 
 	if (EP7_TRESORB  <= 7) {
 		mes "[" + @name$ + "]";
-		mes "Ceci est un Saintale, un bois très rare que l'on retrouve dans les bois de Jacamar.";
+		if(EP7_LANGUE == 0) { mes "Ceci est un Saintale, un bois très rare que l'on retrouve dans les bois de Jacamar.";}
+		if(EP7_LANGUE == 1) { mes "This is Wood of Saintale, a very rare wood found in the woods of Jacamar.";}
 		close;}
 
 	if (EP7_SCHALLMAR >= 8) {
 		mes "[" + @name$ + "]";
-		mes "Ceci est un Saintale, un bois très rare que l'on retrouve dans les bois de Jacamar.";
-		if (EP7_TRESORB == 8) {mes "Vous venez de ramasser du bois de Saintale.";}
+		if(EP7_LANGUE == 0) { mes "Ceci est un Saintale, un bois très rare que l'on retrouve dans les bois de Jacamar.";}
+		if(EP7_LANGUE == 1) { mes "This is Wood of Saintale, a very rare wood found in the woods of Jacamar.";}
+		if (EP7_TRESORB == 8 && EP7_LANGUE == 0) { mes "Vous venez de ramasser du bois de Saintale.";}
+		if (EP7_TRESORB == 8 && EP7_LANGUE == 1) { mes "You have pick up some Wood of Saintale.";}
 		close2;
 		if (EP7_TRESORB == 8) {
 			changequest 70567,70568;
@@ -1743,7 +2410,8 @@ OnMobDead:
 OnEnd:
 		set $@ep7Mutant2,1;
 		sleep2 5000;
-		mapannounce "ars_dun63","Vous venez de tuer le Garde du Trésor, vous pouvez désormais ouvrir le coffre.",1,0xFFCC66;
+		if($ep7_LangChoice & 1) { mapannounce "ars_dun63","Vous venez de tuer le Garde du Trésor, vous pouvez désormais ouvrir le coffre.",1,0xFFCC66;}
+		if($ep7_LangChoice & 2) { mapannounce "ars_dun63","You just kill the Treasury Guard, you can now open the chest.",1,0xFFCC66;}
 		sleep2 720000;
 		donpcevent "EP7_SchallMutant2::OnInit";
 		end;
@@ -1751,12 +2419,19 @@ OnEnd:
 //=================================================================================
 ars_dun63,40,196,5	script	Coffre#Sch1	1324,{
 
-set @name$,"^33CC00Coffre^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Coffre^000000"; }
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Chest^000000"; }
 	
 	if (EP7_TRESORB == 11 && $@ep7Mutant2 == 1) {
 		mes "[" + @name$ + "]";
-		mes "Vous venez de récupérer le trésor de Majere.";
-		mes "Il contient des "+getitemname($ep7_Tcoins)+" ainsi qu'un perle noire de Shinaere.";
+		if(EP7_LANGUE == 0) {
+			mes "Vous venez de récupérer le trésor de Majere.";
+			mes "Il contient des "+getitemname($ep7_Tcoins)+" ainsi qu'un perle noire de Shinaere.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "You just get the treasure of Majere.";
+			mes "It contains "+getitemname($ep7_Tcoins)+" and a black pearl of Shinaere.";
+		}
 		close2;
 		getitem 29122,1;
 		getitem $ep7_Tcoins,$ep7silvercoinnb[15];
@@ -1767,12 +2442,14 @@ set @name$,"^33CC00Coffre^000000";
 	
 	if (EP7_TRESORB <= 11) {
 		mes "[" + @name$ + "]";
-		mes "Vous ne pouvez pas prendre le trésor tant que le gardien est en vie.";
+		if(EP7_LANGUE == 0) { mes "Vous ne pouvez pas prendre le trésor tant que le gardien est en vie.";}
+		if(EP7_LANGUE == 1) { mes "You can't take the treasure as the guardian is alive.";}
 		close;}
 		
 	if (EP7_TRESORB >= 12) {
 		mes "[" + @name$ + "]";
-		mes "Ce coffre est vide.";
+		if(EP7_LANGUE == 0) { mes "Ce coffre est vide.";}
+		if(EP7_LANGUE == 1) { mes "This Chest is empty.";}
 		close;}
 }
 
@@ -1784,7 +2461,127 @@ set @name$,"^33CC00Coffre^000000";
 
 ars_dun52,187,199,5	script	Réceptacle#Sch1	111,{
 
-set @name$,"^33CC00Réceptacle^000000"; 
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Réceptacle^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Receptacle^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_brynn01fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_brynn01en";}
+
+}
+//=================================================================================	
+ars_dun52,187,181,5	script	Réceptacle#Sch2	111,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Réceptacle^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Receptacle^000000";}
+
+if(EP7_LANGUE == 0) { callfunc "ars_brynn02fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_brynn02en";}
+
+}
+//=================================================================================
+ars_dun52,188,190,5	script	#arsdun56	45,1,1,{
+
+	if (EP7_MOINE <= 4) {
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) { mes "Cette serrure est bien trop complexe pour être forcée.";}
+		if(EP7_LANGUE == 0) { mes "Cette serrure est bien trop complexe pour être forcée.";}
+		close;	
+	}
+
+	warp "ars_dun52",196,190;
+	end;
+}
+//=================================================================================
+ars_dun52,224,189,5	script	Coffre#Sch3	1324,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Coffre^000000"; }
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Chest^000000"; }
+	
+	if (EP7_MOINE == 5) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) {
+			mes "Vous venez de récupérer le trésor du Monastère de Tibérine.";
+			mes "Il contient un ^884DA7"+getitemname($ep7recompense[46])+"^000000 !.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "You just get the treasure of the monastery of Tiberine.";
+			mes "It contains a ^884DA7"+getitemname($ep7recompense[46])+"^000000 !.";
+		}
+		close2;
+		getitem $ep7recompense[46],$ep7recompensenb[46];
+		set ep7_CarteTresor,ep7_CarteTresor|2;
+		set EP7_MOINE,6;
+		end;
+		}
+	
+	if (EP7_MOINE <= 4) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Il n'y a, hélas, rien pour vous ici.";}
+		if(EP7_LANGUE == 1) { mes "Unfortunatly, there is nothing for you.";}
+		close;}
+		
+	if (EP7_MOINE >= 6) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Ce coffre est vide.";}
+		if(EP7_LANGUE == 1) { mes "The chest is empty.";}
+		close;}
+}
+//=================================================================================
+ars_dun52,102,24,5	script	Livre#Sch1	111,{
+
+if(EP7_LANGUE == 0) { set @name$,"^33CC00Livre^000000";}
+if(EP7_LANGUE == 1) { set @name$,"^33CC00Book^000000";}
+	
+	if (EP7_MOINE <= 2) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) { mes "Aucun livre ne vous semble intéressant pour le moment.";}
+		if(EP7_LANGUE == 1) { mes "No book looks interesting at the moment.";}
+		close;}
+		
+	if (EP7_MOINE >= 3) {
+		mes "[" + @name$ + "]";
+		if(EP7_LANGUE == 0) {
+			mes "Un livre concerne les runes de Tibérine que vous recherchez :";
+			mes "- ^884DA7"+getitemname(29152)+" : Perdu dans les eaux des îles aux épices.";
+			mes "- ^884DA7"+getitemname(29153)+" : Perdu dans les eaux du Monastère de Tibérine.";
+		}
+		if(EP7_LANGUE == 1) {
+			mes "A book on the runes of Tiberine you want:";
+			mes "- ^884DA7"+getitemname(29152)+" : Lost in waters of Spices Islands.";
+			mes "- ^884DA7"+getitemname(29153)+" : Lost in waters of Tiberine Monastery.";
+		}
+		close;}
+}
+//_________________________________________________________________
+//________________ Brynnlaw : Guilde d'Harcourt ___________________
+//_________________________________________________________________
+ars_fild66,224,196,5	script	Annabelle d'Harcourt#ep7	989,{
+
+set @name$,"^FF00CCAnnabelle d'Harcourt^000000";
+	
+if(EP7_LANGUE == 0) { callfunc "ars_brynn03fr";}
+if(EP7_LANGUE == 1) { callfunc "ars_brynn03en";}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=================================================================================
+// Réceptacle
+//=================================================================================
+function	script	ars_brynn01fr	{
 	
 if(EP7_MOINE <= 2) {
 		mes "[" + @name$ + "]";
@@ -1796,10 +2593,10 @@ if(EP7_MOINE >= 3) {
 		mes "L'inscription indique qu'il vous faut y déposer une ^884DA7"+getitemname(29152)+"^000000 pour activer le mécanisme.";
 		mes "Voulez-vous déposer la rune ?";
 		next;
-		if( select("Oui:Non") == 2 )
+		if( select("•Oui:•Non") == 2 )
 			close;
 		
-		if(countitem(29152) < 0) {
+		if(countitem(29152) < 1) {
 				mes "[" + @name$ + "]";
 				mes "Vous n'avez pas de  ^884DA7"+getitemname(29152)+"^000000 sur vous !'";
 				close;}
@@ -1812,10 +2609,40 @@ if(EP7_MOINE >= 3) {
 		end;
 		}	
 }
-//=================================================================================	
-ars_dun52,187,181,5	script	Réceptacle#Sch2	111,{
+//=================================================================================
+function	script	ars_brynn01en	{
+	
+if(EP7_MOINE <= 2) {
+		mes "[" + @name$ + "]";
+		mes "This receptacle is empty.";
+		close;}
+	
+if(EP7_MOINE >= 3) {
+		mes "[" + @name$ + "]";
+		mes "Registration indicates that you need to file a ^884DA7"+getitemname(29152)+"^000000 to activate the mechanism.";
+		mes "Do you want to drop the rune ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+		
+		if(countitem(29152) < 1) {
+				mes "[" + @name$ + "]";
+				mes "You don't have  ^884DA7"+getitemname(29152)+"^000000 with you !'";
+				close;}
+				
+		mes "[" + @name$ + "]";
+		mes "The rune begins to flicker, just engage the mechanism, you can now remove the second rune.";
+		close2;
+		if(EP7_MOINE == 3) {
+			set EP7_MOINE,4;}
+		end;
+		}	
+}
 
-set @name$,"^33CC00Réceptacle^000000"; 
+//=================================================================================
+// Réceptacle 2
+//=================================================================================
+function	script	ars_brynn02fr	{
 	
 if(EP7_MOINE <= 3) {
 		mes "[" + @name$ + "]";
@@ -1827,10 +2654,10 @@ if(EP7_MOINE >= 4) {
 		mes "L'inscription indique qu'il vous faut y déposer une ^884DA7"+getitemname(29153)+"^000000 pour activer le mécanisme.";
 		mes "Voulez-vous déposer la rune ?";
 		next;
-		if( select("Oui:Non") == 2 )
+		if( select("•Oui:•Non") == 2 )
 			close;
 		
-		if(countitem(29153) < 0) {
+		if(countitem(29153) < 1) {
 				mes "[" + @name$ + "]";
 				mes "Vous n'avez pas de  ^884DA7"+getitemname(29153)+"^000000 sur vous !'";
 				close;}
@@ -1844,67 +2671,42 @@ if(EP7_MOINE >= 4) {
 		}	
 }	
 //=================================================================================
-ars_dun52,188,190,5	script	#arsdun56	45,1,1,{
-
-	if (EP7_MOINE <= 4) {
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		mes "Cette serrure est bien trop complexe pour être forcée.";
-		close;	
-	}
-
-	warp "ars_dun52",196,190;
-	end;
-}
-//=================================================================================
-ars_dun52,224,189,5	script	Coffre#Sch3	1324,{
-
-set @name$,"^33CC00Coffre^000000"; 
+function	script	ars_brynn02en	{
 	
-	if (EP7_MOINE == 5) {
+if(EP7_MOINE <= 3) {
 		mes "[" + @name$ + "]";
-		mes "Vous venez de récupérer le trésor du Monastère de Tibérine.";
-		mes "Il contient un ^884DA7"+getitemname($ep7recompense[46])+"^000000 !.";
+		mes "This receptacle is empty.";
+		close;}
+	
+if(EP7_MOINE >= 4) {
+		mes "[" + @name$ + "]";
+		mes "Registration indicates that you need to file a ^884DA7"+getitemname(29153)+"^000000 to activate the mechanism.";
+		mes "Do you want to drop the rune ?";
+		next;
+		if( select("•Yes:•No") == 2 )
+			close;
+		
+		if(countitem(29153) < 1) {
+				mes "[" + @name$ + "]";
+				mes "You don't have any  ^884DA7"+getitemname(29153)+"^000000 with you !'";
+				close;}
+				
+		mes "[" + @name$ + "]";
+		mes "The rune begins to flicker, just engage the mechanism, you can now remove the second rune.";
 		close2;
-		getitem $ep7recompense[46],$ep7recompensenb[46];
-		set ep7_CarteTresor,ep7_CarteTresor|2;
-		set EP7_MOINE,6;
+		if(EP7_MOINE == 4) {
+			set EP7_MOINE,5;}
 		end;
-		}
-	
-	if (EP7_MOINE <= 4) {
-		mes "[" + @name$ + "]";
-		mes "Il n'y a, hélas, rien pour vous ici.";
-		close;}
-		
-	if (EP7_MOINE >= 6) {
-		mes "[" + @name$ + "]";
-		mes "Ce coffre est vide.";
-		close;}
-}
+		}	
+}	
+
+
+
 //=================================================================================
-ars_dun52,102,24,5	script	Livre#Sch1	111,{
+// Anabelle d'Harcourt
+//=================================================================================
+function	script	ars_brynn03fr	{
 
-set @name$,"^33CC00Livre^000000"; 
-	
-	if (EP7_MOINE <= 3) {
-		mes "[" + @name$ + "]";
-		mes "Aucun livre ne vous semble intéressant pour le moment.";
-		close;}
-		
-	if (EP7_MOINE >= 4) {
-		mes "[" + @name$ + "]";
-		mes "Un livre concerne les runes de Tibérine que vous recherchez :";
-		mes "- ^884DA7"+getitemname(29152)+" : Perdu dans les eaux des îles aux épices.";
-		mes "- ^884DA7"+getitemname(29153)+" : Perdu dans les eaux du Monastère de Tibérine.";
-		close;}
-}
-//_________________________________________________________________
-//________________ Brynnlaw : Guilde d'Harcourt ___________________
-//_________________________________________________________________
-ars_fild66,224,196,5	script	Annabelle d'Harcourt#ep7	989,{
-
-set @name$,"^FF00CCAnnabelle d'Harcourt^000000";
-	
 	if(EP7_HARCOURT == 0) {
 		mes "[" + @name$ + "]";
 		mes "Heureuse rencontre.";
@@ -1933,7 +2735,7 @@ set @name$,"^FF00CCAnnabelle d'Harcourt^000000";
 		mes "Heureuse rencontre.";
 		mes "Alors, plaisante cette chasse aux pirates ?";
 		next;
-		switch( select("Vendre des Scalps:Ma réputation:Quitter") ) {
+		switch( select("•Vendre des Scalps:•Ma réputation:Quitter") ) {
 
 //============================		
 			case 1:
@@ -1958,7 +2760,7 @@ set @name$,"^FF00CCAnnabelle d'Harcourt^000000";
 				mes "Donc "+@q+" ^884DA7"+getitemname(29154)+"^000000 pour  "+@q+" ^884DA7"+getitemname($ep7_Tcoins)+"^000000";
 				mes "Sommes-nous d'accord ?";
 				next;
-				if( select("Oui:Non") == 2 )
+				if( select("•Oui:•Non") == 2 )
 					close;
 					
 				delitem 29154,@q;
@@ -2006,5 +2808,112 @@ set @name$,"^FF00CCAnnabelle d'Harcourt^000000";
 		mes "Désormais tu es un vrai ^884DA7Seigneur des Mers^000000 !";
 		mes "Tu ne devrais plus avoir trop de problèmes avec les pirates des mers.";
 		mes "^33CC00La Guilde d'Harcourt^000000est fière de toi, tu es désormais le bienvenu dans notre Quartier Général de Schallmar.";
+		close;}
+}
+
+//=================================================================================
+function	script	ars_brynn03en	{
+
+	if(EP7_HARCOURT == 0) {
+		mes "[" + @name$ + "]";
+		mes "Happy Meeting.";
+		mes "You seem to have potential.. Let me introduce, ^FF00CCAnnabelle d'Harcourt^000000 from ^33CC00d'Harcourt Guild^000000 !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "Our guild is from the city of Schallmar, we are on a mission right now in the regions of Coppalana and Brynnlaw.";
+		mes "We are trying to stop pirate attacks in those areas.";
+		next;
+		mes "[" + @name$ + "]";
+		mes "As you can see, it will inevitably generate work. The ^33CC00d'Harcourt Guild^000000 is the strength of its soldiers who are its reputation !";
+		mes "Now even the pirates are reluctant to attack us, as we make them afraid !";
+		next;
+		mes "[" + @name$ + "]";
+		mes "I can offer you a little work, not very complicated.";
+		mes "Pirates chase and bring me their scalps! You will earn ^884DA7"+getitemname($ep7_Tcoins)+"^000000 and also a reputation in seas.";
+		mes "With a high reputation, you can be sure that no one will bother you more on the seas!";
+		close2;
+		setquest 70590;
+		set EP7_HARCOURT,1;
+		end;
+		}
+	
+	if(EP7_HARCOURT <= 199) {
+		mes "[" + @name$ + "]";
+		mes "Happy Meeting.";
+		mes "So pleasant this hunt of pirates ?";
+		next;
+		switch( select("•Sell Scalps:•My Reputation:Leave") ) {
+
+//============================		
+			case 1:
+			
+				mes "[" + @name$ + "]";
+				mes "We collect ^884DA7"+getitemname(29154)+"^000000, ^884DA7"+getitemname($ep7_Tcoins)+"^000000 each piece !";
+				mes "What can you offer me this time?";
+				next;
+				
+				if(countitem(29154) < 0) {
+					mes "[" + @name$ + "]";
+					mes "You don't have ^884DA7"+getitemname(29154)+"^000000 on you !";
+					close;}
+					
+				input @q;
+				if(countitem(29154) < @q) {
+					mes "[" + @name$ + "]";
+					mes "You don't have enough  ^884DA7"+getitemname(29154)+"^000000 on you !'";
+					close;}
+					
+				mes "[" + @name$ + "]";
+				mes "So "+@q+" ^884DA7"+getitemname(29154)+"^000000 for "+@q+" ^884DA7"+getitemname($ep7_Tcoins)+"^000000";
+				mes "Agree ?";
+				next;
+				if( select("•Yes:•No") == 2 )
+					close;
+					
+				delitem 29154,@q;
+				getitem $ep7_Tcoins,@q;
+				if(EP7_HARCOURT < 200) {set EP7_HARCOURT,EP7_HARCOURT+@q;}
+				if(EP7_HARCOURT >= 200) {set EP7_HARCOURT,200; completequest 70590;}
+				
+				mes "[" + @name$ + "]";
+				mes "Thank you for your help in this noble fight! Your reputation increase ! ";
+				close;
+				
+//============================		
+			case 2:
+				
+				mes "[" + @name$ + "]";
+				mes "Your reputation is :";
+				if(EP7_HARCOURT < 20) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/20^000000]";
+					mes "You are considered as ^884DA7Perfect Victim^000000";}
+					
+				if(EP7_HARCOURT >= 20 && EP7_HARCOURT < 60) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/60^000000]";
+					mes "You are considered as ^884DA7Myrmidon^000000";}
+					
+				if(EP7_HARCOURT >= 60 && EP7_HARCOURT < 100) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/100^000000]";
+					mes "You are considered as ^884DA7Mercenary^000000";}
+					
+				if(EP7_HARCOURT >= 100 && EP7_HARCOURT < 150) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/150^000000]";
+					mes "You are considered as ^884DA7Justiciary^000000";}
+					
+				if(EP7_HARCOURT >= 150) { 
+					mes "[^33CC00" + EP7_HARCOURT + "/200^000000]";
+					mes "You are considered as ^884DA7Terror of the Seas^000000";}
+				close;
+//============================		
+			case 3:
+				close;
+		}			
+	}
+	
+	if(EP7_HARCOURT >= 200) {
+		mes "[" + @name$ + "]";
+		mes "Now you're a really ^884DA7Lord of Seas^000000 !";
+		mes "You should no longer have too many problems with the pirates of the seas.";
+		mes "^33CC00D'Harcourt guild^000000 is proud of you, you are now welcome in our Headquarters Schallmar.";
 		close;}
 }

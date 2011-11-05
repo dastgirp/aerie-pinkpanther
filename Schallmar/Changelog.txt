@@ -6,6 +6,13 @@ Stand-alone who takes place in south sea of Arsinoé. The adventure begins in the
 Not need Arsinoé main continent, totally independant, but of course both can work together.
 
 
+05/11/11 : rev.8 - Added some traduction :
+				- Elu.txt
+				- Schallmar.txt
+				- Brynnlaw.txt
+		Now english traduction is over !
+
+
 21/10/11 : rev.7 - Move to GoogleCode
 
 
