@@ -52,7 +52,7 @@
 
 		5.2- Title of Doctor of Urunesti
 	<ul class="head-menu">
-		<li>5.2.1- The remedy against lycanthropy</li>
+		<li>5.2.1- Lycanthropy</li>
 			<ul class="head-menu">	
 				<li>5.2.1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/5211">On Road to Urunesti</a></li>
 				<li>5.2.1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/5212">Shogunka Blood</a></li>
