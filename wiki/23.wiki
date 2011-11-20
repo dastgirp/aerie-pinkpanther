@@ -10,7 +10,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Context</span></p>==
 
-<p>The bridge of Daggard have been rebuilt, you can now venturing deeper into the land of Arsinoe, direction the forest of Kiman Fares. This forest is home to several villages and provides access to Euh�m�ria and the Jungle of the Thebaid. </p>
+<p>The bridge of Daggard have been rebuilt, you can now venturing deeper into the land of Arsinoe, direction the forest of Kiman Fares. This forest is home to several villages and provides access to Euhéméria and the Jungle of the Thebaid. </p>
 
 ==<p>Progress</p>== 
 
@@ -41,7 +41,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.3.06.
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.3.08.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.3.07.jpg
 
-<p>6- Once the king put out of harm's way, go back to the Shaman Kerloic, he said the situation havn't changed ... The case would be another. Chief Pevnec will continue research, but talking to him then you'll learn that no passengers are allowed to enter the city of Arsinoe from Ishtar Gate. For help you have given him, he offers to help you make false papers. You must meet his contact, Philerme in a hostel of Euh�m�ria. </ p>
+<p>6- Once the king put out of harm's way, go back to the Shaman Kerloic, he said the situation havn't changed ... The case would be another. Chief Pevnec will continue research, but talking to him then you'll learn that no passengers are allowed to enter the city of Arsinoe from Ishtar Gate. For help you have given him, he offers to help you make false papers. You must meet his contact, Philerme in a hostel of Euhéméria. </ p>
 
 
 ==<p><em>End of the Quest : The City of Gomorrhe</em>==

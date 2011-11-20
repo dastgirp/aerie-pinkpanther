@@ -20,13 +20,13 @@
 
 		3.1- Danifae's Children
 	<ul class="head-menu">
-		<li>3.1.1 - <a href="en/3.1.1.php">The Caves of Triplets</a></li>
-		<li>3.1.2 - <a href="en/3.1.2.php">Looking for Prophet Tzangue</a></li>
+		<li>3.1.1 - <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/311">The Caves of Triplets</a></li>
+		<li>3.1.2 - <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/312">Looking for Prophet Tzangue</a></li>
 	</ul>
 		3.2- Harpocrate's Cult
 	<ul class="head-menu">
-		<li>3.2.1- <a href="en/3.2.1.php">The Stars Tower</a></li>
-		<li>3.2.2- <a href="en/3.2.2.php">Monastery of Harpocrate</a></li>
+		<li>3.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/321">The Stars Tower</a></li>
+		<li>3.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/322">Monastery of Harpocrate</a></li>
 	</ul>
 		3.3- Birth of Lalibela
 	<ul class="head-menu">

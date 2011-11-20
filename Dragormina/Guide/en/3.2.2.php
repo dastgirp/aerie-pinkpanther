@@ -20,7 +20,7 @@ Prerequisites : 3.2.1- The Stars Tower / 2.4- The false papers for Arsinoé</p>
 <p><center><img src="../images/lunedo10.png" alt="lunedo10.png" /></center></p>
 
 <p><span style="text-decoration: underline;">Contexte</span> :<br />
-Le Bouclier d'Harpocrate, artefact très puissant a été volé. Après avoir été orienté sur une fausse piste avec le Nachtstern et la tour des Etoiles, le Clerc Graivois oriente désormais son enquête vers l'Académie d'Harpocrate dans la cité d'Arsinoé.</p>
+The Shield of Harpocrates, very powerful artifact was stolen. After being driven on the wrong track with Nachtstern and the Tower of Stars, the Clerc Graivois now directs his investigation into the Academy of Harpocrates in the city of Arsinoe. </p>
 
 <p><span style="text-decoration: underline;">Déroulement</span> :</p>
 
