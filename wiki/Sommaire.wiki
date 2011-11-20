@@ -10,10 +10,10 @@
 
 <h1>II- On road to Arsinoé</h1>
 	<ul class="head-menu">
-		<li>2.1- <a href="en/2.1.php">In depature to Coppalana</a></li>
-		<li>2.2- <a href="en/2.2.php">The Boitata quest</a></li>
-		<li>2.3- <a href="en/2.3.php">Undead Rising in Kiman Farès</a></li>
-		<li>2.4- <a href="en/2.4.php">The false papers for Arsinoé</a></li>
+		<li>2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/21">In depature to Coppalana</a></li>
+		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/22">The Boitata quest</a></li>
+		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/23">Undead Rising in Kiman Farès</a></li>
+		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/24">The false papers for Arsinoé</a></li>
 	</ul>
 
 <h1>III- Title of Inquisitor of Arsinoé</h1>
