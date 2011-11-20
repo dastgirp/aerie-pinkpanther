@@ -1,0 +1,41 @@
+#sidebar Sommaire
+
+=5.3- Dynahéir and the Gnoll Fortress=
+
+
+<p>*Quest* :<em>Dynahéir and the Gnoll Fortress</em> (Optional)</p>
+<p>*Prerequisites* : 5.2.2.3- The bowels of the Temple / 5.1- On our way back home : Urunesti</p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Context</span></p>==
+
+It was decided by the resistance of Urunesti gather latest forces of Arsinoe to lead the fight in the Abyss to prevent Fenrir to tread the worlds of the Yggdrasil. 
+
+
+==<p>Progress</p>== 
+
+1- Return to the home of the Joka l'éclairé to discuss with the Archmage Ornélia and tell them your success in your mission with Ursula Hapoi. Still missing one person to the alliance in order to open the gate of the Abyss. It's essential to have a mastering magic, a mage with entropic magic that isn't welcome in the High Council of Magic. Ornélia will ask you to go back Dynahéir which she said is a real calamity. It's time to return to the region of Gondar to find this famous magician. 
+
+
+2- Since the Forest Red Canyon take the direction of Gondar, the same road to Lalibela, but this time by continuing to the north and you will be at the Gnoll Fortress (ars_fild56). 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.01.jpg
+
+3- You'll have to launch an assault on the Gnoll Fortress to run this instance. You must kill Rob and Roy, the two subordinate in right of the fort, to access to Mc Kenzie. Once removed, go to the jails to release Dynaheïr. She will summon a portal to get out of there. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.03.jpg
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.04.jpg
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.05.jpg
+
+4- Go back to the Archimage Ornélia in Urunesti. Everyone seems ready to go to the Abyss! She will summon a portal to teleport you directly in Petosiris. 
+
+
+==<p><em>End of the Quest : Dynahéir and the Gnoll Fortress</em>==
+Guide by Aerie PinkPanther
+
+Traduction by Aerie PinkPanther
+</p>

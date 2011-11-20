@@ -1,0 +1,31 @@
+#sidebar Sommaire
+
+=5.4.1- Portal of Abyss=
+
+
+<p>*Quest* :<em>Portal of Abyss</em> (Optional)</p>
+<p>*Prerequisites* : 5.3- Dynahéir and the Gnoll Fortress</p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Context</span></p>==
+
+Everyone is ready, all levels were prepared and just arrived at Temple Petosiris. The various mages will open the gateway to the Abyss and you can engulf you. 
+
+
+==<p>Progress</p>== 
+
+1- Meet at the west facade of the Temple of Petosiris, descending the stairs you will see a cave. Proceed into the cave and you find the Portal of the Abyss with everything around the core members of the resistance of Arsinoe. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.1.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.1.02.jpg
+
+
+2- Speak with Archmage Ornélia, start a cutscene explaining the way forward into the abyss and the forces that will be sent. Once the stage finished you can finally take the portal towards the Abyss 
+
+==<p><em>End of the Quest : Portal of Abyss</em>==
+Guide by Aerie PinkPanther
+
+Traduction by Aerie PinkPanther
+</p>
