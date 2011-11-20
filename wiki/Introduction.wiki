@@ -1,4 +1,4 @@
-#sidebar PageName
+#sidebar Sommaire
 
 =I- Introduction=
 
