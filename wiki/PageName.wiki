@@ -1,8 +1,7 @@
 #labels Featured
 =Arsinoé Guide=
 
-==Summary==
-
+==<a href="http://code.google.com/p/aerie-pinkpanther/wiki/PageName">Summary</a>==
 
 <font size="+3"><h2>Table of Contents</h2></font>
 
