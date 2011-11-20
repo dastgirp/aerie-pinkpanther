@@ -1,4 +1,3 @@
-#summary Urunesti the Vision.
 #sidebar PageName
 
 =I- Introduction=
@@ -9,11 +8,11 @@
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
-==<p><span style="text-decoration: underline;">Context</span> :</p>==
+==<p><span style="text-decoration: underline;">Context</span></p>==
 
 <p>It starts when you create a character. He will born in a city called Urunesti, which is your hometown. Move to the position (54,77). You will be asked to choose a language between French, English or Spanish. Once you've chosen your language, you will see a message from your Mom saying to go home.</p>
 
- ==Progress :==
+==<p>Progress</p>== 
 
 <p>1- This is your first quest: Urunesti, The Vision (to see your quest log do alt + u. You will not need any object / equipment for this quest). Then head to the house (98,100) and enter it. Once inside, go to the position (22,30). You will see the npc Mom with the overhead message "quest!". She will ask you to fetch some milk on the farm, the farm of Fernandel which is in the north of Urunesti.</p>
 
