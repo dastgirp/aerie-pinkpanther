@@ -82,38 +82,38 @@
 
 		6.1- The Title of Liberator La Rana
 	<ul class="head-menu">
-		<li>6.1.1- <a href="en/6.1.1.php">Colonists of La Rana</a></li>
-		<li>6.1.2- <a href="en/6.1.2.php">Dian Bian Fût</a></li>
-		<li>6.1.3- <a href="en/6.1.3.php">La Rana Arena</a></li>
+		<li>6.1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/611">Colonists of La Rana</a></li>
+		<li>6.1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/612">Dian Bian Fût</a></li>
+		<li>6.1.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/613">La Rana Arena</a></li>
 	</ul>
 
 		6.2- <a href="en/6.2.php">Title of Gladiator</a>
 
 <h1>VII- Underdark</h1>
 
-		7.1- <a href="en/7.1.php">Destination Hylarheim</a>
+		7.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/71">Destination Hylarheim</a>
 
-		7.2- <a href="en/7.2.php">Storm Fort</a>
+		7.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/72">Storm Fort</a>
 
-		7.3- <a href="en/7.3.php">To the City of Underdark</a>
+		7.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/73">To the City of Underdark</a>
 
-		7.4- <a href="en/7.4.php">Da'Urdein Insurrection</a>
+		7.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/74">Da'Urdein Insurrection</a>
 
-		7.5- <a href="en/7.5.php">Planar Sphere</a>
+		7.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/75">Planar Sphere</a>
 
 
 <h1>VIII- Néraka</h1>
 
-		8.1- <a href="en/8.1.php">On road to Néraka</a>
+		8.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/81">On road to Néraka</a>
 
 		8.2- Title of Condotierre
 	<ul class="head-menu">
-		<li>8.2.1- <a href="en/8.2.1.php">Champ de Mars</a></li>
-		<li>8.2.2- <a href="en/8.2.2.php">Baron Sengir</a></li>
-		<li>8.2.3- <a href="en/8.2.3.php">Ice Delivry</a></li>
-		<li>8.2.4- <a href="en/8.2.4.php">The Eagle's Nest</a></li>
-		<li>8.2.5- <a href="en/8.2.5.php">Fronde</a></li>
-		<li>8.2.6- <a href="en/8.2.6.php">Mines</a></li>
+		<li>8.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/821">Champ de Mars</a></li>
+		<li>8.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/822">Baron Sengir</a></li>
+		<li>8.2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/823">Ice Delivry</a></li>
+		<li>8.2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/824">The Eagle's Nest</a></li>
+		<li>8.2.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/825">Fronde</a></li>
+		<li>8.2.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/826">Mines</a></li>
 	</ul>
 
 <h1>IX- Kargah Desert</h1>
