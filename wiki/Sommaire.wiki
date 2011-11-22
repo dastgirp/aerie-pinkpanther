@@ -118,20 +118,20 @@
 
 <h1>IX- Kargah Desert</h1>
 
-		9.1- <a href="en/9.1.php">The Lime of Torn-Thalas</a>
+		9.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/91">The Lime of Torn-Thalas</a>
 
-		9.2- <a href="en/9.2.php">Siwah Oasis</a>
+		9.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/92">Siwah Oasis</a>
 
-		9.3- <a href="en/9.3.php">Terkish Citadel</a>
+		9.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/93">Terkish Citadel</a>
 
 
 <h1>X- Other Titles :</h1>
 
-10.1- <a href="en/10.1.php">Title of Magnate of Arsinoé</a>
+10.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/101">Title of Magnate of Arsinoé</a>
 
-10.2- <a href="en/10.2.php">Title of Explorator of Arsinoé</a>
+10.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/102">Title of Explorator of Arsinoé</a>
 
-10.3- <a href="en/10.3.php">Title of Fisherman of Arsinoé</a>
+10.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/103">Title of Fisherman of Arsinoé</a>
 
 <h1>XI- Quests :</h1>
 
@@ -139,19 +139,19 @@
 
 11.2- Bourgmestre of Euhéméria
 	<ul class="head-menu">
-		<li>11.2.1- <a href="en/11.2.1.php">The Bandits Bacchias</a></li>
-		<li>11.2.2- <a href="en/11.2.2.php">Traïana Lighthouse</a></li>
-		<li>11.2.3- <a href="en/11.2.3.php">Smugglers</a></li>
+		<li>11.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/1121">The Bandits Bacchias</a></li>
+		<li>11.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/1122">Traïana Lighthouse</a></li>
+		<li>11.2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/1123">Smugglers</a></li>
 	</ul>
 
-11.3- <a href="en/11.3.php">The Plant of Desert</a>
+11.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/113">The Plant of Desert</a>
 
-11.4- <a href="en/11.4.php">Village Party</a>
+11.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/114">Village Party</a>
 
-11.5- <a href="en/11.5.php">Tarine's cry</a>
+11.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/115">Tarine's cry</a>
 
-11.6- <a href="en/11.6.php">Zombies</a>
+11.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/116">Zombies</a>
 
-11.7- <a href="en/11.7.php">Missing Sailors</a>
+11.7- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/117">Missing Sailors</a>
 
-11.8- <a href="en/11.8.php">Missionairies of UnderDark</a>
+11.8- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/118">Missionairies of UnderDark</a>

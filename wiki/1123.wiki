@@ -1,0 +1,35 @@
+#sidebar Sommaire
+
+=11.2.3- Smugglers=
+
+
+<p>*Quest* :<em>Smugglers</em> (Optional)</p>
+<p>*Prerequisites* : 2.2- The Boitata quest</p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Context</span></p>==
+
+City of Euhéméria is a City of Magic. The Mayor of Euhéméria offers to adventurers some quests. 
+
+
+==<p>Progress</p>== 
+
+1- You must meet the Mayor of Euhéméria (ars_fild05,195,193). He will offer you quests, choose one of the smugglers. He talks about a small port in the south of the Kiman Fares Forest, place for both the transit of illegal goods. The Knights of Euhéméria can't intervene so far, he asks you to stop this illegal practices. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.1.01.jpg
+
+
+
+2- You have to go to Soknobeus (ars_fild03) then take the south-west road to reach the region's of Lighthouse Traiana (ars_fild04). Jorbert Surcouf must be on site (ars_fild04,93,113), being on the nerves, he will not take long before attack you with his henchmen. After a short scuffle with him, he will recognize his defeat. Go back to the mayor of Euhéméria to get your reward. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.3.01.jpg
+
+
+==<p><em>End of the Quest : Smugglers</em>==
+Guide by Aerie PinkPanther
+
+Traduction by Aerie PinkPanther
+</p>
