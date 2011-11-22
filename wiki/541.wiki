@@ -4,7 +4,7 @@
 
 
 <p>*Quest* :<em>Portal of Abyss</em> (Optional)</p>
-<p>*Prerequisites* : 5.3- Dynahéir and the Gnoll Fortress</p>
+<p>*Prerequisites* : 5.3- Dynaheir and the Gnoll Fortress</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
@@ -22,7 +22,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.1.0
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.1.02.jpg
 
 
-2- Speak with Archmage Ornélia, start a cutscene explaining the way forward into the abyss and the forces that will be sent. Once the stage finished you can finally take the portal towards the Abyss 
+2- Speak with Archmage Ornelia, start a cutscene explaining the way forward into the abyss and the forces that will be sent. Once the stage finished you can finally take the portal towards the Abyss 
 
 ==<p><em>End of the Quest : Portal of Abyss</em>==
 Guide by Aerie PinkPanther

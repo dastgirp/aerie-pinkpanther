@@ -1,10 +1,10 @@
 #sidebar Sommaire
 
-=10.3- Title of Fisherman of Arsinoé=
+=10.3- Title of Fisherman of Arsinoe=
 
 
-<p>*Quest* :<em>Title of Fisherman of Arsinoé</em> (Optional)</p>
-<p>*Prerequisites* : Have acces to all places in Arsinoé.</p>
+<p>*Quest* :<em>Title of Fisherman of Arsinoe</em> (Optional)</p>
+<p>*Prerequisites* : Have acces to all places in Arsinoe.</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
@@ -27,27 +27,27 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.3.02
 
 || *Fish* || *Locality* || *Period* || *Rarity* || *Quantity Required* ||
 || Eel || La Rana || Anytime || Common || 30 ||
-|| Goldfish || Kiman Farès || Day || Rare || 5 ||
+|| Goldfish || Kiman Fares || Day || Rare || 5 ||
 || Scorpion Fish || Siwah || Night || Uncommon || 10 ||
-|| Poulp || Thébaïde || Anytime || Uncommon || 20 ||
+|| Poulp || Thebaide || Anytime || Uncommon || 20 ||
 || Limande || Underdark ||Night || Uncommon || 30 ||
 || Sea horse || Hylarheim || Anytime || Uncommon || 10 ||
 || Shark || Coppalana || Anytime || Uncommon || 10 ||
 || Bar || Urunesti || Day || Common || 30 ||
 || Bar Common || Urunesti || Anytime || Uncommon || 10 ||
 || Salmon || Crystalmir || Anytime || Rare || 5 ||
-|| Yellow Perch || Thébaïde || Anytime || Common || 20 ||
+|| Yellow Perch || Thebaide || Anytime || Common || 20 ||
 || Piranha || La Rana || Day || Uncommon || 10 ||
-|| Carp || Kiman Farès || Day || Uncommon || 15 ||
+|| Carp || Kiman Fares || Day || Uncommon || 15 ||
 || Thon || Coppalana || Anytime || Common || 20 ||
 || Angel Fish || Underdark || Anytime || Uncommon || 10 ||
 || Clown Fish || Coppalana || Night || Rare || 5 ||
 || Dace || Crystalmir || Anytime || Common || 25 ||
-|| Frog || Kiman Farès || Night || Common || 20 ||
+|| Frog || Kiman Fares || Night || Common || 20 ||
 || Fish Lantern || Underdark || Night || Common || 5 ||
 
 
-==<p><em>End of the Quest : Title of Fisherman of Arsinoé</em>==
+==<p><em>End of the Quest : Title of Fisherman of Arsinoe</em>==
 Guide by Aerie PinkPanther
 
 Traduction by Aerie PinkPanther

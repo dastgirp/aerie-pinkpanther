@@ -14,7 +14,7 @@ The Cult of Danifae is highly secretive and few people know it. It's based on th
 
 ==<p>Progress</p>== 
 
-1- You must meet Julian the Apostate at Ecumenical temple of Euhéméria. (ars_in01,75,142) He said the Danifae's triplets no longer respond to the prayers of the faithful and have even become aggressive! You'll have to find three secret caves and investigate in them. 
+1- You must meet Julian the Apostate at Ecumenical temple of Euhemeria. (ars_in01,75,142) He said the Danifae's triplets no longer respond to the prayers of the faithful and have even become aggressive! You'll have to find three secret caves and investigate in them. 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.1.01.jpg
 
@@ -28,7 +28,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.1.0
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.1.04.jpg
 
-4- The third cave is located in the library of Euhéméria. Once inside, you will have to eliminate Urania to retrieve her soul. 
+4- The third cave is located in the library of Euhemeria. Once inside, you will have to eliminate Urania to retrieve her soul. 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.1.05.jpg
 

@@ -1,10 +1,10 @@
 #sidebar Sommaire
 
-=10.2- Title of Explorator of Arsinoé=
+=10.2- Title of Explorator of Arsinoe=
 
 
-<p>*Quest* :<em>Title of Explorator of Arsinoé</em> (Optional)</p>
-<p>*Prerequisites* : Have acces to all places in Arsinoé.</p>
+<p>*Quest* :<em>Title of Explorator of Arsinoe</em> (Optional)</p>
+<p>*Prerequisites* : Have acces to all places in Arsinoe.</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
@@ -31,12 +31,12 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.02
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.03.jpg
 
 
-4- Third Map : Traïana Lighthouse
+4- Third Map : Traiana Lighthouse
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.04.jpg
 
 
-5- Fourth Map : Euhéméria
+5- Fourth Map : Euhemeria
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.05.jpg
 
@@ -46,7 +46,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.05
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.06.jpg
 
 
-7- Sixth Map : Village of Nèsos
+7- Sixth Map : Village of Nesos
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.07.jpg
 
@@ -59,7 +59,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.08
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.09.jpg
 
-10- Nineth Map : Thébaïde
+10- Nineth Map : Thebaide
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.10.jpg
 
@@ -83,7 +83,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.14
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.15.jpg
 
-16- Fifteenth Map : Port-Sirène
+16- Fifteenth Map : Port-Sirene
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.16.jpg
 
@@ -103,11 +103,11 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.19
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.20.jpg
 
-21- Twentieth Map : Arsinoé
+21- Twentieth Map : Arsinoe
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.21.jpg
 
-==<p><em>End of the Quest : Title of Explorator of Arsinoé</em>==
+==<p><em>End of the Quest : Title of Explorator of Arsinoe</em>==
 Guide by Aerie PinkPanther
 
 Traduction by Aerie PinkPanther

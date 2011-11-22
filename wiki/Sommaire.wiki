@@ -1,22 +1,22 @@
 #labels Featured
-=Arsinoé Guide=
+=Arsinoe Guide=
 
-==<a href="http://code.google.com/p/aerie-pinkpanther/wiki/PageName">Summary</a>==
+==<a href="http://code.google.com/p/aerie-pinkpanther/wiki/Sommaire">Summary</a>==
 
 <font size="+3"><h2>Table of Contents</h2></font>
 
 <h1>I- Introduction</h1>
 		1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction">Urunesti Vision</a>
 
-<h1>II- On road to Arsinoé</h1>
+<h1>II- On road to Arsinoe</h1>
 	<ul class="head-menu">
 		<li>2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/21">In depature to Coppalana</a></li>
 		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/22">The Boitata quest</a></li>
-		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/23">Undead Rising in Kiman Farès</a></li>
-		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/24">The false papers for Arsinoé</a></li>
+		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/23">Undead Rising in Kiman Fares</a></li>
+		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/24">The false papers for Arsinoe</a></li>
 	</ul>
 
-<h1>III- Title of Inquisitor of Arsinoé</h1>
+<h1>III- Title of Inquisitor of Arsinoe</h1>
 
 		3.1- Danifae's Children
 	<ul class="head-menu">
@@ -37,7 +37,7 @@
 
 <h1>IV- The title of Hero of Arsinoe</h1>
 
-		4.1- Wizards of Arsinoé
+		4.1- Wizards of Arsinoe
 	<ul class="head-menu">
 		<li>4.1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/411">The Apprentice of Mage Gawëlle</a></li>
 		<li>4.1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/412">The Dragon of Gondar</a></li>
@@ -60,7 +60,7 @@
 				<li>5.2.1.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/5214">Sidon's Heart</a></li>
 			</ul>
 
-		<li>5.2.2- Pétosiris Temple</li>
+		<li>5.2.2- Petosiris Temple</li>
 			<ul class="head-menu">
 				<li>5.2.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/5221">Looking for larvas of Kargah</a></li>
 				<li>5.2.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/5222">Djoser's corpse</a></li>
@@ -68,7 +68,7 @@
 			</ul>
 	</ul>
 
-5.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/53">Dynahéir and the Gnoll Fortress</a>
+5.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/53">Dynaheir and the Gnoll Fortress</a>
 
 5.4- Abyss
 
@@ -102,9 +102,9 @@
 		7.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/75">Planar Sphere</a>
 
 
-<h1>VIII- Néraka</h1>
+<h1>VIII- Neraka</h1>
 
-		8.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/81">On road to Néraka</a>
+		8.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/81">On road to Neraka</a>
 
 		8.2- Title of Condotierre
 	<ul class="head-menu">
@@ -127,20 +127,20 @@
 
 <h1>X- Other Titles :</h1>
 
-10.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/101">Title of Magnate of Arsinoé</a>
+10.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/101">Title of Magnate of Arsinoe</a>
 
-10.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/102">Title of Explorator of Arsinoé</a>
+10.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/102">Title of Explorator of Arsinoe</a>
 
-10.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/103">Title of Fisherman of Arsinoé</a>
+10.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/103">Title of Fisherman of Arsinoe</a>
 
 <h1>XI- Quests :</h1>
 
 11.1- <a href="en/11.1.php">Rail Company</a>
 
-11.2- Bourgmestre of Euhéméria
+11.2- Bourgmestre of Euhemeria
 	<ul class="head-menu">
 		<li>11.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/1121">The Bandits Bacchias</a></li>
-		<li>11.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/1122">Traïana Lighthouse</a></li>
+		<li>11.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/1122">Traiana Lighthouse</a></li>
 		<li>11.2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction/1123">Smugglers</a></li>
 	</ul>
 

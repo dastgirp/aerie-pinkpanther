@@ -1,20 +1,20 @@
 #sidebar Sommaire
 
-=11.2.2- Traïana Lighthouse=
+=11.2.2- Traiana Lighthouse=
 
 
-<p>*Quest* :<em>Traïana Lighthouse</em> (Optional)</p>
+<p>*Quest* :<em>Traiana Lighthouse</em> (Optional)</p>
 <p>*Prerequisites* : 2.2- The Boitata quest</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Context</span></p>==
 
-City of Euhéméria is a City of Magic. The Mayor of Euhéméria offers to adventurers some quests. 
+City of Euhemeria is a City of Magic. The Mayor of Euhemeria offers to adventurers some quests. 
 
 ==<p>Progress</p>== 
 
-1- You must meet the Mayor of Euhéméria (ars_fild05,195,193). It will offer you quests, choose the Lighthouse Traian. The lighthouse doesn't shine on boats for several days, you must reach a certain Garric Frash for investigating on the spot. (ars_fild04) To get to the Lighthouse of Traia area you must head towards the village of Soknobeus (ars_fild03) then take the road south-west. 
+1- You must meet the Mayor of Euhemeria (ars_fild05,195,193). It will offer you quests, choose the Lighthouse Traian. The lighthouse doesn't shine on boats for several days, you must reach a certain Garric Frash for investigating on the spot. (ars_fild04) To get to the Lighthouse of Traia area you must head towards the village of Soknobeus (ars_fild03) then take the road south-west. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.1.01.jpg
@@ -40,7 +40,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.2.
 
 5- When the Lord of Shadows dies, he returns to his original plan. That's when the lighthouse keeper will appear at the top of the lighthouse, he'll give you your reward. Go back to the mayor to finish this quest!
 
-==<p><em>End of the Quest : Traïana Lighthouse</em>==
+==<p><em>End of the Quest : Traiana Lighthouse</em>==
 Guide by Aerie PinkPanther
 
 Traduction by Aerie PinkPanther

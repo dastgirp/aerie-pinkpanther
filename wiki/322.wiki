@@ -4,7 +4,7 @@
 
 
 <p>*Quest* :<em>Monastery of Harpocrate</em> (Optional)</p>
-<p>*Prerequisites* : 3.2.1- The Stars Tower / 2.4- The false papers for Arsinoé</p>
+<p>*Prerequisites* : 3.2.1- The Stars Tower / 2.4- The false papers for Arsinoe</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 

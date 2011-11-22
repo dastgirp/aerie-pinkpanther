@@ -1,9 +1,9 @@
 #sidebar Sommaire
 
-=8.1- On road to Néraka=
+=8.1- On road to Neraka=
 
 
-<p>*Quest* :<em>On road to Néraka</em> (Optional)</p>
+<p>*Quest* :<em>On road to Neraka</em> (Optional)</p>
 <p>*Prerequisites* : 2.2- The Boitata quest</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
@@ -38,7 +38,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.1.04.
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.1.05.jpg
 
 
-==<p><em>End of the Quest : On road to Néraka</em>==
+==<p><em>End of the Quest : On road to Neraka</em>==
 Guide by Aerie PinkPanther
 
 Traduction by Aerie PinkPanther

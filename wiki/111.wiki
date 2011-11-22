@@ -4,7 +4,7 @@
 
 
 <p>*Quest* :<em>Rail Company</em> (Optional)</p>
-<p>*Prerequisites* : 2.2- The Boitata quest then 2.4- The false papers for Arsinoé, 6.1.3- La Rana Arena for La Rana.</p>
+<p>*Prerequisites* : 2.2- The Boitata quest then 2.4- The false papers for Arsinoe, 6.1.3- La Rana Arena for La Rana.</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 

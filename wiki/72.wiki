@@ -21,7 +21,7 @@ You have access to Hylarheim which is the west side of Arsinoe, where the Hylar 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.2.01.jpg
 
 
-2- Le Père Malachie (ars_fild22,220,256) accepte la proposition de Frère Jude, une galère est prête à partir sous le commandement de Yadie.
+2- Le Pere Malachie (ars_fild22,220,256) accepte la proposition de Frere Jude, une galere est prete à partir sous le commandement de Yadie.
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.2.02.jpg

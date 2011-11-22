@@ -26,7 +26,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro02.jpg
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro03.jpg
 
-<p>4- You will be asked if you want to rest. Answer yes. Once done, you will be teleported to a strange place. Move along the path, then talk to the magician who is in front. (63,99) Engage conversation with him, a cutscene will be triggered automatically. At the end of the cinematic, you'll be in another place. You were saved by the Archmage Ornélia and his three wise men. Come on in (133,87) and another cinematic will start.
+<p>4- You will be asked if you want to rest. Answer yes. Once done, you will be teleported to a strange place. Move along the path, then talk to the magician who is in front. (63,99) Engage conversation with him, a cutscene will be triggered automatically. At the end of the cinematic, you'll be in another place. You were saved by the Archmage Ornelia and his three wise men. Come on in (133,87) and another cinematic will start.
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro04.jpg

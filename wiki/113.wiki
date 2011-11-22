@@ -14,7 +14,7 @@ A strange disease has ravaged the village of Kiman Fares. Village Doctor needs h
 
 ==<p>Progress</p>== 
 
-1- Prigent Danon will ask you to visit the herbalist of Euhéméria to report any herbs that can serve as a remedy.
+1- Prigent Danon will ask you to visit the herbalist of Euhemeria to report any herbs that can serve as a remedy.
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.3.01.jpg

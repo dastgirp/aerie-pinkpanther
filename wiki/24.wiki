@@ -1,10 +1,10 @@
 #sidebar Sommaire
 
-=2.4- The false papers for Arsinoé=
+=2.4- The false papers for Arsinoe=
 
 
-<p>*Quest* :<em>On road to Arsinoé, the City</em> (Optional)</p>
-<p>*Prerequisites* : 2.3- Undead Rising in Kiman Farès</p>
+<p>*Quest* :<em>On road to Arsinoe, the City</em> (Optional)</p>
+<p>*Prerequisites* : 2.3- Undead Rising in Kiman Fares</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
@@ -15,7 +15,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p>Progress</p>== 
 
-<p>1- Chief Pevnec said you to contact his friend in Euhéméria, Philerme. Back in the forest of Kiman Fares (ars_fild01) then take the north-west road. Here you are in the City of Magic, Euhéméria (ars_fild05) The hostel is located in [ars_fild05,206,193], inside you will find Philerme, give him the letter of Pevnec (ars_in01,220,57). </ p >
+<p>1- Chief Pevnec said you to contact his friend in Euhemeria, Philerme. Back in the forest of Kiman Fares (ars_fild01) then take the north-west road. Here you are in the City of Magic, Euhemeria (ars_fild05) The hostel is located in [ars_fild05,206,193], inside you will find Philerme, give him the letter of Pevnec (ars_in01,220,57). </ p >
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.02.jpg
@@ -25,17 +25,17 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.02.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.03.jpg
 
-<p>3- Here things get complicated ... You must reach the farm Eupator [ars_fild19] but the tunnel is blocked you will have to travel around the mountain through the Bacchias Mounts. Return to Euhéméria then head towards the Northeast. You are now at the Abbey of Feymour (ars_fild07), continue east to reach the Citadel of Light (ars_fild16). There you will find a boatman [ars_fild16,152,144], which help you to cross the Crystalmir Lake. Crystalmir is a small fishing village in the Bacchias Mounts [ars_fild20], take the path east. You have finally reached the Eupator farm ! Rick Eupator (ars_fild19,137,128) to propose refinement of the ink if you bring 140 units of octopus forests ink. </ p>
+<p>3- Here things get complicated ... You must reach the farm Eupator [ars_fild19] but the tunnel is blocked you will have to travel around the mountain through the Bacchias Mounts. Return to Euhemeria then head towards the Northeast. You are now at the Abbey of Feymour (ars_fild07), continue east to reach the Citadel of Light (ars_fild16). There you will find a boatman [ars_fild16,152,144], which help you to cross the Crystalmir Lake. Crystalmir is a small fishing village in the Bacchias Mounts [ars_fild20], take the path east. You have finally reached the Eupator farm ! Rick Eupator (ars_fild19,137,128) to propose refinement of the ink if you bring 140 units of octopus forests ink. </ p>
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.05.jpg
 
-<p>4- Octopuses are around the farm. Once the 140 units of ink go talk to Rick Eupator, he will them into a Purified Ink Vermillion. Bring ink to Raichor (ars_fild18,153,49). He will ask you to provide 400 pieces of currency of Arsinoe to finalize the transaction. Now we must go back to Philerme at Euhéméria. </ p>
+<p>4- Octopuses are around the farm. Once the 140 units of ink go talk to Rick Eupator, he will them into a Purified Ink Vermillion. Bring ink to Raichor (ars_fild18,153,49). He will ask you to provide 400 pieces of currency of Arsinoe to finalize the transaction. Now we must go back to Philerme at Euhemeria. </ p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.06.jpg
 
-<p>5- Philerme knows a way to evade controls by the authorities because you don't have the official stamp. You must go to the entrance of the mine Euhéméria. (ars_fild05,23,155) </ p>
+<p>5- Philerme knows a way to evade controls by the authorities because you don't have the official stamp. You must go to the entrance of the mine Euhemeria. (ars_fild05,23,155) </ p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.07.jpg
 
@@ -44,7 +44,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.07.
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.08.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.09.jpg
 
-==<p><em>End of the Quest : On road to Arsinoé, the City</em>==
+==<p><em>End of the Quest : On road to Arsinoe, the City</em>==
 Guide by Aerie PinkPanther
 
 Traduction by Aerie PinkPanther

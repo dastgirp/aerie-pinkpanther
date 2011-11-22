@@ -4,7 +4,7 @@
 
 
 <p>*Quest* :<em>Champ de Mars</em> (Optional)</p>
-<p>*Prerequisites* : 2.4- The false papers for Arsinoé / 8.1- On road to Néraka</p>
+<p>*Prerequisites* : 2.4- The false papers for Arsinoe / 8.1- On road to Neraka</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
