@@ -1,44 +1,44 @@
 #sidebar Sommaire
 
-=2.1- Du départ à l'arrivée à Coppalana=
+=2.1- Du dÃ©part Ã  l'arrivÃ©e Ã  Coppalana=
 
 
-<p>*Quête* :<em>Accès à Coppalana</em> </p>
-<p>*Pré-requis* : Aucun</p>
+<p>*QuÃªte* :<em>AccÃ¨s Ã  Coppalana</em> </p>
+<p>*PrÃ©-requis* : Aucun</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Depuis votre départ d'Urunesti, il s'est passé quelques temps où vous avez pu gagner en force et vous équiper suffisamment pour pouvoir retourner dans votre pays natal pour combattre les forces obscures en présence ! 
+Depuis votre dÃ©part d'Urunesti, il s'est passÃ© quelques temps oÃ¹ vous avez pu gagner en force et vous Ã©quiper suffisamment pour pouvoir retourner dans votre pays natal pour combattre les forces obscures en prÃ©sence ! 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Alberta est connue pour ses navires et leurs voyages dans les îles lointaines. C'est là-bas justement que vous trouverez un capitaine de navire prêt à s'y rendre. Vous devez contacter Daphnis (alberta,211,51) qui vous proposera un marché pour l'accompagner en Arsinoé. Il va falloir négocier le prix du voyage avec le Capitaine Blowfall (alberta,220,30) 
+1- Alberta est connue pour ses navires et leurs voyages dans les Ã®les lointaines. C'est lÃ -bas justement que vous trouverez un capitaine de navire prÃªt Ã  s'y rendre. Vous devez contacter Daphnis (alberta,211,51) qui vous proposera un marchÃ© pour l'accompagner en ArsinoÃ©. Il va falloir nÃ©gocier le prix du voyage avec le Capitaine Blowfall (alberta,220,30) 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.1.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.1.02.jpg
 
 
-2- La traversée se passe sans encombres et vous voilà sur une île de l'Archipel de Coppalana : l'Île de Tantale. Parlez un peu avec Daphnis pour qu'il vous donne une nouvelle quête. Vous devez contacter le Père Benoît de l'Ordre Missionnaire de Tyr. (tantale_ile,197,147) Il vous proposera d'aller chercher à Yuno un dictionnaire pour pouvoir discuter avec les habitants du continent. 
+2- La traversÃ©e se passe sans encombres et vous voilÃ  sur une Ã®le de l'Archipel de Coppalana : l'ÃŽle de Tantale. Parlez un peu avec Daphnis pour qu'il vous donne une nouvelle quÃªte. Vous devez contacter le PÃ¨re BenoÃ®t de l'Ordre Missionnaire de Tyr. (tantale_ile,197,147) Il vous proposera d'aller chercher Ã  Yuno un dictionnaire pour pouvoir discuter avec les habitants du continent. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.1.03.jpg
 
-3- Rendez-vous dans la bibliothèque de Yuno pour rencontrer le Copiste Saül. (yuno_in04,115,104) Une fois le dictionnaire en poche retournez à l'île de Tantale. 
+3- Rendez-vous dans la bibliothÃ¨que de Yuno pour rencontrer le Copiste SaÃ¼l. (yuno_in04,115,104) Une fois le dictionnaire en poche retournez Ã  l'Ã®le de Tantale. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.1.04.jpg
 
-4- Maintenant que les indigènes peuvent vous comprendre, adressez-vous à Guellronoc'h pour qu'il puisse vous transporter vers le village de Coppalana. Cependant pour la traversée il vous demandera 120 Clam Shell ! (Il est à noter que vous pouvez les acheter à Comodo.) Une fois que vous l'aurez payé ... Vous arriverez enfin à poser vos pieds sur la terre d'Arsinoé ! 
+4- Maintenant que les indigÃ¨nes peuvent vous comprendre, adressez-vous Ã  Guellronoc'h pour qu'il puisse vous transporter vers le village de Coppalana. Cependant pour la traversÃ©e il vous demandera 120 Clam Shell ! (Il est Ã  noter que vous pouvez les acheter Ã  Comodo.) Une fois que vous l'aurez payÃ© ... Vous arriverez enfin Ã  poser vos pieds sur la terre d'ArsinoÃ© ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.1.05.jpg
 
 
-==<p><em>Fin de la quête : </em>==
+==<p><em>Fin de la quÃªte : </em>==
 Guide par Aerie PinkPanther
 
 </p>
