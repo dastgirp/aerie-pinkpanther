@@ -1,44 +1,44 @@
 #sidebar Sommaire
 
-=3.1.2-A la recherche du Prophète Tzangue=
+=3.1.2-A la recherche du ProphÃ¨te Tzangue=
 
 
-<p>*Quête* : <em>A la recherche du Prophète Tzangue</em> </p>
-<p>*Pré-requis* : 3.1.1-Les Grottes des Triplés / 2.4- Les faux-papiers pour Arsinoé </p>
+<p>*QuÃªte* : <em>A la recherche du ProphÃ¨te Tzangue</em> </p>
+<p>*PrÃ©-requis* : 3.1.1-Les Grottes des TriplÃ©s / 2.4- Les faux-papiers pour ArsinoÃ© </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Déesse Danifae ne répond plus aux prières, les grottes secrètes au culte de ses triplés sont envahies par des monstres et vous venez de sauver leur âme. Cela commence à devenir étrange ... 
+La DÃ©esse Danifae ne rÃ©pond plus aux priÃ¨res, les grottes secrÃ¨tes au culte de ses triplÃ©s sont envahies par des monstres et vous venez de sauver leur Ã¢me. Cela commence Ã  devenir Ã©trange ... 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Julien l'Apostat vous offre la possibilité de visiter le temple principal dédié à la Déesse Danifae. Une fois l'autorisation d'accéder à Arsinoé en poche, rendez-vous devant le temple. (ars_fild22,240,299) Le Prélat Anthiole vous parlera d'une autre disparition inquiétante, celle du Prophète Tzangue qui possède un lien très particulier au divin. Selon le prélat, celui-ci aurait été aperçu par la Mage Gawëlle dans les Monts Bacchias. 
+1- Julien l'Apostat vous offre la possibilitÃ© de visiter le temple principal dÃ©diÃ© Ã  la DÃ©esse Danifae. Une fois l'autorisation d'accÃ©der Ã  ArsinoÃ© en poche, rendez-vous devant le temple. (ars_fild22,240,299) Le PrÃ©lat Anthiole vous parlera d'une autre disparition inquiÃ©tante, celle du ProphÃ¨te Tzangue qui possÃ¨de un lien trÃ¨s particulier au divin. Selon le prÃ©lat, celui-ci aurait Ã©tÃ© aperÃ§u par la Mage GawÃ«lle dans les Monts Bacchias. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.2.01.jpg
 
 
-2- Retournez voir le Batelier de la Citadelle de la Lumière. Il vous proposera une traversée vers le temple de la solitude mais pour 600 Pièces d'Argent ! Vous n'êtes hélas pas en mesure de refuser l'offre. 
+2- Retournez voir le Batelier de la Citadelle de la LumiÃ¨re. Il vous proposera une traversÃ©e vers le temple de la solitude mais pour 600 PiÃ¨ces d'Argent ! Vous n'Ãªtes hÃ©las pas en mesure de refuser l'offre. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.2.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.2.03.jpg
 
-3- Vous y voilà ! Et quelle chance, vous croisez le Prophète Tzangue à l'entrée du Temple. Lorsque vous lui apprenez que vous avez les âmes des triplés, il se met en joie et vous propose d'entrer avec lui pour annoncer la bonne nouvelle à la Déesse Danifae. Hélas une fois à l'intérieur celui-ci commence à se sentir mal, à ressentir des forces maléfiques. En effet il va falloir vous battre une fois de plus pour éliminer le démon qui occupe le Temple sacré. 
+3- Vous y voilÃ  ! Et quelle chance, vous croisez le ProphÃ¨te Tzangue Ã  l'entrÃ©e du Temple. Lorsque vous lui apprenez que vous avez les Ã¢mes des triplÃ©s, il se met en joie et vous propose d'entrer avec lui pour annoncer la bonne nouvelle Ã  la DÃ©esse Danifae. HÃ©las une fois Ã  l'intÃ©rieur celui-ci commence Ã  se sentir mal, Ã  ressentir des forces malÃ©fiques. En effet il va falloir vous battre une fois de plus pour Ã©liminer le dÃ©mon qui occupe le Temple sacrÃ©. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.2.04.jpg
 
-4- Tzangue et la Déessse Danifae apparaissent à la mort du monstre près de l'autel du Temple. Danifae nous explique pourquoi elle ne pouvait plus répondre aux prières de ses fidèles car ses enfants avaient été volés par Gayzor, le démon que vous venez d'éliminer. Un portail apparaitra, engouffrez-vous dedans, vous serez téléporté dans le village de Crystalmir. 
+4- Tzangue et la DÃ©essse Danifae apparaissent Ã  la mort du monstre prÃ¨s de l'autel du Temple. Danifae nous explique pourquoi elle ne pouvait plus rÃ©pondre aux priÃ¨res de ses fidÃ¨les car ses enfants avaient Ã©tÃ© volÃ©s par Gayzor, le dÃ©mon que vous venez d'Ã©liminer. Un portail apparaitra, engouffrez-vous dedans, vous serez tÃ©lÃ©portÃ© dans le village de Crystalmir. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.1.2.05.jpg
 
 
-==<p><em>Fin de la quête : A la recherche du Prophète Tzangue</em>==
+==<p><em>Fin de la quÃªte : A la recherche du ProphÃ¨te Tzangue</em>==
 Guide par Aerie PinkPanther
 
 </p>
