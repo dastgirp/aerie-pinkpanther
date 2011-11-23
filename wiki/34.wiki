@@ -3,25 +3,25 @@
 =3.4- Agathon Paraclet=
 
 
-<p>*Quête* :<em>Agathon Paraclet</em> </p>
-<p>*Pré-requis* : 3.1- Les Enfants de Danifae / 3.2- Le Culte d'Harpocrate / 3.3- La Naissance de Lalibela</p>
+<p>*QuÃªte* :<em>Agathon Paraclet</em> </p>
+<p>*PrÃ©-requis* : 3.1- Les Enfants de Danifae / 3.2- Le Culte d'Harpocrate / 3.3- La Naissance de Lalibela</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Agathon Paraclet s'occupe des affaires religieuses en Arsinoé. Depuis quelques temps de nombreux objets magiques ont été volés et cela inquiète fortement tous les cultes du Continent. 
+Agathon Paraclet s'occupe des affaires religieuses en ArsinoÃ©. Depuis quelques temps de nombreux objets magiques ont Ã©tÃ© volÃ©s et cela inquiÃ¨te fortement tous les cultes du Continent. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez rendre visite à Agathon Paraclet qui réside dans les bâtiments administratifs. En ayant aidé les cultes de Lalibela, d'Harpocrate et de Danifae vous pouvez réclamer votre titre d'Inquisiteur d'Arsinoé. Ce titre vous permettra de poursuivre vos investigations avec l'Archimage Ornélia qui centralise désormais les enquêtes. 
+1- Vous devez rendre visite Ã  Agathon Paraclet qui rÃ©side dans les bÃ¢timents administratifs. En ayant aidÃ© les cultes de Lalibela, d'Harpocrate et de Danifae vous pouvez rÃ©clamer votre titre d'Inquisiteur d'ArsinoÃ©. Ce titre vous permettra de poursuivre vos investigations avec l'Archimage OrnÃ©lia qui centralise dÃ©sormais les enquÃªtes. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.4.01.jpg 
 
 
-==<p><em>Fin de la quête : Agathon Paraclet</em>==
+==<p><em>Fin de la quÃªte : Agathon Paraclet</em>==
 Guide par Aerie PinkPanther
 
 </p>
