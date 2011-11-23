@@ -1,46 +1,46 @@
 #sidebar Sommaire
 
-=4.1.1- L'Apprenti de la Mage Gawëlle=
+=4.1.1- L'Apprenti de la Mage GawÃ«lle=
 
 
-<p>*Quête* :<em>L'Apprenti de la Mage Gawëlle</em> </p>
-<p>*Pré-requis* : 2.2- La quête de Boitata</p>
+<p>*QuÃªte* :<em>L'Apprenti de la Mage GawÃ«lle</em> </p>
+<p>*PrÃ©-requis* : 2.2- La quÃªte de Boitata</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Magie en Arsinoé est organisée autour du Haut-Conseil de la Magie présidé par l'Archimage Ornélia. Depuis quelques temps des Mages Gris, pratiquant une magie interdite en Arsinoé sont apparus. 
+La Magie en ArsinoÃ© est organisÃ©e autour du Haut-Conseil de la Magie prÃ©sidÃ© par l'Archimage OrnÃ©lia. Depuis quelques temps des Mages Gris, pratiquant une magie interdite en ArsinoÃ© sont apparus. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- En vous promenant dans la forêt de Kiman Farès au niveau du village de Soknobeus (ars_fild03) vous rencontrez un Poulet. Il vous dit être un humain et qu'il se retrouve bloqué sous cette forme. Il vous implore de retrouver sa maîtresse la Mage Gawëlle dans les Monts Bacchias. 
+1- En vous promenant dans la forÃªt de Kiman FarÃ¨s au niveau du village de Soknobeus (ars_fild03) vous rencontrez un Poulet. Il vous dit Ãªtre un humain et qu'il se retrouve bloquÃ© sous cette forme. Il vous implore de retrouver sa maÃ®tresse la Mage GawÃ«lle dans les Monts Bacchias. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.1.01.jpg 
 
 
-2- La Mage Gawëlle est dans un petit village près de l'Abbaye du Col du Feymour. (ars_fild07,167,44) Elle reconnait en effet avoir un apprenti peu doué pour la magie .. Elle vous demande de retourner le chercher pour quelle puisse inverser le sortilège. 
+2- La Mage GawÃ«lle est dans un petit village prÃ¨s de l'Abbaye du Col du Feymour. (ars_fild07,167,44) Elle reconnait en effet avoir un apprenti peu douÃ© pour la magie .. Elle vous demande de retourner le chercher pour quelle puisse inverser le sortilÃ¨ge. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.1.02.jpg 
 
-3- Une fois finissule dans votre sac, retournez voir la Mage Gawëlle. Vous apprenez que celui-ci a été transformé en poulet par des Mages Gris qui se réunissent la nuit dans la forêt de Kiman Farès. La Mage Gawëlle vous charge d'enquêter à la place de Finissule et de lui rapporter vos observations. 
+3- Une fois finissule dans votre sac, retournez voir la Mage GawÃ«lle. Vous apprenez que celui-ci a Ã©tÃ© transformÃ© en poulet par des Mages Gris qui se rÃ©unissent la nuit dans la forÃªt de Kiman FarÃ¨s. La Mage GawÃ«lle vous charge d'enquÃªter Ã  la place de Finissule et de lui rapporter vos observations. 
 
 
 
-4- Il faudra vous rendre de nuit (20h00-8h00) dans la forêt de Kiman Farès, la partie où se situe le village du même nom (ars_fild02). En parlant avec ces mages gris vous serez transformé en poule et téléporté vous aussi dans la région de Soknobeus ... Il va vous falloir retourner voir la Mage Gawëlle par vos propres moyens sans pouvoir vous battre ! 
+4- Il faudra vous rendre de nuit (20h00-8h00) dans la forÃªt de Kiman FarÃ¨s, la partie oÃ¹ se situe le village du mÃªme nom (ars_fild02). En parlant avec ces mages gris vous serez transformÃ© en poule et tÃ©lÃ©portÃ© vous aussi dans la rÃ©gion de Soknobeus ... Il va vous falloir retourner voir la Mage GawÃ«lle par vos propres moyens sans pouvoir vous battre ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.1.03.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.1.04.jpg 
 
-5- La Mage Gawëlle vous donnera une lettre de recommandation pour pouvoir entrer au Haut-Conseil de la Magie et y faire part de vos observations.</>
+5- La Mage GawÃ«lle vous donnera une lettre de recommandation pour pouvoir entrer au Haut-Conseil de la Magie et y faire part de vos observations.</>
 
 
 
-==<p><em>Fin de la quête : L'Apprenti de la Mage Gawëlle</em>==
+==<p><em>Fin de la quÃªte : L'Apprenti de la Mage GawÃ«lle</em>==
 Guide par Aerie PinkPanther
 
 </p>
