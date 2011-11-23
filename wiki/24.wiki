@@ -1,49 +1,49 @@
 #sidebar Sommaire
 
-=2.4- Les faux-papiers pour Arsinoé=
+=2.4- Les faux-papiers pour ArsinoÃ©=
 
 
-<p>*Quête* :<em>En route vers Arsinoé, la Cité</em> </p>
-<p>*Pré-requis* : 2.3- Le Réveil des Morts de Kiman Farès </p>
+<p>*QuÃªte* :<em>En route vers ArsinoÃ©, la CitÃ©</em> </p>
+<p>*PrÃ©-requis* : 2.3- Le RÃ©veil des Morts de Kiman FarÃ¨s </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-L'accès à Arsinoé nécessite une autorisation des autorités de la ville. Hélas les autorités n'en délivrent plus. Le chef Pevnec vous a indiqué un contact qui pourra vous en fournir des faux. 
+L'accÃ¨s Ã  ArsinoÃ© nÃ©cessite une autorisation des autoritÃ©s de la ville. HÃ©las les autoritÃ©s n'en dÃ©livrent plus. Le chef Pevnec vous a indiquÃ© un contact qui pourra vous en fournir des faux. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Le Chef Pevnec vous a indiqué son Contact à Euhéméria, Philerme. Retournez dans la forêt de Kiman Farès (ars_fild01) puis prenez la route du nord-ouest. Vous voici dans la Cité de la Magie, Euhéméria (ars_fild05) L'auberge se situe en (ars_fild05,206,193), à l'intérieur vous trouverez Philerme, donnez lui la lettre de Pevnec (ars_in01,220,57). 
+1- Le Chef Pevnec vous a indiquÃ© son Contact Ã  EuhÃ©mÃ©ria, Philerme. Retournez dans la forÃªt de Kiman FarÃ¨s (ars_fild01) puis prenez la route du nord-ouest. Vous voici dans la CitÃ© de la Magie, EuhÃ©mÃ©ria (ars_fild05) L'auberge se situe en (ars_fild05,206,193), Ã  l'intÃ©rieur vous trouverez Philerme, donnez lui la lettre de Pevnec (ars_in01,220,57). 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.02.jpg
 
 
-2- Il vous faut maintenant les matériaux pour fabriquer les faux-papiers. Il vous faut de l'encre et du papier que pourra vous fournir Raichor dans la cité portuaire de Thébaïde. Retournez à Soknobeus (ars_fild03) puis prenez la route menant vers le Sud-Est. Vous voilà dans la Jungle de Thébaïde (ars_fild17), continuez vers l'est et vous arriverez dans la région de la ville de Thébaïde (ars_fild18). Raichor se situe près du port. (ars_fild18,153,49) 
+2- Il vous faut maintenant les matÃ©riaux pour fabriquer les faux-papiers. Il vous faut de l'encre et du papier que pourra vous fournir Raichor dans la citÃ© portuaire de ThÃ©baÃ¯de. Retournez Ã  Soknobeus (ars_fild03) puis prenez la route menant vers le Sud-Est. Vous voilÃ  dans la Jungle de ThÃ©baÃ¯de (ars_fild17), continuez vers l'est et vous arriverez dans la rÃ©gion de la ville de ThÃ©baÃ¯de (ars_fild18). Raichor se situe prÃ¨s du port. (ars_fild18,153,49) 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.03.jpg
 
-3- Là ça se corse ... Il vous faut atteindre la ferme eupator (ars_fild19) mais le tunnel étant bouché vous allez devoir contourner la montagne en passant par les Monts Bacchas. Retournez à Euhéméria puis prenez la direction du Nord-Est. Vous voilà à l'Abbaye du Feymour (ars_fild07), continuez vers l'est pour atteindre la Citadelle de la Lumière (ars_fild16). Là-bas vous trouverez un batelier (ars_fild16,152,144) qui vous permettra de traverser le Lac Crystalmir. Crystalmir est un petit village de pêcheur dans les Monts Bacchias (ars_fild20), prenez le chemin à l'est. Vous voilà enfin arrivé à la Ferme Eupator ! Rick Eupator (ars_fild19,137,128) se proposera de raffiner de l'encre si vous lui apportez 140 unités d'encre des poulpes des forêts. 
+3- LÃ  Ã§a se corse ... Il vous faut atteindre la ferme eupator (ars_fild19) mais le tunnel Ã©tant bouchÃ© vous allez devoir contourner la montagne en passant par les Monts Bacchas. Retournez Ã  EuhÃ©mÃ©ria puis prenez la direction du Nord-Est. Vous voilÃ  Ã  l'Abbaye du Feymour (ars_fild07), continuez vers l'est pour atteindre la Citadelle de la LumiÃ¨re (ars_fild16). LÃ -bas vous trouverez un batelier (ars_fild16,152,144) qui vous permettra de traverser le Lac Crystalmir. Crystalmir est un petit village de pÃªcheur dans les Monts Bacchias (ars_fild20), prenez le chemin Ã  l'est. Vous voilÃ  enfin arrivÃ© Ã  la Ferme Eupator ! Rick Eupator (ars_fild19,137,128) se proposera de raffiner de l'encre si vous lui apportez 140 unitÃ©s d'encre des poulpes des forÃªts. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.05.jpg
 
-4- Les poulpes sont autour de la ferme. Une fois les 140 unités d'encre données à Rick Eupator vous recevrez une Encre Vermillon Purifiée. Apportez l'encre à Raichor (ars_fild18,153,49). Il vous demandera de lui fournir 400 pièces de la monnaie d'Arsinoé pour finaliser la transaction. Maintenant il faut retourner voir Philerme à Euhéméria. 
+4- Les poulpes sont autour de la ferme. Une fois les 140 unitÃ©s d'encre donnÃ©es Ã  Rick Eupator vous recevrez une Encre Vermillon PurifiÃ©e. Apportez l'encre Ã  Raichor (ars_fild18,153,49). Il vous demandera de lui fournir 400 piÃ¨ces de la monnaie d'ArsinoÃ© pour finaliser la transaction. Maintenant il faut retourner voir Philerme Ã  EuhÃ©mÃ©ria. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.06.jpg
 
-5- Philerme connait un passage pour éviter les contrôles des autorités car vous n'avez pas encore le tampon officiel. Vous devez vous rendre à l'entrée de la mine d'Euhéméria. (ars_fild05,23,155) 
+5- Philerme connait un passage pour Ã©viter les contrÃ´les des autoritÃ©s car vous n'avez pas encore le tampon officiel. Vous devez vous rendre Ã  l'entrÃ©e de la mine d'EuhÃ©mÃ©ria. (ars_fild05,23,155) 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.07.jpg
 
-6- Vous voilà enfin dans la cité d'Arsinoé ! Il va falloir trouver le fonctionnaire Georet. Il se situe dans les bâtiments administratifs au sommet d'Arsinoé (ars_fild22,188,202). Parlez-lui et voilà vous avez vos papiers en règle ! 
+6- Vous voilÃ  enfin dans la citÃ© d'ArsinoÃ© ! Il va falloir trouver le fonctionnaire Georet. Il se situe dans les bÃ¢timents administratifs au sommet d'ArsinoÃ© (ars_fild22,188,202). Parlez-lui et voilÃ  vous avez vos papiers en rÃ¨gle ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.08.jpg
@@ -51,7 +51,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.09.
 
 
 
-==<p><em>Fin de la quête : En route vers Arsinoé, la Cité</em>==
+==<p><em>Fin de la quÃªte : En route vers ArsinoÃ©, la CitÃ©</em>==
 Guide par Aerie PinkPanther
 
 </p>
