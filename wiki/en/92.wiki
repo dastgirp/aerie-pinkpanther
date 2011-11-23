@@ -3,7 +3,7 @@
 =9.2- Siwah Oasis=
 
 
-<p>*Quest* :<em>Siwah Oasis</em> (Optional)</p>
+<p>*Quest* :<em>Siwah Oasis</em> </p>
 <p>*Prerequisites* : 9.1- The Lime of Torn-Thalas</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

@@ -3,7 +3,7 @@
 =2.2- The Boitata quest=
 
 
-<p>*Quest* :<em>Boitata Wrath and the Daggard Bridge</em> (Optional)</p>
+<p>*Quest* :<em>Boitata Wrath and the Daggard Bridge</em> </p>
 <p>*Prerequisites* : 2.1- In depature to Coppalana</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

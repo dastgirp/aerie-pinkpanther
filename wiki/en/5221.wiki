@@ -3,7 +3,7 @@
 =5.2.2.1- Looking for larvas of Kargah=
 
 
-<p>*Quest* :<em>Looking for larvas of Kargah</em> (Optional)</p>
+<p>*Quest* :<em>Looking for larvas of Kargah</em> </p>
 <p>*Prerequisites* : 5.2.1.4- Sidon's Heart / 9.1- The Lime of Torn-Thalas</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

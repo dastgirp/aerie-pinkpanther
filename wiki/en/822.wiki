@@ -3,7 +3,7 @@
 =8.2.2- Baron Sengir=
 
 
-<p>*Quest* :<em>Baron Sengir</em> (Optional)</p>
+<p>*Quest* :<em>Baron Sengir</em> </p>
 <p>*Prerequisites* : 8.2.1- Le Champ de Mars</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

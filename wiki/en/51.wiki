@@ -3,7 +3,7 @@
 =5.1- On our way back home : Urunesti=
 
 
-<p>*Quest* :<em>On our way back home : Urunesti</em> (Optional)</p>
+<p>*Quest* :<em>On our way back home : Urunesti</em> </p>
 <p>*Prerequisites* : 4.2 - Light Citadel</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

@@ -3,7 +3,7 @@
 =3.3.1- Disappearance of the Holy Family=
 
 
-<p>*Quest* :<em>Disappearance of the Holy Family</em> (Optional)</p>
+<p>*Quest* :<em>Disappearance of the Holy Family</em> </p>
 <p>*Prerequisites* : 2.4- The false papers for Arsinoe</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

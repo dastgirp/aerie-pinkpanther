@@ -3,7 +3,7 @@
 =7.4- Da'Urdein Insurrection=
 
 
-<p>*Quest* :<em>Da'Urdein Insurrection</em> (Optional)</p>
+<p>*Quest* :<em>Da'Urdein Insurrection</em> </p>
 <p>*Prerequisites* : 7.3- To the City of Underdark</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

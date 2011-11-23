@@ -3,7 +3,7 @@
 =3.4- Agathon Paraclet=
 
 
-<p>*Quest* :<em>Agathon Paraclet</em> (Optional)</p>
+<p>*Quest* :<em>Agathon Paraclet</em> </p>
 <p>*Prerequisites* : 3.1- Danifae's Children  / 3.2- Harpocrate's Cult  / 3.3- Birth of Lalibela</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

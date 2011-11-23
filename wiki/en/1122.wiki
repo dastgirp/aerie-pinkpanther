@@ -3,7 +3,7 @@
 =11.2.2- Traiana Lighthouse=
 
 
-<p>*Quest* :<em>Traiana Lighthouse</em> (Optional)</p>
+<p>*Quest* :<em>Traiana Lighthouse</em> </p>
 <p>*Prerequisites* : 2.2- The Boitata quest</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

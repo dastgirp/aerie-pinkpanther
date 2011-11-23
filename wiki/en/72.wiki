@@ -3,7 +3,7 @@
 =7.2- Storm Fort=
 
 
-<p>*Quest* :<em>Storm Fort</em> (Optional)</p>
+<p>*Quest* :<em>Storm Fort</em> </p>
 <p>*Prerequisites* : 7.1- Destination Hylarheim</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

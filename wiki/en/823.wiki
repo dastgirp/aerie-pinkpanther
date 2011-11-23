@@ -3,7 +3,7 @@
 =8.2.3- Ice Delivry=
 
 
-<p>*Quest* :<em>Ice Delivry</em> (Optional)</p>
+<p>*Quest* :<em>Ice Delivry</em> </p>
 <p>*Prerequisites* : 8.2.2- Baron Sengir</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

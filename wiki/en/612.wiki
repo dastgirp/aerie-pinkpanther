@@ -3,7 +3,7 @@
 =6.1.2- Dian Bian Fût=
 
 
-<p>*Quest* :<em>Dian Bian Fût</em> (Optional)</p>
+<p>*Quest* :<em>Dian Bian Fût</em> </p>
 <p>*Prerequisites* : 6.1.1- Colonists of La Rana</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

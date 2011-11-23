@@ -3,7 +3,7 @@
 =2.3- Undead Rising in Kiman Fares=
 
 
-<p>*Quest* :<em>The City of Gomorrhe</em> (Optional)</p>
+<p>*Quest* :<em>The City of Gomorrhe</em> </p>
 <p>*Prerequisites* : 2.2- The Boitata quest</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

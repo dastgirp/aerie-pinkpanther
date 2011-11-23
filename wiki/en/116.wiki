@@ -3,7 +3,7 @@
 =11.6- Zombies=
 
 
-<p>*Quest* :<em>Zombies</em> (Optional)</p>
+<p>*Quest* :<em>Zombies</em> </p>
 <p>*Prerequisites* : 2.4- The false papers for Arsinoe</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

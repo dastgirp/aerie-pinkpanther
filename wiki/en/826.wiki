@@ -3,7 +3,7 @@
 =8.2.6- Mines=
 
 
-<p>*Quest* :<em>Mines</em> (Optional)</p>
+<p>*Quest* :<em>Mines</em> </p>
 <p>*Prerequisites* : 8.2.5- Fronde</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

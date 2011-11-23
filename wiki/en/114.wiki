@@ -3,7 +3,7 @@
 =11.4- Village Party=
 
 
-<p>*Quest* :<em>Village Party</em> (Optional)</p>
+<p>*Quest* :<em>Village Party</em> </p>
 <p>*Prerequisites* : 2.2- The Boitata quest</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

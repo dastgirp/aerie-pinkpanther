@@ -3,7 +3,7 @@
 =2.1- In depature to Coppalana=
 
 
-<p>*Quest* :<em>Acces to Coppalana</em> (Optional)</p>
+<p>*Quest* :<em>Acces to Coppalana</em> </p>
 <p>*Prerequisites* : None</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

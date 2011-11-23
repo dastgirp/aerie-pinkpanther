@@ -3,7 +3,7 @@
 =3.2.1- The Stars Tower=
 
 
-<p>*Quest* :<em>The Stars Tower</em> (Optional)</p>
+<p>*Quest* :<em>The Stars Tower</em> </p>
 <p>*Prerequisites* : 2.2- The Boitata quest</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

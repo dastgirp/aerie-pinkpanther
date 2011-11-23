@@ -3,7 +3,7 @@
 =10.2- Title of Explorator of Arsinoe=
 
 
-<p>*Quest* :<em>Title of Explorator of Arsinoe</em> (Optional)</p>
+<p>*Quest* :<em>Title of Explorator of Arsinoe</em> </p>
 <p>*Prerequisites* : Have acces to all places in Arsinoe.</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

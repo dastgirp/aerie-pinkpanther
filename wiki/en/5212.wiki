@@ -3,7 +3,7 @@
 =5.2.1.2- Blood of Shogunka=
 
 
-<p>*Quest* :<em>Blood of Shogunka</em> (Optional)</p>
+<p>*Quest* :<em>Blood of Shogunka</em> </p>
 <p>*Prerequisites* : 5.2.1.1- On Road to Urunesti</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

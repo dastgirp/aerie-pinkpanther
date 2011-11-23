@@ -3,7 +3,7 @@
 =9.3- Terkish Citadel=
 
 
-<p>*Quest* :<em>Terkish Citadel</em> (Optional)</p>
+<p>*Quest* :<em>Terkish Citadel</em> </p>
 <p>*Prerequisites* : 9.2- Siwah Oasis</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

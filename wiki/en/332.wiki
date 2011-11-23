@@ -3,7 +3,7 @@
 =3.3.2- The Birth=
 
 
-<p>*Quest* :<em>The Birth</em> (Optional)</p>
+<p>*Quest* :<em>The Birth</em> </p>
 <p>*Prerequisites* : 3.3.1- Disappearance of the Holy Family</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

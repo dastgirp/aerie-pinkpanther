@@ -3,7 +3,7 @@
 =11.8- Missionairies of UnderDark=
 
 
-<p>*Quest* :<em>Missionairies of UnderDark</em> (Optional)</p>
+<p>*Quest* :<em>Missionairies of UnderDark</em> </p>
 <p>*Prerequisites* : 5.2.1.3- On road to Sidon !</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

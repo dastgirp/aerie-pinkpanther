@@ -3,7 +3,7 @@
 =7.3- To the City of Underdark=
 
 
-<p>*Quest* :<em>To the City of Underdark</em> (Optional)</p>
+<p>*Quest* :<em>To the City of Underdark</em> </p>
 <p>*Prerequisites* : 7.2- Storm Fort</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

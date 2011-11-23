@@ -3,7 +3,7 @@
 =5.4.3- Final Fight=
 
 
-<p>*Quest* :<em>Final Fight</em> (Optional)</p>
+<p>*Quest* :<em>Final Fight</em> </p>
 <p>*Prerequisites* : 5.4.2- The Descent into Abyss</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

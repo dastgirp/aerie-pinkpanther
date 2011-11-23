@@ -3,7 +3,7 @@
 =5.2.2.2- Djoser's corpse=
 
 
-<p>*Quest* :<em>Djoser's corpse</em> (Optional)</p>
+<p>*Quest* :<em>Djoser's corpse</em> </p>
 <p>*Prerequisites* : 5.2.2.1- Looking for larvas of Kargah</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

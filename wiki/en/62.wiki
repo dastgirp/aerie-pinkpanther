@@ -3,7 +3,7 @@
 =6.2- Title of Gladiator=
 
 
-<p>*Quest* :<em>Title of Gladiator</em> (Optional)</p>
+<p>*Quest* :<em>Title of Gladiator</em> </p>
 <p>*Prerequisites* : 6.1.3-La Rana Arena</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

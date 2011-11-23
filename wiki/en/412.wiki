@@ -3,7 +3,7 @@
 =4.1.2- The Dragon of Gondar=
 
 
-<p>*Quest* :<em>The Dragon of Gondar</em> (Optional)</p>
+<p>*Quest* :<em>The Dragon of Gondar</em> </p>
 <p>*Prerequisites* : 4.1.1- The Apprentice of Mage Gawëlle</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

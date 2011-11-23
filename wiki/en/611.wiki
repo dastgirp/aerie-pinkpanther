@@ -3,7 +3,7 @@
 =6.1.1- Colonists of La Rana=
 
 
-<p>*Quest* :<em>Colonists of La Rana</em> (Optional)</p>
+<p>*Quest* :<em>Colonists of La Rana</em> </p>
 <p>*Prerequisites* : 2.4- The false papers for Arsinoe</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

@@ -3,7 +3,7 @@
 =2.4- The false papers for Arsinoe=
 
 
-<p>*Quest* :<em>On road to Arsinoe, the City</em> (Optional)</p>
+<p>*Quest* :<em>On road to Arsinoe, the City</em> </p>
 <p>*Prerequisites* : 2.3- Undead Rising in Kiman Fares</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png

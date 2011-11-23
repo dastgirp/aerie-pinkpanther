@@ -3,7 +3,7 @@
 =5.2.1.1- On Road to Urunesti=
 
 
-<p>*Quest* :<em>On Road to Urunesti</em> (Optional)</p>
+<p>*Quest* :<em>On Road to Urunesti</em> </p>
 <p>*Prerequisites* : 7.3- To the City of Underdark</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
