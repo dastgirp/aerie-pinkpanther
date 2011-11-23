@@ -70,7 +70,7 @@
 
 5.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/53">Dynahéir et la Forteresse Gnoll</a>
 
-5.4- Abyss
+5.4- Abysses
 
 	<ul class="head-menu">
 		<li>5.4.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/541">Le Portail des Abysses</a></li>
