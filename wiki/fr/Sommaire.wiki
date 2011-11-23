@@ -1,7 +1,7 @@
 #labels Featured
-=Arsinoé Guide=
+=Guide d'Arsinoé=
 
-==<a href="http://code.google.com/p/aerie-pinkpanther/wiki/Sommaire">Summary</a>==
+==<a href="http://code.google.com/p/aerie-pinkpanther/wiki/Sommaire">Sommaire</a>==
 
 <font size="+3"><h2>Table des Matières</h2></font>
 
@@ -10,84 +10,84 @@
 
 <h1>II- Accès à Arsinoé</h1>
 	<ul class="head-menu">
-		<li>2.1- <a href="en/2.1.php">Du départ à l'arrivée à Coppalana</a></li>
-		<li>2.2- <a href="en/2.2.php">La quête de Boitata</a></li>
-		<li>2.3- <a href="en/2.3.php">Le Réveil des Morts de Kiman Farès</a></li>
-		<li>2.4- <a href="en/2.4.php">Les faux-papiers pour Arsinoé</a></li>
+		<li>2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/21">Du départ à l'arrivée à Coppalana</a></li>
+		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/22">La quête de Boitata</a></li>
+		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/23">Le Réveil des Morts de Kiman Farès</a></li>
+		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/24">Les faux-papiers pour Arsinoé</a></li>
 	</ul>
 
 <h1>III- Le Titre d'Inquisiteur de l'Arsinoé</h1>
 
 		3.1- Les Enfants de Danifae
 	<ul class="head-menu">
-		<li>3.1.1 - <a href="en/3.1.1.php">Les Grottes des Triplés</a></li>
-		<li>3.1.2 - <a href="en/3.1.2.php">A la recherche du Prophète Tzangue</a></li>
+		<li>3.1.1 - <a href="http://code.google.com/p/aerie-pinkpanther/wiki/311">Les Grottes des Triplés</a></li>
+		<li>3.1.2 - <a href="http://code.google.com/p/aerie-pinkpanther/wiki/312">A la recherche du Prophète Tzangue</a></li>
 	</ul>
 		3.2- Le Culte d'Harpocrate
 	<ul class="head-menu">
-		<li>3.2.1- <a href="en/3.2.1.php">La Tour des Etoiles</a></li>
-		<li>3.2.2- <a href="en/3.2.2.php">Le Monastère d'Harpocrate</a></li>
+		<li>3.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/321">La Tour des Etoiles</a></li>
+		<li>3.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/322">Le Monastère d'Harpocrate</a></li>
 	</ul>
 		3.3- La Naissance de Lalibela
 	<ul class="head-menu">
-		<li>3.3.1- <a href="en/3.3.1.php">La Disparition de la Sainte Famille</a></li>
-		<li>3.3.2- <a href="en/3.3.2.php">La Naissance</a></li>
+		<li>3.3.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/331">La Disparition de la Sainte Famille</a></li>
+		<li>3.3.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/332">La Naissance</a></li>
 	</ul>
-		3.4- <a href="en/3.4.php">Agathon Paraclet</a>
+		3.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/34">Agathon Paraclet</a>
 
 <h1>IV- Le Titre d'Héros d'Arsinoé</h1>
 
 		4.1- Les Mages d'Arsinoé
 	<ul class="head-menu">
-		<li>4.1.1- <a href="en/4.1.1.php">L'Apprenti de la Mage Gawëlle</a></li>
-		<li>4.1.2- <a href="en/4.1.2.php">Le Dragon de Gondar</a></li>
-		<li>4.1.3- <a href="en/4.1.3.php">Réunion des sages</a></li>
+		<li>4.1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/411">L'Apprenti de la Mage Gawëlle</a></li>
+		<li>4.1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/412">Le Dragon de Gondar</a></li>
+		<li>4.1.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/413">Réunion des sages</a></li>
 	</ul>
 
-		4.2 - <a href="en/4.2.php">La Citadelle de la Lumière</a> (Combat contre Shandalar)
+		4.2 - <a href="http://code.google.com/p/aerie-pinkpanther/wiki/42">La Citadelle de la Lumière</a> (Combat contre Shandalar)
 
 <h1>V- Le Titre de Divinité d'Arsinoé</h1>
 
-		5.1- <a href="en/5.1.php">Retour en Urunesti</a>
+		5.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/51">Retour en Urunesti</a>
 
 		5.2- Titre de Médecin d'Urunesti
 	<ul class="head-menu">
 		<li>5.2.1- Le remède contre la lycanthropie</li>
 			<ul class="head-menu">	
-				<li>5.2.1.1- <a href="en/5.2.1.1.php">En route vers Urunesti</a></li>
-				<li>5.2.1.2- <a href="en/5.2.1.2.php">Le Sang de Shogunka</a></li>
-				<li>5.2.1.3- <a href="en/5.2.1.3.php">En route vers Sidon !</a></li>
-				<li>5.2.1.4- <a href="en/5.2.1.4.php">Le Coeur de Sidon</a></li>
+				<li>5.2.1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/5211">En route vers Urunesti</a></li>
+				<li>5.2.1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/5212">Le Sang de Shogunka</a></li>
+				<li>5.2.1.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/5213">En route vers Sidon !</a></li>
+				<li>5.2.1.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/5214">Le Coeur de Sidon</a></li>
 			</ul>
 
 		<li>5.2.2- Le Temple de Pétosiris</li>
 			<ul class="head-menu">
-				<li>5.2.2.1- <a href="en/5.2.2.1.php">A la recherche des larves de Kargah</a></li>
-				<li>5.2.2.2- <a href="en/5.2.2.2.php">Le Corps de Djoser</a></li>
-				<li>5.2.2.3- <a href="en/5.2.2.3.php">Les Entrailles du Temple</a></li>
+				<li>5.2.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/5221">A la recherche des larves de Kargah</a></li>
+				<li>5.2.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/5222">Le Corps de Djoser</a></li>
+				<li>5.2.2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/5223">Les Entrailles du Temple</a></li>
 			</ul>
 	</ul>
 
-5.3- <a href="en/5.3.php">Dynahéir et la Forteresse Gnoll</a>
+5.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/53">Dynahéir et la Forteresse Gnoll</a>
 
 5.4- Abyss
 
 	<ul class="head-menu">
-		<li>5.4.1- <a href="en/5.4.1.php">Le Portail des Abysses</a></li>
-		<li>5.4.2- <a href="en/5.4.2.php">La Descente aux enfers</a></li>
-		<li>5.4.3- <a href="en/5.4.3.php">La Descente aux enfers</a> (Fenrir)</li>	
+		<li>5.4.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/541">Le Portail des Abysses</a></li>
+		<li>5.4.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/542">La Descente aux enfers</a></li>
+		<li>5.4.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/543">La Descente aux enfers</a> (Fenrir)</li>	
 	</ul>
 
 <h1>VI- La Rana</h1>
 
 		6.1- Le Titre de Libérateur de La Rana
 	<ul class="head-menu">
-		<li>6.1.1- <a href="en/6.1.1.php">Les Colons de La Rana</a></li>
-		<li>6.1.2- <a href="en/6.1.2.php">Dian Bian Fût</a></li>
-		<li>6.1.3- <a href="en/6.1.3.php">Les Arènes de La Rana</a></li>
+		<li>6.1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/611">Les Colons de La Rana</a></li>
+		<li>6.1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/612">Dian Bian Fût</a></li>
+		<li>6.1.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/613">Les Arènes de La Rana</a></li>
 	</ul>
 
-		6.2- <a href="en/6.2.php">Le Titre de Gladiateur</a>
+		6.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/62">Le Titre de Gladiateur</a>
 
 <h1>VII- Underdark</h1>
 
