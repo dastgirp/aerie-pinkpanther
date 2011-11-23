@@ -3,44 +3,44 @@
 =5.4.3- Le Combat final=
 
 
-<p>*Quête* :<em>Le Combat final</em> </p>
-<p>*Pré-requis* : 5.4.2- La Descente aux enfers </p>
+<p>*QuÃªte* :<em>Le Combat final</em> </p>
+<p>*PrÃ©-requis* : 5.4.2- La Descente aux enfers </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Vous y voilà, les Abysses, un monde terne emplit de monstres sauvages. Il va falloir vous y enfoncer avec l'aide des groupes armés d'Arsinoé. 
+Vous y voilÃ , les Abysses, un monde terne emplit de monstres sauvages. Il va falloir vous y enfoncer avec l'aide des groupes armÃ©s d'ArsinoÃ©. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Voilà le Grand Final, vous êtes à l'entrée d'Ust Nashar, la Cité de Fenrir. Cette instance sera la preuve de votre bravoure et de votre endurance. 
+1- VoilÃ  le Grand Final, vous Ãªtes Ã  l'entrÃ©e d'Ust Nashar, la CitÃ© de Fenrir. Cette instance sera la preuve de votre bravoure et de votre endurance. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.01.jpg
 
 
-2- C'est un cité complexe où il vous sera facile de vous perdre. Une série de Démons supérieurs seront présents, je vous laisse les découvrir, je peux seulement vous dire qu'il vous faudra économiser vos forces pour atteindre Fenrir. 
+2- C'est un citÃ© complexe oÃ¹ il vous sera facile de vous perdre. Une sÃ©rie de DÃ©mons supÃ©rieurs seront prÃ©sents, je vous laisse les dÃ©couvrir, je peux seulement vous dire qu'il vous faudra Ã©conomiser vos forces pour atteindre Fenrir. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.03.jpg
 
-3- Une fois que vous serez arrivé face à Fenrir vous pourrez recevoir la bénédiction de Danifae par le Prophète Tzangue, le combat se poursuivra avec l'aide de mages qui affaibliront Fenrir. 
+3- Une fois que vous serez arrivÃ© face Ã  Fenrir vous pourrez recevoir la bÃ©nÃ©diction de Danifae par le ProphÃ¨te Tzangue, le combat se poursuivra avec l'aide de mages qui affaibliront Fenrir. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.05.jpg
 
-4- Les Dieux apparaitront près de vous à la mort de Fenrir et s'occuperont de lui en l'enchainant à nouveau. De là prenez le portail pour rejoindre le Coeur d'Arsinoé qui est le Hall des Légendes de l'Arsinoé ! 
+4- Les Dieux apparaitront prÃ¨s de vous Ã  la mort de Fenrir et s'occuperont de lui en l'enchainant Ã  nouveau. De lÃ  prenez le portail pour rejoindre le Coeur d'ArsinoÃ© qui est le Hall des LÃ©gendes de l'ArsinoÃ© ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.06.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.07.jpg
 
 
-==<p><em>Fin de la quête : </em>==
+==<p><em>Fin de la quÃªte : Le Combat final</em>==
 Guide par Aerie PinkPanther
 
 </p>
