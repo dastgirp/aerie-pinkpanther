@@ -1,51 +1,57 @@
 #sidebar Sommaire
 
-=2.4- The false papers for Arsinoe=
+=2.4- Les faux-papiers pour Arsinoé=
 
 
-<p>*Quest* :<em>On road to Arsinoe, the City</em> (Optional)</p>
-<p>*Prerequisites* : 2.3- Undead Rising in Kiman Fares</p>
+<p>*Quête* :<em>En route vers Arsinoé, la Cité</em> </p>
+<p>*Pré-requis* : 2.3- Le Réveil des Morts de Kiman Farès </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
-==<p><span style="text-decoration: underline;">Context</span></p>==
+==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-<p>Access to Arsinoe requires a permit from city authorities. Unfortunately the authorities don't gives them anymore. The chief Pevnec said you that he had a contact who can provide you an authorization. </ p>
+L'accès à Arsinoé nécessite une autorisation des autorités de la ville. Hélas les autorités n'en délivrent plus. Le chef Pevnec vous a indiqué un contact qui pourra vous en fournir des faux. 
 
 
-==<p>Progress</p>== 
+==<p>Déroulement</p>== 
 
-<p>1- Chief Pevnec said you to contact his friend in Euhemeria, Philerme. Back in the forest of Kiman Fares (ars_fild01) then take the north-west road. Here you are in the City of Magic, Euhemeria (ars_fild05) The hostel is located in [ars_fild05,206,193], inside you will find Philerme, give him the letter of Pevnec (ars_in01,220,57). </ p >
+1- Le Chef Pevnec vous a indiqué son Contact à Euhéméria, Philerme. Retournez dans la forêt de Kiman Farès (ars_fild01) puis prenez la route du nord-ouest. Vous voici dans la Cité de la Magie, Euhéméria (ars_fild05) L'auberge se situe en (ars_fild05,206,193), à l'intérieur vous trouverez Philerme, donnez lui la lettre de Pevnec (ars_in01,220,57). 
+
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.02.jpg
 
 
-<p>2- Now you need materials to make false papers. You need ink and paper that can provide Raichor in the port city of Thebes. Return to Soknobeus (ars_fild03) then take the south-east road. You're in the Thebaide Jungle (ars_fild17), go east and you arrive in the area of the city of Thebaide (ars_fild18). Raichor is located near the port. (ars_fild18,153,49) </ p>
+2- Il vous faut maintenant les matériaux pour fabriquer les faux-papiers. Il vous faut de l'encre et du papier que pourra vous fournir Raichor dans la cité portuaire de Thébaïde. Retournez à Soknobeus (ars_fild03) puis prenez la route menant vers le Sud-Est. Vous voilà dans la Jungle de Thébaïde (ars_fild17), continuez vers l'est et vous arriverez dans la région de la ville de Thébaïde (ars_fild18). Raichor se situe près du port. (ars_fild18,153,49) 
+
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.03.jpg
 
-<p>3- Here things get complicated ... You must reach the farm Eupator [ars_fild19] but the tunnel is blocked you will have to travel around the mountain through the Bacchias Mounts. Return to Euhemeria then head towards the Northeast. You are now at the Abbey of Feymour (ars_fild07), continue east to reach the Citadel of Light (ars_fild16). There you will find a boatman [ars_fild16,152,144], which help you to cross the Crystalmir Lake. Crystalmir is a small fishing village in the Bacchias Mounts [ars_fild20], take the path east. You have finally reached the Eupator farm ! Rick Eupator (ars_fild19,137,128) to propose refinement of the ink if you bring 140 units of octopus forests ink. </ p>
+3- Là ça se corse ... Il vous faut atteindre la ferme eupator (ars_fild19) mais le tunnel étant bouché vous allez devoir contourner la montagne en passant par les Monts Bacchas. Retournez à Euhéméria puis prenez la direction du Nord-Est. Vous voilà à l'Abbaye du Feymour (ars_fild07), continuez vers l'est pour atteindre la Citadelle de la Lumière (ars_fild16). Là-bas vous trouverez un batelier (ars_fild16,152,144) qui vous permettra de traverser le Lac Crystalmir. Crystalmir est un petit village de pêcheur dans les Monts Bacchias (ars_fild20), prenez le chemin à l'est. Vous voilà enfin arrivé à la Ferme Eupator ! Rick Eupator (ars_fild19,137,128) se proposera de raffiner de l'encre si vous lui apportez 140 unités d'encre des poulpes des forêts. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.05.jpg
 
-<p>4- Octopuses are around the farm. Once the 140 units of ink go talk to Rick Eupator, he will them into a Purified Ink Vermillion. Bring ink to Raichor (ars_fild18,153,49). He will ask you to provide 400 pieces of currency of Arsinoe to finalize the transaction. Now we must go back to Philerme at Euhemeria. </ p>
+4- Les poulpes sont autour de la ferme. Une fois les 140 unités d'encre données à Rick Eupator vous recevrez une Encre Vermillon Purifiée. Apportez l'encre à Raichor (ars_fild18,153,49). Il vous demandera de lui fournir 400 pièces de la monnaie d'Arsinoé pour finaliser la transaction. Maintenant il faut retourner voir Philerme à Euhéméria. 
+
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.06.jpg
 
-<p>5- Philerme knows a way to evade controls by the authorities because you don't have the official stamp. You must go to the entrance of the mine Euhemeria. (ars_fild05,23,155) </ p>
+5- Philerme connait un passage pour éviter les contrôles des autorités car vous n'avez pas encore le tampon officiel. Vous devez vous rendre à l'entrée de la mine d'Euhéméria. (ars_fild05,23,155) 
+
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.07.jpg
 
-<p>6- You have finally reached the city of Arsinoe! We have to find the official Georet. He is located in office buildings at the top of Arsinoe (rs_fild22,188,202). Talk to him and now you get your papers in order! </ p>
+6- Vous voilà enfin dans la cité d'Arsinoé ! Il va falloir trouver le fonctionnaire Georet. Il se situe dans les bâtiments administratifs au sommet d'Arsinoé (ars_fild22,188,202). Parlez-lui et voilà vous avez vos papiers en règle ! 
+
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.08.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.4.09.jpg
 
-==<p><em>End of the Quest : On road to Arsinoe, the City</em>==
-Guide by Aerie PinkPanther
 
-Traduction by Aerie PinkPanther
+
+==<p><em>Fin de la quête : En route vers Arsinoé, la Cité</em>==
+Guide par Aerie PinkPanther
+
 </p>

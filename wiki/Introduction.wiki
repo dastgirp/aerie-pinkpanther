@@ -3,45 +3,44 @@
 =I- Introduction=
 
 
-<p>*Quest* :<em>Urunesti, The Vision</em> (Optional)</p>
-<p>*Prerequisites* : None</p>
+<p>*Quête* :<em>Urunesti, La Vision</em> (Facultative)</p>
+<p>*Pré-requis* : Aucun</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
-==<p><span style="text-decoration: underline;">Context</span></p>==
+==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-<p>It starts when you create a character. He will born in a city called Urunesti, which is your hometown. Move to the position (54,77). You will be asked to choose a language between French, English or Spanish. Once you've chosen your language, you will see a message from your Mom saying to go home.</p>
+<p>Tout commence quand vous créez un personnage. Il va naître dans une ville d’Arsinoé appelée Urunesti, qui est votre ville natale. Avancez vers la position (54,77). Il vous sera demandé de choisir une langue entre le Français, l’Anglais et l’Espagnol. Une fois que vous aurez choisi votre langue, vous verrez un message de ‘’maman ‘’ vous disant de rentrer à la maison !</p>
 
-==<p>Progress</p>== 
+==<p>Déroulement</p>== 
 
-<p>1- This is your first quest: Urunesti, The Vision (to see your quest log do alt + u. You will not need any object / equipment for this quest). Then head to the house (98,100) and enter it. Once inside, go to the position (22,30). You will see the npc Mom with the overhead message "quest!". She will ask you to fetch some milk on the farm, the farm of Fernandel which is in the north of Urunesti.</p>
+<p>1- Ceci est votre première quête : Urunesti, la vision (pour consulter votre journal de quêtes faites alt+u. Vous n’aurez besoin d’aucun objet/équipement pour cette quête). Alors dirigez-vous vers la maison en (98,100) et entrez-y. Une fois à l’intérieur, allez en (22,30). Vous verrez le npc ‘’Maman’’ avec au dessus de sa tête un message ‘’quête ! ‘’. Elle vous demandera d’aller chercher du lait à la ferme, chez un certain ‘’Fernandel’’ qui se trouve au nord d’Urunesti.</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro01.jpg
 
-<p>2- Leave the house and take the bridge of the city to enter in the warp. Then go to (136,75) and you will see Fernandel. Talk to him, and then talk to the cow next from him for milking. This may not work the first time, and you'll receive an attack that takes away 10% of your hitpoints.
+<p>2- Sortez de la maison et prenez le pont de la ville pour entrer dans le warp. Ensuite, allez en (136,75) et vous verrez Fernandel. Parlez-lui, et ensuite parlez à la vache à côté de lui pour la traire. Ceci peut ne pas marcher du premier coup, et vous recevez une attaque qui vous enlève 10% de vos points de vie.</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro02.jpg
 
-<p>3- Once the milk bottle in hand, you must return to your home. Your mom tells you to go get some rest. Take Upstairs, you'll meet your sister Anne (45,101), then in the bed you will see an Action NPC (Action: Sleep). It's time for a nap!
+<p>3- Une fois la bouteille de lait en poche, vous devez revenir dans votre maison. Celle-ci vous dit de monter vous reposer. A l'étage, vous croiserez votre sœur Anne en (45,101), puis près du lit vous verrez un NPC action (action : dormir). Il est temps de piquer un somme !</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro03.jpg
 
-<p>4- You will be asked if you want to rest. Answer yes. Once done, you will be teleported to a strange place. Move along the path, then talk to the magician who is in front. (63,99) Engage conversation with him, a cutscene will be triggered automatically. At the end of the cinematic, you'll be in another place. You were saved by the Archmage Ornelia and his three wise men. Come on in (133,87) and another cinematic will start.
+<p>4- Il vous sera demandé si vous voulez vous reposer. Répondez oui. Une fois cela fait, vous serez téléporté dans un endroit étrange. Avancez en suivant le chemin, puis parlez au mage qui se trouve juste devant. (63,99) Parlez-lui, une cinématique se déclenchera automatiquement. Vous vous trouvez, a la fin de cette cinématique, dans un autre endroit. Vous avez été sauvé par l’Archimage Ornélia et ses trois mages. Avancez en (133,87) et une autre cinématique se déclenchera.<br />
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro05.jpg
 
 
-<p>Once the cinematic is complete, a warp portal will open. Enter in. You will return to Urunesti at your home.</p>
+<p>Une fois la cinématique terminée, un portail s’ouvrira. Entrez-y. Vous serez de retour à Urunesti, dans votre maison.</p>
 
-<p>5- Get out of your home. Go to the home of Franshille in (130,73) and talk to him. He will ask you if you're agree to leave everything and fulfill your destiny. Choose Yes! You will be teleported into a magical tunnel. Follow the path and enter the portal in front of you. Therefore you will be at the Capital, this is only the beginning of a great adventure that you will be able to resume once you'll be more strong ...</p>
+<p>5- Sortez de votre maison. Rendez-vous dans la demeure de Franshille en (130,73) puis parlez-lui. Il vous demandera si vous êtes d’accord pour tout quitter et d’accomplir votre destin. Répondez oui ! Vous serez alors téléporté dans un tunnel magique. Suivez le chemin et entrez dans le portail juste devant vous. Dès lors vous vous retrouverez à la Capitale, ce n’est que le début d’une grande aventure, que vous reprendrez une fois plus fort…</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/intro06.jpg
 
 
-==<p><em>End of the Quest : Urunesti : The Vision</em>==
-Guide by Poisse
+==<p><em>Fin de la quête : Urunesti : la vision</em>==
+Guide par Poisse
 
-Traduction by Aerie PinkPanther
 </p>
