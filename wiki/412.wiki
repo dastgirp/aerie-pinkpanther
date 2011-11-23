@@ -3,31 +3,31 @@
 =4.1.2- Le Dragon de Gondar=
 
 
-<p>*Quête* :<em>Le Dragon de Gondar</em> </p>
-<p>*Pré-requis* : 4.1.1- L'Apprenti de la Mage Gawëlle </p>
+<p>*QuÃªte* :<em>Le Dragon de Gondar</em> </p>
+<p>*PrÃ©-requis* : 4.1.1- L'Apprenti de la Mage GawÃ«lle </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Magie en Arsinoé est organisée autour du Haut-Conseil de la Magie présidé par l'Archimage Ornélia. Depuis quelques temps des Mages Gris, pratiquant une magie interdite en Arsinoé sont apparus. 
+La Magie en ArsinoÃ© est organisÃ©e autour du Haut-Conseil de la Magie prÃ©sidÃ© par l'Archimage OrnÃ©lia. Depuis quelques temps des Mages Gris, pratiquant une magie interdite en ArsinoÃ© sont apparus. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez donc vous rendre au Haut-Conseil des Mages d'Arsinoé pour y faire votre rapport à l'Archimage Ornélia. Après une brève discussion, elle vous demandera de l'accompagner dans le Volcan de Gondar pour obtenir un entretien avec le Dragon de Gondar qui lui seul peut percevoir les variations du courant magique traversant Arsinoé, la Vouivre. 
+1- Vous devez donc vous rendre au Haut-Conseil des Mages d'ArsinoÃ© pour y faire votre rapport Ã  l'Archimage OrnÃ©lia. AprÃ¨s une brÃ¨ve discussion, elle vous demandera de l'accompagner dans le Volcan de Gondar pour obtenir un entretien avec le Dragon de Gondar qui lui seul peut percevoir les variations du courant magique traversant ArsinoÃ©, la Vouivre. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.02.jpg
 
 
-2- Sortez d'Arsinoé par la Porte Ouest pour atteindre la Forêt Rouge puis de là, le Volcan de Gondar. Près de la porte centrale, vous rencontrerez Ouroulga(ars_fild24,233,235) qui vous refuse l'entrée. En prévision des dégâts que vous pourriez causer à sa demeure qui est construire sur le nid du dragon. Vous devez lui rapporter 30 Rubis de Gondar que vous pouvez récupérer sur les monstres avoisinant. 
+2- Sortez d'ArsinoÃ© par la Porte Ouest pour atteindre la ForÃªt Rouge puis de lÃ , le Volcan de Gondar. PrÃ¨s de la porte centrale, vous rencontrerez Ouroulga(ars_fild24,233,235) qui vous refuse l'entrÃ©e. En prÃ©vision des dÃ©gÃ¢ts que vous pourriez causer Ã  sa demeure qui est construire sur le nid du dragon. Vous devez lui rapporter 30 Rubis de Gondar que vous pouvez rÃ©cupÃ©rer sur les monstres avoisinant. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.03.jpg
 
-3- Une fois les 30 Rubis donnés, il vous autorise enfin à descendre dans le nid du dragon. L'instance du Dragon de Gondar débute ici ! Quelques images de combattants en action face au Dragon de Gondar. (Durex, Jaiina, Atara, Thanatos) 
+3- Une fois les 30 Rubis donnÃ©s, il vous autorise enfin Ã  descendre dans le nid du dragon. L'instance du Dragon de Gondar dÃ©bute ici ! Quelques images de combattants en action face au Dragon de Gondar. (Durex, Jaiina, Atara, Thanatos) 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.04.jpg
@@ -35,14 +35,14 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.0
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.06.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.07.jpg
 
-4- Il lui faudra un certain nombre de coups pour le réveiller ... Une fois qu'il aura repris connaissance vous pourrez engager la discussion avec lui. Le dragon va confirmer ce que l'Archimage Ornélia pensait .. Les vols d'artefacts magiques ont bien pour but de lancer un sort très puissant ... Et quelqu'un met manifestement tout en oeuvre pour réaliser son dessein. 
+4- Il lui faudra un certain nombre de coups pour le rÃ©veiller ... Une fois qu'il aura repris connaissance vous pourrez engager la discussion avec lui. Le dragon va confirmer ce que l'Archimage OrnÃ©lia pensait .. Les vols d'artefacts magiques ont bien pour but de lancer un sort trÃ¨s puissant ... Et quelqu'un met manifestement tout en oeuvre pour rÃ©aliser son dessein. 
 
 
 
-5- Retournez voir l'Archimage Ornélia au Haut-Conseil de la magie. Si vous n'avez pas encore le <em>Titre d'Inquisiteur</em>, Elle vous demandera de venir en aide à Agathon Paraclet qui s'occupe des affaires religieuses et enquête sur les artefacts volés 
+5- Retournez voir l'Archimage OrnÃ©lia au Haut-Conseil de la magie. Si vous n'avez pas encore le <em>Titre d'Inquisiteur</em>, Elle vous demandera de venir en aide Ã  Agathon Paraclet qui s'occupe des affaires religieuses et enquÃªte sur les artefacts volÃ©s 
 
 
-==<p><em>Fin de la quête : Le Dragon de Gondar</em>==
+==<p><em>Fin de la quÃªte : Le Dragon de Gondar</em>==
 Guide par Aerie PinkPanther
 
 </p>
