@@ -1,0 +1,34 @@
+#sidebar Sommaire
+
+=8.2.2- Baron Sengir=
+
+
+<p>*Quest* :<em>Baron Sengir</em> (Optional)</p>
+<p>*Prerequisites* : 8.2.1- Le Champ de Mars</p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Context</span></p>==
+
+You are now a mercenary of Neraka, you'll need to make your reputation by completing various missions in the Hall of Mercenaries. 
+
+
+==<p>Progress</p>== 
+
+1- For the beginning of each mission you must read the announcements in the board of missions. Your first mission is the Baron Sengir, a former ally of King Baudouin. But he had betrayed the crown, taking with him many treasures, and now lives in Arsinoe. You must deal with his case. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.01.jpg
+
+
+2- Baron Sengir lives in the city of Arsinoe, return home to retrieve money from the king of Neraka. He therefore let go the dogs on you. Once settled the matter take the baron's head and return to the Hall of Mercenaries to receive your bonus. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.03.jpg
+
+==<p><em>End of the Quest : Baron Sengir</em>==
+Guide by Aerie PinkPanther
+
+Traduction by Aerie PinkPanther
+</p>
