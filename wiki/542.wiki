@@ -3,45 +3,45 @@
 =5.4.2- La Descente aux enfers=
 
 
-<p>*Quête* :<em>La Descente aux enfers</em> </p>
-<p>*Pré-requis* : 5.4.1- Le Portail des Abysses</p>
+<p>*QuÃªte* :<em>La Descente aux enfers</em> </p>
+<p>*PrÃ©-requis* : 5.4.1- Le Portail des Abysses</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Vous y voilà, les Abysses, un monde terne emplit de monstres sauvages. Il va falloir vous y enfoncer avec l'aide des groupes armés d'Arsinoé. 
+Vous y voilÃ , les Abysses, un monde terne emplit de monstres sauvages. Il va falloir vous y enfoncer avec l'aide des groupes armÃ©s d'ArsinoÃ©. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Dans la première région, vous ne pouvez avancer très loin car un champ de force bleu vous bloque l'accès. Pour lever la barrière vous devez tuer Warika et Chikai, ensuite il vous faudra éliminer les monstres du tableau pour pouvoir passer au suivant. 
+1- Dans la premiÃ¨re rÃ©gion, vous ne pouvez avancer trÃ¨s loin car un champ de force bleu vous bloque l'accÃ¨s. Pour lever la barriÃ¨re vous devez tuer Warika et Chikai, ensuite il vous faudra Ã©liminer les monstres du tableau pour pouvoir passer au suivant. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.2.01.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.2.02.jpg 
 
 
-2- En avançant vous rencontrerez Ribald et ses moine qui combattent eux aussi dans les Abysses, dans ce tableau vous allez devoir éliminer les démons pour ouvrir le deuxième portail, ensuite un Démon Supérieur Atila qu'il vous faudra élimliner pour passer au prochain tableau. 
+2- En avanÃ§ant vous rencontrerez Ribald et ses moine qui combattent eux aussi dans les Abysses, dans ce tableau vous allez devoir Ã©liminer les dÃ©mons pour ouvrir le deuxiÃ¨me portail, ensuite un DÃ©mon SupÃ©rieur Atila qu'il vous faudra Ã©limliner pour passer au prochain tableau. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.2.03.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.2.04.jpg 
 
-3- Dans ce troisième tableau vous allez rencontrer les troupes de la III Légion avec le Sénéchal Lin et le Colonel de Nursie. Vous devez éliminer les abominations pour atteindre le haut des escaliers. Vous devez éliminer Sloth mias une fois cela fait, le tableau recommence une deuxième fois ! Recommencez la même opération ... Hélas l'Instance recommence une troisième fois ... Lors de la troisième tentative, l'Archimage Ornélia et Dynaheir viennent vous aider à sortir de cette boucle temporelle de laquelle vous n'arrivez pas à vous en sortir. Un portail sera ouvert et vous pourrez accéder au quatrième tableau. 
+3- Dans ce troisiÃ¨me tableau vous allez rencontrer les troupes de la III LÃ©gion avec le SÃ©nÃ©chal Lin et le Colonel de Nursie. Vous devez Ã©liminer les abominations pour atteindre le haut des escaliers. Vous devez Ã©liminer Sloth mias une fois cela fait, le tableau recommence une deuxiÃ¨me fois ! Recommencez la mÃªme opÃ©ration ... HÃ©las l'Instance recommence une troisiÃ¨me fois ... Lors de la troisiÃ¨me tentative, l'Archimage OrnÃ©lia et Dynaheir viennent vous aider Ã  sortir de cette boucle temporelle de laquelle vous n'arrivez pas Ã  vous en sortir. Un portail sera ouvert et vous pourrez accÃ©der au quatriÃ¨me tableau. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.2.05.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.2.06.jpg 
 
-4- Dans ce dernier tableau vous serez en présence des triplés de Danifae. Vous devez simplement traverser la région sans tomber sous les coups des démons. En poursuivant votre route vous déboucherez à l'entrée de la ville d'Ust Nashar, le Coeur des Abysses, Royaume de Fenrir. 
+4- Dans ce dernier tableau vous serez en prÃ©sence des triplÃ©s de Danifae. Vous devez simplement traverser la rÃ©gion sans tomber sous les coups des dÃ©mons. En poursuivant votre route vous dÃ©boucherez Ã  l'entrÃ©e de la ville d'Ust Nashar, le Coeur des Abysses, Royaume de Fenrir. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.2.07.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.2.08.jpg 
 
 
-==<p><em>Fin de la quête : La Descente aux enfers</em>==
+==<p><em>Fin de la quÃªte : La Descente aux enfers</em>==
 Guide par Aerie PinkPanther
 
 </p>
