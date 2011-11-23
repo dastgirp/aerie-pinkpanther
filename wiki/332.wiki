@@ -3,34 +3,34 @@
 =3.3.2- La Naissance=
 
 
-<p>*Quête* :<em>La Naissance</em> </p>
-<p>*Pré-requis* : 3.3.1- La Disparition de la Sainte Famille </p>
+<p>*QuÃªte* :<em>La Naissance</em> </p>
+<p>*PrÃ©-requis* : 3.3.1- La Disparition de la Sainte Famille </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-L'épiphanie de Lalibela est proche, Lalibela doit se réincarner dans l'enfant d'Anne. Mais la Sainte Famille Anne et Zacharie sont attaqués par des forces mystérieuses, vous allez assister à l'accouchement dans le Temple de Lalibela ... 
+L'Ã©piphanie de Lalibela est proche, Lalibela doit se rÃ©incarner dans l'enfant d'Anne. Mais la Sainte Famille Anne et Zacharie sont attaquÃ©s par des forces mystÃ©rieuses, vous allez assister Ã  l'accouchement dans le Temple de Lalibela ... 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez vous rendre dans le Temple de Lalibela, Daphnis vous convie à l'accouchement. Entrez dans la salle d'attente pour lancer l'instance "Naissance de Lalibela". 
+1- Vous devez vous rendre dans le Temple de Lalibela, Daphnis vous convie Ã  l'accouchement. Entrez dans la salle d'attente pour lancer l'instance "Naissance de Lalibela". 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.3.2.01.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.3.2.02.jpg 
 
 
-2- Une Cinématique va débuter avec le Prêtre Merley, Anne et Zacharie. Hélas un trouble fête va venir semer la zizanie ... Shandalar et ses sbires ! Shandalar va enlever l'enfant en laissant deux de ses hommes de mains. 
+2- Une CinÃ©matique va dÃ©buter avec le PrÃªtre Merley, Anne et Zacharie. HÃ©las un trouble fÃªte va venir semer la zizanie ... Shandalar et ses sbires ! Shandalar va enlever l'enfant en laissant deux de ses hommes de mains. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.3.2.03.jpg 
 
-3- Ressortez de la salle pour discuter avec le Prêtre Merley, Lalibela a été enlevée par Shandalar un mage ... Plus rien ne peut-être fait par les seules membres de l'église de Lalibela ... Il est temps de rencontrer Agathon Paraclet à Arsinoé ! 
+3- Ressortez de la salle pour discuter avec le PrÃªtre Merley, Lalibela a Ã©tÃ© enlevÃ©e par Shandalar un mage ... Plus rien ne peut-Ãªtre fait par les seules membres de l'Ã©glise de Lalibela ... Il est temps de rencontrer Agathon Paraclet Ã  ArsinoÃ© ! 
 
 
-==<p><em>Fin de la quête : La Naissance</em>==
+==<p><em>Fin de la quÃªte : La Naissance</em>==
 Guide par Aerie PinkPanther
 
 </p>
