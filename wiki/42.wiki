@@ -1,45 +1,45 @@
 #sidebar Sommaire
 
-=4.2- La Citadelle de la Lumière=
+=4.2- La Citadelle de la LumiÃ¨re=
 
 
-<p>*Quête* :<em>La Citadelle de la Lumière</em> </p>
-<p>*Pré-requis* : 4.1.3- Réunion des sages </p>
+<p>*QuÃªte* :<em>La Citadelle de la LumiÃ¨re</em> </p>
+<p>*PrÃ©-requis* : 4.1.3- RÃ©union des sages </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-L'Archimage Ornélia concentre désormais le front de résistance face aux ténèbres qui s'agitent en Arsinoé. Shandalar veut ouvrir un portail vers les Abysses pour déclencher le Ragnarök ! 
+L'Archimage OrnÃ©lia concentre dÃ©sormais le front de rÃ©sistance face aux tÃ©nÃ¨bres qui s'agitent en ArsinoÃ©. Shandalar veut ouvrir un portail vers les Abysses pour dÃ©clencher le RagnarÃ¶k ! 
 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez empêcher l'incantation de Shandalar à tout prix ! L'Archimage Ornélia va vous proposer de vous téléporter directement à la Citadelle de la Lumière. 
+1- Vous devez empÃªcher l'incantation de Shandalar Ã  tout prix ! L'Archimage OrnÃ©lia va vous proposer de vous tÃ©lÃ©porter directement Ã  la Citadelle de la LumiÃ¨re. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.2.01.jpg 
 
 
-2- Lancez l'instance : "Incantation de Shandalar". Vous devez premièrement tuer les cinq sombres-acolytes qui bloquent l'entrée de la Citadelle. 
+2- Lancez l'instance : "Incantation de Shandalar". Vous devez premiÃ¨rement tuer les cinq sombres-acolytes qui bloquent l'entrÃ©e de la Citadelle. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.2.02.jpg 
 
-3- Une fois l'entrée dégagée, il est temps de se battre contre Shandalar ! Un combat rude vous attend mais le sort du monde est entre vos mains ! 
+3- Une fois l'entrÃ©e dÃ©gagÃ©e, il est temps de se battre contre Shandalar ! Un combat rude vous attend mais le sort du monde est entre vos mains ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.2.03.jpg 
 
-4- En tuant Shandalar la liche, vous obtenez le titre d'Héros d'Arsinoé ! Vous vous retrouvez dans l'antichambre des Abysses ... Vous n'avez pas pu empêcher le retour de Fenrir dans notre monde ... Le Ragnaök est désormais inéluctable. La Déesse Aérie apparait est vous donne des explications supplémentaires ... Il est décidé que le combat continuera depuis Urunesti, votre ville natale. Il est encore possible d'empêcher le Ragnarök mais pour cela il va falloir préparer une descente dans les Abysses pour y détruire Fenrir qui rassemble ses forces en vu de détruire les mondes de l'Yggdrasil. 
+4- En tuant Shandalar la liche, vous obtenez le titre d'HÃ©ros d'ArsinoÃ© ! Vous vous retrouvez dans l'antichambre des Abysses ... Vous n'avez pas pu empÃªcher le retour de Fenrir dans notre monde ... Le RagnaÃ¶k est dÃ©sormais inÃ©luctable. La DÃ©esse AÃ©rie apparait est vous donne des explications supplÃ©mentaires ... Il est dÃ©cidÃ© que le combat continuera depuis Urunesti, votre ville natale. Il est encore possible d'empÃªcher le RagnarÃ¶k mais pour cela il va falloir prÃ©parer une descente dans les Abysses pour y dÃ©truire Fenrir qui rassemble ses forces en vu de dÃ©truire les mondes de l'Yggdrasil. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.2.04.jpg 
 
 
 
-==<p><em>Fin de la quête : La Citadelle de la Lumière</em>==
+==<p><em>Fin de la quÃªte : La Citadelle de la LumiÃ¨re</em>==
 Guide par Aerie PinkPanther
 
 </p>
