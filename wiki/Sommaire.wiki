@@ -91,67 +91,67 @@
 
 <h1>VII- Underdark</h1>
 
-		7.1- <a href="en/7.1.php">Vers l'Hylarheim</a>
+		7.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/71">Vers l'Hylarheim</a>
 
-		7.2- <a href="en/7.2.php">Le Fort Orage</a>
+		7.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/72">Le Fort Orage</a>
 
-		7.3- <a href="en/7.3.php">Vers la Cité d'Ombreterre</a>
+		7.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/73">Vers la Cité d'Ombreterre</a>
 
-		7.4- <a href="en/7.4.php">L'insurrection de Da'Urdein</a>
+		7.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/74">L'insurrection de Da'Urdein</a>
 
-		7.5- <a href="en/7.5.php">La Sphère Planaire</a>
+		7.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/75">La Sphère Planaire</a>
 
 
 <h1>VIII- Néraka</h1>
 
-		8.1- <a href="en/8.1.php">Vers la Cité de Néraka</a>
+		8.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/81">Vers la Cité de Néraka</a>
 
 		8.2- Le Titre de Grand Condottiere
 	<ul class="head-menu">
-		<li>8.2.1- <a href="en/8.2.1.php">Champ de Mars</a></li>
-		<li>8.2.2- <a href="en/8.2.2.php">Baron Sengir</a></li>
-		<li>8.2.3- <a href="en/8.2.3.php">La Livraison de Glace</a></li>
-		<li>8.2.4- <a href="en/8.2.4.php">The Eagle's Nest</a></li>
-		<li>8.2.5- <a href="en/8.2.5.php">Fronde</a></li>
-		<li>8.2.6- <a href="en/8.2.6.php">Mines</a></li>
+		<li>8.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/821">Champ de Mars</a></li>
+		<li>8.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/822">Baron Sengir</a></li>
+		<li>8.2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/823">La Livraison de Glace</a></li>
+		<li>8.2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/824">The Eagle's Nest</a></li>
+		<li>8.2.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/825">Fronde</a></li>
+		<li>8.2.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/826">Mines</a></li>
 	</ul>
 
 <h1>IX- Le désert de Kargah</h1>
 
-		9.1- <a href="en/9.1.php">La Lime du Torn-Thalas</a>
+		9.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/91">La Lime du Torn-Thalas</a>
 
-		9.2- <a href="en/9.2.php">L'Oasis de Siwah</a>
+		9.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/92">L'Oasis de Siwah</a>
 
-		9.3- <a href="en/9.3.php">La Citadelle de Terkish</a>
+		9.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/93">La Citadelle de Terkish</a>
 
 
 <h1>X- Les Autres Titres :</h1>
 
-10.1- <a href="en/10.1.php">Titre de Magnat d'Arsinoé</a>
+10.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/101">Titre de Magnat d'Arsinoé</a>
 
-10.2- <a href="en/10.2.php">Titre d'Explorateur d'Arsinoé</a>
+10.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/102">Titre d'Explorateur d'Arsinoé</a>
 
-10.3- <a href="en/10.3.php">Titre de Pêcheur d'Arsinoé</a>
+10.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/103">Titre de Pêcheur d'Arsinoé</a>
 
 <h1>XI- Quêtes Annexes :</h1>
 
-11.1- <a href="en/11.1.php">La Compagnie Ferroviaire</a>
+11.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/111">La Compagnie Ferroviaire</a>
 
 11.2- Le Bourgmestre d'Euhéméria
 	<ul class="head-menu">
-		<li>11.2.1- <a href="en/11.2.1.php">Les Bandits d'Euhéméria</a></li>
-		<li>11.2.2- <a href="en/11.2.2.php">Le Phare de Traïana</a></li>
-		<li>11.2.3- <a href="en/11.2.3.php">Les Contrebandiers</a></li>
+		<li>11.2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/1121">Les Bandits d'Euhéméria</a></li>
+		<li>11.2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/1122">Le Phare de Traïana</a></li>
+		<li>11.2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/1123">Les Contrebandiers</a></li>
 	</ul>
 
-11.3- <a href="en/11.3.php">La Plante du désert</a>
+11.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/113">La Plante du désert</a>
 
-11.4- <a href="en/11.4.php">La Fête du Village</a>
+11.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/114">La Fête du Village</a>
 
-11.5- <a href="en/11.5.php">Les Pleurs de Tarine</a>
+11.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/115">Les Pleurs de Tarine</a>
 
-11.6- <a href="en/11.6.php">Les Zombies d'Arsinoé</a>
+11.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/116">Les Zombies d'Arsinoé</a>
 
-11.7- <a href="en/11.7.php">Les Marins Disparus</a>
+11.7- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/117">Les Marins Disparus</a>
 
-11.8- <a href="en/11.8.php">Les Missionaires de l'OmbreTerre</a>
+11.8- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/118">Les Missionaires de l'OmbreTerre</a>

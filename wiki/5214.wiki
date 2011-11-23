@@ -1,0 +1,40 @@
+#sidebar Sommaire
+
+=5.2.1.4- Le Coeur de Sidon=
+
+
+<p>*Quête* :<em>Le Coeur de Sidon</em> </p>
+<p>*Pré-requis* : 5.2.1.3- En route vers Sidon !</p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span></p>==
+
+Vous voilà dans la Cité de Sidon et vous avez l'algue pour le remède. Mais il va vous falloir repartir et c'est bien là le problème. 
+
+
+==<p>Déroulement</p>== 
+
+1- Ursula Hapoi est la seule à pouvoir vous faire sortir de Sidon et elle ne souhaite pas le faire sans que vous fassiez un larcin pour elle. Son intérêt pour l'épidémie d'Urunesti n'était pas vraiment sa priorité, elle voulait seulement des aventuriers pour voler le Coeur de Sidon un puissant Crystal qu'elle compte utiliser pour vous ne savez quelles maudites raisons. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.1.3.05.jpg 
+
+
+2- Vous devez vous rendre à l'entrée du Coeur de Sidon. A l'intérieur vous devrez affronter l'esprit de la tortue sur laquelle repose Sidon. Il vous faudra une certaine patience pour pouvoir récupérer son coeur. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.1.4.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.1.4.02.jpg 
+
+3- Retournez voir Ursula, elle vous donnera les algues et vous demandera de partir au plus vite, avant que les habitants se rendent compte du vol ! 
+
+
+
+4- Dumont d'Urville vous remerciera pour votre succès. Il est temps maintenant de trouver le dernier ingrédient, les larves du désert de Kargah qui malgré le désert préfèrent les endroits sombres et humides. Il va être difficile de s'y rendre sans se perdre dans le désert tout en évitant les maraudeurs gobelins qui pullulent à cause de la guerre en cours. 
+
+
+==<p><em>Fin de la quête : Le Coeur de Sidon</em>==
+Guide par Aerie PinkPanther
+
+</p>

@@ -1,0 +1,31 @@
+#sidebar Sommaire
+
+=5.4.1- Le Portail des Abysses=
+
+
+<p>*Quête* :<em>Le Portail des Abysses</em> </p>
+<p>*Pré-requis* : 5.3- Dynahéir et la Forteresse Gnoll </p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span></p>==
+
+Tout le monde est prêt, les différents ordres se sont préparés et viennent d'arriver au Temple de Pétosiris. Les différents mages vont ouvrir le Portail vers les Abysses et vous pourrez vous y engouffrer. 
+
+
+==<p>Déroulement</p>== 
+
+1- Rendez-vous à la façade Ouest du Temple de Pétosiris, en descendant les escaliers vous apercevrez une grotte. Avancez dans la grotte et vous découvrez le Portail des Abysses avec tout autour les principaux membres de la résistance d'Arsinoé. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.1.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.1.02.jpg 
+
+
+2- Parlez avec l'Archimage Ornélia, une cinématique débutera vous expliquant la marche à suivre dans les abysses et les forces qui y seront envoyées. Une fois la scène finie vous pourrez enfin emprunter le portail, direction les Abysses ! 
+
+
+==<p><em>Fin de la quête : Le Portail des Abysses</em>==
+Guide par Aerie PinkPanther
+
+</p>

@@ -1,0 +1,35 @@
+#sidebar Sommaire
+
+=5.2.1.2- Le Sang de Shogunka=
+
+
+<p>*Quête* :<em>Le Sang de Shogunka</em> </p>
+<p>*Pré-requis* : 5.2.1.1- En route vers Urunesti </p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span></p>==
+
+Dumont d'Urville mène les opérations pour récolter les ingrédients du remède. 
+
+==<p>Déroulement</p>== 
+
+1- Il vous faut du sang de Shogunka pour préparer le remède. Des infirmiers sont déjà partis mais ne sont toujours pas revenus. Vous devez vous rendre au Lac aux Fées. Vous vous êtes déjà rendus dans cette région lorsque vous avez rencontré Fernandel et sa vache à Urunesti. Cette fois-ci descendez pour rencontrer l'infirmier Carly. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.1.2.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.1.2.02.jpg 
+
+
+2- Le Shogunka n'est pas partageur, il n'accepte pas de faire un don du sang ... Il va vous falloir aller le chercher. Il apparait plusieurs fois avec des clones qui frappent aussi fort mais qui n'ont pas la même endurance. Une fois Shogunka calmé, l'infirmier Urluc ira récupérer un peu de sang. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.1.2.03.jpg 
+
+3- Retournez voir Dumont d'Urville pour lui remettre le sang, il vous proposera de rencontrer Ursula Hapoi qui s'occupe justement du matériel pour descendre dans les profondeurs d'un monde sous-marin, celui de Sidon. 
+
+
+==<p><em>Fin de la quête : Le Sang de Shogunka</em>==
+Guide par Aerie PinkPanther
+
+</p>
