@@ -3,38 +3,38 @@
 =5.2.2.1- A la recherche des larves de Kargah=
 
 
-<p>*Quête* :<em>A la recherche des larves de Kargah</em> </p>
-<p>*Pré-requis* : 5.2.1.4- Le Coeur de Sidon / 9.1- La Lime du Torn-Thalas </p>
+<p>*QuÃªte* :<em>A la recherche des larves de Kargah</em> </p>
+<p>*PrÃ©-requis* : 5.2.1.4- Le Coeur de Sidon / 9.1- La Lime du Torn-Thalas </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Il est temps de rapporter le dernier ingrédient du remède ! Ce sont les larves de Kargah, il va falloir se rendre dans cette contrée pour en prélever quelques unes. 
+Il est temps de rapporter le dernier ingrÃ©dient du remÃ¨de ! Ce sont les larves de Kargah, il va falloir se rendre dans cette contrÃ©e pour en prÃ©lever quelques unes. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez vous rendre dans le désert de Kargah, mais cette région est sous pression des assauts repétés des forces gobelaines de Terkish. Il vous faut avant tout s'engager dans les chevaliers d'Arsinoé pour repousser les gobelins de la lime du Torn Thalas. Il vous faut donc avoir participé à cette mission auparavant : <a href="9.1.php">La Lime du Torn-Thalas</a>. Depuis le village de Nèsos poursuivez vers l'Ouest. 
+1- Vous devez vous rendre dans le dÃ©sert de Kargah, mais cette rÃ©gion est sous pression des assauts repÃ©tÃ©s des forces gobelaines de Terkish. Il vous faut avant tout s'engager dans les chevaliers d'ArsinoÃ© pour repousser les gobelins de la lime du Torn Thalas. Il vous faut donc avoir participÃ© Ã  cette mission auparavant : <a href="9.1.php">La Lime du Torn-Thalas</a>. Depuis le village de NÃ¨sos poursuivez vers l'Ouest. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.1.09.jpg 
 
 
-2- Vous arrivez dans le désert, du sable à perte de vue, aucun repère ... il va vous falloir explorer la carte pour découvrir des sorties, sachant que certaines ne mènent nulle part. 
+2- Vous arrivez dans le dÃ©sert, du sable Ã  perte de vue, aucun repÃ¨re ... il va vous falloir explorer la carte pour dÃ©couvrir des sorties, sachant que certaines ne mÃ¨nent nulle part. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.2.1.01.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.2.1.02.jpg 
 
-3- Selon le chemin emprunté vous arriverez à l'Oasis de Siwah ou au Temple de Pétosiris. Vous trouverez des survivants de la I Légion à Pétosiris (ars_fild49) qui résistent aux gobelins, depuis cette place vous pouvez enfin entrer dans le temple de Pétosiris. 
+3- Selon le chemin empruntÃ© vous arriverez Ã  l'Oasis de Siwah ou au Temple de PÃ©tosiris. Vous trouverez des survivants de la I LÃ©gion Ã  PÃ©tosiris (ars_fild49) qui rÃ©sistent aux gobelins, depuis cette place vous pouvez enfin entrer dans le temple de PÃ©tosiris. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.2.1.03.jpg 
 
 
 
-==<p><em>Fin de la quête : A la recherche des larves de Kargah</em>==
+==<p><em>Fin de la quÃªte : A la recherche des larves de Kargah</em>==
 Guide par Aerie PinkPanther
 
 </p>
