@@ -1,51 +1,51 @@
 #sidebar Sommaire
 
-=3.2.2- Le Monastère d'Harpocrate=
+=3.2.2- Le MonastÃ¨re d'Harpocrate=
 
 
-<p>*Quête* :<em>Le Monastère d'Harpocrate</em> </p>
-<p>*Pré-requis* : 3.2.1- La Tour des Etoiles / 2.4- Les faux-papiers pour Arsinoé </p>
+<p>*QuÃªte* :<em>Le MonastÃ¨re d'Harpocrate</em> </p>
+<p>*PrÃ©-requis* : 3.2.1- La Tour des Etoiles / 2.4- Les faux-papiers pour ArsinoÃ© </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Le Bouclier d'Harpocrate, artefact très puissant a été volé. Après avoir été orienté sur une fausse piste avec le Nachtstern et la tour des Etoiles, le Clerc Graivois oriente désormais son enquête vers l'Académie d'Harpocrate dans la cité d'Arsinoé. 
+Le Bouclier d'Harpocrate, artefact trÃ¨s puissant a Ã©tÃ© volÃ©. AprÃ¨s avoir Ã©tÃ© orientÃ© sur une fausse piste avec le Nachtstern et la tour des Etoiles, le Clerc Graivois oriente dÃ©sormais son enquÃªte vers l'AcadÃ©mie d'Harpocrate dans la citÃ© d'ArsinoÃ©. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez vous rendre à l'Académie d'Harpocrate à Arsinoé. (ars_fild22,290,162) Dans le hall d'entrée Ribald vous attend, il vous donnera de précieux conseils pour enquêter sans être inquiété par les gardes de l'Académie. 
+1- Vous devez vous rendre Ã  l'AcadÃ©mie d'Harpocrate Ã  ArsinoÃ©. (ars_fild22,290,162) Dans le hall d'entrÃ©e Ribald vous attend, il vous donnera de prÃ©cieux conseils pour enquÃªter sans Ãªtre inquiÃ©tÃ© par les gardes de l'AcadÃ©mie. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.2.2.01.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.2.2.02.jpg 
 
 
-2- Dans la salle d'audience vous trouverez l'Abbé Rosalite ainsi que son conseiller Tonsuret. Ils seront déçus que vous n'avez pas pu trouver le Heaume d'Harpocrate ... Tonsuret vous accusera de complicité avec le NachtStern ! Il semble que vous ne soyez pas les bienvenus. 
+2- Dans la salle d'audience vous trouverez l'AbbÃ© Rosalite ainsi que son conseiller Tonsuret. Ils seront dÃ©Ã§us que vous n'avez pas pu trouver le Heaume d'Harpocrate ... Tonsuret vous accusera de complicitÃ© avec le NachtStern ! Il semble que vous ne soyez pas les bienvenus. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.2.2.03.jpg 
 
-3- Dans les dortoirs vous trouverez d'Arimathie (ars_in04,24,152) qui vous confirmera que des choses étranges se déroule dans l'Académie. Il vous conseille de fouiller la prison, mais pour cela vous devez trouver où Tonsuret cache les clés. 
+3- Dans les dortoirs vous trouverez d'Arimathie (ars_in04,24,152) qui vous confirmera que des choses Ã©tranges se dÃ©roule dans l'AcadÃ©mie. Il vous conseille de fouiller la prison, mais pour cela vous devez trouver oÃ¹ Tonsuret cache les clÃ©s. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.2.2.04.jpg 
 
-4- Les clés de la prison se situent dans un bureau (ars_in04,157,69), partez ensuite vers l'entrée de la prison depuis les dortoirs. Et surprise, vous trouvez de nombreux moines dans la prison qui vous parlent de Doppelganger ... des monstres qui prennent l'apparence de leur victime. 
+4- Les clÃ©s de la prison se situent dans un bureau (ars_in04,157,69), partez ensuite vers l'entrÃ©e de la prison depuis les dortoirs. Et surprise, vous trouvez de nombreux moines dans la prison qui vous parlent de Doppelganger ... des monstres qui prennent l'apparence de leur victime. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.2.2.05.jpg 
 
-5- Vous y trouverez le vrai Tonsuret ! Parlez-lui et il vous proposera de combattre les Doppelgangers. L'Instance de l'Assaut sur l'Académie débutera vous devez vous débarasser des doppelgangers qui ont pris l'apparence des moines. Lorsque vous tuez Ismail le Fourbe, Tonsuret vous ouvrira un Portail dans la salle du Trône.  
+5- Vous y trouverez le vrai Tonsuret ! Parlez-lui et il vous proposera de combattre les Doppelgangers. L'Instance de l'Assaut sur l'AcadÃ©mie dÃ©butera vous devez vous dÃ©barasser des doppelgangers qui ont pris l'apparence des moines. Lorsque vous tuez Ismail le Fourbe, Tonsuret vous ouvrira un Portail dans la salle du TrÃ´ne.  
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.2.2.06.jpg 
 
-6- En bon soldat vous revenez faire votre rapport au Clerc Graivois (ars_fild06), il sera très étonné par la présence de Doppelganger qui coûtent très cher à recruter donc quelqu'un de très puissant et riche a mené cette attaque. Quoiqu'il en soit, il vous manque toujours le Heaume d'Harpocrate qui n'a pas été retrouvé. 
+6- En bon soldat vous revenez faire votre rapport au Clerc Graivois (ars_fild06), il sera trÃ¨s Ã©tonnÃ© par la prÃ©sence de Doppelganger qui coÃ»tent trÃ¨s cher Ã  recruter donc quelqu'un de trÃ¨s puissant et riche a menÃ© cette attaque. Quoiqu'il en soit, il vous manque toujours le Heaume d'Harpocrate qui n'a pas Ã©tÃ© retrouvÃ©. 
 
 
-==<p><em>Fin de la quête : Le Monastère d'Harpocrate</em>==
+==<p><em>Fin de la quÃªte : Le MonastÃ¨re d'Harpocrate</em>==
 Guide par Aerie PinkPanther
 
 </p>
