@@ -1,157 +1,157 @@
 #labels Featured
 =Arsinoé Guide=
 
-==<a href="http://code.google.com/p/aerie-pinkpanther/wiki/PageName">Summary</a>==
+==<a href="http://code.google.com/p/aerie-pinkpanther/wiki/Sommaire">Summary</a>==
 
-<font size="+3"><h2>Table of Contents</h2></font>
+<font size="+3"><h2>Table des Matières</h2></font>
 
 <h1>I- Introduction</h1>
-		1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction">Urunesti Vision</a>
+		1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/Introduction">La Vision d'Urunesti</a>
 
-<h1>II- On road to Arsinoé</h1>
+<h1>II- Accès à Arsinoé</h1>
 	<ul class="head-menu">
-		<li>2.1- <a href="en/2.1.php">In depature to Coppalana</a></li>
-		<li>2.2- <a href="en/2.2.php">The Boitata quest</a></li>
-		<li>2.3- <a href="en/2.3.php">Undead Rising in Kiman Farès</a></li>
-		<li>2.4- <a href="en/2.4.php">The false papers for Arsinoé</a></li>
+		<li>2.1- <a href="en/2.1.php">Du départ à l'arrivée à Coppalana</a></li>
+		<li>2.2- <a href="en/2.2.php">La quête de Boitata</a></li>
+		<li>2.3- <a href="en/2.3.php">Le Réveil des Morts de Kiman Farès</a></li>
+		<li>2.4- <a href="en/2.4.php">Les faux-papiers pour Arsinoé</a></li>
 	</ul>
 
-<h1>III- Title of Inquisitor of Arsinoé</h1>
+<h1>III- Le Titre d'Inquisiteur de l'Arsinoé</h1>
 
-		3.1- Danifae's Children
+		3.1- Les Enfants de Danifae
 	<ul class="head-menu">
-		<li>3.1.1 - <a href="en/3.1.1.php">The Caves of Triplets</a></li>
-		<li>3.1.2 - <a href="en/3.1.2.php">Looking for Prophet Tzangue</a></li>
+		<li>3.1.1 - <a href="en/3.1.1.php">Les Grottes des Triplés</a></li>
+		<li>3.1.2 - <a href="en/3.1.2.php">A la recherche du Prophète Tzangue</a></li>
 	</ul>
-		3.2- Harpocrate's Cult
+		3.2- Le Culte d'Harpocrate
 	<ul class="head-menu">
-		<li>3.2.1- <a href="en/3.2.1.php">The Stars Tower</a></li>
-		<li>3.2.2- <a href="en/3.2.2.php">Monastery of Harpocrate</a></li>
+		<li>3.2.1- <a href="en/3.2.1.php">La Tour des Etoiles</a></li>
+		<li>3.2.2- <a href="en/3.2.2.php">Le Monastère d'Harpocrate</a></li>
 	</ul>
-		3.3- Birth of Lalibela
+		3.3- La Naissance de Lalibela
 	<ul class="head-menu">
-		<li>3.3.1- <a href="en/3.3.1.php">Disappearance of the Holy Family</a></li>
-		<li>3.3.2- <a href="en/3.3.2.php">The Birth</a></li>
+		<li>3.3.1- <a href="en/3.3.1.php">La Disparition de la Sainte Famille</a></li>
+		<li>3.3.2- <a href="en/3.3.2.php">La Naissance</a></li>
 	</ul>
 		3.4- <a href="en/3.4.php">Agathon Paraclet</a>
 
-<h1>IV- The title of Hero of Arsinoe</h1>
+<h1>IV- Le Titre d'Héros d'Arsinoé</h1>
 
-		4.1- Wizards of Arsinoé
+		4.1- Les Mages d'Arsinoé
 	<ul class="head-menu">
-		<li>4.1.1- <a href="en/4.1.1.php">The Apprentice of Mage Gawëlle</a></li>
-		<li>4.1.2- <a href="en/4.1.2.php">The Dragon of Gondar</a></li>
-		<li>4.1.3- <a href="en/4.1.3.php">Sages Meeting</a></li>
+		<li>4.1.1- <a href="en/4.1.1.php">L'Apprenti de la Mage Gawëlle</a></li>
+		<li>4.1.2- <a href="en/4.1.2.php">Le Dragon de Gondar</a></li>
+		<li>4.1.3- <a href="en/4.1.3.php">Réunion des sages</a></li>
 	</ul>
 
-		4.2 - <a href="en/4.2.php">Light Citadel</a> (Shandalar fight)
+		4.2 - <a href="en/4.2.php">La Citadelle de la Lumière</a> (Combat contre Shandalar)
 
-<h1>V- The title of Divinity Arsinoe</h1>
+<h1>V- Le Titre de Divinité d'Arsinoé</h1>
 
-		5.1- <a href="en/5.1.php">On our way back home : Urunesti</a>
+		5.1- <a href="en/5.1.php">Retour en Urunesti</a>
 
-		5.2- Title of Doctor of Urunesti
+		5.2- Titre de Médecin d'Urunesti
 	<ul class="head-menu">
-		<li>5.2.1- The remedy against lycanthropy</li>
+		<li>5.2.1- Le remède contre la lycanthropie</li>
 			<ul class="head-menu">	
-				<li>5.2.1.1- <a href="en/5.2.1.1.php">On Road to Urunesti</a></li>
-				<li>5.2.1.2- <a href="en/5.2.1.2.php">Shogunka Blood</a></li>
-				<li>5.2.1.3- <a href="en/5.2.1.3.php">On road to Sidon !</a></li>
-				<li>5.2.1.4- <a href="en/5.2.1.4.php">Sidon's Heart</a></li>
+				<li>5.2.1.1- <a href="en/5.2.1.1.php">En route vers Urunesti</a></li>
+				<li>5.2.1.2- <a href="en/5.2.1.2.php">Le Sang de Shogunka</a></li>
+				<li>5.2.1.3- <a href="en/5.2.1.3.php">En route vers Sidon !</a></li>
+				<li>5.2.1.4- <a href="en/5.2.1.4.php">Le Coeur de Sidon</a></li>
 			</ul>
 
-		<li>5.2.2- Pétosiris Temple</li>
+		<li>5.2.2- Le Temple de Pétosiris</li>
 			<ul class="head-menu">
-				<li>5.2.2.1- <a href="en/5.2.2.1.php">Looking for larvas of Kargah</a></li>
-				<li>5.2.2.2- <a href="en/5.2.2.2.php">Djoser's corpse</a></li>
-				<li>5.2.2.3- <a href="en/5.2.2.3.php">The bowels of the Temple</a></li>
+				<li>5.2.2.1- <a href="en/5.2.2.1.php">A la recherche des larves de Kargah</a></li>
+				<li>5.2.2.2- <a href="en/5.2.2.2.php">Le Corps de Djoser</a></li>
+				<li>5.2.2.3- <a href="en/5.2.2.3.php">Les Entrailles du Temple</a></li>
 			</ul>
 	</ul>
 
-5.3- <a href="en/5.3.php">Dynahéir and the Gnoll Fortress</a>
+5.3- <a href="en/5.3.php">Dynahéir et la Forteresse Gnoll</a>
 
 5.4- Abyss
 
 	<ul class="head-menu">
-		<li>5.4.1- <a href="en/5.4.1.php">Portal of Abyss</a></li>
-		<li>5.4.2- <a href="en/5.4.2.php">The Descent into Abyss</a></li>
-		<li>5.4.3- <a href="en/5.4.3.php">Final Fight</a> (Fenrir)</li>	
+		<li>5.4.1- <a href="en/5.4.1.php">Le Portail des Abysses</a></li>
+		<li>5.4.2- <a href="en/5.4.2.php">La Descente aux enfers</a></li>
+		<li>5.4.3- <a href="en/5.4.3.php">La Descente aux enfers</a> (Fenrir)</li>	
 	</ul>
 
 <h1>VI- La Rana</h1>
 
-		6.1- The Title of Liberator La Rana
+		6.1- Le Titre de Libérateur de La Rana
 	<ul class="head-menu">
-		<li>6.1.1- <a href="en/6.1.1.php">Colonists of La Rana</a></li>
+		<li>6.1.1- <a href="en/6.1.1.php">Les Colons de La Rana</a></li>
 		<li>6.1.2- <a href="en/6.1.2.php">Dian Bian Fût</a></li>
-		<li>6.1.3- <a href="en/6.1.3.php">La Rana Arena</a></li>
+		<li>6.1.3- <a href="en/6.1.3.php">Les Arènes de La Rana</a></li>
 	</ul>
 
-		6.2- <a href="en/6.2.php">Title of Gladiator</a>
+		6.2- <a href="en/6.2.php">Le Titre de Gladiateur</a>
 
 <h1>VII- Underdark</h1>
 
-		7.1- <a href="en/7.1.php">Destination Hylarheim</a>
+		7.1- <a href="en/7.1.php">Vers l'Hylarheim</a>
 
-		7.2- <a href="en/7.2.php">Storm Fort</a>
+		7.2- <a href="en/7.2.php">Le Fort Orage</a>
 
-		7.3- <a href="en/7.3.php">To the City of Underdark</a>
+		7.3- <a href="en/7.3.php">Vers la Cité d'Ombreterre</a>
 
-		7.4- <a href="en/7.4.php">Da'Urdein Insurrection</a>
+		7.4- <a href="en/7.4.php">L'insurrection de Da'Urdein</a>
 
-		7.5- <a href="en/7.5.php">Planar Sphere</a>
+		7.5- <a href="en/7.5.php">La Sphère Planaire</a>
 
 
 <h1>VIII- Néraka</h1>
 
-		8.1- <a href="en/8.1.php">On road to Néraka</a>
+		8.1- <a href="en/8.1.php">Vers la Cité de Néraka</a>
 
-		8.2- Title of Condotierre
+		8.2- Le Titre de Grand Condottiere
 	<ul class="head-menu">
 		<li>8.2.1- <a href="en/8.2.1.php">Champ de Mars</a></li>
 		<li>8.2.2- <a href="en/8.2.2.php">Baron Sengir</a></li>
-		<li>8.2.3- <a href="en/8.2.3.php">Ice Delivry</a></li>
+		<li>8.2.3- <a href="en/8.2.3.php">La Livraison de Glace</a></li>
 		<li>8.2.4- <a href="en/8.2.4.php">The Eagle's Nest</a></li>
 		<li>8.2.5- <a href="en/8.2.5.php">Fronde</a></li>
 		<li>8.2.6- <a href="en/8.2.6.php">Mines</a></li>
 	</ul>
 
-<h1>IX- Kargah Desert</h1>
+<h1>IX- Le désert de Kargah</h1>
 
-		9.1- <a href="en/9.1.php">The Lime of Torn-Thalas</a>
+		9.1- <a href="en/9.1.php">La Lime du Torn-Thalas</a>
 
-		9.2- <a href="en/9.2.php">Siwah Oasis</a>
+		9.2- <a href="en/9.2.php">L'Oasis de Siwah</a>
 
-		9.3- <a href="en/9.3.php">Terkish Citadel</a>
+		9.3- <a href="en/9.3.php">La Citadelle de Terkish</a>
 
 
-<h1>X- Other Titles :</h1>
+<h1>X- Les Autres Titres :</h1>
 
-10.1- <a href="en/10.1.php">Title of Magnate of Arsinoé</a>
+10.1- <a href="en/10.1.php">Titre de Magnat d'Arsinoé</a>
 
-10.2- <a href="en/10.2.php">Title of Explorator of Arsinoé</a>
+10.2- <a href="en/10.2.php">Titre d'Explorateur d'Arsinoé</a>
 
-10.3- <a href="en/10.3.php">Title of Fisherman of Arsinoé</a>
+10.3- <a href="en/10.3.php">Titre de Pêcheur d'Arsinoé</a>
 
-<h1>XI- Quests :</h1>
+<h1>XI- Quêtes Annexes :</h1>
 
-11.1- <a href="en/11.1.php">Rail Company</a>
+11.1- <a href="en/11.1.php">La Compagnie Ferroviaire</a>
 
-11.2- Bourgmestre of Euhéméria
+11.2- Le Bourgmestre d'Euhéméria
 	<ul class="head-menu">
-		<li>11.2.1- <a href="en/11.2.1.php">The Bandits Bacchias</a></li>
-		<li>11.2.2- <a href="en/11.2.2.php">Traïana Lighthouse</a></li>
-		<li>11.2.3- <a href="en/11.2.3.php">Smugglers</a></li>
+		<li>11.2.1- <a href="en/11.2.1.php">Les Bandits d'Euhéméria</a></li>
+		<li>11.2.2- <a href="en/11.2.2.php">Le Phare de Traïana</a></li>
+		<li>11.2.3- <a href="en/11.2.3.php">Les Contrebandiers</a></li>
 	</ul>
 
-11.3- <a href="en/11.3.php">The Plant of Desert</a>
+11.3- <a href="en/11.3.php">La Plante du désert</a>
 
-11.4- <a href="en/11.4.php">Village Party</a>
+11.4- <a href="en/11.4.php">La Fête du Village</a>
 
-11.5- <a href="en/11.5.php">Tarine's cry</a>
+11.5- <a href="en/11.5.php">Les Pleurs de Tarine</a>
 
-11.6- <a href="en/11.6.php">Zombies</a>
+11.6- <a href="en/11.6.php">Les Zombies d'Arsinoé</a>
 
-11.7- <a href="en/11.7.php">Missing Sailors</a>
+11.7- <a href="en/11.7.php">Les Marins Disparus</a>
 
-11.8- <a href="en/11.8.php">Missionairies of UnderDark</a>
+11.8- <a href="en/11.8.php">Les Missionaires de l'OmbreTerre</a>
