@@ -3,34 +3,34 @@
 =5.1- Retour en Urunesti=
 
 
-<p>*Quête* :<em>Retour en Urunesti</em> </p>
-<p>*Pré-requis* : 4.2 - La Citadelle de la Lumière</p>
+<p>*QuÃªte* :<em>Retour en Urunesti</em> </p>
+<p>*PrÃ©-requis* : 4.2 - La Citadelle de la LumiÃ¨re</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Il est décidé que le combat continuera depuis Urunesti, votre ville natale. Il est encore possible d'empêcher le Ragnarök mais pour cela il va falloir préparer une descente dans les Abysses pour y détruire Fenrir qui rassemble ses forces en vu de détruire les mondes de l'Yggdrasil. 
+Il est dÃ©cidÃ© que le combat continuera depuis Urunesti, votre ville natale. Il est encore possible d'empÃªcher le RagnarÃ¶k mais pour cela il va falloir prÃ©parer une descente dans les Abysses pour y dÃ©truire Fenrir qui rassemble ses forces en vu de dÃ©truire les mondes de l'Yggdrasil. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez rencontrer Joka l'éclairé qui héberge les résistants à Urunesti. Il vous mènera dans la salle de réunion pour choisir le meilleur moyen d'arrêter le Ragnarök. 
+1- Vous devez rencontrer Joka l'Ã©clairÃ© qui hÃ©berge les rÃ©sistants Ã  Urunesti. Il vous mÃ¨nera dans la salle de rÃ©union pour choisir le meilleur moyen d'arrÃªter le RagnarÃ¶k. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.01.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.02.jpg 
 
 
-2- Le Portail des Abysses à la Citadelle de la Lumière était temporaire. Le Prophète Tzangue vous parle d'un Portail dans le désert de Kargah mais dont la route est difficile, il faut en effet traverser le Temple de Pétosiris qui est toujours scellé par une magie ancienne. Une exploratrice pourrait vous aider, Ursula Hapoi, hélas elle est très bornée et n'acceptera pas de vous aider tant qu'elle n'aura pas sauvé Urunesti de l'épidémie de Lycantropie qui y sévit. 
+2- Le Portail des Abysses Ã  la Citadelle de la LumiÃ¨re Ã©tait temporaire. Le ProphÃ¨te Tzangue vous parle d'un Portail dans le dÃ©sert de Kargah mais dont la route est difficile, il faut en effet traverser le Temple de PÃ©tosiris qui est toujours scellÃ© par une magie ancienne. Une exploratrice pourrait vous aider, Ursula Hapoi, hÃ©las elle est trÃ¨s bornÃ©e et n'acceptera pas de vous aider tant qu'elle n'aura pas sauvÃ© Urunesti de l'Ã©pidÃ©mie de Lycantropie qui y sÃ©vit. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.03.jpg 
 
-3- Si vous n'avez toujours pas reçu le Titre de Médecin de l'Arsinoé vous devez vous adressez à Spiria Symphonia qui recherche à Arsinoé des mercenaires pour lever l'épidémie qui sème la mort en Urunesti. 
+3- Si vous n'avez toujours pas reÃ§u le Titre de MÃ©decin de l'ArsinoÃ© vous devez vous adressez Ã  Spiria Symphonia qui recherche Ã  ArsinoÃ© des mercenaires pour lever l'Ã©pidÃ©mie qui sÃ¨me la mort en Urunesti. 
 
 
-==<p><em>Fin de la quête : Retour en Urunesti</em>==
+==<p><em>Fin de la quÃªte : Retour en Urunesti</em>==
 Guide par Aerie PinkPanther
 
 </p>
