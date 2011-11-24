@@ -3,19 +3,19 @@
 =8.2.4- Le Nid de l'aigle=
 
 
-<p>*Quête* :<em>Le Nid de l'aigle</em> </p>
-<p>*Pré-requis* : 8.2.3- La Livraison de Glace </p>
+<p>*QuÃªte* :<em>Le Nid de l'aigle</em> </p>
+<p>*PrÃ©-requis* : 8.2.3- La Livraison de Glace </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Vous êtes désormais un mercenaire de Néraka, vous allez devoir faire votre réputation en remplissant des missions diverses et variées au Hall des Mercenaires. 
+Vous Ãªtes dÃ©sormais un mercenaire de NÃ©raka, vous allez devoir faire votre rÃ©putation en remplissant des missions diverses et variÃ©es au Hall des Mercenaires. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Pour chaque début de mission vous devez lire les annonces au panneau des missions. Votre troisième mission est celle du Nid de l'Aigle, vous devez vous rendre dans la demeure du Comte de Nemours qui ne répond plus aux appels de son Roi qui craint une traîtrise de sa part. 
+1- Pour chaque dÃ©but de mission vous devez lire les annonces au panneau des missions. Votre troisiÃ¨me mission est celle du Nid de l'Aigle, vous devez vous rendre dans la demeure du Comte de Nemours qui ne rÃ©pond plus aux appels de son Roi qui craint une traÃ®trise de sa part. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.01.jpg 
@@ -27,26 +27,26 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.0
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.4.01.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.4.02.jpg 
 
-3- Commencez tout d'abord par vider la première salle pour ouvrir le grand portail. 
+3- Commencez tout d'abord par vider la premiÃ¨re salle pour ouvrir le grand portail. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.4.03.jpg 
 
-4- Une deuxième salle vous attend, en battant les gardes et Mages Gris défendant le Comte de Nemours, celui-ci reconnaitra sa défaite et vous donnera son livre de compte. Il doit être jugé par le Roi Baudouin, retournez dans la salle d'audience royale pour assister à l'interrogatoire. 
+4- Une deuxiÃ¨me salle vous attend, en battant les gardes et Mages Gris dÃ©fendant le Comte de Nemours, celui-ci reconnaitra sa dÃ©faite et vous donnera son livre de compte. Il doit Ãªtre jugÃ© par le Roi Baudouin, retournez dans la salle d'audience royale pour assister Ã  l'interrogatoire. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.4.04.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.4.05.jpg 
 
-5- Le Roi et ses principaux conseillers sont réunis dans la salle pour juger le Comte de Nemours. Celui-ci est devenu un Noble-Mage avec l'aide de Shandalar, ses comptes montrent qu'il entretient une forte milice sur de l'argent détourné à la couronne. Le Comte se téléporte au loin en annonçant l'imminente attaque sur Néraka par ses troupes ! 
+5- Le Roi et ses principaux conseillers sont rÃ©unis dans la salle pour juger le Comte de Nemours. Celui-ci est devenu un Noble-Mage avec l'aide de Shandalar, ses comptes montrent qu'il entretient une forte milice sur de l'argent dÃ©tournÃ© Ã  la couronne. Le Comte se tÃ©lÃ©porte au loin en annonÃ§ant l'imminente attaque sur NÃ©raka par ses troupes ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.4.06.jpg 
 
-6- Retournez voir Tivias Ranalc'h dans le Hall des Mercenaires pour lui annoncer le danger qui pèse sur Néraka. Il acceptera d'aider la couronne, retournez voir le Tableau des Missions. 
+6- Retournez voir Tivias Ranalc'h dans le Hall des Mercenaires pour lui annoncer le danger qui pÃ¨se sur NÃ©raka. Il acceptera d'aider la couronne, retournez voir le Tableau des Missions. 
 
 
-==<p><em>Fin de la quête : Le Nid de l'aigle</em>==
+==<p><em>Fin de la quÃªte : Le Nid de l'aigle</em>==
 Guide par Aerie PinkPanther
 
 </p>
