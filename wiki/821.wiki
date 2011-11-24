@@ -3,43 +3,43 @@
 =8.2.1- Le Champ de Mars=
 
 
-<p>*Quête* :<em>Le Champ de Mars</em> </p>
-<p>*Pré-requis* : 2.4- Les faux-papiers pour Arsinoé / 8.1- Vers la Cité de Néraka </p>
+<p>*QuÃªte* :<em>Le Champ de Mars</em> </p>
+<p>*PrÃ©-requis* : 2.4- Les faux-papiers pour ArsinoÃ© / 8.1- Vers la CitÃ© de NÃ©raka </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Dans les Monts Bacchias se situe la région de Néraka, un royaume indépendant accueillant peu de visiteurs à cause de son isolement. Cette Cité est spécialisée dans la métallurgie et est un acteur principal dans la production d'armes en Arsinoé. Ses mercenaires sont aussi très réputés dans le continent pour leur force et leur bravoure. 
+Dans les Monts Bacchias se situe la rÃ©gion de NÃ©raka, un royaume indÃ©pendant accueillant peu de visiteurs Ã  cause de son isolement. Cette CitÃ© est spÃ©cialisÃ©e dans la mÃ©tallurgie et est un acteur principal dans la production d'armes en ArsinoÃ©. Ses mercenaires sont aussi trÃ¨s rÃ©putÃ©s dans le continent pour leur force et leur bravoure. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez rendre visite au Roi Baudouin de Néraka pour avoir l'autorisation de pratiquer le mercenariat. Vous pouvez désormais vous rendre au centre de recrutement situé au sud-ouest du Val de Bise (ars_fild53).  
+1- Vous devez rendre visite au Roi Baudouin de NÃ©raka pour avoir l'autorisation de pratiquer le mercenariat. Vous pouvez dÃ©sormais vous rendre au centre de recrutement situÃ© au sud-ouest du Val de Bise (ars_fild53).  
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.1.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.1.02.jpg
 
 
-2- Vous devez rencontrer Tivias Ranalc'h dans son domaine. Vous devez relever son défi pour devenir mercenaire en réussissant l'épreuve du Champ de Mars. 
+2- Vous devez rencontrer Tivias Ranalc'h dans son domaine. Vous devez relever son dÃ©fi pour devenir mercenaire en rÃ©ussissant l'Ã©preuve du Champ de Mars. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.1.03.jpg
 
-3- L'Epreuve du Champ de Mars se déroule dans le Hall des Mercenaires, pour cela vous devez parler à Ellina. Il va vous falloir quelques amis ... pour résister aux 50 rounds ... ne sortez pas avant ! 
+3- L'Epreuve du Champ de Mars se dÃ©roule dans le Hall des Mercenaires, pour cela vous devez parler Ã  Ellina. Il va vous falloir quelques amis ... pour rÃ©sister aux 50 rounds ... ne sortez pas avant ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.1.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.1.05.jpg
 
-4- Vous pouvez désormais rendre visite au tableau des missions pour gagner de l'argent et de la réputation parmi les mercenaires de Néraka ! 
+4- Vous pouvez dÃ©sormais rendre visite au tableau des missions pour gagner de l'argent et de la rÃ©putation parmi les mercenaires de NÃ©raka ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.1.06.jpg
 
 
-==<p><em>Fin de la quête : Le Champ de Mars</em>==
+==<p><em>Fin de la quÃªte : Le Champ de Mars</em>==
 Guide par Aerie PinkPanther
 
 </p>
