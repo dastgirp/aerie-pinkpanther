@@ -3,32 +3,32 @@
 =8.2.2- Le Baron Sengir=
 
 
-<p>*Quête* :<em>Le Baron Sengir</em> </p>
-<p>*Pré-requis* : 8.2.1- Le Champ de Mars </p>
+<p>*QuÃªte* :<em>Le Baron Sengir</em> </p>
+<p>*PrÃ©-requis* : 8.2.1- Le Champ de Mars </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Vous êtes désormais un mercenaire de Néraka, vous allez devoir faire votre réputation en remplissant des missions diverses et variées au Hall des Mercenaires. 
+Vous Ãªtes dÃ©sormais un mercenaire de NÃ©raka, vous allez devoir faire votre rÃ©putation en remplissant des missions diverses et variÃ©es au Hall des Mercenaires. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Pour chaque début de mission vous devez lire les annonces au panneau des missions. Votre première mission est celle du Baron Sengir, un ancien proche du Roi Baudouin. Mais il a trahi la couronne en emportant avec lui de nombreuses richesses et vit désormais en Arsinoé. Vous devez vous occuper de son cas. 
+1- Pour chaque dÃ©but de mission vous devez lire les annonces au panneau des missions. Votre premiÃ¨re mission est celle du Baron Sengir, un ancien proche du Roi Baudouin. Mais il a trahi la couronne en emportant avec lui de nombreuses richesses et vit dÃ©sormais en ArsinoÃ©. Vous devez vous occuper de son cas. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.01.jpg 
 
 
-2- Le Baron Sengir habite dans la Cité d'Arsinoé, rentrez chez lui pour récupérer l'argent du Roi de Néraka. Il lâchera dès lors les chiens sur vous. Une fois l'affaire réglée prenez la tête du baron et retournez au Hall des Mercenaires pour recevoir votre prime. 
+2- Le Baron Sengir habite dans la CitÃ© d'ArsinoÃ©, rentrez chez lui pour rÃ©cupÃ©rer l'argent du Roi de NÃ©raka. Il lÃ¢chera dÃ¨s lors les chiens sur vous. Une fois l'affaire rÃ©glÃ©e prenez la tÃªte du baron et retournez au Hall des Mercenaires pour recevoir votre prime. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.02.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.03.jpg 
 
 
-==<p><em>Fin de la quête : Le Baron Sengir</em>==
+==<p><em>Fin de la quÃªte : Le Baron Sengir</em>==
 Guide par Aerie PinkPanther
 
 </p>
