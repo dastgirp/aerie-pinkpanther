@@ -1,0 +1,44 @@
+#sidebar Sommaire
+
+=8.1- Vers la Cité de Néraka=
+
+
+<p>*Quête* :<em>Vers la Cité de Néraka</em> </p>
+<p>*Pré-requis* : 2.2- La quête de Boitata </p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span></p>==
+
+Dans les Monts Bacchias se situe la région de Néraka, un royaume indépendant accueillant peu de visiteurs à cause de son isolement. Cette Cité est spécialisée dans la métallurgie et est un acteur principal dans la production d'armes en Arsinoé. Ses mercenaires sont aussi très réputés dans le continent pour leur force et leur bravoure. 
+
+
+==<p>Déroulement</p>== 
+
+1- Même s'il vous est difficile de vous y rendre dès votre arrivée en Arsinoé, vous pouvez vous y rendre. Pour cela prenez la route du Lac Crystalmir, en parlant au Batelier choisissez la destination des Tours Violettes (ars_fild51). Vous entrerez dès lors dans la région de Néraka. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.1.01.jpg 
+
+
+2- Vous arrivez dans la région de l'Envol de l'Aiglon, en escaladant la montagne vous arriverez près d'une demeure, celle de Sven Van Motten, loueur de gryphon. Il vous autorisera à les emprunter pour vous rendre à Néraka. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.1.02.jpg 
+
+3- Vous voilà chevauchant votre gryphon dans différentes régions du Royaume de Néraka. Prenez la route du Nord-Ouest pour déboucher sur la Porte de Néraka. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.1.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.1.04.jpg 
+
+4- En entrant dans la porte vous serez enfin dans la Cité de Néraka. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.1.05.jpg 
+
+
+==<p><em>Fin de la quête : Vers la Cité de Néraka</em>==
+Guide par Aerie PinkPanther
+
+</p>

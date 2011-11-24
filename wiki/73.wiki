@@ -1,0 +1,45 @@
+#sidebar Sommaire
+
+=7.3- Vers la cité d'Ombreterre=
+
+
+<p>*Quête* :<em>Vers la cité d'Ombreterre</em> </p>
+<p>*Pré-requis* : 7.2- Le Fort Orage </p>
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span></p>==
+
+Vous avez obtenu un collier permettant d'entrer dans les profondeurs d'OmbreTerre. Il est temps de demander des comptes aux autorités de Da'Urdein concernant l'attaque du Fort Orage. 
+
+
+==<p>Déroulement</p>== 
+
+1- Du Village d'Hylarheim vous devez retourner dans la Grotte des Hylars (ars_fild32). Prenez la route du Sud-Est pour déboucher au Pont Menzobaren, pont marquant la séparation entre les terres controlées par les Da'Urdein et les zones franches de l'OmbreTerre. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.3.01.jpg
+
+
+2- Vous suivez le cours du Léthé (ars_fild39) jusqu'à arriver à un passeur qui vous proposera de vous emmener jusqu'à la cité de Da'Urdein. Mais, il ne vous laissera passer qu'à une seule condition. Il souhaite que vous lui apportiez la Perle Noire de Port Sirène. Elle est aux mains de Ladonnaï, une sirène dont il était éperdument amoureux ... et cette perle était le gage de son amour. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.3.02.jpg
+
+3- Poursuivez vers l'Ouest pour arriver dans les Soupirs de Morloc'h (ars_fild37), en continuant vers l'Ouest vous finirez pas y trouver une sortie et vous aboutirez au Port-Sirène (ars_fild36). 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.3.03.jpg
+
+4- Ladonnaï vit dans sa grotte, dès qu'elle comprendra que vous venez pour sa perle, elle vous attaquera sans coup férir. Après quelques arguments, elle finira par vous donner la perle mais jurera de la reprendre un jour. 
+
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.3.04.jpg
+
+5- Le Passeur sera fort content de revoir sa perle. Il vous parlera même d'autres humains vivants dans une grotte dans la région du Léthé. Acceptez qu'il vous transporte à Da'Urdein et vous y serez ! 
+
+
+==<p><em>Fin de la quête : Vers la cité d'Ombreterre</em>==
+Guide par Aerie PinkPanther
+
+</p>
