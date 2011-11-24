@@ -1,45 +1,45 @@
 #sidebar Sommaire
 
-=6.1.3- Les Arènes de La Rana=
+=6.1.3- Les ArÃ¨nes de La Rana=
 
 
-<p>*Quête* :<em>Les Arènes de La Rana</em> </p>
-<p>*Pré-requis* : 6.1.2- Dian Bian Fût </p>
+<p>*QuÃªte* :<em>Les ArÃ¨nes de La Rana</em> </p>
+<p>*PrÃ©-requis* : 6.1.2- Dian Bian FÃ»t </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Rana est une région située au Sud d'Arsinoé. Cette région est une grande forêt où vivent les La Rana. Ils étaient autrefois indépendants mais le Roi d'Arsinoé vient de les soumettre il y a de cela quelques années. 
+La Rana est une rÃ©gion situÃ©e au Sud d'ArsinoÃ©. Cette rÃ©gion est une grande forÃªt oÃ¹ vivent les La Rana. Ils Ã©taient autrefois indÃ©pendants mais le Roi d'ArsinoÃ© vient de les soumettre il y a de cela quelques annÃ©es. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Le Batelier Erih vient de vous transporter près de La Rana. Vous allez devoir contacter la Reine de La Rana pour pouvoir négocier la liberation des otages arsinoéens. Elle souhaite la libération de son Pays pour restaurer l'Empire de La Rana. 
+1- Le Batelier Erih vient de vous transporter prÃ¨s de La Rana. Vous allez devoir contacter la Reine de La Rana pour pouvoir nÃ©gocier la liberation des otages arsinoÃ©ens. Elle souhaite la libÃ©ration de son Pays pour restaurer l'Empire de La Rana. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.01.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.02.jpg 
 
 
-2- Vous allez devoir apporter au Roi d'Arsinoé les conditions de la paix offerte par La Rana à Arsinoé. Le Roi avoue son impuissance ... Aucune autre légion ne peut intervenir à La Rana à cause du front du Nord avec les Gobelins. Il souhaite que vous négociez le prix de libération des otages pour que l'accord visant à l'indépendance de La Rana prenne effet. 
+2- Vous allez devoir apporter au Roi d'ArsinoÃ© les conditions de la paix offerte par La Rana Ã  ArsinoÃ©. Le Roi avoue son impuissance ... Aucune autre lÃ©gion ne peut intervenir Ã  La Rana Ã  cause du front du Nord avec les Gobelins. Il souhaite que vous nÃ©gociez le prix de libÃ©ration des otages pour que l'accord visant Ã  l'indÃ©pendance de La Rana prenne effet. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.03.jpg 
 
-3- Retournez voir la Déesse de La Rana, elle acceptera de libérer les otages sans contre partie financière si vous réussissez à la battre dans les arènes de La Rana.  
+3- Retournez voir la DÃ©esse de La Rana, elle acceptera de libÃ©rer les otages sans contre partie financiÃ¨re si vous rÃ©ussissez Ã  la battre dans les arÃ¨nes de La Rana.  
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.04.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.05.jpg 
 
-4- Vous voilà dans les arènes ! Vous devez battre la Déesse pour pouvoir remporter le titre de Libérateur de La Rana ! 
+4- Vous voilÃ  dans les arÃ¨nes ! Vous devez battre la DÃ©esse pour pouvoir remporter le titre de LibÃ©rateur de La Rana ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.06.jpg 
 
 
-==<p><em>Fin de la quête : Les Arènes de La Rana</em>==
+==<p><em>Fin de la quÃªte : Les ArÃ¨nes de La Rana</em>==
 Guide par Aerie PinkPanther
 
 </p>
