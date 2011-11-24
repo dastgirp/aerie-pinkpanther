@@ -1,58 +1,58 @@
 #sidebar Sommaire
 
-=7.5- La Sphère Planaire=
+=7.5- La SphÃ¨re Planaire=
 
 
-<p>*Quête* :<em>La Sphère Planaire</em> </p>
-<p>*Pré-requis* : 7.4- L'insurrection de Da'Urdein </p>
+<p>*QuÃªte* :<em>La SphÃ¨re Planaire</em> </p>
+<p>*PrÃ©-requis* : 7.4- L'insurrection de Da'Urdein </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Svankmajer vient de prendre le contrôle de la ville de Da'Urdein, maintenant il est temps d'aller défaire le Grand Prêtre Rupoldic'h. 
+Svankmajer vient de prendre le contrÃ´le de la ville de Da'Urdein, maintenant il est temps d'aller dÃ©faire le Grand PrÃªtre Rupoldic'h. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Suite à l'insurrection, vous vous retrouvez dans la Sphère Planaire, il va vous falloir poursuivre le Grand Prêtre sur différents plans de la sphère. Vous devez parcourir quatre plans et battre les gardiens du Grand Prêtre pour récupérer des gemmes menant dans le plan personnel de Rupoldic'h. 
+1- Suite Ã  l'insurrection, vous vous retrouvez dans la SphÃ¨re Planaire, il va vous falloir poursuivre le Grand PrÃªtre sur diffÃ©rents plans de la sphÃ¨re. Vous devez parcourir quatre plans et battre les gardiens du Grand PrÃªtre pour rÃ©cupÃ©rer des gemmes menant dans le plan personnel de Rupoldic'h. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.01.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.02.jpg 
 
 
-2- Vous devez premièrement affronter un Thanatos pour récupérer la Gemme Rouge. 
+2- Vous devez premiÃ¨rement affronter un Thanatos pour rÃ©cupÃ©rer la Gemme Rouge. 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.03.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.04.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.05.jpg 
 
-3- Vous devez dans un second temps affronter le Roi Kiasok pour récupérer la Gemme Verte. 
+3- Vous devez dans un second temps affronter le Roi Kiasok pour rÃ©cupÃ©rer la Gemme Verte. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.06.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.07.jpg 
 
-4- Ensuite vous devrez affronter affronter le NachtStern pour récupérer la Gemme Jaune. 
+4- Ensuite vous devrez affronter affronter le NachtStern pour rÃ©cupÃ©rer la Gemme Jaune. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.08.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.09.jpg 
 
-5- Ensuite vous devrez affronter affronter le Ktullanux pour récupérer la Gemme Bleue. 
+5- Ensuite vous devrez affronter affronter le Ktullanux pour rÃ©cupÃ©rer la Gemme Bleue. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.10.jpg 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.11.jpg 
 
-6- Une fois les quatre gemmes en votre possession, vous pourrez entrer dans le plan du Grand Prêtre pour l'affronter. Une fois défait, retournez voir Svankmajer dans la Sphère Plnaire pour obtenir le Titre de Champion de Da'Urdein. Il vous promet aussi d'envoyer une embassade pour s'excuser de l'attaque. 
+6- Une fois les quatre gemmes en votre possession, vous pourrez entrer dans le plan du Grand PrÃªtre pour l'affronter. Une fois dÃ©fait, retournez voir Svankmajer dans la SphÃ¨re Plnaire pour obtenir le Titre de Champion de Da'Urdein. Il vous promet aussi d'envoyer une embassade pour s'excuser de l'attaque. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.5.12.jpg 
 
 
-==<p><em>Fin de la quête : La Sphère Planaire</em>==
+==<p><em>Fin de la quÃªte : La SphÃ¨re Planaire</em>==
 Guide par Aerie PinkPanther
 
 </p>
