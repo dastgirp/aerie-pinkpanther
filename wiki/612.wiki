@@ -1,37 +1,37 @@
 #sidebar Sommaire
 
-=6.1.2- Dian Bian Fût=
+=6.1.2- Dian Bian FÃ»t=
 
 
-<p>*Quête* :<em>Dian Bian Fût</em> </p>
-<p>*Pré-requis* : 6.1.1- Les Colons de La Rana </p>
+<p>*QuÃªte* :<em>Dian Bian FÃ»t</em> </p>
+<p>*PrÃ©-requis* : 6.1.1- Les Colons de La Rana </p>
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Rana est une région située au Sud d'Arsinoé. Cette région est une grande forêt où vivent les La Rana. Ils étaient autrefois indépendants mais le Roi d'Arsinoé vient de les soumettre il y a de cela quelques années. 
+La Rana est une rÃ©gion situÃ©e au Sud d'ArsinoÃ©. Cette rÃ©gion est une grande forÃªt oÃ¹ vivent les La Rana. Ils Ã©taient autrefois indÃ©pendants mais le Roi d'ArsinoÃ© vient de les soumettre il y a de cela quelques annÃ©es. 
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous voilà enfin face au Fort de Dian Bian Fût où est retranché la IV Légion. Les Ranas viennent de faire un barrage faisant augmenter le niveau de l'eau autour du fort rendant une extraction impossible. Vous devez lancer l'instance. 
+1- Vous voilÃ  enfin face au Fort de Dian Bian FÃ»t oÃ¹ est retranchÃ© la IV LÃ©gion. Les Ranas viennent de faire un barrage faisant augmenter le niveau de l'eau autour du fort rendant une extraction impossible. Vous devez lancer l'instance. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.01.jpg 
 
 
-2- Vous devez lever le siège, foncez tout d'abord dans le camp ennemi pour les bouter. vous pourrez ensuite poursuivre votre route vers le barrage. 
+2- Vous devez lever le siÃ¨ge, foncez tout d'abord dans le camp ennemi pour les bouter. vous pourrez ensuite poursuivre votre route vers le barrage. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.02.jpg 
 
-3- La poudre est déjà là, vous devez la faire sauter pour libérer l'eau. De nouvelles troupes arrivent rapidement vous devez vous réfugier dans la Forteresse en prenant l'ascenseur ! 
+3- La poudre est dÃ©jÃ  lÃ , vous devez la faire sauter pour libÃ©rer l'eau. De nouvelles troupes arrivent rapidement vous devez vous rÃ©fugier dans la Forteresse en prenant l'ascenseur ! 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.03.jpg 
 
-4- Comme vous pouvez le constater, le niveau de l'eau a bien baissé vous allez pouvoir continuer votre route vers la Capitale La Rana. Vous devez prendre l'ascenseur puis discuter avec le Batelier Erih. 
+4- Comme vous pouvez le constater, le niveau de l'eau a bien baissÃ© vous allez pouvoir continuer votre route vers la Capitale La Rana. Vous devez prendre l'ascenseur puis discuter avec le Batelier Erih. 
 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.04.jpg 
@@ -40,7 +40,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.0
 
 
 
-==<p><em>Fin de la quête : Dian Bian Fût</em>==
+==<p><em>Fin de la quÃªte : Dian Bian FÃ»t</em>==
 Guide par Aerie PinkPanther
 
 </p>
