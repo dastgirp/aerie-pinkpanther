@@ -1,27 +1,26 @@
 #sidebar Sommaire
 
-=11.4- La Fête du Village=
+=11.4- La FÃªte du Village=
 
-<p>*Quête* : <em>La Fête du Village</em></p>
-Pré-requis : 2.2- La quête de Boitata
+<p>*QuÃªte* : <em>La FÃªte du Village</em></p>
+PrÃ©-requis : 2.2- La quÃªte de Boitata
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
-Une fois la malédiction du Boitata levée, le Chef du Village vous proposera d'aider le Chef Cuisinier à préparer une grande fête en votre honneur.
+Une fois la malÃ©diction du Boitata levÃ©e, le Chef du Village vous proposera d'aider le Chef Cuisinier Ã  prÃ©parer une grande fÃªte en votre honneur.
 
-==Déroulement== 
+==DÃ©roulement== 
 
-1- Klerozonheg vous demandera de lui apporter 50 Curupiras pour le festin ! Vous devez en tuer dans la région de Coppalana, ce qui ne devrait pas vous poser trop de problèmes.
+1- Klerozonheg vous demandera de lui apporter 50 Curupiras pour le festin ! Vous devez en tuer dans la rÃ©gion de Coppalana, ce qui ne devrait pas vous poser trop de problÃ¨mes.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.4.01.jpg      
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.4.02.jpg      
 
-2- Ensuite il vous faudra rapporter des vivres pour la fête : 50 Bananes / 40 Pommes / 52 Oranges / 15 Mastela Fruit / 20 Prickly Fruit. Donnez tout cela à Klerozonheg pour finir la *Quête* !
+2- Ensuite il vous faudra rapporter des vivres pour la fÃªte : 50 Bananes / 40 Pommes / 52 Oranges / 15 Mastela Fruit / 20 Prickly Fruit. Donnez tout cela Ã  Klerozonheg pour finir la *QuÃªte* !
 
-==<p><em>Fin de la quête : La Fête du Village</em></p>==
-Guide réalisé par Aérie PinkPanther
-
+==<p><em>Fin de la quÃªte : La FÃªte du Village</em></p>==
+Guide rÃ©alisÃ© par AÃ©rie PinkPanther
 
 
 
