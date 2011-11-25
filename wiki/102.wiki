@@ -2,88 +2,87 @@
 
 
 
-=10.2- Titre d'Explorateur d'Arsinoé=
+=10.2- Titre d'Explorateur d'ArsinoÃ©=
 
-<p>*Quête* : <em>Titre d'Explorateur d'Arsinoé</em></p>
-Pré-requis : Avoir accès à la quasi-totalité des régions d'Arsinoé.
+<p>*QuÃªte* : <em>Titre d'Explorateur d'ArsinoÃ©</em></p>
+PrÃ©-requis : Avoir accÃ¨s Ã  la quasi-totalitÃ© des rÃ©gions d'ArsinoÃ©.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
-Vous pouvez prouver votre bravoure en cartographiant Arsinoé. Pour cela vous devez contacter De Martonne en Arsinoé et retrouver pour lui une vingtaine de carte.
+Vous pouvez prouver votre bravoure en cartographiant ArsinoÃ©. Pour cela vous devez contacter De Martonne en ArsinoÃ© et retrouver pour lui une vingtaine de carte.
 
-==Déroulement== 
+==DÃ©roulement== 
 
-1- En discutant avec De Martonne, il vous confiera le mission de récupérer des cartes.
+1- En discutant avec De Martonne, il vous confiera le mission de rÃ©cupÃ©rer des cartes.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.01.jpg     
 
-2- Première Carte : Île de Tantale
+2- PremiÃ¨re Carte : Ãle de Tantale
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.02.jpg     
 
-3- Deuxième Carte : Coppalana
+3- DeuxiÃ¨me Carte : Coppalana
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.03.jpg     
 
-4- Troisième Carte : Phare de Traïana
+4- TroisiÃ¨me Carte : Phare de TraÃ¯ana
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.04.jpg     
 
-5- Quatrième Carte : Euhéméria
+5- QuatriÃ¨me Carte : EuhÃ©mÃ©ria
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.05.jpg   
 
-6- Cinquième Carte : Passe d'Octavie
+6- CinquiÃ¨me Carte : Passe d'Octavie
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.06.jpg  
 
-7- Sixième Carte : Village de Nèsos
+7- SixiÃ¨me Carte : Village de NÃ¨sos
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.07.jpg      
 
-8- Septième Carte : Citadelle de Terkish
+8- SeptiÃ¨me Carte : Citadelle de Terkish
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.08.jpg   
 
-9- Huitième Carte : Citadelle de la Lumière
+9- HuitiÃ¨me Carte : Citadelle de la LumiÃ¨re
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.09.jpg    
 
-10- Neuvième Carte : Thébaïde
+10- NeuviÃ¨me Carte : ThÃ©baÃ¯de
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.10.jpg    
 
-11- Dixième Carte : La Forêt Rouge
+11- DixiÃ¨me Carte : La ForÃªt Rouge
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.11.jpg    
 
-12- Onzième Carte : Les Deux-Portes
+12- OnziÃ¨me Carte : Les Deux-Portes
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.12.jpg      
 
-13- Douzième Carte : Les Arènes de La Rana
+13- DouziÃ¨me Carte : Les ArÃ¨nes de La Rana
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.13.jpg    
 
-14- Treizième Carte : Lalibela
+14- TreiziÃ¨me Carte : Lalibela
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.14.jpg     
 
-15- Quatorzième Carte : Hylarheim
+15- QuatorziÃ¨me Carte : Hylarheim
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.15.jpg    
 
-16- Quinzième Carte : Port-Sirène
+16- QuinziÃ¨me Carte : Port-SirÃ¨ne
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.16.jpg     
 
-17- Seizième Carte : Soupirs de Morloc'h
+17- SeiziÃ¨me Carte : Soupirs de Morloc'h
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.17.jpg     
 
-18- Dix-Septième Carte : Temple du Soulavein
+18- Dix-SeptiÃ¨me Carte : Temple du Soulavein
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.18.jpg     
 
-19- Dix-Huitième Carte : Monastère d'Harpocrate
+19- Dix-HuitiÃ¨me Carte : MonastÃ¨re d'Harpocrate
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.19.jpg    
 
-20- Dix-Neuvième Carte : Nécropole de Gohmorre
+20- Dix-NeuviÃ¨me Carte : NÃ©cropole de Gohmorre
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.20.jpg     
 
-21- Vingtième Carte : Arsinoé
+21- VingtiÃ¨me Carte : ArsinoÃ©
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.21.jpg      
 
 
 
 
-==<p><em>Fin de la quête : Titre d'Explorateur d'Arsinoé</em></p>==
-Guide réalisé par Aérie PinkPanther
-
+==<p><em>Fin de la quÃªte : Titre d'Explorateur d'ArsinoÃ©</em></p>==
+Guide rÃ©alisÃ© par AÃ©rie PinkPanther
 
 
 
