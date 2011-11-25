@@ -2,35 +2,34 @@
 
 
 
-=11.3- La Plante du désert=
+=11.3- La Plante du dÃ©sert=
 
-<p>*Quête* : <em>La Plante du désert</em></p>
-Pré-requis : 9.1- La Lime du Torn-Thalas
+<p>*QuÃªte* : <em>La Plante du dÃ©sert</em></p>
+PrÃ©-requis : 9.1- La Lime du Torn-Thalas
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
-Une maladie étrange ravage le village de Kiman Farès. Le Docteur du village a besoin d'aide, il manque de vivres comme de médicaments.
+Une maladie Ã©trange ravage le village de Kiman FarÃ¨s. Le Docteur du village a besoin d'aide, il manque de vivres comme de mÃ©dicaments.
 
-==Déroulement== 
+==DÃ©roulement== 
 
-1- Prigent Danon vous demandera de rendre visite à l'Herboriste d'Euhéméria pour rapporter quelque herbes pouvant servir de remède.
+1- Prigent Danon vous demandera de rendre visite Ã  l'Herboriste d'EuhÃ©mÃ©ria pour rapporter quelque herbes pouvant servir de remÃ¨de.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.3.01.jpg    
 
-2- L'herboriste a bien les herbes, vous vous chargez de transporter la marchandise. Une fois de retour à Kiman Farès, Prigent Danon vous explique qu'il lui manque une plante très rare pour préparer le remède. Il a besoin d'une Lophophora qui ne pousse que dans le désert de Kargah.
+2- L'herboriste a bien les herbes, vous vous chargez de transporter la marchandise. Une fois de retour Ã  Kiman FarÃ¨s, Prigent Danon vous explique qu'il lui manque une plante trÃ¨s rare pour prÃ©parer le remÃ¨de. Il a besoin d'une Lophophora qui ne pousse que dans le dÃ©sert de Kargah.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.3.02.jpg     
 
-3- La plante se trouve bel et bien dans le désert de Kargah, il ne vous manque plus qu'à la ramasser ... mais elle ne se laissera pas faire !
+3- La plante se trouve bel et bien dans le dÃ©sert de Kargah, il ne vous manque plus qu'Ã  la ramasser ... mais elle ne se laissera pas faire !
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.3.03.jpg     
 
-4- Retournez voir Danon Prigent pour finir votre *Quête* et sauver le fils du chef du village de ses terribles blessures infligées par un Turlutte.
+4- Retournez voir Danon Prigent pour finir votre *QuÃªte* et sauver le fils du chef du village de ses terribles blessures infligÃ©es par un Turlutte.
 
-==<p><em>Fin de la quête : La Plante du désert</em></p>==
-Guide réalisé par Aérie PinkPanther
-
+==<p><em>Fin de la quÃªte : La Plante du dÃ©sert</em></p>==
+Guide rÃ©alisÃ© par AÃ©rie PinkPanther
 
 
 
