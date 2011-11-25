@@ -2,23 +2,23 @@
 
 
 
-=10.1- Titre de Magnat d'Arsinoé=
+=10.1- Titre de Magnat d'ArsinoÃ©=
 
-<p>*Quête* : <em>Titre de Magnat d'Arsinoé</em></p>
-Pré-requis : 2.4- Les faux-papiers pour Arsinoé 
+<p>*QuÃªte* : <em>Titre de Magnat d'ArsinoÃ©</em></p>
+PrÃ©-requis : 2.4- Les faux-papiers pour ArsinoÃ© 
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
-La Compagnie Umaya contrôle tout le commerce de l'Arsinoé. Vous pouvez travailler pour cette compagnie est gravir les échelons pour obtenir le Titre de Magnat d'Arsinoé ainsi que des prix avantageux.
+La Compagnie Umaya contrÃ´le tout le commerce de l'ArsinoÃ©. Vous pouvez travailler pour cette compagnie est gravir les Ã©chelons pour obtenir le Titre de Magnat d'ArsinoÃ© ainsi que des prix avantageux.
 
-==Déroulement== 
+==DÃ©roulement== 
 
-1- Vous devez vous rendre tout d'abord visite aux locaux de la Compagnie d'Umaya à Euhéméria. Parlez avec la responsable, elle vous proposera de devenir membre de la Compagnie pour 50.000 zenys.
+1- Vous devez vous rendre tout d'abord visite aux locaux de la Compagnie d'Umaya Ã  EuhÃ©mÃ©ria. Parlez avec la responsable, elle vous proposera de devenir membre de la Compagnie pour 50.000 zenys.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.01.jpg    
 
-2- Rendez-vous à Coppalana pour discuter avec le Rabatteur Harrey, il vous proposera d'ouvrir un établissement dans l'île de Tantale pour faciliter le commercer avec la Thébaïde.
+2- Rendez-vous Ã  Coppalana pour discuter avec le Rabatteur Harrey, il vous proposera d'ouvrir un Ã©tablissement dans l'Ã®le de Tantale pour faciliter le commercer avec la ThÃ©baÃ¯de.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.02.jpg      
 
@@ -26,39 +26,38 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.02
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.03.jpg      
 
-4- Représentant Olcha de Kiman Farès a besoin de votre aide. Suite aux attaques des morts-vivants, les vivres se font rares dans le village. Plus rien n'arrive d'Euhéméria pour le moment, mais elle pense pouvoir ouvrir une route commerciale depuis le Phare de Traïana (ars_fild04).
+4- ReprÃ©sentant Olcha de Kiman FarÃ¨s a besoin de votre aide. Suite aux attaques des morts-vivants, les vivres se font rares dans le village. Plus rien n'arrive d'EuhÃ©mÃ©ria pour le moment, mais elle pense pouvoir ouvrir une route commerciale depuis le Phare de TraÃ¯ana (ars_fild04).
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.04.jpg      
 
-5- Oswald Rijin se trouve au port, il conforme l'arrivée des marchandises et que leur envoi est en cours. Retournez voir Olcha à Kiman Farès pour lui annoncer la bonne nouvelle.
+5- Oswald Rijin se trouve au port, il conforme l'arrivÃ©e des marchandises et que leur envoi est en cours. Retournez voir Olcha Ã  Kiman FarÃ¨s pour lui annoncer la bonne nouvelle.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.05.jpg      
 
-6- Il parait qu'une mission est en préparation pour relier Crystalmir à la Thébaïde. Dans le port de Thébaïde vous devez rencontrer la marchande Jonas, elle souhaite importer des tanches du lac de Crystalmir.
+6- Il parait qu'une mission est en prÃ©paration pour relier Crystalmir Ã  la ThÃ©baÃ¯de. Dans le port de ThÃ©baÃ¯de vous devez rencontrer la marchande Jonas, elle souhaite importer des tanches du lac de Crystalmir.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.06.jpg      
 
-7- Ghywald Rumsdan accepte d'ouvrir une route commerciale. Les tanches seront acheminées par le train depuis Crystalmir. Retournez voir la Marchande Jonas pour valider la *Quête*. Un message est arrivé d'Euhéméria, la responsable Umaya souhaite s'entretenir avec vous.
+7- Ghywald Rumsdan accepte d'ouvrir une route commerciale. Les tanches seront acheminÃ©es par le train depuis Crystalmir. Retournez voir la Marchande Jonas pour valider la *QuÃªte*. Un message est arrivÃ© d'EuhÃ©mÃ©ria, la responsable Umaya souhaite s'entretenir avec vous.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.07.jpg     
 
-8- La responsable vous parlera des bandits qui sévissent dans les Monts Bacchias, elle souhaite que vous participiez avec l'aide des de la garnison de la Passe d'Octavie a une mission punitive contre le chef des bandits. Le Lieutenant Van Gothe vous attend dans le fort de la Passe d'Octavie.
+8- La responsable vous parlera des bandits qui sÃ©vissent dans les Monts Bacchias, elle souhaite que vous participiez avec l'aide des de la garnison de la Passe d'Octavie a une mission punitive contre le chef des bandits. Le Lieutenant Van Gothe vous attend dans le fort de la Passe d'Octavie.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.08.jpg      
 
-9- Les Chevaliers d'Arsinoé ont isolé la base secrète des bandits. Vous devez vous y rendre et vous occuper du seigneur des bandits. Retournez voir Van Goethe.
+9- Les Chevaliers d'ArsinoÃ© ont isolÃ© la base secrÃ¨te des bandits. Vous devez vous y rendre et vous occuper du seigneur des bandits. Retournez voir Van Goethe.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.09.jpg     
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.10.jpg      
 
-10- En retournant à Euhéméria, la Compagnie Marchande d'Umaya vous convie dans leurs bureaux d'Arsinoé. Vous devez rencontrer le Directeur Oljicka. Il vous demandera de lui rapporter différents objets. Une fois rapportés, vous recevrez le Titre de Magnat d'Arsinoé.
+10- En retournant Ã  EuhÃ©mÃ©ria, la Compagnie Marchande d'Umaya vous convie dans leurs bureaux d'ArsinoÃ©. Vous devez rencontrer le Directeur Oljicka. Il vous demandera de lui rapporter diffÃ©rents objets. Une fois rapportÃ©s, vous recevrez le Titre de Magnat d'ArsinoÃ©.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.11.jpg    
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.1.12.jpg     
 
-==<p><em>Fin de la quête : Titre de Magnat d'Arsinoé</em></p>==
-Guide réalisé par Aérie PinkPanther
-
+==<p><em>Fin de la quÃªte : Titre de Magnat d'ArsinoÃ©</em></p>==
+Guide rÃ©alisÃ© par AÃ©rie PinkPanther
 
 
 
