@@ -4,31 +4,30 @@
 
 =11.8- Les Missionaires d'OmbreTerre=
 
-<p>*Quête* : <em>Les Missionaires d'OmbreTerre</em></p>
-Pré-requis : 5.2.1.3- En route vers Sidon !
+<p>*QuÃªte* : <em>Les Missionaires d'OmbreTerre</em></p>
+PrÃ©-requis : 5.2.1.3- En route vers Sidon !
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
-Une mission a été envoyée en OmbreTerre pour convertir les habitants de Da'Urdein. Les autorités de l'Ordre de Tyr sont inquiète car ils n'ont aucune nouvelles d'eux depuis l'attaque des Da'Urdein...
+Une mission a Ã©tÃ© envoyÃ©e en OmbreTerre pour convertir les habitants de Da'Urdein. Les autoritÃ©s de l'Ordre de Tyr sont inquiÃ¨te car ils n'ont aucune nouvelles d'eux depuis l'attaque des Da'Urdein...
 
-==Déroulement== 
+==DÃ©roulement== 
 
-1- Le Frère Jude vous demandera de retrouver ses frères partis en OmbreTerre ...
+1- Le FrÃ¨re Jude vous demandera de retrouver ses frÃ¨res partis en OmbreTerre ...
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.8.01.jpg    
 
-2- En rapportant la Perle Noire au Passeur du Léthé, celui-ci vous parlera des moines vivant dans une grotte derrière lui ...
+2- En rapportant la Perle Noire au Passeur du LÃ©thÃ©, celui-ci vous parlera des moines vivant dans une grotte derriÃ¨re lui ...
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.8.02.jpg      
 
-3- Et voilà, vous venez de retrouver les frères disparus dans leur grotte ! Vous pouvez rapporter la bonne nouvelle au Frère Jude.
+3- Et voilÃ , vous venez de retrouver les frÃ¨res disparus dans leur grotte ! Vous pouvez rapporter la bonne nouvelle au FrÃ¨re Jude.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.8.03.jpg     
 
-==<p><em>Fin de la quête : Les Missionaires d'OmbreTerre</em></p>==
-Guide réalisé par Aérie PinkPanther
-
+==<p><em>Fin de la quÃªte : Les Missionaires d'OmbreTerre</em></p>==
+Guide rÃ©alisÃ© par AÃ©rie PinkPanther
 
 
 
