@@ -4,42 +4,41 @@
 
 =11.6- Les Zombies=
 
-<p>*Quête* : <em>Les Zombies</em></p>
-Pré-requis : 2.4- Les faux-papiers pour Arsinoé
+<p>*QuÃªte* : <em>Les Zombies</em></p>
+PrÃ©-requis : 2.4- Les faux-papiers pour ArsinoÃ©
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
-Le Culte de Mortys est un culte très particulier originaire de la Cité d'Arsinoé. Ils vénèrent les morts et se chargent de leur embaumement. Mais voilà que les morts se lèvent, de peur de se faire interdire dans la Cité, ils recherchent des aventuriers pour rétablir la situation sans alerter les autorités de la ville.
+Le Culte de Mortys est un culte trÃ¨s particulier originaire de la CitÃ© d'ArsinoÃ©. Ils vÃ©nÃ¨rent les morts et se chargent de leur embaumement. Mais voilÃ  que les morts se lÃ¨vent, de peur de se faire interdire dans la CitÃ©, ils recherchent des aventuriers pour rÃ©tablir la situation sans alerter les autoritÃ©s de la ville.
 
-==Déroulement== 
+==DÃ©roulement== 
 
 1- Yummy vous explique la situation de crise que traverse en ce moment son ordre. Elle vous demande de retrouver Tasty dans la ville pour vous recruter.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.6.01.jpg     
 
-2- Tasty vous autorise à pénétrer dans le Temple de Mortys ... Il est temps de s'occuper de quelques zombies !
+2- Tasty vous autorise Ã  pÃ©nÃ©trer dans le Temple de Mortys ... Il est temps de s'occuper de quelques zombies !
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.6.02.jpg     
 
-3- Vous allez devoir tenir un certain temps en créant des barricades pour retenir les zombies derrière les barricades. Vous pouvez les reconstruire à tout moment (si vous avez assez de points) pour colmater les failles.
+3- Vous allez devoir tenir un certain temps en crÃ©ant des barricades pour retenir les zombies derriÃ¨re les barricades. Vous pouvez les reconstruire Ã  tout moment (si vous avez assez de points) pour colmater les failles.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.6.03.jpg      
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.6.04.jpg     
 
-4- Retournez voir Yommy, elle vous apprendra qu'il lui fait désormais un Livre de Sort pour ramener au calme les morts ... Vous devez retrouver Choubi Yama à Arsinoé ... Il vous apprendra que sa maison est envahie par des zombies qui ne le laissent pas entrer ...
+4- Retournez voir Yommy, elle vous apprendra qu'il lui fait dÃ©sormais un Livre de Sort pour ramener au calme les morts ... Vous devez retrouver Choubi Yama Ã  ArsinoÃ© ... Il vous apprendra que sa maison est envahie par des zombies qui ne le laissent pas entrer ...
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.6.05.jpg      
 
-5- Vous allez devoir remplir plusieurs missions en un temps limité pour atteindre enfin le livre ... et sa demeure et bien grande !
+5- Vous allez devoir remplir plusieurs missions en un temps limitÃ© pour atteindre enfin le livre ... et sa demeure et bien grande !
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.6.06.jpg      
 
-6- Une fois le livre récupéré vous pourrez le rapporter à Yommy pour qu'elle puisse enfin rendre aux morts leur repos.
+6- Une fois le livre rÃ©cupÃ©rÃ© vous pourrez le rapporter Ã  Yommy pour qu'elle puisse enfin rendre aux morts leur repos.
 
-==<p><em>Fin de la quête : Les Zombies</em></p>==
-Guide réalisé par Aérie PinkPanther
-
+==<p><em>Fin de la quÃªte : Les Zombies</em></p>==
+Guide rÃ©alisÃ© par AÃ©rie PinkPanther
 
 
 
