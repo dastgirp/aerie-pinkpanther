@@ -1,0 +1,30 @@
+#sidebar Sommaire
+
+
+
+=11.2.3- Les Contrebandiers=
+
+<p>*Quête* : <em>Les Contrebandiers</em></p>
+Pré-requis : 2.2- La quête de Boitata
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span>==
+La Cité d'Euhéméria est une Cité de la Magie. Le Bourgmestre d'Euhéméria propose aux aventuriers des quêtes.
+
+==Déroulement== 
+
+1- Vous devez rencontrer à Euhéméria le Bourgmestre (ars_fild05,195,193). Il vous proposera différentes quêtes, choisissez celle des Contrebandiers. Il vous parlera d'un petit port au sud de la forêt de Kiman Farès servant de lieu au transit de marchandises illégales. Les Chevaliers d'Euhéméria ne pouvant intervenir aussi loin, il vous demande de mettre fin à ses pratiques douteuses.
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.1.01.jpg    
+
+2- Il va falloir vous rendre à Soknobeus (ars_fild03) puis prendre la route du sud-ouest pour atteindre la région du Phare de Traïana (ars_fild04). Vous devez trouver sur place Jorbert Surcouf (ars_fild04,93,113), étant sur les nerfs, il ne mettra pas longtemps avant de vous attaquer avec ses sbires. Après une petite bousculade avec lui, il reconnaitra sa défaite. Retournez voir le bourgmestre d'Euhéméria pour obtenir votre récompense.
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.3.01.jpg      
+
+==<p><em>Fin de la quête : Les Contrebandiers</em></p>==
+Guide réalisé par Aérie PinkPanther
+
+
+
+

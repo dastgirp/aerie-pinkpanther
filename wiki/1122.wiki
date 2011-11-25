@@ -1,0 +1,45 @@
+#sidebar Sommaire
+
+
+
+
+=11.2.2- Le Phare de Traïana=
+
+<p>*Quête* : <em>Le Phare de Traïana</em></p>
+Pré-requis : 2.2- La *Quête* de Boitata
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span>==
+La Cité d'Euhéméria est une Cité de la Magie. Le Bourgmestre d'Euhéméria propose aux aventuriers des quêtes.
+
+==Déroulement== 
+
+1- Vous devez rencontrer à Euhéméria le Bourgmestre (ars_fild05,195,193). Il vous proposera différentes quêtes, choisissez celle du Phare de Traïana. Ce phare n'éclaire plus les bateaux depuis quelques jours, vous devez rejoindre un certain Garric Frash qui en*Quête* sur place. (ars_fild04) Pour vous rendre dans la région du Phare de Traïana vous devez vous diriger vers le village de Soknobeus (ars_fild03) puis prendre la route du sud-ouest.  
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.1.01.jpg     
+
+2- Garric Frash (ars_fild04,205,149) se situe à l'entrée du phare. Il vous donnera la clé pour entrer dans le Phare qui est rempli de monstres ... Vous devez y retrouver le Gardien du Phare. (ars_phare,79,196)
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.2.01.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.2.02.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.2.03.jpg      
+
+
+3- Le crystal servant à alimenter le phare en lumière a été brisé par des monstres de l'Ombre. Vous devez retrouver le seul fabriquant de cristaux magiques de l'Arsinoé : Gardulf Grisaire qui habite dans les Monts Bacchias. (ars_fild05,275,258) Même si le fait d'honorer une commande royale ne lui plait pas du tout, il vous donnera les cristaux. Retournez voir le Gardien du Phare pour lui apporter les cristaux.
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.2.04.jpg      
+
+4- Le Gardien du Phare vous donne les clé pour atteindre le somment mais oublie de vous dire où se situe l'entrée ! Elle situe en (ars_phare,226,159}. Une fois un sommet, vous devez éliminer le Seigneur des Ombres pour pouvoir reprendre la place ! Ce sera un combat long et difficile !
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.2.05.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.2.06.jpg     
+
+5- Lorsque le Seigneur des Ombres meurt, il retourne dans son plan d'origine. C'est à ce moment que le Gardien du Phare apparaitra au sommet du Phare, il vous donnera votre récompense. Retournez voir le Bourgmestre pour finir cette *Quête* ! 
+
+==<p><em>Fin de la quête : Le Phare de Traïana</em></p>==
+Guide réalisé par Aérie PinkPanther
+
+
+
+

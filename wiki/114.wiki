@@ -1,0 +1,28 @@
+#sidebar Sommaire
+
+=11.4- La Fête du Village=
+
+<p>*Quête* : <em>La Fête du Village</em></p>
+Pré-requis : 2.2- La quête de Boitata
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span>==
+Une fois la malédiction du Boitata levée, le Chef du Village vous proposera d'aider le Chef Cuisinier à préparer une grande fête en votre honneur.
+
+==Déroulement== 
+
+1- Klerozonheg vous demandera de lui apporter 50 Curupiras pour le festin ! Vous devez en tuer dans la région de Coppalana, ce qui ne devrait pas vous poser trop de problèmes.
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.4.01.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.4.02.jpg      
+
+2- Ensuite il vous faudra rapporter des vivres pour la fête : 50 Bananes / 40 Pommes / 52 Oranges / 15 Mastela Fruit / 20 Prickly Fruit. Donnez tout cela à Klerozonheg pour finir la *Quête* !
+
+==<p><em>Fin de la quête : La Fête du Village</em></p>==
+Guide réalisé par Aérie PinkPanther
+
+
+
+
+

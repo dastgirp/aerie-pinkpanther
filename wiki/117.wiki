@@ -1,0 +1,41 @@
+#sidebar Sommaire
+
+
+
+
+
+
+
+
+
+
+
+
+
+=11.7- Les Marins Disparus=
+
+<p>*Quête* : <em>Les Marins Disparus</em></p>
+Pré-requis : 5.2.1.3- En route vers Sidon !
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span>==
+De nombreux marins ont disparu ces dernières années, de nombreux membres de leur famille recherchent encore à savoir ce qui leur arrivé ...
+
+==Déroulement== 
+
+1- Salve Regina, habitante d'Hylarheim, vous demande de retrouver ce qui a pu arriver aux marins disparus ...
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.7.01.jpg     
+
+2- Vous retrouvez un marin dans la Cité sous-marine de Sidon, il confirme d'être d'Hylarheim et vit dans cette cité avec ses compagnons ... vous allez pouvoir rapporter la nouvelle à leurs familles et à Salve Regina.
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.7.02.jpg     
+
+==<p><em>Fin de la quête : Les Marins Disparus</em></p>==
+Guide réalisé par Aérie PinkPanther
+
+
+
+
+

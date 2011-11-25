@@ -1,0 +1,34 @@
+#sidebar Sommaire
+
+
+
+=9.3- La Citadelle de Terkish=
+
+<p>*Quête* : <em>La Citadelle de Terkish</em></p>
+Pré-requis : 9.2- L'Oasis de Siwah
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+
+==<p><span style="text-decoration: underline;">Contexte</span>==
+Le Nord d'Arsinoé est un vaste désert, le désert de Kargah. Depuis des siècles des colons de l'Arsinoé ont pris les terres des gobelins, les repoussant jusque dans les régions les plus désolées. Malheureusement, ils ont mené une grande attaque sur Arsinoé, vous venez de les repousser du Fleuve Torn-Thalas, vous allez devoir poursuivre le combat vers l'Oasis de Siwah. 
+
+==Déroulement== 
+
+1- Le temps de la revanche a sonné vous voilà aux portes de la Citadelle de Terkish, capitale gobline. Pour vous y rendre contactez le Sénéchal Lin.
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.3.01.jpg      
+
+2- La Citadelle gobline est extrêmement bien défendue. Vous allez devoir avancer dans la citadelle en faisant attention aux archers et aux différents gardiens pour pouvoir arriver face au Roi Kasiok.
+
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.3.02.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.3.03.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.3.04.jpg      
+
+3- Prenez le portail pour sortir, vous recevrez le Titre de Pourfendeur des Gobelins !
+
+==<p><em>Fin de la quête : La Citadelle de Terkish</em></p>==
+Guide réalisé par Aérie PinkPanther
+
+
+
+
