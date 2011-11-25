@@ -4,27 +4,26 @@
 
 =11.2.3- Les Contrebandiers=
 
-<p>*Quête* : <em>Les Contrebandiers</em></p>
-Pré-requis : 2.2- La quête de Boitata
+<p>*QuÃªte* : <em>Les Contrebandiers</em></p>
+PrÃ©-requis : 2.2- La quÃªte de Boitata
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
-La Cité d'Euhéméria est une Cité de la Magie. Le Bourgmestre d'Euhéméria propose aux aventuriers des quêtes.
+La CitÃ© d'EuhÃ©mÃ©ria est une CitÃ© de la Magie. Le Bourgmestre d'EuhÃ©mÃ©ria propose aux aventuriers des quÃªtes.
 
-==Déroulement== 
+==DÃ©roulement== 
 
-1- Vous devez rencontrer à Euhéméria le Bourgmestre (ars_fild05,195,193). Il vous proposera différentes quêtes, choisissez celle des Contrebandiers. Il vous parlera d'un petit port au sud de la forêt de Kiman Farès servant de lieu au transit de marchandises illégales. Les Chevaliers d'Euhéméria ne pouvant intervenir aussi loin, il vous demande de mettre fin à ses pratiques douteuses.
+1- Vous devez rencontrer Ã  EuhÃ©mÃ©ria le Bourgmestre (ars_fild05,195,193). Il vous proposera diffÃ©rentes quÃªtes, choisissez celle des Contrebandiers. Il vous parlera d'un petit port au sud de la forÃªt de Kiman FarÃ¨s servant de lieu au transit de marchandises illÃ©gales. Les Chevaliers d'EuhÃ©mÃ©ria ne pouvant intervenir aussi loin, il vous demande de mettre fin Ã  ses pratiques douteuses.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.1.01.jpg    
 
-2- Il va falloir vous rendre à Soknobeus (ars_fild03) puis prendre la route du sud-ouest pour atteindre la région du Phare de Traïana (ars_fild04). Vous devez trouver sur place Jorbert Surcouf (ars_fild04,93,113), étant sur les nerfs, il ne mettra pas longtemps avant de vous attaquer avec ses sbires. Après une petite bousculade avec lui, il reconnaitra sa défaite. Retournez voir le bourgmestre d'Euhéméria pour obtenir votre récompense.
+2- Il va falloir vous rendre Ã  Soknobeus (ars_fild03) puis prendre la route du sud-ouest pour atteindre la rÃ©gion du Phare de TraÃ¯ana (ars_fild04). Vous devez trouver sur place Jorbert Surcouf (ars_fild04,93,113), Ã©tant sur les nerfs, il ne mettra pas longtemps avant de vous attaquer avec ses sbires. AprÃ¨s une petite bousculade avec lui, il reconnaitra sa dÃ©faite. Retournez voir le bourgmestre d'EuhÃ©mÃ©ria pour obtenir votre rÃ©compense.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.3.01.jpg      
 
-==<p><em>Fin de la quête : Les Contrebandiers</em></p>==
-Guide réalisé par Aérie PinkPanther
-
+==<p><em>Fin de la quÃªte : Les Contrebandiers</em></p>==
+Guide rÃ©alisÃ© par AÃ©rie PinkPanther
 
 
 
