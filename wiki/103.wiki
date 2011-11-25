@@ -1,102 +1,48 @@
 #sidebar Sommaire
 
 
-=10.3- Titre de Pêcheur d'Arsinoé=
+=10.3- Titre de PÃªcheur d'ArsinoÃ©=
 
-<p>*Quête* : <em>Titre de Pêcheur d'Arsinoé</em></p>
-Pré-requis : Avoir accès à la quasi-totalité des régions d'Arsinoé.
+<p>*QuÃªte* : <em>Titre de PÃªcheur d'ArsinoÃ©</em></p>
+PrÃ©-requis : Avoir accÃ¨s Ã  la quasi-totalitÃ© des rÃ©gions d'ArsinoÃ©.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
-Arsinoé est riche en poissons d'eau douce et salée. Zeladys un pêcheur de Coppalana vous propose un concours de pêche pour savoir qui est le meilleur pêcheur !
+ArsinoÃ© est riche en poissons d'eau douce et salÃ©e. Zeladys un pÃªcheur de Coppalana vous propose un concours de pÃªche pour savoir qui est le meilleur pÃªcheur !
 
-==Déroulement== 
+==DÃ©roulement== 
 
-1- Zeladys vous demande d'aller acheter une canne à pêche au lac de Crystalmir chez Lyrric. Celui-ci vous proposera une canne à 50 pièces d'argent. Acceptez puis retournez voir Zeladys sur le plage de Coppalana.
+1- Zeladys vous demande d'aller acheter une canne Ã  pÃªche au lac de Crystalmir chez Lyrric. Celui-ci vous proposera une canne Ã  50 piÃ¨ces d'argent. Acceptez puis retournez voir Zeladys sur le plage de Coppalana.
 
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.3.01.jpg    
 http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.3.02.jpg     
 
-2- Il va vous falloir désormais collecter un certain nombre de poissons puis les montrer à Zeladys pour valider votre quête et recevoir le Titre de Pêcheur de l'Arsinoé.
+2- Il va vous falloir dÃ©sormais collecter un certain nombre de poissons puis les montrer Ã  Zeladys pour valider votre quÃªte et recevoir le Titre de PÃªcheur de l'ArsinoÃ©.
 
-<center>
-	<table border cellpadding="10">
+|| *Poisson* || *LocalitÃ©* || *PÃ©riode* || *RaretÃ©* || *QuantitÃ© demandÃ©e* ||
+|| Eel || La Rana || Anytime || Common || 30 ||
+|| Goldfish || Kiman Fares || Day || Rare || 5 ||
+|| Scorpion Fish || Siwah || Night || Uncommon || 10 ||
+|| Poulp || Thebaide || Anytime || Uncommon || 20 ||
+|| Limande || Underdark ||Night || Uncommon || 30 ||
+|| Sea horse || Hylarheim || Anytime || Uncommon || 10 ||
+|| Shark || Coppalana || Anytime || Uncommon || 10 ||
+|| Bar || Urunesti || Day || Common || 30 ||
+|| Bar Common || Urunesti || Anytime || Uncommon || 10 ||
+|| Salmon || Crystalmir || Anytime || Rare || 5 ||
+|| Yellow Perch || Thebaide || Anytime || Common || 20 ||
+|| Piranha || La Rana || Day || Uncommon || 10 ||
+|| Carp || Kiman Fares || Day || Uncommon || 15 ||
+|| Thon || Coppalana || Anytime || Common || 20 ||
+|| Angel Fish || Underdark || Anytime || Uncommon || 10 ||
+|| Clown Fish || Coppalana || Night || Rare || 5 ||
+|| Dace || Crystalmir || Anytime || Common || 25 ||
+|| Frog || Kiman Fares || Night || Common || 20 ||
+|| Fish Lantern || Underdark || Night || Common || 5 ||
 
-		<tr BGCOLOR="pink">
-		<td>Poisson</td><td>Localité</td><td>Période</td><td>Rareté</td><td>Quantité Requise</td>
-		</tr>
-		<tr>
-		<td>Anguille</td><td>La Rana</td><td>Tout le Temps</td><td>Commun</td><td>30</td>
-		</tr>
-		<tr>
-		<td>Poisson Rouge</td><td>Kiman Farès</td><td>Jour</td><td>Rare</td><td>5</td>
-		</tr>
-		<tr>
-		<td>Poisson Scorpion</td><td>Siwah</td><td>Nuit</td><td>Moyen</td><td>10</td>
-		</tr>
-		<tr>
-		<td>Poulpe</td><td>Thébaïde</td><td>Tout le Temps</td><td>Moyen</td><td>20</td>
-		</tr>
-		<tr>
-		<td>Limande</td><td>OmbreTerre</td><td>Nuit</td><td>Moyen</td><td>30</td>
-		</tr>
-		<tr>
-		<td>Hippocampe</td><td>Hylarheim</td><td>Tout le Temps</td><td>Moyen</td><td>10</td>
-		</tr>
-		<tr>
-		<td>Requin</td><td>Coppalana</td><td>Tout le Temps</td><td>Moyen</td><td>10</td>
-		</tr>
-		<tr>
-		<td>Bar</td><td>Urunesti</td><td>Jour</td><td>Commun</td><td>30</td>
-		</tr>
-		<tr>
-		<td>Bar Commun</td><td>Urunesti</td><td>Tout le Temps</td><td>Moyen</td><td>10</td>
-		</tr>
-		<tr>
-		<td>Saumon</td><td>Crystalmir</td><td>Jour</td><td>Moyen</td><td>10</td>
-		</tr>
-		<tr>
-		<td>Écrevisse</td><td>La Rana</td><td>Jour</td><td>Rare</td><td>5</td>
-		</tr>
-		<tr>
-		<td>Saumon Rose</td><td>Crystalmir</td><td>Tout le Temps</td><td>Rare</td><td>5</td>
-		</tr>
-		<tr>
-		<td>Perche Jaune</td><td>Thébaïde</td><td>Tout le Temps</td><td>Commun</td><td>20</td>
-		</tr>
-		<tr>
-		<td>Piranha</td><td>La Rana</td><td>Jour</td><td>Moyen</td><td>10</td>
-		</tr>
-		<tr>
-		<td>Carpe</td><td>Kiman Farès</td><td>Jour</td><td>Moyen</td><td>15</td>
-		</tr>
-		<tr>
-		<td>Thon</td><td>Coppalana</td><td>Tout le Temps</td><td>Commun</td><td>20</td>
-		</tr>
-		<tr>
-		<td>Poisson Ange</td><td>OmbreTerre</td><td>Tout le Temps</td><td>Moyen</td><td>10</td>
-		</tr>
-		<tr>
-		<td>Poisson Clown</td><td>Coppalana</td><td>Nuit</td><td>Rare</td><td>5</td>
-		</tr>
-		<tr>
-		<td>Vandoise</td><td>Crystalmir</td><td>Tout le Temps</td><td>Commun</td><td>25</td>
-		</tr>
-		<tr>
-		<td>Grenouille</td><td>Kiman Farès</td><td>Nuit</td><td>Commun</td><td>20</td>
-		</tr>
-		<tr>
-		<td>Poisson Lanterne</td><td>OmbreTerre</td><td>Nuit</td><td>Rare</td><td>5</td>
-		</tr>
-
-
-	</table> 
-</center>
-
-==<p><em>Fin de la quête : Titre de Pêcheur d'Arsinoé</em></p>==
-Guide réalisé par Aérie PinkPanther
-
+==<p><em>Fin de la quÃªte : Titre de PÃªcheur d'ArsinoÃ©</em></p>==
+Guide rÃ©alisÃ© par AÃ©rie PinkPanther
 
 
 
