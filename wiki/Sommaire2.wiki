@@ -3,7 +3,7 @@
 
 
 
-------
+----
 
 
 ==_Quête Principale_==
@@ -39,7 +39,7 @@
 
 
 
-------
+----
 
 
 
@@ -59,12 +59,9 @@
 		<li>6.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Vengeance</a></li>
 		<li>6.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">De passage au Menez</a></li>
 	</ul>
+		
 	
-	
-	
-	
-	
-------	
+----
 	
 
 ==_Quêtes de l'Elu_==
@@ -82,18 +79,17 @@
 		<li>7.9- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Vision d'Or</a></li>
 	</ul>
 	
+	
+----
+	
 
-	
-------	
-	
-	
 ==_Les Cartes au Trésor_==
 
 <h3>VIII- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Cartes au Trésor</a></h3>
 
 
 
-------
+----
 
 
 ==_Quêtes Secondaires_==
