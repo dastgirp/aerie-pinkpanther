@@ -6,7 +6,7 @@
 <p>*Quête* :<em>L'insurrection de Da'Urdein</em> </p>
 <p>*Pré-requis* : 7.3- Vers la cité d'Ombreterre </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,35 +18,35 @@ Vous voilà enfin dans la Cité de Da'Urdein, vous devez demander des comptes au
 1- Vous pouvez commencer votre exploration de la Cité de Da'Urdein, le centre du pouvoir se situe devant la Sphère Planaire. En vous adressant au Garde de la Sphère, il vous refusera l'entrée, il vous est donc impossible de vous entretenir avec le Grand Prêtre Rupoldic'h.  
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.4.01.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.4.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.4.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.4.02.jpg 
 
 
 2- En vous promenant dans la Cité vous croiserez Iravie Cofic. Selon lui le Grand Prêtre agit étrangement depuis des semaines et a mené l'opération contre l'Hylarheim de son propre chef. Il vous a demandé de retrouvé une liche dans la forêt rouge pour connaitre un peu mieux la situation.  
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.4.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.4.03.jpg 
 
 3- En vous promenant dans la forêt rouge vous rencontrerez Svankmajer, la liche en question. Cette liche est un rénégat, banni par le Grand Prêtre pour des raisons politiques. Il tente de monter une insurrection à Da'Urdein pour mettre fin à la main mise du pouvoir par le Grand Prêtre. Il vous recommande de rencontrer Rybzinsky dans les soupirs du Morloc'h, l'actuel chef militaire de la résistance. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.4.04.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.4.04.jpg 
 
 4- Rybzinsky a préparé des troupes dans les Soupirs du Morloc'h, bien que peu nombreux, ils ne devraient pas avoir de problèmes pour prendre le contrôle de la ville tant les soutiens au Grand Prêtre sont peu nombreux. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.4.05.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.4.05.jpg 
 
 5- Vous devez rechercher un passage secret dans une maison de Da'Urdein puis l'emprunter pour rejoindre les résistants. Iravie Corfic vous mènera sur le champ de bataille. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.4.06.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.4.07.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.4.06.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.4.07.jpg 
 
 6- Votre objectif est de faire chuter les Brigadiers de Da'Urdein pour que les troupes arrêtent le combat. Vous en avez quatre à tuer. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.4.08.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.4.08.jpg 
 
 7- Maintenant personne ne garde la Sphère, il est temps de s'y rendre pour avoir une discussion avec le Grad Prêtre. 
 

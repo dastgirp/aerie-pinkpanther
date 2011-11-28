@@ -6,7 +6,7 @@
 <p>*Quest* :<em>On our way back home : Urunesti</em> </p>
 <p>*Prerequisites* : 4.2 - Light Citadel</p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Context</span></p>==
 
@@ -16,13 +16,13 @@ It was decided that the fight will continue Urunesti from your hometown. It's st
 
 1- You must meet the Joka informed that hosts resistants of Urunesti. He takes you into the meeting room to choose the best way to stop Ragnarok. 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.01.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.1.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.1.02.jpg
 
 
 2- The Gate of the Abyss at the Citadel of Light was temporary. The Prophet Tzangue talks about a portal in the desert Kargah but the road is difficult, it's indeed cross the Temple Petosiris which is still sealed by an ancient magic. An explorer might help you, Ursula Hapoi, unfortunately she is very limited and will not accept help until Urunesti is liberate from the Lycantropie epidemic raging there. 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.03.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.1.03.jpg
 
 3- If you have not received the title Doctor of Arsinoe, you must talk to Spiria Symphonia in Arsinoe. She is looking for mercenaries to lift the epidemic that spreads death in Urunesti. 
 

@@ -6,7 +6,7 @@
 <p>*Quête* :<em>La Colère de Boitata et le Pont Daggard</em></p>
 <p>*Pré-requis* : 2.1- Du départ à l'arrivée à Coppalana </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,30 +18,30 @@ Vous voilà enfin à Coppalana, un petit village au sud d'Arsinoé. Guellronoc'h
 1- Vous devez retrouver Daphnis votre guide à Coppalana (coppa,231,124). Il vous indique que pour quitter la région de Coppalana, il vous faut une autorisation du Chef du Village pour traverser le Pont Daggard. Le Chef du village est le Chef Rafloc'h (coppa,235,163), il se trouve sur la place centrale. Il nous apprend que l'esprit du village, le Boitata, est en colère et qu'il a détruit le Pont Daggard, ce qui vous empêche de quitter cette région. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.2.01.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.2.021.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces2.2.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces2.2.021.jpg
 
 
 2- Il va vous falloir calmer le Boitata pour que le pont puisse être reconstruit. Le Shaman Xaviral (coppa,95,55) vous dira comment invoquer le Boitata. Vous devez justement contacter Kloiacha en empruntant un passage souterrain. (coppa,59,87) 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.2.03.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.2.04.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces2.2.03.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces2.2.04.jpg
 
 3- La servante Kloiacha invoque le Boitata qu'il va falloir calmer à coup de marteau. C'est parti pour votre premier combat en Arsinoé ! 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.2.05.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces2.2.05.jpg
 
 Une fois le combat terminé un message apparaîtra vous disant de retourner voir le chef. Comme dans la plupart des instances d'Arsinoé vous aurez deux minutes pour quitter la salle (ici emprunter le tunnel) pour valider la quête. Ne trainez pas ! 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.2.06.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces2.2.06.jpg
 
 4- Le Chef Rafloc'h vous félicite pour votre bravoure et vous annonce que le Pont Daggard est en reconstruction. Il vous propose une nouvelle mission : Apporter une missive aux tribus de Kiman Farès pour leur indiquer que le Pont est de nouveau réparé et que leurs relations peuvent reprendre. Une autre quête vous sera proposée, celle Klerozonheg, le cuisinier du village qui compte organiser la fête du village. 
 
 Dirigez-vous vers le Nord-Ouest de Coppalana pour emprunter le Pont Daggard et entrer dans la forêt de Kiman Farès. 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces2.2.07.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces2.2.07.jpg 
 
 
 ==<p><em>Fin de la quête : La Colère de Boitata et le Pont Daggard</em>==

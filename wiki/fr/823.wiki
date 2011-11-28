@@ -6,7 +6,7 @@
 <p>*Quête* :<em>La Livraison de Glace</em> </p>
 <p>*Pré-requis* : 8.2.2- Le Baron Sengir </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,19 +18,19 @@ Vous êtes désormais un mercenaire de Néraka, vous allez devoir faire votre r�
 1- Pour chaque début de mission vous devez lire les annonces au panneau des missions. Votre deuxième mission est celle de la Livraison de Glace, vous devez livrer de la glace au Cheik BarYoucef. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.2.01.jpg 
 
 
 2- Rendez-vous dans la cité de Néraka pour emprunter la descente pour rencontrer Arganie et débuter l'épreuve. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.3.01.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.3.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.3.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.3.02.jpg 
 
 3- Cette épreuve est aussi disponible dans les Jeux d'Arsinoé. Vous devez pousser le bloc jusqu'à la fin du niveau dans le temps imparti. Une fois livré dans les temps, vous pourrez retourner voir le tableau des missions. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.3.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.3.03.jpg 
 
 
 

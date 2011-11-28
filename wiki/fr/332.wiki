@@ -6,7 +6,7 @@
 <p>*Quête* :<em>La Naissance</em> </p>
 <p>*Pré-requis* : 3.3.1- La Disparition de la Sainte Famille </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,14 +18,14 @@ L'épiphanie de Lalibela est proche, Lalibela doit se réincarner dans l'enfant 
 1- Vous devez vous rendre dans le Temple de Lalibela, Daphnis vous convie à l'accouchement. Entrez dans la salle d'attente pour lancer l'instance "Naissance de Lalibela". 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.3.2.01.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.3.2.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces3.3.2.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces3.3.2.02.jpg 
 
 
 2- Une Cinématique va débuter avec le Prêtre Merley, Anne et Zacharie. Hélas un trouble fête va venir semer la zizanie ... Shandalar et ses sbires ! Shandalar va enlever l'enfant en laissant deux de ses hommes de mains. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces3.3.2.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces3.3.2.03.jpg 
 
 3- Ressortez de la salle pour discuter avec le Prêtre Merley, Lalibela a été enlevée par Shandalar un mage ... Plus rien ne peut-être fait par les seules membres de l'église de Lalibela ... Il est temps de rencontrer Agathon Paraclet à Arsinoé ! 
 

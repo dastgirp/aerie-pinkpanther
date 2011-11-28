@@ -6,7 +6,7 @@
 <p>*Quest* :<em>Title of Gladiator</em> </p>
 <p>*Prerequisites* : 6.1.3-La Rana Arena</p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Context</span></p>==
 
@@ -17,7 +17,7 @@ Inhabitants of La Rana loves fighting in their arena. They offer different types
 
 1- Return see the Master Shugo, you have several tests to be done to win points. 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.2.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.2.01.jpg
 
 
 2- You can run the Battle MVP, it's in confrontation with teams MVP. You earn 5 points for every fight. 
@@ -31,7 +31,7 @@ http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.2.01.
 4- You can also beat the Goddess La Rana again and as a team. You earn 5 points for every fight. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.2.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.2.02.jpg
 
 
 

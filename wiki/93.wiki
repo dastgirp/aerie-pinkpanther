@@ -6,7 +6,7 @@
 <p>*Quest* :<em>Terkish Citadel</em> </p>
 <p>*Prerequisites* : 9.2- Siwah Oasis</p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Context</span></p>==
 
@@ -18,15 +18,15 @@ Northern Arsinoe is a vast desert, the desert Kargah. For centuries settlers fro
 1- The time of revenge has come here you are at the gates of the Citadel Terkish capital Goblin. To get there contact the Seneschal Lin. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.3.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.3.01.jpg
 
 
 2- Goblin Citadel is extremely well defended. You'll have to move in the citadel, being careful to archers and several guards to come face to King Kasiok. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.3.02.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.3.03.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.3.04.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.3.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.3.03.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.3.04.jpg
 
 3- Take the portal to exit, you will receive the title Slayer of Goblins 
 

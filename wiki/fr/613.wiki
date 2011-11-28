@@ -6,7 +6,7 @@
 <p>*Quête* :<em>Les Arènes de La Rana</em> </p>
 <p>*Pré-requis* : 6.1.2- Dian Bian Fût </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,25 +18,25 @@ La Rana est une région située au Sud d'Arsinoé. Cette région est une grande 
 1- Le Batelier Erih vient de vous transporter près de La Rana. Vous allez devoir contacter la Reine de La Rana pour pouvoir négocier la liberation des otages arsinoéens. Elle souhaite la libération de son Pays pour restaurer l'Empire de La Rana. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.01.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.3.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.3.02.jpg 
 
 
 2- Vous allez devoir apporter au Roi d'Arsinoé les conditions de la paix offerte par La Rana à Arsinoé. Le Roi avoue son impuissance ... Aucune autre légion ne peut intervenir à La Rana à cause du front du Nord avec les Gobelins. Il souhaite que vous négociez le prix de libération des otages pour que l'accord visant à l'indépendance de La Rana prenne effet. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.3.03.jpg 
 
 3- Retournez voir la Déesse de La Rana, elle acceptera de libérer les otages sans contre partie financière si vous réussissez à la battre dans les arènes de La Rana.  
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.04.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.05.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.3.04.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.3.05.jpg 
 
 4- Vous voilà dans les arènes ! Vous devez battre la Déesse pour pouvoir remporter le titre de Libérateur de La Rana ! 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.3.06.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.3.06.jpg 
 
 
 ==<p><em>Fin de la quête : Les Arènes de La Rana</em>==

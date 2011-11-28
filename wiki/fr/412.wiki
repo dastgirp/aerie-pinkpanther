@@ -6,7 +6,7 @@
 <p>*Quête* :<em>Le Dragon de Gondar</em> </p>
 <p>*Pré-requis* : 4.1.1- L'Apprenti de la Mage Gawëlle </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,22 +18,22 @@ La Magie en Arsinoé est organisée autour du Haut-Conseil de la Magie présidé
 1- Vous devez donc vous rendre au Haut-Conseil des Mages d'Arsinoé pour y faire votre rapport à l'Archimage Ornélia. Après une brève discussion, elle vous demandera de l'accompagner dans le Volcan de Gondar pour obtenir un entretien avec le Dragon de Gondar qui lui seul peut percevoir les variations du courant magique traversant Arsinoé, la Vouivre. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.01.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.1.2.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.1.2.02.jpg
 
 
 2- Sortez d'Arsinoé par la Porte Ouest pour atteindre la Forêt Rouge puis de là, le Volcan de Gondar. Près de la porte centrale, vous rencontrerez Ouroulga(ars_fild24,233,235) qui vous refuse l'entrée. En prévision des dégâts que vous pourriez causer à sa demeure qui est construire sur le nid du dragon. Vous devez lui rapporter 30 Rubis de Gondar que vous pouvez récupérer sur les monstres avoisinant. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.03.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.1.2.03.jpg
 
 3- Une fois les 30 Rubis donnés, il vous autorise enfin à descendre dans le nid du dragon. L'instance du Dragon de Gondar débute ici ! Quelques images de combattants en action face au Dragon de Gondar. (Durex, Jaiina, Atara, Thanatos) 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.04.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.05.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.06.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.1.2.07.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.1.2.04.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.1.2.05.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.1.2.06.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.1.2.07.jpg
 
 4- Il lui faudra un certain nombre de coups pour le réveiller ... Une fois qu'il aura repris connaissance vous pourrez engager la discussion avec lui. Le dragon va confirmer ce que l'Archimage Ornélia pensait .. Les vols d'artefacts magiques ont bien pour but de lancer un sort très puissant ... Et quelqu'un met manifestement tout en oeuvre pour réaliser son dessein. 
 

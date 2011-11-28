@@ -7,7 +7,7 @@
 <p>*Quête* : <em>Titre d'Explorateur d'Arsinoé</em></p>
 Pré-requis : Avoir accès à la quasi-totalité des régions d'Arsinoé.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
 Vous pouvez prouver votre bravoure en cartographiant Arsinoé. Pour cela vous devez contacter De Martonne en Arsinoé et retrouver pour lui une vingtaine de carte.
@@ -16,87 +16,87 @@ Vous pouvez prouver votre bravoure en cartographiant Arsinoé. Pour cela vous de
 
 1- En discutant avec De Martonne, il vous confiera le mission de récupérer des cartes.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.01.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.01.jpg     
 
 2- Première Carte : Île de Tantale
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.02.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.02.jpg     
 
 3- Deuxième Carte : Coppalana
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.03.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.03.jpg     
 
 4- Troisième Carte : Phare de Traïana
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.04.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.04.jpg     
 
 5- Quatrième Carte : Euhéméria
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.05.jpg   
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.05.jpg   
 
 6- Cinquième Carte : Passe d'Octavie
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.06.jpg  
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.06.jpg  
 
 7- Sixième Carte : Village de Nèsos
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.07.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.07.jpg      
 
 8- Septième Carte : Citadelle de Terkish
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.08.jpg   
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.08.jpg   
 
 9- Huitième Carte : Citadelle de la Lumière
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.09.jpg    
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.09.jpg    
 
 10- Neuvième Carte : Thébaïde
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.10.jpg    
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.10.jpg    
 
 11- Dixième Carte : La Forêt Rouge
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.11.jpg    
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.11.jpg    
 
 12- Onzième Carte : Les Deux-Portes
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.12.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.12.jpg      
 
 13- Douzième Carte : Les Arènes de La Rana
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.13.jpg    
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.13.jpg    
 
 14- Treizième Carte : Lalibela
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.14.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.14.jpg     
 
 15- Quatorzième Carte : Hylarheim
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.15.jpg    
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.15.jpg    
 
 16- Quinzième Carte : Port-Sirène
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.16.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.16.jpg     
 
 17- Seizième Carte : Soupirs de Morloc'h
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.17.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.17.jpg     
 
 18- Dix-Septième Carte : Temple du Soulavein
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.18.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.18.jpg     
 
 19- Dix-Huitième Carte : Monastère d'Harpocrate
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.19.jpg    
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.19.jpg    
 
 20- Dix-Neuvième Carte : Nécropole de Gohmorre
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.20.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.20.jpg     
 
 21- Vingtième Carte : Arsinoé
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.2.21.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.2.21.jpg      
 
 
 

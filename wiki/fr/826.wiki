@@ -6,7 +6,7 @@
 <p>*Quête* :<em>Les Mines</em> </p>
 <p>*Pré-requis* : 8.2.5- La Fronde </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,32 +18,32 @@ Vous êtes désormais un mercenaire de Néraka, vous allez devoir faire votre r�
 1- Pour chaque début de mission vous devez lire les annonces au panneau des missions. Votre cinquième mission est celle des Mines, vous devez vous rendre dans les anciennes mines de Néraka pour enquêter là-bas. Il semble que l'attaque de Nemours sur Néraka provienne de cette endroit. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.2.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.2.01.jpg 
 
 
 2- Près de la Porte de Néraka (ars_fild54), vous pouvez entrer dans la mine pour enquêter sur les Mages Gris. Dans la mine vous rencontrerez le Mercenaire Yavik qui vous proposera d'y pénétrer plus profondément. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.6.01.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.6.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.6.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.6.02.jpg 
 
 3- Vous voilà dans les mines de Davaeorn et elles ne semblent pas abandonnées, elles sont le repère de l'armée des Mages Gris. Vous devez éliminer Hareishan pour pouvoir lever le premier sceau protecteur pour accéder au niveau inférieur. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.6.03.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.6.04.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.6.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.6.04.jpg 
 
 4- Dans le troisième niveau de la mine, vous devez retrouver Natasha pour lever la rune protectrice. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.6.05.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.6.06.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.6.05.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.6.06.jpg 
 
 5- Le Quatrième niveau est celui de Davaeorn, le chef des Mages Gris d'Arsinoé, fidèle soutien de Shandalar. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.6.07.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces8.2.6.08.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.6.07.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces8.2.6.08.jpg 
 
 6- Vous pouvez enfin retourner voir le Tableau des Missions et valider votre quête pour recevoir le Titre de Condottiere ! 
 

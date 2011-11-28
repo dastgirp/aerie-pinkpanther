@@ -6,7 +6,7 @@
 <p>*Quête* : <em>Les Bandits d'Euhéméria</em></p>
 Pré-requis : 2.2- La quête de Boitata
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
 La Cité d'Euhéméria est une Cité de la Magie. Le Bourgmestre d'Euhéméria propose aux aventuriers des quêtes.
@@ -15,7 +15,7 @@ La Cité d'Euhéméria est une Cité de la Magie. Le Bourgmestre d'Euhéméria p
 
 1- Vous devez rencontrer à Euhéméria le Bourgmestre (ars_fild05,195,193). Il vous proposera différentes quêtes, choisissez celle des Bandits d'Euhéméria. Vous allez devoir vous rendre dans les Monts Bacchias (ars_fild07 / ars_fild08) pour tuer des bandits et obtenir 50 scalps. Rapportez-les au bourgmestre pour valider la *Quête*. Il vous donnera une récompense ainsi que 100 pièces d'argent.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.2.1.01.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces11.2.1.01.jpg      
 
 ==<p><em>Fin de la quête : Les Bandits d'Euhéméria</em></p>==
 Guide réalisé par Aérie PinkPanther

@@ -6,7 +6,7 @@
 <p>*Quest* :<em>Looking for larvas of Kargah</em> </p>
 <p>*Prerequisites* : 5.2.1.4- Sidon's Heart / 9.1- The Lime of Torn-Thalas</p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Context</span></p>==
 
@@ -18,19 +18,19 @@ It's time to take the final ingredient in the cure, the larvae of Kargah ! We'll
 1- You must go into the desert Kargah, but this region is under pressure from repeated attacks of forces gobelaines Terkish. You must first commit to the Knights of Arsinoe in repelling Goblins Torn Thalas of lime. So you need to have previously participated in the mission: <a href="9.1.php">The Lime's Torn-Thalas</a>. From the village of Nesos continue westward. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.1.09.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.1.09.jpg
 
 
 2- You arrive in the desert, sand out of sight, no cue ... you will have to explore the map to find out, knowing that some lead nowhere. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.2.1.01.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.2.1.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.2.2.1.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.2.2.1.02.jpg
 
 3- According to the path you arrive at the Siwah Oasis or the Temple of Petosiris. You will find survivors of the Legion I Petosiris (ars_fild49), from this place you can finally enter the temple Petosiris. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.2.2.1.03.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.2.2.1.03.jpg
 
 
 ==<p><em>End of the Quest : Looking for larvas of Kargah</em>==

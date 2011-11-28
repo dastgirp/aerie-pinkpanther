@@ -6,7 +6,7 @@
 <p>*Quest* :<em>Title of Fisherman of Arsinoe</em> </p>
 <p>*Prerequisites* : Have acces to all places in Arsinoe.</p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Context</span></p>==
 
@@ -18,8 +18,8 @@ Arsinoe is rich in freshwater fish and saltwater. Zeladys a fisherman Coppalana 
 1- Zeladys asks you to go buy a fishing rod in the lake Crystalmir Lyrric. This will offer you a cane to 50 pieces of silver. Accept then return to Zeladys in the beach of Coppalana. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.3.01.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.3.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.3.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.3.02.jpg
 
 
 2- You'll have to now collect a number of fish and then show them to Zeladys to validate your quest and receive the title of Fisherman of Arsinoe.

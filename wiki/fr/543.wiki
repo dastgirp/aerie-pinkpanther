@@ -6,7 +6,7 @@
 <p>*Quête* :<em>Le Combat final</em> </p>
 <p>*Pré-requis* : 5.4.2- La Descente aux enfers </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,26 +18,26 @@ Vous y voilà, les Abysses, un monde terne emplit de monstres sauvages. Il va fa
 1- Voilà le Grand Final, vous êtes à l'entrée d'Ust Nashar, la Cité de Fenrir. Cette instance sera la preuve de votre bravoure et de votre endurance. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.01.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.4.3.01.jpg
 
 
 2- C'est un cité complexe où il vous sera facile de vous perdre. Une série de Démons supérieurs seront présents, je vous laisse les découvrir, je peux seulement vous dire qu'il vous faudra économiser vos forces pour atteindre Fenrir. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.02.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.03.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.4.3.02.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.4.3.03.jpg
 
 3- Une fois que vous serez arrivé face à Fenrir vous pourrez recevoir la bénédiction de Danifae par le Prophète Tzangue, le combat se poursuivra avec l'aide de mages qui affaibliront Fenrir. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.04.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.05.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.4.3.04.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.4.3.05.jpg
 
 4- Les Dieux apparaitront près de vous à la mort de Fenrir et s'occuperont de lui en l'enchainant à nouveau. De là prenez le portail pour rejoindre le Coeur d'Arsinoé qui est le Hall des Légendes de l'Arsinoé ! 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.06.jpg
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.4.3.07.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.4.3.06.jpg
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.4.3.07.jpg
 
 
 ==<p><em>Fin de la quête : Le Combat final</em>==

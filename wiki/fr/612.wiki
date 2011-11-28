@@ -6,7 +6,7 @@
 <p>*Quête* :<em>Dian Bian Fût</em> </p>
 <p>*Pré-requis* : 6.1.1- Les Colons de La Rana </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,25 +18,25 @@ La Rana est une région située au Sud d'Arsinoé. Cette région est une grande 
 1- Vous voilà enfin face au Fort de Dian Bian Fût où est retranché la IV Légion. Les Ranas viennent de faire un barrage faisant augmenter le niveau de l'eau autour du fort rendant une extraction impossible. Vous devez lancer l'instance. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.2.01.jpg 
 
 
 2- Vous devez lever le siège, foncez tout d'abord dans le camp ennemi pour les bouter. vous pourrez ensuite poursuivre votre route vers le barrage. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.2.02.jpg 
 
 3- La poudre est déjà là, vous devez la faire sauter pour libérer l'eau. De nouvelles troupes arrivent rapidement vous devez vous réfugier dans la Forteresse en prenant l'ascenseur ! 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.2.03.jpg 
 
 4- Comme vous pouvez le constater, le niveau de l'eau a bien baissé vous allez pouvoir continuer votre route vers la Capitale La Rana. Vous devez prendre l'ascenseur puis discuter avec le Batelier Erih. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.04.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.05.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces6.1.2.06.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.2.04.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.2.05.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces6.1.2.06.jpg 
 
 
 

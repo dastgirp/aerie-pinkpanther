@@ -6,7 +6,7 @@
 <p>*Quête* :<em>Dynahéir et la Forteresse Gnoll</em> </p>
 <p>*Pré-requis* : 5.2.2.3- Les Entrailles du Temple / 5.1- Retour en Urunesti</p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -22,15 +22,15 @@ Il a été décidé par les résistants d'Urunesti de réunir les dernières for
 2- Depuis la Forêt Rouge prenez la direction du Canyon de Gondar, la même route menant vers Lalibela mais cette fois-ci en continuant vers le nord et vous serez à la Forteresse Gnoll (ars_fild56). 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.3.01.jpg 
 
 3- Vous allez devoir lancer un assaut sur la Forteresse Gnoll pour cela lancez l'instance. Vous devez éliminer Rob et Roy, les deux subalternes du chef du fort, pour accèder à Mc Kenzie. Une fois éliminé, dirigez-vous vers les geôles pour libérer Dynaheïr. Elle invoquera un portail pour vous sortir de là. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.02.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.03.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.04.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.3.05.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.3.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.3.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.3.04.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.3.05.jpg 
 
 4- Retournez voir l'Archimage Ornélia à Urunesti. Tout le monde semble prêt à partir pour les Abysses ! Elle invoquera un portail pour vous téléporter directement à Pétosiris. 
 

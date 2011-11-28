@@ -7,7 +7,7 @@
 <p>*Quête* : <em>Les Missionaires d'OmbreTerre</em></p>
 Pré-requis : 5.2.1.3- En route vers Sidon !
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
 Une mission a été envoyée en OmbreTerre pour convertir les habitants de Da'Urdein. Les autorités de l'Ordre de Tyr sont inquiète car ils n'ont aucune nouvelles d'eux depuis l'attaque des Da'Urdein...
@@ -16,15 +16,15 @@ Une mission a été envoyée en OmbreTerre pour convertir les habitants de Da'Ur
 
 1- Le Frère Jude vous demandera de retrouver ses frères partis en OmbreTerre ...
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.8.01.jpg    
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces11.8.01.jpg    
 
 2- En rapportant la Perle Noire au Passeur du Léthé, celui-ci vous parlera des moines vivant dans une grotte derrière lui ...
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.8.02.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces11.8.02.jpg      
 
 3- Et voilà, vous venez de retrouver les frères disparus dans leur grotte ! Vous pouvez rapporter la bonne nouvelle au Frère Jude.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces11.8.03.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces11.8.03.jpg     
 
 ==<p><em>Fin de la quête : Les Missionaires d'OmbreTerre</em></p>==
 Guide réalisé par Aérie PinkPanther

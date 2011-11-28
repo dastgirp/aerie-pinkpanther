@@ -6,7 +6,7 @@
 <p>*Quête* :<em>Le Fort Orage</em> </p>
 <p>*Pré-requis* : 7.1- Vers l'Hylarheim </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,29 +18,29 @@ Vous venez d'accéder à l'Hylarheim qui est la côté ouest de l'Arsinoé où v
 1- Le village est en cours de conversion à la vraie Foi par les missionnaires de Tyr, en lui parlant vous apprenez qu'une forteresse marine, le Fort Orage ne répond plus. De nombreux hylars gardaient cette place contre les attaques de pirates et aucun n'est revenu pour la relève. Le Frère Jude vous demande d'aller voir le Père Supérieur Malachie (ars_fild33,101,121) à Arsinoé pour qu'il puisse fournir des troupes en vue de mener un assaut sur la place. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.2.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.2.01.jpg 
 
 
 2- Le Père Malachie (ars_fild22,220,256) accepte la proposition de Frère Jude, une galère est prête à partir sous le commandement de Yadie. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.2.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.2.02.jpg 
 
 3- Yadie (ars_fild22,295,96) est prête à lever l'ancre avec une escouade de chevaliers d'Harpocrate et des équipements pour les Hylars. Il est temps de bouter les Da'Urdein du Fort Orage ! Elle vous proposera de vous amener à Hylarheim, de là en vous adressant au marin hylar vous pourrez être transporté jusqu'à la forteresse. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.2.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.2.03.jpg 
 
 4- Vous voilà au bord de la galère prêt à lancer l'instance "Fort Orage" ! Un champ de force vous empêche d'atteindre leur chef, pour cela vous allez devoir détruire dans un premier temps les Incantateurs Liche. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.2.04.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.2.04.jpg 
 
 5- Une fois le champ de force levé, vous devez affronter le chef de la garnison Da'Urdein : Koverich Orlie. Une fois la garnison éliminée, retournez sur les quais ... la mission a été accomplie ! 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.2.05.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces7.2.06.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.2.05.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces7.2.06.jpg 
 
 6- Retournez voir le Frère Jude, il vous demandera de vous rendre à Da'Urdein pour obtenir des informations quant à cette attaque réalisée sans déclaration de guerre. Les Hylars qui ont fouillé la forteresse ont trouvé un pendentif permettant d'entrer dans les terres de Da'Urdein ! 
 

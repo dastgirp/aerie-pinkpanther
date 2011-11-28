@@ -6,7 +6,7 @@
 <p>*Quête* : <em>L'Oasis de Siwah</em></p>
 Pré-requis : 9.1- La Lime du Torn-Thalas
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
 Le Nord d'Arsinoé est un vaste désert, le désert de Kargah. Depuis des siècles des colons de l'Arsinoé ont pris les terres des gobelins, les repoussant jusque dans les régions les plus désolées. Malheureusement, ils ont mené une grande attaque sur Arsinoé, vous venez de les repousser du Fleuve Torn-Thalas, vous allez devoir poursuivre le combat vers l'Oasis de Siwah. 
@@ -15,35 +15,35 @@ Le Nord d'Arsinoé est un vaste désert, le désert de Kargah. Depuis des siècl
 
 1- Votre victoire sur la Lime du Torn-Thalas a redonné du courage aux soldats de la III Légion d'Arsinoé. Le Village de Nèsos a été repris aux ennemis. Le Sénéchal Lin s'y trouve, il vous donnera l'ordre de marche vers l'Oasis de Siwah. 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.2.01.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.2.01.jpg      
 
 2- Vous devez maintenant traverser une partie désolée du désert, sans aucun point d'eau. Vous devez emprunter le bon chemin, au risque de vous retrouver au Temple de Pétosiris.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.2.02.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.2.02.jpg      
 
 3- Vous retrouverez le Sénéchal Lin dans un fort près de l'Oasis de Siwah, les forces se sont rassemblées et prêtes pour l'attaque. Vous devez entrer dans l'Oasis de Siwah pour sauver les soldats de la II Légion qui y sont bloqués depuis des semaines.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.2.03.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.2.03.jpg      
 
 4- Premièrement vous devez libérer la ferme pour pouvoir y placer un poste de commandement, vous devez éliminer toutes les forces goblines.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.2.04.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.2.04.jpg      
 
 5- Une garnison gobline se situe entre vous et l'Oasis, vous devez prendre la place avant de continuer. Une fois fait empruntez le pont.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.2.05.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.2.05.jpg      
 
 6- Et vous y voilà, l'Oasis de Siwah est une grande caverne avec une source naturelle en eau. Le Ravitaillement va désormais pouvoir se faire, ainsi que l'union entre la II et la III Légion.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.2.06.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.2.06.jpg      
 
 7- Vous voilà enfin dans l'Oasis de Siwah, la situation est assez critique, les gobelins attaquent de façon quasi continue pour protéger leur Citadelle de Terkish qui n'est plus bien loin. Contactez le Colonel de Nursie pour lancer la défense de l'Oasis.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.2.07.jpg      
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.2.07.jpg      
 
 <p>8- Vous allez devoir repousser 8 vagues d'assaut de Gobelins, vous devez tenir plus de 30 minutes.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces9.2.08.jpg      a
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces9.2.08.jpg      a
 
 ==<p><em>Fin de la quête : L'Oasis de Siwah</em></p>==
 Guide réalisé par Aérie PinkPanther

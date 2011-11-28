@@ -6,7 +6,7 @@
 <p>*Quête* :<em>Retour en Urunesti</em> </p>
 <p>*Pré-requis* : 4.2 - La Citadelle de la Lumière</p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -18,14 +18,14 @@ Il est décidé que le combat continuera depuis Urunesti, votre ville natale. Il
 1- Vous devez rencontrer Joka l'éclairé qui héberge les résistants à Urunesti. Il vous mènera dans la salle de réunion pour choisir le meilleur moyen d'arrêter le Ragnarök. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.01.jpg 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.1.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.1.02.jpg 
 
 
 2- Le Portail des Abysses à la Citadelle de la Lumière était temporaire. Le Prophète Tzangue vous parle d'un Portail dans le désert de Kargah mais dont la route est difficile, il faut en effet traverser le Temple de Pétosiris qui est toujours scellé par une magie ancienne. Une exploratrice pourrait vous aider, Ursula Hapoi, hélas elle est très bornée et n'acceptera pas de vous aider tant qu'elle n'aura pas sauvé Urunesti de l'épidémie de Lycantropie qui y sévit. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces5.1.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces5.1.03.jpg 
 
 3- Si vous n'avez toujours pas reçu le Titre de Médecin de l'Arsinoé vous devez vous adressez à Spiria Symphonia qui recherche à Arsinoé des mercenaires pour lever l'épidémie qui sème la mort en Urunesti. 
 

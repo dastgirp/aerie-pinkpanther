@@ -6,7 +6,7 @@
 <p>*Quête* :<em>La Citadelle de la Lumière</em> </p>
 <p>*Pré-requis* : 4.1.3- Réunion des sages </p>
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
@@ -19,23 +19,23 @@ L'Archimage Ornélia concentre désormais le front de résistance face aux tén�
 1- Vous devez empêcher l'incantation de Shandalar à tout prix ! L'Archimage Ornélia va vous proposer de vous téléporter directement à la Citadelle de la Lumière. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.2.01.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.2.01.jpg 
 
 
 2- Lancez l'instance : "Incantation de Shandalar". Vous devez premièrement tuer les cinq sombres-acolytes qui bloquent l'entrée de la Citadelle. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.2.02.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.2.02.jpg 
 
 3- Une fois l'entrée dégagée, il est temps de se battre contre Shandalar ! Un combat rude vous attend mais le sort du monde est entre vos mains ! 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.2.03.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.2.03.jpg 
 
 4- En tuant Shandalar la liche, vous obtenez le titre d'Héros d'Arsinoé ! Vous vous retrouvez dans l'antichambre des Abysses ... Vous n'avez pas pu empêcher le retour de Fenrir dans notre monde ... Le Ragnaök est désormais inéluctable. La Déesse Aérie apparait est vous donne des explications supplémentaires ... Il est décidé que le combat continuera depuis Urunesti, votre ville natale. Il est encore possible d'empêcher le Ragnarök mais pour cela il va falloir préparer une descente dans les Abysses pour y détruire Fenrir qui rassemble ses forces en vu de détruire les mondes de l'Yggdrasil. 
 
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces4.2.04.jpg 
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces4.2.04.jpg 
 
 
 

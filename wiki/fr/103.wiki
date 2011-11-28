@@ -6,7 +6,7 @@
 <p>*Quête* : <em>Titre de Pêcheur d'Arsinoé</em></p>
 Pré-requis : Avoir accès à la quasi-totalité des régions d'Arsinoé.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/lunedo10.png
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo10.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span>==
 Arsinoé est riche en poissons d'eau douce et salée. Zeladys un pêcheur de Coppalana vous propose un concours de pêche pour savoir qui est le meilleur pêcheur !
@@ -15,8 +15,8 @@ Arsinoé est riche en poissons d'eau douce et salée. Zeladys un pêcheur de Cop
 
 1- Zeladys vous demande d'aller acheter une canne à pêche au lac de Crystalmir chez Lyrric. Celui-ci vous proposera une canne à 50 pièces d'argent. Acceptez puis retournez voir Zeladys sur le plage de Coppalana.
 
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.3.01.jpg    
-http://aerie-pinkpanther.googlecode.com/svn/Dragormina/Guide/images/acces10.3.02.jpg     
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.3.01.jpg    
+http://aerie-pinkpanther.googlecode.com/svn/wiki/images/acces10.3.02.jpg     
 
 2- Il va vous falloir désormais collecter un certain nombre de poissons puis les montrer à Zeladys pour valider votre quête et recevoir le Titre de Pêcheur de l'Arsinoé.
 
