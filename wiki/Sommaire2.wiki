@@ -3,6 +3,9 @@
 
 
 
+
+
+
 ==Quête Principale==
 
 
@@ -35,6 +38,12 @@
 
 
 
+
+
+
+
+
+
 ==Quêtes des Perles==
 
 <h3>V- Le trésor de Cortès</h3>
@@ -50,6 +59,12 @@
 		<li>6.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Vengeance</a></li>
 		<li>6.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">De passage au Menez</a></li>
 	</ul>
+	
+	
+	
+	
+	
+	
 	
 
 ==Quêtes de l'Elu==
@@ -68,9 +83,18 @@
 	</ul>
 	
 
+	
+	
+	
+	
 ==Les Cartes au Trésor==
 
 <h3>VIII- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Cartes au Trésor</a></h3>
+
+
+
+
+
 
 ==Quêtes Secondaires==
 
