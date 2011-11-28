@@ -6,19 +6,19 @@
 
 
 
-==_Quête Principale_==
+==_QuÃªte Principale_==
 
 
 <h3>I- L'Archipel de Coppalana</h3>
 	<ul class="head-menu">
 		<li>1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Carte de l'Archipel</a></li>
-		<li>1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">L'Hôtel du Croizic</a></li>
+		<li>1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">L'HÃ´tel du Croizic</a></li>
 	</ul>
 
 <h3>II- Brynnlaw</h3>
 	<ul class="head-menu">
 		<li>2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La fille de Rose-Marie</a></li>
-		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Monastère de Tibérine</a></li>
+		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La MonastÃ¨re de TibÃ©rine</a></li>
 		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Grotte des Contrebandiers</a></li>
 		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Jan Van Eyck</a></li>
 		<li>2.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Caserne de Brynnlaw</a></li>
@@ -30,7 +30,7 @@
 <h3>III- Schallmar</h3>
 	<ul class="head-menu">
 		<li>3.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Crise Politique</a></li>
-		<li>3.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Révolte de Waclav</a></li>
+		<li>3.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La RÃ©volte de Waclav</a></li>
 	</ul>
 
 
@@ -44,9 +44,9 @@
 
 
 
-==_Quêtes des Perles_==
+==_QuÃªtes des Perles_==
 
-<h3>V- Le trésor de Cortès</h3>
+<h3>V- Le trÃ©sor de CortÃ¨s</h3>
 	<ul class="head-menu">
 		<li>5.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Runes marines</a></li>
 		<li>5.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Objectif Solinari</a></li>
@@ -54,8 +54,8 @@
 
 <h3>VI- La Main Noire</h3>
 	<ul class="head-menu">
-		<li>6.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Première rencontre</a></li>
-		<li>6.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Négociations</a></li>
+		<li>6.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">PremiÃ¨re rencontre</a></li>
+		<li>6.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">NÃ©gociations</a></li>
 		<li>6.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Vengeance</a></li>
 		<li>6.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">De passage au Menez</a></li>
 	</ul>
@@ -67,16 +67,16 @@
 	
 	
 
-==_Quêtes de l'Elu_==
+==_QuÃªtes de l'Elu_==
 
 <h3>VII- La Parure de l'Elu</h3>
 	<ul class="head-menu">
 		<li>7.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Foire du Menez</a></li>
 		<li>7.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Le Conte des Contes</a></li>
 		<li>7.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Abordage !</a></li>
-		<li>7.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Île du Dragon</a></li>
+		<li>7.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">ÃŽle du Dragon</a></li>
 		<li>7.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Hilary</a></li>
-		<li>7.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Invocations d'Aérie</a></li>
+		<li>7.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Invocations d'AÃ©rie</a></li>
 		<li>7.7- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Franky</a></li>
 		<li>7.8- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Kenders</a></li>
 		<li>7.9- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Vision d'Or</a></li>
@@ -87,26 +87,25 @@
 	
 	
 	
-==_Les Cartes au Trésor_==
+==_Les Cartes au TrÃ©sor_==
 
-<h3>VIII- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Cartes au Trésor</a></h3>
-
-
+<h3>VIII- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Cartes au TrÃ©sor</a></h3>
 
 
 
 
-==_Quêtes Secondaires_==
 
-<h3>IX- Quêtes Secondaires</h3>
+
+==_QuÃªtes Secondaires_==
+
+<h3>IX- QuÃªtes Secondaires</h3>
 	<ul class="head-menu">
 		<li>9.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Pierre Rouge</a></li>
 		<li>9.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Bagages</a></li>
 		<li>9.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Moines disparus</a></li>
 		<li>9.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Grottes du Gwened</a></li>
-		<li>9.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Le Trésor du Monastère</a></li>
+		<li>9.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Le TrÃ©sor du MonastÃ¨re</a></li>
 		<li>9.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Guilde d'Harcourt</a></li>
 		<li>9.7- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">MonteChristos</a></li>
 	</ul>
 	
-
