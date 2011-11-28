@@ -3,33 +3,32 @@
 =La Carte de l'Archipel=
 
 
-<p>*Quête* : 1.1- La Carte de l'Archipel<em></em> </p>
-<p>*Pré-requis* : Aucun</p>
+<p>*QuÃªte* : 1.1- La Carte de l'Archipel<em></em> </p>
+<p>*PrÃ©-requis* : Aucun</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Nous y voilà ! Une nouvelle epopée s'offre à vous, dans un nouveau monde : les Îles de Schallmar !
+Nous y voilÃ  ! Une nouvelle epopÃ©e s'offre Ã  vous, dans un nouveau monde : les ÃŽles de Schallmar !
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Vous devez tout d'abord vous rendre dans l'île de Tantale pour rencontrer la représentante de la Compagnie Britanny. Elle vous proposera de vous louer un navire pour vous rendre dans les îles de l'archipel de Coppalana.
+1- Vous devez tout d'abord vous rendre dans l'Ã®le de Tantale pour rencontrer la reprÃ©sentante de la Compagnie Britanny. Elle vous proposera de vous louer un navire pour vous rendre dans les Ã®les de l'archipel de Coppalana.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.1.01.jpg
 
 
-2- Vous devez rendre visite à Pencroff dans une des îles de la Pointe de Coppalana (ars_fild63). Il vous explique que vous ne pouvez pas naviguer bien loin sans posseder la carte de la région. Il vous demande de chercher Gongafilir.
+2- Vous devez rendre visite Ã  Pencroff dans une des Ã®les de la Pointe de Coppalana (ars_fild63). Il vous explique que vous ne pouvez pas naviguer bien loin sans posseder la carte de la rÃ©gion. Il vous demande de chercher Gongafilir.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.1.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.1.03.jpg
 
-3- Le vieux Gongafilir n'est pas radin et vous offre gracieusement la Carte de l'Archipel de Coppalana. Vous pouvez désormais vous déplacer dans les îles de l'Archipel de Coppalana.
+3- Le vieux Gongafilir n'est pas radin et vous offre gracieusement la Carte de l'Archipel de Coppalana. Vous pouvez dÃ©sormais vous dÃ©placer dans les Ã®les de l'Archipel de Coppalana.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.1.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.1.05.jpg
 
 
-==<p><em>Fin de la quête : La Carte de l'Archipel</em>==
+==<p><em>Fin de la quÃªte : La Carte de l'Archipel</em>==
 Guide par Aerie PinkPanther
-
