@@ -6,7 +6,7 @@
 
 
 
-==Quête Principale==
+==_Quête Principale_==
 
 
 <h3>I- L'Archipel de Coppalana</h3>
@@ -44,7 +44,7 @@
 
 
 
-==Quêtes des Perles==
+==_Quêtes des Perles_==
 
 <h3>V- Le trésor de Cortès</h3>
 	<ul class="head-menu">
@@ -67,7 +67,7 @@
 	
 	
 
-==Quêtes de l'Elu==
+==_Quêtes de l'Elu_==
 
 <h3>VII- La Parure de l'Elu</h3>
 	<ul class="head-menu">
@@ -87,7 +87,7 @@
 	
 	
 	
-==Les Cartes au Trésor==
+==_Les Cartes au Trésor_==
 
 <h3>VIII- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Cartes au Trésor</a></h3>
 
@@ -96,7 +96,7 @@
 
 
 
-==Quêtes Secondaires==
+==_Quêtes Secondaires_==
 
 <h3>IX- Quêtes Secondaires</h3>
 	<ul class="head-menu">
