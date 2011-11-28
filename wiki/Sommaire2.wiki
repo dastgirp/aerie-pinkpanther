@@ -1,0 +1,89 @@
+#labels Featured
+=Schallmar Guide=
+
+
+<font size="+3"><h2>Table des Matières</h2></font>
+
+==Quête Principale==
+
+
+<h1>I- L'Archipel de Coppalana</h1>
+	<ul class="head-menu">
+		<li>1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Carte de l'Archipel</a></li>
+		<li>1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">L'Hôtel du Croizic</a></li>
+	</ul>
+
+<h1>II- Brynnlaw</h1>
+	<ul class="head-menu">
+		<li>2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La fille de Rose-Marie</a></li>
+		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Monastère de Tibérine</a></li>
+		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Grotte des Contrebandiers</a></li>
+		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Jan Van Eyck</a></li>
+		<li>2.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Caserne de Brynnlaw</a></li>
+		<li>2.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Madame Claude</a></li>
+	</ul>
+	
+
+
+<h1>III- Schallmar</h1>
+	<ul class="head-menu">
+		<li>3.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Crise Politique</a></li>
+		<li>3.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Révolte de Waclav</a></li>
+	</ul>
+
+
+<h1>IV- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Temple de Shinaere</a></h1>
+
+
+
+==Quêtes des Perles==
+
+<h1>V- Le trésor de Cortès</h1>
+	<ul class="head-menu">
+		<li>5.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Runes marines</a></li>
+		<li>5.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Objectif Solinari</a></li>
+	</ul>
+
+<h1>VI- La Main Noire</h1>
+	<ul class="head-menu">
+		<li>6.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Première rencontre</a></li>
+		<li>6.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Négociations</a></li>
+		<li>6.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Vengeance</a></li>
+		<li>6.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">De passage au Menez</a></li>
+	</ul>
+	
+
+==Quêtes de l'Elu==
+
+<h1>VII- La Parure de l'Elu</h1>
+	<ul class="head-menu">
+		<li>7.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Foire du Menez</a></li>
+		<li>7.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Le Conte des Contes</a></li>
+		<li>7.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Abordage !</a></li>
+		<li>7.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Île du Dragon</a></li>
+		<li>7.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Hilary</a></li>
+		<li>7.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Invocations d'Aérie</a></li>
+		<li>7.7- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Franky</a></li>
+		<li>7.8- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Kenders/a></li>
+		<li>7.9- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Vision d'Or</a></li>
+	</ul>
+	
+
+==Les Cartes au Trésor==
+
+<h1>VIII- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Cartes au Trésor</a></h1>
+
+==Quêtes Secondaires==
+
+<h1>IX- Quêtes Secondaires</h1>
+	<ul class="head-menu">
+		<li>9.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Pierre Rouge</a></li>
+		<li>9.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Bagages</a></li>
+		<li>9.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Moines disparus</a></li>
+		<li>9.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Grottes du Gwened</a></li>
+		<li>9.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Le Trésor du Monastère</a></li>
+		<li>9.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Guilde d'Harcourt</a></li>
+		<li>9.7- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">MonteChristos</a></li>
+	</ul>
+	
+
