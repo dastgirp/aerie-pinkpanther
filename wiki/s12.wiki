@@ -1,44 +1,43 @@
 #sidebar Sommaire2
 
-=L'Hôtel du Croizic=
+=L'HÃ´tel du Croizic=
 
 
-<p>*Quête* : 1.2- L'Hôtel du Croizic<em></em> </p>
-<p>*Pré-requis* : 1.1- La Carte de l'Archipel</p>
+<p>*QuÃªte* : 1.2- L'HÃ´tel du Croizic<em></em> </p>
+<p>*PrÃ©-requis* : 1.1- La Carte de l'Archipel</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Maintenant que vous avez la carte de l'archipel de Coppalana, il est temps d'explorer la région !
+Maintenant que vous avez la carte de l'archipel de Coppalana, il est temps d'explorer la rÃ©gion !
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Depuis l'Archipel de Coppalana (ars_fild63) prenez la route maritime de l'ouest. Vous déboucherez dans la région de l'Hôtel du Croizic (ars_fild65).
+1- Depuis l'Archipel de Coppalana (ars_fild63) prenez la route maritime de l'ouest. Vous dÃ©boucherez dans la rÃ©gion de l'HÃ´tel du Croizic (ars_fild65).
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.2.00.jpg
 
 
-2- Vous devez vous rendre à l'Hôtel du Croizic pour rencontrer Maitre Nab. Il vous fait savoir que des Pirates ont enlevé des clients de l'hôtel et demandent une rançon. Les troupes d'Arsinoé sont coincées dans la province de La Rana et ne peuvent venir. C'est à vous de jouer !
+2- Vous devez vous rendre Ã  l'HÃ´tel du Croizic pour rencontrer Maitre Nab. Il vous fait savoir que des Pirates ont enlevÃ© des clients de l'hÃ´tel et demandent une ranÃ§on. Les troupes d'ArsinoÃ© sont coincÃ©es dans la province de La Rana et ne peuvent venir. C'est Ã  vous de jouer !
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.2.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.2.03.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.2.02.jpg
 
 
-3- Le bateau pirate n'est pas bien loin, il va falloir l'aborder ! Avant de pouvoir entrer dans le bateau, vous allez devoir éliminer le Contremaitre et quelques pirates pour obtenir les clés de la cale.
+3- Le bateau pirate n'est pas bien loin, il va falloir l'aborder ! Avant de pouvoir entrer dans le bateau, vous allez devoir Ã©liminer le Contremaitre et quelques pirates pour obtenir les clÃ©s de la cale.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.2.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.2.05.jpg
 
-4- Dans le bateau, il vous faudra tuer Oikarie pour libérer les otages. Marik Ghoka, un des otages, vous donnera la Carte des Îles de Brynnlaw.
+4- Dans le bateau, il vous faudra tuer Oikarie pour libÃ©rer les otages. Marik Ghoka, un des otages, vous donnera la Carte des ÃŽles de Brynnlaw.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.2.06.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s1.2.07.jpg
 
-5- Pour compléter la quête, vous devez retourner voir Maître Nab à l'Hôtel.
+5- Pour complÃ©ter la quÃªte, vous devez retourner voir MaÃ®tre Nab Ã  l'HÃ´tel.
 
 
-==<p><em>Fin de la quête : L'Hôtel du Croizic</em>==
+==<p><em>Fin de la quÃªte : L'HÃ´tel du Croizic</em>==
 Guide par Aerie PinkPanther
-
