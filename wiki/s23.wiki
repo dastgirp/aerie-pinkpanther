@@ -3,31 +3,30 @@
 =La Grotte des Contrebandiers=
 
 
-<p>*Quête* :<em>2.3- La Grotte des Contrebandiers</em> </p>
-<p>*Pré-requis* : 2.2- La Monastère de Tibérine</p>
+<p>*QuÃªte* :<em>2.3- La Grotte des Contrebandiers</em> </p>
+<p>*PrÃ©-requis* : 2.2- La MonastÃ¨re de TibÃ©rine</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Les pirates se cachent dans la région du Monastère de Tibérine, il est temps de leur rendre visite.
+Les pirates se cachent dans la rÃ©gion du MonastÃ¨re de TibÃ©rine, il est temps de leur rendre visite.
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Le repaire des pirates se situe dans la grande île de la région.
+1- Le repaire des pirates se situe dans la grande Ã®le de la rÃ©gion.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.3.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.3.01.jpg
 
 
-2- Dans ce complexe où sont réunis les esclaves pour être revendus ensuite dans les exploitations d'épices. Dans votre recherche de Marguerite, vous allez devoir demander quelques explications à Rjackam, le responsable de cette base.
+2- Dans ce complexe oÃ¹ sont rÃ©unis les esclaves pour Ãªtre revendus ensuite dans les exploitations d'Ã©pices. Dans votre recherche de Marguerite, vous allez devoir demander quelques explications Ã  Rjackam, le responsable de cette base.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.3.03.jpg
 
-3- Une fois tué, vous pourrez récupérer les clés pour le coffre contenant les archives des esclavagistes. Vous découvrez qu'un nom revient souvent ... celui de Jan Vaneyeck du Comptoir Mascate.
+3- Une fois tuÃ©, vous pourrez rÃ©cupÃ©rer les clÃ©s pour le coffre contenant les archives des esclavagistes. Vous dÃ©couvrez qu'un nom revient souvent ... celui de Jan Vaneyeck du Comptoir Mascate.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.3.04.jpg
 
-==<p><em>Fin de la quête : La Grotte des Contrebandiers</em>==
+==<p><em>Fin de la quÃªte : La Grotte des Contrebandiers</em>==
 Guide par Aerie PinkPanther
-
