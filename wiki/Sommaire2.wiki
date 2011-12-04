@@ -11,16 +11,16 @@
 
 <h3>I- L'Archipel de Coppalana</h3>
 	<ul class="head-menu">
-		<li>1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Carte de l'Archipel</a></li>
-		<li>1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">L'Hôtel du Croizic</a></li>
+		<li>1.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s11">La Carte de l'Archipel</a></li>
+		<li>1.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s12">L'Hôtel du Croizic</a></li>
 	</ul>
 
 <h3>II- Brynnlaw</h3>
 	<ul class="head-menu">
-		<li>2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La fille de Rose-Marie</a></li>
-		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Monastère de Tibérine</a></li>
-		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Grotte des Contrebandiers</a></li>
-		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Jan Van Eyck</a></li>
+		<li>2.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s21">La fille de Rose-Marie</a></li>
+		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s22">La Monastère de Tibérine</a></li>
+		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s23">La Grotte des Contrebandiers</a></li>
+		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s24">Jan Vaneyeck</a></li>
 		<li>2.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Caserne de Brynnlaw</a></li>
 		<li>2.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Madame Claude</a></li>
 	</ul>
