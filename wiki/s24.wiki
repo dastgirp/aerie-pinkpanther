@@ -3,39 +3,39 @@
 =Jan Vaneyeck=
 
 
-<p>*Quête* :<em> 2.4- Jan Vaneyeck</em> </p>
-<p>*Pré-requis* : 2.3- La Grotte des Contrebandiers</p>
+<p>*QuÃªte* :<em> 2.4- Jan Vaneyeck</em> </p>
+<p>*PrÃ©-requis* : 2.3- La Grotte des Contrebandiers</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Vous avez démantelé un réseau d'esclavagistes des pirates. Dans votre recherche de Marguerite, vous tentez de remonter la filière.
+Vous avez dÃ©mantelÃ© un rÃ©seau d'esclavagistes des pirates. Dans votre recherche de Marguerite, vous tentez de remonter la filiÃ¨re.
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Le marchand Jan Vaneyeck vit dans le Comptoir Mascate, vous allez l'interroger sur ses activités "commerciales".
+1- Le marchand Jan Vaneyeck vit dans le Comptoir Mascate, vous allez l'interroger sur ses activitÃ©s "commerciales".
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.4.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.4.02.jpg
 
 
-2- Il nie ses activités malgré les preuves que vous lui avez apporté. Il vient de vous lancer un procès ... Vous devez vous rendre au tribunal de Brynnlaw pour vos allégations.
+2- Il nie ses activitÃ©s malgrÃ© les preuves que vous lui avez apportÃ©. Il vient de vous lancer un procÃ¨s ... Vous devez vous rendre au tribunal de Brynnlaw pour vos allÃ©gations.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.03.jpg
 
-3- Vous voilà devant le tribunal de Brynnlaw. Le procès n'est qu'un mensonge et vous voilà mis en prison !
+3- Vous voilÃ  devant le tribunal de Brynnlaw. Le procÃ¨s n'est qu'un mensonge et vous voilÃ  mis en prison !
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.06.jpg
 
-4- MonteChristos est lui aussi en prison et vous fait savoir qu'il y a un passage secret dans la prison pour sortir. Vous voilà dehors, mais attention les gardes de la ville sont à vos trousses et il va vous falloir trouver un chemin sûr pour prendre votre bateau sans retourner par la case prison.
+4- MonteChristos est lui aussi en prison et vous fait savoir qu'il y a un passage secret dans la prison pour sortir. Vous voilÃ  dehors, mais attention les gardes de la ville sont Ã  vos trousses et il va vous falloir trouver un chemin sÃ»r pour prendre votre bateau sans retourner par la case prison.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.07.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.08.jpg
 
-5- En revenant vers la ville de Brynnlaw, vous croisez Rako Magnie qui vous indique que la maison de Jan Vaneyeck abrite un atelier clandestin où travaillent des esclaves. Il vous donne une clé pour pouvoir vous y rendre.
+5- En revenant vers la ville de Brynnlaw, vous croisez Rako Magnie qui vous indique que la maison de Jan Vaneyeck abrite un atelier clandestin oÃ¹ travaillent des esclaves. Il vous donne une clÃ© pour pouvoir vous y rendre.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.09.jpg
 
@@ -44,6 +44,5 @@ http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.09.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.10.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/2.4.11.jpg
 
-==<p><em>Fin de la quête : Jan Vaneyeck</em>==
+==<p><em>Fin de la quÃªte : Jan Vaneyeck</em>==
 Guide par Aerie PinkPanther
-
