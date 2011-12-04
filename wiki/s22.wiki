@@ -1,21 +1,21 @@
 #sidebar Sommaire2
 
-=La Monastère de Tibérine=
+=La MonastÃ¨re de TibÃ©rine=
 
 
-<p>*Quête* : <em>2.2- La Monastère de Tibérine</em> </p>
-<p>*Pré-requis* : 2.1- La fille de Rose-Marie</p>
+<p>*QuÃªte* : <em>2.2- La MonastÃ¨re de TibÃ©rine</em> </p>
+<p>*PrÃ©-requis* : 2.1- La fille de Rose-Marie</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Suite à votre enquête, il semble que les poursuivants ont perdu la trace des pirates au niveau du Monastère de Tibérine.
+Suite Ã  votre enquÃªte, il semble que les poursuivants ont perdu la trace des pirates au niveau du MonastÃ¨re de TibÃ©rine.
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
 
-1- Dans le Monastère de Tibérine, l'Abbé ne semble pas au courant de l'existence de pirates dans sa région. En poursuivant votre enquête, vous rencontez Pierre l'Ermite qui reconnait que le monastère est envahi par des pirates et que leur chef BrightSilver est actuellement présent.
+1- Dans le MonastÃ¨re de TibÃ©rine, l'AbbÃ© ne semble pas au courant de l'existence de pirates dans sa rÃ©gion. En poursuivant votre enquÃªte, vous rencontez Pierre l'Ermite qui reconnait que le monastÃ¨re est envahi par des pirates et que leur chef BrightSilver est actuellement prÃ©sent.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.2.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.2.02.jpg
@@ -26,10 +26,9 @@ http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.2.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.2.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.2.06.jpg
 
-3- Vous pouvez retourner voir l'Abbé de Tibérine qui vous remerciera pour votre aide. Il vous donnera le passage pour accèder au repaire des pirates.
+3- Vous pouvez retourner voir l'AbbÃ© de TibÃ©rine qui vous remerciera pour votre aide. Il vous donnera le passage pour accÃ¨der au repaire des pirates.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.2.03.jpg
 
-==<p><em>Fin de la quête : La Monastère de Tibérine</em>==
+==<p><em>Fin de la quÃªte : La MonastÃ¨re de TibÃ©rine</em>==
 Guide par Aerie PinkPanther
-
