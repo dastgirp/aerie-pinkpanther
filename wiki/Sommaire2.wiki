@@ -21,8 +21,8 @@
 		<li>2.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s22">La Monastère de Tibérine</a></li>
 		<li>2.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s23">La Grotte des Contrebandiers</a></li>
 		<li>2.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s24">Jan Vaneyeck</a></li>
-		<li>2.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Caserne de Brynnlaw</a></li>
-		<li>2.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Madame Claude</a></li>
+		<li>2.5- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s25">La Caserne de Brynnlaw</a></li>
+		<li>2.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s26">Madame Claude</a></li>
 	</ul>
 	
 
