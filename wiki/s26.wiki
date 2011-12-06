@@ -3,27 +3,27 @@
 =Madame Claude=
 
 
-<p>*Quête* :<em> 2.6- Madame Claude</em> </p>
-<p>*Pré-requis* : 2.5- La Caserne de Brynnlaw</p>
+<p>*QuÃªte* :<em> 2.6- Madame Claude</em> </p>
+<p>*PrÃ©-requis* : 2.5- La Caserne de Brynnlaw</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Le Juge de Brynnlaw vous a signalé la vente d'esclaves à la taverne de Brynnlaw : La Couronne de Cuivre.
+Le Juge de Brynnlaw vous a signalÃ© la vente d'esclaves Ã  la taverne de Brynnlaw : La Couronne de Cuivre.
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- En allant dans voir la patronne de la taverne, Madame Claude, et en lui demandant si son établissement est un bordel, vous recevez une fin de non recevoir. Cela ne vous a pas avancé à grand chose.
+1- En allant dans voir la patronne de la taverne, Madame Claude, et en lui demandant si son Ã©tablissement est un bordel, vous recevez une fin de non recevoir. Cela ne vous a pas avancÃ© Ã  grand chose.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.01.jpg
 
 
-2- Non loin du bar vous avez remarqué un client éméché qui peine à tenir debout. Celui sera bien plus loquace et vous parlera en effet d'une bordel accessible depuis les égouts mais pour netrer il vous faudra trouver un carton d'invitation.
+2- Non loin du bar vous avez remarquÃ© un client Ã©mÃ©chÃ© qui peine Ã  tenir debout. Celui sera bien plus loquace et vous parlera en effet d'une bordel accessible depuis les Ã©gouts mais pour netrer il vous faudra trouver un carton d'invitation.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.02.jpg
 
-3- Un client, un peu plus loin, vous raconte qu'il a oublié son carton d'invitation chez lui. Le problème, c'est qu'il va vous falloir trouver sa demeure ...
+3- Un client, un peu plus loin, vous raconte qu'il a oubliÃ© son carton d'invitation chez lui. Le problÃ¨me, c'est qu'il va vous falloir trouver sa demeure ...
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.03.jpg
 
@@ -33,24 +33,23 @@ http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.06.jpg
 
-5- Pour entrer dans les égouts, vous devez retrouver des bouches d'égouts dans la ville de Brynnlaw.
+5- Pour entrer dans les Ã©gouts, vous devez retrouver des bouches d'Ã©gouts dans la ville de Brynnlaw.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.07.jpg
 
-6- Vous trouverez dans les égouts une porte avec un videur, en présentant votre carton d'invitation à celui-ci, il vous permettra d'entrer dans la maison close. Mais inutile de vous y attarder et prenez l'escalier pour arriver au premier étage de la Couronne de Cuivre.
+6- Vous trouverez dans les Ã©gouts une porte avec un videur, en prÃ©sentant votre carton d'invitation Ã  celui-ci, il vous permettra d'entrer dans la maison close. Mais inutile de vous y attarder et prenez l'escalier pour arriver au premier Ã©tage de la Couronne de Cuivre.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.08.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.09.jpg
 
-7- Vous trouvez une salle au premier étage avec Marguerite, la fille de Rose-Marie et Narcisse qui est enchainée. Elle vous demande de la sauver en éliminant son geôlier : Le Gardien Sade.
+7- Vous trouvez une salle au premier Ã©tage avec Marguerite, la fille de Rose-Marie et Narcisse qui est enchainÃ©e. Elle vous demande de la sauver en Ã©liminant son geÃ´lier : Le Gardien Sade.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.10.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s2.6.11.jpg
 
-8- Vous pouvez enfin annoncer une bonne nouvelle à Rose-Marie et celle-ci pour vous remercier vous donnera la Perle Noire n°1.
+8- Vous pouvez enfin annoncer une bonne nouvelle Ã  Rose-Marie et celle-ci pour vous remercier vous donnera la Perle Noire nÂ°1.
 
-9- Votre enquête enfin finie, vous devez vous rendre au près du Juge de Brynnlaw qui vous remerciera pour votre dévouement envers sa ville et il vous chargera de porter une missive aux autorités de Schallmar pour qu'ils puissent envoyer un nouveau satrape. Vous obtenez la Carte Maritime des Îles de Schallmar.
+9- Votre enquÃªte enfin finie, vous devez vous rendre au prÃ¨s du Juge de Brynnlaw qui vous remerciera pour votre dÃ©vouement envers sa ville et il vous chargera de porter une missive aux autoritÃ©s de Schallmar pour qu'ils puissent envoyer un nouveau satrape. Vous obtenez la Carte Maritime des ÃŽles de Schallmar.
 
-==<p><em>Fin de la quête : Madame Claude</em>==
+==<p><em>Fin de la quÃªte : Madame Claude</em>==
 Guide par Aerie PinkPanther
-
