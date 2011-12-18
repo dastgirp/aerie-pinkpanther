@@ -3,18 +3,18 @@
 =La Crise Politique=
 
 
-<p>*Quête* : <em>3.1- La Crise Politique</em> </p>
-<p>*Pré-requis* : 2.6- Madame Claude</p>
+<p>*QuÃªte* : <em>3.1- La Crise Politique</em> </p>
+<p>*PrÃ©-requis* : 2.6- Madame Claude</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La situation de Brynnlaw n'est pas brillante. Le satrape n'était pas admirable et après l'avoir tué ... Vous devez, selon le Juge de Brynnlaw, trouver son remplaçant en vous rendant dans la ville de Schallmar pour que le Roi nomme un nouveau satrape.
+La situation de Brynnlaw n'est pas brillante. Le satrape n'Ã©tait pas admirable et aprÃ¨s l'avoir tuÃ© ... Vous devez, selon le Juge de Brynnlaw, trouver son remplaÃ§ant en vous rendant dans la ville de Schallmar pour que le Roi nomme un nouveau satrape.
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Pour vous rendre à Schallmar : Vous devez prendre la route maritime du nord depuis Brynnlaw. Vous arrivez à l'Atoll de Corinthe (ars_fild75), poursuivez la route vers le nord pour déboucher dans la ville de Schallmar.
+1- Pour vous rendre Ã  Schallmar : Vous devez prendre la route maritime du nord depuis Brynnlaw. Vous arrivez Ã  l'Atoll de Corinthe (ars_fild75), poursuivez la route vers le nord pour dÃ©boucher dans la ville de Schallmar.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.02.jpg
@@ -25,45 +25,44 @@ http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.03.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.04.jpg
 
-3- Le Sénateur Palatin s'occupe des affaires royales pour le moment. Il accepte de nommer un nouveau satrape et vous remercie de votre aide.
+3- Le SÃ©nateur Palatin s'occupe des affaires royales pour le moment. Il accepte de nommer un nouveau satrape et vous remercie de votre aide.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.05.jpg
 
-4- En sortant du palais royal, une jeune fille vous interpelle ... Ganaëlle et elle semble avoir quelque chose à vous raconter. Elle vous invite à la rejoindre dans sa guilde, la Guilde d'Harcourt.
+4- En sortant du palais royal, une jeune fille vous interpelle ... GanaÃ«lle et elle semble avoir quelque chose Ã  vous raconter. Elle vous invite Ã  la rejoindre dans sa guilde, la Guilde d'Harcourt.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.06.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.07.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.08.jpg
 
-5- Vous retrouvez Ganaëlle à l'intérieur de la guilde. Il vous faut faire vos preuves pour entrer dans la guilde. Comme si vous n'aviez que ça à ... Vous devez retrouver Annabelle d'Harcourt à Brynnlaw. <li>9.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s96.wiki">Quête de la Guilde d'Harcourt</a></li>
+5- Vous retrouvez GanaÃ«lle Ã  l'intÃ©rieur de la guilde. Il vous faut faire vos preuves pour entrer dans la guilde. Comme si vous n'aviez que Ã§a Ã  ... Vous devez retrouver Annabelle d'Harcourt Ã  Brynnlaw. <li>9.6- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s96.wiki">QuÃªte de la Guilde d'Harcourt</a></li>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.09.jpg
 
-6- une fois la quête d'Harcourt réalisée retournez parler à Ganaëlle. Elle vous donnera l'autorisation pour accéder aux étages supérieurs pour parlementer avec le maitre de la guilde.
+6- une fois la quÃªte d'Harcourt rÃ©alisÃ©e retournez parler Ã  GanaÃ«lle. Elle vous donnera l'autorisation pour accÃ©der aux Ã©tages supÃ©rieurs pour parlementer avec le maitre de la guilde.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.10.jpg
 
-7- Marcellius Vinus vous donnera plus d'informations sur la situation de la cité et la disparition du Roi Waclav. Le Sénateur Palatin semble avoir pris le contrôle de Schallmar. 
+7- Marcellius Vinus vous donnera plus d'informations sur la situation de la citÃ© et la disparition du Roi Waclav. Le SÃ©nateur Palatin semble avoir pris le contrÃ´le de Schallmar. 
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.11.jpg
 
-8- Vous devez en apprendre plus sur la situation et votre enquête commence par rechercher des indices au Palais Royal. La nourrice du Roi : Arivila vous apprend que le Roi a disparu et qu'il vous faut fouiller sa chambre pour trouver des informations permettant de le localiser.
+8- Vous devez en apprendre plus sur la situation et votre enquÃªte commence par rechercher des indices au Palais Royal. La nourrice du Roi : Arivila vous apprend que le Roi a disparu et qu'il vous faut fouiller sa chambre pour trouver des informations permettant de le localiser.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.12.jpg
 
-9- Forcez la porte de la chambre du Roi. En observant attentivement la chambre vous apercevez un petit mécanisme dans le mur. Vous l'activez. Un passe s'ouvre et vous débouchez sur un quai isolé avec un petit bateau.
+9- Forcez la porte de la chambre du Roi. En observant attentivement la chambre vous apercevez un petit mÃ©canisme dans le mur. Vous l'activez. Un passe s'ouvre et vous dÃ©bouchez sur un quai isolÃ© avec un petit bateau.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.13.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.14.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.15.jpg
 
-10- Le bateau vous mène dans la région des îles Iawah (ars_fild74). Le Roi Waclav se cache dans une maison d'une petite île de la région. En apprenant que vous venez de la Guilde d'Harcourt, il vous accorde sa confiance et vous fait part de ses projets. Un grand changement semble se dessiner ...
+10- Le bateau vous mÃ¨ne dans la rÃ©gion des Ã®les Iawah (ars_fild74). Le Roi Waclav se cache dans une maison d'une petite Ã®le de la rÃ©gion. En apprenant que vous venez de la Guilde d'Harcourt, il vous accorde sa confiance et vous fait part de ses projets. Un grand changement semble se dessiner ...
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.16.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.17.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.18.jpg
 
 
-==<p><em>Fin de la quête : La Crise Politique</em>==
+==<p><em>Fin de la quÃªte : La Crise Politique</em>==
 Guide par Aerie PinkPanther
-
