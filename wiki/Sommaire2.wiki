@@ -29,12 +29,12 @@
 
 <h3>III- Schallmar</h3>
 	<ul class="head-menu">
-		<li>3.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Crise Politique</a></li>
-		<li>3.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">La Révolte de Waclav</a></li>
+		<li>3.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s31">La Crise Politique</a></li>
+		<li>3.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s32">La Révolte de Waclav</a></li>
 	</ul>
 
 
-<h3>IV- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Temple de Shinaere</a></h3>
+<h3>IV- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s4">Temple de Shinaere</a></h3>
 
 
 
