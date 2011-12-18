@@ -1,75 +1,74 @@
 #sidebar Sommaire2
 
-=La Révolte de Waclav=
+=La RÃ©volte de Waclav=
 
 
-<p>*Quête* :<em> 3.2- La Révolte de Waclav</em> </p>
-<p>*Pré-requis* : 3.1- La Crise Politique</p>
+<p>*QuÃªte* :<em> 3.2- La RÃ©volte de Waclav</em> </p>
+<p>*PrÃ©-requis* : 3.1- La Crise Politique</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Vous venez de retrouver le Roi Waclav, il s'avère que le pouvoir était en fait aux mains du Sénateur Palatin. Le Roi et ses alliés, la Guilde d'Harcourt et les Pirates de la Défense, vont tenter un coup de force pour reprendre le pouvoir. 
+Vous venez de retrouver le Roi Waclav, il s'avÃ¨re que le pouvoir Ã©tait en fait aux mains du SÃ©nateur Palatin. Le Roi et ses alliÃ©s, la Guilde d'Harcourt et les Pirates de la DÃ©fense, vont tenter un coup de force pour reprendre le pouvoir. 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Le Roi Waclav vous demande d'espionner le Sénateur Palatin pour fournir des preuves de sa trahison. Vous devez retourner à Schallmar au Palais Royal.
+1- Le Roi Waclav vous demande d'espionner le SÃ©nateur Palatin pour fournir des preuves de sa trahison. Vous devez retourner Ã  Schallmar au Palais Royal.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.01.jpg
 
 
-2- Il vous faut filer le Sénateur Palatin sans trop vous approcher pour ne pas vous faire repérer. Il vous mènera devant un batiment qui est en réalité le siège d'une Guilde Occulte : La Mishna.
+2- Il vous faut filer le SÃ©nateur Palatin sans trop vous approcher pour ne pas vous faire repÃ©rer. Il vous mÃ¨nera devant un batiment qui est en rÃ©alitÃ© le siÃ¨ge d'une Guilde Occulte : La Mishna.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.03.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.04.jpg
 
-3- Vous devez retourner faire votre rapport au Roi Waclav. Il vous demande de retourner voir Marcellius Vinus dans la Guilde d'Harcourt. Celui-ci vous demandera de prendre contacte avec Pizarre des Pirates de la Défense.
+3- Vous devez retourner faire votre rapport au Roi Waclav. Il vous demande de retourner voir Marcellius Vinus dans la Guilde d'Harcourt. Celui-ci vous demandera de prendre contacte avec Pizarre des Pirates de la DÃ©fense.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.1.11.jpg
 
-4- Depuis Schallmar, prenez la route de l'ouest. Vous arrivez aux Îles Iawah (ars_fild74) puis prenez la seconde route maritime pour débarquer au Menez Mikael ar Mor (ars_fild73).
+4- Depuis Schallmar, prenez la route de l'ouest. Vous arrivez aux ÃŽles Iawah (ars_fild74) puis prenez la seconde route maritime pour dÃ©barquer au Menez Mikael ar Mor (ars_fild73).
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.06.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.07.jpg
 
-5- Vous devez monter au sommet du mont. Pizarre, maitre de la Défense, est au trône. Il accepte les conditions de Waclav et vous donne rendez-vous dans la Guilde d'Harcourt.
+5- Vous devez monter au sommet du mont. Pizarre, maitre de la DÃ©fense, est au trÃ´ne. Il accepte les conditions de Waclav et vous donne rendez-vous dans la Guilde d'Harcourt.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.09.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.08.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.10.jpg
 
-6- Marcellius Vinus vous proposera de débuter l'Insurrection. Les principaux protagonistes sont là, après une courte présentation de la situation ... Il est temps de débuter le combat !
+6- Marcellius Vinus vous proposera de dÃ©buter l'Insurrection. Les principaux protagonistes sont lÃ , aprÃ¨s une courte prÃ©sentation de la situation ... Il est temps de dÃ©buter le combat !
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.11.jpg
 
-7- Les troupes d'Harcourt et de la Défense auront leur propre missions, votre objectif sera différent. Vous devez retrouver le Sénateur Palatin et le capturer. Votre premier objectif est de libérer le Palas Royal en tuant le Chef de la Garde.
+7- Les troupes d'Harcourt et de la DÃ©fense auront leur propre missions, votre objectif sera diffÃ©rent. Vous devez retrouver le SÃ©nateur Palatin et le capturer. Votre premier objectif est de libÃ©rer le Palas Royal en tuant le Chef de la Garde.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.13.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.12.jpg
 
-8- Le Sénateur n'est pas au Palais, vous foncez vers le Sénat pour mettre fin aux agissements des traitres. Le Sénateur Ataxer et les conjurés vous opposeront une résistance. Mais le Sénateur n'est plus là ... Il est temps de foncer vers la guilde de la Mishna.
+8- Le SÃ©nateur n'est pas au Palais, vous foncez vers le SÃ©nat pour mettre fin aux agissements des traitres. Le SÃ©nateur Ataxer et les conjurÃ©s vous opposeront une rÃ©sistance. Mais le SÃ©nateur n'est plus lÃ  ... Il est temps de foncer vers la guilde de la Mishna.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.14.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.15.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.16.jpg
 
-9- Dans la Guilde Noire vous devez éliminer un démon mineur pour pouvoir emprunter un portail. Ce Portail vous mènera dans la Faille de l'Atoll de Corinthe (ars_dun85).
+9- Dans la Guilde Noire vous devez Ã©liminer un dÃ©mon mineur pour pouvoir emprunter un portail. Ce Portail vous mÃ¨nera dans la Faille de l'Atoll de Corinthe (ars_dun85).
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.18.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.17.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.19.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.20.jpg
 
-10- Le Sénateur Palatin semble s'être caché dans ce temple sous-marin qui est le temple de la Guilde de la Mishna. Le Sénateur est tué par le Mage Genka, un mage gris. Vous devez à votre tour vous occuper de lui. En sortant vous obtenez la Carte au Trésor n°9 et la Perle Noire n°4.
+10- Le SÃ©nateur Palatin semble s'Ãªtre cachÃ© dans ce temple sous-marin qui est le temple de la Guilde de la Mishna. Le SÃ©nateur est tuÃ© par le Mage Genka, un mage gris. Vous devez Ã  votre tour vous occuper de lui. En sortant vous obtenez la Carte au TrÃ©sor nÂ°9 et la Perle Noire nÂ°4.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.21.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s3.2.22.jpg
 
-11- Votre prochaine étape est la collecte des 7 Perles Noires de Schallmar pour sauver Shinaere et son Temple de Schallmar.
+11- Votre prochaine Ã©tape est la collecte des 7 Perles Noires de Schallmar pour sauver Shinaere et son Temple de Schallmar.
 
-==<p><em>Fin de la quête : La Révolte de Waclav</em>==
+==<p><em>Fin de la quÃªte : La RÃ©volte de Waclav</em>==
 Guide par Aerie PinkPanther
-
