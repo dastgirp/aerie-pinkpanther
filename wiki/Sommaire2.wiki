@@ -48,8 +48,8 @@
 
 <h3>V- Le trésor de Cortès</h3>
 	<ul class="head-menu">
-		<li>5.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Les Runes marines</a></li>
-		<li>5.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Objectif Solinari</a></li>
+		<li>5.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s51">Les Runes marines</a></li>
+		<li>5.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s52">Objectif Solinari</a></li>
 	</ul>
 
 <h3>VI- La Main Noire</h3>
