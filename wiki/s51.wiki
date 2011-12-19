@@ -3,52 +3,51 @@
 =Les Runes Marines=
 
 
-<p>*Quête* :<em> 5.1- Les Runes Marines</em> </p>
-<p>*Pré-requis* : 1.2- L'Hôtel du Croizic</p>
+<p>*QuÃªte* :<em> 5.1- Les Runes Marines</em> </p>
+<p>*PrÃ©-requis* : 1.2- L'HÃ´tel du Croizic</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-Cortès est un marchand de matériel pour la prospection maritime. Son échoppe se situe près de l'Hôtel du Croizic.
+CortÃ¨s est un marchand de matÃ©riel pour la prospection maritime. Son Ã©choppe se situe prÃ¨s de l'HÃ´tel du Croizic.
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Depuis l'Hôtel du Croizic (ars_fild65) vous pouvez accéder au magasin de Cortès. Il vous offrira une grue pour remorquer les trésors de la mer, vous devrez cependant à chaque utilisation utiliser un bidon d'huile. Cortès est le seul à avoir cette huile et compte bien rentabiliser son "cadeau".
+1- Depuis l'HÃ´tel du Croizic (ars_fild65) vous pouvez accÃ©der au magasin de CortÃ¨s. Il vous offrira une grue pour remorquer les trÃ©sors de la mer, vous devrez cependant Ã  chaque utilisation utiliser un bidon d'huile. CortÃ¨s est le seul Ã  avoir cette huile et compte bien rentabiliser son "cadeau".
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.01.jpg
 
 
-2- Cortès vous propose aussi une quête : Dans chaque région de Coppalana et de Brynnlaw, il existe des sceaux sous-marines. Vous devez lui en rapporter une pour qu'il puisse vous donner plus d'informations. Vous devez repêcher 8 Runes pour compléter la quête.
+2- CortÃ¨s vous propose aussi une quÃªte : Dans chaque rÃ©gion de Coppalana et de Brynnlaw, il existe des sceaux sous-marines. Vous devez lui en rapporter une pour qu'il puisse vous donner plus d'informations. Vous devez repÃªcher 8 Runes pour complÃ©ter la quÃªte.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.03.jpg
 
-3- Une fois les sceaux déposés, Cortès vous donne la <em>Carte au trésor n°6</em> pour que vous puissiez le rejoindre ... Vous devez vous rendre dans les environs de la Forteresse de la Défense.
+3- Une fois les sceaux dÃ©posÃ©s, CortÃ¨s vous donne la <em>Carte au trÃ©sor nÂ°6</em> pour que vous puissiez le rejoindre ... Vous devez vous rendre dans les environs de la Forteresse de la DÃ©fense.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.04.jpg
 
-4- Vous devez emprunter le passage secret. Vous arrivez dans une jungle luxuriante. Poursuivez votre route pour retrouver Cortès devant un temple.
+4- Vous devez emprunter le passage secret. Vous arrivez dans une jungle luxuriante. Poursuivez votre route pour retrouver CortÃ¨s devant un temple.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.06.jpg
 
-5- Cortès va placer les différents sceaux, ce qui va permettre à la porte du laboratoire d'Alfraganus de s'ouvrir. Pour lancer la fusée vous devez remplir les deux réservoirs de Manganite de 50 unités.
+5- CortÃ¨s va placer les diffÃ©rents sceaux, ce qui va permettre Ã  la porte du laboratoire d'Alfraganus de s'ouvrir. Pour lancer la fusÃ©e vous devez remplir les deux rÃ©servoirs de Manganite de 50 unitÃ©s.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.07.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.09.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.08.jpg
 
-6- Maintenant la fusée est prête à partir pour Solinari ! Voici votre premier voyage vers la lune rouge de Midgard !
+6- Maintenant la fusÃ©e est prÃªte Ã  partir pour Solinari ! Voici votre premier voyage vers la lune rouge de Midgard !
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.11.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.10.jpg
 
-7- Vous n'avez pas réussi à retrouver Alfraganus sur Solinari mais il est bel et bien passé par là. Cortès va retourner à ses recherches en espérant retrouver une nouvelle piste pour retrouver Alfraganus.
+7- Vous n'avez pas rÃ©ussi Ã  retrouver Alfraganus sur Solinari mais il est bel et bien passÃ© par lÃ . CortÃ¨s va retourner Ã  ses recherches en espÃ©rant retrouver une nouvelle piste pour retrouver Alfraganus.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.13.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s5.1.12.jpg
 
-==<p><em>Fin de la quête : 5.1- Les Runes Marines</em>==
+==<p><em>Fin de la quÃªte : 5.1- Les Runes Marines</em>==
 Guide par Aerie PinkPanther
-
