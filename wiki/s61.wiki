@@ -1,39 +1,38 @@
 #sidebar Sommaire2
 
-=Première Rencontre=
+=PremiÃ¨re Rencontre=
 
 
-<p>*Quête* :<em> 6.1- Première Rencontre</em> </p>
-<p>*Pré-requis* : 1.2- L'Hotêl du Croizic</p>
+<p>*QuÃªte* :<em> 6.1- PremiÃ¨re Rencontre</em> </p>
+<p>*PrÃ©-requis* : 1.2- L'HotÃªl du Croizic</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Main Noire est une organisation criminelle de Brynnlaw. Cette organisation recrute toujours du monde pour étendre son emprise sur la ville et son commerce.
+La Main Noire est une organisation criminelle de Brynnlaw. Cette organisation recrute toujours du monde pour Ã©tendre son emprise sur la ville et son commerce.
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Rendez-vous dans la taverne de la Couronne de Cuivre. Dans les chambres à l'étage vous trouverez Man'Uchao qui vous propose un petit coup de main pour gagner quelques pièces.
+1- Rendez-vous dans la taverne de la Couronne de Cuivre. Dans les chambres Ã  l'Ã©tage vous trouverez Man'Uchao qui vous propose un petit coup de main pour gagner quelques piÃ¨ces.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.1.01.jpg
 
 
-2- Vous devez retrouver un certain Galen qui vit dans les îles aux épices. Il doit manifestement un peu d'argent aux amis de Man'Uchao et il est temps de lui rappeler qu'il faut payer ses dettes.
+2- Vous devez retrouver un certain Galen qui vit dans les Ã®les aux Ã©pices. Il doit manifestement un peu d'argent aux amis de Man'Uchao et il est temps de lui rappeler qu'il faut payer ses dettes.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.1.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.1.03.jpg
 
-3- Il refuse de payer et lâche quelques singes de combat sur vous ! Débarassez-vous en puis reparlez à Galen, celui-ci acceptera finalement de payer un accompte.
+3- Il refuse de payer et lÃ¢che quelques singes de combat sur vous ! DÃ©barassez-vous en puis reparlez Ã  Galen, celui-ci acceptera finalement de payer un accompte.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.1.04.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.1.05.jpg
 
-4- En retournant voir Man'Uchao à la taverne, celui-ci vous parlera de sa guilde : La Main Noire. Vous y êtes invités pour y faire vos preuves.
+4- En retournant voir Man'Uchao Ã  la taverne, celui-ci vous parlera de sa guilde : La Main Noire. Vous y Ãªtes invitÃ©s pour y faire vos preuves.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.1.06.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.1.07.jpg
 
-==<p><em>Fin de la quête : Première Rencontre</em>==
+==<p><em>Fin de la quÃªte : PremiÃ¨re Rencontre</em>==
 Guide par Aerie PinkPanther
-
