@@ -32,19 +32,19 @@ http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.04.jpg
 
 4- Maintenant vous devez désactiver les 4 phares de la citadelle :
 
-- Premier Phare
+- Premier Phare<p></p>
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.06.jpg
 
-- Deuxième Phare
+- Deuxième Phare<p></p>
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.07.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.08.jpg
 
-- Troisième Phare
+- Troisième Phare<p></p>
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.09.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.10.jpg
 
-- Quatrième Phare
+- Quatrième Phare<p></p>
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.11.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.12.jpg
 
