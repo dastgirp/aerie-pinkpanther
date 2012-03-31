@@ -54,10 +54,10 @@
 
 <h3>VI- La Main Noire</h3>
 	<ul class="head-menu">
-		<li>6.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Première rencontre</a></li>
-		<li>6.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Négociations</a></li>
-		<li>6.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">Vengeance</a></li>
-		<li>6.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/">De passage au Menez</a></li>
+		<li>6.1- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s61">Première rencontre</a></li>
+		<li>6.2- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s62">Négociations</a></li>
+		<li>6.3- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s63">Vengeance</a></li>
+		<li>6.4- <a href="http://code.google.com/p/aerie-pinkpanther/wiki/s64">De passage au Menez</a></li>
 	</ul>
 		
 	
