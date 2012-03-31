@@ -3,48 +3,48 @@
 =Vengeance=
 
 
-<p>*Quête* :<em>6.3- Vengeance</em> </p>
-<p>*Pré-requis* : 6.2- Négociations</p>
+<p>*QuÃªte* :<em>6.3- Vengeance</em> </p>
+<p>*PrÃ©-requis* : 6.2- NÃ©gociations</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Main Noire est une organisation criminelle de Brynnlaw. Cette organisation recrute toujours du monde pour étendre son emprise sur la ville et son commerce.
+La Main Noire est une organisation criminelle de Brynnlaw. Cette organisation recrute toujours du monde pour Ã©tendre son emprise sur la ville et son commerce.
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Après le combat de l'île de Tibérine, Boliv'Art vous invite à entrer dans les locaux de la Guilde. La Guilde doit se venger pour ne pas perdre la face devant les pirates mais elle n'a pas les moyens de déclarer une guerre ouverte. Vous ne pourrez pas passer un force pour prendre la citadelle. Vous allez devoir partir en éclaireur et désactiver les phares pour que les hommes de la Guilde débarquent dans le noir et puissent prendre le contrôle de la forteresse par la surprise.
+1- AprÃ¨s le combat de l'Ã®le de TibÃ©rine, Boliv'Art vous invite Ã  entrer dans les locaux de la Guilde. La Guilde doit se venger pour ne pas perdre la face devant les pirates mais elle n'a pas les moyens de dÃ©clarer une guerre ouverte. Vous ne pourrez pas passer un force pour prendre la citadelle. Vous allez devoir partir en Ã©claireur et dÃ©sactiver les phares pour que les hommes de la Guilde dÃ©barquent dans le noir et puissent prendre le contrÃ´le de la forteresse par la surprise.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.01.jpg
 
 
-2- Pour vous rendre à la forteresse d'Airain, vous devez partir depuis l'île aux Perles dans la Région de Coppalana. Puis vous diriger vers le sud. Vous arriverez dès lors dans la zone recherchée, la Citadelle occupe la plus grande île de cette région.
+2- Pour vous rendre Ã  la forteresse d'Airain, vous devez partir depuis l'Ã®le aux Perles dans la RÃ©gion de Coppalana. Puis vous diriger vers le sud. Vous arriverez dÃ¨s lors dans la zone recherchÃ©e, la Citadelle occupe la plus grande Ã®le de cette rÃ©gion.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.03.jpg
 
-3- Une fois à terre vous devez emprunter les téléporteurs jaunes puis entrer dans la citadelle sans vous faire repérer par les nombreux gardes ou bien ce sera retour à la case départ.
+3- Une fois Ã  terre vous devez emprunter les tÃ©lÃ©porteurs jaunes puis entrer dans la citadelle sans vous faire repÃ©rer par les nombreux gardes ou bien ce sera retour Ã  la case dÃ©part.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.04.jpg
 
-4- Maintenant vous devez désactiver les 4 phares de la citadelle :
+4- Maintenant vous devez dÃ©sactiver les 4 phares de la citadelle :
 
 - Premier Phare
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.06.jpg
 
-- Deuxième Phare
+- DeuxiÃ¨me Phare
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.07.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.08.jpg
 
-- Troisième Phare
+- TroisiÃ¨me Phare
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.09.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.10.jpg
 
-- Quatrième Phare
+- QuatriÃ¨me Phare
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.11.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.12.jpg
 
@@ -53,11 +53,10 @@ http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.12.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.13.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.14.jpg
 
-6- Une fois fait, Boliv'Art apparaitra avec ses hommes dans la grande salle. La Guilde de la Main Noire s'est belle et bien vengée. Il a même retrouvé dans les affaires de Nicola Sacco une Perle Noire ! Vous êtes maintenant en possession de la Perle Noire n°2
+6- Une fois fait, Boliv'Art apparaitra avec ses hommes dans la grande salle. La Guilde de la Main Noire s'est belle et bien vengÃ©e. Il a mÃªme retrouvÃ© dans les affaires de Nicola Sacco une Perle Noire ! Vous Ãªtes maintenant en possession de la Perle Noire nÂ°2
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.3.15.jpg
 
 
-==<p><em>Fin de la quête : 6.3- Vengeance</em>==
+==<p><em>Fin de la quÃªte : 6.3- Vengeance</em>==
 Guide par Aerie PinkPanther
-
