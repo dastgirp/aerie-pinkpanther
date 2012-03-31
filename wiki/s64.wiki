@@ -3,29 +3,29 @@
 =De passage au Menez=
 
 
-<p>*Quête* :<em>6.4- De passage au Menez</em> </p>
-<p>*Pré-requis* : 6.3- Vengeance / 3.2- La Révolte de Waclav</p>
+<p>*QuÃªte* :<em>6.4- De passage au Menez</em> </p>
+<p>*PrÃ©-requis* : 6.3- Vengeance / 3.2- La RÃ©volte de Waclav</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Main Noire est une organisation criminelle de Brynnlaw. Cette organisation recrute toujours du monde pour étendre son emprise sur la ville et son commerce.
+La Main Noire est une organisation criminelle de Brynnlaw. Cette organisation recrute toujours du monde pour Ã©tendre son emprise sur la ville et son commerce.
 
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
-1- Après la révolte de Waclav et son retour au pouvoir à Schallmar, vous pouvez retourner rendre visite à Boliv'Art dans sa guilde de Brynnlaw. Il vous proposera une nouvelle mission.
+1- AprÃ¨s la rÃ©volte de Waclav et son retour au pouvoir Ã  Schallmar, vous pouvez retourner rendre visite Ã  Boliv'Art dans sa guilde de Brynnlaw. Il vous proposera une nouvelle mission.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.01.jpg
 
-2- En vous promenant dans les ruelles du Menez Mikael ar Mor, vous pouvez tomber devant une auberge, celle de l'Ar Gwez Boel. En montant au premier étage, vous retrouverez Boliv'Art dans un des salons.
+2- En vous promenant dans les ruelles du Menez Mikael ar Mor, vous pouvez tomber devant une auberge, celle de l'Ar Gwez Boel. En montant au premier Ã©tage, vous retrouverez Boliv'Art dans un des salons.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.02.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.03.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.04.jpg
 
-3- Il vous a proposé de voler les Pirates de la Défense qui contrôlent le Menez alors qu'ils sont censés être alliés avec la Main Noire ! Vous allez profiter d'une visite officielle de Boliv'Art pour vous faufiler dans les couloirs de la citadelle et localiser la salle au trésor.
+3- Il vous a proposÃ© de voler les Pirates de la DÃ©fense qui contrÃ´lent le Menez alors qu'ils sont censÃ©s Ãªtre alliÃ©s avec la Main Noire ! Vous allez profiter d'une visite officielle de Boliv'Art pour vous faufiler dans les couloirs de la citadelle et localiser la salle au trÃ©sor.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.06.jpg
@@ -37,14 +37,13 @@ http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.08.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.09.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.10.jpg
 
-5- Si vous réussissez à passer le tout, vous vous retrouverez face au gardien de la salle au trésor qu'il vous faudra défaire sans tomber dans l'eau empoisonnée. Une fois le Gardien Asmodée battu vous pouvez ressortir, vous obtiendrez une Perle Noire n°5.
+5- Si vous rÃ©ussissez Ã  passer le tout, vous vous retrouverez face au gardien de la salle au trÃ©sor qu'il vous faudra dÃ©faire sans tomber dans l'eau empoisonnÃ©e. Une fois le Gardien AsmodÃ©e battu vous pouvez ressortir, vous obtiendrez une Perle Noire nÂ°5.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.4.11.jpg
 
-6- Retournez voir Boliv'Art à l'auberge de l'Ar Gwez Boel pour lui remettre le trésor. Il vous donnera la Carte au trésor n°10.
+6- Retournez voir Boliv'Art Ã  l'auberge de l'Ar Gwez Boel pour lui remettre le trÃ©sor. Il vous donnera la Carte au trÃ©sor nÂ°10.
 
 
 
-==<p><em>Fin de la quête : 6.4- De passage au Menez</em>==
+==<p><em>Fin de la quÃªte : 6.4- De passage au Menez</em>==
 Guide par Aerie PinkPanther
-
