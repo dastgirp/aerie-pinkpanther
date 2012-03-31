@@ -1,18 +1,18 @@
 #sidebar Sommaire2
 
-=Négociations=
+=NÃ©gociations=
 
 
-<p>*Quête* :<em>6.2- Négociations</em> </p>
-<p>*Pré-requis* : 6.1- Première Rencontre</p>
+<p>*QuÃªte* :<em>6.2- NÃ©gociations</em> </p>
+<p>*PrÃ©-requis* : 6.1- PremiÃ¨re Rencontre</p>
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/lunedo11.png
 
 ==<p><span style="text-decoration: underline;">Contexte</span></p>==
 
-La Main Noire est une organisation criminelle de Brynnlaw. Cette organisation recrute toujours du monde pour étendre son emprise sur la ville et son commerce.
+La Main Noire est une organisation criminelle de Brynnlaw. Cette organisation recrute toujours du monde pour Ã©tendre son emprise sur la ville et son commerce.
 
-==<p>Déroulement</p>== 
+==<p>DÃ©roulement</p>== 
 
 1- Une fois dans la Guilde de la Main Noire, vous devez discuter avec le responsable Boliv'Art. Avant de pouvoir devenir un des leurs, vous devez discuter avec Marrick pour que vous puissiez faire un coup ensemble.
 
@@ -20,34 +20,33 @@ http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.01.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.02.jpg
 
 
-2- La mission est de rendre visite à Kesha et son atelier. Elle concurrance un peu trop le business de la Main Noire. En façade, elle vend des fruits et légumes mais en réalité sa boutique abrite un atelier clandestin d'épices.
+2- La mission est de rendre visite Ã  Kesha et son atelier. Elle concurrance un peu trop le business de la Main Noire. En faÃ§ade, elle vend des fruits et lÃ©gumes mais en rÃ©alitÃ© sa boutique abrite un atelier clandestin d'Ã©pices.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.03.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.04.jpg
 
-3- Kesha s'attendait manifestement à une visite de la Guilde de la Main Noire, des ouvriers sont prêts à en découdre !
+3- Kesha s'attendait manifestement Ã  une visite de la Guilde de la Main Noire, des ouvriers sont prÃªts Ã  en dÃ©coudre !
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.05.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.06.jpg
 
-4- Une fois ses gardes tués, elle vous maudira vous mettant en garde contre les représailles des pirates de la Défense. Vous pouvez retourner voir Marrick pour recevoir l'autorisation d'entrer dans la guilde. Il vous donnera la Carte au Trésor n°8 qui vous permettra d'accèder à la cache secrète de la Main Noire pour écouler la contrebande.
+4- Une fois ses gardes tuÃ©s, elle vous maudira vous mettant en garde contre les reprÃ©sailles des pirates de la DÃ©fense. Vous pouvez retourner voir Marrick pour recevoir l'autorisation d'entrer dans la guilde. Il vous donnera la Carte au TrÃ©sor nÂ°8 qui vous permettra d'accÃ¨der Ã  la cache secrÃ¨te de la Main Noire pour Ã©couler la contrebande.
 
 
-5- Rendez-vous dans la région du Monastère de Tibérine pour accéder à la cache de la Main Noire. En avançant dans la grotte vous trouverez un dock avec Marrick et Boliv'Art. Parlez-leur.
+5- Rendez-vous dans la rÃ©gion du MonastÃ¨re de TibÃ©rine pour accÃ©der Ã  la cache de la Main Noire. En avanÃ§ant dans la grotte vous trouverez un dock avec Marrick et Boliv'Art. Parlez-leur.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.07.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.08.jpg
 
-6- La discussion tourne mal, les Pirates de la Défense ont voulu se venger et vous avez du vous battre pour sauver votre peau.
+6- La discussion tourne mal, les Pirates de la DÃ©fense ont voulu se venger et vous avez du vous battre pour sauver votre peau.
 
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.09.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.10.jpg
 http://aerie-pinkpanther.googlecode.com/svn/wiki/images/s6.2.11.jpg
 
-7- Vous devez vous regrouper à la Guilde de la Main Noire pour envisager un coup de force contre ces traites pirates de la Défense.
+7- Vous devez vous regrouper Ã  la Guilde de la Main Noire pour envisager un coup de force contre ces traites pirates de la DÃ©fense.
 
 
 
-==<p><em>Fin de la quête : 6.2- Négociations</em>==
+==<p><em>Fin de la quÃªte : 6.2- NÃ©gociations</em>==
 Guide par Aerie PinkPanther
-
