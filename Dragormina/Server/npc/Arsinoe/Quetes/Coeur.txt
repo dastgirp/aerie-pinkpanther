@@ -343,7 +343,7 @@ set @name$,"^66CCFFSvankmajer^000000";
 //________________Le Coeur : Kargah _______________________________
 //_________________________________________________________________
 
-ars_in17,136,111,1	script	Colonel De Nursie#coeur	659,{
+ars_in17,136,111,1	script	Colonel De Nursie#coeur	420,{
 
 set @name$,"^66CCFFColonel De Nursie^000000";
 
@@ -435,7 +435,7 @@ set @name$,"^FF00CCAnne^000000";
 //________________Le Coeur : Bacchias _____________________________
 //_________________________________________________________________
 
-ars_in17,97,71,4	script	Mage Gawelle#coeur	661,{
+ars_in17,97,71,4	script	Mage Gawelle#coeur	920,{
 
 if(EP7_LANGUE == 0) {set @name$,"^FF00CCMage Gawelle^000000";}
 if(EP7_LANGUE == 1) {set @name$,"^FF00CCMage Gawelle^000000";}
