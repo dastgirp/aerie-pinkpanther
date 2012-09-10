@@ -15,7 +15,7 @@
 //
 //===== Current Version: ==========================================================================  
 //
-//= 2.4
+//= 2.5
 //
 //===== Additional Comments: ======================================================================  
 //
@@ -25,6 +25,7 @@
 //= 2.2 Apprenti Finissule npchide deleted
 //= 2.3 Added Arsinois Currency
 //= 2.4 Revisited English version by DesertFox
+//= 2.5 Set waitingroom in english per default
 //
 //================================================================================================= 
 
@@ -60,7 +61,7 @@ OnInit:
 	
 	//Choisir la langue pour les WaitingRoom : (0 = Français / 1 = Anglais / 2 = Espagnol / 3 = Tagalog / 4 = Russian / 5 = Portuguese)
 	//Choose the language for WaitingRoom
-	set $EP7_LANGUE,4;
+	set $EP7_LANGUE,1;
 
 
 //======================================================================================
