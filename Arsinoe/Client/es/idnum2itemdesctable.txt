@@ -1,0 +1,342 @@
+//Arsinoé
+
+29000#
+Cuero cabelludo
+Peso : ^77777710^000000
+#
+29001#
+Finissule, aprendiz de Gawelle
+Peso : ^77777710^000000
+#
+29002#
+Flor de Lophophora , Muchos herbolarios la buscan, es una poderosa planta curativa.
+Peso : ^77777710^000000
+#
+29003#
+Esta es el alma de Calliope's soul, hija de Danifae.
+Peso : ^77777710^000000
+#
+29004#
+Esta es el alma de Euterpe, hija de Danifae's .
+Peso : ^77777710^000000
+#
+29005#
+Esta es el alma de Uranie, hija de Danifae's .
+Peso : ^77777710^000000
+#
+29006#
+Esta carta fue escrita por Clerc Graivois, es una autorizacion de entrar en la academia de Harpocrate.
+Peso : ^77777710^000000
+#
+29007#
+Esta carta fue escrita por Pevnec, es un pase hacia Philerme.
+Peso : ^77777710^000000
+#
+29008#
+Tinta de la selva de Thébaïde.
+Peso : ^77777710^000000
+#
+29009#
+Bermellon de tinta refinada por Rick Eupator.
+Peso : ^77777710^000000
+#
+29010#
+Loto negro, esta planta esta prohibida en Arsinoé.
+Peso : ^77777710^000000
+#
+29011#
+Tarjeta de membresia de la compañia de comercio de Umaya.
+Peso : ^77777710^000000
+#
+29012#
+Piel de marmota de las montañas Bachias.
+Peso : ^77777710^000000
+#
+29013#
+Excremento de Bilal del bosque de Kiman Farès.
+Peso : ^77777710^000000
+#
+29014#
+Hueso de mamut.
+Peso : ^77777710^000000
+#
+29015#
+Colmillos de goblin, simbolo de tu valor enfrentando a los invasores del desierto Kargah.
+Peso : ^77777710^000000
+#
+29016#
+Las joyas de Gondar.
+Peso : ^77777710^000000
+#
+29017#
+Tantale Island card.
+Peso : ^77777710^000000
+#
+29018#
+Coppalana Beach card.
+Peso : ^77777710^000000
+#
+29019#
+Gomorrhe Necropolis card.
+Peso : ^77777710^000000
+#
+29020#
+Traïana's Lighthouse card.
+Peso : ^77777710^000000
+#
+29021#
+Euhéméria card.
+Peso : ^77777710^000000
+#
+29022#
+Octavie's Pass card.
+Peso : ^77777710^000000
+#
+29023#
+Nèsos Village's card.
+Peso : ^77777710^000000
+#
+29024#
+Terkish Citadel card.
+Peso : ^77777710^000000
+#
+29025#
+The Light Citadel card.
+Peso : ^77777710^000000
+#
+29026#
+Thébaïde card.
+Peso : ^77777710^000000
+#
+29027#
+Red Forest card.
+Peso : ^77777710^000000
+#
+29028#
+Two-Gates card.
+Peso : ^77777710^000000
+#
+29029#
+La Rana, Arena card.
+Peso : ^77777710^000000
+#
+29030#
+Arsinoé, The City card
+Peso : ^77777710^000000
+#
+29031#
+Lalibela card.
+Peso : ^77777710^000000
+#
+29032#
+Hylarheim card.
+Peso : ^77777710^000000
+#
+29033#
+Port-Sirène card.
+Poids : ^77777710^000000
+#
+29034#
+Morloc'h's Whispers card.
+Poids : ^77777710^000000
+#
+29035#
+Soulavein : The Temple card.
+Peso : ^77777710^000000
+#
+29036#
+Harpocrate's Monastry card.
+Peso : ^77777710^000000
+#
+29037#
+Gema roja de la esfera planar.
+Peso : ^77777710^000000
+#
+29038#
+Gema verde de la esfera planar.
+Peso : ^77777710^000000
+#
+29039#
+Gema amarilla de la esfera planar.
+Peso : ^77777710^000000
+#
+29040#
+Gema azul de la esfera planar.
+Peso : ^77777710^000000
+#
+29041#
+cabeza de Djoser
+Peso : ^77777710^000000
+#
+29042#
+Cuerpo de Djoser
+Peso : ^77777710^000000
+#
+29043#
+Pierna de Djoser
+Peso : ^77777710^000000
+#
+29044#
+Collar de orco
+Peso : ^77777710^000000
+#
+29045#
+Collar de esclavo
+Peso : ^77777710^000000
+#
+29046#
+Alas sangrantes
+Peso : ^77777710^000000
+#
+29047#
+Corazon de Sylphide
+Peso : ^77777710^000000
+#
+29048#
+Aceite de Rana
+Peso : ^77777710^000000
+#
+29049#
+Un hongo oscuro
+Peso : ^77777710^000000
+#
+29050#
+Vino dulce
+Peso : ^77777710^000000
+#
+29051#
+Sombras
+Peso : ^77777710^000000
+#
+29052#
+Anguila encontrada pescando en el imperio Rana. Esta especie es comun.
+Peso : ^7777771^000000
+#
+29053#
+Pez dorado encontrado en el bosque Kiman Farès. Esta especie es rara. Solo puede ser encontrada de dia.
+Peso : ^7777771^000000
+#
+29054#
+Pez escorpion encontrado pescando en el desierto Kargah. Esta especie es incomun. Solo puede ser encontrada de noche.
+Peso : ^7777771^000000
+#
+29055#
+Pulpo encontrado pezcando en el bosque Thebaïde. Esta especie es comun.
+Peso : ^7777771^000000
+#
+29056#
+Lenguado encontrado pescando en el inframundo. Esta especie es comun. Solo la puedes encontrar de noche.
+Peso : ^7777771^000000
+#
+29057#
+Caballo de mar encontrado pescando en Hylarheim. Esta especie es comun.
+Peso : ^7777771^000000
+#
+29058#
+Tiburon encontrado pescando en Coppalana. Esta especie es comun.
+Peso : ^7777771^000000
+#
+29059#
+Barra encontrada pescando en Urunesti. Esta especie es comun. Solo puede ser encontrada de dia.
+Peso : ^7777771^000000
+#
+29060#
+Barra comun encontrada pescando en Urunesti. Esta especie es incomun.
+Peso : ^7777771^000000
+#
+29061#
+Salmon encontrado pescando en Crystalmir. Esta especie es incomun. Solo puede ser encontrado de dia.
+Peso : ^7777771^000000
+#
+29062#
+Cangrejo encontrado pescando en La Rana's Empire. Esta especie es rara.
+Peso : ^77777710^000000
+#
+29063#
+Salmon rosa encontrado pescando en Crystalmir. Esta especie es rara.
+Peso : ^7777771^000000
+#
+29064#
+Perca amarilla encontrada pescando en el bosque Thebaïde. Esta especie es comun.
+Peso : ^7777771^000000
+#
+29065#
+Piraña encontrada pescando en el imperio de La Rana. Esta especie es incomun. Solo puede ser encontrada de dia.
+Peso : ^77777710^000000
+#
+29066#
+Carpa encontrada pescando en el bosque Kiman Farès. Esta especie es incomun. Solo puede ser encontrada de dia.
+Peso : ^7777771^000000
+#
+29067#
+Atun encontrado pescando en Coppalana. Esta especie es comun.
+Peso : ^7777771^000000
+#
+29068#
+Pez Angel encontrado pescando en el inframundo. Esta especie es rara.
+Peso : ^7777771^000000
+#
+29069#
+Pez pallaso encontrado pescando en Coppalana. Esta especie es rara. Solo puedes encontrarlo de noche.
+Peso : ^7777771^000000
+#
+29070#
+Albur encontrado pescando en Crystalmir. Esta especie es comun.
+Peso : ^7777771^000000
+#
+29071#
+Rana encontrada pescando en el bosque de Kiman Farès. Esta especie es comun. Solo puede ser encontrado en la noche.
+Peso : ^7777771^000000
+#
+29072#
+Pez linterna encontrado pescando en el inframundo. Esta especie es rara. Solo puede ser encontrado de noche.
+Peso : ^7777771^000000
+#
+29073#
+Cebo
+Peso : ^7777771^000000
+#
+29074#
+Caña de pescar
+Peso : ^7777771^000000
+#
+29075#
+Caña de campeones 
+Peso : ^7777771^000000
+#
+29076#
+Gancho para hielo, pudes invertir el movimiento del bloque de hielo para halar de el! 
+Peso : ^77777710^000000
+#
+29077#
+Malus Paralysis, seleccionalo y da click sobre un bloque para paralisar a un contrincante unos segundos.
+Peso : ^77777710^000000
+#
+29078#
+Malus Dizziness, seleccionalo y da click sobre un bloque para inmobilisar a un contrincante unos segundos.
+Peso : ^77777710^000000
+#
+29079#
+Malus Inversion, seleccionalo y da click sobre un bloque para invertir el movimiento de un contrincante!
+Peso : ^77777710^000000
+#
+29080#
+Bonus Pas-de-Giant, seleccionalo y da click en tu bloque para aumentar la distancia de viaje.
+Peso : ^77777710^000000
+#
+29081#
+Bonus Mushroom, activalo y da click en tu bloque para incrementar la velocidad.
+Peso : ^77777710^000000
+#
+29082#
+Bonus Meals, Usalo para incrementar tu velocidad.
+Peso : ^77777710^000000
+#
+29083#
+Libro de cuentas fiscales del conde Nemours.
+Peso : ^77777710^000000
+#
+29180#
+Arsinois es la moneda utilizada en Arsinoe.
+Peso : ^7777771^000000
+#

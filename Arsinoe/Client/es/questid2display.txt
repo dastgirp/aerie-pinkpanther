@@ -1,0 +1,633 @@
+//----------- Arsinoé :-------------
+70100#La planta en el desierto#Arsinoe#4_blue_f#
+Debes ayudar a la gente de Kiman Fares a tratar a sus heridos creando las hierbas necesarias.#
+Visita al herbolario de Euhéméria#
+70101#La planta en el desierto#Arsinoe#4_blue_f#
+Debes ayudar a la gente de Kiman Fares a tratar a sus heridos creando las hierbas necesarias.#
+Visita a Prigent Danone en Kiman Fares#
+70102#La planta en el desierto#Arsinoe#4_blue_f#
+Debes ayudar a la gente de Kiman Fares a tratar a sus heridos creando las hierbas necesarias.#
+Encuantra a Lophophora en el desierto Kargha#
+70103#La planta en el desierto#Arsinoe#4_blue_f#
+Debes ayudar a la gente de Kiman Fares a tratar a sus heridos creando las hierbas necesarias.#
+Entregale la Lophophora a Danon Prigent.#
+
+//Quête Accès
+70200#La propuesta de Daphnis#Arsinoe#4_m_reds#
+El aventurero Daphnis tiene problemas economicos y necesita ir al continente de Arsinoe con el fin de honrar su contrato en la búsqueda de artefactos mágicos.#
+Debes pagar por el transporte tuyo y de Daphnis al Captain Blowfall de Alberta.#
+70201#La propuesta de Daphnis#Arsinoe#4_m_reds#
+El aventurero Daphnis tiene problemas economicos y necesita ir al continente de Arsinoe con el fin de honrar su contrato en la búsqueda de artefactos mágicos.#
+Debes hablar con Daphnis en la isla Tantale.#
+70202#La propuesta de Daphnis#Arsinoe#4_m_reds#
+El aventurero Daphnis tiene problemas economicos y necesita ir al continente de Arsinoe con el fin de honrar su contrato en la búsqueda de artefactos mágicos.#
+Debes explorar la isla de Tantale.#
+70203#La propuesta de Daphnis#Arsinoe#4_m_reds#
+El aventurero Daphnis tiene problemas economicos y necesita ir al continente de Arsinoe con el fin de honrar su contrato en la búsqueda de artefactos mágicos.#
+El padre Benoit te ha pedido que visites a Saul Copyist en la biblioteca de Yuno para que obtengas el diccionario.#
+70204#La propuesta de Daphnis#Arsinoe#4_m_reds#
+El aventurero Daphnis tiene problemas economicos y necesita ir al continente de Arsinoe con el fin de honrar su contrato en la búsqueda de artefactos mágicos.#
+Ahora puedes hablar con los nativos de Arsinoe.#
+70205#La propuesta de Daphnis#Arsinoe#4_m_reds#
+El aventurero Daphnis tiene problemas economicos y necesita ir al continente de Arsinoe con el fin de honrar su contrato en la búsqueda de artefactos mágicos.#
+Dale 120 Clam Shell a Guellronoc'h para tener el acceso para ser transportado a Coppalana.#
+70206#La propuesta de Daphnis#Arsinoe#4_m_reds#
+El aventurero Daphnis tiene problemas economicos y necesita ir al continente de Arsinoe con el fin de honrar su contrato en la búsqueda de artefactos mágicos.#
+Dale 120 Clam Shell a Guellronoc'h para tener el acceso para ser transportado a Coppalana.#
+
+//Coppalana
+
+70207#La boitata, el espiritu de Coppalana#Arsinoe#4_m_reds#
+El espiritu protector de Coppalana la boitata, enloquesio. Rmpio el puente Daggard la unica entrada a la tierra de Arsinoe.#
+Visita al Shaman Xaviral de Coppalana#
+70208#La boitata, el espiritu de Coppalana#Arsinoe#4_m_reds#
+El espiritu protector de Coppalana la boitata, enloquesio. Rmpio el puente Daggard la unica entrada a la tierra de Arsinoe.#
+Ayuda al sirviente Kloiacha para invocar a boitata.#
+70209#La boitata, el espiritu de Coppalana#Arsinoe#4_m_reds#
+El espiritu protector de Coppalana la boitata, enloquesio. Rmpio el puente Daggard la unica entrada a la tierra de Arsinoe.#
+Regresa a ver al jefe Rafloc'h.#
+//Coppalana Fête
+70210#El dia Boitata#Arsinoe#4_m_reds#
+Despues de tu victoria sobre boitata, el jefe de la aldea de Coppalana quiere agradecerte organizando una gran fiesta.#
+Habla con Klerozonheg.#
+70211#El dia Boitata#Arsinoe#4_m_reds#
+Despues de tu victoria sobre boitata, el jefe de la aldea de Coppalana quiere agradecerte organizando una gran fiesta.#
+Mata 50 Curupira en la playa de Coppalana.#
+70212#El dia Boitata#Arsinoe#4_m_reds#
+Despues de tu victoria sobre boitata, el jefe de la aldea de Coppalana quiere agradecerte organizando una gran fiesta.#
+Debes traer la lista de compras para organizar el festival.#
+
+//Kiman Farès
+
+70220#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Darle la misiva del jefe Rafloc'h a Pevnec en Kimani Fares.#
+70221#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Visita al Shaman Kerloïc.#
+70222#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Investiga la Necropolis entre Kimani Fares y Coppalana.#
+70223#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Regresa a reportarte con el Shaman Kerloïc.#
+70224#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Encuentra informacion acerca de la familia real de Gomorrhe en Soknobeus.#
+70225#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Escabullete al cementerio Soknobeus.#
+70226#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Asegurate con el Shaman Kerloïc de la autenticidad del medallon.#
+70227#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Regresa a la necropolis de Gomorrhe.#
+70228#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Debes derrotar al rey de Gomorrhe, regresa con el Shaman Kerloïc.#
+70229#Kiman Farès : El levantar de los muertos#Arsinoe#4_m_reds#
+El puente Daggard esta reparado, ahora puedes entrar al bosque Kiman Fares plagado por una terrible maldicion.#
+Los artefactos sagrados han desaparecido, la calma no volvera asta que regresen los artefactos. Visita al jefe Pevnec.#
+
+//En Route vers Arsinoé, La Cité
+70230#Camino a Arsinoe, La ciudad#Arsinoe#4_m_reds#
+Despues del tiempo de crisis en Arsinoe, las legendarias cuatro puertas de la ciudad estan cerradas. Debes encontrar la manera de entrar sin que te sigan seres indeseables. Daphnis debe encontrar a su contacto en el lugar.#
+Contacta a Philerme para obtener los papeles falsos y entrar ilegalmente a Arsinoe.#
+70231#Camino a Arsinoe, La ciudad#Arsinoe#4_m_reds#
+Despues del tiempo de crisis en Arsinoe, las legendarias cuatro puertas de la ciudad estan cerradas. Debes encontrar la manera de entrar sin que te sigan seres indeseables. Daphnis debe encontrar a su contacto en el lugar.#
+Contacta a Raichor en Thebes para conseguir papel y tinta.#
+70232#Camino a Arsinoe, La ciudad#Arsinoe#4_m_reds#
+Despues del tiempo de crisis en Arsinoe, las legendarias cuatro puertas de la ciudad estan cerradas. Debes encontrar la manera de entrar sin que te sigan seres indeseables. Daphnis debe encontrar a su contacto en el lugar.#
+Debes ir a la granja Eupator cruzando las montañas Bacchias para obtener la tinta del pulpo salvaje.#
+70233#Camino a Arsinoe, La ciudad#Arsinoe#4_m_reds#
+Despues del tiempo de crisis en Arsinoe, las legendarias cuatro puertas de la ciudad estan cerradas. Debes encontrar la manera de entrar sin que te sigan seres indeseables. Daphnis debe encontrar a su contacto en el lugar.#
+Obtener 140 unidades de tinta de pulpo en la selva para obtener tinta purificada.#
+70234#Camino a Arsinoe, La ciudad#Arsinoe#4_m_reds#
+Despues del tiempo de crisis en Arsinoe, las legendarias cuatro puertas de la ciudad estan cerradas. Debes encontrar la manera de entrar sin que te sigan seres indeseables. Daphnis debe encontrar a su contacto en el lugar.#
+Proveer 140 unidades de tinta de pulpo para crear tinta purificada.#
+70235#Camino a Arsinoe, La ciudad#Arsinoe#4_m_reds#
+Despues del tiempo de crisis en Arsinoe, las legendarias cuatro puertas de la ciudad estan cerradas. Debes encontrar la manera de entrar sin que te sigan seres indeseables. Daphnis debe encontrar a su contacto en el lugar.#
+Entregale 400 Silver Coins a Raichor por los gastos efectuados al hacer el pasaporte falso. #
+70236#Camino a Arsinoe, La ciudad#Arsinoe#4_m_reds#
+Despues del tiempo de crisis en Arsinoe, las legendarias cuatro puertas de la ciudad estan cerradas. Debes encontrar la manera de entrar sin que te sigan seres indeseables. Daphnis debe encontrar a su contacto en el lugar.#
+Regresa para ver a Philerme en Euhéméria.#
+70237#Camino a Arsinoe, La ciudad#Arsinoe#4_m_reds#
+Despues del tiempo de crisis en Arsinoe, las legendarias cuatro puertas de la ciudad estan cerradas. Debes encontrar la manera de entrar sin que te sigan seres indeseables. Daphnis debe encontrar a su contacto en el lugar.#
+Pasa por Philermo Euhéméria, contacta al oficial Georet para obtener el sello oficial.#
+
+//Naissance de Lalibela
+70240#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Encuentra a Daphnis en Lalibela.#
+70241#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Debes contactar al sacerdote en Lalibela.#
+70242#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Debes ir al crater Gondar para encontrar a la Santa Familia. #
+70243#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Debes encontrar el modo de usar el elevador a la posada.#
+70244#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Petroloneko te dijo que uses la piedra magica levantada, debes liberar a la Santa Familia del escarabajo.#
+70245#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Has salvado a la Santa Familia que es parte del templo de Lalibela, Vuelve con el sacerdote en el templo Merlay.#
+70246#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Debes entrar a las entrañas del templo para asistir al nacimiento de Lalibela. #
+70247#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Que error tan terrible! Regresa con el sacerdote Merlay, El te guiara mas.#
+70248#El nacimiento de Lalibela#Arsinoe#1_f_orig#
+Daphnis finalmente logro contactarse con el informante de Arsinoe, los patrocinadortes desean que encuntres un artefacto en el templo de Lalibela al oeste de Arsinoe.#
+Agathon Paraclet ahora se encarga de los asuntos religiosos, solo el puede ayudar a resolver estos casos.#
+
+//Le Roi Gobelin
+70250#El rey goblin#Arsinoe#4_m_cru0#
+En el norte de la tierra se encuentran los goblin de Arsinoe y durante algun tiempo un rey a surgido entre la ciudadela Goblin Terkish. Un gran ejercito destruyo todas las ciudades que encontro a su paso. Ahora estan a las puertas de Arsinoe, amenazan con invadir la misma capital.#
+General Athanasius desea que te contactes con el Seneschal Lin Lime-Thalas de Torn.#
+70251#El rey goblin#Arsinoe#4_m_cru0#
+En el norte de la tierra se encuentran los goblin de Arsinoe y durante algun tiempo un rey a surgido entre la ciudadela Goblin Terkish. Un gran ejercito destruyo todas las ciudades que encontro a su paso. Ahora estan a las puertas de Arsinoe, amenazan con invadir la misma capital.#
+Debes contactar al comandante Paraclete ya que el puede mandar refuerzos desde el paso de Octavia.#
+70252#El rey goblin#Arsinoe#4_m_cru0#
+En el norte de la tierra se encuentran los goblin de Arsinoe y durante algun tiempo un rey a surgido entre la ciudadela Goblin Terkish. Un gran ejercito destruyo todas las ciudades que encontro a su paso. Ahora estan a las puertas de Arsinoe, amenazan con invadir la misma capital.#
+Ve a ver al senescal Lin para confirmar la llegada de los refuerzos.#
+70253#El rey goblin#Arsinoe#4_m_cru0#
+En el norte de la tierra se encuentran los goblin de Arsinoe y durante algun tiempo un rey a surgido entre la ciudadela Goblin Terkish. Un gran ejercito destruyo todas las ciudades que encontro a su paso. Ahora estan a las puertas de Arsinoe, amenazan con invadir la misma capital.#
+Ahora eres parte de la tercera Legion! La contra ofensiva comienza!#
+70254#El rey goblin#Arsinoe#4_m_cru0#
+En el norte de la tierra se encuentran los goblin de Arsinoe y durante algun tiempo un rey a surgido entre la ciudadela Goblin Terkish. Un gran ejercito destruyo todas las ciudades que encontro a su paso. Ahora estan a las puertas de Arsinoe, amenazan con invadir la misma capital.#
+Los cuarteles generales del ajercito goblin se han levantado! El senescal Lin te espera en Nêsos.#
+70255#El rey goblin#Arsinoe#4_m_cru0#
+En el norte de la tierra se encuentran los goblin de Arsinoe y durante algun tiempo un rey a surgido entre la ciudadela Goblin Terkish. Un gran ejercito destruyo todas las ciudades que encontro a su paso. Ahora estan a las puertas de Arsinoe, amenazan con invadir la misma capital.#
+Debes cruzar la aldea de Nêsos, despues el desierto para llegar al oasis Kahrga Siwa donde se llevara a cavo la siguiente batalla.#
+70256#El rey goblin#Arsinoe#4_m_cru0#
+En el norte de la tierra se encuentran los goblin de Arsinoe y durante algun tiempo un rey a surgido entre la ciudadela Goblin Terkish. Un gran ejercito destruyo todas las ciudades que encontro a su paso. Ahora estan a las puertas de Arsinoe, amenazan con invadir la misma capital.#
+Hermosa victoria! Ahora tendra que resistir la embestida del ejercito de reserva Goblins en el Oasis de Siwa! La ciudadela Terkish esta cerca, y la victoria final! #
+70257#El rey goblin#Arsinoe#4_m_cru0#
+En el norte de la tierra se encuentran los goblin de Arsinoe y durante algun tiempo un rey a surgido entre la ciudadela Goblin Terkish. Un gran ejercito destruyo todas las ciudades que encontro a su paso. Ahora estan a las puertas de Arsinoe, amenazan con invadir la misma capital.#
+La batalla final ha llegado, necesitas ejecutar un asalto a la ciudadela Terkish para eliminar al rey goblin.#
+
+//Les Mages d'Arsinoé
+70260#Magos de Arsinoé#Arsinoe#4_nfcock#
+Acabas de encontrar un pollo que se la pasa parloteando, parece que quiere volver con la maga Gaëlle.#
+Debes encontrar a mage Gaëlle en las montañas Bacchias.#
+70261#Magos de Arsinoé#Arsinoe#4_nfcock#
+Acabas de encontrar un pollo que se la pasa parloteando, parece que quiere volver con la maga Gaëlle.#
+El pollo resulto ser su aprendiz, tendra que encontrarlo nuevamente#
+70262#Magos de Arsinoé#Arsinoe#4_nfcock#
+Acabas de encontrar un pollo que se la pasa parloteando, parece que quiere volver con la maga Gaëlle.#
+Debes regresarle su aprendiz a la maga Gawelle.#
+70263#Magos de Arsinoé#Arsinoe#4_nfcock#
+El aprendiz de la maga Gawel, ha sido transformado por Gray Magi quienes recien llegaron a Arsinoe comenzaron a practicar magia ilegal.#
+Investiga a los Grey Magician quienes se reunen por las noches en el bosque de Kiman Fares.#
+70264#Magos de Arsinoé#Arsinoe#4_nfcock#
+El aprendiz de la maga Gawel, ha sido transformado por Gray Magi quienes recien llegaron a Arsinoe comenzaron a practicar magia ilegal.#
+Malditos Grey Magician ! Eres un pollo! Necesitamos regresar con la Maga Gaëlle para cancelar el hechizo#
+70265#Magos de Arsinoé#Arsinoe#4_nfcock#
+El aprendiz de la maga Gawel, ha sido transformado por Gray Magi quienes recien llegaron a Arsinoe comenzaron a practicar magia ilegal.#
+Debes reportar este hecho a la archimago Ornélia en Arsinoe, el alto consejo de los magos.#
+
+//Le Dragon de Gondar
+70266#Dragon de Gondar#Arsinoe#4_f_huwo#
+Los Grey Mages fuera del alto consejo de magos de Arsinoe aparecieron para practicar magia prohibida. Ahora estas bajo las ordenes de la archimago Ornélia, eso te servira de guia en tu investigacion.#
+El Dragon de Gondar es el unico capaz de percibir cambios en el curso de la magia, debes ir a visitarlo en Soufriere.#
+70267#Dragon de Gondar#Arsinoe#4_f_huwo#
+Los Grey Mages fuera del alto consejo de magos de Arsinoe aparecieron para practicar magia prohibida. Ahora estas bajo las ordenes de la archimago Ornélia, eso te servira de guia en tu investigacion.#
+Ouroulga no te dejara entrar a la guarida del Dragon sin darle antes 30 Ruby Gondar.#
+70268#Dragon de Gondar#Arsinoe#4_f_huwo#
+Los Grey Mages fuera del alto consejo de magos de Arsinoe aparecieron para practicar magia prohibida. Ahora estas bajo las ordenes de la archimago Ornélia, eso te servira de guia en tu investigacion.#
+Es hora de visitar al Dragon Gondar!#
+70269#Dragon de Gondar#Arsinoe#4_f_huwo#
+Los Grey Mages fuera del alto consejo de magos de Arsinoe aparecieron para practicar magia prohibida. Ahora estas bajo las ordenes de la archimago Ornélia, eso te servira de guia en tu investigacion.#
+Hora de regresar con la Archimago Ornélia en Arsinoe.#
+70270#Dragon de Gondar#Arsinoe#4_f_huwo#
+Los Grey Mages fuera del alto consejo de magos de Arsinoe aparecieron para practicar magia prohibida. Ahora estas bajo las ordenes de la archimago Ornélia, eso te servira de guia en tu investigacion.#
+Agathon Paraclet ahora se encarga de los asuntos religiosos, solo el puede ayudarte a resolver estos casos.#
+
+
+//La Légende de La Rana
+70280#El imperio La Rana#Arsinoe#4_m_cru2#
+Al sur de Arsinoe se encuentra el antiguo imperio de Ranas que fue conquistado por las legiones de Arsinoe hace ya algunos años. La ciudad de Arsinoe esta en problemas actualmente, la Reina de La Rana ha puesto en marcha un levantamiento general con el objetivo de restaurar el antiguo imperio de La Rana!#
+Debes hacer un reporte para el General Marshal Lorill Akey acerca de la situacion de la cuarta legion#
+70281#El imperio La Rana#Arsinoe#4_m_cru2#
+Al sur de Arsinoe se encuentra el antiguo imperio de Ranas que fue conquistado por las legiones de Arsinoe hace ya algunos años. La ciudad de Arsinoe esta en problemas actualmente, la Reina de La Rana ha puesto en marcha un levantamiento general con el objetivo de restaurar el antiguo imperio de La Rana!#
+Regresó a ver al General Lorill.#
+70282#El imperio La Rana#Arsinoe#4_m_cru2#
+Al sur de Arsinoe se encuentra el antiguo imperio de Ranas que fue conquistado por las legiones de Arsinoe hace ya algunos años. La ciudad de Arsinoe esta en problemas actualmente, la Reina de La Rana ha puesto en marcha un levantamiento general con el objetivo de restaurar el antiguo imperio de La Rana!#
+General Lorill te forzo a participar en esta guerra por la conquista, necesita que los ayudes a movilizarse a las tierras altas de La Rana#
+70283#El imperio La Rana#Arsinoe#4_m_cru2#
+Al sur de Arsinoe se encuentra el antiguo imperio de Ranas que fue conquistado por las legiones de Arsinoe hace ya algunos años. La ciudad de Arsinoe esta en problemas actualmente, la Reina de La Rana ha puesto en marcha un levantamiento general con el objetivo de restaurar el antiguo imperio de La Rana!#
+Ahora debes salvar la cuarta legion de Dien Bien Fût!#
+70284#El imperio La Rana#Arsinoe#4_m_cru2#
+Al sur de Arsinoe se encuentra el antiguo imperio de Ranas que fue conquistado por las legiones de Arsinoe hace ya algunos años. La ciudad de Arsinoe esta en problemas actualmente, la Reina de La Rana ha puesto en marcha un levantamiento general con el objetivo de restaurar el antiguo imperio de La Rana!#
+La Diosa La Rana desea verte pelar en la Arena, la vida de varios reenes esta en juego, debes ir a negociar con el rey de Arsinoe.#
+70285#El imperio La Rana#Arsinoe#4_m_cru2#
+Al sur de Arsinoe se encuentra el antiguo imperio de Ranas que fue conquistado por las legiones de Arsinoe hace ya algunos años. La ciudad de Arsinoe esta en problemas actualmente, la Reina de La Rana ha puesto en marcha un levantamiento general con el objetivo de restaurar el antiguo imperio de La Rana!#
+Para finalizar el acuerdo regresa a ver a la Diosa La Rana. #
+70286#El imperio La Rana#Arsinoe#4_m_cru2#
+Al sur de Arsinoe se encuentra el antiguo imperio de Ranas que fue conquistado por las legiones de Arsinoe hace ya algunos años. La ciudad de Arsinoe esta en problemas actualmente, la Reina de La Rana ha puesto en marcha un levantamiento general con el objetivo de restaurar el antiguo imperio de La Rana!#
+Es hora de enfrentar a su Diosa en la arena La Rana. #
+70287#El imperio La Rana#Arsinoe#4_m_cru2#
+Al sur de Arsinoe se encuentra el antiguo imperio de Ranas que fue conquistado por las legiones de Arsinoe hace ya algunos años. La ciudad de Arsinoe esta en problemas actualmente, la Reina de La Rana ha puesto en marcha un levantamiento general con el objetivo de restaurar el antiguo imperio de La Rana!#
+Una gran victoria sobre la reina! Ahora puedes convertirte en gladiador y pelear en la arena por un titulo mas prestigioso.#
+
+//Euhéméria - Le Phare de Traiana
+70290#El faro de Traïana#Arsinoe#4_m_mini#
+El faro de Traiana guia a los barcos a lo largo de la costa sureste de Arsinoe, tomaras parte de la investigacion.#
+Unete a Garric Frash en el faro de Traiana#
+70291#El faro de Traïana#Arsinoe#4_m_mini#
+El faro de Traiana guia a los barcos a lo largo de la costa sureste de Arsinoe, tomaras parte de la investigacion.#
+Debes obtener un nuevo cristal en las cercanias de Gardulf Grisaire en las montañas Bacchias.#
+70292#El faro de Traïana#Arsinoe#4_m_mini#
+El faro de Traiana guia a los barcos a lo largo de la costa sureste de Arsinoe, tomaras parte de la investigacion.#
+Debes obtener un nuevo cristal en las cercanias de Gardulf Grisaire en las montañas Bacchias.#
+70293#El faro de Traïana#Arsinoe#4_m_mini#
+El faro de Traiana guia a los barcos a lo largo de la costa sureste de Arsinoe, tomaras parte de la investigacion.#
+Debes obtener un nuevo cristal en las cercanias de Gardulf Grisaire en las montañas Bacchias.#
+70294#El faro de Traïana#Arsinoe#4_m_mini#
+El faro de Traiana guia a los barcos a lo largo de la costa sureste de Arsinoe, tomaras parte de la investigacion.#
+Debes reportar el cristal a el guardian del faro para que lo reactive.#
+70295#El faro de Traïana#Arsinoe#4_m_mini#
+El faro de Traiana guia a los barcos a lo largo de la costa sureste de Arsinoe, tomaras parte de la investigacion.#
+Debemos ir a la cima para enfrentar al Lord of Shadows.#
+70296#El faro de Traïana#Arsinoe#4_m_mini#
+El faro de Traiana guia a los barcos a lo largo de la costa sureste de Arsinoe, tomaras parte de la investigacion.#
+El faro funciona nuevamente, tu mision ha sido completada, puedes regresar con el alcalde de Euhéméria.#
+
+//Euhéméria - Les ContreBandiers
+70300#Los contrabandistas#Arsinoe#4_m_mini#
+los contrabandistas aparecieron en un pequeño pueblo de pescadores en el faro Traiana, los comerciantes de Euhéméria desean que resuelvas este problema tan perjudicial para sus negocios.#
+Encuentra a los contrabandistas#
+70301#Los contrabandistas#Arsinoe#4_m_mini#
+los contrabandistas aparecieron en un pequeño pueblo de pescadores en el faro Traiana, los comerciantes de Euhéméria desean que resuelvas este problema tan perjudicial para sus negocios.#
+Ve con el alcalde de Euhéméria, acabas de arreglar el problema.#
+
+//Euhéméria - Les Bandits de Bacchias
+70302#Bandidos de Bacchias#Arsinoe#4_m_mini#
+El alcalde de Euhéméria te ha pedido que caces a los bandidos de las montañas Bacchias reportale cada cuero cabelludo que les arranques.#
+Report scalps of bandits to Mayor of Euhéméria. #
+
+//Traïana - Les Orcs
+70303#Aldea orco#Arsinoe#4_m_mini#
+La alde en el bosque Soknobeus Bacchias recientemente ha sufrido ataques provenientes de una aldea localizada cerca del faro orco de Traiana, debes asegurarte de que no ocacionaran mas problemas.#
+You must go to the Orc Village.#
+70304#Aldea orco#Arsinoe#4_m_mini#
+La alde en el bosque Soknobeus Bacchias recientemente ha sufrido ataques provenientes de una aldea localizada cerca del faro orco de Traiana, debes asegurarte de que no ocacionaran mas problemas.#
+La situacion se torno pacifica al fin, puedes regresar con Gerwan Frigent.#
+
+//Arsinoé - Les Zombies d'Arsinoé
+70310#Los Zombies de Arsinoe#Arsinoe#4_nfcoff#
+Los sacerdotes de Mortys, que deben cuidar el embalsamamiento de los muertos, tienen unos problemas un tanto relucientes con los muertos. Estan un poco abrumados con la situacion, pero no se atreven a reportarlo a sus superiores por miedo a que los despidan.#
+Busca a Tasty para ser contratado.#
+70311#Los Zombies de Arsinoe#Arsinoe#4_nfcoff#
+Los sacerdotes de Mortys, que deben cuidar el embalsamamiento de los muertos, tienen unos problemas un tanto relucientes con los muertos. Estan un poco abrumados con la situacion, pero no se atreven a reportarlo a sus superiores por miedo a que los despidan.#
+Ahora tienes acceso al templo de Morty. Es hora de limpiar!#
+70312#Los Zombies de Arsinoe#Arsinoe#4_nfcoff#
+Los sacerdotes de Mortys, que deben cuidar el embalsamamiento de los muertos, tienen unos problemas un tanto relucientes con los muertos. Estan un poco abrumados con la situacion, pero no se atreven a reportarlo a sus superiores por miedo a que los despidan.#
+El templo de Mortys fue limpiado, ahora es tiempo de regresar con Yummy.#
+70313#Los Zombies de Arsinoe#Arsinoe#4_nfcoff#
+Los sacerdotes de Mortys, que deben cuidar el embalsamamiento de los muertos, tienen unos problemas un tanto relucientes con los muertos. Estan un poco abrumados con la situacion, pero no se atreven a reportarlo a sus superiores por miedo a que los despidan.#
+El guardian de las criptas de Arsinoe, Chibi Youma, no puede ir a casa, los muertos han resusitado con el tambien.#
+70314#Los Zombies de Arsinoe#Arsinoe#4_nfcoff#
+Los sacerdotes de Mortys, que deben cuidar el embalsamamiento de los muertos, tienen unos problemas un tanto relucientes con los muertos. Estan un poco abrumados con la situacion, pero no se atreven a reportarlo a sus superiores por miedo a que los despidan.#
+El debe conseguir los libros de hechizos en la casa chibi Youma.#
+
+//Le Culte de Danifae
+70320#El culto de Danifae#Arsinoe#2_m_alch#
+La diosa Danifae no responde a las oraciones de sus feligreses. No saben a donde acudir sin su diosa a su lado.#
+Buscar tres templos en Arsinoe, a los trillizos Danifae para encontrar sus almas.#
+70321#El culto de Danifae#Arsinoe#2_m_alch#
+La diosa Danifae no responde a las oraciones de sus feligreses. No saben a donde acudir sin su diosa a su lado.#
+Debes visitar el templo de Arsinoe en Danifae.#
+70322#El culto de Danifae#Arsinoe#2_m_alch#
+La diosa Danifae no responde a las oraciones de sus feligreses. No saben a donde acudir sin su diosa a su lado.#
+Debes ver al profeta en las montañas Tanzgue Bacchias.#
+70323#El culto de Danifae#Arsinoe#2_m_alch#
+La diosa Danifae no responde a las oraciones de sus feligreses. No saben a donde acudir sin su diosa a su lado.#
+Es momento de anunciar las buenas noticias a Danifae en su templo de la soledad.#
+70324#El culto de Danifae#Arsinoe#2_m_alch#
+La diosa Danifae no responde a las oraciones de sus feligreses. No saben a donde acudir sin su diosa a su lado.#
+Otra vez el culto ha sido un exito en Arsinoe, Agathon Paraclet de la ciudad de Arsinoe maneja esos problemas, debes decirselo. #
+
+//Le Culte d'Harpocrate
+70330#El culto de Harpocrates: Señor de las estrellas#Arsinoe#4_m_cru4#
+El casco de Harpocrate, un muy poderoso artefacto ha sido robado. Debes investigar su misteriosa desaparicion.#
+Visita la biblioteca de Ribald en Euhéméria.#
+70331#El culto de Harpocrates: Señor de las estrellas#Arsinoe#4_m_cru4#
+El casco de Harpocrate, un muy poderoso artefacto ha sido robado. Debes investigar su misteriosa desaparicion.#
+Los monjes de Harpocrate te esperan en la torre de las estrellas en la selva de Thebaid.#
+70332#El culto de Harpocrates: Señor de las estrellas#Arsinoe#4_m_cru4#
+El casco de Harpocrate, un muy poderoso artefacto ha sido robado. Debes investigar su misteriosa desaparicion.#
+El Nachtstern no es culpable del robo, tendra que tomar estos nuevos hechos Clerc Graivois.#
+
+//Le Culte d'Harpocrate : Partie II
+70333#El culto de Harpocrates: La academia#Arsinoe#4_m_cru3#
+Despues de haber ido en sentido contrario en el asunto de Nachtstern y la torre de las estrellas, el Cleric Graivois dirije sus sospechas hacia la academia de Harpocrates en la ciudad de Arsinoe.#
+Ahora puedes ir a investigar la academia de Harpocrate.#
+70334#El culto de Harpocrates: La academia#Arsinoe#4_m_cru3#
+Despues de haber ido en sentido contrario en el asunto de Nachtstern y la torre de las estrellas, el Cleric Graivois dirije sus sospechas hacia la academia de Harpocrates en la ciudad de Arsinoe.#
+AL parecer no todo esta bien en la academia, debes encontrar la llave de la prision.#
+70335#El culto de Harpocrates: La academia#Arsinoe#4_m_cru3#
+Despues de haber ido en sentido contrario en el asunto de Nachtstern y la torre de las estrellas, el Cleric Graivois dirije sus sospechas hacia la academia de Harpocrates en la ciudad de Arsinoe.#
+Tienes la llave! Es hora de hacer una vuelta rapida.#
+70336#El culto de Harpocrates: La academia#Arsinoe#4_m_cru3#
+Despues de haber ido en sentido contrario en el asunto de Nachtstern y la torre de las estrellas, el Cleric Graivois dirije sus sospechas hacia la academia de Harpocrates en la ciudad de Arsinoe.#
+Los Doppelgangers tomaron el control de la academia! #
+70337#El culto de Harpocrates: La academia#Arsinoe#4_m_cru3#
+Despues de haber ido en sentido contrario en el asunto de Nachtstern y la torre de las estrellas, el Cleric Graivois dirije sus sospechas hacia la academia de Harpocrates en la ciudad de Arsinoe.#
+El truco de los Doppelgangers termino, debes hacer tus reportes al Clerc Graivois! #
+70338#El culto de Harpocrates: La academia#Arsinoe#4_m_cru3#
+Despues de haber ido en sentido contrario en el asunto de Nachtstern y la torre de las estrellas, el Cleric Graivois dirije sus sospechas hacia la academia de Harpocrates en la ciudad de Arsinoe.#
+Otra vez el culto ha sido un exito en Arsinoe, Agathon Paraclet de la ciudad de Arsinoe maneja esos problemas, debes decirselo. #
+
+
+//Le Combat Final
+70340#El ultimo camino: La batalla de Pavloff#Arsinoe#4_f_nfdf#
+La amenaza ahora esta mas clara, los Grey Magicians estan detras de todos los eventos desafortunados de Arsinoe. La pelea contra el Lich Shandalar organizada por la archimago Ornélia! #
+The Archmage Ornélia awaits you.#
+70341#El ultimo camino: La batalla de Pavloff#Arsinoe#4_f_nfdf#
+La amenaza ahora esta mas clara, los Grey Magicians estan detras de todos los eventos desafortunados de Arsinoe. La pelea contra el Lich Shandalar organizada por la archimago Ornélia! #
+You must attend the meeting between the Magic Orders and Religious Orders.#
+70342#El ultimo camino: batalla final#Arsinoe#4_f_nfdf#
+La amenaza ahora esta mas clara, los Grey Magicians estan detras de todos los eventos desafortunados de Arsinoe. La pelea contra el Lich Shandalar organizada por la archimago Ornélia! #
+Shandalar esta preparando un poderoso hechizo! Debes actuar con rapidez!#
+
+
+//La Compagnie Marchande d'Umaya
+70350#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Encuantre a Rabatteur Harrey en Coppalana. #
+70351#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Habla con el jefe Ocrah en Tantale Island.#
+70352#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Regresa a ver a Rabatteur Harrey.#
+70353#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Encuentra al representante de nuestra compañia en Kiman Fares.#
+70354#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Encuantra a Oswald Rijin en el faro de Traiana.#
+70355#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Anunciando al nuevo representante Olcha.#
+70356#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Un rumor de que la compañia de exploracion del lago Crystalmir partio desde Thebaid esta circulando en la compañia.#
+70357#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Encuentra a Ghywald Rumsdan en el lago Crystalmir.#
+70358#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Regresa a Thebaid.#
+70359#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+El responsable de Umaya en Euhéméria esta esperandote.#
+70360#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Contacta a Lt. Van Gothe's en el paso a Octavia.#
+70361#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Contacta a Lt. Van Gothe's en el paso a Octavia.#
+70362#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Debes ir a la caverna de los bandidos.#
+70363#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Las autoridades maximas de la compañia desean verte en Arsinoe.#
+70364#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Las autoridades maximas de la compañia desean verte en Arsinoe.#
+70365#La compañia mercantil de Umaya#Arsinoe#4_f_kafv#
+La compañia mercantil de Umai esta intentando conquistar nuevos mercados, tu ahora eres miembro y es tu deber ayudar a la compañia!#
+Debes devolver los bienes a Arsinoe.#
+
+//OmbreTerre
+70370#Inframundo : Da'Urdein#Arsinoe#4_m_jp_r#
+El inframundo es un area misteriosa y poco explorada de Arsinoe.#
+Debes obtener permiso para ir al inframundo, lo conseguiras cerca de los cuarteles generales de Arsinoe.#
+70371#Inframundo : Da'Urdein#Arsinoe#4_m_jp_r#
+El inframundo es un area misteriosa y poco explorada de Arsinoe.#
+Ahora tienes permiso para ir al inframundo.#
+70372#Inframundo : Da'Urdein#Arsinoe#4_m_oldf#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. La bruja de Hylarheim se encuentra en la costa oeste de Arsinoe que esta sufriendo el ataque de Lich Underdark, los marineros de Hylar estan prisioneros en el fuerte tormenta.#
+Debes pedir ayuda del padre superior de Malachie Arsinoe para ayudar a Hylar THunder Fortress.#
+70373#Inframundo : Da'Urdein#Arsinoe#4_m_oldf#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. La bruja de Hylarheim se encuentra en la costa oeste de Arsinoe que esta sufriendo el ataque de Lich Underdark, los marineros de Hylar estan prisioneros en el fuerte tormenta.#
+Yadie esta arraigada el la galera en la ciudad de Arsinoe entra y has que ayude Hylarheim.#
+70374#Inframundo : Da'Urdein#Arsinoe#4_m_oldf#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. La bruja de Hylarheim se encuentra en la costa oeste de Arsinoe que esta sufriendo el ataque de Lich Underdark, los marineros de Hylar estan prisioneros en el fuerte tormenta.#
+Los refuerzos llegaron a Hylarheim, es tiempo de embarcar con las tropas del fuerte tormenta troops para derrotar al inframundo.#
+70375#Inframundo : Da'Urdein#Arsinoe#4_m_oldf#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. La bruja de Hylarheim se encuentra en la costa oeste de Arsinoe que esta sufriendo el ataque de Lich Underdark, los marineros de Hylar estan prisioneros en el fuerte tormenta.#
+Tienes que liberar a los marinos de Hylar thunder Fortress. Regresa con el Hermano Jude Hylarheim a darle las noticias.#
+70376#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+Usted ha sido designado para servir como embajador creca de Da'Urdein, tendremos que llegar a travez del inframundo.#
+70377#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+El arquero del Lethe no desea transportarte sin que le lleves la perla negra de la sirena LaDonna.#
+70378#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+Ahora tienes la perla negra, es tiempo de regresar con el arquero del Lethe.#
+70379#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+El camino a Da'Urdein finalmente ha sido abierto, el arquero del Lethe esta dispuesto a llevarte.#
+70380#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+Sin poder hablar antes con el sumo sacerdote Rupoldic'h, los guardias se niegan a dejarte entrar a la esfera.#
+70381#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+Debes encontrar un Lich en el bosque rojo Gondar.#
+70382#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+El principe quiere regresar a Da'Urdein Svankmajer, pero quiere ir a la fuerza, nombrando a los Sighs en Morloc'h Rybzinsky para encontrar y ejecutar un plan.#
+70383#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+Una tropa de ataque Svankmajer esta preparada, necesitas tener acceso a la sala secreta de reuniones en la mansion Da'Urdein para comenzar el levantamiento.#
+70384#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+La ciudad Da'Urdein ya no esta en manos del sumo sacerdote Rupoldic'h, pero habra que cazarlo en la esfera planar.#
+70385#Inframundo : Da'Urdein#Arsinoe#4_m_mocb#
+El inframundo es un area misteriosa y poco explorada de Arsinoe. Hylarheim te comisionó como emisario para acercarte a Da'Urdein para conseguir una explicacion.#
+Los insurgentes controlan la fuente Svankmajer de la eterna juventud, pero el sumo sacerdote Rupoldic'h aun controla gran parte de la esfera planar.#
+
+
+//Missionaires
+70390#Inframundo : Misionarios#Arsinoe#4_m_oldf#
+El hermano Jude quiere que recuperes la mision de su hermano Tyre Underdark.#
+Explorando el inframundo.#
+70391#Inframundo : Misionarios#Arsinoe#4_m_oldf#
+El hermano Jude quiere que recuperes la mision de su hermano Tyre Underdark.#
+Parece que los hermanos en el inframundo estan cerca del arquero del Lethe.#
+
+//Cartographe
+70392#Cartografo#Arsinoe#4_m_reid#
+El cartografo Martonne desea que encuentres 20 cards en Arsinoe para darte el titulo de explorador.#
+Tienes que obtener 20 cards en Arsinoe.#
+
+//Introduction 
+70400#Urunesti, La Vision#Arsinoe#1_f_orif#
+Debes ir a Urunesti, tu pueblo natal.#
+Debes ir a tu casa a ver a tus padres. Tu madre te esta esperando!#
+70401#Urunesti, La Vision#Arsinoe#1_f_orif#
+Debes ir a Urunesti, tu pueblo natal.#
+Tu madre quiere que vallas a traer leche, para eso debes ir a la granja del norte de Urunesti a ver a Fernandel.#
+70402#Urunesti, La Vision#Arsinoe#1_f_orif#
+Debes ir a Urunesti, tu pueblo natal.#
+Obtienes la leche de la granja Fernandel, llevasela a tu madre..#
+70403#Urunesti, La Vision#Arsinoe#1_f_orif#
+Debes ir a Urunesti, tu pueblo natal.#
+Es hora de la siesta! Ve a tu habitacion ...#
+70404#Urunesti, La Vision#Arsinoe#1_f_orif#
+Debes ir a Urunesti, tu pueblo natal.#
+Esta vision profetica fue en realidad muy extraña ... Debes ir a la casa de Franshille en Urunesti ...#
+
+
+//L'Épidémie d'Urunesti
+70405#La epidemia de Urunesti#Arsinoe#1_m_siz0#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Consulta en los libros de la biblioteca de Red Plague en Euhéméria.#
+70406#La epidemia de Urunesti#Arsinoe#1_m_siz0#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Has hecho tu trabajo, regresa con Spiria Symphonia en la ciudad de Arsinoe.#
+70407#La epidemia de Urunesti#Arsinoe#1_m_siz0#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Tu padre esta en el hospital entre los ayudantes y Hylarheim Urunesti, deberias ir a visitarlo.#
+70408#La epidemia de Urunesti#Arsinoe#1_m_siz0#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Las enfermeras estan tratando de recuperar un poco de sangre de Shokunga el lago de las hadas de Urunesti.#
+70409#La epidemia de Urunesti#Arsinoe#1_m_siz0#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Las enfermeras estan tratando de recuperar un poco de sangre de Shokunga el lago de las hadas de Urunesti.#
+70410#La epidemia de Urunesti#Arsinoe#4_f_einw#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Es un buen momento para ir preparandote para tu exploracion a Sidon, una ciudad submarina. Debes visitar a Ursula Hupoi.#
+70411#La epidemia de Urunesti#Arsinoe#4_f_einw#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Ursula ha terminado de reparar la campana para explorar el lecho marino! Es momento de explorar Sidon !#
+70412#La epidemia de Urunesti#Arsinoe#4_f_einw#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Ursula quiere recuperar el corazon de cristal de la ciudad de Sidon. #
+70413#La epidemia de Urunesti#Arsinoe#4_f_einw#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+Ya tienes las algas de Sidon, puedes regresar al hospital.#
+70414#La epidemia de Urunesti#Arsinoe#2_m_molg#
+Has encontrado a Spiria Symphonia, tu amigo de tu pueblo natal Urunesti. Te ha dicho que tu padre esta gravemente enfermo, tienes que estar a su lado en su lecho.#
+El director del hospital te ha pedido que encuentres un templo ansestral en el desierto de Petosiris Kargah.#
+70415#La epidemia de Urunesti#Arsinoe#2_m_molg#
+El hospital te ha encargado que recolectes varios ingredientes para luchar contra esta enfermedad. Debes encontrar el ingrediente final para el remedio contra la epidemia de Urunesti. Tienes que encontrar larvas de Kargah, habita en lugares oscuros y humedos. #
+Tienes que encontrar en Arsinoe, las tres partes del cuerpo de Djoser.#
+70416#La epidemia de Urunesti#Arsinoe#2_m_molg#
+El hospital te ha encargado que recolectes varios ingredientes para luchar contra esta enfermedad. Debes encontrar el ingrediente final para el remedio contra la epidemia de Urunesti. Tienes que encontrar larvas de Kargah, habita en lugares oscuros y humedos. #
+Tienes que seguir explorando el templo hasta que encuentres las larvas.#
+70417#La epidemia de Urunesti#Arsinoe#2_m_molg#
+El hospital te ha encargado que recolectes varios ingredientes para luchar contra esta enfermedad. Debes encontrar el ingrediente final para el remedio contra la epidemia de Urunesti. Tienes que encontrar larvas de Kargah, habita en lugares oscuros y humedos. #
+Ursula Hupoi localizo las larvas de Kargah!#
+70418#La epidemia de Urunesti#Arsinoe#2_m_molg#
+El hospital te ha encargado que recolectes varios ingredientes para luchar contra esta enfermedad. Debes encontrar el ingrediente final para el remedio contra la epidemia de Urunesti. Tienes que encontrar larvas de Kargah, habita en lugares oscuros y humedos. #
+Tienes el jugo de larvas de Kargah, es hora de regresar al hospital.#
+
+//Fishing Competition 
+70420#Competencia de pesca #Arsinoe#4_m_reid#
+Fisher Zeladys de Coppalana te sugirio unirte a su guild de pescadores. Puedes participar en la quest que te han propuesto.#
+Debes ir al lago Crystalmir para comprar la mejor caña de pescar de todo Arsinoe.#
+70421#Competencia de pesca #Arsinoe#4_m_reid#
+Fisher Zeladys de Coppalana te sugirio unirte a su guild de pescadores. Puedes participar en la quest que te han propuesto.#
+Ya tienes tu caña, es hora de inscribirte en la competencia de pesca de Zeladys en Coppalana.#
+70422#Competencia de pesca #Arsinoe#4_m_reid#
+Fisher Zeladys de Coppalana te sugirio unirte a su guild de pescadores. Puedes participar en la quest que te han propuesto.#
+La competencia ha iniciado, debes conocer los objetivos en la tabla de pescar para ganar el titulo.#
+
+//Missing Sailors 
+70425#Marinos perdidos #Arsinoe#4w_sailo#
+Salve Regina cree que hay sobrevivientes del fuerte tormenta, debes encontrarlos.#
+Encuentra a los marinos de Hylarheim.#
+70426#Marinos perdidos #Arsinoe#4w_sailo#
+Salve Regina cree que hay sobrevivientes del fuerte tormenta, debes encontrarlos.#
+Estan en Sidon, debes reportarle las noticias a Salve Regina.#
+
+
+//Néraka
+70430#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Sven Van Motten ha hablado acerca de un trabajo de mercenario en Neraka, deberias pensarlo y reunirte con el rey de la ciudad.#
+70431#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+El rey Baudouin I de Nerak acepta tomarte como mercenario pero debes primero pasar el examen de mercenarios de la puerta de Neraka.#
+70432#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Para convertirte en mercenario, debes lograr 50 en el campo de marte. #
+70433#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Saludos mercenario! Puedes participar en una mision de la tabla del salon de mercenarios de Neraka.#
+
+70434#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Necesitas acabar con el Baron Sengir en la ciudad de Arsinoe.#
+70435#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Mision completa, debes regresar al salon de mercenarios.# 
+
+
+70436#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Debes reunirte con Arganie en Neraka para llevar el hielo lo mas rapidamente posible a Sheik BarYoucef.#
+70437#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Mision completa, debes regresar al salon de mercenarios.# 
+
+
+70438#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+El rey Baudouin esta preocupado, el Comte de Nemours no ha asistido a la corte en mucho tiempo y ningun mensajero ha regresado con vida de su torre.#
+70439#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Has encontrado una prueba de la traicion del conde de Nemours en su libro de cuentas, debes llevarselo al rey.#
+70440#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Un ataque se aproxima, debes contactar a Tivias Ranalc'h, el preparará a las tropas.#
+70441#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Mision completa, debes regresar al salon de mercenarios.# 
+
+70442#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Los cabesillas de algunos nobles de Neraka, aliados a los Magi Gray, lanzaran un ataque a la ciudad de Neraka. Necesitas reunirte con Tivias Ranalc'h en la puerta de Néraka.#
+70443#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Mision completa, debes regresar al salon de mercenarios.# 
+
+70444#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Las viejas minas son la guarida de los cabesillas nobles de Neraka. Debes limpiar la zona, la matanza comenzara!#
+70445#Néraka#Arsinoe#4_m_rusb#
+El reino de Nerak se encuentra en las montañas Bacchias. Realeza independiente se ha simentado desde hace decadas para garantizar su independencia, la ciudad se especializa en mercenarios.#
+Mision completa, debes regresar al salon de mercenarios.# 
+
+
+//Abysses
+70450#Abismo#Arsinoe#4_f_valkyrie2#
+No has impedido el hechizo de Shandalar. Fenrir, ha sido liberado de sus cadenas y ahora podra salir del abismo para camiar nuevamente en el mundo de Midgard.#
+Debes contactar a Joka el lider iluminado para que se una a la resistencia de Urunesti.#
+70451#Abismo#Arsinoe#4_f_valkyrie2#
+No has impedido el hechizo de Shandalar. Fenrir, ha sido liberado de sus cadenas y ahora podra salir del abismo para camiar nuevamente en el mundo de Midgard.#
+Ornélia te ha pedido que encuentres a Dynaheir en la region de Gondar, necesitamos sus artes de fuego para abrir las puertas.#
+70452#Abismo#Arsinoe#4_f_valkyrie2#
+No has impedido el hechizo de Shandalar. Fenrir, ha sido liberado de sus cadenas y ahora podra salir del abismo para camiar nuevamente en el mundo de Midgard.#
+Has salvado a Dynaheir. Debes regresar con Ornélia en Urunesti.#
+70453#Abismo#Arsinoe#4_f_valkyrie2#
+No has impedido el hechizo de Shandalar. Fenrir, ha sido liberado de sus cadenas y ahora podra salir del abismo para camiar nuevamente en el mundo de Midgard.#
+Debes entrar al portal del salon del templo de Petosiris.#
+70454#Abismo#Arsinoe#4_f_valkyrie2#
+No has impedido el hechizo de Shandalar. Fenrir, ha sido liberado de sus cadenas y ahora podra salir del abismo para camiar nuevamente en el mundo de Midgard.#
+El portal esta abierto, tienes que pelear en tu camino a travez del abismo para encontrar a Fenrir!#
+70455#Abismo#Arsinoe#4_f_valkyrie2#
+No has impedido el hechizo de Shandalar. Fenrir, ha sido liberado de sus cadenas y ahora podra salir del abismo para camiar nuevamente en el mundo de Midgard.#
+Con tus aliados, puedes alcanzar el Ust Nashar, la guarida de Fenrir, el corazon del abismo.#
+

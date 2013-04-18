@@ -25,7 +25,7 @@
 //
 //= 1.0 Release French Version
 //= 2.0 Schallmar Part.2 Version
-//
+//= 2.1 Added latest kRO maps
 //
 //================================================================================================= 
 
@@ -70,454 +70,454 @@ ars_dun95	mapflag	loadevent
 ars_fild63	mapflag	noteleport
 ars_fild63	mapflag	nomemo
 ars_fild63	mapflag	nobranch
-ars_fild63	mapflag	restricted	6
+ars_fild63	mapflag	restricted	8
 ars_fild63	mapflag	monster_noteleport
 
 ars_fild64	mapflag	noteleport
 ars_fild64	mapflag	nomemo
 ars_fild64	mapflag	nobranch
-ars_fild64	mapflag	restricted	6
+ars_fild64	mapflag	restricted	8
 ars_fild64	mapflag	monster_noteleport
 
 ars_fild65	mapflag	noteleport
 ars_fild65	mapflag	nomemo
 ars_fild65	mapflag	nobranch
-ars_fild65	mapflag	restricted	6
+ars_fild65	mapflag	restricted	8
 ars_fild65	mapflag	monster_noteleport
 
 ars_fild66	mapflag	noteleport
 ars_fild66	mapflag	nomemo
 ars_fild66	mapflag	nobranch
-ars_fild66	mapflag	restricted	6
+ars_fild66	mapflag	restricted	8
 ars_fild66	mapflag	monster_noteleport
 
 ars_fild67	mapflag	noteleport
 ars_fild67	mapflag	nomemo
 ars_fild67	mapflag	nobranch
-ars_fild67	mapflag	restricted	6
+ars_fild67	mapflag	restricted	8
 ars_fild67	mapflag	monster_noteleport
 
 ars_fild68	mapflag	noteleport
 ars_fild68	mapflag	nomemo
 ars_fild68	mapflag	nobranch
-ars_fild68	mapflag	restricted	6
+ars_fild68	mapflag	restricted	8
 ars_fild68	mapflag	monster_noteleport
 
 ars_fild69	mapflag	noteleport
 ars_fild69	mapflag	nomemo
 ars_fild69	mapflag	nobranch
-ars_fild69	mapflag	restricted	6
+ars_fild69	mapflag	restricted	8
 ars_fild69	mapflag	monster_noteleport
 
 ars_fild70	mapflag	noteleport
 ars_fild70	mapflag	nomemo
 ars_fild70	mapflag	nobranch
-ars_fild70	mapflag	restricted	6
+ars_fild70	mapflag	restricted	8
 ars_fild70	mapflag	monster_noteleport
 
 ars_fild71	mapflag	noteleport
 ars_fild71	mapflag	nomemo
 ars_fild71	mapflag	nobranch
-ars_fild71	mapflag	restricted	6
+ars_fild71	mapflag	restricted	8
 ars_fild71	mapflag	monster_noteleport
 
 ars_fild72	mapflag	noteleport
 ars_fild72	mapflag	nomemo
 ars_fild72	mapflag	nobranch
-ars_fild72	mapflag	restricted	6
+ars_fild72	mapflag	restricted	8
 ars_fild72	mapflag	monster_noteleport
 
 ars_fild73	mapflag	noteleport
 ars_fild73	mapflag	nomemo
 ars_fild73	mapflag	nobranch
-ars_fild73	mapflag	restricted	6
+ars_fild73	mapflag	restricted	8
 ars_fild73	mapflag	monster_noteleport
 
 ars_fild74	mapflag	noteleport
 ars_fild74	mapflag	nomemo
 ars_fild74	mapflag	nobranch
-ars_fild74	mapflag	restricted	6
+ars_fild74	mapflag	restricted	8
 ars_fild74	mapflag	monster_noteleport
 
 ars_fild75	mapflag	noteleport
 ars_fild75	mapflag	nomemo
 ars_fild75	mapflag	nobranch
-ars_fild75	mapflag	restricted	6
+ars_fild75	mapflag	restricted	8
 ars_fild75	mapflag	monster_noteleport
 
 ars_fild76	mapflag	noteleport
 ars_fild76	mapflag	nomemo
 ars_fild76	mapflag	nobranch
-ars_fild76	mapflag	restricted	6
+ars_fild76	mapflag	restricted	8
 ars_fild76	mapflag	monster_noteleport
 //=================================================
 
 ars_dun41	mapflag	noteleport
 ars_dun41	mapflag	nomemo
 ars_dun41	mapflag	nobranch
-ars_dun41	mapflag	restricted	6
+ars_dun41	mapflag	restricted	8
 ars_dun41	mapflag	monster_noteleport
 ars_dun41	mapflag	pvp
 
 ars_dun42	mapflag	noteleport
 ars_dun42	mapflag	nomemo
 ars_dun42	mapflag	nobranch
-ars_dun42	mapflag	restricted	6
+ars_dun42	mapflag	restricted	8
 ars_dun42	mapflag	monster_noteleport
 ars_dun42	mapflag	pvp
 
 ars_dun43	mapflag	noteleport
 ars_dun43	mapflag	nomemo
 ars_dun43	mapflag	nobranch
-ars_dun43	mapflag	restricted	6
+ars_dun43	mapflag	restricted	8
 ars_dun43	mapflag	monster_noteleport
 ars_dun43	mapflag	pvp
 
 ars_dun44	mapflag	noteleport
 ars_dun44	mapflag	nomemo
 ars_dun44	mapflag	nobranch
-ars_dun44	mapflag	restricted	6
+ars_dun44	mapflag	restricted	8
 ars_dun44	mapflag	monster_noteleport
 ars_dun44	mapflag	pvp
 
 ars_dun45	mapflag	noteleport
 ars_dun45	mapflag	nomemo
 ars_dun45	mapflag	nobranch
-ars_dun45	mapflag	restricted	6
+ars_dun45	mapflag	restricted	8
 ars_dun45	mapflag	monster_noteleport
 
 ars_dun46	mapflag	noteleport
 ars_dun46	mapflag	nomemo
 ars_dun46	mapflag	nobranch
-ars_dun46	mapflag	restricted	6
+ars_dun46	mapflag	restricted	8
 ars_dun46	mapflag	monster_noteleport
 
 ars_dun47	mapflag	noteleport
 ars_dun47	mapflag	nomemo
 ars_dun47	mapflag	nobranch
-ars_dun47	mapflag	restricted	6
+ars_dun47	mapflag	restricted	8
 ars_dun47	mapflag	monster_noteleport
 ars_dun47	mapflag	pvp
 
 ars_dun48	mapflag	noteleport
 ars_dun48	mapflag	nomemo
 ars_dun48	mapflag	nobranch
-ars_dun48	mapflag	restricted	6
+ars_dun48	mapflag	restricted	8
 ars_dun48	mapflag	monster_noteleport
 
 ars_dun49	mapflag	noteleport
 ars_dun49	mapflag	nomemo
 ars_dun49	mapflag	nobranch
-ars_dun49	mapflag	restricted	6
+ars_dun49	mapflag	restricted	8
 ars_dun49	mapflag	monster_noteleport
 
 ars_dun50	mapflag	noteleport
 ars_dun50	mapflag	nomemo
 ars_dun50	mapflag	nobranch
-ars_dun50	mapflag	restricted	6
+ars_dun50	mapflag	restricted	8
 ars_dun50	mapflag	monster_noteleport
 ars_dun50	mapflag	pvp
 
 ars_dun51	mapflag	noteleport
 ars_dun51	mapflag	nomemo
 ars_dun51	mapflag	nobranch
-ars_dun51	mapflag	restricted	6
+ars_dun51	mapflag	restricted	8
 ars_dun51	mapflag	monster_noteleport
 ars_dun51	mapflag	pvp
 
 ars_dun52	mapflag	noteleport
 ars_dun52	mapflag	nomemo
 ars_dun52	mapflag	nobranch
-ars_dun52	mapflag	restricted	6
+ars_dun52	mapflag	restricted	8
 ars_dun52	mapflag	monster_noteleport
 
 ars_dun53	mapflag	noteleport
 ars_dun53	mapflag	nomemo
 ars_dun53	mapflag	nobranch
-ars_dun53	mapflag	restricted	6
+ars_dun53	mapflag	restricted	8
 ars_dun53	mapflag	monster_noteleport
 ars_dun53	mapflag	pvp
 
 ars_dun54	mapflag	noteleport
 ars_dun54	mapflag	nomemo
 ars_dun54	mapflag	nobranch
-ars_dun54	mapflag	restricted	6
+ars_dun54	mapflag	restricted	8
 ars_dun54	mapflag	monster_noteleport
 
 ars_dun55	mapflag	noteleport
 ars_dun55	mapflag	nomemo
 ars_dun55	mapflag	nobranch
-ars_dun55	mapflag	restricted	6
+ars_dun55	mapflag	restricted	8
 ars_dun55	mapflag	monster_noteleport
 
 ars_dun56	mapflag	noteleport
 ars_dun56	mapflag	nomemo
 ars_dun56	mapflag	nobranch
-ars_dun56	mapflag	restricted	6
+ars_dun56	mapflag	restricted	8
 ars_dun56	mapflag	monster_noteleport
 
 ars_dun57	mapflag	noteleport
 ars_dun57	mapflag	nomemo
 ars_dun57	mapflag	nobranch
-ars_dun57	mapflag	restricted	6
+ars_dun57	mapflag	restricted	8
 ars_dun57	mapflag	monster_noteleport
 ars_dun57	mapflag	pvp
 
 ars_dun58	mapflag	noteleport
 ars_dun58	mapflag	nomemo
 ars_dun58	mapflag	nobranch
-ars_dun58	mapflag	restricted	6
+ars_dun58	mapflag	restricted	8
 ars_dun58	mapflag	monster_noteleport
 ars_dun58	mapflag	pvp
 
 ars_dun59	mapflag	noteleport
 ars_dun59	mapflag	nomemo
 ars_dun59	mapflag	nobranch
-ars_dun59	mapflag	restricted	6
+ars_dun59	mapflag	restricted	8
 ars_dun59	mapflag	monster_noteleport
 ars_dun59	mapflag	pvp
 
 ars_dun60	mapflag	noteleport
 ars_dun60	mapflag	nomemo
 ars_dun60	mapflag	nobranch
-ars_dun60	mapflag	restricted	6
+ars_dun60	mapflag	restricted	8
 ars_dun60	mapflag	monster_noteleport
 ars_dun60	mapflag	pvp
 
 ars_dun61	mapflag	noteleport
 ars_dun61	mapflag	nomemo
 ars_dun61	mapflag	nobranch
-ars_dun61	mapflag	restricted	6
+ars_dun61	mapflag	restricted	8
 ars_dun61	mapflag	monster_noteleport
 
 ars_dun62	mapflag	noteleport
 ars_dun62	mapflag	nomemo
 ars_dun62	mapflag	nobranch
-ars_dun62	mapflag	restricted	6
+ars_dun62	mapflag	restricted	8
 ars_dun62	mapflag	monster_noteleport
 ars_dun62	mapflag	pvp
 
 ars_dun63	mapflag	noteleport
 ars_dun63	mapflag	nomemo
 ars_dun63	mapflag	nobranch
-ars_dun63	mapflag	restricted	6
+ars_dun63	mapflag	restricted	8
 ars_dun63	mapflag	monster_noteleport
 
 ars_dun64	mapflag	noteleport
 ars_dun64	mapflag	nomemo
 ars_dun64	mapflag	nobranch
-ars_dun64	mapflag	restricted	6
+ars_dun64	mapflag	restricted	8
 ars_dun64	mapflag	monster_noteleport
 
 ars_dun65	mapflag	noteleport
 ars_dun65	mapflag	nomemo
 ars_dun65	mapflag	nobranch
-ars_dun65	mapflag	restricted	6
+ars_dun65	mapflag	restricted	8
 ars_dun65	mapflag	monster_noteleport
 
 ars_dun66	mapflag	noteleport
 ars_dun66	mapflag	nomemo
 ars_dun66	mapflag	nobranch
-ars_dun66	mapflag	restricted	6
+ars_dun66	mapflag	restricted	8
 ars_dun66	mapflag	monster_noteleport
 ars_dun66	mapflag	pvp
 
 ars_dun67	mapflag	noteleport
 ars_dun67	mapflag	nomemo
 ars_dun67	mapflag	nobranch
-ars_dun67	mapflag	restricted	6
+ars_dun67	mapflag	restricted	8
 ars_dun67	mapflag	monster_noteleport
 ars_dun67	mapflag	pvp
 
 ars_dun68	mapflag	noteleport
 ars_dun68	mapflag	nomemo
 ars_dun68	mapflag	nobranch
-ars_dun68	mapflag	restricted	6
+ars_dun68	mapflag	restricted	8
 ars_dun68	mapflag	monster_noteleport
 ars_dun68	mapflag	pvp
 
 ars_dun69	mapflag	noteleport
 ars_dun69	mapflag	nomemo
 ars_dun69	mapflag	nobranch
-ars_dun69	mapflag	restricted	6
+ars_dun69	mapflag	restricted	8
 ars_dun69	mapflag	monster_noteleport
 ars_dun69	mapflag	pvp
 
 ars_dun70	mapflag	noteleport
 ars_dun70	mapflag	nomemo
 ars_dun70	mapflag	nobranch
-ars_dun70	mapflag	restricted	6
+ars_dun70	mapflag	restricted	8
 ars_dun70	mapflag	monster_noteleport
 
 ars_dun71	mapflag	noteleport
 ars_dun71	mapflag	nomemo
 ars_dun71	mapflag	nobranch
-ars_dun71	mapflag	restricted	6
+ars_dun71	mapflag	restricted	8
 ars_dun71	mapflag	monster_noteleport
 
 ars_dun72	mapflag	noteleport
 ars_dun72	mapflag	nomemo
 ars_dun72	mapflag	nobranch
-ars_dun72	mapflag	restricted	6
+ars_dun72	mapflag	restricted	8
 ars_dun72	mapflag	monster_noteleport
 
 ars_dun73	mapflag	noteleport
 ars_dun73	mapflag	nomemo
 ars_dun73	mapflag	nobranch
-ars_dun73	mapflag	restricted	6
+ars_dun73	mapflag	restricted	8
 ars_dun73	mapflag	monster_noteleport
 
 ars_dun72	mapflag	noteleport
 ars_dun72	mapflag	nomemo
 ars_dun72	mapflag	nobranch
-ars_dun72	mapflag	restricted	6
+ars_dun72	mapflag	restricted	8
 ars_dun72	mapflag	monster_noteleport
 
 ars_dun74	mapflag	noteleport
 ars_dun74	mapflag	nomemo
 ars_dun74	mapflag	nobranch
-ars_dun74	mapflag	restricted	6
+ars_dun74	mapflag	restricted	8
 ars_dun74	mapflag	monster_noteleport
 
 ars_dun75	mapflag	noteleport
 ars_dun75	mapflag	nomemo
 ars_dun75	mapflag	nobranch
-ars_dun75	mapflag	restricted	6
+ars_dun75	mapflag	restricted	8
 ars_dun75	mapflag	monster_noteleport
 
 ars_dun76	mapflag	noteleport
 ars_dun76	mapflag	nomemo
 ars_dun76	mapflag	nobranch
-ars_dun76	mapflag	restricted	6
+ars_dun76	mapflag	restricted	8
 ars_dun76	mapflag	monster_noteleport
 
 ars_dun77	mapflag	noteleport
 ars_dun77	mapflag	nomemo
 ars_dun77	mapflag	nobranch
-ars_dun77	mapflag	restricted	6
+ars_dun77	mapflag	restricted	8
 ars_dun77	mapflag	monster_noteleport
 
 ars_dun78	mapflag	noteleport
 ars_dun78	mapflag	nomemo
 ars_dun78	mapflag	nobranch
-ars_dun78	mapflag	restricted	6
+ars_dun78	mapflag	restricted	8
 ars_dun78	mapflag	monster_noteleport
 ars_dun78	mapflag	pvp
 
 ars_dun79	mapflag	noteleport
 ars_dun79	mapflag	nomemo
 ars_dun79	mapflag	nobranch
-ars_dun79	mapflag	restricted	6
+ars_dun79	mapflag	restricted	8
 ars_dun79	mapflag	monster_noteleport
 ars_dun79	mapflag	pvp
 
 ars_dun80	mapflag	noteleport
 ars_dun80	mapflag	nomemo
 ars_dun80	mapflag	nobranch
-ars_dun80	mapflag	restricted	6
+ars_dun80	mapflag	restricted	8
 ars_dun80	mapflag	monster_noteleport
 
 ars_dun81	mapflag	noteleport
 ars_dun81	mapflag	nomemo
 ars_dun81	mapflag	nobranch
-ars_dun81	mapflag	restricted	6
+ars_dun81	mapflag	restricted	8
 ars_dun81	mapflag	monster_noteleport
 ars_dun81	mapflag	pvp
 
 ars_dun82	mapflag	noteleport
 ars_dun82	mapflag	nomemo
 ars_dun82	mapflag	nobranch
-ars_dun82	mapflag	restricted	6
+ars_dun82	mapflag	restricted	8
 ars_dun82	mapflag	monster_noteleport
 
 ars_dun83	mapflag	noteleport
 ars_dun83	mapflag	nomemo
 ars_dun83	mapflag	nobranch
-ars_dun83	mapflag	restricted	6
+ars_dun83	mapflag	restricted	8
 ars_dun83	mapflag	monster_noteleport
 
 ars_dun84	mapflag	noteleport
 ars_dun84	mapflag	nomemo
 ars_dun84	mapflag	nobranch
-ars_dun84	mapflag	restricted	6
+ars_dun84	mapflag	restricted	8
 ars_dun84	mapflag	monster_noteleport
 ars_dun84	mapflag	pvp
 
 ars_dun85	mapflag	noteleport
 ars_dun85	mapflag	nomemo
 ars_dun85	mapflag	nobranch
-ars_dun85	mapflag	restricted	6
+ars_dun85	mapflag	restricted	8
 ars_dun85	mapflag	monster_noteleport
 
 ars_dun86	mapflag	noteleport
 ars_dun86	mapflag	nomemo
 ars_dun86	mapflag	nobranch
-ars_dun86	mapflag	restricted	6
+ars_dun86	mapflag	restricted	8
 ars_dun86	mapflag	monster_noteleport
 
 ars_dun87	mapflag	noteleport
 ars_dun87	mapflag	nomemo
 ars_dun87	mapflag	nobranch
-ars_dun87	mapflag	restricted	6
+ars_dun87	mapflag	restricted	8
 ars_dun87	mapflag	monster_noteleport
 ars_dun87	mapflag	pvp
 
 ars_dun88	mapflag	noteleport
 ars_dun88	mapflag	nomemo
 ars_dun88	mapflag	nobranch
-ars_dun88	mapflag	restricted	6
+ars_dun88	mapflag	restricted	8
 ars_dun88	mapflag	monster_noteleport
 ars_dun88	mapflag	pvp
 
 ars_dun89	mapflag	noteleport
 ars_dun89	mapflag	nomemo
 ars_dun89	mapflag	nobranch
-ars_dun89	mapflag	restricted	6
+ars_dun89	mapflag	restricted	8
 ars_dun89	mapflag	monster_noteleport
 
 ars_dun90	mapflag	noteleport
 ars_dun90	mapflag	nomemo
 ars_dun90	mapflag	nobranch
-ars_dun90	mapflag	restricted	6
+ars_dun90	mapflag	restricted	8
 ars_dun90	mapflag	monster_noteleport
 
 ars_dun91	mapflag	noteleport
 ars_dun91	mapflag	nomemo
 ars_dun91	mapflag	nobranch
-ars_dun91	mapflag	restricted	6
+ars_dun91	mapflag	restricted	8
 ars_dun91	mapflag	monster_noteleport
 ars_dun91	mapflag	pvp
 
 ars_dun92	mapflag	noteleport
 ars_dun92	mapflag	nomemo
 ars_dun92	mapflag	nobranch
-ars_dun92	mapflag	restricted	6
+ars_dun92	mapflag	restricted	8
 ars_dun92	mapflag	monster_noteleport
 ars_dun92	mapflag	pvp
 
 ars_dun93	mapflag	noteleport
 ars_dun93	mapflag	nomemo
 ars_dun93	mapflag	nobranch
-ars_dun93	mapflag	restricted	6
+ars_dun93	mapflag	restricted	8
 ars_dun93	mapflag	monster_noteleport
 
 ars_dun94	mapflag	noteleport
 ars_dun94	mapflag	nomemo
 ars_dun94	mapflag	nobranch
-ars_dun94	mapflag	restricted	6
+ars_dun94	mapflag	restricted	8
 ars_dun94	mapflag	monster_noteleport
 
 ars_dun95	mapflag	noteleport
 ars_dun95	mapflag	nomemo
 ars_dun95	mapflag	nobranch
-ars_dun95	mapflag	restricted	6
+ars_dun95	mapflag	restricted	8
 ars_dun95	mapflag	monster_noteleport
 ars_dun95	mapflag	pvp
 
 ars_dun96	mapflag	noteleport
 ars_dun96	mapflag	nomemo
 ars_dun96	mapflag	nobranch
-ars_dun96	mapflag	restricted	6
+ars_dun96	mapflag	restricted	8
 ars_dun96	mapflag	monster_noteleport
 ars_dun96	mapflag	pvp
 
@@ -1320,9 +1320,109 @@ iz_dun05	mapflag	restricted	8
 evt_mobroom	mapflag	restricted	8
 alde_tt03	mapflag	restricted	8
 dic_dun03	mapflag	restricted	8
-
-
-
+1@lhz	mapflag	restricted	8
+lhz_dun04	mapflag	restricted	8
+que_lhz	mapflag	restricted	8
+evt_swar_b	mapflag	restricted	8
+evt_swar_r	mapflag	restricted	8
+evt_swar_s	mapflag	restricted	8
+evt_swar_t	mapflag	restricted	8
+gld2_ald	mapflag	restricted	8
+gld2_gef	mapflag	restricted	8
+gld2_pay	mapflag	restricted	8
+gld2_prt	mapflag	restricted	8
+gld_dun01_2	mapflag	restricted	8
+gld_dun02_2	mapflag	restricted	8
+gld_dun03_2	mapflag	restricted	8
+gld_dun04_2	mapflag	restricted	8
+malaya	mapflag	restricted	8
+job_ko	mapflag	restricted	8
+ma_scene01	mapflag	restricted	8
+1@ma_b	mapflag	restricted	8
+1@ma_c	mapflag	restricted	8
+1@ma_h	mapflag	restricted	8
+ma_in01	mapflag	restricted	8
+ma_dun01	mapflag	restricted	8
+ma_fild01	mapflag	restricted	8
+ma_fild02	mapflag	restricted	8
+ma_zif01	mapflag	restricted	8
+ma_zif02	mapflag	restricted	8
+ma_zif03	mapflag	restricted	8
+ma_zif04	mapflag	restricted	8
+ma_zif05	mapflag	restricted	8
+ma_zif06	mapflag	restricted	8
+ma_zif07	mapflag	restricted	8
+ma_zif08	mapflag	restricted	8
+ma_zif09	mapflag	restricted	8
+new_event	mapflag	restricted	8
+eclage	mapflag	restricted	8
+ecl_fild01	mapflag	restricted	8
+ecl_tdun01	mapflag	restricted	8
+ecl_tdun02	mapflag	restricted	8
+ecl_tdun03	mapflag	restricted	8
+ecl_tdun04	mapflag	restricted	8
+que_avan01	mapflag	restricted	8
+1@ecl	mapflag	restricted	8
+ecl_in01	mapflag	restricted	8
+ecl_in02	mapflag	restricted	8
+ecl_in03	mapflag	restricted	8
+ecl_in04	mapflag	restricted	8
+ecl_hub01	mapflag	restricted	8
+moc_prydn1	mapflag	restricted	8
+moc_prydn2	mapflag	restricted	8
+iz_ac01	mapflag	restricted	8
+iz_ac02	mapflag	restricted	8
+treasure_n1	mapflag	restricted	8
+treasure_n2	mapflag	restricted	8
+iz_int	mapflag	restricted	8
+iz_ng01	mapflag	restricted	8
+iz_int01	mapflag	restricted	8
+iz_int02	mapflag	restricted	8
+iz_int03	mapflag	restricted	8
+iz_int04	mapflag	restricted	8
+iz_ac01_a	mapflag	restricted	8
+iz_ac02_a	mapflag	restricted	8
+iz_ac01_b	mapflag	restricted	8
+iz_ac02_b	mapflag	restricted	8
+iz_ac01_c	mapflag	restricted	8
+iz_ac02_c	mapflag	restricted	8
+iz_ac01_d	mapflag	restricted	8
+iz_ac02_d	mapflag	restricted	8
+te_prtcas01	mapflag	restricted	8
+te_prtcas02	mapflag	restricted	8
+te_prtcas03	mapflag	restricted	8
+te_prtcas04	mapflag	restricted	8
+te_prtcas05	mapflag	restricted	8
+te_aldecas1	mapflag	restricted	8
+te_aldecas2	mapflag	restricted	8
+te_aldecas3	mapflag	restricted	8
+te_aldecas4	mapflag	restricted	8
+te_aldecas5	mapflag	restricted	8
+prt_fild08a	mapflag	restricted	8
+prt_fild08b	mapflag	restricted	8
+prt_fild08c	mapflag	restricted	8
+prt_fild08d	mapflag	restricted	8
+izlude_a	mapflag	restricted	8
+izlude_b	mapflag	restricted	8
+izlude_c	mapflag	restricted	8
+izlude_d	mapflag	restricted	8
+te_prt_gld	mapflag	restricted	8
+te_alde_gld	mapflag	restricted	8
+teg_dun01	mapflag	restricted	8
+teg_dun02	mapflag	restricted	8
+1@gl_k	mapflag	restricted	8
+2@gl_k	mapflag	restricted	8
+gl_chyard_	mapflag	restricted	8
+gl_cas02_	mapflag	restricted	8
+evt_bomb	mapflag	restricted	8
+1@def01	mapflag	restricted	8
+1@def02	mapflag	restricted	8
+1@def03	mapflag	restricted	8
+1@gef	mapflag	restricted	8
+1@face	mapflag	restricted	8
+1@sara	mapflag	restricted	8
+1@gef_in	mapflag	restricted	8
+dali	mapflag	restricted	8
 
 
 

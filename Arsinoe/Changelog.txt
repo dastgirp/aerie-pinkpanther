@@ -1,0 +1,164 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+By Aérie PinkPanther
+
+21/10/11 :
+
+	rev.24
+
+	     - SVN address change to googlecode.
+
+12/08/11 :
+
+	rev.23
+
+	     - Revisited traduction by DesertFox.
+
+26/08/11 :
+
+	rev.22
+
+	     - Per default now you'll have an Arsinoé Currency. Becareful if you're using previous versions.
+  
+
+22/08/11 :
+
+	rev.21
+
+	     - Added db/en/mob_db2.txt in english.
+             - All scripts now use mob name in the mob_db2 so mobs names are fully translated.
+
+31/07/11 :
+
+	rev.20
+
+	     - Added db/en/item_db2.txt in english.
+
+
+28/07/11 :
+
+	rev.19
+
+	     - Added choose language function for Brother Angueran and Daphnis for people who don't use the introduction
+		 - Champ de Mars registeration restrictions.
+		 
+01/07/11 :
+
+	rev.18
+
+	     - Some corrections in mob_db.
+
+06/11/11 :
+
+	rev.17
+
+	     - Added Arsinoé Guide in French and English
+
+05/11/11 :
+
+	rev.16
+
+	     - Apprenti Finissule npchide deleted
+
+11/05/11 :
+
+	rev.15
+
+	     - Dance : Osani Spanish fix
+	     - Abysses / Coeur / Quête principale / Mages d'Arsinoé : Daphnis sprite ID (497) change
+	     - Fonctions : Modification for a language function
+	     - Quete Principale : For Daphnis and Blowfall first talk will propose you to choose language if not done in Introduction
+
+02/05/11 :
+
+	rev.14
+
+	     - Marchands : Quest ID fix for Van Gothe
+	     - Arsinoé : npc #ep7carte14 added
+	     - Fonctions : Daphnis ended quest dialog fix
+
+29/04/11 :
+
+	rev.13
+
+	      - Marchands : Globe Merchant Coordinates change
+	      - Warps : ars_fild51 / ars_fild52 fix
+	      - Mars : Remove some commented line and fix display records
+	      - Introduction : Franshille french version init fix
+	      - Glace : Informations sign color name fix
+
+17/04/11 :
+
+	rev.12
+	      - Urunesti.txt : Bibliothècaire (Questlog fix)
+	      - Quête Principale : Fix questlog Daphnis (70420/70421)
+	      - Roi Gobelin : Colonel de Nursie : Sprite ID fix
+	      - Services : Soldat de Néraka#in13 delete
+	      - Configuration : Soldat de Néraka#in13 multi-language name suppress
+	      - db/quest_db.txt : missing 70416 quest ID
+	      - Abysses : English/French text twisted for Ornélia / Colonel de Nursie sprite ID fix 
+	      - Coeur : Warp Exit of Arsinoé Heart
+
+12/04/11 : 
+
+	rev.11  
+              - Euhemeria.txt (Reduce to 50 for Bandit Quest) / Garric Frash Color Text
+              - Cutle de Danifae.txt (Julien l'apostat variable fix)
+              - warps.txt a warp fixed
+              - mapflag.txt ars_in03 monster_noteleport
+              - Mages d'Arsinoé.txt Change sprite ID of Mage Gawelle
+
+11/04/11 : 
+
+	rev.10  
+               - Urunesti.txt, Ursula Hapoi callfunction fix.
+
+07/04/11 : 
+
+	rev.9  
+               - Configuration.txt updated with new languages
+	       - Orchestre.txt added Russian Version by SoWa
+               - Fonctions.txt added Russian Version by SoWa
+	       - Introduction.txt added Portuguese Version by Haziel
+	       - Mars.txt added Portuguese Version by Haziel
+	       - Arenes.txt added Portuguese Version by Haziel
+               - Arenes.txt fix for display spanish in first NPC
+               - Update of Instructions.txt in Spanish by DarknessX
+
+27/03/11 : 
+
+	rev.8  - Correction for some disablenpc issues in latest eA versions.
+               - ID 2087 fix.
+
+25/03/11 : 
+
+	rev.7  - Added a mapflag monster_noteleport in coppa
+
+21/03/11 : 
+
+	rev.6  - Modification of a NPC ID in Quete Principale.txt
+
+20/03/11 : 
+
+	rev.5  - Arene.txt bug fix
+
+15/03/11 : 
+
+	rev.4  - Fixed a non-init in introduction.txt (Franshille.txt)
+
+02/03/11 : 
+
+	rev.3  - Added in Configuration.txt system for showed-name in third languages.
+               - Different colors names and name display fixed in some files.
+
+27/02/11 : 
+
+	rev.2 - Fonctions.txt fix issue in Tyr menu for spanish language.
+
+	rev.1 - First release of Multi-Language version of Arsinoé.
+              - French / English / Spanish avaible.
+	      - Added colors in the text, corrections of minor bugs.
+	      - Thanks to Yatadaid, Racing~, darknessx, Ijct, GMKira, Destiny and Celsius for the Spanish version !

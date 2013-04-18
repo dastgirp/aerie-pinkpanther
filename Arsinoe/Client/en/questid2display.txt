@@ -1,0 +1,632 @@
+//----------- Arsinoé :-------------
+70100#The Plant of Desert#Arsinoe#4_blue_f#
+You must help the people of Kiman Fares to treat their wounded warriors by making the necessary herbs.#
+Visit the Herborist of Euhéméria#
+70101#The Plant of Desert#Arsinoe#4_blue_f#
+You must help the people of Kiman Fares to treat their wounded warriors by making the necessary herbs.#
+Visit Prigent Danone at Kiman Fares#
+70102#The Plant of Desert#Arsinoe#4_blue_f#
+You must help the people of Kiman Fares to treat their wounded warriors by making the necessary herbs.#
+Find a Lophophora in Desert Kargha#
+70103#The Plant of Desert#Arsinoe#4_blue_f#
+You must help the people of Kiman Fares to treat their wounded warriors by making the necessary herbs.#
+Bring the Lophophora to Danon Prigent.#
+
+//Quête Accès
+70200#Daphnis's Proposition#Arsinoe#4_m_reds#
+The Adventurer Daphnis has money problems and needs to go to the Continent of Arsinoe in order to honor his contract on the search for magical artifacts.#
+You must pay for transportation of you and Daphnis to Captain Blowfall of Alberta.#
+70201#Daphnis's Proposition#Arsinoe#4_m_reds#
+The Adventurer Daphnis has money problems and needs to go to the Continent of Arsinoe in order to honor his contract on the search for magical artifacts.#
+You should talk with Daphnis at Tantale Island.#
+70202#Daphnis's Proposition#Arsinoe#4_m_reds#
+The Adventurer Daphnis has money problems and needs to go to the Continent of Arsinoe in order to honor his contract on the search for magical artifacts.#
+You must explore the Island of Tantale.#
+70203#Daphnis's Proposition#Arsinoe#4_m_reds#
+The Adventurer Daphnis has money problems and needs to go to the Continent of Arsinoe in order to honor his contract on the search for magical artifacts.#
+Father Benoit has asked you to visit Saul Copyist in Yuno Library to get a dictionary.#
+70204#Daphnis's Proposition#Arsinoe#4_m_reds#
+The Adventurer Daphnis has money problems and needs to go to the Continent of Arsinoe in order to honor his contract on the search for magical artifacts.#
+You can now talk with the natives of Arsinoe.#
+70205#Daphnis's Proposition#Arsinoe#4_m_reds#
+The Adventurer Daphnis has money problems and needs to go to the Continent of Arsinoe in order to honor his contract on the search for magical artifacts.#
+Bring 120 Clam Shell to Guellronoc'h to get access to be transported at Coppalana.#
+70206#Daphnis's Proposition#Arsinoe#4_m_reds#
+The Adventurer Daphnis has money problems and needs to go to the Continent of Arsinoe in order to honor his contract on the search for magical artifacts.#
+Bring 120 Clam Shell to Guellronoc'h to get access to be transported at Coppalana.#
+
+//Coppalana
+
+70207#The boitata, the Spirit of Coppalana#Arsinoe#4_m_reds#
+The Spirit Protector Coppalana the boitata, went crazy. He broke the Bridge Daggard the only entry in the land of Arsinoe.#
+Visiting the Shaman Xaviral at Coppalana#
+70208#The boitata, the Spirit of Coppalana#Arsinoe#4_m_reds#
+The Spirit Protector Coppalana the boitata, went crazy. He broke the Bridge Daggard the only entry in the land of Arsinoe.#
+Helpg the Servant Kloiacha to call boitata.#
+70209#The boitata, the Spirit of Coppalana#Arsinoe#4_m_reds#
+The Spirit Protector Coppalana the boitata, went crazy. He broke the Bridge Daggard the only entry in the land of Arsinoe.#
+Return to see Chief Rafloc'h.#
+//Coppalana Fête
+70210#The Day Boitata#Arsinoe#4_m_reds#
+Following your victory over boitata, the village chief of Coppalana would like to thank you with the organization of a great feast.#
+Talk to Klerozonheg.#
+70211#The Day Boitata#Arsinoe#4_m_reds#
+Following your victory over boitata, the village chief of Coppalana would like to thank you with the organization of a great feast.#
+Kill 50 Curupira in Coppalana Beach.#
+70212#The Day Boitata#Arsinoe#4_m_reds#
+Following your victory over boitata, the village chief of Coppalana would like to thank you with the organization of a great feast.#
+You must bring a shopping list to organize the festival.#
+
+//Kiman Farès
+
+70220#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+Give the Missive of the Head Chief Rafloc'h to Pevnec in Kimani Fares.#
+70221#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+Visiting the Shaman Kerloïc.#
+70222#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+Investigate the Necropolis between Kimani Fares and Coppalana.#
+70223#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+Return to your report Shaman Kerloïc.#
+70224#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+Find information about the Royal Family of Gomorrhe at Soknobeus.#
+70225#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+Digging up the cemetery Soknobeus.#
+70226#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+Make sure with the Shaman Kerloïc about the authenticity of the medallion.#
+70227#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+Return to the necropolis of Gomorrhe.#
+70228#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+You have to defeat the king of Gomorrhe, return to the Shaman Kerloïc.#
+70229#Kiman Farès : Undead Uprising#Arsinoe#4_m_reds#
+Daggard Bridge is repaired, you can now enter the forest Kimani Fares plagued by a terrbile curse.#
+The sacred artifact has disappeared, the calm will not return without it's return. Visit to Chief Pevnec.#
+
+//En Route vers Arsinoé, La Cité
+70230#Road to Arsinoe, The City#Arsinoe#4_m_reds#
+Following the time of crisis in Arsinoe, the Legendary Four Gates of the City are closed. You'll have to find a way to enter cotoyant of unsavory individuals. Daphnis must find his contact in place.#
+Contact Philerme to obtain false papers for entering illegally Arsinoe.#
+70231#Road to Arsinoe, The City#Arsinoe#4_m_reds#
+Following the time of crisis in Arsinoe, the Legendary Four Gates of the City are closed. You'll have to find a way to enter cotoyant of unsavory individuals. Daphnis must find his contact in place.#
+Contact Raichor in Thebes for paper and ink.#
+70232#Road to Arsinoe, The City#Arsinoe#4_m_reds#
+Following the time of crisis in Arsinoe, the Legendary Four Gates of the City are closed. You'll have to find a way to enter cotoyant of unsavory individuals. Daphnis must find his contact in place.#
+You must go to the Farm Eupator crossing the Mountains Bacchias to obtain the ink of Octopus Jungle.#
+70233#Road to Arsinoe, The City#Arsinoe#4_m_reds#
+Following the time of crisis in Arsinoe, the Legendary Four Gates of the City are closed. You'll have to find a way to enter cotoyant of unsavory individuals. Daphnis must find his contact in place.#
+Apoorter 140 units of octopus ink in the jungle to make Purified Ink.#
+70234#Road to Arsinoe, The City#Arsinoe#4_m_reds#
+Following the time of crisis in Arsinoe, the Legendary Four Gates of the City are closed. You'll have to find a way to enter cotoyant of unsavory individuals. Daphnis must find his contact in place.#
+Provide 140 units of octopus ink in the jungle to make Purified Ink.#
+70235#Road to Arsinoe, The City#Arsinoe#4_m_reds#
+Following the time of crisis in Arsinoe, the Legendary Four Gates of the City are closed. You'll have to find a way to enter cotoyant of unsavory individuals. Daphnis must find his contact in place.#
+400 Silver Coins to Bring to Raichor for costs incurred by false passports. #
+70236#Road to Arsinoe, The City#Arsinoe#4_m_reds#
+Following the time of crisis in Arsinoe, the Legendary Four Gates of the City are closed. You'll have to find a way to enter cotoyant of unsavory individuals. Daphnis must find his contact in place.#
+Return to see Philerme at Euhéméria.#
+70237#Road to Arsinoe, The City#Arsinoe#4_m_reds#
+Following the time of crisis in Arsinoe, the Legendary Four Gates of the City are closed. You'll have to find a way to enter cotoyant of unsavory individuals. Daphnis must find his contact in place.#
+Passing by Philermo Euhéméria, then contact the official Georet to get the official stamp.#
+
+//Naissance de Lalibela
+70240#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+Find Daphnis in Lalibela.#
+70241#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+You must contact the priest in Lalibela.#
+70242#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+You should go to crater Gondar to find the Holy Family. #
+70243#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+You must find a way to use the Elevator to the inn.#
+70244#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+Petroloneko told you to use the Magical Stone Lift, you must free the Holy Family of Scarab.#
+70245#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+You saved the Holy Family which is part of the Temple of Lalibela, return to the Priest in the Temple Merlay.#
+70246#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+You must enter into the bowels of the Temple to attend the birth of Lalibela. #
+70247#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+What terrible failure! Go back to the Priest Merlay, he will guide you to more.#
+70248#The Birth of Lalibela#Arsinoe#1_f_orig#
+Daphnis was finally able to contact the informant to Arsinoe, the Sponsors wish that you find an artifact in the Temple of Lalibela to the west of Arsinoe.#
+Agathon Paraclet now handles religious affairs, he alone can help you resolve these cases.#
+
+//Le Roi Gobelin
+70250#The Goblin King#Arsinoe#4_m_cru0#
+In the north of the land lies Arsinoe goblin and for some time a new king has emerged among the Goblin Citadel Terkish. A large army which devastated all the towns lying in their path. They are now at the gates of Arsinoe, was threatening to invade the capital itself.#
+General Athanasius wish that you contact the Seneschal Lin Lime-Thalas of Torn.#
+70251#The Goblin King#Arsinoe#4_m_cru0#
+In the north of the land lies Arsinoe goblin and for some time a new king has emerged among the Goblin Citadel Terkish. A large army which devastated all the towns lying in their path. They are now at the gates of Arsinoe, was threatening to invade the capital itself.#
+You should contact the Commander Paraclete pourqu'il so he can send reinforcements from the Pass of Octavia.#
+70252#The Goblin King#Arsinoe#4_m_cru0#
+In the north of the land lies Arsinoe goblin and for some time a new king has emerged among the Goblin Citadel Terkish. A large army which devastated all the towns lying in their path. They are now at the gates of Arsinoe, was threatening to invade the capital itself.#
+Go see the Seneschal Lin to confirm the arrival of reinforcements.#
+70253#The Goblin King#Arsinoe#4_m_cru0#
+In the north of the land lies Arsinoe goblin and for some time a new king has emerged among the Goblin Citadel Terkish. A large army which devastated all the towns lying in their path. They are now at the gates of Arsinoe, was threatening to invade the capital itself.#
+You are now part of the Third Legion! The Counter-Offensive begins!#
+70254#The Goblin King#Arsinoe#4_m_cru0#
+In the north of the land lies Arsinoe goblin and for some time a new king has emerged among the Goblin Citadel Terkish. A large army which devastated all the towns lying in their path. They are now at the gates of Arsinoe, was threatening to invade the capital itself.#
+The Goblin Army Headquarters has been lifted! The Seneschal Lin awaits you at Nêsos.#
+70255#The Goblin King#Arsinoe#4_m_cru0#
+In the north of the land lies Arsinoe goblin and for some time a new king has emerged among the Goblin Citadel Terkish. A large army which devastated all the towns lying in their path. They are now at the gates of Arsinoe, was threatening to invade the capital itself.#
+You must cross the village of Nêsos, then the desert to join the Kahrga Siwa Oasis which will host the next battle.#
+70256#The Goblin King#Arsinoe#4_m_cru0#
+In the north of the land lies Arsinoe goblin and for some time a new king has emerged among the Goblin Citadel Terkish. A large army which devastated all the towns lying in their path. They are now at the gates of Arsinoe, was threatening to invade the capital itself.#
+Beautiful Victory! He now will have to resist the onslaught of the reserve army of Goblins in the Oasis of Siwa! The Citadel Terkish is near, and the final victory! #
+70257#The Goblin King#Arsinoe#4_m_cru0#
+In the north of the land lies Arsinoe goblin and for some time a new king has emerged among the Goblin Citadel Terkish. A large army which devastated all the towns lying in their path. They are now at the gates of Arsinoe, was threatening to invade the capital itself.#
+The Final Battle is engaged, you need to mount an assault on the Citadel Terkish to defeat the Goblin King.#
+
+//Les Mages d'Arsinoé
+70260#Magicians of Arsinoé#Arsinoe#4_nfcock#
+You've just found a chicken that is constantly chattering, it seems he wants to go back to the Mage Gaëlle.#
+You must find the mage Gaëlle in the Mountains Bacchias.#
+70261#Magicians of Arsinoé#Arsinoe#4_nfcock#
+You've just found a chicken that is constantly chattering, it seems he wants to go back to the Mage Gaëlle.#
+The chicken was her apprentice, he'll have to find it again#
+70262#Magicians of Arsinoé#Arsinoe#4_nfcock#
+You've just found a chicken that is constantly chattering, it seems he wants to go back to the Mage Gaëlle.#
+You must bring back the apprentice to the mage Gawelle.#
+70263#Magicians of Arsinoé#Arsinoe#4_nfcock#
+The Apprentice Mage Gawel the chicken was changed by Gray Magi who just arrived in Arsinoe and practice magic illegally.#
+Investigate the Grey Magician who meet the Evening in the forest of Kiman Fares.#
+70264#Magicians of Arsinoé#Arsinoe#4_nfcock#
+The Apprentice Mage Gawel the chicken was changed by Gray Magi who just arrived in Arsinoe and practice magic illegally.#
+Damn Grey Magician ! You're chicken! We'll have to go back to the Mage Gaëlle to cancel the spell#
+70265#Magicians of Arsinoé#Arsinoe#4_nfcock#
+The Apprentice Mage Gawel the chicken was changed by Gray Magi who just arrived in Arsinoe and practice magic illegally.#
+You should report this fact to the Archmage Ornélia to Arsinoe, the High Council of Mages.#
+
+//Le Dragon de Gondar
+70266#Dragon of Gondar#Arsinoe#4_f_huwo#
+The Grey Mages outside the High Council of the Magi Arsinoe appeared and practiced a magic prohibited. You now obey the orders of the Archmage Ornélia that will guide you in your investigation.#
+The Dragon of Gondar is the only one capable of perceiving changes in the current magic, you must visit him in Soufriere.#
+70267#Dragon of Gondar#Arsinoe#4_f_huwo#
+The Grey Mages outside the High Council of the Magi Arsinoe appeared and practiced a magic prohibited. You now obey the orders of the Archmage Ornélia that will guide you in your investigation.#
+Ouroulga don't want to let you enter the lair of the Dragon without 30 Ruby Gondar.#
+70268#Dragon of Gondar#Arsinoe#4_f_huwo#
+The Grey Mages outside the High Council of the Magi Arsinoe appeared and practiced a magic prohibited. You now obey the orders of the Archmage Ornélia that will guide you in your investigation.#
+It's time to visit the Dragon Gondar!#
+70269#Dragon of Gondar#Arsinoe#4_f_huwo#
+The Grey Mages outside the High Council of the Magi Arsinoe appeared and practiced a magic prohibited. You now obey the orders of the Archmage Ornélia that will guide you in your investigation.#
+It's time to go back to the Archmage Ornélia at Arsinoe.#
+70270#Dragon of Gondar#Arsinoe#4_f_huwo#
+The Grey Mages outside the High Council of the Magi Arsinoe appeared and practiced a magic prohibited. You now obey the orders of the Archmage Ornélia that will guide you in your investigation.#
+Agathon Paraclet now handles religious affairs, he alone can help you resolve these cases.#
+
+
+//La Légende de La Rana
+70280#The La Rana Empire#Arsinoe#4_m_cru2#
+South of the Arsinoe is the former Empire of Ranas who was conquered by the legions of Arsinoe few years ago. The city of Arsinoe who is currently in trouble, Queen La Rana has launched a broad uprising with the aim of restoring the ancient empire of La Rana!#
+You must make the report of General Marshal Lorill Akey on the situation of the Fourth Legion#
+70281#The La Rana Empire#Arsinoe#4_m_cru2#
+South of the Arsinoe is the former Empire of Ranas who was conquered by the legions of Arsinoe few years ago. The city of Arsinoe who is currently in trouble, Queen La Rana has launched a broad uprising with the aim of restoring the ancient empire of La Rana!#
+Returned on see General Lorill.#
+70282#The La Rana Empire#Arsinoe#4_m_cru2#
+South of the Arsinoe is the former Empire of Ranas who was conquered by the legions of Arsinoe few years ago. The city of Arsinoe who is currently in trouble, Queen La Rana has launched a broad uprising with the aim of restoring the ancient empire of La Rana!#
+General Lorill just force you to participate in his war of conquest, they will need to assist in moving towards the highlands of La Rana#
+70283#The La Rana Empire#Arsinoe#4_m_cru2#
+South of the Arsinoe is the former Empire of Ranas who was conquered by the legions of Arsinoe few years ago. The city of Arsinoe who is currently in trouble, Queen La Rana has launched a broad uprising with the aim of restoring the ancient empire of La Rana!#
+You must now save the IV Legion at Dien Bien Fût!#
+70284#The La Rana Empire#Arsinoe#4_m_cru2#
+South of the Arsinoe is the former Empire of Ranas who was conquered by the legions of Arsinoe few years ago. The city of Arsinoe who is currently in trouble, Queen La Rana has launched a broad uprising with the aim of restoring the ancient empire of La Rana!#
+The Goddess La Rana wants to see you fight in the Arena, the lives of several hostages are at stake, you will have to go and negotiate with the King of Arsinoe.#
+70285#The La Rana Empire#Arsinoe#4_m_cru2#
+South of the Arsinoe is the former Empire of Ranas who was conquered by the legions of Arsinoe few years ago. The city of Arsinoe who is currently in trouble, Queen La Rana has launched a broad uprising with the aim of restoring the ancient empire of La Rana!#
+To finalize the agreement back to see the Goddess La Rana. #
+70286#The La Rana Empire#Arsinoe#4_m_cru2#
+South of the Arsinoe is the former Empire of Ranas who was conquered by the legions of Arsinoe few years ago. The city of Arsinoe who is currently in trouble, Queen La Rana has launched a broad uprising with the aim of restoring the ancient empire of La Rana!#
+It is time to confront their Goddess in the Arena La Rana. #
+70287#The La Rana Empire#Arsinoe#4_m_cru2#
+South of the Arsinoe is the former Empire of Ranas who was conquered by the legions of Arsinoe few years ago. The city of Arsinoe who is currently in trouble, Queen La Rana has launched a broad uprising with the aim of restoring the ancient empire of La Rana!#
+A Great Victory over their Queen! You can now become a gladiator and fight in the arena for a prestigious title.#
+
+//Euhéméria - Le Phare de Traiana
+70290#Traïana Lighthouse#Arsinoe#4_m_mini#
+Lighthouse Traiana guides ships along the coast southeast of Arsinoe shines most boats, you will take over the investigation.#
+Join Garric Frash in the Lighthouse Traiana#
+70291#Traïana Lighthouse#Arsinoe#4_m_mini#
+Lighthouse Traiana guides ships along the coast southeast of Arsinoe shines most boats, you will take over the investigation.#
+You must obtain a new crystal in nearly Gardulf Grisaire in Mountain Bacchias.#
+70292#Traïana Lighthouse#Arsinoe#4_m_mini#
+Lighthouse Traiana guides ships along the coast southeast of Arsinoe shines most boats, you will take over the investigation.#
+You must obtain a new crystal in nearly Gardulf Grisaire in Mountain Bacchias. #
+70293#Traïana Lighthouse#Arsinoe#4_m_mini#
+Lighthouse Traiana guides ships along the coast southeast of Arsinoe shines most boats, you will take over the investigation.#
+You must obtain a new crystal in nearly Gardulf Grisaire in Mountain Bacchias. #
+70294#Traïana Lighthouse#Arsinoe#4_m_mini#
+Lighthouse Traiana guides ships along the coast southeast of Arsinoe shines most boats, you will take over the investigation.#
+You must report the crystal at the Lighthouse Keeper pourqu'il can reactivate the lighthouse.#
+70295#Traïana Lighthouse#Arsinoe#4_m_mini#
+Lighthouse Traiana guides ships along the coast southeast of Arsinoe shines most boats, you will take over the investigation.#
+We'll have go at the top to fight the Lord of Shadows.#
+70296#Traïana Lighthouse#Arsinoe#4_m_mini#
+Lighthouse Traiana guides ships along the coast southeast of Arsinoe shines most boats, you will take over the investigation.#
+The Lighthouse walk again, your mission is accomplished, you can go back to the Mayor of Euhéméria.#
+
+//Euhéméria - Les ContreBandiers
+70300#The Smugglers#Arsinoe#4_m_mini#
+Smugglers appeared in a small fishing village in the Lighthouse Traiana, dealers in Euhéméria wish that you resolve this problem detrimental to their business.#
+Find the smuggler#
+70301#The Smugglers#Arsinoe#4_m_mini#
+Smugglers appeared in a small fishing village in the Lighthouse Traiana, dealers in Euhéméria wish that you resolve this problem detrimental to their business.#
+Go to near the Mayor of Euhéméria, you just fixed the problem.#
+
+//Euhéméria - Les Bandits de Bacchias
+70302#Bandits of Bacchias#Arsinoe#4_m_mini#
+The Mayor of Euhéméria asked you to hunt the bandits Mountains Bacchias him reporting the sclaps of these bandits.#
+Report scalps of bandits to Mayor of Euhéméria. #
+
+//Traïana - Les Orcs
+70303#Orc Village#Arsinoe#4_m_mini#
+The village in the forest Soknobeus Bacchias recently suffered attacks from a village located near the orc Lighthouse Traiana, you must ensure that they won't pose more problems.#
+You must go to the Orc Village.#
+70304#Orc Village#Arsinoe#4_m_mini#
+The village in the forest Soknobeus Bacchias recently suffered attacks from a village located near the orc Lighthouse Traiana, you must ensure that they won't pose more problems.#
+The situation is pacified, you can go back Gerwan Frigent.#
+
+//Arsinoé - Les Zombies d'Arsinoé
+70310#The Zombies of Arsinoe#Arsinoe#4_nfcoff#
+The priests of Mortys, who must care for embalming the dead, have problems with dead a little too bright. They are somewhat overwhelmed by the situation but dare not notify authorities for fear they get rid of them.#
+Find Tasty for getting hired.#
+70311#The Zombies of Arsinoe#Arsinoe#4_nfcoff#
+The priests of Mortys, who must care for embalming the dead, have problems with dead a little too bright. They are somewhat overwhelmed by the situation but dare not notify authorities for fear they get rid of them.#
+You now have access to the Temple of Morty. It is time to clean house!#
+70312#The Zombies of Arsinoe#Arsinoe#4_nfcoff#
+The priests of Mortys, who must care for embalming the dead, have problems with dead a little too bright. They are somewhat overwhelmed by the situation but dare not notify authorities for fear they get rid of them.#
+Mortys's Temple was cleaned, it is time to go back Yummy.#
+70313#The Zombies of Arsinoe#Arsinoe#4_nfcoff#
+The priests of Mortys, who must care for embalming the dead, have problems with dead a little too bright. They are somewhat overwhelmed by the situation but dare not notify authorities for fear they get rid of them.#
+The Keeper of the Crypt of Arsinoe, Chibi Youma, can not go home, the dead have risen with him too.#
+70314#The Zombies of Arsinoe#Arsinoe#4_nfcoff#
+The priests of Mortys, who must care for embalming the dead, have problems with dead a little too bright. They are somewhat overwhelmed by the situation but dare not notify authorities for fear they get rid of them.#
+He has to get books of spells in the House chibi Youma.#
+
+//Le Culte de Danifae
+70320#The Cult of Danifae#Arsinoe#2_m_alch#
+The Goddess Danifae not responding to the prayers of the faithful. They do not know where to turn without their goddess on their side.#
+Search Three Temple Arsinoe, those triplets Danifae to find their souls.#
+70321#The Cult of Danifae#Arsinoe#2_m_alch#
+The Goddess Danifae not responding to the prayers of the faithful. They do not know where to turn without their goddess on their side.#
+You should visit the Temple of Arsinoe at Danifae.#
+70322#The Cult of Danifae#Arsinoe#2_m_alch#
+The Goddess Danifae not responding to the prayers of the faithful. They do not know where to turn without their goddess on their side.#
+You should see the Prophet in the Mountains Tanzgue Bacchias.#
+70323#The Cult of Danifae#Arsinoe#2_m_alch#
+The Goddess Danifae not responding to the prayers of the faithful. They do not know where to turn without their goddess on their side.#
+It is time to announce the good news Danifae in his Temple of Solitude.#
+70324#The Cult of Danifae#Arsinoe#2_m_alch#
+The Goddess Danifae not responding to the prayers of the faithful. They do not know where to turn without their goddess on their side.#
+Once again a cult hit was Arsinoe, Agathon Paraclet in the city of Arsinoe manages these problems, you should tell him. #
+
+//Le Culte d'Harpocrate
+70330#The Cult of Harpocrates: The Lord of the Stars#Arsinoe#4_m_cru4#
+The Helm of Harpocrate, a very powerful artifact was stolen. You must investigate this mysterious disappearance.#
+Visiting the Library of Ribald at Euhéméria.#
+70331#The Cult of Harpocrates: The Lord of the Stars#Arsinoe#4_m_cru4#
+The Helm of Harpocrate, a very powerful artifact was stolen. You must investigate this mysterious disappearance.#
+Monks Harpocrate await you at the Tower of Stars in the jungle of the Thebaid.#
+70332#The Cult of Harpocrates: The Lord of the Stars#Arsinoe#4_m_cru4#
+The Helm of Harpocrate, a very powerful artifact was stolen. You must investigate this mysterious disappearance.#
+The Nachtstern is not guilty of the theft, he'll have to take these new facts Clerc Graivois.#
+
+//Le Culte d'Harpocrate : Partie II
+70333#The Cult of Harpocrates: The Academy#Arsinoe#4_m_cru3#
+After being driven on the wrong track with the Nachtstern and the Tower of Stars, the Cleric Graivois now directs its inquiry to the Academy of Harpocrates in the city of Arsinoe.#
+You can now investigate the Academy Harpocrate.#
+70334#The Cult of Harpocrates: The Academy#Arsinoe#4_m_cru3#
+After being driven on the wrong track with the Nachtstern and the Tower of Stars, the Cleric Graivois now directs its inquiry to the Academy of Harpocrates in the city of Arsinoe.#
+It seems that everything is not well in the Academy, you should look for the key to the prison.#
+70335#The Cult of Harpocrates: The Academy#Arsinoe#4_m_cru3#
+After being driven on the wrong track with the Nachtstern and the Tower of Stars, the Cleric Graivois now directs its inquiry to the Academy of Harpocrates in the city of Arsinoe.#
+You have the key! It is time to make a quick turn.#
+70336#The Cult of Harpocrates: The Academy#Arsinoe#4_m_cru3#
+After being driven on the wrong track with the Nachtstern and the Tower of Stars, the Cleric Graivois now directs its inquiry to the Academy of Harpocrates in the city of Arsinoe.#
+The Doppelgangers have taken control of the Academy! #
+70337#The Cult of Harpocrates: The Academy#Arsinoe#4_m_cru3#
+After being driven on the wrong track with the Nachtstern and the Tower of Stars, the Cleric Graivois now directs its inquiry to the Academy of Harpocrates in the city of Arsinoe.#
+The threat of Doppelgangers was lifted, you'll have to make your report Clerc Graivois! #
+70338#The Cult of Harpocrates: The Academy#Arsinoe#4_m_cru3#
+After being driven on the wrong track with the Nachtstern and the Tower of Stars, the Cleric Graivois now directs its inquiry to the Academy of Harpocrates in the city of Arsinoe.#
+Once again a cult hit was Arsinoe, Agathon Paraclete in the city of Arsinoe manages these problems, you should tell him.#
+
+
+//Le Combat Final
+70340#The Last Path: Fight Pavloff#Arsinoe#4_f_nfdf#
+The threat became clearer, the Grey Magicians are behind all the misfortunes of Arsinoe. The fight against the Lich Shandalar organized around the Archmage Ornélia! #
+The Archmage Ornélia awaits you.#
+70341#The Last Path: Fight Pavloff#Arsinoe#4_f_nfdf#
+The threat became clearer, the Grey Magicians are behind all the misfortunes of Arsinoe. The fight against the Lich Shandalar organized around the Archmage Ornélia! #
+You must attend the meeting between the Magic Orders and Religious Orders.#
+70342#The Last Path: Final Fight#Arsinoe#4_f_nfdf#
+The threat became clearer, the Grey Magicians are behind all the misfortunes of Arsinoe. The fight against the Lich Shandalar organized around the Archmage Ornélia! #
+Shandalar preparing a powerful spell! You must act quickly!#
+
+
+//La Compagnie Marchande d'Umaya
+70350#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Meet Rabatteur Harrey to Coppalana. #
+70351#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Talk with the Chief Ocrah Tantale Island.#
+70352#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Retourn see the Rabatteur Harrey.#
+70353#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Meet the representative of our Company to Kiman Fares.#
+70354#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Meet at Oswald Rijin Traiana's Lighthouse.#
+70355#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Announcing the new to Representative Olcha.#
+70356#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+A rumor of exploration company to Lake Crystalmir departing from the Thebaid is being set up circulating in the Company.#
+70357#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Find Ghywald Rumsdan at Lake Crystalmir.#
+70358#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Back to the Thebaid.#
+70359#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+The Responsable Umaya at Euhéméria is waiting for you.#
+70360#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Contact Lt. Van Gothe's at the Pass Octavia.#
+70361#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+Contact Lt. Van Gothe's at the Pass Octavia.#
+70362#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+You must go to the Cave of Bandits.#
+70363#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+The high authorities of the Company to Meet you want Arsinoe.#
+70364#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+The high authorities of the Company want to Meet you in Arsinoe.#
+70365#The Merchant Compagny of Umaya#Arsinoe#4_f_kafv#
+The Company of Merchant Umai trying to conquer new markets, you are now a member and it is your duty to help the company!#
+You must return the goods to Arsinoe.#
+
+//OmbreTerre
+70370#UnderWorld : Da'Urdein#Arsinoe#4_m_jp_r#
+The UnderWorld is a mysterious and a few explored area of Arsinoe.#
+You must obtain permission to go in the Underworld near the headquarters of Arsinoe.#
+70371#UnderWorld : Da'Urdein#Arsinoe#4_m_jp_r#
+The UnderWorld is a mysterious and a few explored area of Arsinoe.#
+You have permission to go in UnderWorld.#
+70372#UnderWorld : Da'Urdein#Arsinoe#4_m_oldf#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim which is located on the west coast of Arsinoe is under attack by the Lich Underdark, sailors Hylar are held prisoner at Fort Storm.#
+You must ask for help to the Father Superior to Malachie Arsinoe to help Hylar THunder Fortress.#
+70373#UnderWorld : Da'Urdein#Arsinoe#4_m_oldf#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim which is located on the west coast of Arsinoe is under attack by the Lich Underdark, sailors Hylar are held prisoner at Fort Storm.#
+Embedding in the galley Yadie in the city of Arsinoe to go in and make Hylarheim help.#
+70374#UnderWorld : Da'Urdein#Arsinoe#4_m_oldf#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim which is located on the west coast of Arsinoe is under attack by the Lich Underdark, sailors Hylar are held prisoner at Fort Storm.#
+The reinforcements arrived in Hylarheim, it is time to embark for Fort Storm troops to defeat the Underworld.#
+70375#UnderWorld : Da'Urdein#Arsinoe#4_m_oldf#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim which is located on the west coast of Arsinoe is under attack by the Lich Underdark, sailors Hylar are held prisoner at Fort Storm.#
+You have to release the sailors Hylar thunder Fortress. Go back to Brother Jude Hylarheim to tell him the news.#
+70376#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+You have been appointed to serve as ambassador to near Da'Urdein, we will have to reach across the Underworld.#
+70377#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+The Giver of Lethe does not want to carry you without you bring him the Black Pearl of the siren LaDonna.#
+70378#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+You have the Black Pearl, it's time to go back to the Giver of Lethe.#
+70379#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+The Road to Da'Urdein is finally open, the ferryman of Lethe will be able to carry on.#
+70380#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+Unable to speak with the High Priest Rupoldic'h, the guards refuse to allow you to enter the Sphere.#
+70381#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+You must find a Lich in the Red Forest Gondar.#
+70382#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+The Prince wanted to return Da'Urdein Svankmajer, but you have to go by force, appointment of Sighs in Morloc'h Rybzinsky to meet and develop a battle plan.#
+70383#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+An attack troops Svankmajer is prepared, you need to access an secret meeting room in the Manor at Da'Urdein to start the uprising.#
+70384#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+City Da'Urdein no longer in the hands of the High Priest Rupoldic'h, but he'll have to hunt in the Planar Sphere.#
+70385#UnderWorld : Da'Urdein#Arsinoe#4_m_mocb#
+The UnderWorld is a mysterious and a few explored area of Arsinoe. The Hylarheim you commissioned as an emissary to nearly Da'Urdein to get explcations.#
+The insurgents control the Fountain of Svankmajer Spotting Lives, but the High Priest Rupoldic'h still controls much of the Planar Sphere.#
+
+
+//Missionaires
+70390#UnderWorld : Missionairies#Arsinoe#4_m_oldf#
+Brother Jude wants you to regain a mission of the brothers Tyre Underdark and which is not new.#
+Exploring the UnderWorld.#
+70391#UnderWorld : Missionairies#Arsinoe#4_m_oldf#
+Brother Jude wants you to regain a mission of the brothers Tyre Underdark and which is not new.#
+It seems that the brothers of the Underworld is located near the Ferryman of Lethe.#
+
+//Cartographe
+70392#Cartographer#Arsinoe#4_m_reid#
+The geographer Martonne wish that you will find 20 cards in Arsinoe for the title of Explorer.#
+You have to get 20 cards in Arsinoe.#
+
+//Introduction 
+70400#Urunesti, The Vision#Arsinoe#1_f_orif#
+You just go Urunesti, your hometown.#
+You must go home to see your parents. Your mother is waiting for you!#
+70401#Urunesti, The Vision#Arsinoe#1_f_orif#
+You just go Urunesti, your hometown.#
+Your mother wants you to bring the milk, for that you must go to the farm north of Urunesti to see Fernandel.#
+70402#Urunesti, The Vision#Arsinoe#1_f_orif#
+You just go Urunesti, your hometown.#
+Got milk from the farm Fernandel, you should report it to your Mother..#
+70403#Urunesti, The Vision#Arsinoe#1_f_orif#
+You just go Urunesti, your hometown.#
+It's time for your nap! You must go to your room ...#
+70404#Urunesti, The Vision#Arsinoe#1_f_orif#
+You just go Urunesti, your hometown.#
+This prophetic vision was really strange ... You must go to the home of Franshille to Urunesti ...#
+
+
+//L'Épidémie d'Urunesti
+70405#L'Épidémie d'Urunesti#Arsinoe#1_m_siz0#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. Your father is seriously ill, you should go to his bedside.#
+Consult the books on the Red Plague Library in Euhéméria.#
+70406#L'Épidémie d'Urunesti#Arsinoe#1_m_siz0#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. Your father is seriously ill, you should go to his bedside.#
+You work, you must return to Spiria Symphonia Arsinoe City.#
+70407#L'Épidémie d'Urunesti#Arsinoe#1_m_siz0#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. Your father is seriously ill, you should go to his bedside.#
+Your father is at the Hospital between the helper and Hylarheim Urunesti, you should visit him.#
+70408#L'Épidémie d'Urunesti#Arsinoe#1_m_siz0#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. The hospital has charged you to collect the various ingredients to fight against this disease. #
+The brothers nurses trying to recover a bit of blood in Shokunga Lake fairies Urunesti.#
+70409#L'Épidémie d'Urunesti#Arsinoe#1_m_siz0#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. The hospital has charged you to collect the various ingredients to fight against this disease. #
+The brothers nurses trying to recover a bit of blood in Shokunga Lake fairies Urunesti.#
+70410#L'Épidémie d'Urunesti#Arsinoe#4_f_einw#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. The hospital has charged you to collect the various ingredients to fight against this disease. #
+It's time to prepare your exploration to Sidon, a sunken city. You must visit Ursula Hupoi.#
+70411#L'Épidémie d'Urunesti#Arsinoe#4_f_einw#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. The hospital has charged you to collect the various ingredients to fight against this disease. #
+Ursula has finished repairing his bell for exploring the seabed! It is time to explore Sidon !#
+70412#L'Épidémie d'Urunesti#Arsinoe#4_f_einw#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. The hospital has charged you to collect the various ingredients to fight against this disease. #
+Ursula wants to retrieve the Crystal Heart of the City of Sidon. #
+70413#L'Épidémie d'Urunesti#Arsinoe#4_f_einw#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. The hospital has charged you to collect the various ingredients to fight against this disease. #
+You Algae Sidon, you can return to the hospital.#
+70414#L'Épidémie d'Urunesti#Arsinoe#2_m_molg#
+You've found Spiria Symphonia, your friend from your hometown Urunesti. The hospital has charged you to collect the various ingredients to fight against this disease. #
+The Director of the Hospital asks you to find an ancient temple dedicated to the desert Petosiris Kargah.#
+70415#L'Épidémie d'Urunesti#Arsinoe#2_m_molg#
+The hospital has charged you to collect the various ingredients to fight against this disease. You must find the final ingredient for the remedy to the epidemic of Urunesti. You have to find larvae Kargah, she lived in dark and wet. #
+You must find the Arsinoe, the three body parts of Djoser.#
+70416#L'Épidémie d'Urunesti#Arsinoe#2_m_molg#
+The hospital has charged you to collect the various ingredients to fight against this disease. You must find the final ingredient for the remedy to the epidemic of Urunesti. You have to find larvae Kargah, she lived in dark and wet. #
+You should continue exploring the temple to find the larvae.#
+70417#L'Épidémie d'Urunesti#Arsinoe#2_m_molg#
+The hospital has charged you to collect the various ingredients to fight against this disease. You must find the final ingredient for the remedy to the epidemic of Urunesti. You have to find larvae Kargah, she lived in dark and wet. #
+Ursula Hupoi located the larvae Kargah!#
+70418#L'Épidémie d'Urunesti#Arsinoe#2_m_molg#
+The hospital has charged you to collect the various ingredients to fight against this disease. You must find the final ingredient for the remedy to the epidemic of Urunesti. You have to find larvae Kargah, she lived in dark and wet. #
+You have the juice of larvae Kargah, it is time to return to the hospital.#
+
+//Fishing Competition 
+70420#Fishing Competition #Arsinoe#4_m_reid#
+Fisher Zeladys of Coppalana suggested that you join his guild of fishermen. You can participate in the quest collector proposed.#
+You must go to Lake Crystalmir to buy the best fishing canna of Arsinoe.#
+70421#Fishing Competition #Arsinoe#4_m_reid#
+Fisher Zeladys of Coppalana suggested that you join his guild of fishermen. You can participate in the quest collector proposed.#
+You have your fishing rod, it is time to sign up for fishing contest near Zeladys to Coppalana.#
+70422#Fishing Competition #Arsinoe#4_m_reid#
+Fisher Zeladys of Coppalana suggested that you join his guild of fishermen. You can participate in the quest collector proposed.#
+The competition has started, you must meet the targets in table fishing to win the title.#
+
+//Missing Sailors 
+70425#Missing Sailors #Arsinoe#4w_sailo#
+Salve Regina believe there are survivors from Fort Storm, you must find them.#
+Found Hylarheim sailors.#
+70426#Missing Sailors #Arsinoe#4w_sailo#
+Salve Regina believe there are survivors from Fort Storm, you must find them.#
+They are in Sidon, you must report the news to Salve Regina.#
+
+
+//Néraka
+70430#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+Sven Van Motten talk about a job as a mercenary in Neraka, you should check it out and Meet the King of this City.#
+70431#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+King Baudouin I of Nerak agrees to count you as a mercenary but you must pass the test of mercenaries at the Neraka's Gate before.#
+70432#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+To become a Mercenary, you must do 50 rounds in the Champ de Mars. #
+70433#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+Here you mercenary! You can engage in a mission to the Table of Hall of Mercenaries Neraka.#
+
+70434#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+You need to kill Baron Sengir in the city of Arsinoe.#
+70435#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+Mission Accomplished, you must return to the Hall of Mercenaries.# 
+
+
+70436#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+You must meet Arganie in Neraka to deliver the ice as quickly as possible to the Sheik BarYoucef.#
+70437#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+Mission Accomplished, you must return to the Hall of Mercenaries.# 
+
+
+70438#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+The King Baudouin is concerned, the Comte de Nemours did not attend the court in ages and no messenger could not return alive from his tower.#
+70439#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+You have found proof of the treachery of the Count de Nemours in his book Count, you should bring it to the King.#
+70440#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+An attack is coming, you should contact Tivias Ranalc'h he prepares for his troops.#
+70441#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+Mission Accomplished, you must return to the Hall of Mercenaries.# 
+
+70442#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+The Fronde of some noble Neraka, allies of the Magi Gray, is about to launch an attack in the City of Neraka. You need to join Tivias Ranalc'h at Néraka's Gate.#
+70443#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+Mission Accomplished, you must return to the Hall of Mercenaries.# 
+
+70444#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+The old mines are the haunt of Neraka members of the Fronde. You must clean the Carnage begin!#
+70445#Néraka#Arsinoe#4_m_rusb#
+The Kingdom of Nerak is located in Mountain Bacchias. Royalty independent who is lutting since decades to ensure its independence, City specialize in mercenary.#
+Mission Accomplished, you must return to the Hall of Mercenaries.# 
+
+
+//Abysses
+70450#Abysses#Arsinoe#4_f_valkyrie2#
+You have not prevented the casting of Shandalar. Fenrir, is freed from his chains and may now leave the Abyss to walk agian in the world of Midgard.#
+You must contact the Joka enlightened leader to join the Resistance Urunesti.#
+70451#Abysses#Arsinoe#4_f_valkyrie2#
+You have not prevented the casting of Shandalar. Fenrir, is freed from his chains and may now leave the Abyss to walk agian in the world of Midgard.#
+Ornélia asked you to find Dynaheir in the Gondar region, we need his fire magic to open the gate.#
+70452#Abysses#Arsinoe#4_f_valkyrie2#
+You have not prevented the casting of Shandalar. Fenrir, is freed from his chains and may now leave the Abyss to walk agian in the world of Midgard.#
+You saved Dynaheir. You must go back to Ornélia Urunesti.#
+70453#Abysses#Arsinoe#4_f_valkyrie2#
+You have not prevented the casting of Shandalar. Fenrir, is freed from his chains and may now leave the Abyss to walk agian in the world of Midgard.#
+You must go in the hall of the Temple of Petosiris Portal.#
+70454#Abysses#Arsinoe#4_f_valkyrie2#
+You have not prevented the casting of Shandalar. Fenrir, is freed from his chains and may now leave the Abyss to walk agian in the world of Midgard.#
+The portal is open, you will have to fight your way through the Abyss to find Fenrir!#
+70455#Abysses#Arsinoe#4_f_valkyrie2#
+You have not prevented the casting of Shandalar. Fenrir, is freed from his chains and may now leave the Abyss to walk agian in the world of Midgard.#
+With your allies, you could reach the Ust Nashar, Fenrir's lair, the Heart of the Abyss.#

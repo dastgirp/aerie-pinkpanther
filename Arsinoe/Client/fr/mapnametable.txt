@@ -1,0 +1,125 @@
+ars_fild01.rsw#Fôret de Kiman Farès#
+ars_fild02.rsw#Fôret de Kiman Farès : Kiman Farès#
+ars_fild03.rsw#Fôret de Kiman Farès : Soknobeus#
+ars_fild04.rsw#Phare de Traïana#
+ars_fild05.rsw#Mont Bacchias : Euhéméria#
+ars_fild06.rsw#Arsinoé : La Porte d'Istar#
+ars_fild07.rsw#Mont Bacchias : Le Col de Faymour#
+ars_fild08.rsw#Mont Bacchias : La Passe d'Octavie#
+ars_fild09.rsw#Arsinoé : La Porte Nord#
+ars_fild10.rsw#Désert de Kargha : La lime du Torn-Thalas#
+ars_fild11.rsw#Désert de Kargha : Village de Nèsos#
+ars_fild12.rsw#Désert de Kargha#
+ars_fild13.rsw#Désert de Kargha : Oasis de Siwah (ext.)#
+ars_fild14.rsw#Désert de Kargha : Oasis de Siwah (int.)#
+ars_fild15.rsw#Désert de Kargha : Terkish#
+ars_fild16.rsw#Mont Bacchias : La Citadelle de Lumière#
+ars_fild17.rsw#Jungle de Thébaïde : La Tour des Etoiles#
+ars_fild18.rsw#Jungle de Thébaïde : Thébaïde#
+ars_fild19.rsw#Jungle de Thébaïde : Ferme Eupator#
+ars_fild20.rsw#Mont Bacchias : Lac de Crystalmir#
+ars_fild21.rsw#Gondar : Lalibela#
+ars_fild22.rsw#Arsinoé : La Cité#
+ars_fild23.rsw#Gondar : La Forêt Rouge#
+ars_fild24.rsw#Gondar : La Soufrière#
+ars_fild25.rsw#Empire de Rana : Les Deux-Portes#
+ars_fild26.rsw#Empire de Rana : Les Hauts-Plateaux#
+ars_fild27.rsw#Empire de Rana : La colline de Dian Bian Fût#
+ars_fild28.rsw#Empire de Rana : La colline de Dian Bian Fût#
+ars_fild29.rsw#Empire de Rana : La Rana, les Arènes#
+ars_fild30.rsw#OmbreTerre : Le Chemin des Dames#
+ars_fild31.rsw#OmbreTerre : La Porte Icarie#
+ars_fild32.rsw#OmbreTerre : La Grotte des Hylars#
+ars_fild33.rsw#Hylarheim#
+ars_fild34.rsw#Hylarheim : Le Fort Orage#
+ars_fild35.rsw#OmbreTerre : Pont Menzobaren#
+ars_fild36.rsw#Hylarheim : Port-Sirène#
+ars_fild37.rsw#OmbreTerre : Les Soupirs du Morloc'h#
+ars_fild38.rsw#OmbreTerre#
+ars_fild39.rsw#OmbreTerre : Le Léthé#
+ars_fild40.rsw#OmbreTerre : Da'Urdein#
+ars_fild41.rsw#Urunesti#
+ars_fild42.rsw#Urunesti : Lac aux Fées#
+ars_fild43.rsw#Sidon : La Descente du Merlu#
+ars_fild44.rsw#Sidon : Le Temple de Dagon#
+ars_fild45.rsw#Hylarheim : Hôpital Secoureur#
+ars_fild46.rsw#Sidon#
+ars_fild47.rsw#Sidon : Les Abysses#
+ars_fild48.rsw#Désert de Kargha#
+ars_fild49.rsw#Désert de Kargha : Le Temple de Pétosiris#
+ars_fild50.rsw#Hylarheim : Plaines de Daltigoth#
+ars_fild51.rsw#Mont Bacchias : Les Tours Violettes#
+ars_fild52.rsw#Néraka : L'Envol de l'Aiglon#
+ars_fild53.rsw#Néraka : Val de Bise#
+ars_fild54.rsw#Néraka : La Porte#
+ars_fild55.rsw#Néraka : Cité#
+ars_fild56.rsw#Gondar : Forteresse Gnoll#
+ars_fild57.rsw#Gondar : Canyon#
+ars_fild58.rsw#Abysses#
+ars_fild59.rsw#Abysses#
+ars_fild60.rsw#Abysses#
+ars_fild61.rsw#Abysses#
+ars_fild62.rsw#Abysses : Ust Nashar#
+
+coppa.rsw#Plage de Coppalana #
+tantale_ile.rsw#Île de Tantale#
+ars_phare.rsw#Phare de Traïana (intérieur)#
+
+ars_dun01.rsw#Nécropole de Gomorrhe#
+ars_dun02.rsw#Nécropole de Gomorrhe : Crypte de la Famille Royale#
+ars_dun03.rsw#Les Temples de Danifae#
+ars_dun04.rsw#La Tour des Etoiles : Intérieur#
+ars_dun05.rsw#La Tour des Etoiles : Sommet#
+ars_dun06.rsw#Lalibela : Intérieur#
+ars_dun07.rsw#Lalibela : Intérieur#
+ars_dun08.rsw#Mont Bacchias : Temple Solitude#
+ars_dun09.rsw#Gondar : La Soufrière#
+ars_dun10.rsw#Passe d'Octavie : Grotte des Bandits#
+ars_dun11.rsw#Salle Royale : Instance#
+ars_dun12.rsw#Monastère d'Harpocrate : Instance#
+ars_dun13.rsw#Arsinoé : Temple de Mortys#
+ars_dun14.rsw#Arsinoé : La Demeure de Chibi Youma#
+ars_dun15.rsw#Arsinoé : La Demeure de Chibi Youma#
+ars_dun16.rsw#Soulavein : Le Temple#
+ars_dun17.rsw#Da'Urdein : La Sphère Planaire#
+ars_dun18.rsw#Da'Urdein : La Sphère Planaire#
+ars_dun19.rsw#Da'Urdein : La Sphère Planaire#
+ars_dun20.rsw#Da'Urdein : Insurrection#
+ars_dun21.rsw#Rêve : La Salle de la Liche#
+ars_dun22.rsw#Rêve : Les Ruines d'Arsinoé#
+ars_dun23.rsw#Rêve : Couloirs du Temps#
+ars_dun24.rsw#Urunesti : La Tour de Shogunka#
+ars_dun25.rsw#Sidon : Crystal de la Tortue#
+ars_dun26.rsw#Cryptes#
+ars_dun27.rsw#Le Temple de Pétosiris#
+ars_dun28.rsw#Le Temple de Pétosiris#
+ars_dun29.rsw#Le Temple de Pétosiris#
+ars_dun30.rsw#Le Temple de Pétosiris#
+ars_dun31.rsw#Euhéméria : Marathon#
+ars_dun32.rsw#Repère du Noble-Mage#
+ars_dun33.rsw#Néraka : Livraison de Glace#
+ars_dun34.rsw#Néraka : Mines de Davaeorn#
+ars_dun35.rsw#Néraka : Mines de Davaeorn#
+ars_dun36.rsw#Néraka : Mines de Davaeorn#
+ars_dun37.rsw#Néraka : Mines de Davaeorn#
+ars_dun38.rsw#Néraka : La Fronde#
+ars_dun39.rsw#Néraka : Salle du Trône#
+ars_dun40.rsw#Mont Bacchias : La Citadelle de Lumière#
+
+ars_in01.rsw#Euhéméria : Intérieur#
+ars_in02.rsw#Arsinoé : Intérieur#
+ars_in03.rsw#Soufrière : Intérieur#
+ars_in04.rsw#Arsinoé : Monastère d'Harpocrate#
+ars_in05.rsw#Arsinoé : Salle Royale#
+ars_in06.rsw#La Tour Espoir#
+ars_in07.rsw#La Rana : Les Arènes#
+ars_in08.rsw#Soulavein : Entrée#
+ars_in09.rsw#Da'Urdein : Intérieur#
+ars_in10.rsw#Urunesti : Intérieur#
+ars_in11.rsw#Urunesti : Hôpital Secoureur#
+ars_in12.rsw#Néraka : Les Mercenaires#
+ars_in13.rsw#Néraka : Intérieur#
+ars_in14.rsw#Arsinoé : Intérieur#
+ars_in15.rsw#Pétosiris : Portail des Abysses#
+ars_in16.rsw#Abysses : Porte d'Ust Nashar#
+ars_in17.rsw#Coeur du Royaume#

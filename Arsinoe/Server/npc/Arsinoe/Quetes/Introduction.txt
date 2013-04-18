@@ -1,0 +1,2186 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+
+
+//===== Arsinoé Script ============================================================================ 
+//
+//= Introduction for Arsinoé Mod
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : True Noir & Mirabell & DesertFox
+//= Spanish Version : Yatadaid of onixRO
+//= Portuguese Version : Haziel
+//
+//===== Current Version: ==========================================================================  
+//
+//= 3.3
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.x Versions without multi-language support.
+//= 2.0 release
+//= 3.0 Added Portuguese Version
+//= 3.1 Franshille french version init fix
+//= 3.2 Monster Name / Menu Symbol
+//= 3.3 Revisited English version by DesertFox
+//
+//================================================================================================= 
+
+//_________________________________________________________________
+//___________________Introduction : Arrivée _______________________
+//_________________________________________________________________
+
+ars_fild41,41,54,0	script	#eventintro1	-1,0,10,{
+
+OnTouch:
+	
+	set $@player$,strcharinfo(0);
+	//if (EP7_GLOBAL > 0)  goto sub2;
+	if (EP7_INTRO == 0)  goto sub1;
+	if (EP7_INTRO >= 1)  goto sub2;
+	
+	sub1:	
+		mes "[^33CC00" + strcharinfo(0) + "^000000]";
+		mes "Veuillez choisir une langue :";
+		mes "Please, choose a language :";
+		mes "Elija un idioma:";
+		next;
+		switch(select("•Français:•English:•Español")){
+
+			case 1: 
+				mes "[^33CC00" + strcharinfo(0) + "^000000]";
+				mes "Vous venez de sélectionner la langue française.";
+				set EP7_LANGUE,0;
+				break;
+
+			case 2: 
+				mes "[^33CC00" + strcharinfo(0) + "^000000]";
+				mes "You have selected the English language.";
+				set EP7_LANGUE,1;
+				break;
+
+			case 3: 
+				mes "[^33CC00" + strcharinfo(0) + "^000000]";
+				mes "Has elejido el idioma español.";
+				set EP7_LANGUE,2;
+				break;
+
+		}
+
+		close2;
+		if( $EP7DAnnonce == 0 && $ep7_LangChoice & 1) {announce "" + strcharinfo(0) + " vient de naitre à Urunesti !",0,0xFF9966;}
+		if( $EP7DAnnonce == 1 && $ep7_LangChoice & 1) {mapannounce "ars_fild41","" + strcharinfo(0) + " vient de naitre à Urunesti !",0,0xFF9966|bc_self;}
+		if( $EP7DAnnonce == 0 && $ep7_LangChoice & 2) {announce "" + strcharinfo(0) + " has been born in Urunesti !",0,0xFF9966;}
+		if( $EP7DAnnonce == 1 && $ep7_LangChoice & 2) {mapannounce "ars_fild41","" + strcharinfo(0) + " newly born in Urunesti !",0,0xFF9966|bc_self;}
+		if( $EP7DAnnonce == 0 && $ep7_LangChoice & 4) {announce "" + strcharinfo(0) + " renacer en Urunesti !",0,0xFF9966;}
+		if( $EP7DAnnonce == 1 && $ep7_LangChoice & 4) {mapannounce "ars_fild41","" + strcharinfo(0) + " renacer en  Urunesti !",0,0xFF9966|bc_self;}
+		if( $EP7DAnnonce == 0 && $ep7_LangChoice & 32) {announce strcharinfo(0)+", "+((Sex)?"o mais novo":"a mais nova")+" jovem de Urunesti.",0,0xFF9966;}
+		if( $EP7DAnnonce == 1 && $ep7_LangChoice & 32) {mapannounce "ars_fild41",strcharinfo(0)+", "+((Sex)?"o mais novo":"a mais nova")+" jovem de Urunesti.",0,0xFF9966|bc_self;}
+		set EP7_INTRO,1;
+		setquest 70400;
+		sleep 5000;
+		if($ep7_LangChoice & 1) {mapannounce "ars_fild41","Maman : " + $@player$ + " rentre à la maison, j'ai des courses pour toi !",0,0xFF9966|bc_self;}
+		if($ep7_LangChoice & 2) {mapannounce "ars_fild41","Mom : " + $@player$ + " go home, I have shopping for you !",0,0xFF9966|bc_self;}
+		if($ep7_LangChoice & 4) {mapannounce "ars_fild41","Madre : " + $@player$ + " ve a casa, compre unas cosas para ti !",0,0xFF9966|bc_self;}
+		if($ep7_LangChoice & 32) {mapannounce "ars_fild41","Mamãe: " + $@player$ + ", venha para casa. Eu fiz algumas compras.",0,0xFF9966|bc_self;}
+		end;
+	sub2:
+		end;
+}
+		
+//===================================================================
+
+ars_fild41,41,48,3	script	#ep7intropan	858,{
+end;
+
+OnInit:
+	waitingroom "" + $EP7ServName$ + " !", 0;
+	end;
+}
+//===================================================================
+
+ars_fild41,49,69,4	script	Spiria Symphonia#ep7	62,{
+
+set @name$,"^FF00CCSpiria Symphonia^000000";
+
+set $@player$,strcharinfo(0);
+
+	if (EP7_INTRO == 0)  goto sub2;
+	if (EP7_INTRO == 1)  goto sub1;
+	if (EP7_INTRO >= 2)  goto sub2;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Dis quand reviendras-tu pour jouer ^33CC00" + strcharinfo(0) + " ^000000?";}
+	if(EP7_LANGUE == 1) {mes "Say, when are you coming back to play ^33CC00" + strcharinfo(0) + " ^000000?";} 
+	if(EP7_LANGUE == 2) {mes "Dime, cuando regresarás a jugar ^33CC00" + strcharinfo(0) + "^000000 ?"; }
+	if(EP7_LANGUE == 5) {mes "Me diga, quando você vai voltar para brincar, "+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000?"; }
+	close;
+
+sub1:
+	if ($@ep7intro1 == 0) {
+	donpcevent "EP7_intro::OnEvent1";
+	}
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Oh ^33CC00" + strcharinfo(0) + "^000000 ! Quelle belle journée !";}
+	if(EP7_LANGUE == 1) {mes "Oh ^33CC00" + strcharinfo(0) + "^000000 ! What a beautiful day!";} 
+	if(EP7_LANGUE == 2) {mes "Oh ^33CC00" + strcharinfo(0) + "^000000 ! Que hermoso dia!";}
+	if(EP7_LANGUE == 5) {mes "Oh, "+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000! Que dia lindo!"; }
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "" + $@player$ +" ! Cela faisait longtemps que l'on ne t'avait pas vu à Urunesti !";}
+		if($ep7_LangChoice & 2) {npctalk "" + $@player$ +" ! it's been a long time since last we saw you in Urunesti !";}
+		if($ep7_LangChoice & 4) {npctalk "" + $@player$ +" ! Hace ya mucho tiempo que no te veia en Urunesti !";}
+		if($ep7_LangChoice & 32) {npctalk ""+$@player$+"! Faz bastante tempo que não te vemos aqui em Urunesti!";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "C'est bien vrai ! Tu as fait le bon choix en venant sur " + $EP7ServName$ + " !";}
+		if($ep7_LangChoice & 2) {npctalk "Very well, I guess you've made the right choice by coming to " + $EP7ServName$ + " !";}
+		if($ep7_LangChoice & 4) {npctalk "Muy bien, creo que tomaste la decicion correcta el venir a " + $EP7ServName$ + " !";}
+		if($ep7_LangChoice & 32) {npctalk "Bom, sei que você fez a escolha certa vindo para o mundo de "+$EP7ServName$ +"!";}
+		end;
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "Voici le départ de tes nouvelles aventures " + $@player$ +" !";}
+		if($ep7_LangChoice & 2) {npctalk "This is the start of your new adventures " + $@player$ +" !";}
+		if($ep7_LangChoice & 4) {npctalk "Este es el inicio de tus nuevas aventuras " + $@player$ +" !";}
+		if($ep7_LangChoice & 32) {npctalk "É o começo de suas novas aventuras, "+$@player$ +"!";}
+		end;
+
+	OnTalk4:
+		if($ep7_LangChoice & 1) {npctalk "On ne va t'ennuyer plus longtemps, ta mère veux te voir, elle doit avoir des courses pour toi !";}
+		if($ep7_LangChoice & 2) {npctalk "We're not going to bore you any longer, your mother want to see you, she must have errands for you to run !";}
+		if($ep7_LangChoice & 4) {npctalk "Ya no estaremos aburridos otra vez, tu madre quiere verte, seguramente tiene algunas cosas por hacer !";}
+		if($ep7_LangChoice & 32) {npctalk "Não vamos mais te atrapalhar. Sua mãe estava te procurando. Seria bom ir falar com ela.";}
+		end;
+
+	OnTalk5:
+		if($ep7_LangChoice & 1) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 2) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 4) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 32) {npctalk "Manobra de Dispersão!";}
+		end;
+
+	OnMove1: npcwalkto 49,45; end;
+	OnMove2: npcwalkto 62,36; end;
+	OnMove3: npcwalkto 49,45; end;
+	OnMove4: npcwalkto 49,69; end;
+
+}
+//===================================================================
+
+ars_fild41,44,73,4	script	Maa Aluna#ep7	96,{
+
+set @name$,"^FF00CCMaa Aluna^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je vais bientôt rentrer à la maison pour nourrir mes chats !";}
+	if(EP7_LANGUE == 1) {mes "I will soon return home to feed my cats!";} 
+	if(EP7_LANGUE == 2) {mes "Debo regresar pronto a la casa para alimentar a mis gatos!"; }
+	if(EP7_LANGUE == 5) {mes "Logo terei de ir pra casa para dar ração aos meus gatos.";}
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "C'était bien le bateau le long du Torn-Thalas ?";}
+		if($ep7_LangChoice & 2) {npctalk "It was pleasant the boat along the Torn-Thalas ?";}
+		if($ep7_LangChoice & 4) {npctalk "Fue placentero el viaje en barco a lo largo de Torn-Thalas ?";}
+		if($ep7_LangChoice & 32) {npctalk "Como foi a viagem para Torn-Thalas?";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "On ne s'est pas vu là-bas justement ? Enfin ceci est de l'histoire ancienne !";}
+		if($ep7_LangChoice & 2) {npctalk "We didn't see there exactly? And this is ancient history!";}
+		if($ep7_LangChoice & 4) {npctalk "No nos habiamos visto ahi exactamente? y esto ya es historia antigua!";}
+		if($ep7_LangChoice & 32) {npctalk "Nós não conhecemos tudo exatamente, mas há uma história ancestral por trás de tudo!";}
+		end;
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 2) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 4) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 32) {npctalk "Manobra de Dispersão!";}
+		end;
+
+	OnMove1: npcwalkto 63,76; end;
+	OnMove2: npcwalkto 67,95; end;
+	OnMove3: npcwalkto 63,76; end;
+	OnMove4: npcwalkto 44,73; end;
+
+}
+//===================================================================
+
+ars_fild41,48,75,4	script	Ryu Zandermil#ep7	706,{
+
+set @name$,"^66CCFFRyu Zandermil^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Quand je serais grand, je serais batelier pour arnaquer les gens !";}
+	if(EP7_LANGUE == 1) {mes "When I grow up, I will be a boatman to scam people!";} 
+	if(EP7_LANGUE == 2) {mes "Cuando crezca, seré barquero para estafar a la gente!";}
+	if(EP7_LANGUE == 5) {mes "Quando eu crescer, quero navegar por esses mares!";}
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Ce n'est pas important ! Le principal, c'est que tu sois là !";}
+		if($ep7_LangChoice & 2) {npctalk "It's not important! The main thing is that you're here!";}
+		if($ep7_LangChoice & 4) {npctalk "No es importante! Lo principal es que estás aquí!";}
+		if($ep7_LangChoice & 32) {npctalk "Mas isso não é importante, é bom ter você conosco.";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "Et dire qu'il y a des personnes sur *****-RO ! Ils devraient avoir honte d'eux !";}
+		if($ep7_LangChoice & 2) {npctalk "And to think that there are people on ****- RO! Shame on them!";}
+		if($ep7_LangChoice & 4) {npctalk "Y pensar que hay gente en ****- RO! Que la Vergüenza caiga sobre ellos!";}
+		if($ep7_LangChoice & 32) {npctalk "Agora é apenas seguir em frente.";}
+		end;
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 2) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 4) {npctalk "Dispersion !";}
+		if($ep7_LangChoice & 32) {npctalk "Manobra de Dispersão!";}
+		end;
+
+	OnMove1: npcwalkto 63,78; end;
+	OnMove2: npcwalkto 84,65; end;
+	OnMove3: npcwalkto 63,78; end;
+	OnMove4: npcwalkto 48,75; end;
+
+}
+//===================================================================
+
+ars_in10,23,101,4	script	Maman#ep7	91,6,6,{
+
+if(EP7_LANGUE == 0) {set @name$,"^FF00CCMaman^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^FF00CCMom^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^FF00CCMadre^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^FF00CCMamãe^000000";}
+
+if (EP7_INTRO == 1 || EP7_INTRO == 2)  goto sub1;
+if (EP7_INTRO == 3 || EP7_INTRO == 4)  goto sub2;
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Il y a tant de choses à faire !";}
+	if(EP7_LANGUE == 1) {mes "There are so many things to do!";} 
+	if(EP7_LANGUE == 2) {mes "Hay muchas cosas que hacer!";}
+	if(EP7_LANGUE == 5) {mes "Há muito o que ser feito agora.";}
+	close;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "^33CC00" + strcharinfo(0) + "^000000 te voilà enfin !";
+	mes "Je t'attendais justement, j'aimerai que tu ailles me chercher du lait à la ferme !";
+	mes "Histoire de préparer le dîner pour ce soir.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "La ferme se trouve au Nord, emprunte le pont et va voir Fernandel, il t'en donnera !";
+	mes "Et ne flâne pas en route cette fois-ci !"; 
+	mes "Tu peux regarder ton onglet quête, c'est ton carnet de notes pour que tu n'oublies pas ce que tu as à faire !";}
+
+	if(EP7_LANGUE == 1) {mes "^33CC00" + strcharinfo(0) + "^000000 you are at last!";
+	mes "I just waited for you, I'd like you to go get me some milk at the farm!";
+	mes "History of preparing dinner for tonight.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "The farm is located north, uses the bridge and will see Fernandel, he will worry!";
+	mes "And don't loiter on the road this time!"; 
+	mes "You can look at your quest tab, it's your notebook so that you don't forget what you have to do!";} 
+	
+	if(EP7_LANGUE == 2) {mes "^33CC00" + strcharinfo(0) + "^000000 eres el ultimo!";
+	mes "Solo estaba esperandote a ti, Me gustaria que fueras a conseguir un poco de leche de granja!";
+	mes "Para preparar la cena para esta noche.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "La granja esta al norte, usa el puente y verás Fernandel, estará preocupado!";
+	mes "Por sierto, no tires basura en el camino!"; 
+	mes "Puedes ver tu lista de quest, es como tu libreta de apuntes para que no olvides lo que hay que hacer!"; }
+ 
+	if(EP7_LANGUE == 5) {mes ""+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000, já está tarde!";
+	mes "Eu estava te esperando. Vá pegar um pouco de leite na fazendo.";
+	mes "É a Aventura de fazer o jantar hoje.";
+	next;
+	mes "[" + @name$ + "]";
+	mes "A Fazenda fica ao Norte, vá pela ponte e você verá Fernandel, ele pode ficar preocupado.";
+	mes "E não se perca na estrada dessa vez."; }
+	close2;
+	if (EP7_INTRO == 1) {set EP7_INTRO,2;changequest 70400,70401;}
+	end;
+
+sub2:
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Parfait ! Je vais préparer le dîner.";
+	mes "Monte donc dans ta chambre pour te reposer un peu !";
+	mes "Ta soeur est déjà montée à l'étage !";}
+
+	if(EP7_LANGUE == 1) {mes "Perfect, I'll prepare dinner.";
+	mes "Climb into your room to rest a little!";
+	mes "Your sister is already mounted on the floor!";}
+	
+	if(EP7_LANGUE == 2) {mes "Perfecto, prepararé la cena.";
+	mes "Sube a tu cuarto a descanzar un poco!";
+	mes "Tu hermana ya esta montada en el suelo!";}
+	
+	if(EP7_LANGUE == 5) {mes "Perfeito, vou fazer o jantar.";
+	mes "Suba para o seu quarto e descanse um pouco!";
+	mes "Sua irmã já está lá.";}
+
+	close2;
+	if (EP7_INTRO == 3) {set EP7_INTRO,4;changequest 70402,70403;}
+	end;
+
+OnTouch:
+	if (EP7_INTRO == 1 || EP7_INTRO == 3) {showevent 1,0;} end;
+}
+
+//===================================================================
+
+ars_fild42,137,70,1	script	Fernandel#ep7	929,{
+
+set @name$,"^66CCFFFernandel^000000";
+
+if (EP7_INTRO == 2)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Les aides d'Arsinoé, notre capitale, ne viennent pas vite ! Je perds de l'argent en produisant mon lait !";}
+	if(EP7_LANGUE == 1) {mes "Help from Arsinoe, our capital, doesn't come quickly, I'm losing money by producing my milk!"; } 
+	if(EP7_LANGUE == 2) {mes "Ayuda desde Arsinoe, nuestra capital, pero no llegará rapido, estoy perdiendo dinero por producir mi leche!";}
+	if(EP7_LANGUE == 5) {mes "A ajuda vinda de Arsinoe, nossa cidade Capital, nunca chega rapidamente, eu estou perdendo dinheiro produzindo todo esse leite!";}
+	close;
+
+sub1:
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Ta mère m'a prévenu ^33CC00" + strcharinfo(0) + "^000000.";
+	mes "Tu peux traire la Marguerite si tu veux du lait !";}
+
+	if(EP7_LANGUE == 1) {mes "Your mother told me ^33CC00" + strcharinfo(0) + "^000000.";
+	mes "You can milk the Margaret if you want milk!";}
+	
+	if(EP7_LANGUE == 2) {mes "Tu madre me lo dijo ^33CC00" + strcharinfo(0) + "^000000.";
+	mes "Puedes ordeñar a Margaret si quieres leche!";}
+	
+	if(EP7_LANGUE == 5) {mes "Sua mãe me avisou, "+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000.";
+	mes "Você pode ordenhar Margareth se precisar de leite.";}
+	close;
+}
+//===================================================================
+
+ars_fild42,141,74,1	script	Marguerite#ep7	889,5,5,{
+
+set @name$,"^33CC00Marguerite^000000";
+
+	if (EP7_INTRO == 2)  goto sub1;
+	
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Le pauvre Fernandel pense que son animal est une vache laitière ... Mieux vaut ne pas se demander comment il obtient du lait ...";} 
+	if(EP7_LANGUE == 1) {mes "The poor Fernandel think your pet is a cow milk ... Better not to ask how he gets the milk ..."; }
+	if(EP7_LANGUE == 2) {mes "El pobre Fernandel piensa que tu mascota es una vaca lechera ... Es mejor no preguntarle como consigue el su leche ..."; }
+	if(EP7_LANGUE == 5) {mes "O pobre Fernandel pensa que seu bichinho de estimação é uma vaca leiteira...";mes "Melhor nem perguntar como ele consegue o leite...";}
+	close;
+
+sub1:
+	switch( rand(3) ) {
+
+	case 0:
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) {mes "Vous avez réussi à traîre la vache";
+		mes "Félicitations !, mais vous vous apercevez que c'est en réalité un taureau, il y a certaines questions qu'il ne faut mieux pas se poser ....";}
+
+		if(EP7_LANGUE == 1) {mes "You've managed to milk the cow.";
+		mes "Congratulations, but you realize it's actually a bull, but there are certain problems that you don't want to know about it ....";}
+		
+		if(EP7_LANGUE == 2) {mes "Has logrado ordeñar a la vaca.";
+		mes "Felicidades, pero te das cuenta que es en realidad un toro, y hay ciertos problemas que eso conlleva, no querras saberlo ....";}
+		
+		if(EP7_LANGUE == 5) {mes "Você ordenhou com sucesso.";
+		mes "Parabéns, mas creio que há algo de estranho nessa vaca, melhor não saber o que...";}
+		
+		close2;
+		set EP7_INTRO,3;
+		changequest 70401,70402;
+		end;
+	case 1:
+	case 2:
+	case 3:
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) {mes "Vous n'avez pas réussi à traîre la vache";
+		mes "Et en plus elle a fait preuve d'une certaine animosité à votre égard";}
+
+		if(EP7_LANGUE == 1) {mes "You have failed to milk the cow.";
+		mes "And she has shown a certain animosity towards you.";}
+		
+		if(EP7_LANGUE == 2) {mes "Has fallado en ordeñar.";
+		mes "Y la vaca ha mostrado una cierta animosidad hacia ti.";}
+		
+		if(EP7_LANGUE == 5) {mes "Você falhou ao ordenhar a vaca.";
+		mes "Porém, ela demonstra uma certa animosidade para com você...";}
+		close2;
+		percentheal -10,0;
+		specialeffect2 596;
+		end;}		
+
+OnTouch:
+	if (EP7_INTRO == 2) {showevent 1,0;} end;
+}
+//===================================================================
+
+ars_in10,45,102,4	script	Soeur Anne#ep7	958,{
+
+if(EP7_LANGUE == 0) {set @name$,"^FF00CCSoeur Anne^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^FF00CCSister Ann^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^FF00CCHermana Anna^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^FF00CCIrmã Anna^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Les Novices font d'étranges rêves en ce moment. Au Temple, ils parlent de grands changements dans l'univers.";}
+	if(EP7_LANGUE == 1) {mes "The Novices have strange dreams now. At the temple, they talk about great changes in the universe."; } 
+	if(EP7_LANGUE == 2) {mes "Los novatos estan teniendo sueños extraños. En el templo, hablan de grandes cambios en el universo."; }
+	if(EP7_LANGUE == 5) {mes "Os ^0000FFAprendizes^000000 vêm tendo sonhos estranhos. No Templo, eles falam sobre grandes mudanças no universo.";}
+	close;
+}
+//===================================================================
+
+ars_in10,59,98,4	script	Action : Dormir#ep7	111,{
+
+if(EP7_LANGUE == 0) {set @name$,"^33CC00Action : Dormir^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^33CC00Action : Sleep^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^33CC00Action : Dormir^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^33CC00Action : Cama^000000";}
+
+if (EP7_INTRO == 4)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous n'êtes pas fatigué pour le moment."; }
+	if(EP7_LANGUE == 1) {mes "You're not tired yet."; }
+	if(EP7_LANGUE == 2) {mes "Aun no estas cansado."; }
+	if(EP7_LANGUE == 5) {mes "Não estou cansad"+((Sex)?"o":"a")+" ainda.";}
+	close;
+
+sub1:
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Voulez-vous vous reposer ?";
+	next;
+	menu "•Oui",submenu1,"•Non",-;}
+
+	if(EP7_LANGUE == 1) {mes "Would you relax?";
+	next;
+	menu "•Yes",submenu1,"•No",-;}
+	
+	if(EP7_LANGUE == 2) {mes "Quieres relajarte?";
+	next;
+	menu "•Si",submenu1,"•No",-;}
+	
+	if(EP7_LANGUE == 5) {	mes "Será que devo relaxar?";
+	next;
+	menu "• Sim",submenu1,"• Não",-;}
+
+	close;
+
+submenu1:
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Le sommeil vient vite, vous dormez profondement ...";
+	sleep2 2000;
+	mes "D'étranges visions, comme un rêve ...";
+	sleep2 2000;
+	mes "Une spirale vous entraine ...";
+	close2;
+	warp "ars_dun21",152,99;
+	end; }
+
+	if(EP7_LANGUE == 1) {mes "Sleep comes quickly, you sleep deeply ...";
+	sleep2 2000;
+	mes "Some strange visions, like a dream ...";
+	sleep2 2000;
+	mes "A spiral leads you ...";
+	close2;
+	warp "ars_dun21",152,99;
+	end; }
+	
+	if(EP7_LANGUE == 2) {mes "El sueño te cae de golpe, y duermes profundamente ...";
+	sleep2 2000;
+	mes "Algunas visiones extrañas, como en un sueño ...";
+	sleep2 2000;
+	mes "Una espiral te conduce ...";
+	close2;
+	warp "ars_dun21",152,99;
+	end; }
+	
+	if(EP7_LANGUE == 5) {mes "O sono está vindo rápido, de leve...";
+	sleep2 2000;
+	mes "Algumas visões estranhas, como um sonho...";
+	sleep2 2000;
+	mes "Algo está me chamando...";
+	close2;
+	warp "ars_dun21",152,99;
+	end; }
+	
+}
+
+//_________________________________________________________________
+//___________________Le Rêve : La Liche ___________________________
+//_________________________________________________________________
+
+ars_dun21,152,87,0	script	#eventintro2	-1,0,10,{
+
+OnTouch:
+
+	if (EP7_INTRO == 4)  goto sub1;
+	end;
+	
+	sub1:	
+		
+		if ($@ep7intro2 == 0) {
+	donpcevent "EP7_intro::OnEvent4"; 
+	set $@ep7intro2,1;
+
+	if($ep7_LangChoice & 1) {mapannounce "ars_dun21","Mage : " + strcharinfo(0) + " te voilà enfin ! Approche, j'ai de ces choses à te montrer !",0,0x9966CC|bc_self;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_dun21","Mage : " + strcharinfo(0) + " you are at last! Approach, I these things to show you!",0,0x9966CC|bc_self;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_dun21","Mage : " + strcharinfo(0) + " eres el ultimo! Enfocate, hay cosas que te serán mostradas!",0,0x9966CC|bc_self;}
+	if($ep7_LangChoice & 32) {mapannounce "ars_dun21","Feiticeiro: "+strcharinfo(0)+", você está atrasado. Aproxime-se, tenho algo a mostrar para você.",0,0x9966CC|bc_self;}
+		}
+		end;
+}
+//===================================================================
+
+ars_dun21,150,83,2	script	Mage#ep7shan	735,{
+
+set @name$,"^66CCFFMage^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Ceci est un mage bien étrange, vous n'apercevez pas son visage."; }
+	if(EP7_LANGUE == 1) {mes "This is a strange magician, you can not see his face."; }
+	if(EP7_LANGUE == 2) {mes "Este es un mago extraño, No puedes ver su rostro."; }
+	if(EP7_LANGUE == 5) {mes "É um mago estranho, não consigo ver sua face..."; }
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Tu es ici par ma propre volonté, te voici dans mon laboratoire ...";}
+		if($ep7_LangChoice & 2) {npctalk "You're here by my own will, you here in my laboratory ...";}
+		if($ep7_LangChoice & 4) {npctalk "Estás aqui por mi voluntad, este es mi laboratorio ...";}
+		if($ep7_LangChoice & 32) {npctalk "Você está aqui por minha vontade, este é meu laboratório...";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "J'ai de grandes choses pour toi, alors approche ...";}
+		if($ep7_LangChoice & 2) {npctalk "I have great things for you, then approach ...";}
+		if($ep7_LangChoice & 4) {npctalk "Tengo grandes planes para ti, asi que enfocate ...";}
+		if($ep7_LangChoice & 32) {npctalk "Tenho coisas grandiosas para te revelar, então aproxime-se...";}
+		end;
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "N'aie pas peur, c'est ton destin !";}
+		if($ep7_LangChoice & 2) {npctalk "Don't worry, it's your destiny !";}
+		if($ep7_LangChoice & 4) {npctalk "No te preocupes, es tu destino !";}
+		if($ep7_LangChoice & 32) {npctalk "Não se preocupe, esse é seu destino!";}
+		sleep2 2000;
+		Emotion e_heh;
+		end;	
+}
+//===================================================================
+
+ars_dun21,61,105,5	script	Mage#ep7shan2	735,{
+
+set @name$,"^66CCFFMage^000000";
+
+if (EP7_INTRO == 4)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Tu n'es pas à ta place ici, va-t'en !";}
+	if(EP7_LANGUE == 1) {mes "You don't belong here, go away!";} 
+	if(EP7_LANGUE == 2) {mes "No perteneces aqui, largate!";}
+	if(EP7_LANGUE == 5) {mes "Você não pertence à esse lugar, vá embora!";}
+	close;
+
+sub1:
+	if ($@ep7intro3 == 1) {
+		mes "[" + @name$ + "]"; 
+		if(EP7_LANGUE == 0) {mes "Je m'occupe de ^33CC00" + $@player2$ + "^000000 pour le moment, c'est juste une histoire de quelques secondes !";}
+		if(EP7_LANGUE == 1) {mes "I mind ^33CC00" + $@player2$ + "^000000 for the moment, it's just a story of some seconds!";}
+		if(EP7_LANGUE == 2) {mes "Pienso que ^33CC00" + $@player2$ + "^000000 por el momento, no es mas que una historia de pocos segundos!";}
+		if(EP7_LANGUE == 5) {mes "Apenas imagine profundamente por enquanto, é apenas uma história de alguns segundos.";}
+		close;}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes " Regarde ^33CC00" + strcharinfo(0) + "^000000, je vais te faire comprendre ton avenir ...";}
+	if(EP7_LANGUE == 1) {mes " Regarde ^33CC00" + strcharinfo(0) + "^000000, I'll make you understand your future ...";}
+	if(EP7_LANGUE == 2) {mes " Mirá ^33CC00" + strcharinfo(0) + "^000000, te haré entender tu futuro ...";}
+	if(EP7_LANGUE == 5) {mes "Saudações, "+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000, farei com que você entenda seu futuro...";}
+	set $@player2$,strcharinfo(0);
+	set $@player3$,getcharid(0);
+	donpcevent "EP7_intro::OnEvent5";
+	close;
+
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Tu étais promis à une grande destinée, c'est pour cela que tu es là ... ";}
+		if($ep7_LangChoice & 2) {npctalk "You were promised a great destiny, that's why you're here ...";}
+		if($ep7_LangChoice & 4) {npctalk "Se te ha prometido un gran destino, es por eso que estas aqui ...";}
+		if($ep7_LangChoice & 32) {npctalk "Você pertence à um grande destino, é o motivo de estar aqui...";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "Tu ne dois pas comprendre grand chose à ta situation.";}
+		if($ep7_LangChoice & 2) {npctalk "You don't understand much about your situation.";}
+		if($ep7_LangChoice & 4) {npctalk "No entiendes mucho la situacion por ahora.";}
+		if($ep7_LangChoice & 32) {npctalk "Neste momento, não há muito que possa entender sobre sua situação...";}
+		end;
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "Regarde, je vais te faire comprendre ce que tu vas devenir ...";}
+		if($ep7_LangChoice & 2) {npctalk "Look, I'll make you understand what you're going to be ...";}
+		if($ep7_LangChoice & 4) {npctalk "Mirá, Te haré entender lo que va a ser ...";}
+		if($ep7_LangChoice & 32) {npctalk "Veja, farei com que entenda o que será de seu futuro...";}
+		sleep2 2000;
+		Emotion e_heh;
+		end;	
+
+	OnTalk4:
+		if($ep7_LangChoice & 1) {npctalk "C'est toi dans cette prison ...";}
+		if($ep7_LangChoice & 2) {npctalk "Is that you in this prison ...";}
+		if($ep7_LangChoice & 4) {npctalk "Eres tu en esta prision ...";}
+		if($ep7_LangChoice & 32) {npctalk "Aqui está você, em sua prisão...";}
+		clone "ars_dun21",59,118,"EP7_intro::OnNothing",$@player3$;
+		specialeffect 52;
+		sleep2 500;
+		specialeffect 52;
+		sleep2 500;
+		specialeffect 52;
+		end;
+
+	OnTalk5:
+		if($ep7_LangChoice & 1) {npctalk "Tu es prisonnier de ton destin et de celui des mondes de l'Yggdrasil.";}
+		if($ep7_LangChoice & 2) {npctalk "You're a prisoner of your fate and that of the worlds of the Yggdrasil.";}
+		if($ep7_LangChoice & 4) {npctalk "Eres prisionero de tu destino y eso es por debido a los mundos del Yggdrasil.";}
+		if($ep7_LangChoice & 32) {npctalk "Você está em um confinamento, por entre os mundos de Yggdrasil.";}
+		end;
+
+	OnTalk6:
+		if($ep7_LangChoice & 1) {npctalk "Les faibles perdent toujours, regarde !";}
+		if($ep7_LangChoice & 2) {npctalk "The weak always lose, look!";}
+		if($ep7_LangChoice & 4) {npctalk "La debilidad siempre pierde, observa!";}
+		if($ep7_LangChoice & 32) {npctalk "Os fracos sempre perderão, veja!";}
+		sleep2 2000;
+		specialeffect 573;
+		end;
+
+	OnTalk7:
+		if($ep7_LangChoice & 1) {npctalk "Voilà, ta vie est finie, tu ne pourras être en travers de mon chemin !";}
+		if($ep7_LangChoice & 2) {npctalk "Here, your life is finished, you can not be in my way!";}
+		if($ep7_LangChoice & 4) {npctalk "Aqui, tu vida ha terminado, no puedes ya cruzarte en mi camino!";}
+		if($ep7_LangChoice & 32) {npctalk "E então, sua vida terá fim, você não pode ficar em meu caminho.";}
+		sleep2 2000;
+		killmonsterall "ars_dun21";
+		end;
+
+	OnTalk8:
+		if($ep7_LangChoice & 1) {npctalk "Que se passe-t-il !!?";}
+		if($ep7_LangChoice & 2) {npctalk "What does !!?";}
+		if($ep7_LangChoice & 4) {npctalk "Que !!?";}
+		if($ep7_LangChoice & 32) {npctalk "O que acontece?!";}
+		end;
+
+	OnTalk9:
+		if($ep7_LangChoice & 1) {npctalk "L'Archimage Ornélia ! Et ses piètres magiciens du Conseil des Mages d'Arsinoé !";}
+		if($ep7_LangChoice & 2) {npctalk "The Archmage Ornélia! And his poor magicians Council of Mages of Arsinoe!";}
+		if($ep7_LangChoice & 4) {npctalk "La archimago Ornélia! Y su pobre concilio de magos de Arsinoe!";}
+		if($ep7_LangChoice & 32) {npctalk "A Arquimaga Ornélia! E seus pobres feiticeiros do Conselho de Magos de Arsinoe!";}
+		end;
+
+	OnTalk10:
+		if($ep7_LangChoice & 1) {npctalk "Ce vieux Dragon devrait éviter de trop parler ...";}
+		if($ep7_LangChoice & 2) {npctalk "This old dragon should avoid talking too much ...";}
+		if($ep7_LangChoice & 4) {npctalk "Ese viejo dragon suele hablar demasiado ...";}
+		if($ep7_LangChoice & 32) {npctalk "Esse velho Dragão deveria parar de perder tempo falando tanto...";}
+		end;
+
+	OnTalk11:
+		if($ep7_LangChoice & 1) {npctalk "Maudits ! Continuez ! L'espoir ne vous mènera pas bien loin !";}
+		if($ep7_LangChoice & 2) {npctalk "Damn! Go! Hope you do not lead very far!";}
+		if($ep7_LangChoice & 4) {npctalk "Demonios! Ve! Espero que no llegues muy lejos!";}
+		if($ep7_LangChoice & 32) {npctalk "Enfim, vá! Espero que não chegue muito longe nisso!";}
+		end;
+
+	OnMove1: npcwalkto 68,103; end;
+	OnMove2: npcwalkto 61,105; end;
+}
+//========================================================================================================
+ars_dun21,73,99,4	script	Archimage Ornélia#ep7i	971,{
+
+set @name$,"^FF00CCArchimage Ornélia^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "^33CC00" + strcharinfo(0) + "^000000 ! Laisse-moi faire, nous allons te sauver !";}
+	if(EP7_LANGUE == 1) {mes "^33CC00" + strcharinfo(0) + "^000000 ! Let me do it, we'll save you!"; } 
+	if(EP7_LANGUE == 2) {mes "^33CC00" + strcharinfo(0) + "^000000 ! Dejamelo a mi, Te salvaremos!"; }
+	if(EP7_LANGUE == 5) {mes ""+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000! Deixe me prosseguir! Iremos salvar você!"; }
+	close;
+
+	OnTalk1: specialeffect 651; end;
+	OnTalk2: specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; enablenpc "Archimage Ornélia#ep7i"; end;	
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "Ah te voilà ! Nous avons enfin mis la main sur toi, maudite liche !";}
+		if($ep7_LangChoice & 2) {npctalk "Oh there you are! We finally got hold of you, cursed Lich!";}
+		if($ep7_LangChoice & 4) {npctalk "Oh aqui estas! Por fin te hemos atrapado, maldito Lich!";}
+		if($ep7_LangChoice & 32) {npctalk "Ah, aqui está você! Nós finalmente pegamos você, maldito Lich!";}
+		end;
+
+	OnTalk4:
+		if($ep7_LangChoice & 1) {npctalk "Le Dragon de Gondar avait bien raison ! Relâche " + $@player2$ + " !";}
+		if($ep7_LangChoice & 2) {npctalk "The Dragon of Gondar was right! Release " + $@player2$ + " !";}
+		if($ep7_LangChoice & 4) {npctalk "El Dragon de Gondar estaba en lo correcto! Liberate " + $@player2$ + " !";}
+		if($ep7_LangChoice & 32) {npctalk "O Dragão de Gondar estava certo! Liberte-se, "+ $@player2$+"!";}
+		end;
+
+	OnTalk5:
+		if($ep7_LangChoice & 1) {npctalk "Archosio ! Ghoji ! Oeste ! Incantez !";}
+		if($ep7_LangChoice & 2) {npctalk "Archosio ! Ghoji ! Oeste ! Spell !";}
+		if($ep7_LangChoice & 4) {npctalk "Archosio ! Ghoji ! Oeste ! Spell !";}
+		if($ep7_LangChoice & 32) {npctalk "Archosio! Ghoji! Oeste! O feitiço!";}
+		end;
+
+	OnTalk6:
+		if($ep7_LangChoice & 1) {npctalk "Nous n'allons pas nous battre, nous ne sommes plus de ce monde maintenant ...";}
+		if($ep7_LangChoice & 2) {npctalk "We will not beat you, we are no longer of this world now ...";}
+		if($ep7_LangChoice & 4) {npctalk "No te derrotaremos, no pertenecemos mas a este mundo ...";}
+		if($ep7_LangChoice & 32) {npctalk "Não vamos destruir você, não pertencemos mais a esse mundo...";}
+		end;
+
+	OnTalk7:
+		if($ep7_LangChoice & 1) {npctalk "Nous allons juste prendre " + $@player2$ + " avec nous, tu connais sa destinée ...";}
+		if($ep7_LangChoice & 2) {npctalk "We'll just take " + $@player2$ + " with us, you know his fate ...";}
+		if($ep7_LangChoice & 4) {npctalk "Solo tomaremos a " + $@player2$ + " con nosotros, conoces su destino ...";}
+		if($ep7_LangChoice & 32) {npctalk "Vamos apenas trazer" + $@player2$ + "conosco, você conhece seu destino...";}
+		end;
+
+	OnTalk8:
+		if($ep7_LangChoice & 1) {npctalk "" + $@player2$ + " ! Allons-y ! Fais moi confiance !";}
+		if($ep7_LangChoice & 2) {npctalk "" + $@player2$ + " ! Let's go! Trust me!";}
+		if($ep7_LangChoice & 4) {npctalk "" + $@player2$ + " ! Vamos! Confien en mi!";}
+		if($ep7_LangChoice & 32) {npctalk "" + $@player2$ + "! Vamos! Confie em mim!";}
+		sleep2 4000;
+		warpchar "ars_dun22",109,18,$@player3$;
+		end;
+}
+//========================================================================================================
+ars_dun21,71,95,4	script	Archimage Archosio#ep7i	64,{
+
+set @name$,"^66CCFFArchimage Archosio^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You shouldn't disturb him yet ...";}
+	if(EP7_LANGUE == 2) {mes "No debes interrumpirlo ...";}
+	if(EP7_LANGUE == 5) {mes "Você não deve perturbá-lo ainda...";}
+	close;
+
+OnTalk1: specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; enablenpc "Archimage Archosio#ep7i"; end;	
+OnTalk2: 
+
+	if($ep7_LangChoice & 1) {npctalk "Bien maître !";}
+	if($ep7_LangChoice & 2) {npctalk "Although master !";}
+	if($ep7_LangChoice & 4) {npctalk "Pero amo !";}
+	if($ep7_LangChoice & 32) {npctalk "Certo, mestra!";}
+	specialeffect 513; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465;sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465;end;
+
+}
+//========================================================================================================
+ars_dun21,76,97,4	script	Mage Ghoji#ep7i	754,{
+
+set @name$,"^66CCFFMage Ghoji^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You shouldn't disturb him yet ...";}
+	if(EP7_LANGUE == 2) {mes "No debes interrumpirle ...";}
+	if(EP7_LANGUE == 5) {mes "Você não deve perturbá-lo ainda...";}
+
+	close;
+OnTalk1: specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; enablenpc "Mage Ghoji#ep7i"; end;	
+OnTalk2: 
+	if($ep7_LangChoice & 1) {npctalk "Oui !";}
+	if($ep7_LangChoice & 2) {npctalk "Yes !";}
+	if($ep7_LangChoice & 4) {npctalk "Si !";}
+	if($ep7_LangChoice & 32) {npctalk "Sim!";}
+	specialeffect 513; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461;end;
+
+}
+//========================================================================================================
+
+ars_dun21,75,104,4	script	Apprenti Oeste#ep7i	755,{
+
+set @name$,"^66CCFFApprenti Oeste^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You shouldn't disturb him yet ...";}
+	if(EP7_LANGUE == 2) {mes "No debes interrumpirle ...";}
+	if(EP7_LANGUE == 5) {mes "Você não deve perturbá-lo ainda...";}
+	close;
+
+OnTalk1: specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; enablenpc "Apprenti Oeste#ep7i"; end;	
+OnTalk2: specialeffect 513; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460;sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460; sleep2 500; specialeffect 460;end;
+
+}
+
+//_________________________________________________________________
+//___________________Le Rêve : Le Château _________________________
+//_________________________________________________________________
+
+
+ars_dun22,112,89,4	script	Aerie#ep7intro	485,{
+
+set @name$,"^FF00CCAerie^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You shouldn't disturb him yet ...";}
+	if(EP7_LANGUE == 2) {mes "No debes interrumpirla ...";}
+	if(EP7_LANGUE == 5) {mes "Você não deve perturbá-la ainda...";}
+	close;
+
+OnTalk1: 
+
+	if($ep7_LangChoice & 1) {npctalk "Ragnarök !";}
+	if($ep7_LangChoice & 2) {npctalk "Ragnarök !";}
+	if($ep7_LangChoice & 4) {npctalk "Ragnarök !";}
+	if($ep7_LangChoice & 32) {npctalk "Ragnarök!";}
+	specialeffect 622;end;
+
+OnTalk2: 
+
+	if($ep7_LangChoice & 1) {npctalk "" + $@player4$ +" ! Tu dois empêcher cette catastrophe de se produire !";}
+	if($ep7_LangChoice & 2) {npctalk "" + $@player4$ +" ! You have to prevent this disaster from happening!";}
+	if($ep7_LangChoice & 4) {npctalk "" + $@player4$ +" ! Debes prevenir que pase este desastre!";}
+	if($ep7_LangChoice & 32) {npctalk "" + $@player4$ +"! Você deve impedir que esse desastre aconteça!";}
+	end;
+
+OnTalk3: 
+
+	if($ep7_LangChoice & 1) {npctalk "Ce futur ne doit pas se produire ... Les Forces du mal peuvent être vaincues !";}
+	if($ep7_LangChoice & 2) {npctalk "The future does not happen ... The forces of evil can be defeated!";}
+	if($ep7_LangChoice & 4) {npctalk "Ese futuro no sucederá ... Las fuerzas del mal pueden ser derrotadas!";}
+	if($ep7_LangChoice & 32) {npctalk "Esse futuro pode não acontecer! Você pode impedir que o Mal realize isso!";}
+	end;
+
+OnTalk4: 
+
+	if($ep7_LangChoice & 1) {npctalk "Ce rêve est notre appel à l'aide pour susciter des vocations, pour qu'une génération de Héros se lève !";}
+	if($ep7_LangChoice & 2) {npctalk "This dream is our call for help to attract new, for a generation of heroes rise!";}
+	if($ep7_LangChoice & 4) {npctalk "Este sueño es nuestro llamado para ayudar a atraer nuevos, por una generacion de heroes que se levanta!";}
+	if($ep7_LangChoice & 32) {npctalk "Esse sonho é um pedido de socorro, uma tentativa de criar, de fazer uma geração de heróis aparecer!";}
+	end;
+
+OnTalk5: 
+
+	if($ep7_LangChoice & 1) {npctalk "Ornélia ouvre le portail ! " + $@player4$ +" prend le, ta quête commence ici !";}
+	if($ep7_LangChoice & 2) {npctalk "Ornélia opens the gate! " + $@player4$ +" takes, your quest begins here!";}
+	if($ep7_LangChoice & 4) {npctalk "Ornélia abre la puerta! " + $@player4$ +" toma, tu mision comienza aqui!";}
+	if($ep7_LangChoice & 32) {npctalk "Ornélia, abra o Portal! "+$@player4$+" siga adiante, sua aventura começa aqui!";}
+	end;
+
+OnTalk6: 
+
+	if($ep7_LangChoice & 1) {npctalk "Franshille, n'oublie pas ! Bonne chance !";}
+	if($ep7_LangChoice & 2) {npctalk "Franshille, don't forget! Good luck!";}
+	if($ep7_LangChoice & 4) {npctalk "Franshille, no olvides! Buena suerte!";}
+	if($ep7_LangChoice & 32) {npctalk "Franshille, não esqueça. Boa sorte!";}
+	end;
+}
+//========================================================================================================
+ars_dun22,111,94,4	script	Prêtre Merlay#intro	481,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFPrêtre Merlay^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFFather Merlay^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFPadre Merlay^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFSacerdote Merlay^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You shouldn't disturb him yet ...";}
+	if(EP7_LANGUE == 2) {mes "No lo interrumpas ...";}
+	if(EP7_LANGUE == 5) {mes "Você não deve perturbá-la ainda...";}
+
+	close;
+
+OnTalk1: 
+	if($ep7_LangChoice & 1) {npctalk "Suivant de Lalibela, enfant des Dieux.";}
+	if($ep7_LangChoice & 2) {npctalk "Fallower of Lalibela, child of the gods.";}
+	if($ep7_LangChoice & 4) {npctalk "Seguidores de Lalibela, hijos de los dioses.";}
+	if($ep7_LangChoice & 32) {npctalk "Seguidor de Lalibela, criança pertencente aos Deuses!";}
+	end;
+
+OnTalk2: 
+
+	if($ep7_LangChoice & 1) {npctalk "Espoir devrait être ton nom !";}
+	if($ep7_LangChoice & 2) {npctalk "Hope should be thy name!";}
+	if($ep7_LangChoice & 4) {npctalk "Esperamos que sea tu nombre!";}
+	if($ep7_LangChoice & 32) {npctalk "Espero ouvir seu nome em breve";}
+	end;
+
+}
+//========================================================================================================
+ars_dun22,114,68,4	script	Archimage Ornélia#intro	971,6,6,{
+
+set @name$,"^FF00CCArchimage Ornélia^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You shouldn't disturb him yet ...";}
+	if(EP7_LANGUE == 2) {mes "No la interrumpas ...";}
+	if(EP7_LANGUE == 5) {mes "Você não deve perturbá-la ainda...";}
+	close;
+
+OnTalk1: 
+	if($ep7_LangChoice & 1) {npctalk "" + $@player4$ +" te voilà enfin ! Tu dois avoir tant de questions à me poser !";}
+	if($ep7_LangChoice & 2) {npctalk "" + $@player4$ +" you are at last! You have to have so many questions for me!";}
+	if($ep7_LangChoice & 4) {npctalk "" + $@player4$ +" por fin! Seguro tienes muchas preguntas que hacerme!";}
+	if($ep7_LangChoice & 32) {npctalk ""+ $@player4$+", enfim! É provável que tenha muitas perguntas a me fazer...";}
+	end;
+
+OnTalk2: 
+	if($ep7_LangChoice & 1) {npctalk "Suis-moi, je vais t'expliquer ce qui se passe ...";}
+	if($ep7_LangChoice & 2) {npctalk "Follow me, I'll explain what happens ...";}
+	if($ep7_LangChoice & 4) {npctalk "Sigueme, te explicare lo que esta pasando ...";}
+	if($ep7_LangChoice & 32) {npctalk "Siga-me, explicarei o que está acontecendo...";}
+	end;
+
+OnTalk3: 
+	if($ep7_LangChoice & 1) {npctalk "Comme tu as du le comprendre, je suis l'autorité des magiciens d'Arsinoé, et voici mes compagnons.";}
+	if($ep7_LangChoice & 2) {npctalk "Because you've got to understand, I am the authority of the magicians of Arsinoe, and these are my companions.";}
+	if($ep7_LangChoice & 4) {npctalk "Por que tienes que entender, yo soy la autoridad de los magos de Arsinoe, y estos son mis compañeros.";}
+	if($ep7_LangChoice & 32) {npctalk "Para que entenda, eu sou a autoridade primária entre os feiticeiros de Arsinoe, e esses são meus companheiros.";}
+	end;
+
+OnTalk4: 
+	if($ep7_LangChoice & 1) {npctalk "Arsinoé, capitale de notre continent vient de tomber, nous sommes les derniers défenseurs ...";}
+	if($ep7_LangChoice & 2) {npctalk "Arsinoe, the capital of our continent has fallen, we are the last defenders ...";}
+	if($ep7_LangChoice & 4) {npctalk "Arsinoe, la capital de nuestro continente ha caido, somos los ultimos defenzores ...";}
+	if($ep7_LangChoice & 32) {npctalk "Arsinoe, a Capital deste continente, está ruindo e nós somos seus últimos defensores...";}
+	end;
+
+OnTalk5: 
+	if($ep7_LangChoice & 1) {npctalk "Urunesti, ta ville fait partie d'Arsinoé, elle aussi n'existe plus ...";}
+	if($ep7_LangChoice & 2) {npctalk "Urunesti, your city is part of Arsinoe, also no longer exists ...";}
+	if($ep7_LangChoice & 4) {npctalk "Urunesti, tu ciudad es parte de Arsinoe, Asimismo, ya no existe ...";}
+	if($ep7_LangChoice & 32) {npctalk "Urunesti, sua cidade, parte de Arsinoe, também não existirá mais...";}
+	end;
+
+OnTalk6: 
+	if($ep7_LangChoice & 1) {npctalk "Bien que tu sois en train de rêver, ceci est une vision du futur du monde !";}
+	if($ep7_LangChoice & 2) {npctalk "While you're dreaming, this is a vision of the future of the world!";}
+	if($ep7_LangChoice & 4) {npctalk "Mientras soñabas, has visto una vision sobre el futuro del mundo!";}
+	if($ep7_LangChoice & 32) {npctalk "Enquanto você dorme, essa é uma visão do futuro...";}
+	end;
+
+OnTalk7: 
+	if($ep7_LangChoice & 1) {npctalk "Déesse Aérie ! Voici l'élu ! C'est " + $@player4$ +" !";}
+	if($ep7_LangChoice & 2) {npctalk "Goddess Aerie! Here is elected! It's " + $@player4$ +" !";}
+	if($ep7_LangChoice & 4) {npctalk "Diosa Aerie! Aqui esta el elegido! Es " + $@player4$ +" !";}
+	if($ep7_LangChoice & 32) {npctalk "Deusa Aerie! Aqui está o eleito! Seu nome é "+$@player4$+"!";}
+	end;
+
+OnTalk8: 
+	if($ep7_LangChoice & 1) {npctalk "" + $@player4$ +" ! Ecoute-moi bien, nous allons te renvoyer à Urunesti ...";}
+	if($ep7_LangChoice & 2) {npctalk "" + $@player4$ +" ! Listen to me, we'll send you back to Urunesti ...";}
+	if($ep7_LangChoice & 4) {npctalk "" + $@player4$ +" ! Escuchame, te regresaremos a Urunesti ...";}
+	if($ep7_LangChoice & 32) {npctalk "" + $@player4$ +", preste bem atenção, nós enviaremos você de volta à Urunesti...";}
+	end;
+
+OnTalk9: 
+	if($ep7_LangChoice & 1) {npctalk "Mais, tu ne pourras pas y rester, tu dois te mettre en chemin pour accomplir ta destinée.";}
+	if($ep7_LangChoice & 2) {npctalk "But you can't stay, you gotta put on the way to accomplish your destiny.";}
+	if($ep7_LangChoice & 4) {npctalk "Pero no puedes quedarte ahi, debes ponerte en camino para cumplir tu destino.";}
+	if($ep7_LangChoice & 32) {npctalk "Porém, você não deve permanecer lá, você deve seguir o caminho para completar seu destino.";}
+	end;
+
+OnTalk10: 
+	if($ep7_LangChoice & 1) {npctalk "Franshille habite dans ta ville, il est au courant, il te montrera le chemin !";}
+	if($ep7_LangChoice & 2) {npctalk "Franshille lives in your town, he knows he will show you the way!";}
+	if($ep7_LangChoice & 4) {npctalk "Franshille vive en tu mismo pueblo, el sabe que debe mostrarte el camino!";}
+	if($ep7_LangChoice & 32) {npctalk "Franshille vive em sua cidade, ele mostrará a você o caminho!";}
+	end;
+
+OnTalk11: 
+	if($ep7_LangChoice & 1) {npctalk "Si tu restes en Arsinoé, tu auras le Mage-Liche aux trousses, tu vas devoir progresser à Rune-Midgard.";}
+	if($ep7_LangChoice & 2) {npctalk "If you stay in Arsinoe, you'll have the Mage-Lich Northwest, you'll have to progress from Rune-Midgard.";}
+	if($ep7_LangChoice & 4) {npctalk "Si te quedas en Arsinoe, tendras a los Mage-Lich del noroeste, debes avanzar desde Rune-Midgard.";}
+	if($ep7_LangChoice & 32) {npctalk "Se permanecer em Arsinoe, encontrará o Feiticeiro-Lich, por isso, deverá partir de Midgard.";}
+	end;
+
+OnTalk12: specialeffect 513; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465;sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465;end;
+
+
+
+OnMove1: npcwalkto 115,86; end;	//vers groupe
+OnMove2: npcwalkto 114,68; end;	//vers début
+
+OnTouch:
+
+	if ($@ep7intro4 == 0) {donpcevent "EP7_intro::OnEvent7"; set $@player4$,strcharinfo(0);}end;
+
+}
+//========================================================================================================
+ars_dun22,117,94,4	script	Prophète Tanzgue#intro	805,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFProphète Tanzgue^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFProphet Tanzgue^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFPropheta Tanzgue^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFPropheta Tanzgue^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You shouldn't disturb him yet ...";}
+	if(EP7_LANGUE == 2) {mes "No debes interrumpir ...";}
+	if(EP7_LANGUE == 5) {mes "Você não deve perturbá-lo ainda...";}
+	close;
+
+OnTalk1: 
+	if($ep7_LangChoice & 1) {npctalk "Je suis le Prophète Tanzgue, préféré de Danifae, déesse de mon Ordre !";} 
+	if($ep7_LangChoice & 2) {npctalk "I'm the Prophet Tanzgue, preferred Danifae, goddess of my order!";}
+	if($ep7_LangChoice & 4) {npctalk "Yo soy el profeta Tanzgue, preferido de Danifae, la diosa de mi orden!";}
+	if($ep7_LangChoice & 32) {npctalk "Eu sou o Profeta Tanzgue, servo de Danifae, Deusa de minha ordem!";}
+	end;
+
+OnTalk2: 
+	if($ep7_LangChoice & 1) {npctalk "Nous avons échoué dans notre quête !";}
+	if($ep7_LangChoice & 2) {npctalk "We failed in our quest!";}
+	if($ep7_LangChoice & 4) {npctalk "Hemos fallado en nuestra busqueda!";}
+	if($ep7_LangChoice & 32) {npctalk "Nós falhamos em nossa missão...";}
+	end;
+
+OnTalk3: 
+	if($ep7_LangChoice & 1) {npctalk "Nous devions empêcher Shandalar la Liche, le Mage qui t'a enlevé, de déclencher le ...";}
+	if($ep7_LangChoice & 2) {npctalk "We had to prevent Shandalar the Lich, the Mage who has taken away, triggering the ...";}
+	if($ep7_LangChoice & 4) {npctalk "Teníamos que evitar a Shandalar el Lich, el mago que ha sido quitado, provocando la ...";}
+	if($ep7_LangChoice & 32) {npctalk "Nós tinhamos que impedir Shandalar, o Lich e Feiticeiro, que conseguiu escapar, com seus planos...";}
+	end;
+}
+//========================================================================================================
+
+ars_dun22,119,91,4	script	Clerc Graivois#intro	752,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFClerc Graivois^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFClerc Graivois^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFClerigo Graivois^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFClerigo Graivois^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You shouldn't disturb him yet ...";}
+	if(EP7_LANGUE == 2) {mes "No le molestes  ...";}
+	if(EP7_LANGUE == 5) {mes "Você não deve perturbá-lo ainda...";}
+	close;
+
+OnTalk1: 
+	if($ep7_LangChoice & 1) {npctalk "Clerc Graivois ! Chef des Chevaliers d'Harpocrate de la Porte d'Istar, défenseurs de l'Arsinoé !";}
+	if($ep7_LangChoice & 2) {npctalk "Clerc Graivois ! Head of the Knights of Harpocrate Gate of Istar, defenders of Arsinoe!";}
+	if($ep7_LangChoice & 4) {npctalk "Clerigo Graivois ! Lider de los caballeros de Harpocrate puerta de Istar, defensores de Arsinoe!";}
+	if($ep7_LangChoice & 32) {npctalk "Clérigo Graivois! Líder dos Cavaleiros de Harpocrate dos Portões de Istar, defensores de Arsinoe!";}
+	end;
+
+}
+//========================================================================================================
+
+ars_dun22,113,100,0	script	#arsdun22a	45,1,1,{	
+
+		if (EP7_INTRO == 4) {set EP7_INTRO,5;changequest 70403,70404;}	
+		warp "ars_in10",59,102;
+		end;	
+}
+
+//_________________________________________________________________
+//___________________Introduction : Le Portail ____________________
+//_________________________________________________________________
+
+ars_in10,154,130,1	script	Franshille#ep7	705,{
+
+set @name$,"^66CCFFFranshille^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Intro01fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Intro01en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Intro01sp";}
+	if(EP7_LANGUE == 5) {callfunc "arsi_Intro01pt";}
+}
+
+
+//========================================================================================================
+
+ars_dun23,134,123,0	script	#arsdun23a	45,1,1,{	
+
+		if (EP7_INTRO == 6) {set EP7_INTRO,7;}	
+		if(EP7_LANGUE == 0) {dispbottom "" + strcharinfo(0) + " te voilà à "+$EP7CapiName$+". Une fois que tu seras assez fort, il faudra rendre visite à Daphnis à Alberta pour retourner en Arsinoé combattre les forces du Mal. Quoiqu'il en soit, bienvenu sur " + $EP7ServName$ + "!";}
+		if(EP7_LANGUE == 1) {dispbottom "" + strcharinfo(0) + " here you are at "+$EP7CapiName$+". Once you'll be strong enough, he will visit Daphnis in Alberta to return to Arsinoe fight the forces of evil. Whatever Regardless, welcome to " + $EP7ServName$ + "!";}
+		if(EP7_LANGUE == 2) {dispbottom "" + strcharinfo(0) + " aqui estas, por fin en "+$EP7CapiName$+". Una vez que seas lo suficientemente fuerte, hay que visitar a Daphnis en Alberta para regresar a Arsinoe a enfrentar las fuerzas del mal. Volviendo a lo importante, BIENVENIDO A " + $EP7ServName$ + "!";}
+		if(EP7_LANGUE == 5) {dispbottom "" + strcharinfo(0) + " aqui está você em "+$EP7CapiName$+". Quando estiver forte o suficiente, deverá procurar  Daphnis em Alberta para retornar à Arsinoe e lutar contra as forças sombrias. No entanto, saudações de "+$EP7ServName$+"!";}
+		
+		warp $EP7map$,$EP7x,$EP7y;
+		savepoint $EP7map$,$EP7x,$EP7y;
+		end;	
+}
+
+//_________________________________________________________________
+//___________________Introduction : Personnages ___________________
+//_________________________________________________________________
+
+ars_fild41,113,93,4	script	Maire Ugressi#ep7	110,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFMaire Ugressi^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFMaster Ugressi^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFMaestro Ugressi^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFMaestro Ugressi^000000";}
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Intro02fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Intro02en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Intro02sp";}
+	if(EP7_LANGUE == 5) {callfunc "arsi_Intro02pt";}
+}
+
+
+//===================================================================
+
+ars_fild41,71,67,4	script	Olive#ep7	703,{
+
+set @name$,"^FF00CCOlive^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je veux une glace !!";}
+	if(EP7_LANGUE == 1) {mes "I want an ice cream !!";} 
+	if(EP7_LANGUE == 2) {mes "Quiero un helado !!";} 
+	if(EP7_LANGUE == 5) {mes "Eu quero sorvete!";}
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Papa ! Papa !";}
+		if($ep7_LangChoice & 2) {npctalk "Daddy! Daddy!";}
+		if($ep7_LangChoice & 4) {npctalk "Papi! Papi!";}
+		if($ep7_LangChoice & 32) {npctalk "Paiê! Paiê!";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "Mais pourquoi Papa !?";}
+		if($ep7_LangChoice & 2) {npctalk "But why Dad!?";}
+		if($ep7_LangChoice & 4) {npctalk "Pero, por qué papá!?";}
+		if($ep7_LangChoice & 32) {npctalk "Mas, por que, papai?!";}
+		end;
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "Je veux une glace ! Je veux une glace !";}
+		if($ep7_LangChoice & 2) {npctalk "I want ice cream! I want ice cream!";}
+		if($ep7_LangChoice & 4) {npctalk "Yo quiero un helado! Yo quiero un helado!";}
+		if($ep7_LangChoice & 32) {npctalk "Eu quero sorvete! Eu quero sorvete!";}
+		end;
+
+	OnTalk4:
+		if($ep7_LangChoice & 1) {npctalk "Je vais pleurer !";}
+		if($ep7_LangChoice & 2) {npctalk "I'm gonna cry!";}
+		if($ep7_LangChoice & 4) {npctalk "Voy a llorar!";}
+		if($ep7_LangChoice & 32) {npctalk "E-Eu vou choraar!";}
+		end;
+
+	OnTalk5:
+		if($ep7_LangChoice & 1) {npctalk "Je veux une glace ! Je veux une glace !";}
+		if($ep7_LangChoice & 2) {npctalk "I want ice cream! I want ice cream!";}
+		if($ep7_LangChoice & 4) {npctalk "Quiero un helado! Quiero un helado!";}
+		if($ep7_LangChoice & 32) {npctalk "Eu quero sorvete! Eu quero sorvete!";}
+		end;
+
+	OnTalk6:
+		if($ep7_LangChoice & 1) {npctalk "Ouin ! Ouin ! Ouin !";}
+		if($ep7_LangChoice & 2) {npctalk "Ouin ! Ouin ! Ouin !";}
+		if($ep7_LangChoice & 4) {npctalk "Sipi ! Sipi ! Sipi !";}
+		if($ep7_LangChoice & 32) {npctalk "Oba! Oba! Oba!";}
+		Emotion e_swt;
+		sleep2 1000;
+		Emotion e_swt;
+		end;
+
+}
+//===================================================================
+
+ars_fild41,76,67,4	script	Papaeye#ep7	50,{
+
+set @name$,"^66CCFFPapaeye^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "De mon temps c'était bien différent, on était mieux éduqué !"; }
+	if(EP7_LANGUE == 1) {mes "In my time, It was different, we were better educated!";} 
+	if(EP7_LANGUE == 2) {mes "En mis tiempos era diferente, eramos mejor educados!"; }
+	if(EP7_LANGUE == 5) {mes "No meu tempo era diferente, nós éramos mais bem educados!";}
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Tu n'auras pas de glace !";}
+		if($ep7_LangChoice & 2) {npctalk "Thou shalt have no ice!";}
+		if($ep7_LangChoice & 4) {npctalk "No tendras hielo!";}
+		if($ep7_LangChoice & 32) {npctalk "Nada de sorvete pra você!";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "Parceque ...";}
+		if($ep7_LangChoice & 2) {npctalk "Because ...";}
+		if($ep7_LangChoice & 4) {npctalk "Por que ...";}
+		if($ep7_LangChoice & 32) {npctalk "Por que...";}
+		end;
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "Vas-tu te taire bon sang !!";}
+		if($ep7_LangChoice & 2) {npctalk "Will you shut up damn it!";}
+		if($ep7_LangChoice & 4) {npctalk "Puedes callarte?! Maldicion!";}
+		if($ep7_LangChoice & 32) {npctalk "Cale-se, pelo amor dos Deuses!";}
+		Emotion e_omg;
+		end;
+
+	OnTalk4:
+		if($ep7_LangChoice & 1) {npctalk "Tu vas rentrer à la maison bien vite si tu continues ainsi !";}
+		if($ep7_LangChoice & 2) {npctalk "You will go home soon if you continue like this!";}
+		if($ep7_LangChoice & 4) {npctalk "Te mandaré a tu casa si sigues con esto!";}
+		if($ep7_LangChoice & 32) {npctalk "Vamos pra casa se continuar com isso!";}
+		end;
+
+	OnTalk5:
+
+		if($ep7_LangChoice & 1) {npctalk "Ne pleure pas par pitié ! Voilà une glace !";}
+		if($ep7_LangChoice & 2) {npctalk "Don't cry for pity's sake is a mirror!";}
+		if($ep7_LangChoice & 4) {npctalk "No llores, por el amor de Dios es un espejo!";}
+		if($ep7_LangChoice & 32) {npctalk "Pare de chorar!";}
+		Emotion e_sry;
+		end;
+	
+}
+//===================================================================
+
+ars_fild41,73,63,4	script	Marchand de Glaces#ep7	790,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFMarchand de Glaces^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFIce Merchant^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFHeladero^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFSorveteiro^000000";}
+
+	if(EP7_LANGUE == 0) {mes "[" + @name$ + "]"; 
+	mes "Voilà qui est fort utile pour le commerce !";
+	mes "Regarde-moi et apprends le jeune !";}
+
+	if(EP7_LANGUE == 1) {mes "[" + @name$ + "]"; 
+	mes "Look how scam people with their children!";
+	mes "Learn my friend, It's to easy to make money!";}
+	
+	if(EP7_LANGUE == 2) {mes "[" + @name$ + "]"; 
+	mes "Observa como estafar a la gente usando a los niños!";
+	mes "Aprende amigo mio, es facil hacer dinero!";}
+	
+	if(EP7_LANGUE == 5) {mes "[" + @name$ + "]"; 
+	mes "Veja só como são as pessoas com seus filhos!";
+	mes "Veja, meu amigo, como é fácil fazer dinheiro.";}
+
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Ah, Ah, ça marche à chaque fois !";}
+		if($ep7_LangChoice & 2) {npctalk "Ah, Ah, It works each time !";}
+		if($ep7_LangChoice & 4) {npctalk "Ah, Ah, funciona siempre !";}
+		if($ep7_LangChoice & 32) {npctalk "Hahaha! Isso sempre funciona!";}
+		Emotion e_heh;
+		end;
+}
+//===================================================================
+
+ars_fild41,115,110,4	script	Marchand#ep7a	82,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFMarchand^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFMerchant^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFMercader^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFVendedor^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Des fruits et des bons !";} 
+	if(EP7_LANGUE == 1) {mes "Fruit and good!";} 
+	if(EP7_LANGUE == 2) {mes "Frutas y botana!";}
+	if(EP7_LANGUE == 5) {mes "Frutas! Frutas maduras!";}
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Des fruits et des bons !";}
+		if($ep7_LangChoice & 2) {npctalk "Fruit and good one!";}
+		if($ep7_LangChoice & 4) {npctalk "Fruta y de la buena!";}
+		if($ep7_LangChoice & 32) {npctalk "Frutas! Frutas frescas e maduras!";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "Promotions ! Par ici messieurs, dames !";}
+		if($ep7_LangChoice & 2) {npctalk "Specials! This way gentlemen, ladies!";}
+		if($ep7_LangChoice & 4) {npctalk "Oferta! Es por aqui caballeros, señoritas!";}
+		if($ep7_LangChoice & 32) {npctalk "Ofertas! Aqui cavalheiros! Madames!";}
+		end;
+	
+}
+
+//===================================================================
+
+ars_fild41,123,111,4	script	Marchand#ep7b	84,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFMarchand^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFMerchant^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFMercader^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFVendedor^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Les petits pains au chocolat !"; }
+	if(EP7_LANGUE == 1) {mes "he chocolate buns!"; }
+	if(EP7_LANGUE == 2) {mes "Bollos de chocolate!"; }
+	if(EP7_LANGUE == 5) {mes "Bolinhos de Chocolate!";}
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Par ici, allons, allons, venez prendre votre pain !";}
+		if($ep7_LangChoice & 2) {npctalk "Over here, come, come, come and take your bread!";}
+		if($ep7_LangChoice & 4) {npctalk "Por aqui, vengan, vengan, vengan y escojan su pan!";}
+		if($ep7_LangChoice & 32) {npctalk "Pães e Doces! Venham conferir!";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "Pain chaud ! Pain Chaud !";}
+		if($ep7_LangChoice & 2) {npctalk "Hot bread! Bread Hot!";}
+		if($ep7_LangChoice & 4) {npctalk "Pan caliente! Caliente pan!";}
+		if($ep7_LangChoice & 32) {npctalk "Pães quentinhos! Pães quentinhos!";}
+		end;
+	
+}
+//===================================================================
+ars_fild41,126,87,3	script	Villageoise#ep7uru1	77,4,4,{
+
+if(EP7_LANGUE == 0) {set @name$,"^FF00CCVillageoise^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^FF00CCVillager^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^FF00CCPueblerino^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^FF00CCAldeã^000000";}
+	
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Bonjour ^33CC00" + strcharinfo(0) + "^000000, et bien le bonjour chez toi !";}
+	if(EP7_LANGUE == 1) {mes "Hello ^33CC00" + strcharinfo(0) + "^000000, well good morning to you!";}
+	if(EP7_LANGUE == 2) {mes "Hola ^33CC00" + strcharinfo(0) + "^000000, muy buenos días!";}
+	if(EP7_LANGUE == 5) {mes "Olá, "+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000, bom, espero que tenha um bom dia!";}
+	close2;
+	set .inUse, .inUse - 1;
+	end;
+OnInit:
+	set .minX,0;
+	set .maxX,0;
+	set .minY,0;
+	set .maxY,0;
+	set .minD,0;
+	set .maxD,10;
+	set .maxLock,30;
+	npcspeed 200;
+	initnpctimer;
+	end;
+	
+OnTimer1000:
+
+	if (.inUse) {
+		set .curLockT, .curLockT + 1;
+		if (.curLockT > .maxLock) set .inUse, 0;
+	} else {
+		getmapxy .map$,.x,.y,1;
+		set .curX, callfunc("ars_walk",.minX, .maxX,.minD,.maxD,.x);
+		set .curY, callfunc("ars_walk",.minY, .maxY,.minD,.maxD,.y);
+		npcwalkto .curX, .curY;
+	}
+	stopnpctimer;
+	initnpctimer;
+	end;
+
+OnTouch:
+
+	switch( rand(3) ) {
+
+	case 0: 
+		if($ep7_LangChoice & 1) {npctalk "Au bon plaisir de te voir !";} 
+		if($ep7_LangChoice & 2) {npctalk "The pleasure of seeing you!";}
+		if($ep7_LangChoice & 4) {npctalk "Que gusto verte!";}
+		if($ep7_LangChoice & 32) {npctalk "Prazer em ver você.";}
+		emotion e_kis; end;
+
+	case 1: 
+
+		if($ep7_LangChoice & 1) {npctalk "Ne reste pas sur mon chemin !";} 
+		if($ep7_LangChoice & 2) {npctalk "Don't stand in my way!";}
+		if($ep7_LangChoice & 4) {npctalk "No te me atravieces!";}
+		if($ep7_LangChoice & 32) {npctalk "Não fique no meio do caminho!";}
+		emotion e_omg; end;
+
+	case 2: 
+
+		if($ep7_LangChoice & 1) {npctalk "Il fait beau aujourd'hui, n'es-ce pas ?"; }
+		if($ep7_LangChoice & 2) {npctalk "It's nice today, isn't it?";}
+		if($ep7_LangChoice & 4) {npctalk "Es un lindo día, o no?";}
+		if($ep7_LangChoice & 32) {npctalk "Está um belo dia hoje, não está?";}
+		end;
+
+	case 3: 
+
+		if($ep7_LangChoice & 1) {npctalk "Heureuse Rencontre !"; }
+		if($ep7_LangChoice & 2) {npctalk "Happy Encounter!";}
+		if($ep7_LangChoice & 4) {npctalk "Feliz encuantro!";}
+		if($ep7_LangChoice & 32) {npctalk "Que bom encontrar você!";}
+		emotion e_ho; end;
+	}
+}
+
+ars_fild41,157,47,3	duplicate(Villageoise#ep7uru1)	Villageoise#ep7uru2	124,4,4
+ars_fild41,70,27,3	duplicate(Villageoise#ep7uru1)	Villageoise#ep7uru3	113,4,4
+ars_fild41,78,85,3	duplicate(Villageoise#ep7uru1)	Villageois#ep7uru1	98,4,4
+ars_fild41,103,173,3	duplicate(Villageoise#ep7uru1)	Villageois#ep7uru2	732,4,4
+
+//===================================================================
+ars_fild42,169,170,3	script	Poule#ep7a	800,4,4,{
+
+if(EP7_LANGUE == 0) {set @name$,"^33CC00Poule^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^33CC00Chicken^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^33CC00Gallina^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^33CC00Galinha^000000";}
+	
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Ceci est une poule de la ferme de Fernandel.";}
+	if(EP7_LANGUE == 1) {mes "This is a chicken from the farm of Fernandel..";}
+	if(EP7_LANGUE == 2) {mes "Esta gallina pertenece a la granja de Fernandel..";}
+	if(EP7_LANGUE == 5) {mes "Essa é uma Galinha da fazenda de ^0000FFFernandel^000000...";}
+	close2;
+	set .inUse, .inUse - 1;
+	end;
+OnInit:
+	set .minX,166;
+	set .maxX,123;
+	set .minY,47;
+	set .maxY,32;
+	set .minD,0;
+	set .maxD,10;
+	set .maxLock,30;
+	npcspeed 200;
+	initnpctimer;
+	end;
+	
+OnTimer1000:
+
+	if (.inUse) {
+		set .curLockT, .curLockT + 1;
+		if (.curLockT > .maxLock) set .inUse, 0;
+	} else {
+		getmapxy .map$,.x,.y,1;
+		set .curX, callfunc("ars_walk",.minX, .maxX,.minD,.maxD,.x);
+		set .curY, callfunc("ars_walk",.minY, .maxY,.minD,.maxD,.y);
+		npcwalkto .curX, .curY;
+	}
+	stopnpctimer;
+	initnpctimer;
+	end;
+
+OnTouch:
+
+	 npctalk "Cot-Cot ! Cot-cot !"; end;
+
+}
+ars_fild42,162,110,3	duplicate(Poule#ep7a)	Poule#ep7b	800,4,4
+ars_fild42,133,78,3	duplicate(Poule#ep7a)	Poule#ep7c	800,4,4
+ars_fild42,158,65,3	duplicate(Poule#ep7a)	Poule#ep7d	800,4,4
+
+//===================================================================
+
+ars_fild41,94,62,1	script	Elandor le Magnifique#1	410,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFElandor le Magnifique^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFElandor the Great^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFElandor El Magnifico^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFElandor O Magnífico^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Veuillez ne pas me déranger, je suis en pleine préparation de mes sorts !"; }
+	if(EP7_LANGUE == 1) {mes "Please don't disturb me, I am busy preparing for my spells!";}
+	if(EP7_LANGUE == 2) {mes "Por favor no me distraigas, Estoy ocupado preparando mis hechizos!";}
+	if(EP7_LANGUE == 5) {mes "Por favor, não me atrapalhe! Estou ocupado preparando minhas magias.";}
+	close;
+
+	OnTalk1:
+		if($ep7_LangChoice & 1) {npctalk "Approchez ! Approchez ! Le spectacle va commencer mes amis !";}
+		if($ep7_LangChoice & 2) {npctalk "Come, come near! The show will begin my friends!";}
+		if($ep7_LangChoice & 4) {npctalk "Vengan, acerquense! El espectaculo comenzará!";}
+		if($ep7_LangChoice & 32) {npctalk "Venham, aproximem-se! O Show vai começar, meus amigos!";}
+		end;
+
+	OnTalk2:
+		if($ep7_LangChoice & 1) {npctalk "Elandor le Magnifique, grand illusionniste pour vous divertir !";}
+		if($ep7_LangChoice & 2) {npctalk "Elandor the Magnificent, a great magician to entertain you!";}
+		if($ep7_LangChoice & 4) {npctalk "Elandor el magnifico, un gran mago, los divertirá!";}
+		if($ep7_LangChoice & 32) {npctalk "Eu, Elandor, irei entreter todos vocês!";}
+		end;
+
+	OnTalk3:
+		if($ep7_LangChoice & 1) {npctalk "Je vais débuter mes sorts, j'aurai besoin d'un volontaire !";}
+		if($ep7_LangChoice & 2) {npctalk "I will begin my spells, I need a volunteer!";}
+		if($ep7_LangChoice & 4) {npctalk "Comenzaré mis hechizos, necesito un voluntario!";}
+		if($ep7_LangChoice & 32) {npctalk "Para começar minhas magias, preciso de um voluntário...";}
+		end;
+
+	OnTalk4:
+		if($ep7_LangChoice & 1) {npctalk "Vous mon petit monsieur ! Approchez !";}
+		if($ep7_LangChoice & 2) {npctalk "You my dear sir! Come!";}
+		if($ep7_LangChoice & 4) {npctalk "Usted estimado señor! venga!";}
+		if($ep7_LangChoice & 32) {npctalk "Você, meu caro senhor, aproxime-se!";}
+		end;
+
+	OnTalk5:
+		if($ep7_LangChoice & 1) {npctalk "Je vais vous transformer en génie du feu !";}
+		if($ep7_LangChoice & 2) {npctalk "I'll turn you into a genius of fire!";}
+		if($ep7_LangChoice & 4) {npctalk "Lo convertiré en un genio de fuego!";}
+		if($ep7_LangChoice & 32) {npctalk "Vou transformá-lo em um Gênio de Fogo!";}
+		end;	
+
+	OnTalk6:
+		npctalk "Arrristakaaa kirrrlinnoo tiiiktch'kaaa ! Shaaarak !";
+		specialeffect 513; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;end;
+		end;
+
+	OnTalk7:
+		if($ep7_LangChoice & 1) {npctalk "Attention ! Il pourrait lancer des boules de feu ! Mais, mais que fait-il !?";}
+		if($ep7_LangChoice & 2) {npctalk "Warning ! It may launch balls of fire! But, but what does he do?!";}
+		if($ep7_LangChoice & 4) {npctalk "Precuacion ! Puede lanzar bolas de fuego! Pero, pero que esta haciendo?!";}
+		if($ep7_LangChoice & 32) {npctalk "Cuidado! Ele pode lançar Bolas de Fogo! Mas, mas o que ele fará?!";}
+		end;	
+
+	OnTalk8:
+		if($ep7_LangChoice & 1) {npctalk "Oh ! Non, ce n'est pas un poring ! Je me suis trompé !";}
+		if($ep7_LangChoice & 2) {npctalk "Oh ! No ! This isn't a poring! I was wrong!";}
+		if($ep7_LangChoice & 4) {npctalk "Oh ! No ! Esto no es un poring! Me equivoque!";}
+		if($ep7_LangChoice & 32) {npctalk "Oh! Não! Ele não virou um Poring! Eu errei em alguma coisa!";}
+		specialeffect 611;
+		end;
+
+	OnTalk9:
+		if($ep7_LangChoice & 1) {npctalk "Non par pitié !"; }
+		if($ep7_LangChoice & 2) {npctalk "No, please!";}
+		if($ep7_LangChoice & 4) {npctalk "No, porfavor!";}
+		if($ep7_LangChoice & 32) {npctalk "Não, por favor!";}
+		specialeffect 531;
+		end;
+
+	OnTalk10:
+		npctalk "Aaaaarghhhh !"; specialeffect 531; sleep2 2000; disablenpc "Elandor le Magnifique#1"; end;
+
+	OnTalk11:
+		npctalk "Arrristakaaa kirrrlinnoo tiiiktch'kaaa ! Shaaarak !"; enablenpc "Elandor le Magnifique#1";
+		specialeffect 513; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;end;
+		end;
+
+	OnTalk12:
+		if($ep7_LangChoice & 1) {npctalk "Et voilà mes amis ! Ce sera tout pour le moment ! N'hesitez pas à sortir vos bourses !";} 
+		if($ep7_LangChoice & 2) {npctalk "And now my friends! That's all for now! Feel free to leave your purses!";}
+		if($ep7_LangChoice & 4) {npctalk "y ahora mis amigos! Esto fue todo por hoy! Sientanse libres de dejar sus propinas!";}
+		if($ep7_LangChoice & 32) {npctalk "E então, meus amigos, por enquanto é só! Espero vê-los em breve.";}
+		specialeffect 611;
+		end;
+
+}
+
+//===================================================================
+
+ars_fild41,94,68,4	script	Spectateur#ep7i1	68,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFSpectateur^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFSpectator^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFEspectador^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFEspectadora^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Quel Magnifique spectacle !";}
+	if(EP7_LANGUE == 1) {mes "What a wonderful spectacle !";} 
+	if(EP7_LANGUE == 2) {mes "Que espectaculo tan magnifico !";}
+	if(EP7_LANGUE == 5) {mes "Que espetáculo magnífico!";}
+	close;
+
+	OnTalk1: 
+		if($ep7_LangChoice & 1) {npctalk "Oh, Elandor le Magnifique !";}
+		if($ep7_LangChoice & 2) {npctalk "Oh, Elandor the Magnificent!";}
+		if($ep7_LangChoice & 4) {npctalk "Oh, Elandor el magnifico!";}
+		if($ep7_LangChoice & 32) {npctalk "Oh, Elandor!";}
+		end;
+
+	OnTalk2: 
+		if($ep7_LangChoice & 1) {npctalk "Moi ! Moi !";}
+		if($ep7_LangChoice & 2) {npctalk "Me ! Me !";}
+		if($ep7_LangChoice & 4) {npctalk "Yo ! Yo !";}
+		if($ep7_LangChoice & 32) {npctalk "Eu! Me escolha!";}
+		end;	
+
+	OnTalk3: 
+		if($ep7_LangChoice & 1) {npctalk "Wouhaa ! Qu'il est fort !";}
+		if($ep7_LangChoice & 2) {npctalk "Wouhaa ! He's strong!";}
+		if($ep7_LangChoice & 4) {npctalk "Wouhaa ! Es fuerte!";}
+		if($ep7_LangChoice & 32) {npctalk "Wouhaa! Ele é forte!";}
+		end;
+
+	OnTalk4: 
+		if($ep7_LangChoice & 1) {npctalk "Au secours !";}
+		if($ep7_LangChoice & 2) {npctalk "Help!";}
+		if($ep7_LangChoice & 4) {npctalk "Ayuda!";}
+		if($ep7_LangChoice & 32) {npctalk "Socorro!";}
+		end;	
+
+	OnTalk5: 
+		if($ep7_LangChoice & 1) {npctalk "Nooooooonnn pas moi, mais lui !";}
+		if($ep7_LangChoice & 2) {npctalk "Nooooooonnn not me but take him!";}
+		if($ep7_LangChoice & 4) {npctalk "Nooooooo a mi no pero agarrenlo!";}
+		if($ep7_LangChoice & 32) {npctalk "Nããããããããoo!";}
+		end;	
+
+	OnTalk6: 
+		if($ep7_LangChoice & 1) {npctalk "Félicitations !";} 
+		if($ep7_LangChoice & 2) {npctalk "Congratulations!";}
+		if($ep7_LangChoice & 4) {npctalk "Felicidades!";}
+		if($ep7_LangChoice & 32) {npctalk "Parabéns!";}
+		emotion e_thx;  sleep2 1000;emotion e_thx;  sleep2 1000;emotion e_thx;  sleep2 1000;emotion e_thx;  sleep2 1000;end;	
+}
+//===================================================================
+
+ars_fild41,90,67,4	script	Spectateur#ep7i2	97,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFSpectateur^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFSpectator^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFEspectador^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFEspectadora^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je regarde ce qui va se passer ! J'adore les spectacles de magie !"; }
+	if(EP7_LANGUE == 1) {mes "I watch what happens, I love magic shows!";}
+	if(EP7_LANGUE == 2) {mes "Puedo ver lo que sucede, amo los espectaculos de magia!";}
+	if(EP7_LANGUE == 5) {mes "Eu quero ver o que acontece, adoro shows de mágica!";}
+	close;
+
+	OnTalk1: 
+		if($ep7_LangChoice & 1) {npctalk "Chut, ça commence !";}
+		if($ep7_LangChoice & 2) {npctalk "Shhh, it begins!";}
+		if($ep7_LangChoice & 4) {npctalk "Shhh, esta empezando!";}
+		if($ep7_LangChoice & 32) {npctalk "Shhh, começou!";}
+		end;
+
+	OnTalk2: 
+		if($ep7_LangChoice & 1) {npctalk "Elandor, je suis ici !";}
+		if($ep7_LangChoice & 2) {npctalk "Elandor, I'm here!";}
+		if($ep7_LangChoice & 4) {npctalk "Elandor, estoy aqui!";}
+		if($ep7_LangChoice & 32) {npctalk "Elandor, aqui!";}
+		end;
+
+	OnTalk3: 
+		if($ep7_LangChoice & 1) {npctalk "Oh !!! Incroyable !";}
+		if($ep7_LangChoice & 2) {npctalk "Oh !!! Incredible!";}
+		if($ep7_LangChoice & 4) {npctalk "Oh !!! Increible!";}
+		if($ep7_LangChoice & 32) {npctalk "Oh! Incrível!";}
+		end;
+
+	OnTalk4: 
+		if($ep7_LangChoice & 1) {npctalk "Fuyez braves gens !";}
+		if($ep7_LangChoice & 2) {npctalk "Flee good people!";}
+		if($ep7_LangChoice & 4) {npctalk "Huyan!";}
+		if($ep7_LangChoice & 32) {npctalk "Fujam todos!";}
+		end;
+
+	OnTalk5: 
+		if($ep7_LangChoice & 1) {npctalk "Encore ! Encore !"; }
+		if($ep7_LangChoice & 2) {npctalk "Again ! Again !";}
+		if($ep7_LangChoice & 4) {npctalk "Otra ! Otra !";}
+		if($ep7_LangChoice & 32) {npctalk "Denovo! Denovo!";}
+		emotion e_thx;  sleep2 1000;emotion e_thx;  sleep2 1000;emotion e_thx;  sleep2 1000;emotion e_thx;  sleep2 1000;end;
+	
+	OnTalk6: 
+		if($ep7_LangChoice & 1) {npctalk "Dites, ça commence quand !?";}
+		if($ep7_LangChoice & 2) {npctalk "Say, it starts when?!";}
+		if($ep7_LangChoice & 4) {npctalk "Dime, cuando va a empezar?!";}
+		if($ep7_LangChoice & 32) {npctalk "Bom, quando isso vai começar?";}
+		end;	
+}
+//===================================================================
+
+ars_fild41,97,66,4	script	Spectateur#ep7i3	904,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFSpectateur^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFSpectator^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFEspectador^000000";}
+if(EP7_LANGUE == 5) {set @name$,"^66CCFFEspectadora^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "J'aimerai tant savoir faire un peu de magie !";} 
+	if(EP7_LANGUE == 1) {mes "I would like to know a little bit of magic !";}
+	if(EP7_LANGUE == 2) {mes "Me encantaria saber un poco de magia !";}
+	if(EP7_LANGUE == 5) {mes "Eu queria saber um pouco de magia..."; }
+	close;
+
+	OnTalk1: npctalk "Youhouuu !";end;
+	OnTalk2: 
+		if($ep7_LangChoice & 1) {npctalk "Oh merci Elandor le Magnifique !";}
+		if($ep7_LangChoice & 2) {npctalk "Oh thanks Elandor the Magnificent !";}
+		if($ep7_LangChoice & 4) {npctalk "Oh gracias Elandor el magnifico !";}
+		if($ep7_LangChoice & 32) {npctalk "Oh! Obrgiado, Elandor!";}
+		end;
+
+	OnTalk3: specialeffect 513; end;
+	OnTalk4: npctalk "Aahhhhh !"; setnpcdisplay("Spectateur#ep7i3", "Spectateur", 1832, 2); end;
+	OnTalk5: npctalk "Kowaa Bungaaa !";specialeffect 22; specialeffect 71; sleep2 800;specialeffect 71;specialeffect 62; sleep2 800; specialeffect 92; specialeffect 97; sleep2 800;specialeffect 22; specialeffect 71;end;
+
+	OnTalk6: setnpcdisplay("Spectateur#ep7i3", "Spectateur", 1708, 2); end;
+
+	OnTalk7: 
+		if($ep7_LangChoice & 1) {npctalk "Je vais te tuer Elandor !";}
+		if($ep7_LangChoice & 2) {npctalk "I'll kill you Elandor !";}
+		if($ep7_LangChoice & 4) {npctalk "Te mataré Elandor !";}
+		if($ep7_LangChoice & 32) {npctalk "Eu vou te matar, Elandor!";}
+		end;
+
+	OnTalk8: 
+		if($ep7_LangChoice & 1) {npctalk "Maudits habitants, je vais vous tuer pour mon propre plaisir !";}
+		if($ep7_LangChoice & 2) {npctalk "Stupids inhabitants, I'll kill you all for my pleasure !";}
+		if($ep7_LangChoice & 4) {npctalk "Estupidos habitantes, los mataré para complacerme !";}
+		if($ep7_LangChoice & 32) {npctalk "Aldeões estúpidos, matarei todos para o meu único prazer!";}
+		end;
+
+	OnTalk9: setnpcdisplay("Spectateur#ep7i3", "Spectateur", 904, 0); specialeffect 622;end;
+
+	OnTalk10: 
+		if($ep7_LangChoice & 1) {npctalk "Oh merci ! C'était magnifique !";}
+		if($ep7_LangChoice & 2) {npctalk "Oh thanks ! It was wonderful !";}
+		if($ep7_LangChoice & 4) {npctalk "Oh gracias ! Eso fue maravilloso !";}
+		if($ep7_LangChoice & 32) {npctalk "Oh! Obrigado! Isso foi maravilhoso!";}
+		end;
+
+	
+	OnMove1: npcwalkto 96,63; end;	//vers elandor
+	OnMove2: npcwalkto 94,65; end;	//encore plus près
+	OnMove3: npcwalkto 97,66; end;	//retour
+}
+
+//========================================================================================================
+//                                Franshille
+//========================================================================================================
+
+function	script	arsi_Intro01fr	{
+
+if (EP7_INTRO == 5 || EP7_INTRO == 6)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "Je vais avoir beaucoup de travail, des temps sombres approchent ..."; 
+	close;
+
+sub1:
+	
+
+	mes "[" + @name$ + "]"; 
+	mes "" + strcharinfo(0) + ", à ton visage, je peux voir que tu viens pas ici par hasard !";
+	mes "Alors, ce rêve ? Etrange, non ? Il va falloir que tu répondes maintenant à ma question ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Acceptes-tu d'accomplir ton destin ? De quitter ta ville, tes amis, ta famille pour l'inconnu ? Les épreuves et les souffrances ?"; 
+	next;
+	menu "• Oui, c'est mon destin !",submenu1,"• Non, j'ai bien trop peur ...",-;
+
+		mes "[" + @name$ + "]"; 
+		mes "Bien, reste donc jouer avec tes amis ...";
+		close;
+
+	submenu1:
+
+		mes "[" + @name$ + "]"; 
+		mes "Tu as fait le bon choix, crois-moi, il faut que tu partes d'Urunesti et de l'Arsinoé !";
+		mes "Ta vie est bien trop exposée ici, avec le Mage-Liche et ses sbires à tes trousses.";
+		next;
+		mes "[" + @name$ + "]"; 		
+		mes "Avec Ornélia, nous avons pensé à "+$EP7CapiName$+", la capitale de Rune-Midgard pour que tu puisses débuter ton apprentissage.";
+		mes "Il faudra que tu te formes là-bas, dans ces terres étranges, pour qu'une fois adulte, tu puisses revenir vers l'Arsinoé et empêcher le Ragnarok !";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "Je vais incanter, attention, tu vas te retrouver dans les Couloirs du Temps qui te transporteront directement à "+$EP7CapiName$+".";
+		mes "J'espère te revoir un jour ...";
+		close2;
+		if ($@ep7intro5 == 1)  {mes "[" + @name$ + "]"; mes "Je dois m'occuper de "+$@player5$+", patiente quelques secondes."; close;}
+		
+		set $@player5$,strcharinfo(0);
+		set $@player6,getcharid(0);
+		set $@ep7intro5,1;
+		set EP7_INTRO,6;
+		completequest 70404;
+		donpcevent "Franshille#ep7::OnRestart";
+
+	//effets
+	sleep2 1000;
+	specialeffect2 463;
+	sleep2 1000;
+	specialeffect2 467;
+	sleep2 1000;
+	specialeffect2 492;
+	sleep2 1000;
+	specialeffect2 311;
+	sleep2 1000;
+	specialeffect2 303;
+	sleep2 1000;
+	specialeffect2 466;
+	sleep2 1000;
+	specialeffect2 29;
+	sleep2 1000;
+	warpchar "ars_dun23",92,44,$@player6;
+	sleep2 1000;
+	set $@ep7intro5,0;
+	end;
+
+}
+
+
+//========================================================================================================
+
+function	script	arsi_Intro01en	{
+
+if (EP7_INTRO == 5 || EP7_INTRO == 6)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "I'll have a lot of work, dark times approach ..."; 
+	close;
+
+sub1:
+	
+
+	mes "[" + @name$ + "]"; 
+	mes "" + strcharinfo(0) + ", in your face, I can see you can not come here by chance!";
+	mes "So this dream? Strange, no? It will take you to answer my question now ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Do you accept to accomplish your destiny? To leave your city, your friends, your family for the unknown trials and suffering?"; 
+	next;
+	menu "• Yes, it's my destiny!",submenu1,"• I'm too afraid ...",-;
+
+		mes "[" + @name$ + "]"; 
+		mes "Well, rest and play with your friends ...";
+		close;
+
+	submenu1:
+
+		mes "[" + @name$ + "]"; 
+		mes "You've made the right choice, believe me, you must go to Urunesti and Arsinoe!";
+		mes "Your life is too exposed here, with the Mage-Lich and his minions after you.";
+		next;
+		mes "[" + @name$ + "]"; 		
+		mes "With Ornélia, we thought "+$EP7CapiName$+", the capital of Rune Midgard, so you can begin your learning.";
+		mes "You'll have forms there, in these strange lands, so that once an adult, you may return to the Arsinoe and prevent Ragnarok!";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "I'll spellcasting, careful, you'll find yourself in the Corridors of Time, which will transport you directly to "+$EP7CapiName$+".";
+		mes "J'espère te revoir un jour ...";
+		close2;
+		if ($@ep7intro5 == 1)  {mes "[" + @name$ + "]"; mes "I must take care of "+$@player5$+", wait a few seconds."; close;}
+		
+		set $@player5$,strcharinfo(0);
+		set $@player6,getcharid(0);
+		set $@ep7intro5,1;
+		set EP7_INTRO,6;
+		completequest 70404;
+
+	//effets
+	sleep2 1000;
+	specialeffect2 463;
+	sleep2 1000;
+	specialeffect2 467;
+	sleep2 1000;
+	specialeffect2 492;
+	sleep2 1000;
+	specialeffect2 311;
+	sleep2 1000;
+	specialeffect2 303;
+	sleep2 1000;
+	specialeffect2 466;
+	sleep2 1000;
+	specialeffect2 29;
+	sleep2 1000;
+	warpchar "ars_dun23",92,44,$@player6;
+	sleep2 1000;
+	set $@ep7intro5,0;
+	end;
+}
+//========================================================================================================
+
+function	script	arsi_Intro01sp	{
+
+if (EP7_INTRO == 5 || EP7_INTRO == 6)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "Tengo mucho trabajo, tiempos oscuros se acercan ..."; 
+	close;
+
+sub1:
+	
+
+	mes "[" + @name$ + "]"; 
+	mes "" + strcharinfo(0) + ", en tu cara, puedo ver que no has venido solo por casualidad!";
+	mes "Asi que este sueño? extraño, no? Te llevare a que respondas mis preguntas ahora ...";
+	next;
+	mes "[" + @name$ + "]"; 
+	mes "Aceptas llevar a cabo tu destino? Para abandonar tu ciudad, a tus amigos, a tu familia para pasar por pruebas y sufrimientos desconocidos?"; 
+	next;
+	menu "• Si, es mi destino!",submenu1,"• mmm... ya no me gustó ...",-;
+
+		mes "[" + @name$ + "]"; 
+		mes "Bien, descansa y juega con tus amigos ...";
+		close;
+
+	submenu1:
+
+		mes "[" + @name$ + "]"; 
+		mes "Has tomado la decicion correcta, creeme, debes ir a Urunesti y a Arsinoe!";
+		mes "Tu vida estará en constante riezgo, con el Mage-Lich y sus secuaces detras de ti.";
+		next;
+		mes "[" + @name$ + "]"; 		
+		mes "Con Ornélia, nosotros pensamos que en "+$EP7CapiName$+", la capital de Rune Midgard, tu puedes comenzar tu aprendizaje.";
+		mes "Tendras maneras de llevarlo a cabo, en estas tierras extrañas, cuando te vuelvas un adulto podrás regresar a Arsinoe y evitar el Ragnarok!";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "Haré un conjuro, se cuidadoso, te encontrarás en los corredores del tiempo, que te transportaran directamente a "+$EP7CapiName$+".";
+		mes "Espero volver a verte algun dia ...";
+		close2;
+		if ($@ep7intro5 == 1)  {mes "[" + @name$ + "]"; mes "Debo cuidarme de "+$@player5$+", espera unos segundos."; close;}
+		
+		set $@player5$,strcharinfo(0);
+		set $@player6,getcharid(0);
+		set $@ep7intro5,1;
+		set EP7_INTRO,6;
+		completequest 70404;
+
+	//effets
+	sleep2 1000;
+	specialeffect2 463;
+	sleep2 1000;
+	specialeffect2 467;
+	sleep2 1000;
+	specialeffect2 492;
+	sleep2 1000;
+	specialeffect2 311;
+	sleep2 1000;
+	specialeffect2 303;
+	sleep2 1000;
+	specialeffect2 466;
+	sleep2 1000;
+	specialeffect2 29;
+	sleep2 1000;
+	warpchar "ars_dun23",92,44,$@player6;
+	sleep2 1000;
+	set $@ep7intro5,0;
+	end;
+}
+//========================================================================================================
+
+function	script	arsi_Intro01pt	{
+
+
+if (EP7_INTRO == 5 || EP7_INTRO == 6)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "Vou ter muito trabalho, uma Era de Trevas se aproxima..."; 
+	close;
+
+sub1:
+	
+	mes "[" + @name$ + "]"; 
+ 	mes ""+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000, em sua expressão, você não chegou até aqui por acaso!";
+	mes "Então, esse sonho, estranho, não? Mas, permita-me fazer uma pergunta...";
+	next;
+	mes "[" + @name$ + "]";  
+	mes "Você aceita completar seu próprio destino? Abandonar sua cidade, seus amigos em busca de caminhos desconhecidos e sofrimento?"; 
+	next;
+	menu "• Sim, é meu destino!",submenu1,"• Estou com medo...",-;
+
+		mes "[" + @name$ + "]"; 
+		mes "Bom, aproveite o tempo com seus amigos...";
+		close;
+
+	submenu1:
+
+		mes "[" + @name$ + "]";  
+		mes "Você fez a escolha certa, acredite em mim. Você precisa deixar Urunesti e Arsinoe!";
+		mes "Você está em completa exposição aqui, com o Feiticeiro-Lich e seus comparsas atrás de você.";
+		next;
+		mes "[" + @name$ + "]"; 	
+		mes "Com Ornélia, pensamos que em ^0000FF"+$EP7CapiName$+"^000000, Capital de ^0000FFMidgard^000000, você poderá começar seu aprendizado.";
+		mes "Você encontrará meios, naquelas terras desconhecidas, para quando enfim chegar a maior idade, voltar a Arsinoe e impedir o Ragnarok!";
+		next;
+		mes "[" + @name$ + "]"; 
+		mes "Enfim, com meus poderes, transportarei você para os Corredores do Tempo, que irão levar-te para ^0000FF"+$EP7CapiName$+"^000000.";
+		mes "Espero rever-te...";
+		close2;
+		if ($@ep7intro5 == 1)  {mes "[" + @name$ + "]";  mes "Eu preciso cuidar de "+$@player5$+", espere alguns instantes."; close;}
+		
+		set $@player5$,strcharinfo(0);
+		set $@player6,getcharid(0);
+		set $@ep7intro5,1;
+		set EP7_INTRO,6;
+		completequest 70404;
+
+	//effets
+	sleep2 1000;
+	specialeffect2 463;
+	sleep2 1000;
+	specialeffect2 467;
+	sleep2 1000;
+	specialeffect2 492;
+	sleep2 1000;
+	specialeffect2 311;
+	sleep2 1000;
+	specialeffect2 303;
+	sleep2 1000;
+	specialeffect2 466;
+	sleep2 1000;
+	specialeffect2 29;
+	sleep2 1000;
+	warpchar "ars_dun23",92,44,$@player6;
+	sleep2 1000;
+	set $@ep7intro5,0;
+	end;
+}
+//========================================================================================================
+//                                Ugressi
+//========================================================================================================
+
+function	script	arsi_Intro02fr	{
+
+	if (EP7_INTRO <= 6)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "Je suis le maire de notre petit village !"; 
+	close;
+
+	sub1:
+
+		mes "[" + @name$ + "]";
+		mes "Salutations !";
+		mes "Tu te trouves actuellement dans l'introduction de " + $EP7ServName$ + " ...";
+		mes "Tu peux sortir sans la faire, mais si c'est la première fois que tu viens ici, il est conseillé de le faire !";
+		next;
+		menu "• Je vais rester ici",-,"• Non, je vais partir !",submenu1;
+
+			mes "[" + @name$ + "]";
+			mes "Tu as fait le bon choix !";
+			close;
+
+		submenu1:
+
+			mes "[" + @name$ + "]";
+			mes "C'est toi qui décide !";
+			close2;
+			set EP7_INTRO,7;
+			warp $EP7map$,$EP7x,$EP7y;
+			savepoint $EP7map$,$EP7x,$EP7y;
+			end;
+
+}
+
+//========================================================================================================
+
+function	script	arsi_Intro02en	{
+
+	if (EP7_INTRO <= 6)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "I'm the mayor of our village!"; 
+	close;
+
+	sub1:
+
+		mes "[" + @name$ + "]";
+		mes "Greetings! !";
+		mes "You are currently in the introduction of " + $EP7ServName$ + " ...";
+		mes "You can go out without it, but if this is the first time you come here, it is advisable to do!";
+		next;
+		menu "• I'll stay here",-,"• No, I'm leaving !",submenu1;
+
+			mes "[" + @name$ + "]";
+			mes "You've made the right choice!";
+			close;
+
+		submenu1:
+
+			mes "[" + @name$ + "]";
+			mes "You decide!";
+			close2;
+			set EP7_INTRO,7;
+			warp $EP7map$,$EP7x,$EP7y;
+			savepoint $EP7map$,$EP7x,$EP7y;
+			end;
+
+}
+//========================================================================================================
+
+function	script	arsi_Intro02sp	{
+
+	if (EP7_INTRO <= 6)  goto sub1;
+
+	mes "[" + @name$ + "]"; 
+	mes "Soy el alcalde de la villa!"; 
+	close;
+
+	sub1:
+
+		mes "[" + @name$ + "]";
+		mes "Saludos! !";
+		mes "Estas actualmente en la introduccion de " + $EP7ServName$ + " ...";
+		mes "Puedes seguir adelante sin todo esto, pero si es la primera vez que vienes, es aconsejable que conoscas algunas cosas!";
+		next;
+		menu "• Ok, me quedo",-,"• No, tengo cosas mejores que hacer !",submenu1;
+
+			mes "[" + @name$ + "]";
+			mes "Esa es la actitud !!";
+			close;
+
+		submenu1:
+
+			mes "[" + @name$ + "]";
+			mes "Como gustes!";
+			close2;
+			set EP7_INTRO,7;
+			warp $EP7map$,$EP7x,$EP7y;
+			savepoint $EP7map$,$EP7x,$EP7y;
+			end;
+
+}
+//========================================================================================================
+
+function	script	arsi_Intro02pt	{
+
+	if (EP7_INTRO <= 6)  goto sub1;
+
+	mes "[" + @name$ + "]";
+	mes "Sou o prefeito dessa vila."; 
+	close;
+
+	sub1:
+
+		mes "[" + @name$ + "]";
+		mes "Saudações!";
+		mes "Atualmente, você está na introdução " + $EP7ServName$ + "...";
+		mes "Você pode simplesmente ir adiante sem assistí-la, porém, se é a primeira vez que passa por aqui, é recomendável que passe por ela!";
+		next;
+		menu "• Permanecer",-,"• Prosseguir",submenu1;
+
+			mes "[" + @name$ + "]";
+			mes "Você fez a escolha certa!";
+			close;
+
+		submenu1:
+
+			mes "[" + @name$ + "]";
+			mes "É você quem sabe...";
+			close2;
+			set EP7_INTRO,7;
+			warp $EP7map$,$EP7x,$EP7y;
+			savepoint $EP7map$,$EP7x,$EP7y;
+			end;
+
+}

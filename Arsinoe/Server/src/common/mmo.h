@@ -1,0 +1,1 @@
+#define MAX_QUEST_DB 4000 //Max quests that the server will load

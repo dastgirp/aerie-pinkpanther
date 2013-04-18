@@ -1,0 +1,25 @@
+//Zone 8 - Arsinoé
+
+334,4096 //mariage
+335,4096 //mariage
+336,4096 //mariage
+408,4096 //mariage
+409,4096 //mariage
+410,4096 //mariage
+27,4096 //AL_WARP
+26,4096 //AL_TELEPORT
+
+//Zone 9 - Marathon
+
+29,8192 //agi
+264,8192 //body
+63,8192 //riding
+387,8192 //boost
+383,8192 //wind
+411,8192 //running
+359,8192 //berserk
+150,8192 //back
+
+
+
+

@@ -1,0 +1,88 @@
+//Arsinoé
+
+29000,Cuero cabelludo,Cuero cabelludo,3,0,,10,,,,,,,,,,,,,{},{},{}
+29001,Aprendiz de Gawelle,Aprendiz de Gawelle,3,0,,10,,,,,,,,,,,,,{},{},{}
+29002,Flor de Lophophora,Flor de Lophophora,3,0,,10,,,,,,,,,,,,,{},{},{}
+29003,Alma de Calliope,Alma de Calliope,3,0,,10,,,,,,,,,,,,,{},{},{}
+29004,Alma de Euterpe,Alma de Euterpe,3,0,,10,,,,,,,,,,,,,{},{},{}
+29005,Alma de Uranie,Alma de Uranie,3,0,,10,,,,,,,,,,,,,{},{},{}
+29006,Carta de Clerc Graivois,Carta de Clerc Graivois,3,0,,10,,,,,,,,,,,,,{},{},{}
+29007,Carta de Pevnec,Carta de Pevnec,3,0,,10,,,,,,,,,,,,,{},{},{}
+29008,Tinta de pulpo,Tinta de pulpo,3,0,,10,,,,,,,,,,,,,{},{},{}
+29009,Bermellon de tinta purificada,Bermellon de tinta purificada,3,0,,10,,,,,,,,,,,,,{},{},{}
+29010,Loto negro,Loto negro,3,0,,10,,,,,,,,,,,,,{},{},{}
+29011,Tarjeta de miembro comerciante,Carta de miembro comerciante,3,0,,10,,,,,,,,,,,,,{},{},{}
+29012,Piel de marmota,Oiel de marmota,3,0,,10,,,,,,,,,,,,,{},{},{}
+29013,Excrementos de Bilal,Excrementos de Bilal,3,0,,10,,,,,,,,,,,,,{},{},{}
+29014,Huesos de mamut,Huesos de mamut,3,0,,10,,,,,,,,,,,,,{},{},{}
+29015,Comillos de goblin,Colmillos de goblin,3,0,,10,,,,,,,,,,,,,{},{},{}
+29016,Rubies de Gondar,Rubies de Gondar,3,0,,10,,,,,,,,,,,,,{},{},{}
+29017,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29018,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29019,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29020,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29021,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29022,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29023,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29024,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29025,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29026,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29027,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29028,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29029,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29030,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29031,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29032,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29033,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29034,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29035,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29036,Carta de Arsinoé,Carta de Arsinoé,3,0,,1,,,,,,,,,,,,,{},{},{}
+29037,Gema roja,Gema roja,3,0,,10,,,,,,,,,,,,,{},{},{}
+29038,Gema verde,Gema verde,3,0,,10,,,,,,,,,,,,,{},{},{}
+29039,Gema amarilla,Gema amarilla,3,0,,10,,,,,,,,,,,,,{},{},{}
+29040,Gema azul,Gema azul,3,0,,10,,,,,,,,,,,,,{},{},{}
+29041,Cabeza de Djoser,Cabeza de Djoser,3,0,,10,,,,,,,,,,,,,{},{},{}
+29042,Cuerpo de Djoser,Cuerpo de Djoser,3,0,,10,,,,,,,,,,,,,{},{},{}
+29043,Pierna de Djoser,Pierna de Djoser,3,0,,10,,,,,,,,,,,,,{},{},{}
+29044,Collar de Orc,Collar de Orc,3,0,,10,,,,,,,,,,,,,{},{},{}
+29045,Collar de esclavo,Collar de esclavo,3,0,,10,,,,,,,,,,,,,{},{},{}
+29046,Alla sangrante,Ala sangrante,3,0,,10,,,,,,,,,,,,,{},{},{}
+29047,Corazon de Sylphide,Corazon de Sylphide,3,0,,10,,,,,,,,,,,,,{},{},{}
+29048,Aceite de Rana,Aceite de Rana,3,0,,10,,,,,,,,,,,,,{},{},{}
+29049,Champiñon oscuro,Champoñon oscuro,3,0,,10,,,,,,,,,,,,,{},{},{}
+29050,Vino dulce,Vino dulce,3,0,,10,,,,,,,,,,,,,{},{},{}
+29051,Sombras,Sombras,3,0,,10,,,,,,,,,,,,,{},{},{}
+29052,Anguila,Anguila,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29053,Pez dorado,Pez dorado,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29054,Pez escorpion,Pez escorpion,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29055,Pulpo,Pulpo,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29056,Lenguado,Lenguado,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29057,Caballo de mar,Caballo de mar,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29058,Tiburon,Tiburon,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29059,Barra,Barra,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29060,Barra comun,Barra comun,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29061,Salmon,Salmon,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29062,Cangrejo de rio,Cangrejo de rio,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29063,Salmon rosa,Salmon rosa,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29064,Perca amarilla,Perca amarilla,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29065,Piraña,Piraña,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29066,Carpa,Carpa,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29067,Atun,Atun,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29068,Pez angel,Pez angel,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 250,0;},{},{}
+29069,Pez payaso,Pez pallaso,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29070,Albur,Albur,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29071,Rana,Rana,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 125,0;},{},{}
+29072,Pez linterna,Pez linterna,0,25,,1,,,,,0xFFFFFFFF,7,2,,,,,,{itemheal 500,0;},{},{}
+29073,Cebo,Cebo,3,0,,10,,,,,,,,,,,,,{},{},{}
+29074,Caña de pescar,Caña de pescar,3,0,,10,,,,,,,,,,,,,{},{},{}
+29075,Caña de campeon,Caña de campeon,3,0,,10,,,,,,,,,,,,,{},{},{}
+29076,Gancho,Gancho,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @ep7_Draw,1;},{},{}
+29077,Paralisis,Paralisis,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceTrap1,1;},{},{}
+29078,Mareos,Mareos,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceTrap2,1;},{},{}
+29079,Inversion,Inversion,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceTrap3,1;},{},{}
+29080,Paso de gigante,Paso de gigante,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceBonus1,15;},{},{}
+29081,Champiñon,Champiñon,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;set @GlaceBonus2,15;},{},{}
+29082,Popote,Popote,0,25,,5,,,,,0xFFFFFFFF,7,2,,,,,,{specialeffect2 53;sc_start SC_SpeedUp0,30000,0;},{},{}
+29083,Cuentas de Nemours,Cuentas de Nemours,3,,,10,,,,,,,,,,,,,{},{},{}
+
+29180,Arsinois,Arsinois,3,,,10,,,,,,,,,,,,,{},{},{}

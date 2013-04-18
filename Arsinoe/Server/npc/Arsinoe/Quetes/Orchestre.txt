@@ -1,0 +1,755 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+
+//===== Arsinoe Script ============================================================================ 
+//
+//= Orchestra for Arsinoe Mod
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : True Noir & Mirabell & DesertFox
+//= Spanish Version : Yatadaid of onixRO
+//= Filipino/Tagalog Version: The Iceman
+//= Russian Version : SoWa Neon
+//
+//===== Current Version: ==========================================================================  
+//
+//= 4.2
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.x Versions without multi-language support.
+//= 2.0 release
+//= 3.0 Added Tagalog version
+//= 3.1 Doctor Moreau in-text colours in green fixed
+//= 4.0 Added Russian version 
+//= 4.1 Monster Name / Menu Symbol
+//= 4.2 Revisited English version by DesertFox
+//
+//================================================================================================= 
+
+//_________________________________________________________________
+//___________________Orchestre : Inscription ______________________
+//_________________________________________________________________
+
+ars_in14,114,29,1	script	Docteur Moreau#ep7	865,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFDocteur Moreau^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFDoctor Moreau^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFDoctor Moreau^000000";}
+if(EP7_LANGUE == 3) {set @name$,"^66CCFFDoktor Moreau^000000";}
+if(EP7_LANGUE == 4) {set @name$,"^66CCFFДоктор Мореау^000000";}
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Orch01fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Orch01en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Orch01sp";}
+	if(EP7_LANGUE == 3) {callfunc "arsi_Orch01ta";}
+	if(EP7_LANGUE == 4) {callfunc "arsi_Orch01ru";}
+
+OnBG:
+
+	if($EP7_LANGUE == 0) {waitingroom "Orchestre d'Arsinoe - Salle d'Attente",0,"EP7_orchestre::OnBGJoin",1;}
+	if($EP7_LANGUE == 1) {waitingroom "Orchestra of Arsinoe - Waiting Room",0,"EP7_orchestre::OnBGJoin",1;}
+	if($EP7_LANGUE == 2) {waitingroom "Orquesta d'Arsinoe - Sala de Espera",0,"EP7_orchestre::OnBGJoin",1;}
+	if($EP7_LANGUE == 3) {waitingroom "Orkestra ng Arsinoe - Hintayan",0,"EP7_orchestre::OnBGJoin",1;}
+	if($EP7_LANGUE == 4) {waitingroom "Комната Ожидания",0,"EP7_orchestre::OnBGJoin",1;}
+	end;
+}
+
+//==================================================================
+
+function	script	arsi_Orch01fr	{
+
+if($@ep7orch==0)  { 
+	mes "[" + @name$ + "]";
+	mes "Bien ^33CC00" + strcharinfo(0) + "^000000,";
+	mes "Vous pouvez en ce moment participer a l'Orchestre d'Arsinoe !";
+	mes "Voulez-vous y participer ?";
+	next;
+	menu "•Non",-,"•Oui !",submenu1;
+	close;
+
+	submenu1:
+
+	mes "[" + @name$ + "]";
+	mes "Commencons !";
+	close2;
+	if($@ep7orch>=1) {mes "[" + @name$ + "]";mes "Une personne est deja presente !";close;}
+	set $@Play_Orch$,strcharinfo(0);
+	donpcevent "EP7_orchestre::OnDepart";
+	warp "ars_in14",110,41;
+	end;
+	}
+
+if($@ep7orch>=1)  { 
+	mes "[" + @name$ + "]";
+	mes "Bien ^33CC00" + strcharinfo(0) + "^000000,";
+	mes "Vous ne pouvez  pas participer a l'Orchestre d'Arsinoe pour le moment !";
+	close;
+	end;
+	}}
+//==================================================================
+
+function	script	arsi_Orch01en	{
+
+if($@ep7orch==0)  { 
+	mes "[" + @name$ + "]";
+	mes "Well ^33CC00" + strcharinfo(0) + "^000000,";
+	mes "You can now participate in the Orchestra of Arsinoe!";
+	mes "Would you like participate ?";
+	next;
+	menu "•No",-,"•Yes !",submenu1;
+	close;
+
+	submenu1:
+
+	mes "[" + @name$ + "]";
+	mes "Let's start!";
+	close2;
+	if($@ep7orch>=1) {mes "[" + @name$ + "]";mes "A person is already there!";close;}
+	set $@Play_Orch$,strcharinfo(0);
+	donpcevent "EP7_orchestre::OnDepart";
+	warp "ars_in14",110,41;
+	end;
+	}
+
+if($@ep7orch>=1)  { 
+	mes "[" + @name$ + "]";
+	mes "Well ^33CC00" + strcharinfo(0) + "^000000,";
+	mes "You can't participate in the Orchestra of Arsinoe yet!";
+	close;
+	end;
+	}}
+//==================================================================
+
+function	script	arsi_Orch01sp	{
+
+if($@ep7orch==0)  { 
+	mes "[" + @name$ + "]";
+	mes "Bien ^33CC00" + strcharinfo(0) + "^000000,";
+	mes "Puedes participar ahora en la orquesta de Arsinoe!";
+	mes "Quieres ?";
+	next;
+	menu "•No",-,"•Si !",submenu1;
+	close;
+
+	submenu1:
+
+	mes "[" + @name$ + "]";
+	mes "Comencemos!";
+	close2;
+	if($@ep7orch>=1) {mes "[" + @name$ + "]";mes "Una persona ha llegado!";close;}
+	set $@Play_Orch$,strcharinfo(0);
+	donpcevent "EP7_orchestre::OnDepart";
+	warp "ars_in14",110,41;
+	end;
+	}
+
+if($@ep7orch>=1)  { 
+	mes "[" + @name$ + "]";
+	mes "Bien ^33CC00" + strcharinfo(0) + "^000000,";
+	mes "No puedes participar aun en la orquesta de Arsinoe!";
+	close;
+	end;
+	}}
+
+//==================================================================
+
+function	script	arsi_Orch01ta	{
+
+if($@ep7orch==0)  { 
+	mes "[" + @name$ + "]";
+	mes "^33CC00" + strcharinfo(0) + "^000000,";
+	mes "Maari ka ng sumali sa Orkestra ng Arsinoe";
+	mes "Gusto mo na bang sumali?";
+	next;
+	menu "•Hindi.",-,"•Oo !",submenu1;
+	close;
+
+	submenu1:
+
+	mes "[" + @name$ + "]";
+	mes "Tara ng mag-simula!";
+	close2;
+	if($@ep7orch>=1) {mes "[" + @name$ + "]";mes "Meron ng tao sa loob!";close;}
+	set $@Play_Orch$,strcharinfo(0);
+	donpcevent "EP7_orchestre::OnDepart";
+	warp "ars_in14",110,41;
+	end;
+	}
+
+if($@ep7orch>=1)  { 
+	mes "[" + @name$ + "]";
+	mes "^33CC00" + strcharinfo(0) + "^000000,";
+	mes "Di ka pa maaring sumali!";
+	close;
+	end;
+	}}
+//==================================================================
+function	script	arsi_Orch01ru	{
+
+if($@ep7orch==0)  { 
+	mes "[" + @name$ + "]";
+	mes "Так ^33CC00" + strcharinfo(0) + "^000000,";
+	mes "Сейчас ты можешь участвовать в Orchestra of Arsinoe!";
+	mes "Желаешь ли ты ?";
+	next;
+	menu "•Нет",-,"•Давай !",submenu1;
+	close;
+
+	submenu1:
+
+	mes "[" + @name$ + "]";
+	mes "Давай начнем!";
+	close2;
+	if($@ep7orch>=1) {mes "[" + @name$ + "]";mes "Вижу что человек тут!";close;}
+	set $@Play_Orch$,strcharinfo(0);
+	donpcevent "EP7_orchestre::OnDepart";
+	warp "ars_in14",110,41;
+	end;
+	}
+
+if($@ep7orch>=1)  { 
+	mes "[" + @name$ + "]";
+	mes "Так ^33CC00" + strcharinfo(0) + "^000000,";
+	mes "Ты не можешь участвовать Orchestra of Arsinoe еще!";
+	close;
+	end;
+	}}
+//_________________________________________________________________
+//___________________Orchestre :  Script __________________________
+//_________________________________________________________________
+
+-	script	EP7_orchestre	-1,{
+
+OnInit:
+
+	//Fenetre
+	donpcevent "Docteur Moreau#ep7::OnBG";
+
+	//Nettoyage
+	deletearray .Otoursave[0],127;
+	deletearray .Otourtime[0],127;
+	set $@orch_tour,0; //nb du tour
+	set $@ep7orch, 0;
+	set $@orch_use,0;
+	set .orch_round,0;
+
+	set .orch_mob, .orch_mob|1;
+	set .orch_mob, .orch_mob|2;
+	set .orch_mob, .orch_mob|4;
+	set .orch_mob, .orch_mob|8;
+	set .orch_mob, .orch_mob|16;
+	set .orch_mob, .orch_mob|32;
+
+	//Mise en place des notes
+	setarray .Otourname$[1],"Choriste#1","Choriste#2","Choriste#3","Choriste#4","Choriste#5","Choriste#6";
+	
+	end;	
+
+
+OnDepart:
+
+	// Variables
+	set $@ep7orch, 1;
+
+
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) {mapannounce "ars_in14","Les Choristes de Moreau viennent de debuter !",1,0x33CC00;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) {announce "Les Choristes de Moreau viennent de debuter !",0,0x33CC00;}	
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) {mapannounce "ars_in14","Moreau's Chorists just started !",1,0x33CC00;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) {announce "Moreau's Chorists just started !",0,0x33CC00;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 4) {mapannounce "ars_in14","Los coristas de Moreau han comenzado!",1,0x33CC00;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 4) {announce "Los coristas de Moreau han comenzado !",0,0x33CC00;}	
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 8) {mapannounce "ars_in14","Kakasimula lamang ng Moreau's Chorists!",1,0x33CC00;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 8) {announce "Kakasimula lamang ng Moreau's Chorists !",0,0x33CC00;}	
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 16) {mapannounce "ars_in14","Moreau's только что началось!",1,0x33CC00;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 16) {announce "Moreau's только что началось !",0,0x33CC00;}
+	
+	
+	sleep2 5000;
+	if($ep7_LangChoice & 1) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Nous allons bientot commencer !",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 2) {areaannounce "ars_in14",96,56,125,35,"Goulescter : We will soon begin!",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 4) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Pronto comenzaremos!",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 8) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Malapit na tayong mag-simula!",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 16) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Мы скоро начинаем!",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	
+	sleep2 5000;
+	areaannounce "ars_in14",96,56,125,35,"5",bc_map,"0x33CC00",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	areaannounce "ars_in14",96,56,125,35,"4",bc_map,"0x33CC00",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	areaannounce "ars_in14",96,56,125,35,"3",bc_map,"0x33CC00",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	areaannounce "ars_in14",96,56,125,35,"2",bc_map,"0x33CC00",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	areaannounce "ars_in14",96,56,125,35,"1",bc_map,"0x33CC00",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	if($ep7_LangChoice & 1) {areaannounce "ars_in14",96,56,125,35,"C'est Parti !",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 2) {areaannounce "ars_in14",96,56,125,35,"Let's go !",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 4) {areaannounce "ars_in14",96,56,125,35,"Let's go !",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 8) {areaannounce "ars_in14",96,56,125,35,"Tara na !",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 16) {areaannounce "ars_in14",96,56,125,35,"Мы начинаем !",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+	
+	sleep2 2000;
+//==============================================
+
+OnPlayMelo:
+	
+	if($@orch_tour > 75) {
+		if($ep7_LangChoice & 1) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Felicitations ! Vous venez d'effectuer 75 notes d'affile ! Vous pouvez prendre votre recompense apres ce score parfait !",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+		if($ep7_LangChoice & 2) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Congratulations! You have just perform 75 notes in a row! You can take your reward after this perfect score!",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+		if($ep7_LangChoice & 4) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Felicidades! Usted acaba de realizar 75 notas en una fila! Puede tomar tu recompenza despues de esta proesa!",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+		if($ep7_LangChoice & 8) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Congrats! Nakuha mo ang lahat ng nota ng 75 na nota ng tama! Maari mong kunin ang iyong premyo pagkatapos nito!",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+		if($ep7_LangChoice & 16) {areaannounce "ars_in14",96,56,125,35,"Goulescter : Поздравления!Вы только что выполнили 75 нот! Вы можете забрать свой приз!",bc_map,"0x33CC00",FW_NORMAL,20,0,40;}
+		
+		sleep2 3000;
+		donpcevent "Goulescter#ep7::OnTalk5";
+		set $@ep7orch, 2;
+		sleep2 60000;
+		areawarp "ars_in14",96,56,125,35,"ars_in14",109,28; //Sortie
+		donpcevent "EP7_orchestre::OnInit";
+		end;}
+
+	set $@orch_tour,$@orch_tour+1;
+	set .orch_round,1;
+
+	set .@time, rand(1000,1500);
+	setarray .Otourtime[$@orch_tour],.@time;
+
+
+	set .@mob, rand(1,6);
+	setarray .Otoursave[$@orch_tour],.@mob;
+	set .@size, getarraysize(.Otoursave);
+
+	for( set .@i, 1; .@i < .@size; set .@i, .@i +1 ) {
+	donpcevent ""+.Otourname$[.Otoursave[.@i]]+"::OnPlay";
+	sleep2 .Otourtime[.@i];}
+
+	sleep2 3000;
+	donpcevent "Goulescter#ep7::OnTalk1";
+	set $@orch_use,1;
+	sleep2 1500;
+
+
+OnSpawn:
+
+	if(.orch_mob & 1) {monster "ars_in14",121,46,""+getmonsterinfo(3900,0)+"",3900,1,"EP7_orchestre::OnPlay1";set .orch_mob, .orch_mob-1;}
+	if(.orch_mob & 2) {monster "ars_in14",121,44,""+getmonsterinfo(3900,0)+"",3901,1,"EP7_orchestre::OnPlay2";set .orch_mob, .orch_mob-2;}
+	if(.orch_mob & 4) {monster "ars_in14",121,42,""+getmonsterinfo(3900,0)+"",3902,1,"EP7_orchestre::OnPlay3";set .orch_mob, .orch_mob-4;}
+	if(.orch_mob & 8) {monster "ars_in14",121,40,""+getmonsterinfo(3900,0)+"",3903,1,"EP7_orchestre::OnPlay4";set .orch_mob, .orch_mob-8;}
+	if(.orch_mob & 16) {monster "ars_in14",121,38,""+getmonsterinfo(3900,0)+"",3904,1,"EP7_orchestre::OnPlay5";set .orch_mob, .orch_mob-16;}
+	if(.orch_mob & 32) {monster "ars_in14",121,36,""+getmonsterinfo(3900,0)+"",3905,1,"EP7_orchestre::OnPlay6";set .orch_mob, .orch_mob-32;}
+	initnpctimer;
+	end;
+
+//==============================================
+
+OnPlay1: set .kill,1;set .orch_mob, .orch_mob|1;setnpctimer 0;stopnpctimer; donpcevent "EP7_orchestre::OnCheck";end;
+OnPlay2: set .kill,2;set .orch_mob, .orch_mob|2;setnpctimer 0;stopnpctimer; donpcevent "EP7_orchestre::OnCheck";end;
+OnPlay3: set .kill,3;set .orch_mob, .orch_mob|4;setnpctimer 0;stopnpctimer; donpcevent "EP7_orchestre::OnCheck";end;
+OnPlay4: set .kill,4;set .orch_mob, .orch_mob|8;setnpctimer 0;stopnpctimer; donpcevent "EP7_orchestre::OnCheck";end;
+OnPlay5: set .kill,5;set .orch_mob, .orch_mob|16;setnpctimer 0;stopnpctimer; donpcevent "EP7_orchestre::OnCheck";end;
+OnPlay6: set .kill,6;set .orch_mob, .orch_mob|32;setnpctimer 0;stopnpctimer; donpcevent "EP7_orchestre::OnCheck";end;
+
+//==============================================
+OnTimer15000:
+
+	if($@ep7orch == 1) {
+	donpcevent "Goulescter#ep7::OnTalk6";
+	killmonsterall "ars_in14";
+	sleep2 2000;
+	if($ep7_LangChoice & 1) {mapannounce "ars_in14","Goulescter : Vous n'avez pas reussi a reproduire la melodie !",1,0x33CC00;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_in14","Goulescter : You've failed to reproduce the melody!",1,0x33CC00;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_in14","Goulescter : Has fallado en reproducir la melodia!",1,0x33CC00;}
+	if($ep7_LangChoice & 8) {mapannounce "ars_in14","Goulescter : Nabigo kang gumawa ng melodiya!",1,0x33CC00;}
+	if($ep7_LangChoice & 16) {mapannounce "ars_in14","Goulescter : Ты завалил мелодию!",1,0x33CC00;}	
+
+	sleep2 3000;
+	donpcevent "Goulescter#ep7::OnTalk5";
+	set $@ep7orch, 2;
+	sleep2 60000;
+	areawarp "ars_in14",96,56,125,35,"ars_in14",109,28; //Sortie
+	donpcevent "EP7_orchestre::OnInit";}
+	end;
+
+
+OnCheck:
+
+	set .size, getarraysize(.Otoursave);
+
+
+
+	//On joue la sequence
+	if(.orch_round <= .size) {
+		
+		if(.kill==.Otoursave[.orch_round]){
+
+		//Fin de la sequence
+			if(.orch_round == .size-1) {
+				set $@orch_use,0;
+				donpcevent "Goulescter#ep7::OnTalk3";
+				
+				killmonsterall "ars_in14";
+				set .orch_mob, .orch_mob|1;
+				set .orch_mob, .orch_mob|2;
+				set .orch_mob, .orch_mob|4;
+				set .orch_mob, .orch_mob|8;
+				set .orch_mob, .orch_mob|16;
+				set .orch_mob, .orch_mob|32;
+
+				sleep2 3000;
+				donpcevent "EP7_orchestre::OnPlayMelo";
+
+				end;}
+
+
+
+
+		//donpcevent "Goulescter#ep7::OnTalk4";
+		set .orch_round,.orch_round+1;
+		donpcevent "EP7_orchestre::OnSpawn";end;}}
+
+
+
+
+
+
+
+	donpcevent "Goulescter#ep7::OnTalk2";
+	killmonsterall "ars_in14";
+	sleep2 2000;
+	if($ep7_LangChoice & 1) {mapannounce "ars_in14","Goulescter : Vous n'avez pas reussi a reproduire la melodie !",1,0x33CC00;}
+	if($ep7_LangChoice & 2) {mapannounce "ars_in14","Goulescter : You haven't succeeded in reproducing the melody!",1,0x33CC00;}
+	if($ep7_LangChoice & 4) {mapannounce "ars_in14","Goulescter : No han tenido exito al reproducir la melodia!",1,0x33CC00;}
+	if($ep7_LangChoice & 8) {mapannounce "ars_in14","Goulescter : Nabigo ka sa pag-gawa ng melodiya!",1,0x33CC00;}
+	if($ep7_LangChoice & 16) {mapannounce "ars_in14","Goulescter : У тебя нету таланта создавать мелодии!",1,0x33CC00;}	
+
+	sleep2 3000;
+	donpcevent "Goulescter#ep7::OnTalk5";
+	set $@ep7orch, 2;
+	sleep2 60000;
+	areawarp "ars_in14",96,56,125,35,"ars_in14",109,28; //Sortie
+	donpcevent "EP7_orchestre::OnInit";
+	end;
+
+}
+
+
+//_________________________________________________________________
+//___________________Orchestre : Monstres _________________________
+//_________________________________________________________________
+
+ars_in14,107,51,4	script	Choriste#1	3900,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFChoriste^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFChorist^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFCorista^000000";}
+if(EP7_LANGUE == 3) {set @name$,"^66CCFFKoro^000000";}
+if(EP7_LANGUE == 4) {set @name$,"^66CCFFКоро^000000";}
+	
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Ce Choriste est en pleine preparation !";}
+	if(EP7_LANGUE == 1) {mes "The Chorister is in full swing!";}
+	if(EP7_LANGUE == 2) {mes "El coro esta en pleno apogeo!";}
+	if(EP7_LANGUE == 3) {mes "Ang Koro ay nasa tamang tiyempo!";}
+	if(EP7_LANGUE == 4) {mes "Певец в самом розгаре!";}
+	close;
+OnPlay:
+	specialeffect 172;
+	//sound
+	end;
+}
+//========================================================================================
+ars_in14,109,53,4	script	Choriste#2	3901,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFChoriste^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFChorist^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFCorista^000000";}
+if(EP7_LANGUE == 3) {set @name$,"^66CCFFKoro^000000";}
+if(EP7_LANGUE == 4) {set @name$,"^66CCFFКоро^000000";}
+	
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Ce Choriste est en pleine preparation !";}
+	if(EP7_LANGUE == 1) {mes "The Chorister is in full swing!";}
+	if(EP7_LANGUE == 2) {mes "El coro esta en pleno apogeo!";}
+	if(EP7_LANGUE == 3) {mes "Ang Koro ay nasa tamang tiyempo!";}
+	if(EP7_LANGUE == 4) {mes "Певец в самом розгаре!";}
+	close;
+OnPlay:
+	specialeffect 173;
+	//sound
+	end;
+}
+//========================================================================================
+ars_in14,111,51,4	script	Choriste#3	3902,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFChoriste^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFChorist^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFCorista^000000";}
+if(EP7_LANGUE == 3) {set @name$,"^66CCFFKoro^000000";}
+if(EP7_LANGUE == 4) {set @name$,"^66CCFFКоро^000000";}
+	
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Ce Choriste est en pleine preparation !";}
+	if(EP7_LANGUE == 1) {mes "The Chorister is in full swing!";}
+	if(EP7_LANGUE == 2) {mes "El coro esta en pleno apogeo!";}
+	if(EP7_LANGUE == 3) {mes "Ang Koro ay nasa tamang tiyempo!";}
+	if(EP7_LANGUE == 4) {mes "Певец в самом розгаре!";}
+	close;
+OnPlay:
+	specialeffect 175;
+	//sound
+	end;
+}
+//========================================================================================
+ars_in14,114,50,4	script	Choriste#4	3903,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFChoriste^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFChorist^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFCorista^000000";}
+if(EP7_LANGUE == 3) {set @name$,"^66CCFFCorista^000000";}
+if(EP7_LANGUE == 4) {set @name$,"^66CCFFКоро^000000";}
+	
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Ce Choriste est en pleine preparation !";}
+	if(EP7_LANGUE == 1) {mes "The Chorister is in full swing!";}
+	if(EP7_LANGUE == 2) {mes "El coro esta en pleno apogeo!";}
+	if(EP7_LANGUE == 3) {mes "Ang Koro ay nasa tamang tiyempo!";}
+	if(EP7_LANGUE == 4) {mes "Певец в самом розгаре!";}
+	close;
+OnPlay:
+	specialeffect 177;
+	//sound
+	end;
+}
+//========================================================================================
+ars_in14,117,54,4	script	Choriste#5	3904,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFChoriste^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFChorist^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFCorista^000000";}
+if(EP7_LANGUE == 3) {set @name$,"^66CCFFKoro^000000";}
+if(EP7_LANGUE == 4) {set @name$,"^66CCFFКоро^000000";}
+	
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Ce Choriste est en pleine preparation !";}
+	if(EP7_LANGUE == 1) {mes "The Chorister is in full swing!";}
+	if(EP7_LANGUE == 2) {mes "El coro esta en pleno apogeo!";}
+	if(EP7_LANGUE == 3) {mes "Ang Koro ay nasa tamang tiyempo!";}
+	if(EP7_LANGUE == 4) {mes "Певец в самом розгаре!";}
+	close;
+OnPlay:
+	specialeffect 179;
+	//sound
+	end;
+}
+//========================================================================================
+ars_in14,119,50,4	script	Choriste#6	3905,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFChoriste^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFChorist^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFCorista^000000";}
+if(EP7_LANGUE == 3) {set @name$,"^66CCFFKoro^000000";}
+if(EP7_LANGUE == 4) {set @name$,"^66CCFFКоро^000000";}
+	
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Ce Choriste est en pleine preparation !";}
+	if(EP7_LANGUE == 1) {mes "The Chorister is in full swing!";}
+	if(EP7_LANGUE == 2) {mes "El coro esta en pleno apogeo!";}
+	if(EP7_LANGUE == 3) {mes "Ang Koro ay nasa tamang tiyempo!";}
+	if(EP7_LANGUE == 4) {mes "Певец в самом розгаре!";}
+	close;
+OnPlay:
+	specialeffect 314;
+	//sound
+	end;
+}
+//========================================================================================
+
+ars_in14,114,37,4	script	Goulescter#ep7	878,{
+
+set @name$,"^33CC00Goulescter^000000";	
+
+if(EP7_LANGUE == 0) {	
+	if($@ep7orch == 2 && $@Play_Orch$ == strcharinfo(0)) {
+		mes "[" + @name$ + "]";
+		if($@orch_tour > EP7_ORCH) {mes "Vous venez d'etablir un nouveau record personnel !";}
+		mes "Vous venez de realiser un enchainement de ["+$@orch_tour+"] notes.";
+		mes "Voici votre prix :";
+
+		if($@orch_tour == 75 && EP7_ORCH < 75) {
+			next;
+			mes "[" + @name$ + "]";
+			mes "Vous venez de realiser un score parfait, felicitations ! Voici un prix supplementaire pour vous !";}
+
+		close2;
+		getitem $ep7_Tcoins,$@orch_tour;
+		if($@orch_tour == 75 && EP7_ORCH < 75) {getitem  $ep7recompense[40], $ep7recompensenb[40];}
+		if($@orch_tour > EP7_ORCH) {set EP7_ORCH,$@orch_tour;}
+		set $@ep7orch,3;
+		warp "ars_in14",109,28;
+		end;
+}
+
+
+		mes "[" + @name$ + "]";
+		mes "Votre record est un enchainement de ["+EP7_ORCH+"] notes !";
+		mes "Essayez d'ameliorer votre score !";
+		close;
+}
+
+
+if(EP7_LANGUE == 1) {
+	mes "[" + @name$ + "]";
+
+	if($@ep7orch == 2 && $@Play_Orch$ == strcharinfo(0)) {
+		if($@orch_tour > EP7_ORCH) {mes "You have set a new personal performance!";}
+		mes "You've just completed a sequence of ["+$@orch_tour+"] notes.";
+		mes "Here's your prize :";
+
+		if($@orch_tour == 75 && EP7_ORCH < 75) {
+			next;
+			mes "[" + @name$ + "]";
+			mes "You just made a perfect score, congratulations! Here is an additional price for you!";}
+
+		close2;
+		getitem $ep7_Tcoins,$@orch_tour;
+		if($@orch_tour == 75 && EP7_ORCH < 75) {getitem  $ep7recompense[40], $ep7recompensenb[40];}
+		if($@orch_tour > EP7_ORCH) {set EP7_ORCH,$@orch_tour;}
+		set $@ep7orch,3;
+		warp "ars_in14",109,28;
+		end;
+		}
+
+
+		mes "Your record is a sequence of ["+EP7_ORCH+"] notes !";
+		mes "Try to improve your score!";
+		close;}
+		
+if(EP7_LANGUE == 2) {
+
+mes "[" + @name$ + "]";
+
+	if($@ep7orch == 2 && $@Play_Orch$ == strcharinfo(0)) {
+		if($@orch_tour > EP7_ORCH) {mes "Has establecido un nuevo desempeno personal!";}
+		mes "Has completado la secuencia de ["+$@orch_tour+"] notas.";
+		mes "Aqui esta tu premio :";
+
+		if($@orch_tour == 75 && EP7_ORCH < 75) {
+			next;
+			mes "[" + @name$ + "]";
+			mes "Acabas de lograr una puntuacion perfecta, felicidades! Aqui tienes un premio adicional!";}
+
+		close2;
+		getitem $ep7_Tcoins,$@orch_tour;
+		if($@orch_tour == 75 && EP7_ORCH < 75) {getitem  $ep7recompense[40], $ep7recompensenb[40];}
+		if($@orch_tour > EP7_ORCH) {set EP7_ORCH,$@orch_tour;}
+		set $@ep7orch,3;
+		warp "ars_in14",109,28;
+		end;
+		}
+
+
+		mes "Tu record es una secuencia de ["+EP7_ORCH+"] notas !";
+		mes "Intenta mejorar!";
+		close;}
+
+if(EP7_LANGUE == 3) {
+	mes "[" + @name$ + "]";
+
+	if($@ep7orch == 2 && $@Play_Orch$ == strcharinfo(0)) {
+		if($@orch_tour > EP7_ORCH) {mes "Nakapagtala ka ng bagong pagtatanghal!";}
+		mes "Nakapagtala ka ng ["+$@orch_tour+"] na nota.";
+		mes "Eto ang iyong premyo :";
+
+		if($@orch_tour == 75 && EP7_ORCH < 75) {
+			next;
+			mes "[" + @name$ + "]";
+			mes "Magaling! Naperfect mo! Eto ang karagdagang gantimapala para sayo!";}
+
+		close2;
+		getitem $ep7_Tcoins,$@orch_tour;
+		if($@orch_tour == 75 && EP7_ORCH < 75) {getitem  $ep7recompense[40], $ep7recompensenb[40];}
+		if($@orch_tour > EP7_ORCH) {set EP7_ORCH,$@orch_tour;}
+		set $@ep7orch,3;
+		warp "ars_in14",109,28;
+		end;
+		}
+
+
+		mes "Ang iyong rekord ay ["+EP7_ORCH+"] na nota !";
+		mes "Subukan mong pataasin pa ang iyong iskor!";
+		close;}
+
+if(EP7_LANGUE == 4) {
+	mes "[" + @name$ + "]";
+
+	if($@ep7orch == 2 && $@Play_Orch$ == strcharinfo(0)) {
+		if($@orch_tour > EP7_ORCH) {mes "Вы только что создали личный шедевр!";}
+		mes "Вы только что завершили ["+$@orch_tour+"] нот.";
+
+		if($@orch_tour == 75 && EP7_ORCH < 75) {
+			next;
+			mes "[" + @name$ + "]";
+			mes "Вы только что поставили рекорд, поздоавляем!Вот дополнительный подарок вам!";}
+
+		close2;
+		getitem $ep7_Tcoins,$@orch_tour;
+		if($@orch_tour == 75 && EP7_ORCH < 75) {getitem  $ep7recompense[40], $ep7recompensenb[40];}
+		if($@orch_tour > EP7_ORCH) {set EP7_ORCH,$@orch_tour;}
+		set $@ep7orch,3;
+		warp "ars_in14",109,28;
+		end;
+		}
+
+
+		mes "Ваш рекорд ["+EP7_ORCH+"] нот !";
+		close;}
+		
+OnTalk1:
+if($ep7_LangChoice & 1) {npctalk "A vous de jouer cette melodie !";}
+if($ep7_LangChoice & 2) {npctalk "Let's play the melody!";}
+if($ep7_LangChoice & 4) {npctalk "Toquemos la melodia!";}
+if($ep7_LangChoice & 8) {npctalk "Tara at tumugtog!";}
+if($ep7_LangChoice & 16) {npctalk "Давайте сыграем мелодию";}
+end;
+OnTalk2:
+if($ep7_LangChoice & 1) {npctalk "Mauvaise note ! Quel incapable tu fais !";}
+if($ep7_LangChoice & 2) {npctalk "Wrong note!";}
+if($ep7_LangChoice & 4) {npctalk "Nota equivocada!";}
+if($ep7_LangChoice & 8) {npctalk "Maling nota!";}
+if($ep7_LangChoice & 16) {npctalk "Ошибочна нота!";}
+end;
+OnTalk3:
+if($ep7_LangChoice & 1) {npctalk "Bien joue ! Ecoute bien la suite !";}
+if($ep7_LangChoice & 2) {npctalk "Well done! Listen carefully the next one!";}
+if($ep7_LangChoice & 4) {npctalk "Bien hecho! Escucha con cuidado la siguiente nota!";}
+if($ep7_LangChoice & 8) {npctalk "Magaling! Pakinggang mabuti ang susunod";}
+if($ep7_LangChoice & 16) {npctalk "Готово! Слушаем внемательно дальше!";}
+end;
+OnTalk4:
+if($ep7_LangChoice & 1) {npctalk "Bien !";}
+if($ep7_LangChoice & 2) {npctalk "Right";}
+if($ep7_LangChoice & 4) {npctalk "Correcto";}
+if($ep7_LangChoice & 8) {npctalk "Tama!";}
+if($ep7_LangChoice & 16) {npctalk "Вот так!";}
+end;
+OnTalk5:
+if($ep7_LangChoice & 1) {npctalk "Venez me voir pour obtenir votre recompense ...";}
+if($ep7_LangChoice & 2) {npctalk "Come see me for your reward ...";}
+if($ep7_LangChoice & 4) {npctalk "Ven a verme para tu recompensa ...";}
+if($ep7_LangChoice & 8) {npctalk "Pumunta ka sakin at kunin mo ang iyong gantimapala ...";}
+if($ep7_LangChoice & 16) {npctalk "Подойдите ко мне за наградой ...";}
+end;
+OnTalk6:
+if($ep7_LangChoice & 1) {npctalk "Trop tard, tu dois te depecher tout de meme !";}
+if($ep7_LangChoice & 2) {npctalk "Too late, you gotta hurry anyway!";}
+if($ep7_LangChoice & 4) {npctalk "Demasiado tarde, debes darte mas prisa!";}
+if($ep7_LangChoice & 8) {npctalk "Huli ka na, kailangan mo ng magmadali!";}
+if($ep7_LangChoice & 16) {npctalk "Слишком поздно, нужно скорей!";}
+end;
+}

@@ -1,0 +1,49 @@
+<head>
+<title>Arsinoé ~ Guide</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="../css/images/mafavicon.png" />
+</head>
+
+<?php include("../import/haut.php"); ?>
+
+
+<body>
+
+
+<div id="holder">
+
+<p><h2>2.1- Du départ à l'arrivée à Coppalana</h2></p>
+
+<p>Quête : <em>Accès à Coppalana</em><br />
+Pré-requis : Aucun</p>
+
+<p><center><img src="../images/lunedo10.png" alt="lunedo10.png" /></center></p>
+
+<p><span style="text-decoration: underline;">Contexte</span> :<br />
+Depuis votre départ d'Urunesti, il s'est passé quelques temps où vous avez pu gagner en force et vous équiper suffisamment pour pouvoir retourner dans votre pays natal pour combattre les forces obscures en présence !</p>
+
+<p><span style="text-decoration: underline;">Déroulement</span> :</p>
+
+<p>1- Alberta est connue pour ses navires et leurs voyages dans les îles lointaines. C'est là-bas justement que vous trouverez un capitaine de navire prêt à s'y rendre. Vous devez contacter Daphnis [alberta,211,51] qui vous proposera un marché pour l'accompagner en Arsinoé. Il va falloir négocier le prix du voyage avec le Capitaine Blowfall [alberta,220,30]</p>
+
+<p><center><img src="../images/acces2.1.01.jpg" alt="acces2.1.01.jpg" /><img src="../images/acces2.1.02.jpg" alt="acces2.1.02.jpg" /></center></p>
+
+<p>2- La traversée se passe sans encombres et vous voilà sur une île de l'Archipel de Coppalana : l'Île de Tantale. Parlez un peu avec Daphnis pour qu'il vous donne une nouvelle quête. Vous devez contacter le Père Benoît de l'Ordre Missionnaire de Tyr. [tantale_ile,197,147] Il vous proposera d'aller chercher à Yuno un dictionnaire pour pouvoir discuter avec les habitants du continent.</p>
+
+<p><center><img src="../images/acces2.1.03.jpg" alt="acces2.1.03.jpg" /></center></p>
+
+<p>3- Rendez-vous dans la bibliothèque de Yuno pour rencontrer le Copiste Saül. [yuno_in04,115,104] Une fois le dictionnaire en poche retournez à l'île de Tantale.</p>
+
+<p><center><img src="../images/acces2.1.04.jpg" alt="acces2.1.04.jpg" /></center></p>
+
+<p>4- Maintenant que les indigènes peuvent vous comprendre, adressez-vous à Guellronoc'h pour qu'il puisse vous transporter vers le village de Coppalana. Cependant pour la traversée il vous demandera 120 Clam Shell ! (Il est à noter que vous pouvez les acheter à Comodo.) Une fois que vous l'aurez payé ... Vous arriverez enfin à poser vos pieds sur la terre d'Arsinoé !</p>
+
+<p><center><img src="../images/acces2.1.05.jpg" alt="acces2.1.05.jpg" /></center></p>
+
+<p><em>Fin de la quête : Accès à Coppalana</em><br />
+Guide réalisé par Aérie PinkPanther<br />
+</p>
+
+<?php include("../import/bas.php"); ?>
+
+</div>

@@ -1,0 +1,703 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+
+
+//===== Arsinoé Script ============================================================================ 
+//
+//= DanceDance - Minigame for Arsinoé Mod
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : True Noir & Mirabell & DesertFox
+//= Spanish Version : Ijct
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.3
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.x Versions without multi-language support.
+//= 2.0 release
+//= 2.1 Osani Spanish fix.
+//= 2.2 Monster Name / Menu Symbol
+//= 2.3 Revisited English version by DesertFox
+//
+//================================================================================================= 
+
+//_________________________________________________________________
+//___________________Dance : Inscriptions _________________________
+//_________________________________________________________________
+
+
+ars_in01,93,44,1	script	Instructeur Osani#ep7	951,{
+
+
+if(EP7_LANGUE == 0) {set @name$,"^FF00CCInstructeur Osani^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^FF00CCInstructor Osani^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^FF00CCInstructor Osani^000000";}
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Dance01fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Dance01en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Dance01sp";}
+
+OnBG:
+	if($EP7_LANGUE == 0) {waitingroom "Entrainement des Mages - Salle d'Attente",0,"EP7_boule::OnBGJoin",1;}
+	if($EP7_LANGUE == 1) {waitingroom "Wizard Training - Waiting room",0,"EP7_boule::OnBGJoin",1;}
+	if($EP7_LANGUE == 2) {waitingroom "Entrenamiento de magos - Sala de espera",0,"EP7_boule::OnBGJoin",1;}
+	end;
+}
+
+//_________________________________________________________________
+//___________________Dance : Script _______________________________
+//_________________________________________________________________
+
+-	script	EP7_boule	-1,{
+
+OnInit:
+
+	//Fenêtre
+	donpcevent "Instructeur Osani#ep7::OnBG";
+
+	//Noms des directions
+	setarray .Mname$[0],"Up","Down","Right","Left","Upper Right","Upper Left","Down Right","Down Left";
+	if($ep7_LangChoice & 1) { setarray .Mname$[0],"Haut","Bas","Droite","Gauche","Haut-Droite","Haut-Gauche","Bas-Droite","Bas-Gauche";}
+	
+	//Note / Réussite
+	setarray $@Mrecord[0],0,0;
+
+	//Palliers, le dernier (4) final à faire
+	setarray $@Mpallier[0],20,35,55,75,100; 
+
+	//Variables
+	set $@ep7boule, 0;
+	//Score Total
+	set $@Ep7_Mrecord,0;
+	set $@Ep7_Metat,0;
+	end;	
+
+
+OnDepart:
+
+	// Variables
+	set $@ep7boule, 1;
+
+
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 1) {mapannounce "ars_in01","Entrainement des Mages vient de débuter !",1,0xFF6600;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 1) {announce "Entrainement des Mages vient de débuter !",0,0xFF6600;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 2) {mapannounce "ars_in01","Training of Magigians has just begun!",1,0xFF6600;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 2) {announce "Training of Wizards has just begun!",0,0xFF6600;}
+	if( $EP7Annonce == 0 && $ep7_LangChoice & 4) {mapannounce "ars_in01","Formación de los Magos ha hecho más que empezar!",1,0xFF6600;}
+	if( $EP7Annonce == 1 && $ep7_LangChoice & 4) {announce "Formación de los Magos ha hecho más que empezar!",0,0xFF6600;}
+	// Start Match!!
+	initnpctimer;
+	// npcs les fenetres
+
+
+//==============================================
+
+	sleep2 5000;
+	if($ep7_LangChoice & 1) {areaannounce "ars_in01",76,61,97,34,"Instructeur Osani : Nous allons bientôt commencer !",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 2) {areaannounce "ars_in01",76,61,97,34,"Instructor Osani : We will begin soon !",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 4) {areaannounce "ars_in01",76,61,97,34,"Instructor Osani : Pronto comenzará!",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	sleep2 5000;
+	areaannounce "ars_in01",76,61,97,34,"5",bc_map,"0xFF3333",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	areaannounce "ars_in01",76,61,97,34,"4",bc_map,"0xFF3333",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	areaannounce "ars_in01",76,61,97,34,"3",bc_map,"0xFF3333",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	areaannounce "ars_in01",76,61,97,34,"2",bc_map,"0xFF3333",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	areaannounce "ars_in01",76,61,97,34,"1",bc_map,"0xFF3333",FW_NORMAL,20,0,40;
+	sleep2 1000;
+	if($ep7_LangChoice & 1) {areaannounce "ars_in01",76,61,97,34,"C'est Parti !",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 2) {areaannounce "ars_in01",76,61,97,34,"Let's Go !",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 4) {areaannounce "ars_in01",76,61,97,34,"Let's Go !",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	sleep2 2000;
+
+	//Départ
+	donpcevent "EP7_boule::OnStart";
+	donpcevent "EP7_boule::OnPublic";
+	end;
+	
+
+//==============================================
+
+OnStart:
+
+	//Fin
+	if ($@Mrecord[0] == $@Mpallier[4]) {donpcevent "EP7_boule::OnEnd";end;}
+
+	switch( rand(8) ) {
+	case 0: set .Mnum,0; set .Valid,1; donpcevent "EP7_boule::OnSpawn";end;
+	case 1: set .Mnum,1; set .Valid,2; donpcevent "EP7_boule::OnSpawn";end;
+	case 2: set .Mnum,2; set .Valid,3; donpcevent "EP7_boule::OnSpawn";end;
+	case 3: set .Mnum,3; set .Valid,4; donpcevent "EP7_boule::OnSpawn";end;
+	case 4: set .Mnum,4; set .Valid,5; donpcevent "EP7_boule::OnSpawn";end;
+	case 5: set .Mnum,5; set .Valid,6; donpcevent "EP7_boule::OnSpawn";end;
+	case 6: set .Mnum,6; set .Valid,7; donpcevent "EP7_boule::OnSpawn";end;
+	case 7: set .Mnum,7; set .Valid,8; donpcevent "EP7_boule::OnSpawn";end;}
+
+//==============================================
+
+OnSpawn:
+
+	//Définir le tour
+	set $@Mrecord[0],$@Mrecord[0]+1;
+	//Variable état
+	set $@Ep7_Metat,0;
+
+	//Annonce
+	if($ep7_LangChoice & 1) {areaannounce "ars_in01",76,61,97,34,"Position : "+.Mname$[.Mnum]+"",bc_map,"0xFF00CC",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 2) {areaannounce "ars_in01",76,61,97,34,"Position : "+.Mname$[.Mnum]+"",bc_map,"0xFF00CC",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 4) {areaannounce "ars_in01",76,61,97,34,"Position : "+.Mname$[.Mnum]+"",bc_map,"0xFF00CC",FW_NORMAL,20,0,40;}
+
+	//Notes
+	monster "ars_in01",87,52,""+.Mname$[0]+"",3900,1,"EP7_boule::OnDir1";
+	monster "ars_in01",87,48,""+.Mname$[1]+"",3901,1,"EP7_boule::OnDir2";
+	monster "ars_in01",89,50,""+.Mname$[2]+"",3902,1,"EP7_boule::OnDir3";
+	monster "ars_in01",85,50,""+.Mname$[3]+"",3903,1,"EP7_boule::OnDir4";
+	monster "ars_in01",89,52,""+.Mname$[4]+"",3904,1,"EP7_boule::OnDir5";
+	monster "ars_in01",85,52,""+.Mname$[5]+"",3905,1,"EP7_boule::OnDir6";
+	monster "ars_in01",89,48,""+.Mname$[6]+"",3906,1,"EP7_boule::OnDir7";
+	monster "ars_in01",85,48,""+.Mname$[7]+"",3907,1,"EP7_boule::OnDir8";
+
+	//Temps
+	if ($@Mrecord[0] <= $@Mpallier[0]) {set .@ep7_Mtime, rand(3500,5000);}
+	if ($@Mrecord[0] <= $@Mpallier[1]) {set .@ep7_Mtime, rand(3000,4500);}
+	if ($@Mrecord[0] <= $@Mpallier[2]) {set .@ep7_Mtime, rand(2500,4000);}
+	if ($@Mrecord[0] <= $@Mpallier[3]) {set .@ep7_Mtime, rand(2000,3500);}	
+	set .@ep7_Mtime, rand(2000,3500);
+	sleep2 .@ep7_Mtime;
+		
+	//Repère npctalk
+	if ($@Ep7_Metat == 0) {donpcevent "Deezee#ep7::OnTalk0";}
+	if ($@Ep7_Metat == 1) {donpcevent "Deezee#ep7::OnTalk1";}
+	if ($@Ep7_Metat == 2) {donpcevent "Deezee#ep7::OnTalk2";}
+	sleep2 500;
+	//Nettoyer
+	killmonster "ars_in01","EP7_boule::OnDir1";
+	killmonster "ars_in01","EP7_boule::OnDir2";
+	killmonster "ars_in01","EP7_boule::OnDir3";
+	killmonster "ars_in01","EP7_boule::OnDir4";
+	killmonster "ars_in01","EP7_boule::OnDir5";
+	killmonster "ars_in01","EP7_boule::OnDir6";
+	killmonster "ars_in01","EP7_boule::OnDir7";
+	killmonster "ars_in01","EP7_boule::OnDir8";
+	//Relance
+	donpcevent "EP7_boule::OnStart";
+	end;
+
+OnKill:
+
+	killmonster "prontera","EP7_boule::OnDir1";
+	killmonster "prontera","EP7_boule::OnDir2";
+	killmonster "prontera","EP7_boule::OnDir3";
+	killmonster "prontera","EP7_boule::OnDir4";
+	killmonster "prontera","EP7_boule::OnDir5";
+	killmonster "prontera","EP7_boule::OnDir6";
+	killmonster "prontera","EP7_boule::OnDir7";
+	killmonster "prontera","EP7_boule::OnDir8";
+	end;
+
+//==============================================
+	
+OnDir1:
+
+	if (.Valid == 1) {set $@Mrecord[1],$@Mrecord[1]+1;set $@Ep7_Metat,1;}
+	if (.Valid != 1) {set $@Ep7_Metat,2;}
+	donpcevent "EP7_boule::OnKill";
+	end;
+
+OnDir2:
+	if (.Valid == 2) {set $@Mrecord[1],$@Mrecord[1]+1;set $@Ep7_Metat,1;}
+	if (.Valid != 2) {set $@Ep7_Metat,2;}
+	donpcevent "EP7_boule::OnKill";
+	end;
+
+OnDir3:
+	if (.Valid == 3) {set $@Mrecord[1],$@Mrecord[1]+1;set $@Ep7_Metat,1;}
+	if (.Valid != 3) {set $@Ep7_Metat,2;}
+	donpcevent "EP7_boule::OnKill";
+	end;
+
+OnDir4:
+	if (.Valid == 4) {set $@Mrecord[1],$@Mrecord[1]+1;set $@Ep7_Metat,1;}
+	if (.Valid != 4) {set $@Ep7_Metat,2;}
+	donpcevent "EP7_boule::OnKill";
+	end;
+
+OnDir5:
+	if (.Valid == 5) {set $@Mrecord[1],$@Mrecord[1]+1;set $@Ep7_Metat,1;}
+	if (.Valid != 5) {set $@Ep7_Metat,2;}
+	donpcevent "EP7_boule::OnKill";
+	end;
+
+OnDir6:
+	if (.Valid == 6) {set $@Mrecord[1],$@Mrecord[1]+1;set $@Ep7_Metat,1;}
+	if (.Valid != 6) {set $@Ep7_Metat,2;}
+	donpcevent "EP7_boule::OnKill";
+	end;
+
+OnDir7:
+	if (.Valid == 7) {set $@Mrecord[1],$@Mrecord[1]+1;set $@Ep7_Metat,1;}
+	if (.Valid != 7) {set $@Ep7_Metat,2;}
+	donpcevent "EP7_boule::OnKill";
+	end;
+
+OnDir8:
+	if (.Valid == 8) {set $@Mrecord[1],$@Mrecord[1]+1;set $@Ep7_Metat,1;}
+	if (.Valid != 8) {set $@Ep7_Metat,2;}
+	donpcevent "EP7_boule::OnKill";
+	end;
+
+//==============================================
+
+OnPublic:
+
+	if ($@ep7boule >= 2) {end;}
+	sleep2 20000;
+	set $@Mtempvar0,$@Mrecord[0];
+	set $@Mtempvar1,$@Mrecord[1]*100;
+	set $@Mtempvar,$@Mtempvar1/$@Mtempvar0;
+
+	if ($@Mtempvar < 30) {
+		donpcevent "Spectateur#ep7M1::OnTalk0";donpcevent "Spectateur#ep7M2::OnTalk0";donpcevent "Spectateur#ep7M3::OnTalk0";
+		donpcevent "EP7_boule::OnPublic";end;}
+	if ($@Mtempvar < 60) {
+		donpcevent "Spectateur#ep7M1::OnTalk1";donpcevent "Spectateur#ep7M2::OnTalk1";donpcevent "Spectateur#ep7M3::OnTalk1";
+		donpcevent "EP7_boule::OnPublic";end;}
+	if ($@Mtempvar < 99) {
+		donpcevent "Spectateur#ep7M1::OnTalk2";donpcevent "Spectateur#ep7M2::OnTalk2";donpcevent "Spectateur#ep7M3::OnTalk2";
+		donpcevent "EP7_boule::OnPublic";end;}
+	if ($@Mtempvar == 100) {
+		donpcevent "Spectateur#ep7M1::OnTalk3";donpcevent "Spectateur#ep7M2::OnTalk3";donpcevent "Spectateur#ep7M3::OnTalk3";
+		donpcevent "EP7_boule::OnPublic";end;}
+
+
+	donpcevent "EP7_boule::OnPublic";
+	end;
+
+//==============================================
+
+OnEnd:
+
+	if($ep7_LangChoice & 1) {areaannounce "ars_in01",76,61,97,34,"C'est Fini !",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 2) {areaannounce "ars_in01",76,61,97,34,"It's all over!",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	if($ep7_LangChoice & 4) {areaannounce "ars_in01",76,61,97,34,"Eso es todo!",bc_map,"0xFF3333",FW_NORMAL,20,0,40;}
+	donpcevent "Deezee#ep7::OnTalk3";
+	sleep2 3000;
+	areawarp "ars_in01",84,53,89,48,"ars_in01",88,59;
+
+	//Fin de l'event
+	set $@ep7boule,2;
+	//Réinitialisation
+	sleep2 180000;
+	donpcevent "EP7_boule::OnInit";	
+	end;
+}
+
+//_________________________________________________________________
+//___________________Dance : Récompense ___________________________
+//_________________________________________________________________
+
+ars_in01,87,56,1	script	Deezee#ep7	950,{
+
+set @name$,"^33CC00Deezee^000000";
+
+	if(EP7_LANGUE == 0) {callfunc "arsi_Dance02fr";}
+	if(EP7_LANGUE == 1) {callfunc "arsi_Dance02en";}
+	if(EP7_LANGUE == 2) {callfunc "arsi_Dance02sp";}
+
+	
+OnTalk0:if($ep7_LangChoice & 1) {npctalk "Trop tard !";}
+	if($ep7_LangChoice & 2) {npctalk "Too late!";}
+	if($ep7_LangChoice & 4) {npctalk "Demasiado Tarde";}
+	end;
+OnTalk1:if($ep7_LangChoice & 1) {npctalk "Bien joué !";}
+	if($ep7_LangChoice & 2) {npctalk "Well done!";}
+	if($ep7_LangChoice & 4) {npctalk "Bien echo!";}
+	end;
+OnTalk2:if($ep7_LangChoice & 1) {npctalk "Mauvaise note !";}
+	if($ep7_LangChoice & 2) {npctalk "Wrong note!";}
+	if($ep7_LangChoice & 4) {npctalk "Estas equivocado!";}
+	end;
+OnTalk3:if($ep7_LangChoice & 1) {npctalk "Venez me voir pour votre récompense !";}
+	if($ep7_LangChoice & 2) {npctalk "Come see me for your reward!";}
+	if($ep7_LangChoice & 4) {npctalk "Ven a verme para tu recompensa";}
+	end;
+}
+
+//_________________________________________________________________
+//___________________Dance : Spectateur ___________________________
+//_________________________________________________________________
+
+ars_in01,92,53,1	script	Spectateur#ep7M1	67,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFSpectateur^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFSpectator^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFEspectador^000000";}
+
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Il y a souvent des joueurs de piètre qualité !";}
+	if(EP7_LANGUE == 1) {mes "There are often poor quality players!";}
+	if(EP7_LANGUE == 2) {mes "A menudo hay jugadores de mala calidad!";}
+	close;
+	
+OnTalk0:if($ep7_LangChoice & 1) {npctalk "Dégage, tu es nul !";}
+	if($ep7_LangChoice & 2) {npctalk "Get out, you're a nobody!";}
+	if($ep7_LangChoice & 4) {npctalk "¡Fuera, no eres nadie!";}
+	end;
+OnTalk1:if($ep7_LangChoice & 1) {npctalk "Allez, un effort !";}
+	if($ep7_LangChoice & 2) {npctalk "Come on, try!";}
+	if($ep7_LangChoice & 4) {npctalk "Vamos, intentalo!";}
+	end;
+OnTalk2:if($ep7_LangChoice & 1) {npctalk "Tu es sur la bonne voie, continue !";}
+	if($ep7_LangChoice & 2) {npctalk "You're on the right track, go on!";}
+	if($ep7_LangChoice & 4) {npctalk "Usted esta en el buen camino, sigue asi!";}
+	end;
+OnTalk3:if($ep7_LangChoice & 1) {npctalk "C'est génial, continue !";}
+	if($ep7_LangChoice & 2) {npctalk "It's great, continue!";}
+	if($ep7_LangChoice & 4) {npctalk "Esta bien continua";}
+	end;
+}
+//==============================================
+ars_in01,81,53,1	script	Spectateur#ep7M2	80,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFSpectateur^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFSpectator^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFEspectador^000000";}
+
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Il y a souvent des joueurs de piètre qualité !";}
+	if(EP7_LANGUE == 1) {mes "There are often poor quality players!";}
+	if(EP7_LANGUE == 2) {mes "A menudo hay jugadores de mala calidad!";}
+	close;
+	
+OnTalk0:if($ep7_LangChoice & 1) {npctalk "Pitoyable !";}
+	if($ep7_LangChoice & 2) {npctalk "Pitiful!";}
+	if($ep7_LangChoice & 4) {npctalk "lamentablemente!";}
+	end;
+OnTalk1:if($ep7_LangChoice & 1) {npctalk "Tu peux faire mieux !";}
+	if($ep7_LangChoice & 2) {npctalk "You can do better!";}
+	if($ep7_LangChoice & 4) {npctalk "Lo puedes hacer mejor";}
+	end;
+OnTalk2:if($ep7_LangChoice & 1) {npctalk "C'est bien, l'ami !";}
+	if($ep7_LangChoice & 2) {npctalk "Very well, friend!";}
+	if($ep7_LangChoice & 4) {npctalk "Bien echo amigo!";}
+	end;
+OnTalk3:if($ep7_LangChoice & 1) {npctalk "Fantastique !";}
+	if($ep7_LangChoice & 2) {npctalk "Fantastic!";}
+	if($ep7_LangChoice & 4) {npctalk "Fantastico!";}
+	end;
+}
+//==============================================
+ars_in01,85,44,1	script	Spectateur#ep7M3	93,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFSpectateur^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFSpectator^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFEspectador^000000";}
+
+	mes "[" + @name$ + "]";
+	if(EP7_LANGUE == 0) {mes "Il y a souvent des joueurs de piètre qualité !";}
+	if(EP7_LANGUE == 1) {mes "There are often poor quality players!";}
+	if(EP7_LANGUE == 2) {mes "A menudo hay jugadores de mala calidad!";}
+	close;
+	
+OnTalk0:if($ep7_LangChoice & 1) {npctalk "Va te pendre !";}
+	if($ep7_LangChoice & 2) {npctalk "Go hang yourself!";}
+	if($ep7_LangChoice & 4) {npctalk "Ve a ahorcarte a ti mismo";}
+	end;
+OnTalk1:if($ep7_LangChoice & 1) {npctalk "Bof, tu crains un peu !";}
+	if($ep7_LangChoice & 2) {npctalk "Nah, you just suck!";}
+	if($ep7_LangChoice & 4) {npctalk "Nah, solo es suerte!";}
+	end;
+OnTalk2:if($ep7_LangChoice & 1) {npctalk "Le beat est bon !";}
+	if($ep7_LangChoice & 2) {npctalk "The beat is good!";}
+	if($ep7_LangChoice & 4) {npctalk "Tiene buen ritmo!";}
+	end;
+OnTalk3:if($ep7_LangChoice & 1) {npctalk "Wouhou ! Encore ! Encore !";}
+	if($ep7_LangChoice & 2) {npctalk "Wahuh! Again!";}
+	if($ep7_LangChoice & 4) {npctalk "Wahuh! Encore Encore!";}
+	end;
+}
+
+
+
+
+
+//========================================================================================================
+//                                Osani
+//========================================================================================================
+
+function	script	arsi_Dance01fr	{
+
+
+if($@ep7boule==0)  { 
+	mes "[" + @name$ + "]";
+	mes "Bien " + strcharinfo(0) + ",";
+	mes "Vous pouvez en ce moment participer à l'entrainement des Jeunes Mages !";
+	mes "Voulez-vous y participer ?";
+	next;
+	menu "•Non",-,"•Oui !",submenu1;
+	close;
+
+	submenu1:
+
+	mes "[" + @name$ + "]";
+	mes "Commençons !";
+	close2;
+	if($@ep7boule>=1) {mes "[" + @name$ + "]";mes "Une personne est déjà présente !";close;}
+	set $@Play_Dance$,strcharinfo(0);
+	donpcevent "EP7_boule::OnDepart";
+	warp "ars_in01",86,50;
+	end;
+	}
+
+if($@ep7boule>=1)  { 
+	mes "[" + @name$ + "]";
+	mes "Bien " + strcharinfo(0) + ",";
+	mes "Vous ne pouvez  pas participer à l'entrainement des Jeunes Mages pour le moment !";
+	close;
+	end;
+	}
+}
+//==============================================================================================================
+
+function	script	arsi_Dance01en	{
+
+
+
+if($@ep7boule==0)  { 
+	mes "[" + @name$ + "]";
+	mes "Well " + strcharinfo(0) + ",";
+	mes "You can now participate in the training of young Mages !";
+	mes "Do want to participate?";
+	next;
+	menu "•No",-,"•Yes !",submenu1;
+	close;
+
+	submenu1:
+
+	mes "[" + @name$ + "]";
+	mes "Let's start!";
+	close2;
+	if($@ep7boule>=1) {mes "[" + @name$ + "]";mes "A player is already there!";close;}
+	set $@Play_Dance$,strcharinfo(0);
+	donpcevent "EP7_boule::OnDepart";
+	warp "ars_in01",86,50;
+	end;
+	}
+
+if($@ep7boule>=1)  { 
+	mes "[" + @name$ + "]";
+	mes "Well " + strcharinfo(0) + ",";
+	mes "You can't participate in the training of young Mages yet!";
+	close;
+	end;}
+
+}
+//========================================================================================================
+
+
+function	script	arsi_Dance01sp	{
+
+
+
+if($@ep7boule==0)  { 
+	mes "[" + @name$ + "]";
+	mes "Bueno " + strcharinfo(0) + ",";
+	mes "Ahora puedes participar en el entrenamiento de magos !";
+	mes "te gustaria participar";
+	next;
+	menu "•No",-,"•Si !",submenu1;
+	close;
+
+	submenu1:
+
+	mes "[" + @name$ + "]";
+	mes "Empecemos!!";
+	close2;
+	if($@ep7boule>=1) {mes "[" + @name$ + "]";mes "Un jugador que ya está ahí!";close;}
+	set $@Play_Dance$,strcharinfo(0);
+	donpcevent "EP7_boule::OnDepart";
+	warp "ars_in01",86,50;
+	end;
+	}
+
+if($@ep7boule>=1)  { 
+	mes "[" + @name$ + "]";
+	mes "Bueno " + strcharinfo(0) + ",";
+	mes "por el momento no puedes participar enel entrenamiento de magos todavia";
+	close;
+	end;
+	}
+
+}
+//========================================================================================================
+//                                Deezee
+//========================================================================================================
+
+function	script	arsi_Dance02fr	{
+
+if ($@ep7boule == 0 || $@ep7boule == 1) {
+	mes "[" + @name$ + "]";
+	mes "Pour la partie en cours, le total de points est de :";
+	mes "^4d4dff - "+$@Mrecord[1]+"/"+$@Mrecord[0]+"^000000 -";
+	mes "Votre record est de : "+EP7_DANCE+"/"+$@Mpallier[4]+" !";
+	close;}
+
+if ($@ep7boule == 2 && $@Play_Dance$ == strcharinfo(0)) {
+
+	if ($@Mrecord[1] <= EP7_DANCE) {
+		mes "[" + @name$ + "]";
+		mes "Votre Score est de "+$@Mrecord[1]+", cela vous fait "+$@Mrecord[1]/2+" "+getitemname($ep7_Tcoins)+" !";
+		close2;
+		if(event14 == 19){set event14,20;}
+		getitem $ep7_Tcoins,$@Mrecord[1]/2;
+		set $@ep7boule,3;
+		end;}
+
+	if ($@Mrecord[1] > EP7_DANCE) {
+		mes "[" + @name$ + "]";
+		mes "Votre Score est de "+$@Mrecord[1]+", cela vous fait "+$@Mrecord[1]+" "+getitemname($ep7_Tcoins)+" !";
+		mes "Ceci est votre nouveau record ! La récompense est doublée !";
+		if ($@Mrecord[1] == $@Mpallier[4]) {mes "Vous avez eu une score parfait, voici un prix spécial pour vous !";}
+		close2;
+		if(event14 == 19){set event14,20;}
+		set EP7_DANCE,$@Mrecord[1];
+		getitem $ep7_Tcoins,$@Mrecord[1];
+		set $@ep7boule,3;
+		if ($@Mrecord[1] == $@Mpallier[4]) {getitem $ep7recompense[38],$ep7recompensenb[38];}
+		end;}
+}
+
+	mes "[" + @name$ + "]";
+	mes "Pour la partie, le total de points est de :";
+	mes "^4d4dff - "+$@Mrecord[1]+"/"+$@Mrecord[0]+"^000000 -";
+	close;
+
+}
+//==============================================================================================================
+
+function	script	arsi_Dance02en	{
+
+
+if ($@ep7boule == 0 || $@ep7boule == 1) {
+	mes "[" + @name$ + "]";
+	mes "For the current game, the total points are:";
+	mes "^4d4dff - "+$@Mrecord[1]+"/"+$@Mrecord[0]+"^000000 -";
+	mes "Your record is : "+EP7_DANCE+"/"+$@Mpallier[4]+" !";
+	close;}
+
+if ($@ep7boule == 2 && $@Play_Dance$ == strcharinfo(0)) {
+
+	if ($@Mrecord[1] <= EP7_DANCE) {
+		mes "[" + @name$ + "]";
+		mes "Your score is "+$@Mrecord[1]+", You got "+$@Mrecord[1]/2+" "+getitemname($ep7_Tcoins)+" yet !";
+		close2;
+		getitem $ep7_Tcoins,$@Mrecord[1]/2;
+		set $@ep7boule,3;
+		end;}
+
+	if ($@Mrecord[1] > EP7_DANCE) {
+		mes "[" + @name$ + "]";
+		mes "Your score is "+$@Mrecord[1]+", You got "+$@Mrecord[1]+" "+getitemname($ep7_Tcoins)+" yet !";
+		mes "This is your new record ! The reward is doubled!";
+		if ($@Mrecord[1] == $@Mpallier[4]) {mes "You had a perfect score, here is a special price for you!";}
+		close2;
+		set EP7_DANCE,$@Mrecord[1];
+		getitem $ep7_Tcoins,$@Mrecord[1];
+		set $@ep7boule,3;
+		if ($@Mrecord[1] == $@Mpallier[4]) {getitem $ep7recompense[38],$ep7recompensenb[38];}
+		end;}
+}
+
+	mes "[" + @name$ + "]";
+	mes "For the game, the total points are:";
+	mes "^4d4dff - "+$@Mrecord[1]+"/"+$@Mrecord[0]+"^000000 -";
+	close;}
+//==============================================================================================================
+
+function	script	arsi_Dance02sp	{
+
+
+if ($@ep7boule == 0 || $@ep7boule == 1) {
+	mes "[" + @name$ + "]";
+	mes "En el juego actual, el total de puntos es:";
+	mes "^4d4dff - "+$@Mrecord[1]+"/"+$@Mrecord[0]+"^000000 -";
+	mes "Tu record es de : "+EP7_DANCE+"/"+$@Mpallier[4]+" !";
+	close;}
+
+if ($@ep7boule == 2 && $@Play_Dance$ == strcharinfo(0)) {
+
+	if ($@Mrecord[1] <= EP7_DANCE) {
+		mes "[" + @name$ + "]";
+		mes "Tu puntuaje es "+$@Mrecord[1]+", tienes "+$@Mrecord[1]/2+" "+getitemname($ep7_Tcoins)+" todavia!";
+		close2;
+		getitem $ep7_Tcoins,$@Mrecord[1]/2;
+		set $@ep7boule,3;
+		end;}
+
+	if ($@Mrecord[1] > EP7_DANCE) {
+		mes "[" + @name$ + "]";
+		mes "Tu puntuaje es "+$@Mrecord[1]+", tienes "+$@Mrecord[1]+" "+getitemname($ep7_Tcoins)+" todavia!";
+		mes "NUEVO RECORD! el premio se duplicara";
+		if ($@Mrecord[1] == $@Mpallier[4]) {mes "Usted tuvo una puntuación perfecta, aquí hay un premio especial para ti!";}
+		close2;
+		set EP7_DANCE,$@Mrecord[1];
+		getitem $ep7_Tcoins,$@Mrecord[1];
+		set $@ep7boule,3;
+		if ($@Mrecord[1] == $@Mpallier[4]) {getitem $ep7recompense[38],$ep7recompensenb[38];}
+		end;}
+}
+
+	mes "[" + @name$ + "]";
+	mes "En el juego, el total de puntos son los siguientes:";
+	mes "^4d4dff - "+$@Mrecord[1]+"/"+$@Mrecord[0]+"^000000 -";
+	close;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+//Arsinoé
+
+29000#Bandit's Scalp#
+29001#Finissule, Gawelle's apprentice#
+29002#Lophophora Flower#
+29003#Calliope's soul#
+29004#Euterpe's soul#
+29005#Uranie's soul#
+29006#Clerc Graivois's Letter#
+29007#Chef Pevnec's Letter#
+29008#Thébaide Ink#
+29009#Vermillon refined Ink#
+29010#Black Lotus#
+29011#Member Card#
+29012#Marmotte Fur#
+29013#Bilal's Excretion#
+29014#Mammouth Bone#
+29015#Gobelin Fang#
+29016#Gondar Jewel#
+29017#Arsinoé Card n°1#
+29018#Arsinoé Card n°2#
+29019#Arsinoé Card n°3#
+29020#Arsinoé Card n°4#
+29021#Arsinoé Card n°5#
+29022#Arsinoé Card n°6#
+29023#Arsinoé Card n°7#
+29024#Arsinoé Card n°8#
+29025#Arsinoé Card n°9#
+29026#Arsinoé Card n°10#
+29027#Arsinoé Card n°11#
+29028#Arsinoé Card n°12#
+29029#Arsinoé Card n°13#
+29030#Arsinoé Card n°14#
+29031#Arsinoé Card n°15#
+29032#Arsinoé Card n°16#
+29033#Arsinoé Card n°17#
+29034#Arsinoé Card n°18#
+29035#Arsinoé Card n°19#
+29036#Arsinoé Card n°20#
+29037#Red Gem#
+29038#Green Gem#
+29039#Yellow Gem#
+29040#Blue Gem#
+29041#Djoser's Head#
+29042#Djoser's Corpse#
+29043#Djoser's Leg#
+29044#Orcish Necklace#
+29045#Slave Necklace#
+29046#Saigneur Wings#
+29047#Sylphide Hearth#
+29048#Rana oil#
+29049#Dark Mushroom#
+29050#Soft Wine#
+29051#Shadows#
+29052#Eel#
+29053#Goldfish#
+29054#Scorpion Fish#
+29055#Octopus#
+29056#Limande#
+29057#Seahorse#
+29058#Shark#
+29059#Bar#
+29060#Bar commun#
+29061#Salmon#
+29062#Crab#
+29063#Pink Salmon#
+29064#Perche jaune#
+29065#Piranha#
+29066#Carp#
+29067#Thon#
+29068#Angel Fish#
+29069#Clownfish#
+29070#Vandoise#
+29071#Frog#
+29072#Lantern Fish#
+29073#Âppat#
+29074#Fishing Rod#
+29075#Winner's Rod#
+29076#Hook Ice#
+29077#Paralysis#
+29078#Dizziness#
+29079#Inversion#
+29080#Pas-de-Giant#
+29081#Mushroom#
+29082#Popote#
+29083#Account Book of Nemours#
+29180#Arsinois#

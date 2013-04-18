@@ -1,0 +1,1456 @@
+//                        __   ___   ___  __  _  _  __  ___ 
+//                       (  ) (  ,) / __)(  )( \( )/  \(  _)
+//                       /__\  )  \ \__ \ )(  )  (( () )) _)
+//                      (_)(_)(_)\_)(___/(__)(_)\_)\__/(___)
+
+
+//===== Arsinoé Script ============================================================================ 
+//
+//= Configuration of Arsinoé Mod
+//
+//===== By: =======================================================================================  
+//
+//= Original Version : Aerie PinkPanther
+//= English Version : DesertFox
+//
+//===== Current Version: ==========================================================================  
+//
+//= 2.5
+//
+//===== Additional Comments: ======================================================================  
+//
+//= 1.x Versions without multi-language support.
+//= 2.0 release
+//= 2.1 Soldat de Néraka#in13 delete
+//= 2.2 Apprenti Finissule npchide deleted
+//= 2.3 Added Arsinois Currency
+//= 2.4 Revisited English version by DesertFox
+//= 2.5 Set waitingroom in english per default
+//
+//================================================================================================= 
+
+
+
+-	script	EP7_Configuration	-1,{
+
+OnInit:
+
+
+//======================================================================================
+//Choix des langues :
+
+	//Cette section est pour activer les langues (au niveau des annonces globales)
+	//This part is for activate different language (for global announces)
+	
+	//set $ep7_LangChoice,$ep7_LangChoice|1; //Français
+	set $ep7_LangChoice,$ep7_LangChoice|2; //English
+	//set $ep7_LangChoice,$ep7_LangChoice|4; //Español
+	//set $ep7_LangChoice,$ep7_LangChoice|8; //Tagalog
+	//set $ep7_LangChoice,$ep7_LangChoice|16; //Russian
+	//set $ep7_LangChoice,$ep7_LangChoice|32; //Portuguese
+	
+	//Cette section est pour désactiver les langues (au niveau des annonces globales). Il vous suffit de décommenter la ligne de la langue que vous souhaitez désactiver.
+	//This secton is for desactivate languages (global announces). You only need to uncomment the line of the language you want to disable.
+	
+	//set $ep7_LangChoice,$ep7_LangChoice-1; //Français
+	//set $ep7_LangChoice,$ep7_LangChoice-2; //English
+	//set $ep7_LangChoice,$ep7_LangChoice-4; //Español
+	//set $ep7_LangChoice,$ep7_LangChoice-8; //Tagalog
+	//set $ep7_LangChoice,$ep7_LangChoice-16; //Russian
+	//set $ep7_LangChoice,$ep7_LangChoice-32; //Portuguese
+	
+	//Choisir la langue pour les WaitingRoom : (0 = Français / 1 = Anglais / 2 = Espagnol / 3 = Tagalog / 4 = Russian / 5 = Portuguese)
+	//Choose the language for WaitingRoom
+	set $EP7_LANGUE,1;
+
+
+//======================================================================================
+
+
+
+//Attention : Le nombre de joueurs maximum pour une Waiting Room ne change pas lors d'un simple Reloadscript. Il faut soit
+//relancer le map-server, soit lancer au moins une fois l'instance. Mais le changement de nombre de joueurs est effectif avec 
+//un simple reloadscript.
+
+// Note: The maximum number of players for a Waiting Room does not change during a single Reloadscript. You must
+// restart the map-server, or run at least once time the instance. But the change of number of players is effective with
+// a simple reloadscript.
+
+	//Régler le Nombre de joueurs requis pour lancer une instance (Quêtes). [Defaut : 5]
+	//Set the number of players required to launch an instance (Quests). [Default: 5]
+	set $EP7_InstJoueurs,1;
+
+	//Régler le Nombre de joueurs requis pour l'Arène (Mode MvP et Assaut). [Defaut : 4]
+	//Set the number of players required for the Arena (MVP mode, and Assault). [Default: 4]
+	set $EP7_AreneJoueurs,3;
+
+	//Régler le Nombre de joueurs requis pour les Quêtes Zombies. [Defaut : 4]
+	//Set the number of players required for Quests Zombies. [Default: 4]
+	set $EP7_ZombieJoueurs,3;
+
+	//Commenter cette ligne pour activer le NPC qui donne toutes les variables (Alberta 218,35) [Defaut : Uncomment]
+	//Comment this line to activate the NPC who gives all variables (Alberta 218,35) [Defaut : Uncomment]
+	disablenpc "Testeur#ep7";
+
+	//Annonce des instances : 0 = Local / 1 = Serveur
+	//Announce for the coming on the server : 0 = Local / 1 = Server
+	set $EP7Annonce,1;
+
+	//Annonce pour l'arrivée sur le Serveur : 0 = Local / 1 = Serveur
+	//Announce for the coming on the server : 0 = Local / 1 = Server
+	set $EP7DAnnonce,0;
+
+	//Pour introduction, régler le Nom du Serveur :
+	//For the Introduction, fix your name server :
+	set $EP7ServName$,"Sacre de Lunedor";
+
+	//Pour introduction, régler le Nom de la Capitale du Serveur, Nom de la carte et coordonnées (Pour l'arrivée après l'intro) :
+	//For the Introduction, fix the Capital Server, Nme of the map and coordinates (For come to the capital after the Introduction) :
+	set $EP7CapiName$,"Prontera";
+	set $EP7map$,"prontera"; 
+	set $EP7x,156; 
+	set $EP7y,202; 
+
+	//Il faut une monnaie globale à Arsinoé, par défaut Arsinois. Attention de pas mettre un objet pouvant être droppé.
+	//Global Current of Arsinoé, per default Arsinois Coins. You can change it but be careful don't use common items
+	set $ep7_Tcoins,29180;
+	//Nombre de personnes affichées par Titre : Ne doit pas dépasser 127.
+	//Choose the size of Title Board. Don't go upper 127 (Array limit)
+	set $EP7_TitreNbP,30;
+
+	//Configurer l'heure de la Guerre du Soulavein. [Defaut : Mercredi 21-23 Heures]
+	//Configure Soulavein's War Horairs. [Defaut : Wednesday 9-11 pm]
+	
+		OnClock2100:	
+		OnClock2300:
+			if ((gettime(4)==3) && (gettime(3)>=21 && gettime(3)<23)) {donpcevent "EP7_WoESoulavein::OnStart"; end;}
+			if ((gettime(4)==3) && (gettime(3)==23)) {donpcevent "EP7_WoESoulavein::OnStop"; end;}
+			end;
+}
+	
+//_________________________________________________________________
+//___________________Récompenses Global ___________________________
+//_________________________________________________________________
+//
+//
+-	script	EP7_Recompense	-1,{
+
+OnInit:
+
+//Quête Coppalana : Boitata 
+	setarray $ep7recompense[1],5370; //(Orchid Hairband)
+	setarray $ep7recompensenb[1],1;
+//Quête Coppalana : La Fête du Village 
+	setarray $ep7recompense[2],5403; //Fish Mouth
+	setarray $ep7recompensenb[2],1;
+//Quête Kiman Farès : Le Réveil des Morts 
+	setarray $ep7recompense[3],5398; //(Bone Head)
+	setarray $ep7recompensenb[3],1;
+//Quête Phare de Traïana : Les Cristaux
+	setarray $ep7recompense[4],28388; //Thana Drop
+	setarray $ep7recompensenb[4],1;
+	setarray $ep7recompense[5],28349; //Mouton
+	setarray $ep7recompensenb[5],1;
+//Quête Phare de Traïana : Contrebande
+	setarray $ep7recompense[6],28342; //couronne solaire
+	setarray $ep7recompensenb[6],1;
+//Quête Phare de Traïana : Les Orcs
+	setarray $ep7recompense[7],5137; //alice doll
+	setarray $ep7recompensenb[7],1;
+//Quête Mont Bacchias : Les Bandits
+	setarray $ep7recompense[8],5380; //Fish Head Hat
+	setarray $ep7recompensenb[8],1;
+//Quête Désert de Kargha : La Lime du Torn-Thalas
+	setarray $ep7recompense[9],5272; //Smiling mask
+	setarray $ep7recompensenb[9],1;
+//Quête Désert de Kargha : L'Oasis de Siwah (ext.)
+	setarray $ep7recompense[10],5418; //legionnaire
+	setarray $ep7recompensenb[10],1;
+//Quête Désert de Kargha : L'Oasis de Siwah (int.)
+	setarray $ep7recompense[11],5383; //Hunter Cap
+	setarray $ep7recompensenb[11],1;
+//Quête Désert de Kargha : Kerish
+	setarray $ep7recompense[12],5314; //Hockey mask
+	setarray $ep7recompensenb[12],1;
+//Quête Euhéméria : Les Pleurs de Tarine
+	setarray $ep7recompense[13],5801; //tailled ribbon
+	setarray $ep7recompensenb[13],1;
+//Quête Kiman Farès: La Plante du Désert
+	setarray $ep7recompense[14],28303; //Bubble Gum
+	setarray $ep7recompensenb[14],1;
+//Quête Harpocrate : Le Seigneur des Etoiles
+	setarray $ep7recompense[15],5211; //Ribbon Hat
+	setarray $ep7recompensenb[15],1;
+
+
+
+
+//Quête Danifae : Deuxième Partie
+	setarray $ep7recompense[16],5357; //victory wings
+	setarray $ep7recompensenb[16],1;
+//Quête Marchand : Les Bandits de la Passe Octavie
+	setarray $ep7recompense[17],5143; //Kabuki Mask
+	setarray $ep7recompensenb[17],1;
+//Quête Marchand : Final et Titre
+	setarray $ep7recompense[18],5378; //Bunny top hat
+	setarray $ep7recompensenb[18],1;
+//Quête Mages : Deuxième Partie
+	setarray $ep7recompense[19],5324; //little angel doll
+	setarray $ep7recompensenb[19],1;
+//Quête Lalibela : La Naissance
+	setarray $ep7recompense[20],5335; //squatting poring
+	setarray $ep7recompensenb[20],1;
+//Quête Harpocrate : L'Académie
+	setarray $ep7recompense[21],5289; //Vanilmirth Hat
+	setarray $ep7recompensenb[21],1;
+//Quête Les Mages d'Arsinoé : Combat de Pavloff
+	setarray $ep7recompense[22],5150; //Brazil event hat
+	setarray $ep7recompensenb[22],1;
+
+
+//Quête Le Combat Final
+	setarray $ep7recompense[23],5325; //Robo Eye
+	setarray $ep7recompensenb[23],1;
+
+
+//Quête Légende de Rana : Les Hauts Plateaux
+	setarray $ep7recompense[24],5402; //Naughty Fairy et 200 silver coin
+	setarray $ep7recompensenb[24],1;
+//Quête Légende de Rana : La Colline de Dian Bian Fût
+	setarray $ep7recompense[25],5303; //Flower Crown 
+	setarray $ep7recompensenb[25],1;
+//Quête Légende de Rana : La Déesse de La Rana
+	setarray $ep7recompense[26],5482; //autre
+	setarray $ep7recompensenb[26],1;
+//Quête Gladiateur : Titre
+	setarray $ep7recompense[27],5483; //helm
+	setarray $ep7recompensenb[27],1;
+//Quête Zombies : La Demeure de Chibi Youma
+	setarray $ep7recompense[28],5421; //ifrit ear
+	setarray $ep7recompensenb[28],1;
+
+//Quête OmbreTerre : Le Fort Orage
+	setarray $ep7recompense[29],5256; //valk feather
+	setarray $ep7recompensenb[29],1;
+//Quête OmbreTerre : Insurrection de Da'Urdein
+	setarray $ep7recompense[31],5313; //Diadem
+	setarray $ep7recompensenb[31],1;
+//Quête OmbreTerre : Sphère Planaire
+	setarray $ep7recompense[32],5304; //Executioner Hood
+	setarray $ep7recompensenb[32],1;
+
+//Quête Cartographe DeMartonne
+	setarray $ep7recompense[30],5210; //flying angel
+	setarray $ep7recompensenb[30],1;
+
+//Quête Urunesti : Shogunka
+	setarray $ep7recompense[33],5471; //Hairband Of Reginleif 
+	setarray $ep7recompensenb[33],1;
+//Quête Urunesti : Temple de Dagon
+	setarray $ep7recompense[34],5442; //dark knight
+	setarray $ep7recompensenb[34],1;
+//Quête Kargah : Temple de Pétosiris
+	setarray $ep7recompense[35],5414; //feu
+	setarray $ep7recompensenb[35],1;
+//Quête Kargah : Temple de Pétosiris 2
+	setarray $ep7recompense[36],5410; //sac papier
+	setarray $ep7recompensenb[36],1;
+
+//Quête Pêcheur : Titre
+	setarray $ep7recompense[37],5317; //Fisherman's Hat
+	setarray $ep7recompensenb[37],1;
+
+//Quête Danceur : Titre
+	setarray $ep7recompense[38],28367; //Blue Ribbon
+	setarray $ep7recompensenb[38],1;
+
+
+//Quête Néraka : Les Mines
+	setarray $ep7recompense[39],28367; //Blue Ribbon
+	setarray $ep7recompensenb[39],1;
+//Quête Arsinoé : Orchestre
+	setarray $ep7recompense[40],28367; //Blue Ribbon
+	setarray $ep7recompensenb[40],1;
+
+//Quête Abysses : Final
+	setarray $ep7recompense[41],28367; //Blue Ribbon
+	setarray $ep7recompensenb[41],1;
+
+
+	//SilverCoins
+	setarray $ep7silvercoinnb[1],400; //Phare de Traïana
+	setarray $ep7silvercoinnb[2],400; //Contrebandiers de Traïana
+	setarray $ep7silvercoinnb[3],450; //Les Mages d'Arsinoé (Part. 1)
+	setarray $ep7silvercoinnb[4],500; //Le Culte de Danifae (Part. 1)
+	setarray $ep7silvercoinnb[5],300; //Naissance de Lalibela
+	setarray $ep7silvercoinnb[6],400; //Titre de Grand Inquisiteur
+	setarray $ep7silvercoinnb[7],30;  //Arène : Combat MvP
+	setarray $ep7silvercoinnb[8],300; //Sidon : Âme de la Tortue
+	setarray $ep7silvercoinnb[9],300; //Hylarheim : Les Marins disparus
+
+	setarray $ep7silvercoinnb[10],200; //Néraka : Baron Sengir
+	setarray $ep7silvercoinnb[11],200; //Néraka : Livraison de Glace
+	setarray $ep7silvercoinnb[12],200; //Néraka : Comte de Nemours
+	setarray $ep7silvercoinnb[13],200; //Néraka : La Fronde
+
+//Récompenses lors de la deuxième réalisation d'une instance
+
+	setarray $ep7foodnb[1],1; //Quantité
+	setarray $ep7foodnb[2],2; //Quantité
+	setarray $ep7foodnb[3],3; //Quantité
+	setarray $ep7foodnb[4],4; //Quantité
+	setarray $ep7foodnb[5],5; //Quantité
+
+	//De base food+10 (3 différentes par instance)
+	setarray $ep7foodid[1],12075; //Str
+	setarray $ep7foodid[2],12080; //Int
+	setarray $ep7foodid[3],12095; //Dex
+	setarray $ep7foodid[4],12090; //Agi
+	setarray $ep7foodid[5],12085; //Vit
+	setarray $ep7foodid[6],12100; //Luk
+
+	end;
+}
+
+//_________________________________________________________________
+//___________________OnLoginEvent _________________________________
+//_________________________________________________________________
+
+-	script	EP7_login	-1,{
+
+OnPCLoginEvent:
+
+	if ( EP7_MAGE == 5 ) {
+	disguise 800;end;}
+
+	getmapxy @map$,@x,@y,0;
+	if ( @map$ == "ars_fild53" && EP7_FLY == 1 || @map$ == "ars_fild54" && EP7_FLY == 1) {disguise 1259; end;}
+	
+
+	end;
+
+}
+
+//_________________________________________________________________
+//___________________Apparition Heures ____________________________
+//_________________________________________________________________
+
+-	script	EP7_horaires	-1,{
+
+OnInit:
+
+	disablenpc "Poulet#ep72";
+	disablenpc "Mage Etranger#ep7a";
+	disablenpc "Mage Etranger#ep7b";
+	disablenpc "Mage Etranger#ep7c";
+	disablenpc "Mage Etranger#ep7c";
+	disablenpc "Prêtre Merlay#ep7";
+	end;
+
+OnClock2000:
+OnClock2200:
+OnClock0000:
+OnClock0200:
+
+	enablenpc "Prêtre Merlay#ep7";
+	enablenpc "Mage Etranger#ep7a";
+	enablenpc "Mage Etranger#ep7b";
+	enablenpc "Mage Etranger#ep7c";
+	set $ep7jouron,0;
+	end;
+
+OnClock0800:
+OnClock1000:
+OnClock1200:
+OnClock1400:
+OnClock1600:
+OnClock1800:
+
+	disablenpc "Prêtre Merlay#ep7";
+	disablenpc "Mage Etranger#ep7a";
+	disablenpc "Mage Etranger#ep7b";
+	disablenpc "Mage Etranger#ep7c";
+	set $ep7jouron,1;
+	end;
+
+
+}
+//_________________________________________________________________
+//___________________Testeur NPC __________________________________
+//_________________________________________________________________
+
+alberta,218,35,1	script	Testeur#ep7	406,{
+
+set @name$,"Testeur";
+
+	mes "[" + @name$ + "]";
+	mes "Que voulez-vous ?";
+	next;
+	menu "Tout valider",submenu1,"Remettre à zéro",submenu2,"Quitter",-;
+
+	close;
+
+submenu1:
+	
+	mes "[" + @name$ + "]";
+	mes "Vous avez toutes les variables !";
+	close2;
+	set EP7_GLOBAL,40;
+	set EP7_SOIN,10;    	
+	set EP7_FETE,52;	   	
+	set EP7_PHARE,6;   	
+	set EP7_ORC,3;     	
+	set EP7_CBANDE,3;  	
+	set EP7_BANDIT,203;  	
+	set EP7_LIME,9;    	
+	set EP7_AME,7;     	
+	set EP7_MAGE,13;    	
+	set EP7_PLANTE,5;  	
+	set EP7_DANIFAE,10; 	
+	set EP7_HARPO,11;   	
+	set EP7_RANA,9;    	
+	set EP7_TRAIN,8;      	
+	set EP7_MARCHAND,16;   	
+	set EP7_ARENA,200;      	
+	set EP7_ZOMBIE,6;
+    set EP7_OMBRET,21;
+    set EP7_CARTE,21;	
+    set EP7_INTRO,7;	
+	set EP7_URUNESTI,18;		
+	end;
+
+submenu2:
+	
+	mes "[" + @name$ + "]";
+	mes "Toutes les variables ont été mises à zéro !";
+	close2;
+	set EP7_GLOBAL,0;
+	set EP7_SOIN,0;    	
+	set EP7_FETE,0;	   	
+	set EP7_PHARE,0;   	
+	set EP7_ORC,0;     	
+	set EP7_CBANDE,0;  	
+	set EP7_BANDIT,0;  	
+	set EP7_LIME,0;    	
+	set EP7_AME,0;     	
+	set EP7_MAGE,0;    	
+	set EP7_PLANTE,0;  	
+	set EP7_DANIFAE,0; 	
+	set EP7_HARPO,0;   	
+	set EP7_RANA,0;    	
+	set EP7_TRAIN,0;      	
+	set EP7_MARCHAND,0;   	
+	set EP7_ARENA,0;      	
+	set EP7_ZOMBIE,0;
+    set EP7_OMBRET,0;
+    set EP7_CARTE,0;
+    set EP7_INTRO,0;	
+	set EP7_URUNESTI,0;	
+	end;
+}
+
+//_________________________________________________________________
+//___________________Taille des NPCs ______________________________
+//_________________________________________________________________
+
+
+-	script	EP7_taillenpc	-1,{
+
+OnInit:
+
+//Petit
+setnpcdisplay("Pêcheur#ep71", "Pêcheur", 88, 1);
+setnpcdisplay("Pêcheur#ep72", "Pêcheur", 73, 1);
+setnpcdisplay("Pêcheur#ep73", "Pêcheur", 101, 1);
+setnpcdisplay("Pêcheur#ep74", "Pêcheur", 92, 1);
+setnpcdisplay("Pêcheur#ep75", "Pêcheur", 777, 1);
+setnpcdisplay("Pêcheur#ep76", "Pêcheur", 883, 1);
+setnpcdisplay("Pêcheur#ep77", "Pêcheur", 901, 1);
+
+setnpcdisplay("Shackey Sarinac#ep7", "Shackey Sarinac", 846, 1);
+setnpcdisplay("Marin Hylar#ep7", "Marin Hylar", 928, 1);
+setnpcdisplay("Marin Hylar#ep72", "Marin Hylar", 928, 1);
+
+setnpcdisplay("Marin Hylar#ep7s1", "Marin Hylar", 803, 1);
+setnpcdisplay("Salve Regina#ep7", "Salve Regina", 806, 1);
+
+//=========================================================================
+// Abysses NPC
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#aby","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#aby","Profeta Tanzgue");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#aby","Priest Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#aby","Sacerdote Merlay");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#aby2","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#aby2","Profeta Tanzgue");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#aby2","Priest Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#aby2","Sacerdote Merlay");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine d'Harpocrate#aby1","Monk of Harpocrate");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine d'Harpocrate#aby1","Monka d'Harpocrate");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#aby3","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#aby3","Profeta Tanzgue");}
+
+//=========================================================================
+// Arènes
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Maitre Shugo#ep7","Master Shugo");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Maitre Shugo#ep7","Maestro Shugo");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Maitre Shugo#ep7","Mestre Shugo");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Gardien#ep7a","Guardian");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gardien#ep7a","Guardian");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Gardien#ep7a","Guardião");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Gardien#ep7b","Guardian");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gardien#ep7b","Guardian");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Gardien#ep7b","Guardião");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Gardien#ep7c","Guardian");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gardien#ep7c","Guardian");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Gardien#ep7c","Guardião");}
+
+//=========================================================================
+// Coeur
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Général Lorill#coeur","General Lorill");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Général Lorill#coeur","General Lorill");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Déesse de La Rana#coeur","Godness of La Rana");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Déesse de La Rana#coeur","La Diosa Rana");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#coeur","Priest Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#coeur","Sacerdote Merlay");}
+
+if($EP7_LANGUE == 2) {setnpcdisplay("Mage Gawelle#coeur","Mago Gawelle");}
+
+if($EP7_LANGUE == 2) {setnpcdisplay("Commandant Paraclet#co","Comandante Paraclet");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Roi Baudouin I#coeur","King Baudouin I");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Roi Baudouin I#coeur","El Rey Baudouin I");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Gryphon#coeur","Gryphon");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gryphon#coeur","Grifo");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Dragon de Gondar#coeur","Dragon of Gondar");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Dragon de Gondar#coeur","Dragon de Gondar");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef Rafloc'h#coeur","Chief Rafloc'h");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef Rafloc'h#coeur","Jefe Rafloc'h");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Servante Kloiacha#coeur","Desservant of Boitata");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Servante Kloiacha#coeur","Siervo de Boitata");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef Pevnec#coeur","Chief Pevnec");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef Pevnec#coeur","Jefe Pevnec");}
+
+//=========================================================================
+// Dance
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Instructeur Osani#ep7","Instructor Osani");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Instructeur Osani#ep7","Instructor Osani");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Spectateur#ep7M1","Spectator");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Spectateur#ep7M1","Espectador");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Spectateur#ep7M2","Spectator");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Spectateur#ep7M2","Espectador");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Spectateur#ep7M3","Spectator");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Spectateur#ep7M3","Espectador");}
+
+//=========================================================================
+// Divers
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Herboriste#ep7","Herborist");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Herboriste#ep7","Herbalista");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Action : Fouiller#ep7ame","Action : Search");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Action : Fouiller#ep7ame","Action : Bùsqueda");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Marin Hylar#ep7s1","Sailor Hylar");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Marin Hylar#ep7s1","Marina Hylar");}
+
+//=========================================================================
+// Euhéméria
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Bourgmestre Euhéméria#1","Mayor of Euhéméria");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Bourgmestre Euhéméria#1","Bourgmaestre Euhéméria");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Milicien d'Euhéméria#1","Milician of Euhéméria");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Milicien d'Euhéméria#1","Milicia d'Euhéméria");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Milicien d'Euhéméria#2","Milician of Euhéméria");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Milicien d'Euhéméria#2","Milicia d'Euhéméria");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Gardien du Phare#1","Lighthouse Keeper");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gardien du Phare#1","Portero de Faro");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Gardien du Phare#2","Lighthouse Keeper");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gardien du Phare#2","Portero de Faro");}
+
+//=========================================================================
+// Glace
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Glace#0","Ice");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Glace#0","Hielo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Glace#1","Ice");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Glace#1","Hielo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Glace#2","Ice");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Glace#2","Hielo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Glace#3","Ice");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Glace#3","Hielo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Glace#4","Ice");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Glace#4","Hielo");}
+
+//=========================================================================
+// Introduction
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Maman#ep7","Mom");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Maman#ep7","Madre");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Maman#ep7","Mamãe");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soeur Anne#ep7","Sister Ann");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soeur Anne#ep7","Hermana Anna");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Soeur Anne#ep7","Irmã Anna");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Action : Dormir#ep7","Action : Sleep");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Action : Dormir#ep7","Action : Dormir");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Action : Dormir#ep7","Action : Cama");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#intro","Priest Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#intro","Sacerdote Merlay");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Prêtre Merlay#intro","Sacerdote Merlay");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#intro","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#intro","Profeta Tanzgue");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Prophète Tanzgue#intro","Profeta Tanzgue");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Marchand de Glaces#ep7","Ice Merchant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Marchand de Glaces#ep7","Heladero");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Marchand de Glaces#ep7","Sorveteiro");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Marchand#ep7a","Merchant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Marchand#ep7a","Mercader");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Marchand#ep7a","Vendedor");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Marchand#ep7b","Merchant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Marchand#ep7b","Mercader");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Marchand#ep7b","Vendedor");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageoise#ep7uru1","Villager");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageoise#ep7uru1","Pueblerino");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Villageoise#ep7uru1","Aldeã");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageoise#ep7uru2","Villager");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageoise#ep7uru2","Pueblerino");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Villageoise#ep7uru2","Aldeã");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageoise#ep7uru3","Villager");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageoise#ep7uru3","Pueblerino");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Villageoise#ep7uru3","Aldeã");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#ep7uru1","Villager");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#ep7uru1","Pueblerino");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Villageois#ep7uru1","Aldeã");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#ep7uru2","Villager");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#ep7uru2","Pueblerino");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Villageois#ep7uru2","Aldeã");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Poule#ep7a","Chicken");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Poule#ep7a","Gallina");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Poule#ep7a","Galinha");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Poule#ep7b","Chicken");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Poule#ep7b","Gallina");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Poule#ep7b","Galinha");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Poule#ep7c","Chicken");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Poule#ep7c","Gallina");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Poule#ep7c","Galinha");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Poule#ep7d","Chicken");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Poule#ep7d","Gallina");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Poule#ep7d","Galinha");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Elandor le Magnifique#1","Elandor the Great");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Elandor le Magnifique#1","Elandor El Magnifico");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Elandor le Magnifique#1","Elandor O Magnífico");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Spectateur#ep7i1","Spectator");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Spectateur#ep7i1","Espectador");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Spectateur#ep7i1","Espectadora");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Spectateur#ep7i2","Spectator");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Spectateur#ep7i2","Espectador");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Spectateur#ep7i2","Espectadora");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Spectateur#ep7i3","Spectator");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Spectateur#ep7i3","Espectador");}
+if($EP7_LANGUE == 5) {setnpcdisplay("Spectateur#ep7i3","Espectadora");}
+
+//=========================================================================
+// Le Culte de Danifae
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Julien l'Apostat#ep7","Julien the Apostat");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Julien l'Apostat#ep7","Julien el Apostata");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre de Danifae#ep7","Priest of Danifae");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre de Danifae#ep7","Sacerdote de Danifae");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#ep7","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#ep7","Profeta Tanzgue");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#ep72","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#ep72","Profeta Tanzgue");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#ep73","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#ep73","Profeta Tanzgue");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Déesse Danifae#ep7","Goddess Danifae");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Déesse Danifae#ep7","Divina Danifae");}
+
+//=========================================================================
+// Le Culte d'"Harpocrate
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine d'Harpocrate#1","Monk of Harpocrate");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine d'Harpocrate#1","Monk Harpócrates");}
+
+//=========================================================================
+// Le Roi Gobelin
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prisonnier Capeau#1","Prisoner Capeau");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prisonnier Capeau#1","Preso Capeau");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Panneau#ep7karga1","Sign");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Panneau#ep7karga1","Grupo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Panneau#ep7karga2","Sign");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Panneau#ep7karga2","Grupo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Panneau#ep7karga3","Sign");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Panneau#ep7karga3","Grupo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Panneau#ep7karga4","Sign");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Panneau#ep7karga4","Grupo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Panneau#ep7karga5","Sign");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Panneau#ep7karga5","Grupo");}
+
+//=========================================================================
+// Légende de La Rana
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Maréchal Akey#ep7","Marshall Akey");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Maréchal Akey#ep7","Mariscal Akey");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat Demerol#1","Soldier Demerol");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat Demerol#1","Soldado Demerol");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Maître Darsao#ep7","Master Darsao");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Maître Darsao#ep7","Maestro Darsao");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier Erih#ep7","Boatman Erih");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier Erih#ep7","Barquero Erih");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier Erih#ep71","Boatman Erih");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier Erih#ep71","Barquero Erih");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier Erih#ep72","Boatman Erih");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier Erih#ep72","Barquero Erih");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier Erih#ep73","Boatman Erih");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier Erih#ep73","Barquero Erih");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat Demerol#2","Soldier Demerol");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat Demerol#2","Soldado Demerol");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Ascenseur#ep7","Lift");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Ascenseur#ep7","Asensor");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Ascenseur#ep71","Lift");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Ascenseur#ep71","Asensor");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Déesse de La Rana#1","Goddess of La Rana");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Déesse de La Rana#1","Diosa de La Rana");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Roi d'Arsinoé#1","King of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Roi d'Arsinoé#1","Rey de Arsinoé");}
+
+//=========================================================================
+// Mages d'Arsinoé
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Poulet#ep7","Chicken");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Poulet#ep7","Pollo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Poulet#ep72","Chicken");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Poulet#ep72","Pollo");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Mage Gardien#ep7a","Mage Keeper");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Mage Gardien#ep7a","Mage Guardia");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Mage Gardien#ep7b","Mage Keeper");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Mage Gardien#ep7b","Mage Guardia");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Intendant#ep7","Intendant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Intendant#ep7","Intendiente");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#ep74","Priest Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#ep74","Sacerdote Merlay");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#ep74","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#ep74","Profeta Tanzgue");}
+
+//=========================================================================
+// Neraka
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Roi Baudouin I#ep7","King Baudouin I");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Roi Baudouin I#ep7","Rey Baudouin I");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Chancelier Risfek#ep7","Chancellor Risfek");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chancelier Risfek#ep7","Canciller Risfek");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chancelier Risfek#ep72","Chancellor Risfek");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chancelier Risfek#ep72","Canciller Risfek");}
+
+//=========================================================================
+// OmbreTerre
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Jude#ep7","Brother Jude");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Jude#ep7","Sacerdote Jude");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Père Malachie#ep7","Brother Malachie");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Père Malachie#ep7","Sacerdote Malachie");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Marin Hylar#ep7","Sailor Hylar");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Marin Hylar#ep7","Marino Hylar");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Marin Hylar#ep72","Sailor Hylar");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Marin Hylar#ep72","Marino Hylar");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Passeur du Léthé#ep7","Ferryman of Lethe");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Passeur du Léthé#ep7","Barquero del Leteo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Passeur du Léthé#ep71","Ferryman of Lethe");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Passeur du Léthé#ep71","Barquero del Leteo");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Osée#ep7","Brother Osée");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Osée#ep7","Sacerdote Osée");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde de la Sphère#ep7","Sphere Guardian");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde de la Sphère#ep7","Guardia dela Sfera");}
+
+//=========================================================================
+// Orchestre
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Docteur Moreau#ep7","Doctor Moreau");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Docteur Moreau#ep7","Doctor Moreau");}
+if($EP7_LANGUE == 3) {setnpcdisplay("Docteur Moreau#ep7","Doktor Moreau");}
+if($EP7_LANGUE == 4) {setnpcdisplay("Docteur Moreau#ep7","Äîêòîğ Ìîğåàó");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Choriste#1","Chorist");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Choriste#1","Corista");}
+if($EP7_LANGUE == 3) {setnpcdisplay("Choriste#1","Koro");}
+if($EP7_LANGUE == 4) {setnpcdisplay("Choriste#1","Êîğî");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Choriste#2","Chorist");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Choriste#2","Corista");}
+if($EP7_LANGUE == 3) {setnpcdisplay("Choriste#2","Koro");}
+if($EP7_LANGUE == 4) {setnpcdisplay("Choriste#2","Êîğî");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Choriste#3","Chorist");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Choriste#3","Corista");}
+if($EP7_LANGUE == 3) {setnpcdisplay("Choriste#3","Koro");}
+if($EP7_LANGUE == 4) {setnpcdisplay("Choriste#3","Êîğî");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Choriste#4","Chorist");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Choriste#4","Corista");}
+if($EP7_LANGUE == 3) {setnpcdisplay("Choriste#4","Koro");}
+if($EP7_LANGUE == 4) {setnpcdisplay("Choriste#4","Êîğî");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Choriste#5","Chorist");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Choriste#5","Corista");}
+if($EP7_LANGUE == 3) {setnpcdisplay("Choriste#5","Koro");}
+if($EP7_LANGUE == 4) {setnpcdisplay("Choriste#5","Êîğî");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Choriste#6","Chorist");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Choriste#6","Corista");}
+if($EP7_LANGUE == 3) {setnpcdisplay("Choriste#6","Koro");}
+if($EP7_LANGUE == 4) {setnpcdisplay("Choriste#6","Êîğî");}
+
+//=========================================================================
+// Quête Principale
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Capitaine Blowfall#ep7","Captain Blowfall");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Capitaine Blowfall#ep7","Capitán Blowfall");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Capitaine Blowfall#ep72","Captain Blowfall");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Capitaine Blowfall#ep72","Capitán Blowfall");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Pêre Benoît#ep7","Father Benedictus");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Pêre Benoît#ep7","Padre Benedicto");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef Rafloc'h#ep7","Chief Rafloc'h");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef Rafloc'h#ep7","Jefe Rafloc'h");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde de Coppalana#1","Guard of Coppalana");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde de Coppalana#1","Guardia de Coppalana");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Servante Kloiacha#1","Desservent of Boitata");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Servante Kloiacha#1","Siervo de Boitata");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde de Coppalana#2","Guard of Coppalana");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde de Coppalana#2","Guardia de Coppalana");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Artisan#coppa1","Craftsman");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Artisan#coppa1","Artesano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Artisan#coppa2","Craftsman");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Artisan#coppa2","Artesano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef Pevnec#1","Chief Pevnec");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef Pevnec#1","Jefe Pevnec");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Action : Fouiller#ep7a","Action : Search");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Action : Fouiller#ep7a","Action : Bùsqueda");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Gardien de la Crypte#ars","Crypt Guardian");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gardien de la Crypte#ars","Guardián de la Cripta");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Gardien de la Crypte#2","Crypt Guardian");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gardien de la Crypte#2","Guardián de la Cripta");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Fonctionnaire Georet#ep7","Official Georet");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Fonctionnaire Georet#ep7","Oficial Georet");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#ep7","Father Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#ep7","Sacerdote Merlay");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#ep71","Father Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#ep71","Sacerdote Merlay");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#ep72","Father Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#ep72","Sacerdote Merlay");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#ep73","Father Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#ep73","Sacerdote Merlay");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prophète Tanzgue#fin","Prophet Tanzgue");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prophète Tanzgue#fin","Profeta Tanzgue");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Prêtre Merlay#fin","Priest Merlay");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Prêtre Merlay#fin","Sacerdote Merlay");}
+
+//=========================================================================
+// Urunesti
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Bibliothécaire#ep7","Librarian");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Bibliothécaire#ep7","Bibliotecario");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Père#ep7","Father");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Père#ep7","Padre");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Loup-Garou#ep7","Werewolf");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Loup-Garou#ep7","Hombre-Lobo");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Infirmier Carly#ep7","Infirmier Carly");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Infirmier Carly#ep7","Enfermera Carly");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Infirmier Urluc#ep7","Infirmier Urluc");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Infirmier Urluc#ep7","Enfermera Urluc");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Sarcophage#ep7","Sarcophagus");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Sarcophage#ep7","Sarcofago");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Gardien#ep7Pa","Guardian");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Gardien#ep7Pa","Guardián");}
+
+//=========================================================================
+// Zombies
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier#Ep74","Waterman");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier#Ep74","Barquero");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Temple de Mortys#ep7","Temple of Mortys");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Temple de Mortys#ep7","Templo de Mortys");}
+
+//=========================================================================
+// Marchands
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Marchande Jonas#ep7","Merchant Jonas");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Marchande Jonas#ep7","Mercader Jonas");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Directeur Oljicka#ep7","Director Oljicka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Directeur Oljicka#ep7","Dictador Oljicka");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Vendeuse Yuna#ep7","Seller Yuna");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Vendeuse Yuna#ep7","Vendedora Yuna");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Commerçant Globe#ep7","Commerçant Globe");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Commerçant Globe#ep7","Comerciante Globe");}
+
+//=========================================================================
+// Services
+//=========================================================================
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Barnabé#ep7","Brother Barnabé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Barnabé#ep7","Sacerdote Barnabé");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Jacob#ep7","Brother Barnabé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Jacob#ep7","Sacerdote Barnabé");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Siracide#ep7","Brother Siracide");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Siracide#ep7","Sacerdote Siracide");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Josias#ep7","Brother Josias");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Josias#ep7","Sacerdote Josias");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Daniel#ep7","Brother Daniel");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Daniel#ep7","Sacerdote Daniel");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Jacques#ep7","Brother Jacques");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Jacques#ep7","Sacerdote Jacques");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Thomas#ep7","Brother Thomas");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Thomas#ep7","Sacerdote Thomas");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Nathanael#ep7","Brother Nathanael");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Nathanael#ep7","Sacerdote Nathanael");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Amos#ep7","Brother Amos");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Amos#ep7","Sacerdote Amos");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Adun#ep7","Brother Adun");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Adun#ep7","Sacerdote Adun");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère El Nino#ep7","Brother El Nino");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère El Nino#ep7","Sacerdote El Nino");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Globe#ep7","Brother Globe");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Globe#ep7","Sacerdote Globe");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Volubilis#ep7","Brother Volubilis");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Volubilis#ep7","Sacerdote Volubilis");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Lain#ep7","Brother Lain");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Lain#ep7","Sacerdote Lain");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Octave#ep7","Brother Octave");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Octave#ep7","Sacerdote Octave");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Horlie#ep7","Brother Horlie");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Horlie#ep7","Sacerdote Horlie");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Angueran#ep7","Brother Angueran");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Angueran#ep7","Sacerdote Angueran");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Olavef#ep7","Brother Olavef");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Olavef#ep7","Sacerdote Olavef");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Frère Draconaï#ep7","Brother Draconaï");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Frère Draconaï#ep7","Sacerdote Draconaï");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#coppa2","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#coppa2","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#coppa3","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#coppa3","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#coppa4","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#coppa4","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#coppa5","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#coppa5","Aldeano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageoise#coppa1","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageoise#coppa1","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageoise#coppa2","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageoise#coppa2","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageoise#coppa3","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageoise#coppa3","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageoise#coppa4","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageoise#coppa4","Aldeano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#kiman","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#kiman","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#kiman2","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#kiman2","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#kiman3","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#kiman3","Aldeano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#sok","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#sok","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#sok2","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#sok2","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#sok3","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#sok3","Aldeano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#euhe","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#euhe","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#euhe2","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#euhe2","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#euhe3","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#euhe3","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#euhe4","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#euhe4","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#euhe5","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#euhe5","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#euhe6","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#euhe6","Aldeano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar2","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar2","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar3","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar3","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar4","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar4","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar5","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar5","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar6","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar6","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar7","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar7","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar8","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar8","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar9","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar9","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#istar10","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#istar10","Soldado de Arsinoe");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#lime","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#lime","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#lime2","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#lime2","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#lime3","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#lime3","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#lime4","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#lime4","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#lime5","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#lime5","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#lime6","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#lime6","Soldado de Arsinoe");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext2","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext2","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext3","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext3","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext4","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext4","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext5","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext5","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext6","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext6","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext7","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext7","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext8","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext8","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext9","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext9","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaext10","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaext10","Soldado de Arsinoe");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaint","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaint","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaint2","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaint2","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaint3","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaint3","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaint4","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaint4","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaint5","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaint5","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#oaint6","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#oaint6","Soldado de Arsinoe");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#cry","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#cry","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#cry2","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#cry2","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#cry3","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#cry3","Aldeano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Villageois#cry4","Villagers");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Villageois#cry4","Aldeano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoD1","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoD1","Monje");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoD2","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoD2","Monje");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoD3","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoD3","Monje");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoD4","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoD4","Monje");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoD5","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoD5","Monje");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoD6","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoD6","Monje");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoD7","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoD7","Monje");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoP1","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoP1","Monje");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoP2","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoP2","Monje");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Moine#harpoP3","Monk");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Moine#harpoP3","Monje");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Euhéméria#euh1","Soldier of Euhéméria");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Euhéméria#euh1","Soldado de Euhéméria");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Euhéméria#euh2","Soldier of Euhéméria");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Euhéméria#euh2","Soldado de Euhéméria");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Euhéméria#euh3","Soldier of Euhéméria");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Euhéméria#euh3","Soldado de Euhéméria");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Euhéméria#euh4","Soldier of Euhéméria");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Euhéméria#euh4","Soldado de Euhéméria");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Euhéméria#euh5","Soldier of Euhéméria");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Euhéméria#euh5","Soldado de Euhéméria");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss1","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss1","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss2","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss2","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss3","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss3","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss4","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss4","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss5","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss5","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss6","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss6","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss7","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss7","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss8","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss8","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss9","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss9","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss10","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss10","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss11","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss11","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#arss12","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#arss12","Soldado de Arsinoe");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc1","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc1","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc2","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc2","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc3","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc3","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc4","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc4","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc5","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc5","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc6","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc6","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc7","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc7","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc8","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc8","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Citoyen#arsc9","Citizen");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Citoyen#arsc9","Ciudadano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Client#arsb1","Customer");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Client#arsb2","Customer");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Colon#rana1","Settler");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Colon#rana1","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Colon#rana2","Settler");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Colon#rana2","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Colon#rana3","Settler");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Colon#rana3","Ciudadano");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Colon#rana4","Settler");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Colon#rana4","Ciudadano");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat#rana1","Soldier");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat#rana1","Soldado");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat#rana2","Soldier");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat#rana2","Soldado");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat#rana10","Soldier");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat#rana10","Soldado");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat#rana11","Soldier");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat#rana11","Soldado");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat#rana12","Soldier");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat#rana12","Soldado");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat#rana13","Soldier");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat#rana13","Soldado");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat#rana14","Soldier");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat#rana14","Soldado");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat#rana15","Soldier");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat#rana15","Soldado");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#rana1","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#rana1","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#rana2","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#rana2","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#rana3","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#rana3","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#rana4","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#rana4","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#rana5","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#rana5","Càpita");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Pêcheur#ep71","Fisher", 88, 1);}
+if($EP7_LANGUE == 2) {setnpcdisplay("Pêcheur#ep71","Pescador", 88, 1);}
+if($EP7_LANGUE == 1) {setnpcdisplay("Pêcheur#ep72","Fisher", 73, 1);}
+if($EP7_LANGUE == 2) {setnpcdisplay("Pêcheur#ep72","Pescador", 73, 1);}
+if($EP7_LANGUE == 1) {setnpcdisplay("Pêcheur#ep73","Fisher", 101, 1);}
+if($EP7_LANGUE == 2) {setnpcdisplay("Pêcheur#ep73","Pescador", 101, 1);}
+if($EP7_LANGUE == 1) {setnpcdisplay("Pêcheur#ep74","Fisher", 92, 1);}
+if($EP7_LANGUE == 2) {setnpcdisplay("Pêcheur#ep74","Pescador", 92, 1);}
+if($EP7_LANGUE == 1) {setnpcdisplay("Pêcheur#ep75","Fisher", 777, 1);}
+if($EP7_LANGUE == 2) {setnpcdisplay("Pêcheur#ep75","Pescador", 777, 1);}
+if($EP7_LANGUE == 1) {setnpcdisplay("Pêcheur#ep76","Fisher", 883, 1);}
+if($EP7_LANGUE == 2) {setnpcdisplay("Pêcheur#ep76","Pescador", 883, 1);}
+if($EP7_LANGUE == 1) {setnpcdisplay("Pêcheur#ep77","Fisher", 901, 1);}
+if($EP7_LANGUE == 2) {setnpcdisplay("Pêcheur#ep77","Pescador", 901, 1);}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde d'Icarie#ep71","Guard of Icarie");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde d'Icarie#ep71","Guardia d'Icarie");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde d'Icarie#ep72","Guard of Icarie");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde d'Icarie#ep72","Guardia d'Icarie");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde d'Icarie#ep73","Guard of Icarie");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde d'Icarie#ep73","Guardia d'Icarie");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde d'Icarie#ep74","Guard of Icarie");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde d'Icarie#ep74","Guardia d'Icarie");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde d'Icarie#ep75","Guard of Icarie");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde d'Icarie#ep75","Guardia d'Icarie");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde d'Icarie#ep76","Guard of Icarie");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde d'Icarie#ep76","Guardia d'Icarie");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#ep71","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#ep71","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#ep72","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#ep72","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#ep73","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#ep73","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#ep74","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#ep74","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#ep75","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#ep75","Càpita");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant#ep76","Inhabitant");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant#ep76","Càpita");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde Da'Urdein#ep71","Guard of Da'Urdein");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde Da'Urdein#ep71","Guardia Da'Urdein");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde Da'Urdein#ep72","Guard of Da'Urdein");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde Da'Urdein#ep72","Guardia Da'Urdein");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde Da'Urdein#ep73","Guard of Da'Urdein");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde Da'Urdein#ep73","Guardia Da'Urdein");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde Da'Urdein#ep74","Guard of Da'Urdein");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde Da'Urdein#ep74","Guardia Da'Urdein");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde Da'Urdein#ep75","Guard of Da'Urdein");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde Da'Urdein#ep75","Guardia Da'Urdein");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde D'Arsinoé#in1","Guard of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde D'Arsinoé#in1","Guardia de Arsinoé");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde D'Arsinoé#in2","Guard of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde D'Arsinoé#in2","Guardia de Arsinoé");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Garde D'Arsinoé#in3","Guard of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Garde D'Arsinoé#in3","Guardia de Arsinoé");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Infirmier#in1","Medic");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Infirmier#in1","Enfermera");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Infirmier#in2","Medic");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Infirmier#in2","Enfermera");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Infirmier#in3","Medic");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Infirmier#in3","Enfermera");}
+
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#in1","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#in1","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#in2","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#in2","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#in3","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#in3","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#in4","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#in4","Soldado de Arsinoe");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat d'Arsinoé#in5","Soldier of Arsinoé");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat d'Arsinoé#in5","Soldado de Arsinoe");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in1","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in1","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in2","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in2","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in3","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in3","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in4","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in4","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in5","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in5","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in6","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in6","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in7","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in7","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in8","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in8","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in9","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in9","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in10","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in10","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in11","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in11","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Soldat de Néraka#in12","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Soldat de Néraka#in12","Soldado de Néraka");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant de Néraka#in1","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant de Néraka#in1","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant de Néraka#in2","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant de Néraka#in2","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant de Néraka#in3","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant de Néraka#in3","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant de Néraka#in4","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant de Néraka#in4","Soldado de Néraka");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Habitant de Néraka#in5","Soldier of Néraka");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Habitant de Néraka#in5","Soldado de Néraka");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Ouvrier#in1","Worker");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Ouvrier#in1","Trabajador");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Ouvrier#in2","Worker");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Ouvrier#in2","Trabajador");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Ouvrier#in3","Worker");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Ouvrier#in3","Trabajador");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Ouvrier#in4","Worker");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Ouvrier#in4","Trabajador");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Esclave#in1","Slave");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Esclave#in1","Esclavo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Esclave#in2","Slave");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Esclave#in2","Esclavo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Esclave#in3","Slave");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Esclave#in3","Esclavo");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Esclave#in4","Slave");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Esclave#in4","Esclavo");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Mercenaire#in1","Mercenary");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Mercenaire#in1","Mercenario");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Mercenaire#in2","Mercenary");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Mercenaire#in2","Mercenario");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Mercenaire#in3","Mercenary");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Mercenaire#in3","Mercenario");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Mercenaire#in4","Mercenary");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Mercenaire#in4","Mercenario");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Mercenaire#in5","Mercenary");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Mercenaire#in5","Mercenario");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7a","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7a","Jefe de la Estación");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7b","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7b","Jefe de la Estación");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7c","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7c","Jefe de la Estación");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7d","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7d","Jefe de la Estación");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7e","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7e","Jefe de la Estación");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7f","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7f","Jefe de la Estación");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7g","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7g","Jefe de la Estación");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7h","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7h","Jefe de la Estación");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Chef de Gare#ep7i","Chief of Station");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Chef de Gare#ep7i","Jefe de la Estación");}
+
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier#EP71","Waterman");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier#EP71","Barquero");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier#EP72","Waterman");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier#EP72","Barquero");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier#EP73","Waterman");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier#EP73","Barquero");}
+if($EP7_LANGUE == 1) {setnpcdisplay("Batelier#EP74","Waterman");}
+if($EP7_LANGUE == 2) {setnpcdisplay("Batelier#EP74","Barquero");}
+
+}
+
+
+
+
+
