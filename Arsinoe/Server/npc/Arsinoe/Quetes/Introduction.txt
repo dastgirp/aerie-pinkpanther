@@ -18,7 +18,7 @@
 //
 //===== Current Version: ==========================================================================  
 //
-//= 3.3
+//= 3.4
 //
 //===== Additional Comments: ======================================================================  
 //
@@ -28,6 +28,7 @@
 //= 3.1 Franshille french version init fix
 //= 3.2 Monster Name / Menu Symbol
 //= 3.3 Revisited English version by DesertFox
+//= 3.4 Fix variable $@player3$ to $@player3
 //
 //================================================================================================= 
 
@@ -522,6 +523,12 @@ submenu1:
 	warp "ars_dun21",152,99;
 	end; }
 	
+
+	if(EP7_LANGUE == 0) {mes "Veuillez patienter quelques secondes."; }
+	if(EP7_LANGUE == 1) {mes "Please wait some seconds."; }
+	if(EP7_LANGUE == 2) {mes "Please wait some seconds."; }
+	if(EP7_LANGUE == 5) {mes "Please wait some seconds.";}
+	close;
 }
 
 //_________________________________________________________________
@@ -614,7 +621,7 @@ sub1:
 	if(EP7_LANGUE == 2) {mes " Mirá ^33CC00" + strcharinfo(0) + "^000000, te haré entender tu futuro ...";}
 	if(EP7_LANGUE == 5) {mes "Saudações, "+((Sex)?"^0000FF":"^FF0000")+strcharinfo(0)+"^000000, farei com que você entenda seu futuro...";}
 	set $@player2$,strcharinfo(0);
-	set $@player3$,getcharid(0);
+	set $@player3,getcharid(0);
 	donpcevent "EP7_intro::OnEvent5";
 	close;
 
@@ -647,7 +654,7 @@ sub1:
 		if($ep7_LangChoice & 2) {npctalk "Is that you in this prison ...";}
 		if($ep7_LangChoice & 4) {npctalk "Eres tu en esta prision ...";}
 		if($ep7_LangChoice & 32) {npctalk "Aqui está você, em sua prisão...";}
-		clone "ars_dun21",59,118,"EP7_intro::OnNothing",$@player3$;
+		clone "ars_dun21",59,118,"EP7_intro::OnNothing",$@player3;
 		specialeffect 52;
 		sleep2 500;
 		specialeffect 52;
@@ -767,7 +774,7 @@ set @name$,"^FF00CCArchimage Ornélia^000000";
 		if($ep7_LangChoice & 4) {npctalk "" + $@player2$ + " ! Vamos! Confien en mi!";}
 		if($ep7_LangChoice & 32) {npctalk "" + $@player2$ + "! Vamos! Confie em mim!";}
 		sleep2 4000;
-		warpchar "ars_dun22",109,18,$@player3$;
+		warpchar "ars_dun22",109,18,$@player3;
 		end;
 }
 //========================================================================================================
