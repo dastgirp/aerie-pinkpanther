@@ -20,7 +20,7 @@
 //
 //===== Current Version: ==========================================================================  
 //
-//= 2.0
+//= 2.1
 //
 //===== Additional Comments: ======================================================================  
 //
@@ -29,6 +29,7 @@
 //= 1.2 Chaperon Rouge reward fix
 //= 1.3 Fix Chaperon Rouge#ep8d hidenpc
 //= 2.0 English Version
+//= 2.1 Fix typo error on Tombe#c [Thanks to Skorm]
 //
 //
 //================================================================================================= 
@@ -210,7 +211,7 @@ OnInit:
 	disablenpc "Tombe#ep8c";
 	donpcevent "Tombe#ep8a::OnBack";
 	donpcevent "Tombe#ep8b::OnBack";
-	donpcevent "Tombe#ep8ac::OnBack";
+	donpcevent "Tombe#ep8c::OnBack";
 	setcell "ars_dun89",150,64,155,69,cell_walkable,0;
 	setcell "ars_dun89",50,114,41,116,cell_walkable,0;
 	setcell "ars_dun89",71,187,76,196,cell_walkable,0;
