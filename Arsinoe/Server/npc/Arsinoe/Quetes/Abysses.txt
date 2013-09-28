@@ -16,7 +16,7 @@
 //
 //===== Current Version: ==========================================================================  
 //
-//= 2.3
+//= 2.4
 //
 //===== Additional Comments: ======================================================================  
 //
@@ -25,6 +25,7 @@
 //= 2.1 English/French text twisted for Ornélia / Colonel de Nursie ID sprite fix
 //= 2.2 Monster Name / Menu Symbol
 //= 2.3 Revisited English version by DesertFox
+//= 2.4 Change EP7_fenris to bottom for avoid Attempted to hide a non-existing NPC errors [Reported by nazgul001]
 //
 //================================================================================================= 
 
@@ -1652,6 +1653,267 @@ if (EP7_ABYSSES >= 6)  goto sub2;
 		end;
 	
 }
+//=====================================================================================
+
+ars_fild62,242,325,4	script	Archimage Ornélia#aby4	893,{
+
+set @name$,"^FF00CCArchimage Ornélia^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je n'en puis plus ... Finissez le travail mes amis !";}
+	if(EP7_LANGUE == 1) {mes "I can't do anymore... Finish the work my friends!";}
+	if(EP7_LANGUE == 2) {mes "No puedo hacer mas... Terminen el trabajo mis amigos!";}
+	close;
+
+OnTalk1:specialeffect 513; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;end;
+OnTalk2:specialeffect 650;end;	
+
+OnTalk3:
+	if($ep7_LangChoice & 1) {npctalk "C'est ainsi ... Tant d'efforts, tant de mystères ...";}
+	if($ep7_LangChoice & 2) {npctalk "So ... So much effort, so many mysteries...";} 
+	if($ep7_LangChoice & 4) {npctalk "Asi que ... Tanto esfuerzo, tantos misterios...";}
+	end;
+
+OnTalk4:
+	if($ep7_LangChoice & 1) {npctalk "Nous avons enfin sauvé Arsinoé, battu Fenrir ...";}
+	if($ep7_LangChoice & 2) {npctalk "We finally saved Arsinoe, and beat Fenrir...";}
+	if($ep7_LangChoice & 4) {npctalk "Finalmente salvamos a Arsinoe, y derrotamos a Fenrir...";}
+	end;
+
+OnTalk5:
+	if($ep7_LangChoice & 1) {npctalk "Prenez ce portail, nous allons rentrer au Coeur d'Arsinoé !";}
+	if($ep7_LangChoice & 2) {npctalk "Take this portal, and we will return to Coeur d'Arsinoe!";}
+	if($ep7_LangChoice & 4) {npctalk "Toma este portal, y regresaremos a la corte de Arsinoe!";}
+	end;
+}
+
+//========================================================================================================
+ars_fild62,253,325,4	script	Dynaheir#aby3	510,{
+
+set @name$,"^FF00CCDynaheir^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "La magie est pure ici, je peux lancer des sorts d'une rare puissance !";}
+	if(EP7_LANGUE == 1) {mes "The magic here is pure, I can cast spells of rare power!";}
+	if(EP7_LANGUE == 2) {mes "La magia aqui es pura, puedo ejecutar hechizos con extraños poderes!";}
+	close;
+
+
+OnTalk1:specialeffect 513; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;end;
+OnTalk2:specialeffect 650;end;
+
+OnTalk3:
+	if($ep7_LangChoice & 1) {npctalk "A ce que je vois, je ne fus pas la pire des Mages de l'Académie, maigre consolation ...";} 
+	if($ep7_LangChoice & 2) {npctalk "From what I see, I was not the worst of the Academy of the Magi, cold comfort...";}
+	if($ep7_LangChoice & 4) {npctalk "Segun como yo lo veo, yo no era lo peor de la academia de magos, buen consuelo...";}
+	end;	
+}
+
+//========================================================================================================
+ars_fild62,243,338,4	script	Archimage Archosio#aby4	64,{
+
+set @name$,"^66CCFFArchimage Archosio^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Bon sang ! Concentrez-vous sur le combat !";}
+	if(EP7_LANGUE == 1) {mes "Damn! Focus on the fight!";}
+	if(EP7_LANGUE == 2) {mes "Maldicion! Concentrate en la batalla!";}
+	close;
+
+OnTalk1: specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; end;	
+OnTalk2: specialeffect 513; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465;sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465;end;
+OnTalk3: specialeffect 650;end;	
+}
+//========================================================================================================
+ars_fild62,252,338,4	script	Mage Ghoji#aby4	754,{
+
+set @name$,"^66CCFFMage Ghoji^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Bon sang ! Concentrez-vous sur le combat !";}
+	if(EP7_LANGUE == 1) {mes "Damn! Focus on the fight!";}
+	if(EP7_LANGUE == 2) {mes "Maldicion! Concentrate en la batalla!";}
+	close;
+
+OnTalk1: specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; end;	
+OnTalk2: specialeffect 513; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461;end;
+OnTalk3: specialeffect 650;end;	
+}
+//========================================================================================================
+ars_fild62,251,255,4	script	Prophète Tanzgue#aby3	805,{
+
+if(EP7_LANGUE == 0) {set @name$,"^66CCFFProphète Tanzgue^000000";}
+if(EP7_LANGUE == 1) {set @name$,"^66CCFFProphet Tanzgue^000000";}
+if(EP7_LANGUE == 2) {set @name$,"^66CCFFProfeta Tanzgue^000000";}
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Je vais vous donner les bienfaits de Danifae, sa force vous permettra d'affermir votre volonté dans le combat.";}
+	if(EP7_LANGUE == 1) {mes "I'll give you the benefits of Danifae, his strength will allow you to strengthen your will in the combat.";}
+	if(EP7_LANGUE == 2) {mes "Te dare los beneficios de Danifae, su fuerza te permitira fortalecer tu voluntad en combate.";}
+	close2;
+	sc_start SC_STRFood,1800000, 10;
+	sc_start SC_AGIFood,1800000, 10;
+	sc_start SC_INTFood,1800000, 10;
+	sc_start SC_DEXFood,1800000, 10;
+ 	sc_start SC_LUKFood,1800000, 10;
+	sc_start SC_VITFood,1800000, 10;
+	end;
+}
+//========================================================================================================
+ars_fild62,247,374,0	script	#arsfild62fin	45,1,1,{
+	
+	if (EP7_ABYSSES <= 5)  goto sub1;
+	if (EP7_ABYSSES == 6)  goto sub2;
+	if (EP7_ABYSSES >= 7)  goto sub3;
+	
+	sub1:
+		
+		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
+		if(EP7_LANGUE == 0) {mes "Vous n'avez pas le niveau de quête requis pour participer à cette instance.";}
+		if(EP7_LANGUE == 1) {mes "You don't have the level of search required to participate in this instance.";}
+		if(EP7_LANGUE == 2) {mes "No tienes el nivel de quest necesario para participar.";}
+		close2;
+		warp "ars_in15",117,15; //retour début
+		end;
+
+	sub2:
+
+		if(EP7_LANGUE == 0) {dispbottom "Vous venez de vaincre Fenrir, le monde est sauvé.";}
+		if(EP7_LANGUE == 1) {dispbottom "You just beat Fenrir, the world is saved.";}
+		if(EP7_LANGUE == 2) {dispbottom "Derrotaste a Fenrir, el mundo ha sido salvado.";}
+		set EP7_ABYSSES,7;
+		getitem $ep7recompense[41],$ep7recompensenb[41];
+		completequest 70455;	
+		callfunc "arsi_DiviTitre";
+		if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu la [" + $EP7_TDIVI + "] Divinité d'Arsinoé !",bc_all,0x33FF00;}			
+		if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] became the [" + $EP7_TDIVI + "] Divinity of Arsinoe!",bc_all,0x33FF00;}
+		if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convirtio en [" + $EP7_TDIVI + "] Divinidad de Arsinoe!",bc_all,0x33FF00;}
+		
+		warp "ars_in17",63,103;
+		if($@ep7Anim6==0){donpcevent "EP7_intro::OnEvent14";}
+		end;
+
+	sub3:
+		
+		if(EP7_LANGUE == 0) {dispbottom "Vous venez de vaincre Fenrir, le monde est sauvé.";}
+		if(EP7_LANGUE == 1) {dispbottom "You just beat Fenrir, the world is saved.";}
+		if(EP7_LANGUE == 2) {dispbottom "Has derrotado a Fenrir, el mundo ha sido salvado.";}
+		warp "ars_in17",63,103;
+		if($@ep7Anim6==0){donpcevent "EP7_intro::OnEvent14";}
+		end;
+	
+}
+//========================================================================================================
+
+ars_fild62,245,330,4	script	Aerie#aby	485,{
+
+set @name$,"^FF00CCAerie^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas la déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You should not disturb her yet...";}
+	if(EP7_LANGUE == 2) {mes "No interrumpas...";}
+	close;
+
+OnTalk1:
+
+	if($ep7_LangChoice & 1) {npctalk "Shandalar était un puissant Mage, nous savons désormais qui il est, un Ancien de l'Académie, un des père fondateur de celle-ci.";}
+	if($ep7_LangChoice & 2) {npctalk "Shandalar was a powerful mage, we now know who he is, an alumnus of the Academy, one of the founding father of the latter.";}
+	if($ep7_LangChoice & 4) {npctalk "Shandalar fue un mago poderoso, ahora sabemos quien es, un alumno de la academia, uno de los padres fundadores del final.";}
+	end;
+
+OnAction1: specialeffect 60;end;
+}
+//========================================================================================================
+
+ars_fild62,250,330,4	script	Odin#aby	1065,{
+
+set @name$,"^66CCFFOdin^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You should not disturb him yet...";}
+	if(EP7_LANGUE == 2) {mes "No interrumpas...";}
+	close;
+
+OnTalk1:
+
+	if($ep7_LangChoice & 1) {npctalk "Les chaînes forgées dans des temps ancestraux n'ont pu te retenir Fenrir ...";}
+	if($ep7_LangChoice & 2) {npctalk "Chains forged in ancient times could not keep you Fenrir...";}
+	if($ep7_LangChoice & 4) {npctalk "Las cadenas forjadas en epocas ancestrales no te contubieron Fenrir...";}
+	end;
+
+OnTalk2:
+
+	if($ep7_LangChoice & 1) {npctalk "Cette fois-ci nous nous arrangerons pour que cela ne se reproduise plus. Grâce à ces héros nous avons pu éviter le pire.";}
+	if($ep7_LangChoice & 2) {npctalk "This time we'll make sure it does not happen again. Thanks to these heroes we have avoided the worst.";}
+	if($ep7_LangChoice & 4) {npctalk "Esta vez nos aseguraremos que eso no pase de nuevo. Gracias a estos heroes ahora corregiremos ese error.";}
+	end;
+
+OnTalk3:
+
+	if($ep7_LangChoice & 1) {npctalk "Voici une nouvelle page à ajouter à l'Edda !";}
+	if($ep7_LangChoice & 2) {npctalk "Here's a new page to add to the Edda!";}
+	if($ep7_LangChoice & 4) {npctalk "Esta es una nueva pagina para añadir al Edda!";}
+	end;
+
+OnAction1: specialeffect 60;end;
+OnAction2: specialeffect 650;end;
+}
+//========================================================================================================
+
+ars_fild62,248,324,4	script	Fenrir#aby	1220,{
+
+set @name$,"^66CCFFFenrir^000000";
+
+	mes "[" + @name$ + "]"; 
+	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
+	if(EP7_LANGUE == 1) {mes "You should not disturb him yet...";}
+	if(EP7_LANGUE == 2) {mes "No interrumpas...";}
+	close;
+
+OnAction1: specialeffect 60;end;
+}
+
+//1 arène (1 monstre à tuer puis l'autre)
+ars_fild62,144,101,0	warp	#arsfild62a1	1,1,ars_fild62,127,101
+ars_fild62,95,101,0	warp	#arsfild62a2	1,1,ars_fild62,51,101
+ars_fild62,82,101,0	warp	#arsfild62a3	1,1,ars_fild62,194,86
+
+//puis invocation mob salle 2 (coumoir + 2 côtés)
+
+//2 arène (2 monstres à tuer)
+ars_fild62,194,176,0	warp	#arsfild62b1	1,1,ars_fild62,194,192
+ars_fild62,194,210,0	warp	#arsfild62b2	1,1,ars_fild62,194,86
+
+//3 arène (petite salle pour mob + traversée
+ars_fild62,177,67,0	warp	#arsfild62c1	1,1,ars_fild62,153,52
+ars_fild62,91,52,0	warp	#arsfild62c2	1,1,ars_fild62,85,52
+//boss
+ars_fild62,42,52,0	warp	#arsfild62c3	1,1,ars_fild62,97,75
+//sortie
+ars_fild62,71,22,0	warp	#arsfild62c4	1,1,ars_fild62,195,246
+
+
+//4 arène Pyramide et suite en hauteur
+ars_fild62,156,210,0	warp	#arsfild62d1	1,1,ars_fild62,130,195
+//ouverture avec le boss mort
+ars_fild62,80,172,0	warp	#arsfild62d4	1,1,ars_fild62,48,186
+//ouverture avec le 2 boss mort
+ars_fild62,43,151,0	warp	#arsfild62d5	1,1,ars_fild62,221,95
+
+
+//5 arène : Le couloir (ouverture mort)
+ars_fild62,247,200,0	warp	#arsfild62e2	1,1,ars_fild62,248,225
+
+
+
+//perma
+ars_fild62,129,150,0	warp	#arsfild62d2	1,1,ars_fild62,130,159
+ars_fild62,130,162,0	warp	#arsfild62d3	1,1,ars_fild62,130,147
+ars_fild62,228,95,0	warp	#arsfild62e1	1,1,ars_fild62,248,107
+
+
 
 //=====================================================================================
 
@@ -1967,265 +2229,9 @@ OnFinal:
 	end;	
 }
 
-//=====================================================================================
-
-ars_fild62,242,325,4	script	Archimage Ornélia#aby4	893,{
-
-set @name$,"^FF00CCArchimage Ornélia^000000";
-
-	mes "[" + @name$ + "]"; 
-	if(EP7_LANGUE == 0) {mes "Je n'en puis plus ... Finissez le travail mes amis !";}
-	if(EP7_LANGUE == 1) {mes "I can't do anymore... Finish the work my friends!";}
-	if(EP7_LANGUE == 2) {mes "No puedo hacer mas... Terminen el trabajo mis amigos!";}
-	close;
-
-OnTalk1:specialeffect 513; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;end;
-OnTalk2:specialeffect 650;end;	
-
-OnTalk3:
-	if($ep7_LangChoice & 1) {npctalk "C'est ainsi ... Tant d'efforts, tant de mystères ...";}
-	if($ep7_LangChoice & 2) {npctalk "So ... So much effort, so many mysteries...";} 
-	if($ep7_LangChoice & 4) {npctalk "Asi que ... Tanto esfuerzo, tantos misterios...";}
-	end;
-
-OnTalk4:
-	if($ep7_LangChoice & 1) {npctalk "Nous avons enfin sauvé Arsinoé, battu Fenrir ...";}
-	if($ep7_LangChoice & 2) {npctalk "We finally saved Arsinoe, and beat Fenrir...";}
-	if($ep7_LangChoice & 4) {npctalk "Finalmente salvamos a Arsinoe, y derrotamos a Fenrir...";}
-	end;
-
-OnTalk5:
-	if($ep7_LangChoice & 1) {npctalk "Prenez ce portail, nous allons rentrer au Coeur d'Arsinoé !";}
-	if($ep7_LangChoice & 2) {npctalk "Take this portal, and we will return to Coeur d'Arsinoe!";}
-	if($ep7_LangChoice & 4) {npctalk "Toma este portal, y regresaremos a la corte de Arsinoe!";}
-	end;
-}
-
-//========================================================================================================
-ars_fild62,253,325,4	script	Dynaheir#aby3	510,{
-
-set @name$,"^FF00CCDynaheir^000000";
-
-	mes "[" + @name$ + "]"; 
-	if(EP7_LANGUE == 0) {mes "La magie est pure ici, je peux lancer des sorts d'une rare puissance !";}
-	if(EP7_LANGUE == 1) {mes "The magic here is pure, I can cast spells of rare power!";}
-	if(EP7_LANGUE == 2) {mes "La magia aqui es pura, puedo ejecutar hechizos con extraños poderes!";}
-	close;
-
-
-OnTalk1:specialeffect 513; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;specialeffect 460; sleep2 500;end;
-OnTalk2:specialeffect 650;end;
-
-OnTalk3:
-	if($ep7_LangChoice & 1) {npctalk "A ce que je vois, je ne fus pas la pire des Mages de l'Académie, maigre consolation ...";} 
-	if($ep7_LangChoice & 2) {npctalk "From what I see, I was not the worst of the Academy of the Magi, cold comfort...";}
-	if($ep7_LangChoice & 4) {npctalk "Segun como yo lo veo, yo no era lo peor de la academia de magos, buen consuelo...";}
-	end;	
-}
-
-//========================================================================================================
-ars_fild62,243,338,4	script	Archimage Archosio#aby4	64,{
-
-set @name$,"^66CCFFArchimage Archosio^000000";
-
-	mes "[" + @name$ + "]"; 
-	if(EP7_LANGUE == 0) {mes "Bon sang ! Concentrez-vous sur le combat !";}
-	if(EP7_LANGUE == 1) {mes "Damn! Focus on the fight!";}
-	if(EP7_LANGUE == 2) {mes "Maldicion! Concentrate en la batalla!";}
-	close;
-
-OnTalk1: specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; end;	
-OnTalk2: specialeffect 513; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465;sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465; sleep2 500; specialeffect 465;end;
-OnTalk3: specialeffect 650;end;	
-}
-//========================================================================================================
-ars_fild62,252,338,4	script	Mage Ghoji#aby4	754,{
-
-set @name$,"^66CCFFMage Ghoji^000000";
-
-	mes "[" + @name$ + "]"; 
-	if(EP7_LANGUE == 0) {mes "Bon sang ! Concentrez-vous sur le combat !";}
-	if(EP7_LANGUE == 1) {mes "Damn! Focus on the fight!";}
-	if(EP7_LANGUE == 2) {mes "Maldicion! Concentrate en la batalla!";}
-	close;
-
-OnTalk1: specialeffect 30; sleep2 500; specialeffect 341;sleep2 500; specialeffect 30; sleep2 500; end;	
-OnTalk2: specialeffect 513; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461; sleep2 500; specialeffect 461;end;
-OnTalk3: specialeffect 650;end;	
-}
-//========================================================================================================
-ars_fild62,251,255,4	script	Prophète Tanzgue#aby3	805,{
-
-if(EP7_LANGUE == 0) {set @name$,"^66CCFFProphète Tanzgue^000000";}
-if(EP7_LANGUE == 1) {set @name$,"^66CCFFProphet Tanzgue^000000";}
-if(EP7_LANGUE == 2) {set @name$,"^66CCFFProfeta Tanzgue^000000";}
-
-	mes "[" + @name$ + "]"; 
-	if(EP7_LANGUE == 0) {mes "Je vais vous donner les bienfaits de Danifae, sa force vous permettra d'affermir votre volonté dans le combat.";}
-	if(EP7_LANGUE == 1) {mes "I'll give you the benefits of Danifae, his strength will allow you to strengthen your will in the combat.";}
-	if(EP7_LANGUE == 2) {mes "Te dare los beneficios de Danifae, su fuerza te permitira fortalecer tu voluntad en combate.";}
-	close2;
-	sc_start SC_STRFood,1800000, 10;
-	sc_start SC_AGIFood,1800000, 10;
-	sc_start SC_INTFood,1800000, 10;
-	sc_start SC_DEXFood,1800000, 10;
- 	sc_start SC_LUKFood,1800000, 10;
-	sc_start SC_VITFood,1800000, 10;
-	end;
-}
-//========================================================================================================
-ars_fild62,247,374,0	script	#arsfild62fin	45,1,1,{
-	
-	if (EP7_ABYSSES <= 5)  goto sub1;
-	if (EP7_ABYSSES == 6)  goto sub2;
-	if (EP7_ABYSSES >= 7)  goto sub3;
-	
-	sub1:
-		
-		mes "[^33CC00" + strcharinfo(0) + "^000000]"; 
-		if(EP7_LANGUE == 0) {mes "Vous n'avez pas le niveau de quête requis pour participer à cette instance.";}
-		if(EP7_LANGUE == 1) {mes "You don't have the level of search required to participate in this instance.";}
-		if(EP7_LANGUE == 2) {mes "No tienes el nivel de quest necesario para participar.";}
-		close2;
-		warp "ars_in15",117,15; //retour début
-		end;
-
-	sub2:
-
-		if(EP7_LANGUE == 0) {dispbottom "Vous venez de vaincre Fenrir, le monde est sauvé.";}
-		if(EP7_LANGUE == 1) {dispbottom "You just beat Fenrir, the world is saved.";}
-		if(EP7_LANGUE == 2) {dispbottom "Derrotaste a Fenrir, el mundo ha sido salvado.";}
-		set EP7_ABYSSES,7;
-		getitem $ep7recompense[41],$ep7recompensenb[41];
-		completequest 70455;	
-		callfunc "arsi_DiviTitre";
-		if($ep7_LangChoice & 1) {announce "[" + strcharinfo(0) +"] est devenu la [" + $EP7_TDIVI + "] Divinité d'Arsinoé !",bc_all,0x33FF00;}			
-		if($ep7_LangChoice & 2) {announce "[" + strcharinfo(0) +"] became the [" + $EP7_TDIVI + "] Divinity of Arsinoe!",bc_all,0x33FF00;}
-		if($ep7_LangChoice & 4) {announce "[" + strcharinfo(0) +"] se convirtio en [" + $EP7_TDIVI + "] Divinidad de Arsinoe!",bc_all,0x33FF00;}
-		
-		warp "ars_in17",63,103;
-		if($@ep7Anim6==0){donpcevent "EP7_intro::OnEvent14";}
-		end;
-
-	sub3:
-		
-		if(EP7_LANGUE == 0) {dispbottom "Vous venez de vaincre Fenrir, le monde est sauvé.";}
-		if(EP7_LANGUE == 1) {dispbottom "You just beat Fenrir, the world is saved.";}
-		if(EP7_LANGUE == 2) {dispbottom "Has derrotado a Fenrir, el mundo ha sido salvado.";}
-		warp "ars_in17",63,103;
-		if($@ep7Anim6==0){donpcevent "EP7_intro::OnEvent14";}
-		end;
-	
-}
-//========================================================================================================
-
-ars_fild62,245,330,4	script	Aerie#aby	485,{
-
-set @name$,"^FF00CCAerie^000000";
-
-	mes "[" + @name$ + "]"; 
-	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas la déranger pour le moment ...";}
-	if(EP7_LANGUE == 1) {mes "You should not disturb her yet...";}
-	if(EP7_LANGUE == 2) {mes "No interrumpas...";}
-	close;
-
-OnTalk1:
-
-	if($ep7_LangChoice & 1) {npctalk "Shandalar était un puissant Mage, nous savons désormais qui il est, un Ancien de l'Académie, un des père fondateur de celle-ci.";}
-	if($ep7_LangChoice & 2) {npctalk "Shandalar was a powerful mage, we now know who he is, an alumnus of the Academy, one of the founding father of the latter.";}
-	if($ep7_LangChoice & 4) {npctalk "Shandalar fue un mago poderoso, ahora sabemos quien es, un alumno de la academia, uno de los padres fundadores del final.";}
-	end;
-
-OnAction1: specialeffect 60;end;
-}
-//========================================================================================================
-
-ars_fild62,250,330,4	script	Odin#aby	1065,{
-
-set @name$,"^66CCFFOdin^000000";
-
-	mes "[" + @name$ + "]"; 
-	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
-	if(EP7_LANGUE == 1) {mes "You should not disturb him yet...";}
-	if(EP7_LANGUE == 2) {mes "No interrumpas...";}
-	close;
-
-OnTalk1:
-
-	if($ep7_LangChoice & 1) {npctalk "Les chaînes forgées dans des temps ancestraux n'ont pu te retenir Fenrir ...";}
-	if($ep7_LangChoice & 2) {npctalk "Chains forged in ancient times could not keep you Fenrir...";}
-	if($ep7_LangChoice & 4) {npctalk "Las cadenas forjadas en epocas ancestrales no te contubieron Fenrir...";}
-	end;
-
-OnTalk2:
-
-	if($ep7_LangChoice & 1) {npctalk "Cette fois-ci nous nous arrangerons pour que cela ne se reproduise plus. Grâce à ces héros nous avons pu éviter le pire.";}
-	if($ep7_LangChoice & 2) {npctalk "This time we'll make sure it does not happen again. Thanks to these heroes we have avoided the worst.";}
-	if($ep7_LangChoice & 4) {npctalk "Esta vez nos aseguraremos que eso no pase de nuevo. Gracias a estos heroes ahora corregiremos ese error.";}
-	end;
-
-OnTalk3:
-
-	if($ep7_LangChoice & 1) {npctalk "Voici une nouvelle page à ajouter à l'Edda !";}
-	if($ep7_LangChoice & 2) {npctalk "Here's a new page to add to the Edda!";}
-	if($ep7_LangChoice & 4) {npctalk "Esta es una nueva pagina para añadir al Edda!";}
-	end;
-
-OnAction1: specialeffect 60;end;
-OnAction2: specialeffect 650;end;
-}
-//========================================================================================================
-
-ars_fild62,248,324,4	script	Fenrir#aby	1220,{
-
-set @name$,"^66CCFFFenrir^000000";
-
-	mes "[" + @name$ + "]"; 
-	if(EP7_LANGUE == 0) {mes "Vous ne devriez pas le déranger pour le moment ...";}
-	if(EP7_LANGUE == 1) {mes "You should not disturb him yet...";}
-	if(EP7_LANGUE == 2) {mes "No interrumpas...";}
-	close;
-
-OnAction1: specialeffect 60;end;
-}
-
-//1 arène (1 monstre à tuer puis l'autre)
-ars_fild62,144,101,0	warp	#arsfild62a1	1,1,ars_fild62,127,101
-ars_fild62,95,101,0	warp	#arsfild62a2	1,1,ars_fild62,51,101
-ars_fild62,82,101,0	warp	#arsfild62a3	1,1,ars_fild62,194,86
-
-//puis invocation mob salle 2 (coumoir + 2 côtés)
-
-//2 arène (2 monstres à tuer)
-ars_fild62,194,176,0	warp	#arsfild62b1	1,1,ars_fild62,194,192
-ars_fild62,194,210,0	warp	#arsfild62b2	1,1,ars_fild62,194,86
-
-//3 arène (petite salle pour mob + traversée
-ars_fild62,177,67,0	warp	#arsfild62c1	1,1,ars_fild62,153,52
-ars_fild62,91,52,0	warp	#arsfild62c2	1,1,ars_fild62,85,52
-//boss
-ars_fild62,42,52,0	warp	#arsfild62c3	1,1,ars_fild62,97,75
-//sortie
-ars_fild62,71,22,0	warp	#arsfild62c4	1,1,ars_fild62,195,246
-
-
-//4 arène Pyramide et suite en hauteur
-ars_fild62,156,210,0	warp	#arsfild62d1	1,1,ars_fild62,130,195
-//ouverture avec le boss mort
-ars_fild62,80,172,0	warp	#arsfild62d4	1,1,ars_fild62,48,186
-//ouverture avec le 2 boss mort
-ars_fild62,43,151,0	warp	#arsfild62d5	1,1,ars_fild62,221,95
-
-
-//5 arène : Le couloir (ouverture mort)
-ars_fild62,247,200,0	warp	#arsfild62e2	1,1,ars_fild62,248,225
 
 
 
-//perma
-ars_fild62,129,150,0	warp	#arsfild62d2	1,1,ars_fild62,130,159
-ars_fild62,130,162,0	warp	#arsfild62d3	1,1,ars_fild62,130,147
-ars_fild62,228,95,0	warp	#arsfild62e1	1,1,ars_fild62,248,107
 
 //_________________________________________________________________
 //________________Les Abysses : Scripts ___________________________
